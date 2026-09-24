@@ -1172,78 +1172,71 @@
       }
     });
 
-    // 6. Read Aloud (Text to Speech)
+    // 6. Narrated Audio Playback (pre-recorded story narration)
     const btnReadAloud = document.getElementById('btn-read-aloud');
     const readAloudText = document.getElementById('read-aloud-text');
     const readAloudIcon = document.getElementById('read-aloud-icon');
-    let isSpeaking = false;
-    let synth = window.speechSynthesis;
-    let storyParagraphs = [];
-    let currentParaIdx = 0;
+    const narrationAudio = new Audio('narration.mp3');
+    narrationAudio.preload = 'metadata';
+    const storyParagraphs = Array.from(document.querySelectorAll('.story-text, .chant-text'));
+    let paraTimings = [];
 
-    if ('speechSynthesis' in window) {
-      storyParagraphs = Array.from(document.querySelectorAll('.story-text, .chant-text'));
-
-      btnReadAloud.addEventListener('click', () => {
-        if (isSpeaking) {
-          stopSpeaking();
-        } else {
-          startSpeaking();
-        }
-      });
-    } else {
-      btnReadAloud.style.display = 'none';
+    function computeTimings() {
+      const total = narrationAudio.duration;
+      if (!total || !isFinite(total)) return false;
+      const lens = storyParagraphs.map(p => ((p.innerText || p.textContent) || '').trim().length || 1);
+      const sum = lens.reduce((a, b) => a + b, 0);
+      let acc = 0;
+      paraTimings = lens.map(l => { const t = acc / sum * total; acc += l; return t; });
+      return true;
     }
 
-    function startSpeaking() {
-      if (!synth) return;
-      synth.cancel();
-      isSpeaking = true;
-      btnReadAloud.classList.add('speaking');
-      readAloudIcon.textContent = '⏹️';
-      readAloudText.textContent = 'Pause Reading';
-      currentParaIdx = 0;
-      speakNextParagraph();
-    }
-
-    function stopSpeaking() {
-      if (synth) synth.cancel();
-      isSpeaking = false;
+    function resetReadAloudUI() {
       btnReadAloud.classList.remove('speaking');
       readAloudIcon.textContent = '🔊';
       readAloudText.textContent = 'Listen to Bedtime Story';
       storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
     }
 
-    function speakNextParagraph() {
-      if (!isSpeaking || currentParaIdx >= storyParagraphs.length) {
-        stopSpeaking();
-        return;
-      }
-
-      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
-      const targetPara = storyParagraphs[currentParaIdx];
-      targetPara.classList.add('para-speaking');
-      targetPara.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-      const text = targetPara.innerText || targetPara.textContent;
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.92; // Gentle storybook reading pace
-      utterance.pitch = 1.05;
-
-      utterance.onend = () => {
-        if (isSpeaking) {
-          currentParaIdx++;
-          setTimeout(speakNextParagraph, 300);
+    function highlightForTime(t) {
+      if (!paraTimings.length) return;
+      let idx = 0;
+      for (let i = 0; i < paraTimings.length; i++) { if (t >= paraTimings[i]) idx = i; }
+      storyParagraphs.forEach((p, i) => {
+        if (i === idx) {
+          if (!p.classList.contains('para-speaking')) {
+            p.classList.add('para-speaking');
+            p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } else {
+          p.classList.remove('para-speaking');
         }
-      };
-
-      utterance.onerror = () => {
-        stopSpeaking();
-      };
-
-      synth.speak(utterance);
+      });
     }
+
+    btnReadAloud.addEventListener('click', () => {
+      if (narrationAudio.paused) {
+        if (narrationAudio.ended) narrationAudio.currentTime = 0;
+        if (!computeTimings()) {
+          readAloudText.textContent = 'Loading…';
+          narrationAudio.addEventListener('loadedmetadata', () => btnReadAloud.click(), { once: true });
+          narrationAudio.load();
+          return;
+        }
+        narrationAudio.play();
+        btnReadAloud.classList.add('speaking');
+        readAloudIcon.textContent = '⏹️';
+        readAloudText.textContent = 'Pause Reading';
+      } else {
+        narrationAudio.pause();
+        resetReadAloudUI();
+      }
+    });
+
+    narrationAudio.addEventListener('timeupdate', () => highlightForTime(narrationAudio.currentTime));
+    narrationAudio.addEventListener('ended', resetReadAloudUI);
+    narrationAudio.addEventListener('error', resetReadAloudUI);
+
 
     // 7. Fullscreen Video Toggle
     function toggleVideoFullscreen(btn) {

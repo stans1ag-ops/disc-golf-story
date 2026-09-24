@@ -1417,86 +1417,70 @@
       }
     });
 
-    // 6. Sequential Read-Aloud with Visual Paragraph Highlighting
+    // 6. Narrated Audio Playback (pre-recorded story narration)
     const btnReadAloud = document.getElementById('btn-read-aloud');
-    const readAloudIcon = document.getElementById('read-aloud-icon');
     const readAloudText = document.getElementById('read-aloud-text');
+    const readAloudIcon = document.getElementById('read-aloud-icon');
+    const narrationAudio = new Audio('narration.mp3');
+    narrationAudio.preload = 'metadata';
+    const storyParagraphs = Array.from(document.querySelectorAll('.story-text'));
+    let paraTimings = [];
 
-    let isReading = false;
-    let synth = window.speechSynthesis;
-    let paragraphsToRead = [];
-    let currentParaIndex = 0;
+    function computeTimings() {
+      const total = narrationAudio.duration;
+      if (!total || !isFinite(total)) return false;
+      const lens = storyParagraphs.map(p => ((p.innerText || p.textContent) || '').trim().length || 1);
+      const sum = lens.reduce((a, b) => a + b, 0);
+      let acc = 0;
+      paraTimings = lens.map(l => { const t = acc / sum * total; acc += l; return t; });
+      return true;
+    }
 
-    if (!('speechSynthesis' in window)) {
-      btnReadAloud.style.display = 'none';
-    } else {
-      btnReadAloud.addEventListener('click', () => {
-        if (isReading) {
-          stopReading();
+    function resetReadAloudUI() {
+      btnReadAloud.classList.remove('playing');
+      readAloudIcon.textContent = '🔊';
+      readAloudText.textContent = 'Listen to Story';
+      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
+    }
+
+    function highlightForTime(t) {
+      if (!paraTimings.length) return;
+      let idx = 0;
+      for (let i = 0; i < paraTimings.length; i++) { if (t >= paraTimings[i]) idx = i; }
+      storyParagraphs.forEach((p, i) => {
+        if (i === idx) {
+          if (!p.classList.contains('para-speaking')) {
+            p.classList.add('para-speaking');
+            p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
         } else {
-          startReading();
+          p.classList.remove('para-speaking');
         }
       });
     }
 
-    function startReading() {
-      if (!synth) return;
-      synth.cancel();
-
-      paragraphsToRead = Array.from(document.querySelectorAll('.story-text'));
-      if (paragraphsToRead.length === 0) return;
-
-      currentParaIndex = 0;
-      isReading = true;
-      btnReadAloud.classList.add('playing');
-      readAloudIcon.textContent = '⏸️';
-      readAloudText.textContent = 'Stop Reading';
-
-      speakNextParagraph();
-    }
-
-    function speakNextParagraph() {
-      if (!isReading || currentParaIndex >= paragraphsToRead.length) {
-        stopReading();
-        return;
+    btnReadAloud.addEventListener('click', () => {
+      if (narrationAudio.paused) {
+        if (narrationAudio.ended) narrationAudio.currentTime = 0;
+        if (!computeTimings()) {
+          readAloudText.textContent = 'Loading…';
+          narrationAudio.addEventListener('loadedmetadata', () => btnReadAloud.click(), { once: true });
+          narrationAudio.load();
+          return;
+        }
+        narrationAudio.play();
+        btnReadAloud.classList.add('playing');
+        readAloudIcon.textContent = '⏸️';
+        readAloudText.textContent = 'Stop Reading';
+      } else {
+        narrationAudio.pause();
+        resetReadAloudUI();
       }
+    });
 
-      paragraphsToRead.forEach(p => p.classList.remove('para-speaking'));
-
-      const para = paragraphsToRead[currentParaIndex];
-      para.classList.add('para-speaking');
-      para.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-      const text = para.innerText.trim();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.95;
-      utterance.pitch = 1.05;
-
-      const voices = synth.getVoices();
-      const friendlyVoice = voices.find(v => (v.name.includes('Natural') || v.name.includes('Samantha') || v.name.includes('Google') || v.name.includes('Daniel')) && v.lang.startsWith('en'));
-      if (friendlyVoice) utterance.voice = friendlyVoice;
-
-      utterance.onend = () => {
-        currentParaIndex++;
-        speakNextParagraph();
-      };
-
-      utterance.onerror = () => {
-        currentParaIndex++;
-        speakNextParagraph();
-      };
-
-      synth.speak(utterance);
-    }
-
-    function stopReading() {
-      if (synth) synth.cancel();
-      isReading = false;
-      paragraphsToRead.forEach(p => p.classList.remove('para-speaking'));
-      btnReadAloud.classList.remove('playing');
-      readAloudIcon.textContent = '🔊';
-      readAloudText.textContent = 'Listen to Story';
-    }
+    narrationAudio.addEventListener('timeupdate', () => highlightForTime(narrationAudio.currentTime));
+    narrationAudio.addEventListener('ended', resetReadAloudUI);
+    narrationAudio.addEventListener('error', resetReadAloudUI);
   </script>
 </body>
 </html>
