@@ -202,7 +202,11 @@
       border-radius: 16px;
       box-shadow: var(--shadow-lg);
       padding: 8px;
-      min-width: 275px;
+      min-width: 290px;
+      max-width: calc(100vw - 32px);
+      max-height: min(72vh, 600px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
       z-index: 1100;
       display: none;
       flex-direction: column;
@@ -1052,10 +1056,10 @@
             <span class="menu-link-icon">🏠</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Story Library Hub</strong>
-              <span class="menu-link-desc">All 5 Adventures &amp; Bookshelf</span>
+              <span class="menu-link-desc">All 8 Bedtime Adventures</span>
             </div>
           </a>
-          <a href="../the-houghton-lake-patrol/" class="story-menu-link" role="menuitem">
+          <a href="../the-fish-that-pulled-back/" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🚤</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">The Fish That Pulled Back</strong>
@@ -1090,11 +1094,25 @@
               <span class="menu-link-desc">Uno • the last card</span>
             </div>
           </a>
+          <a href="../shane-and-the-magic-disc/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🌲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane and the Magic Disc</strong>
+              <span class="menu-link-desc">Forest • a magical basket</span>
+            </div>
+          </a>
           <a href="index.html" class="story-menu-link active" role="menuitem">
             <span class="menu-link-icon">🔍</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">The Mystery of the Back Nine</strong>
               <span class="menu-link-desc">Mystery • turkey tracks</span>
+            </div>
+          </a>
+          <a href="../the-legend-of-big-whalter/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Big Walter</strong>
+              <span class="menu-link-desc">Fishing • meet Big Walter</span>
             </div>
           </a>
         </div>

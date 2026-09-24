@@ -156,6 +156,10 @@
       box-shadow: var(--shadow-lg);
       padding: 8px;
       min-width: 290px;
+      max-width: calc(100vw - 32px);
+      max-height: min(72vh, 600px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
       z-index: 1100;
       display: none;
       flex-direction: column;
@@ -604,10 +608,10 @@
             <span class="menu-link-icon">🏠</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Story Library Hub</strong>
-              <span class="menu-link-desc">All 5 Adventures &amp; Bookshelf</span>
+              <span class="menu-link-desc">All 8 Bedtime Adventures</span>
             </div>
           </a>
-          <a href="../the-houghton-lake-patrol/" class="story-menu-link" role="menuitem">
+          <a href="../the-fish-that-pulled-back/" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🚤</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">The Fish That Pulled Back</strong>
@@ -640,6 +644,27 @@
             <div class="menu-link-text">
               <strong class="menu-link-title">One Card Left</strong>
               <span class="menu-link-desc">Uno • the last card</span>
+            </div>
+          </a>
+          <a href="../shane-and-the-magic-disc/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🌲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane and the Magic Disc</strong>
+              <span class="menu-link-desc">Forest • a magical basket</span>
+            </div>
+          </a>
+          <a href="../mystery-of-the-back-nine/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🔍</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Mystery of the Back Nine</strong>
+              <span class="menu-link-desc">Mystery • turkey tracks</span>
+            </div>
+          </a>
+          <a href="../the-legend-of-big-whalter/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Big Walter</strong>
+              <span class="menu-link-desc">Fishing • meet Big Walter</span>
             </div>
           </a>
         </div>
@@ -805,7 +830,7 @@
       <h2 class="conclusion-question">Which adventure should Shane and Alex go on tomorrow?</h2>
       
       <div class="choice-grid">
-        <a href="../the-houghton-lake-patrol/" class="choice-card">
+        <a href="../the-fish-that-pulled-back/" class="choice-card">
           <span class="choice-card-icon">🚤</span>
           <strong class="choice-card-title">The Fish That Pulled Back</strong>
           <span class="choice-card-desc">A quiet bobber, a sudden tug, and one very big splash.</span>

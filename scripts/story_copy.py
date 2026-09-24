@@ -4,7 +4,7 @@ Run `python3 scripts/build_story_copy.py` after editing a story here.
 """
 
 STORIES = {
-    "the-houghton-lake-patrol": {
+    "the-fish-that-pulled-back": {
         "title": "The Fish That Pulled Back",
         "subtitle": "Shane and Dad go fishing on Houghton Lake. Something big finds the line.",
         "preview": "A quiet bobber, a sudden tug, and one very big splash.",

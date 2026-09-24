@@ -414,60 +414,6 @@
       transform: translateX(4px);
     }
 
-    /* Bonus Shelf */
-    .bonus-shelf {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 24px 20px;
-      box-shadow: var(--shadow-sm);
-    }
-    .bonus-title {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .bonus-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-    @media (min-width: 600px) {
-      .bonus-list { grid-template-columns: 1fr 1fr 1fr; }
-    }
-    .bonus-card {
-      background: var(--bg-page);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 14px;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.2s ease;
-      display: flex;
-      flex-direction: column;
-    }
-    .bonus-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--text-accent);
-      box-shadow: var(--shadow-sm);
-    }
-    .bonus-card strong {
-      font-family: var(--font-display);
-      font-size: 0.95rem;
-      color: var(--text-main);
-      margin-bottom: 4px;
-    }
-    .bonus-card span {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
     /* Hub Footer */
     .hub-footer {
       margin-top: 50px;
@@ -529,17 +475,17 @@
     <!-- The 5 Stories Section -->
     <section>
       <div class="section-header">
-        <h2 class="section-title">✨ Five Featured Bedtime Adventures</h2>
+        <h2 class="section-title">✨ Eight Bedtime Adventures</h2>
         <span class="section-subtitle">Pick a story for tonight, then watch its moving storybook scene.</span>
       </div>
 
       <div class="story-grid">
 
         <!-- Story 1: Pontoon Fishing at Houghton Lake -->
-        <a href="the-houghton-lake-patrol/" class="story-card">
+        <a href="the-fish-that-pulled-back/" class="story-card">
           <div class="card-img-wrapper">
             <img 
-              src="the-houghton-lake-patrol/pontoon_boat_shane.jpg" 
+              src="the-fish-that-pulled-back/pontoon_boat_shane.jpg" 
               alt="Alex and Shane cruising on the pontoon boat on sunny Houghton Lake."
               loading="lazy"
               width="688"
@@ -660,27 +606,82 @@
           </div>
         </a>
 
+
+        <!-- Story 6: The original forest adventure -->
+        <a href="shane-and-the-magic-disc/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="shane-and-the-magic-disc/Children_discover_magical_forest_20260914073926.jpeg" 
+              alt="Alex and Shane with woodland creatures around a glowing disc golf basket in a sunlit forest."
+              loading="lazy"
+              width="688"
+              height="387"
+            >
+            <span class="card-badge">🌲 Adventure #6</span>
+            <span class="card-time">⏱️ 2-3 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-green">Whispering Woods Adventure</span>
+            <h3 class="card-title">Shane and the Magic Disc</h3>
+            <p class="card-chant-preview">The Roadrunner leads Shane and Dad to a secret in the ferns.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Story 7: The original woodland mystery -->
+        <a href="mystery-of-the-back-nine/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="mystery-of-the-back-nine/Children_discovering_dinosaur_footprints_20260915121009.jpeg" 
+              alt="Alex and Shane discovering giant turkey tracks in the mud by a creek."
+              loading="lazy"
+              width="688"
+              height="387"
+            >
+            <span class="card-badge">🔍 Adventure #7</span>
+            <span class="card-time">⏱️ 2-3 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-orange">Whispering Woods Mystery</span>
+            <h3 class="card-title">The Mystery of the Back Nine</h3>
+            <p class="card-chant-preview">A big feather, muddy tracks, and a family hiding in the leaves.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Story 8: The original fishing tale -->
+        <a href="the-legend-of-big-whalter/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="the-legend-of-big-whalter/Father_and_son_fishing_20260915121008.jpeg" 
+              alt="Alex and Shane fishing from a wooden dock at sunrise on Miller's Creek."
+              loading="lazy"
+              width="688"
+              height="387"
+            >
+            <span class="card-badge">🎣 Adventure #8</span>
+            <span class="card-time">⏱️ 2-3 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-blue">Miller's Creek Fishing Tale</span>
+            <h3 class="card-title">Big Walter</h3>
+            <p class="card-chant-preview">Shane meets a very big catfish and helps it go home.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
       </div>
     </section>
 
-    <!-- Earlier Adventures Section -->
-    <section class="bonus-shelf">
-      <h3 class="bonus-title">📚 Earlier Illustrated Adventures</h3>
-      <div class="bonus-list">
-        <a href="shane-and-the-magic-disc/" class="bonus-card">
-          <strong>🌲 Shane &amp; the Magic Disc</strong>
-          <span>The original forest ace adventure with magical woodland creatures</span>
-        </a>
-        <a href="mystery-of-the-back-nine/" class="bonus-card">
-          <strong>🔍 Mystery of the Back Nine</strong>
-          <span>Whispering Woods clues, giant tracks &amp; the turkey flock</span>
-        </a>
-        <a href="the-legend-of-big-whalter/" class="bonus-card">
-          <strong>🎣 Big Walter</strong>
-          <span>Miller's Creek dock adventure with the river king</span>
-        </a>
-      </div>
-    </section>
 
     <!-- Hub Footer -->
     <footer class="hub-footer">

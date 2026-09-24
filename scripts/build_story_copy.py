@@ -13,7 +13,7 @@ from story_copy import STORIES
 
 ROOT = Path(__file__).resolve().parents[1]
 MENU_BLURBS = {
-    "the-houghton-lake-patrol": "Pontoon fishing • a big splash",
+    "the-fish-that-pulled-back": "Pontoon fishing • a big splash",
     "the-daring-disc-dash": "Disc golf • hear the chains",
     "the-bouncing-bicycle-brigade": "Bike ride • climb the hill",
     "the-super-snowy-sled": "Sledding • three snowy bumps",
@@ -23,7 +23,7 @@ MENU_BLURBS = {
     "the-legend-of-big-whalter": "Fishing • meet Big Walter",
 }
 TITLE_ACCENTS = {
-    "the-houghton-lake-patrol": "Pulled Back",
+    "the-fish-that-pulled-back": "Pulled Back",
     "the-daring-disc-dash": "Chains",
     "the-bouncing-bicycle-brigade": "Big Hill",
     "the-super-snowy-sled": "Sled Ride",
@@ -33,7 +33,7 @@ TITLE_ACCENTS = {
     "the-legend-of-big-whalter": "Big Walter",
 }
 VIDEO_OUTPUTS = {
-    "the-houghton-lake-patrol": "pontoon_storybook",
+    "the-fish-that-pulled-back": "pontoon_storybook",
     "the-daring-disc-dash": "disc_golf_storybook",
     "the-bouncing-bicycle-brigade": "biking_storybook",
     "the-super-snowy-sled": "sledding_storybook",
