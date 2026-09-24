@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -634,9 +634,115 @@
     }
     .btn-floating-top.visible { display: flex !important; }
 
-    .story-footer {
-      margin-top: 40px; text-align: center; font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted);
-      border-top: 1px solid var(--border-color); padding-top: 24px;
+    /* 3D Story Animation Card */
+    .story-animation-card {
+      margin-top: 48px;
+      margin-bottom: 24px;
+      padding: 30px 24px 26px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+    }
+
+    .animation-badge-wrapper {
+      margin-bottom: 12px;
+    }
+
+    .animation-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .animation-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 22px;
+      line-height: 1.5;
+    }
+
+    .animation-player-frame {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000000;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+      border: 2px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-aspect-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0d1520;
+    }
+
+    .video-aspect-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .animation-controls-bar {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .anim-pill-badge {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      background: linear-gradient(135deg, var(--text-accent), var(--accent-secondary));
+      padding: 4px 10px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .anim-caption-text {
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      font-style: italic;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .btn-fullscreen {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-accent);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-fullscreen:hover {
+      background: var(--text-accent);
+      color: #FFFFFF;
     }
 
     @media (max-width: 640px) {
@@ -877,6 +983,38 @@
 
       <p class="story-text">Alex scooped Shane into a captain's hug, safe and cozy, warm and snug. And the pontoon purred as the sun sank low, homeward bound in the golden glow.</p>
     </article>
+
+    <!-- 3D Story Animation Section -->
+    <section class="story-animation-card" id="story-animation">
+      <div class="animation-badge-wrapper">
+        <span class="scene-pill">🎬 3D Bedtime Theater</span>
+      </div>
+      <h2 class="animation-title">Watch the Pontoon Adventure in 3D!</h2>
+      <p class="animation-subtitle">A playful 3D animation created with Blender bringing the pontoon boat, the bending rod, and the leaping Houghton Lake bass to life.</p>
+
+      <div class="animation-player-frame">
+        <div class="video-aspect-box">
+          <video 
+            id="story-anim-video" 
+            controls 
+            playsinline 
+            loop 
+            autoplay 
+            muted 
+            poster="pontoon_animation_poster.jpg" 
+            preload="metadata"
+          >
+            <source src="pontoon_animation.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="animation-controls-bar">
+          <span class="anim-pill-badge">✨ 3D Animation</span>
+          <span class="anim-caption-text">Captain Shane &amp; Dad Alex hook the giant friendly bass as water ripples across Houghton Lake!</span>
+          <button type="button" class="btn-fullscreen" onclick="toggleVideoFullscreen(this)" aria-label="Toggle Fullscreen">⛶ Fullscreen</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Interactive Story Branch / Conclusion -->
     <section class="interactive-conclusion">
@@ -1140,6 +1278,22 @@
       };
 
       synth.speak(utterance);
+    }
+
+    // 7. Fullscreen Video Toggle
+    function toggleVideoFullscreen(btn) {
+      const container = btn.closest('.animation-player-frame');
+      const video = container.querySelector('video');
+      if (!video) return;
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen(); // iOS Safari
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
     }
   </script>
 </body>
