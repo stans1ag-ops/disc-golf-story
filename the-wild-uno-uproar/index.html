@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="The Wild Uno Uproar - A rhyming, alliterative bedtime adventure starring Alex and Shane in an epic Uno card game showdown.">
+  <title>The Wild Uno Uproar — Shane &amp; Alex's Bedtime Stories</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    button { font-family: inherit; font-size: inherit; color: inherit; border: none; background: none; cursor: pointer; -webkit-appearance: none; appearance: none; }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+      --bg-page: #FFFDF9;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #FDF4E3;
+      --bg-toolbar: rgba(255, 253, 249, 0.95);
+      --text-main: #2A241E;
+      --text-muted: #736758;
+      --text-accent: #E5383B;
+      --accent-yellow: #FFB703;
+      --accent-blue: #023E8A;
+      --accent-green: #2D6A4F;
+      --border-color: #EBDDC8;
+      --shadow-sm: 0 2px 8px rgba(42, 36, 30, 0.05);
+      --shadow-md: 0 8px 24px rgba(42, 36, 30, 0.08);
+      --shadow-lg: 0 16px 36px rgba(42, 36, 30, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #BA181B;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #14121A;
+      --bg-card: #1E1B29;
+      --bg-card-subtle: #2A263B;
+      --bg-toolbar: rgba(20, 18, 26, 0.96);
+      --text-main: #EFEBF5;
+      --text-muted: #A59DB5;
+      --text-accent: #FF5A5F;
+      --accent-yellow: #FFD166;
+      --accent-blue: #48CAE4;
+      --accent-green: #06D6A0;
+      --border-color: #37324D;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+      padding-bottom: 60px;
+    }
+
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #E5383B, #FFB703, #2D6A4F, #023E8A);
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: var(--bg-toolbar);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .toolbar-inner {
+      width: 100%;
+      max-width: 760px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .story-nav-container { position: relative; display: flex; align-items: center; }
+    .btn-story-selector {
+      background: var(--bg-card);
+      color: var(--text-accent);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      min-height: 38px;
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-story-selector:hover { transform: translateY(-1px); border-color: var(--text-accent); }
+    .story-chevron { font-size: 0.72rem; transition: transform 0.2s ease; }
+    .btn-story-selector.open .story-chevron { transform: rotate(180deg); }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 8px;
+      min-width: 290px;
+      z-index: 1100;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      animation: menuSlideDown 0.18s ease-out;
+    }
+    .story-dropdown-menu.open { display: flex !important; }
+
+    @keyframes menuSlideDown {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+    .story-menu-link:hover { background-color: var(--bg-card-subtle); transform: translateX(3px); }
+    .story-menu-link.active {
+      background-color: rgba(229, 56, 59, 0.12);
+      border: 1px solid var(--text-accent);
+    }
+
+    .menu-link-icon { font-size: 1.35rem; flex-shrink: 0; }
+    .menu-link-text { display: flex; flex-direction: column; text-align: left; }
+    .menu-link-title { font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--text-main); }
+    .menu-link-desc { font-family: var(--font-sans); font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+    .toolbar-actions { display: flex; align-items: center; gap: 6px; }
+    .btn-tool {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn-tool:hover { border-color: var(--text-accent); }
+
+    .theme-selector {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .theme-btn {
+      padding: 4px 8px;
+      border-radius: 16px;
+      font-size: 0.85rem;
+      transition: background-color 0.2s ease;
+    }
+    .theme-btn.active {
+      background: var(--bg-card-subtle);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .story-container {
+      width: 100%;
+      max-width: 720px;
+      padding: 24px 20px 60px;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      text-align: center;
+      padding: 32px 16px 28px;
+      margin-bottom: 36px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .badge-adventure {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #E5383B;
+      background: rgba(229, 56, 59, 0.12);
+      border: 1px solid rgba(229, 56, 59, 0.25);
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 5vw, 2.7rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .story-title .highlight-word {
+      color: var(--text-accent);
+      background: linear-gradient(120deg, rgba(229, 56, 59, 0.15) 0%, rgba(255, 183, 3, 0.25) 100%);
+      padding: 0 6px;
+      border-radius: 6px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .story-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .read-aloud-box { display: flex; justify-content: center; margin-top: 14px; }
+    .btn-read-aloud {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text-accent);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 24px;
+      box-shadow: 0 4px 14px rgba(229, 56, 59, 0.3);
+      transition: all 0.2s ease;
+    }
+    .btn-read-aloud:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(229, 56, 59, 0.45); }
+    .btn-read-aloud.speaking { background: #6A040F; animation: pulse 1.5s infinite; }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(229, 56, 59, 0.6); }
+      70% { box-shadow: 0 0 0 12px rgba(229, 56, 59, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(229, 56, 59, 0); }
+    }
+
+    .scene-section { margin-bottom: 50px; }
+    .scene-header { margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+    .scene-pill {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-accent);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+
+    p { margin-bottom: 1.35em; color: var(--text-main); text-wrap: pretty; transition: background-color 0.3s ease; }
+    .lead-paragraph::first-letter {
+      font-family: var(--font-display);
+      font-size: 3.5em;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.18em;
+      margin-top: 0.08em;
+      color: var(--text-accent);
+      font-weight: 700;
+    }
+
+    .silly-chant-box {
+      margin: 28px 0;
+      padding: 22px 20px;
+      background: linear-gradient(135deg, rgba(229, 56, 59, 0.08) 0%, rgba(255, 183, 3, 0.12) 100%);
+      border: 2px dashed var(--text-accent);
+      border-radius: 20px;
+      text-align: center;
+    }
+    .chant-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #E5383B;
+      background: var(--bg-card);
+      border: 1px solid rgba(229, 56, 59, 0.3);
+      padding: 3px 12px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+    }
+    .chant-text {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .sound-break { text-align: center; margin: 1.4em 0; }
+    .sound-fx {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-style: italic;
+      color: #E5383B;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 16px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      transform: rotate(-1.5deg);
+      transition: transform 0.2s ease;
+    }
+    .sound-fx:hover { transform: rotate(1.5deg) scale(1.05); }
+    .sound-fx.sound-large {
+      font-size: 1.45rem;
+      padding: 6px 22px;
+      color: #BA181B;
+      border-color: #FFAAA6;
+      background: linear-gradient(135deg, rgba(255, 183, 3, 0.3), rgba(229, 56, 59, 0.15));
+    }
+
+    .story-figure {
+      margin: 28px 0 32px;
+      border-radius: var(--border-radius-img);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .figure-img-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--bg-card-subtle);
+      overflow: hidden;
+      cursor: zoom-in;
+    }
+    .figure-img-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .figure-img-wrapper:hover img { transform: scale(1.02); }
+    .figure-overlay-hint {
+      position: absolute; bottom: 10px; right: 12px; background: rgba(0, 0, 0, 0.65);
+      color: #FFFFFF; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 600;
+      padding: 4px 10px; border-radius: 14px; backdrop-filter: blur(4px);
+    }
+    .story-figure figcaption {
+      padding: 12px 18px 14px; font-family: var(--font-sans); font-size: 0.88rem; font-style: italic;
+      color: var(--text-muted); text-align: center; line-height: 1.5; border-top: 1px solid var(--border-color); background-color: var(--bg-card);
+    }
+    .story-figure figcaption::before { content: "✦ "; color: var(--text-accent); font-style: normal; }
+    .para-speaking { background-color: rgba(255, 183, 3, 0.25); border-radius: 8px; padding: 4px 8px; }
+
+    .interactive-conclusion {
+      margin-top: 48px; padding: 32px 24px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px; border: 2px solid var(--border-color); box-shadow: var(--shadow-md); text-align: center;
+    }
+    .conclusion-badge {
+      display: inline-block; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-accent); margin-bottom: 12px;
+    }
+    .conclusion-question {
+      font-family: var(--font-display); font-size: clamp(1.2rem, 3.5vw, 1.45rem);
+      font-weight: 700; line-height: 1.4; margin-bottom: 24px; color: var(--text-main);
+    }
+    .choice-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 20px; }
+    @media (min-width: 600px) { .choice-grid { grid-template-columns: 1fr 1fr; } }
+    .choice-card {
+      background: var(--bg-page); border: 2px solid var(--border-color); border-radius: 18px; padding: 18px 16px;
+      text-align: left; cursor: pointer; transition: all 0.2s ease; display: flex; flex-direction: column; text-decoration: none; color: inherit;
+    }
+    .choice-card:hover { transform: translateY(-3px); border-color: var(--text-accent); box-shadow: var(--shadow-md); }
+    .choice-card-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .choice-card-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .choice-card-desc { font-family: var(--font-sans); font-size: 0.82rem; color: var(--text-muted); line-height: 1.4; flex-grow: 1; }
+    .choice-action-btn { margin-top: 10px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 700; color: var(--text-accent); }
+
+    .lightbox-modal {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px); z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
+    }
+    .lightbox-modal.active { display: flex !important; }
+    .lightbox-img-container { max-width: 1000px; max-height: 85vh; display: flex; flex-direction: column; align-items: center; position: relative; }
+    .lightbox-modal img { max-width: 100%; max-height: 75vh; object-fit: contain; border-radius: 12px; }
+    .lightbox-caption { color: #E2E8F0; font-family: var(--font-sans); font-size: 0.95rem; margin-top: 14px; text-align: center; }
+    .lightbox-close-btn { position: absolute; top: 20px; right: 20px; background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.3); color: #FFFFFF; width: 44px; height: 44px; border-radius: 50%; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; }
+
+    .btn-floating-top {
+      position: fixed; bottom: 24px; right: 24px; width: 48px; height: 48px; border-radius: 50%;
+      background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md); display: none; align-items: center; justify-content: center;
+      font-size: 1.2rem; font-weight: 700; z-index: 800; transition: transform 0.2s ease;
+    }
+    .btn-floating-top.visible { display: flex !important; }
+
+    .story-footer {
+      margin-top: 40px; text-align: center; font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted);
+      border-top: 1px solid var(--border-color); padding-top: 24px;
+    }
+
+    @media (max-width: 640px) {
+      :root { --base-font-size: 18px; }
+      .story-container { padding: 16px 16px 40px; }
+      .toolbar-inner { padding: 8px 12px; }
+      .story-title { font-size: 1.95rem; }
+      .chant-text { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Top Toolbar -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../index.html" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Story Library Hub</strong>
+              <span class="menu-link-desc">All 5 Adventures &amp; Bookshelf</span>
+            </div>
+          </a>
+          <a href="../the-houghton-lake-patrol/index.html" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚤</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Houghton Lake Patrol</strong>
+              <span class="menu-link-desc">Pontoon Fishing • Splishing &amp; Splashing</span>
+            </div>
+          </a>
+          <a href="../the-daring-disc-dash/index.html" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Daring Disc Dash</strong>
+              <span class="menu-link-desc">Disc Golf • Zippity-Zap Chains</span>
+            </div>
+          </a>
+          <a href="../the-bouncing-bicycle-brigade/index.html" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Bouncing Bicycle Brigade</strong>
+              <span class="menu-link-desc">Bike Adventure • Puddle Splashes</span>
+            </div>
+          </a>
+          <a href="../the-super-snowy-sled/index.html" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🛷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Super Snowy Sled</strong>
+              <span class="menu-link-desc">Winter Hill • Hot Cocoa &amp; Swoosh</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🃏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Wild Uno Uproar</strong>
+              <span class="menu-link-desc">Bedtime Card War • Wild Draw-Four!</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Content Container -->
+  <main class="story-container">
+
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">🃏 Bedtime Living Room Showdown</span>
+      <h1 class="story-title">The Wild <span class="highlight-word">Uno Uproar</span></h1>
+      <p class="story-subtitle">A rhyming, hilarious bedtime card duel of dinosaur pajamas, sneaky poker faces, and the mighty Wild Draw-Four!</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>4-5 min read</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>2 Watercolor Illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🗣️ <strong>Silly Rhyming Refrains</strong></span>
+      </div>
+
+      <div class="read-aloud-box">
+        <button id="btn-read-aloud" class="btn-read-aloud" aria-label="Listen to story">
+          <span id="read-aloud-icon">🔊</span>
+          <span id="read-aloud-text">Listen to Bedtime Story</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+    <article class="scene-section" id="scene-1">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • Master of the Bedtime Match</span>
+      </div>
+
+      <p class="lead-paragraph story-text">Outside the big window, the nighttime was still, the stars shone like diamonds atop the dark hill. Inside the warm cabin, the fire burned bright, casting long dancing shadows of amber and light.</p>
+
+      <p class="story-text">Dressed in his dinosaur sleeper PJ’s, sat five-year-old Shane with a mischievous gaze! Cross-legged and cozy upon the soft rug, beside his dad Alex, with hot cider in mug. Between them lay battle! Between them lay fun! The ultimate showdown before day was done!</p>
+
+      <p class="story-text">A shiny red Uno box opened up wide, with one hundred eight colorful cards held inside! <em>Riffle-riffle, snap-slap!</em> Dad shuffled the deck, Shane leaned right in close, rubbernecking his neck! Seven bright cards dealt to Alex in line, and seven dealt straight to the hands of young Shane!</p>
+
+      <!-- Illustration 1: Uno Cards Hand -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="uno_cards_hand.jpg" 
+            alt="Shane sitting cross-legged on the rug in dinosaur pajamas holding a fan of Uno cards with a cheeky grin while Alex looks on with a puzzled face." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Shane peeks over his secret fan of Uno cards with the cheekiest, sweetest bedtime poker face in the world!</figcaption>
+      </figure>
+
+      <p class="story-text">Shane fanned out his cards in a rainbow display: red twos, yellow skips, and blue fours in array! He hid them right close to his dinosaur chest, squinting his eyes to look like the best! His eyebrows bent down in a comical frown, the funniest poker face in the whole town!</p>
+
+      <p class="story-text">Alex grinned back, "Buddy, what do you hold? A hand made of silver? A hand made of gold?" Shane giggled behind his cards, ready to play, and started his silly Uno chant for the day:</p>
+
+      <!-- Silly Chant 1 -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🗣️ Shout the Uno Battle Chant!</span>
+        <p class="chant-text">
+          "Shuffle and slap and lay it neat,<br>
+          Shane’s got cards that can’t be beat!<br>
+          Red, yellow, green, or blue,<br>
+          Draw-Four, Dad, and UNO too!"
+        </p>
+      </div>
+    </article>
+
+    <!-- SCENE 2 -->
+    <article class="scene-section" id="scene-2">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • The Rainbow Thunderbolt Attack</span>
+      </div>
+
+      <p class="story-text">The first card flipped over: a shiny Blue Eight! "My turn!" said Dad Alex, "Let's see your sad fate!" Alex laid down a Blue Two with a slap, Shane didn't blink, he was ready to trap!</p>
+
+      <p class="story-text">Shane placed down a Red Two—the color flipped red! "Aha!" chuckled Alex, and tilted his head. Alex played Red Five. Shane dropped a Red Skip! "Hey, skipping your dad?" Alex smiled with a lip!</p>
+
+      <p class="story-text">Shane tapped on the rug, "You can't play, Dad! My turn!" He dropped a Red Reverse, making the game churn! Dad had to draw one: <em>zzzt!</em> from the pile! Shane watched his dad draw with a triumphant smile!</p>
+
+      <p class="story-text">Then Dad dropped a Green Seven down on the wood. "Can you beat that, Shane? Do you think that you could?" Shane paused for a moment. He looked at his hand. He held just two cards—the grandest in the land!</p>
+
+      <div class="sound-break">
+        <span class="sound-fx sound-large">SLAAAAAAAAAAAAAP!</span>
+      </div>
+
+      <!-- Illustration 2: Wild Draw Four -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="uno_drawfour_play.jpg" 
+            alt="Shane laughing hysterically as he slaps down a rainbow Wild Draw 4 card onto the table while Alex holds his hands to his head in comic disbelief." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>WILD DRAW FOUR! Shane slaps down the ultimate card with a burst of laughter as Alex gasps in theatrical defeat!</figcaption>
+      </figure>
+
+      <p class="story-text">Down on the table the thunderbolt flew: a <strong>WILD DRAW FOUR</strong>, black and rainbow in hue! Four colors of power, explosive and bold, the mightiest weapon an Uno hand can hold!</p>
+
+      <p class="story-text">"DRAW FOUR, DAD!" screamed Shane with a laugh and a cheer, the loudest sound heard in the living room here! Alex dropped his jaw open in theatrical grief, clutching his head in complete disbelief! "Not the Draw Four! Oh, the sorrow! The pain! Defeated by five-year-old Captain Shane!"</p>
+
+      <!-- Silly Chant 2 -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🗣️ Chant in Victory!</span>
+        <p class="chant-text">
+          "Shuffle and slap and lay it neat,<br>
+          Shane’s got cards that can’t be beat!<br>
+          Red, yellow, green, or blue,<br>
+          Draw-Four, Dad, and UNO too!"
+        </p>
+      </div>
+    </article>
+
+    <!-- SCENE 3 -->
+    <article class="scene-section" id="scene-3">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • The Shout of Uno and the Bedtime Hug</span>
+      </div>
+
+      <p class="story-text">Dad reached to the pile: <em>one, two, three, and four!</em> His hand was so fat it dropped down to the floor! "What color do you name, Master Shane of the Deck?" asked Alex, laughing, scratching his neck. Shane pointed his finger with theatrical poise: "The color is YELLOW!" he shouted with noise!</p>
+
+      <p class="story-text">And then came the rule that every player knows well: Shane held just ONE card, as light as a shell. He raised it straight up to the ceiling so high, and let out a mighty and musical cry:</p>
+
+      <div class="sound-break">
+        <span class="sound-fx sound-large">UNO!</span>
+      </div>
+
+      <p class="story-text">"<strong>UNO!</strong>" yelled Shane, with a bounce and a bound, the happiest word that the nighttime had found! Dad Alex looked down at his cards with a sigh, he laid down a Yellow, but Shane didn't cry—Shane slapped his last card: a Yellow Five neat, making the victory grand and complete!</p>
+
+      <p class="story-text">"I WON!" cheered Shane, tumbling onto the rug, as Alex reached out with a giant bear hug! He scooped Shane up tight, giving tickles and squeezes, while little Shane giggled as hard as he pleases! "You're the Uno Champion," whispered Dad in his ear, "The cleverest, fastest kid far and near."</p>
+
+      <p class="story-text">Shane nestled his head under Alex's chin, worn out from the laughter and weary of win. The fire crackled softly with embers of red, signaling two sleepy players to bed.</p>
+
+      <!-- Silly Chant 3 (Bedtime Goodnight) -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🌙 Sleepy Bedtime Whispers</span>
+        <p class="chant-text">
+          "Cards put away and laid down neat,<br>
+          Bedtime has come on sleepy feet!<br>
+          Uno was wild, but cuddle up tight,<br>
+          Shane loves his Dad... and whispers: Goodnight!"
+        </p>
+      </div>
+
+      <p class="story-text">With the Uno cards gathered and tucked in their case, Shane closed his eyes with a smile on his face, ready for sweet dreams of tomorrow's adventures.</p>
+    </article>
+
+    <!-- Interactive Story Branch / Conclusion -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">✨ Read Another Story</span>
+      <h2 class="conclusion-question">Which adventure should Shane and Alex go on tomorrow?</h2>
+      
+      <div class="choice-grid">
+        <a href="../the-houghton-lake-patrol/index.html" class="choice-card">
+          <span class="choice-card-icon">🚤</span>
+          <strong class="choice-card-title">The Houghton Lake Patrol</strong>
+          <span class="choice-card-desc">Captain the pontoon boat, reel in the jumping bass, and sing the fishing chant on Houghton Lake!</span>
+          <span class="choice-action-btn">Read Pontoon Story ➔</span>
+        </a>
+
+        <a href="../the-daring-disc-dash/index.html" class="choice-card">
+          <span class="choice-card-icon">🥏</span>
+          <strong class="choice-card-title">The Daring Disc Dash</strong>
+          <span class="choice-card-desc">Head to Whispering Woods with the orange Roadrunner disc! Watch for zipping curves and the clattering chains.</span>
+          <span class="choice-action-btn">Read Disc Golf Story ➔</span>
+        </a>
+
+        <a href="../the-bouncing-bicycle-brigade/index.html" class="choice-card">
+          <span class="choice-card-icon">🚲</span>
+          <strong class="choice-card-title">The Bouncing Bicycle Brigade</strong>
+          <span class="choice-card-desc">Click your helmets, hop on the pedals, splash through giant puddles, and climb the Big Bumpy Hill!</span>
+          <span class="choice-action-btn">Read Biking Story ➔</span>
+        </a>
+
+        <a href="../the-super-snowy-sled/index.html" class="choice-card">
+          <span class="choice-card-icon">🛷</span>
+          <strong class="choice-card-title">The Super Snowy Sled</strong>
+          <span class="choice-card-desc">Bundle up in puffy snowsuits, rocket down Mount Snowball, and enjoy marshmallow cocoa!</span>
+          <span class="choice-action-btn">Read Sledding Story ➔</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>🃏 <em>The Wild Uno Uproar</em> • Starring Alex &amp; Shane</p>
+      <p style="margin-top: 6px; font-size: 0.8rem;">Designed with love for cozy bedtime reading anywhere on your phone</p>
+    </footer>
+
+  </main>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+      if (winScroll > 300) topBtn.classList.add('visible');
+      else topBtn.classList.remove('visible');
+    });
+
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {
+      btnStoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        } else {
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('shane-stories-theme', theme); } catch (e) {}
+      themeButtons.forEach(b => {
+        if (b.dataset.themeVal === theme) b.classList.add('active');
+        else b.classList.remove('active');
+      });
+    }
+    themeButtons.forEach(btn => btn.addEventListener('click', () => setTheme(btn.dataset.themeVal)));
+
+    try {
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) setTheme(savedTheme);
+      else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('night');
+    } catch (e) {}
+
+    let currentFontSize = 19;
+    try { currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10); } catch (e) {}
+    function updateFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try { localStorage.setItem('shane-stories-fontsize', currentFontSize); } catch (e) {}
+    }
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent.replace('✦ ', '') : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+
+    const btnReadAloud = document.getElementById('btn-read-aloud');
+    const readAloudText = document.getElementById('read-aloud-text');
+    const readAloudIcon = document.getElementById('read-aloud-icon');
+    let isSpeaking = false;
+    let synth = window.speechSynthesis;
+    let storyParagraphs = [];
+    let currentParaIdx = 0;
+
+    if ('speechSynthesis' in window) {
+      storyParagraphs = Array.from(document.querySelectorAll('.story-text, .chant-text'));
+      btnReadAloud.addEventListener('click', () => {
+        if (isSpeaking) stopSpeaking();
+        else startSpeaking();
+      });
+    } else {
+      btnReadAloud.style.display = 'none';
+    }
+
+    function startSpeaking() {
+      if (!synth) return;
+      synth.cancel();
+      isSpeaking = true;
+      btnReadAloud.classList.add('speaking');
+      readAloudIcon.textContent = '⏹️';
+      readAloudText.textContent = 'Pause Reading';
+      currentParaIdx = 0;
+      speakNextParagraph();
+    }
+
+    function stopSpeaking() {
+      if (synth) synth.cancel();
+      isSpeaking = false;
+      btnReadAloud.classList.remove('speaking');
+      readAloudIcon.textContent = '🔊';
+      readAloudText.textContent = 'Listen to Bedtime Story';
+      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
+    }
+
+    function speakNextParagraph() {
+      if (!isSpeaking || currentParaIdx >= storyParagraphs.length) {
+        stopSpeaking();
+        return;
+      }
+      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
+      const targetPara = storyParagraphs[currentParaIdx];
+      targetPara.classList.add('para-speaking');
+      targetPara.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const text = targetPara.innerText || targetPara.textContent;
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.92;
+      utterance.pitch = 1.05;
+      utterance.onend = () => {
+        if (isSpeaking) {
+          currentParaIdx++;
+          setTimeout(speakNextParagraph, 300);
+        }
+      };
+      utterance.onerror = () => stopSpeaking();
+      synth.speak(utterance);
+    }
+  </script>
+</body>
+</html>
