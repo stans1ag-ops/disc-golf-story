@@ -1,0 +1,1474 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="A red ball in a tree, a pool noodle, and a sock hat.">
+  <title>Tyson and Pikachu’s Lost Ball — Tyson&apos;s Big Adventures</title>
+
+  <!-- Google Fonts with full system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      touch-action: manipulation;
+    }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #E06714;
+      --accent-pink: #D94680;
+      --accent-forest: #2D6A4F;
+      --accent-forest-light: #52B788;
+      --accent-gold: #D4A373;
+      --accent-sparkle: #F4A261;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #C25400;
+      --accent-pink: #C73B73;
+      --accent-forest: #265942;
+      --accent-forest-light: #40916C;
+      --accent-gold: #C09565;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #131A17;
+      --bg-card: #1B2420;
+      --bg-card-subtle: #24302B;
+      --bg-toolbar: rgba(19, 26, 23, 0.96);
+      --text-main: #EDE7DC;
+      --text-muted: #A3B1A8;
+      --text-accent: #F48C42;
+      --accent-pink: #F472B6;
+      --accent-forest: #74C69D;
+      --accent-forest-light: #95D5B2;
+      --accent-gold: #E9C46A;
+      --border-color: #2F3D37;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      letter-spacing: 0.01em;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+      padding-bottom: 60px;
+    }
+
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--text-accent), var(--accent-pink), var(--accent-forest-light));
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: var(--bg-toolbar);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .toolbar-inner {
+      width: 100%;
+      max-width: 760px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    /* Story Switcher Dropdown */
+    .story-nav-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-story-selector {
+      background: var(--bg-card);
+      color: var(--accent-forest);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      min-height: 38px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-theme="night"] .btn-story-selector {
+      color: var(--accent-forest-light);
+    }
+
+    .btn-story-selector:hover {
+      transform: translateY(-1px);
+      border-color: var(--text-accent);
+    }
+
+    .story-chevron {
+      font-size: 0.72rem;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-story-selector.open .story-chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 8px;
+      min-width: 290px;
+      max-width: calc(100vw - 32px);
+      max-height: min(72vh, 600px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      z-index: 1100;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      animation: menuSlideDown 0.18s ease-out;
+    }
+
+    .story-dropdown-menu.open {
+      display: flex !important;
+    }
+
+    @keyframes menuSlideDown {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .story-menu-link:hover {
+      background-color: var(--bg-card-subtle);
+      transform: translateX(3px);
+    }
+
+    .story-menu-link.active {
+      background-color: rgba(82, 183, 136, 0.15);
+      border: 1px solid var(--accent-forest-light);
+    }
+
+    .menu-link-icon {
+      font-size: 1.35rem;
+      flex-shrink: 0;
+    }
+
+    .menu-link-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .menu-link-title {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+
+    .menu-link-desc {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .toolbar-title {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--accent-forest);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    [data-theme="night"] .toolbar-title {
+      color: var(--accent-forest-light);
+    }
+
+    .toolbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .btn-tool {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      min-height: 38px;
+      min-width: 38px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-tool:hover {
+      transform: translateY(-1px);
+      border-color: var(--text-accent);
+    }
+
+    .btn-tool:active {
+      transform: scale(0.95);
+    }
+
+    .theme-selector {
+      display: flex;
+      background: var(--bg-card-subtle);
+      border-radius: 22px;
+      padding: 2px;
+      border: 1px solid var(--border-color);
+    }
+
+    .theme-btn {
+      padding: 5px 9px;
+      border-radius: 18px;
+      font-size: 0.9rem;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .theme-btn.active {
+      background: var(--bg-card);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .story-container {
+      width: 100%;
+      max-width: 740px;
+      padding: 24px 20px 48px;
+    }
+
+    .story-header {
+      text-align: center;
+      margin-bottom: 36px;
+      padding: 32px 20px 24px;
+      background: linear-gradient(180deg, var(--bg-card-subtle) 0%, transparent 100%);
+      border-radius: 24px;
+      border: 1px solid var(--border-color);
+    }
+
+    .badge-adventure {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-forest);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 30px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-theme="night"] .badge-adventure {
+      color: var(--accent-forest-light);
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 6vw, 2.9rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .story-title .magic-word {
+      background: linear-gradient(135deg, #FF7E29, #F2547D, #52B788);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .story-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .read-aloud-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-read-aloud {
+      background: linear-gradient(135deg, var(--accent-forest), #1F4D38);
+      color: #FFFFFF;
+      border-radius: 30px;
+      padding: 10px 22px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.25s ease;
+    }
+
+    [data-theme="night"] .btn-read-aloud {
+      background: linear-gradient(135deg, var(--accent-forest), var(--accent-forest-light));
+      color: #0E1813;
+    }
+
+    .btn-read-aloud:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-read-aloud.playing {
+      background: linear-gradient(135deg, #D94680, #C25E00);
+      animation: pulse-glow 2s infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(217, 70, 128, 0.4); }
+      50% { box-shadow: 0 0 25px rgba(217, 70, 128, 0.7); }
+    }
+
+    .scene-section {
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 36px 0 20px;
+      padding-top: 10px;
+    }
+
+    .scene-header::before,
+    .scene-header::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+
+    .scene-pill {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-forest);
+      background: var(--bg-card);
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    [data-theme="night"] .scene-pill {
+      color: var(--accent-forest-light);
+    }
+
+    p {
+      margin-bottom: 1.35em;
+      color: var(--text-main);
+      text-wrap: pretty;
+      transition: background-color 0.3s ease;
+    }
+
+    .lead-paragraph::first-letter {
+      font-family: var(--font-display);
+      font-size: 3.5em;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.18em;
+      margin-top: 0.08em;
+      color: var(--text-accent);
+      font-weight: 700;
+    }
+
+    .dialogue {
+      position: relative;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent-sparkle);
+      margin: 1.25em 0;
+      font-style: normal;
+    }
+
+    .disc-roadrunner {
+      color: var(--text-accent);
+      font-weight: 700;
+      background: rgba(244, 140, 66, 0.12);
+      padding: 1px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(244, 140, 66, 0.25);
+    }
+
+    .disc-pink {
+      color: var(--accent-pink);
+      font-weight: 700;
+      background: rgba(217, 70, 128, 0.12);
+      padding: 1px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(217, 70, 128, 0.25);
+    }
+
+    .sound-break {
+      text-align: center;
+      margin: 1.4em 0;
+    }
+
+    .sound-fx {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-style: italic;
+      color: var(--text-accent);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 3px 14px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      transform: rotate(-1.5deg);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: default;
+    }
+
+    .sound-fx:hover {
+      transform: rotate(1deg) scale(1.06);
+      box-shadow: var(--shadow-md);
+    }
+
+    .sound-fx.sound-large {
+      font-size: 1.45rem;
+      padding: 6px 20px;
+      color: #E65100;
+      border-color: #FFB74D;
+      background: linear-gradient(135deg, rgba(255,183,77,0.15), rgba(255,243,224,0.3));
+    }
+
+    [data-theme="night"] .sound-fx.sound-large {
+      color: #FFB74D;
+      border-color: #F57C00;
+      background: rgba(245, 124, 0, 0.18);
+    }
+
+    .sound-fx.sound-chains {
+      font-size: 1.35rem;
+      padding: 6px 18px;
+      color: var(--accent-forest);
+      border-color: var(--accent-forest-light);
+      background: linear-gradient(135deg, rgba(82,183,136,0.18), rgba(45,106,79,0.12));
+    }
+
+    [data-theme="night"] .sound-fx.sound-chains {
+      color: var(--accent-forest-light);
+      border-color: var(--accent-forest);
+    }
+
+    .story-figure {
+      margin: 28px 0 32px;
+      position: relative;
+      border-radius: var(--border-radius-img);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1376 / 768;
+      background: var(--bg-card-subtle);
+      overflow: hidden;
+      cursor: zoom-in;
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .figure-img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 14px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      pointer-events: none;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 18px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.5;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-card);
+    }
+
+    .story-figure figcaption::before {
+      content: "✦ ";
+      color: var(--text-accent);
+      font-style: normal;
+      font-size: 0.8rem;
+    }
+
+    .para-speaking {
+      background-color: rgba(244, 162, 97, 0.22);
+      border-radius: 8px;
+      padding: 4px 8px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+    .interactive-conclusion {
+      margin-top: 48px;
+      padding: 32px 24px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-accent);
+      margin-bottom: 12px;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3.5vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .choice-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 2px solid var(--border-color);
+      border-radius: 18px;
+      padding: 20px 18px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 140px;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .choice-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--text-accent);
+      box-shadow: var(--shadow-md);
+    }
+
+    .choice-card-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .choice-card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .choice-card-desc {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: block;
+    }
+
+    .choice-action-btn {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-forest);
+    }
+
+    [data-theme="night"] .choice-action-btn {
+      color: var(--accent-forest-light);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      touch-action: manipulation;
+    }
+
+    .lightbox-modal.active {
+      display: flex !important;
+    }
+
+    .lightbox-img-container {
+      max-width: 1000px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .lightbox-modal img {
+      max-width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-caption {
+      color: #E2E8F0;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      margin-top: 14px;
+      text-align: center;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #FFFFFF;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Floating Back to Top Button */
+    .btn-floating-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      z-index: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-floating-top.visible {
+      display: flex !important;
+    }
+
+    .btn-floating-top:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .story-footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    /* Mobile Responsive Optimizations */
+    @media (max-width: 640px) {
+      :root {
+        --base-font-size: 18px;
+        --line-height: 1.74;
+        --border-radius-img: 14px;
+      }
+
+      .story-container {
+        padding: 16px 16px 40px;
+      }
+
+      .story-header {
+        padding: 24px 14px 20px;
+        margin-bottom: 28px;
+      }
+
+      .story-title {
+        font-size: 1.95rem;
+      }
+
+      .story-subtitle {
+        font-size: 1rem;
+      }
+
+      .toolbar-inner {
+        padding: 8px 12px;
+      }
+
+      .toolbar-title {
+        display: none;
+      }
+
+      .btn-tool {
+        padding: 4px 8px;
+        font-size: 0.78rem;
+        min-height: 36px;
+      }
+
+      .story-figure {
+        margin: 22px 0 26px;
+      }
+
+      .story-figure figcaption {
+        padding: 10px 14px;
+        font-size: 0.82rem;
+      }
+
+      .sound-fx.sound-large {
+        font-size: 1.25rem;
+      }
+
+      .sound-fx.sound-chains {
+        font-size: 1.15rem;
+      }
+
+      .interactive-conclusion {
+        padding: 24px 16px;
+      }
+
+      .choice-card {
+        padding: 16px 14px;
+        min-height: auto;
+      }
+    }
+
+    @media print {
+      .top-toolbar, #progress-bar, .btn-floating-top, .read-aloud-box, .interactive-conclusion, .lightbox-modal {
+        display: none !important;
+      }
+
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 12pt;
+        line-height: 1.5;
+      }
+
+      .story-figure {
+        box-shadow: none !important;
+        border: 1px solid #CCCCCC !important;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Sticky Top Reading Controls -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <!-- Story Switcher Dropdown -->
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson&apos;s Story Hub</strong>
+              <span class="menu-link-desc">All 6 Tyson Adventures</span>
+            </div>
+          </a>
+          <a href="../the-big-splash/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson and the Big Splash</strong>
+              <span class="menu-link-desc">Fishing • a stick and a splash</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">⚡</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson and Pikachu’s Lost Ball</strong>
+              <span class="menu-link-desc">Park • the lost ball</span>
+            </div>
+          </a>
+          <a href="../the-sneaky-flag-play/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏈</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson and the Sneaky Flag Play</strong>
+              <span class="menu-link-desc">Football • find the space</span>
+            </div>
+          </a>
+          <a href="../marios-missing-star/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🍄</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson and Mario’s Missing Star</strong>
+              <span class="menu-link-desc">Mario’s world • the missing star</span>
+            </div>
+          </a>
+          <a href="../the-bike-bell-clue/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson and the Bike Bell Clue</strong>
+              <span class="menu-link-desc">Bikes • the missing toy car</span>
+            </div>
+          </a>
+          <a href="../the-fish-that-said-plop/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">💧</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Tyson and the Fish That Said Plop</strong>
+              <span class="menu-link-desc">Pond • Squirtle’s pranks</span>
+            </div>
+          </a>
+          <a href="../../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">📖</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane&apos;s Stories</strong>
+              <span class="menu-link-desc">Shane&apos;s 8 Bedtime Adventures</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-title">
+        <span>⚡</span>
+        <span>Tyson and Pikachu’s Lost Ball</span>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Content Container -->
+  <main class="story-container">
+
+        <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">⚡ A Park Adventure</span>
+      <h1 class="story-title">Tyson and <span class="magic-word">Pikachu’s Lost Ball</span></h1>
+      <p class="story-subtitle">A red ball in a tree, a pool noodle, and a sock hat.</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>3-4 min read</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>4 Illustrated Scenes</strong></span>
+        <span>•</span>
+        <span class="meta-item"><strong>🎯 Playground Problem-Solving</strong></span>
+      </div>
+
+      <div class="read-aloud-box">
+        <button id="btn-read-aloud" class="btn-read-aloud" aria-label="Listen to story">
+          <span id="read-aloud-icon">🔊</span>
+          <span id="read-aloud-text">Listen to Story</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+    
+
+    <!-- SCENE 2 -->
+        <article class="scene-section" id="scene-1">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • A tail in the bush</span>
+      </div>
+
+      <p class="lead-paragraph story-text">Tyson and his mom, Theresa, were at the park. A yellow tail poked out of a bush. “Pika?” Tyson bent down. It was Pikachu!</p>
+
+      <p class="story-text">“Hi!” said Tyson. “What is wrong?” Pikachu pointed up. A red ball sat in a tree. “Your ball is stuck,” said Mom.</p>
+
+<figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="tail-in-bush.webp" 
+            alt="Tyson bending down to peek at Pikachu&#x27;s yellow tail sticking out of a green bush at the park while Mom smiles behind him." 
+            loading="lazy"
+            width="1920" 
+            height="1280"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>A yellow tail pokes out of the bush — it’s Pikachu!</figcaption>
+      </figure>
+
+    </article>
+
+    <!-- SCENE 3 -->
+        <article class="scene-section" id="scene-2">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • Shake the tree</span>
+      </div>
+
+      <p class="story-text">Tyson looked at the low branch. He could not reach it. “I have a plan,” he said. “Can we shake the tree?” Mom held the trunk. Tyson held it, too. They gave it a small shake.</p>
+
+      <p class="story-text">One leaf fell. It landed on Pikachu’s head. “Nice hat,” said Tyson.</p>
+
+<figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="leaf-hat.webp" 
+            alt="Mom and Tyson shaking a small tree while a leaf lands on Pikachu&#x27;s head like a hat." 
+            loading="lazy"
+            width="1920" 
+            height="1280"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>One leaf falls — right onto Pikachu’s head.</figcaption>
+      </figure>
+
+    </article>
+
+    <!-- SCENE 4 -->
+        <article class="scene-section" id="scene-3">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • The pool noodle</span>
+      </div>
+
+      <p class="story-text">Pikachu shook off the leaf. The ball did not move. Tyson sat on the grass to think. Then he saw a long blue tube in Mom’s bag. His pool noodle!</p>
+
+      <p class="story-text">“Can we use that?” he asked. Mom held up the soft noodle. It just reached the ball. Tap. Tap. Nothing. “Try from this side,” said Tyson. Mom moved. Tyson stood back with Pikachu. Tap!</p>
+
+<figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="pool-noodle.webp" 
+            alt="Mom reaching up with a long blue pool noodle toward the red ball stuck in the tree while Tyson and Pikachu watch." 
+            loading="lazy"
+            width="1920" 
+            height="1280"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Mom reaches the ball with the blue pool noodle.</figcaption>
+      </figure>
+
+    </article>
+
+    <!-- SCENE 5 -->
+        <article class="scene-section" id="scene-4">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • Boing!</span>
+      </div>
+
+      <p class="story-text">The ball fell. Boing! It hit the grass. Boing! It bounced right into Mom’s open bag. Pikachu ran to the bag. Out came the ball. Out came a sock, too. Pikachu had the sock on one ear!</p>
+
+      <p class="story-text">Tyson giggled. “That is an even better hat.” They played catch on the grass. Tyson threw. Mom caught. Pikachu rolled the ball back. At last, it was time to go. Pikachu gave Tyson a soft hug. “Same park next time?” asked Tyson. “Pika, pika!” Tyson smiled. He was sure that meant yes.</p>
+
+<figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="ball-in-bag.webp" 
+            alt="The red ball bouncing into Mom&#x27;s open tote bag with a sock flying onto Pikachu&#x27;s ear as everyone laughs on the grass." 
+            loading="lazy"
+            width="1920" 
+            height="1280"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>The ball bounces into Mom’s bag — and out pops a sock.</figcaption>
+      </figure>
+
+      <div class="silly-chant-box">
+        <span class="chant-badge">🗣️ Say it with Tyson</span>
+        <p class="chant-text">Pika, pika!</p>
+      </div>
+
+    </article>
+
+    <!-- Interactive Story Branch / Conclusion -->
+        <section class="interactive-conclusion">
+      <span class="conclusion-badge">✨ What Adventure Is Next?</span>
+      <h2 class="conclusion-question">Ready to keep exploring? Choose Tyson&apos;s next adventure!</h2>
+      
+      <div class="choice-grid">
+        <a href="../the-sneaky-flag-play/" class="choice-card">
+          <span class="choice-card-icon">🏈</span>
+          <strong class="choice-card-title">Tyson and the Sneaky Flag Play</strong>
+          <span class="choice-card-desc">Look for the space — and hold on to your hat.</span>
+          <span class="choice-action-btn">Read this adventure ➔</span>
+        </a>
+        <a href="../marios-missing-star/" class="choice-card">
+          <span class="choice-card-icon">🍄</span>
+          <strong class="choice-card-title">Tyson and Mario’s Missing Star</strong>
+          <span class="choice-card-desc">A missing star, a thorn, and a happy Yoshi.</span>
+          <span class="choice-action-btn">Read this adventure ➔</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>⚡ <em>Tyson and Pikachu’s Lost Ball</em> • A Park Adventure with Mom</p>
+      <div class="footer-links">
+        <span>Designed for cozy bedtime &amp; mobile reading</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (winScroll > 350) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    });
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {
+      btnStoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        } else {
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try {
+        localStorage.setItem('disc-golf-story-theme', theme);
+      } catch (e) {}
+
+      themeButtons.forEach(b => {
+        if (b.dataset.themeVal === theme) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    });
+
+    try {
+      const savedTheme = localStorage.getItem('disc-golf-story-theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('night');
+      }
+    } catch (e) {}
+
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {
+      currentFontSize = parseInt(localStorage.getItem('disc-golf-story-fontsize') || 19, 10);
+    } catch (e) {}
+
+    function updateFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try {
+        localStorage.setItem('disc-golf-story-fontsize', currentFontSize);
+      } catch (e) {}
+    }
+
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent.replace('✦ ', '') : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (lightboxModal.classList.contains('active')) {
+          lightboxModal.classList.remove('active');
+          lightboxModal.style.display = 'none';
+          lightboxImg.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+        if (storyDropdown) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+        }
+      }
+    });
+
+    // 6. Narrated Audio Playback (pre-recorded story narration)
+    const btnReadAloud = document.getElementById('btn-read-aloud');
+    const readAloudText = document.getElementById('read-aloud-text');
+    const readAloudIcon = document.getElementById('read-aloud-icon');
+    const narrationAudio = new Audio('narration.mp3');
+    narrationAudio.preload = 'metadata';
+    const storyParagraphs = Array.from(document.querySelectorAll('.story-text'));
+    let paraTimings = [];
+
+    function computeTimings() {
+      const total = narrationAudio.duration;
+      if (!total || !isFinite(total)) return false;
+      const lens = storyParagraphs.map(p => ((p.innerText || p.textContent) || '').trim().length || 1);
+      const sum = lens.reduce((a, b) => a + b, 0);
+      let acc = 0;
+      paraTimings = lens.map(l => { const t = acc / sum * total; acc += l; return t; });
+      return true;
+    }
+
+    function resetReadAloudUI() {
+      btnReadAloud.classList.remove('playing');
+      readAloudIcon.textContent = '🔊';
+      readAloudText.textContent = 'Listen to Story';
+      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
+    }
+
+    function highlightForTime(t) {
+      if (!paraTimings.length) return;
+      let idx = 0;
+      for (let i = 0; i < paraTimings.length; i++) { if (t >= paraTimings[i]) idx = i; }
+      storyParagraphs.forEach((p, i) => {
+        if (i === idx) {
+          if (!p.classList.contains('para-speaking')) {
+            p.classList.add('para-speaking');
+            p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } else {
+          p.classList.remove('para-speaking');
+        }
+      });
+    }
+
+    btnReadAloud.addEventListener('click', () => {
+      if (narrationAudio.paused) {
+        if (narrationAudio.ended) narrationAudio.currentTime = 0;
+        if (!computeTimings()) {
+          readAloudText.textContent = 'Loading…';
+          narrationAudio.addEventListener('loadedmetadata', () => btnReadAloud.click(), { once: true });
+          narrationAudio.load();
+          return;
+        }
+        narrationAudio.play();
+        btnReadAloud.classList.add('playing');
+        readAloudIcon.textContent = '⏸️';
+        readAloudText.textContent = 'Stop Reading';
+      } else {
+        narrationAudio.pause();
+        resetReadAloudUI();
+      }
+    });
+
+    narrationAudio.addEventListener('timeupdate', () => highlightForTime(narrationAudio.currentTime));
+    narrationAudio.addEventListener('ended', resetReadAloudUI);
+    narrationAudio.addEventListener('error', resetReadAloudUI);
+  </script>
+</body>
+</html>
