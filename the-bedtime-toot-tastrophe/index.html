@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="A little yellow rod catches something surprising at Miller’s Creek.">
-  <title>Big Walter — Shane &amp; Alex’s Bedtime Stories</title>
+  <meta name="description" content="An orange disc flies into the ferns. Who brings it back?">
+  <title>The Bedtime Toot-Tastrophe — Shane &amp; Alex’s Bedtime Stories</title>
 
   <!-- Google Fonts with full system fallbacks -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,6 @@
       --accent-forest-light: #52B788;
       --accent-gold: #D4A373;
       --accent-sparkle: #F4A261;
-      --accent-river: #0077B6;
       --border-color: #E6DCCE;
       --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
       --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
@@ -73,26 +72,24 @@
       --accent-forest: #265942;
       --accent-forest-light: #40916C;
       --accent-gold: #C09565;
-      --accent-river: #0A6B99;
       --border-color: #DBD0BC;
       --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
       --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
     }
 
     [data-theme="night"] {
-      --bg-page: #10191F;
-      --bg-card: #18242C;
-      --bg-card-subtle: #20313C;
-      --bg-toolbar: rgba(16, 25, 31, 0.96);
-      --text-main: #E7EEF3;
-      --text-muted: #9EB2C0;
+      --bg-page: #131A17;
+      --bg-card: #1B2420;
+      --bg-card-subtle: #24302B;
+      --bg-toolbar: rgba(19, 26, 23, 0.96);
+      --text-main: #EDE7DC;
+      --text-muted: #A3B1A8;
       --text-accent: #F48C42;
       --accent-pink: #F472B6;
-      --accent-forest: #48CAE4;
-      --accent-forest-light: #90E0EF;
+      --accent-forest: #74C69D;
+      --accent-forest-light: #95D5B2;
       --accent-gold: #E9C46A;
-      --accent-river: #48CAE4;
-      --border-color: #263C4A;
+      --border-color: #2F3D37;
       --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
       --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
     }
@@ -125,7 +122,7 @@
       left: 0;
       width: 0%;
       height: 4px;
-      background: linear-gradient(90deg, #0077B6, #48CAE4, var(--text-accent));
+      background: linear-gradient(90deg, var(--text-accent), var(--accent-pink), var(--accent-forest-light));
       z-index: 1000;
       transition: width 0.1s ease-out;
     }
@@ -163,7 +160,7 @@
 
     .btn-story-selector {
       background: var(--bg-card);
-      color: var(--accent-river);
+      color: var(--accent-forest);
       border: 1px solid var(--border-color);
       border-radius: 20px;
       padding: 6px 14px;
@@ -179,7 +176,7 @@
     }
 
     [data-theme="night"] .btn-story-selector {
-      color: var(--accent-river);
+      color: var(--accent-forest-light);
     }
 
     .btn-story-selector:hover {
@@ -243,8 +240,8 @@
     }
 
     .story-menu-link.active {
-      background-color: rgba(0, 119, 182, 0.15);
-      border: 1px solid var(--accent-river);
+      background-color: rgba(82, 183, 136, 0.15);
+      border: 1px solid var(--accent-forest-light);
     }
 
     .menu-link-icon {
@@ -277,13 +274,17 @@
       font-family: var(--font-display);
       font-size: 0.92rem;
       font-weight: 700;
-      color: var(--accent-river);
+      color: var(--accent-forest);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       display: flex;
       align-items: center;
       gap: 6px;
+    }
+
+    [data-theme="night"] .toolbar-title {
+      color: var(--accent-forest-light);
     }
 
     .toolbar-actions {
@@ -366,7 +367,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--accent-river);
+      color: var(--accent-forest);
       background-color: var(--bg-card);
       border: 1px solid var(--border-color);
       padding: 6px 14px;
@@ -376,7 +377,7 @@
     }
 
     [data-theme="night"] .badge-adventure {
-      color: var(--accent-river);
+      color: var(--accent-forest-light);
     }
 
     .story-title {
@@ -390,7 +391,7 @@
     }
 
     .story-title .magic-word {
-      background: linear-gradient(135deg, #0077B6, #00B4D8, #52B788);
+      background: linear-gradient(135deg, #FF7E29, #F2547D, #52B788);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -429,7 +430,7 @@
     }
 
     .btn-read-aloud {
-      background: linear-gradient(135deg, #0077B6, #023E8A);
+      background: linear-gradient(135deg, var(--accent-forest), #1F4D38);
       color: #FFFFFF;
       border-radius: 30px;
       padding: 10px 22px;
@@ -444,8 +445,8 @@
     }
 
     [data-theme="night"] .btn-read-aloud {
-      background: linear-gradient(135deg, #0077B6, #48CAE4);
-      color: #0A141A;
+      background: linear-gradient(135deg, var(--accent-forest), var(--accent-forest-light));
+      color: #0E1813;
     }
 
     .btn-read-aloud:hover {
@@ -488,7 +489,7 @@
       font-family: var(--font-display);
       font-size: 0.85rem;
       font-weight: 700;
-      color: var(--accent-river);
+      color: var(--accent-forest);
       background: var(--bg-card);
       padding: 4px 14px;
       border-radius: 20px;
@@ -497,6 +498,10 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       white-space: nowrap;
+    }
+
+    [data-theme="night"] .scene-pill {
+      color: var(--accent-forest-light);
     }
 
     p {
@@ -513,16 +518,34 @@
       line-height: 0.82;
       margin-right: 0.18em;
       margin-top: 0.08em;
-      color: var(--accent-river);
+      color: var(--text-accent);
       font-weight: 700;
     }
 
     .dialogue {
       position: relative;
       padding-left: 14px;
-      border-left: 3px solid var(--accent-river);
+      border-left: 3px solid var(--accent-sparkle);
       margin: 1.25em 0;
       font-style: normal;
+    }
+
+    .disc-roadrunner {
+      color: var(--text-accent);
+      font-weight: 700;
+      background: rgba(244, 140, 66, 0.12);
+      padding: 1px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(244, 140, 66, 0.25);
+    }
+
+    .disc-pink {
+      color: var(--accent-pink);
+      font-weight: 700;
+      background: rgba(217, 70, 128, 0.12);
+      padding: 1px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(217, 70, 128, 0.25);
     }
 
     .sound-break {
@@ -559,26 +582,23 @@
       background: linear-gradient(135deg, rgba(255,183,77,0.15), rgba(255,243,224,0.3));
     }
 
-    .sound-fx.sound-water {
-      font-size: 1.4rem;
-      padding: 6px 22px;
-      color: #0077B6;
-      border-color: #90E0EF;
-      background: linear-gradient(135deg, rgba(0,119,182,0.18), rgba(144,224,239,0.22));
+    [data-theme="night"] .sound-fx.sound-large {
+      color: #FFB74D;
+      border-color: #F57C00;
+      background: rgba(245, 124, 0, 0.18);
     }
 
-    [data-theme="night"] .sound-fx.sound-water {
-      color: #90E0EF;
-      border-color: #0077B6;
-      background: rgba(0, 119, 182, 0.25);
-    }
-
-    .sound-fx.sound-screech {
+    .sound-fx.sound-chains {
       font-size: 1.35rem;
-      padding: 6px 20px;
-      color: #D94680;
-      border-color: #F472B6;
-      background: linear-gradient(135deg, rgba(217,70,128,0.15), rgba(244,114,182,0.2));
+      padding: 6px 18px;
+      color: var(--accent-forest);
+      border-color: var(--accent-forest-light);
+      background: linear-gradient(135deg, rgba(82,183,136,0.18), rgba(45,106,79,0.12));
+    }
+
+    [data-theme="night"] .sound-fx.sound-chains {
+      color: var(--accent-forest-light);
+      border-color: var(--accent-forest);
     }
 
     .story-figure {
@@ -647,54 +667,17 @@
 
     .story-figure figcaption::before {
       content: "✦ ";
-      color: var(--accent-river);
+      color: var(--text-accent);
       font-style: normal;
       font-size: 0.8rem;
     }
 
     .para-speaking {
-      background-color: rgba(0, 180, 216, 0.22);
+      background-color: rgba(244, 162, 97, 0.22);
       border-radius: 8px;
       padding: 4px 8px;
       margin-left: -8px;
       margin-right: -8px;
-    }
-
-    /* Key Themes Box */
-    .story-themes-box {
-      margin: 36px 0;
-      padding: 22px 20px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-left: 4px solid var(--accent-river);
-      border-radius: 16px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .story-themes-title {
-      font-family: var(--font-display);
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--accent-river);
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .story-themes-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      font-family: var(--font-sans);
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.55;
-    }
-
-    .story-themes-list strong {
-      color: var(--text-main);
     }
 
     .interactive-conclusion {
@@ -714,7 +697,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--accent-river);
+      color: var(--text-accent);
       margin-bottom: 12px;
     }
 
@@ -759,15 +742,8 @@
 
     .choice-card:hover {
       transform: translateY(-3px);
-      border-color: var(--accent-river);
+      border-color: var(--text-accent);
       box-shadow: var(--shadow-md);
-    }
-
-    .choice-card.selected {
-      border-color: var(--accent-river);
-      background-color: var(--bg-card);
-      box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.3);
-      transform: translateY(-2px);
     }
 
     .choice-card-icon {
@@ -801,7 +777,11 @@
       font-family: var(--font-sans);
       font-size: 0.82rem;
       font-weight: 700;
-      color: var(--accent-river);
+      color: var(--accent-forest);
+    }
+
+    [data-theme="night"] .choice-action-btn {
+      color: var(--accent-forest-light);
     }
 
     /* Lightbox Modal */
@@ -970,10 +950,12 @@
         font-size: 0.82rem;
       }
 
-      .sound-fx.sound-large,
-      .sound-fx.sound-water,
-      .sound-fx.sound-screech {
-        font-size: 1.2rem;
+      .sound-fx.sound-large {
+        font-size: 1.25rem;
+      }
+
+      .sound-fx.sound-chains {
+        font-size: 1.15rem;
       }
 
       .interactive-conclusion {
@@ -1077,14 +1059,14 @@
               <span class="menu-link-desc">Mystery • turkey tracks</span>
             </div>
           </a>
-          <a href="index.html" class="story-menu-link active" role="menuitem">
+          <a href="../the-legend-of-big-whalter/" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🎣</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Big Walter</strong>
               <span class="menu-link-desc">Fishing • meet Big Walter</span>
             </div>
           </a>
-          <a href="../the-bedtime-toot-tastrophe/" class="story-menu-link" role="menuitem">
+          <a href="index.html" class="story-menu-link active" role="menuitem">
             <span class="menu-link-icon">💨</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">The Bedtime Toot-Tastrophe</strong>
@@ -1095,8 +1077,8 @@
       </div>
 
       <div class="toolbar-title">
-        <span>🎣</span>
-        <span>Big Walter</span>
+        <span>🌲</span>
+        <span>The Bedtime Toot-Tastrophe</span>
       </div>
 
       <div class="toolbar-actions">
@@ -1117,16 +1099,16 @@
 
     <!-- Story Header -->
     <section class="story-header">
-      <span class="badge-adventure">🎣 A Miller's Creek Fishing Tale</span>
-      <h1 class="story-title"><span class="magic-word">Big Walter</span></h1>
-      <p class="story-subtitle">A little yellow rod catches something surprising at Miller’s Creek.</p>
+      <span class="badge-adventure">💨 A Giggly Bedtime Adventure</span>
+      <h1 class="story-title">The Bedtime <span class="magic-word">Toot-Tastrophe</span></h1>
+      <p class="story-subtitle">Mom’s bedtime story gets interrupted by the funniest sounds ever.</p>
       
       <div class="story-meta">
         <span class="meta-item">⏱️ <strong>2-3 min read</strong></span>
         <span>•</span>
-        <span class="meta-item">🎨 <strong>5 Illustrated Scenes</strong></span>
+        <span class="meta-item">🎨 <strong>4 Illustrated Scenes</strong></span>
         <span>•</span>
-        <span class="meta-item">🐟 <strong>Big Fish Tale</strong></span>
+        <span class="meta-item">🎯 <strong>Bedtime Giggles</strong></span>
       </div>
 
       <div class="read-aloud-box">
@@ -1140,25 +1122,35 @@
     <!-- SCENE 1 -->
     <article class="scene-section" id="scene-1">
       <div class="scene-header">
-        <span class="scene-pill">Scene 1 • Morning at the creek</span>
+        <span class="scene-pill">Scene 1 • The first squeak</span>
       </div>
 
-      <p class="lead-paragraph story-text">Shane and Dad reached Miller’s Creek just as the sun came up. Shane wore his orange life jacket and carried his yellow fishing rod. Dad carried the tackle box.</p>
+      <p class="lead-paragraph story-text">The moon was a crescent, the stars were in sight,<br>And Mt. Pleasant was settling into the night.</p>
 
-      <p class="story-text">“Do you think Big Walter is awake?” Shane asked. Dad had told him about the old catfish in the creek. “Maybe,” Dad said. “Let’s ask him.” They sat together on the dock and cast into the quiet water.</p>
+      <p class="story-text">Young Shane brushed his teeth till they sparkled like snow,<br>Then hopped in his bed with a six-year-old glow.</p>
+
+      <p class="story-text">His blankets were pulled to his chin, warm and neat,<br>Tucked snug from his ears right on down to his feet.</p>
+
+      <p class="story-text">In walked his mom, Theresa, smiling and kind,<br>With glasses in place and a story in mind.</p>
+
+      <p class="story-text">She sat on the mattress and opened the book,<br>And gave little Shane her sweet motherly look.</p>
+
+      <p class="story-text">She opened her mouth for the very first word,<br>When suddenly—POOT!—came the weirdest sound heard.</p>
+
+      <p class="story-text">A squeak like a mouse on a tiny brass horn!<br>The funniest noise since the day Shane was born.</p>
 
 <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="Father_and_son_fishing_20260915121008.jpeg" 
-            alt="Alex carrying a tackle box and Shane wearing an orange life vest holding his yellow fishing rod walking onto the dock at sunrise over Miller's Creek." 
+            src="first_squeak.webp" 
+            alt="Theresa sitting on the edge of Shane’s bed with a storybook, eyes wide with surprise, as a tiny golden ‘squeak!’ puff drifts near the bed skirt." 
             loading="lazy"
             width="1376" 
             height="768"
           >
           <span class="figure-overlay-hint">🔍 Tap to zoom</span>
         </div>
-        <figcaption>Shane and Dad settle in at Miller’s Creek.</figcaption>
+        <figcaption>The very first squeak escapes mid-story.</figcaption>
       </figure>
 
     </article>
@@ -1166,25 +1158,35 @@
     <!-- SCENE 2 -->
     <article class="scene-section" id="scene-2">
       <div class="scene-header">
-        <span class="scene-pill">Scene 2 • The bobber dives</span>
+        <span class="scene-pill">Scene 2 • The page-turn rumble</span>
       </div>
 
-      <p class="story-text">A turtle rested on a log. Dragonflies darted over the creek. Shane’s red and white bobber barely moved.</p>
+      <p class="story-text">Shane opened his eyes and he poked out his head:<br>“Did someone just blow a kazoo near my bed?”</p>
 
-      <p class="story-text">Then it vanished. The yellow rod bent toward the water. “Dad!” Shane cried. Dad moved beside him and held the rod too. “I’ve got you,” he said. They pulled together, one slow turn of the reel at a time.</p>
+      <p class="story-text">Theresa turned pink. “Oh, dear me, that was odd!<br>“A squeak in the floorboards!” she claimed with a nod.</p>
+
+      <p class="story-text">She cleared out her throat and she straightened her spine,<br>“Now back to our tale of the brave porcupine...”</p>
+
+      <p class="story-text">She leaned just an inch to turn over page three,<br>When out slipped a rumble as loud as the sea!</p>
+
+      <p class="story-text">PBBBBBT-whistle-POP! went the seat of the chair,<br>A gust that tossed ribbons of dust in the air.</p>
+
+      <p class="story-text">Shane burst out laughing. “Mom, that wasn’t the floor!<br>“That sounded like thunder behind the front door!”</p>
+
+      <p class="story-text">Theresa pressed tight on her lips with a blush,<br>“Hush, sweetheart,” she whispered, “now listen and hush!”</p>
 
 <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="Boys_struggling_with_fishing_rod_20260915121008.jpeg" 
-            alt="Alex holding Shane from behind on the wooden dock as Shane's yellow fishing rod bends double against a splashing monster in the water." 
+            src="page_turn_rumble.webp" 
+            alt="Theresa leaning forward to turn a picture-book page, biting her lip to hold in laughter, as a swirling gust lifts her hair and Shane peeks over his duvet with hands over his mouth." 
             loading="lazy"
             width="1376" 
             height="768"
           >
           <span class="figure-overlay-hint">🔍 Tap to zoom</span>
         </div>
-        <figcaption>The bobber disappears and the rod bends.</figcaption>
+        <figcaption>The rumble that wasn’t the floorboards.</figcaption>
       </figure>
 
     </article>
@@ -1192,103 +1194,86 @@
     <!-- SCENE 3 -->
     <article class="scene-section" id="scene-3">
       <div class="scene-header">
-        <span class="scene-pill">Scene 3 • Who is down there?</span>
+        <span class="scene-pill">Scene 3 • The pillow-fluff fanfare</span>
       </div>
 
-      <p class="story-text">A wide gray head rose from the water. Long whiskers spread out from its mouth. Shane stared. “That’s Big Walter!”</p>
+      <p class="story-text">She pinched her knees shut and she held in her breath;<br>She tried to stay quieter than silent death.</p>
 
-      <p class="story-text">The catfish gave one heavy swish of its tail. Dad kept the line steady while Shane reeled. At last they guided Walter into the shallows beside the dock.</p>
+      <p class="story-text">She squeezed and she squirmed and she counted to eight,<br>Her tummy was rumbling like heavy freight.</p>
+
+      <p class="story-text">“I’m fine,” Theresa said, “it’s just broccoli from lunch,<br>“Or maybe the fiber bar snacks that I munch!”</p>
+
+      <p class="story-text">She stood up to pat Shane’s soft pillow in place,<br>Determined to salvage a straight, solemn face.</p>
+
+      <p class="story-text">She bent at the waist, gave the pillow a fluff—<br>And HONK! went her belly! A giant steam puff!</p>
+
+      <p class="story-text">TOOT-A-LOO! BUBBLE-POP! PARP-ITY-WHEEZE!<br>The window blinds rattled from Mom’s little breeze!</p>
+
+      <p class="story-text">Now Shane lost his marbles; he rolled on the sheets,<br>His giggles as sweet as the baker’s best treats.</p>
+
+      <p class="story-text">He kicked up his heels and he clutched at his vest:<br>“Mom, you’re an orchestra! You are the best!”</p>
 
 <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="Children_catching_massive_catfish_20260915121008.jpeg" 
-            onerror="this.onerror=null; this.src='Children_catching_massive_catfish_20260915121008.jpeg';"
-            alt="Alex and Shane working together on the riverbank to land the massive whisker-faced catfish Big Walter." 
+            src="pillow_fluff_fanfare.webp" 
+            alt="Theresa fluffing Shane’s pillow with cheeks flushed rosy pink behind her glasses, curtains fluttering behind her, while Shane rolls on the bed with feet in the air in a huge toothy grin." 
             loading="lazy"
             width="1376" 
             height="768"
           >
           <span class="figure-overlay-hint">🔍 Tap to zoom</span>
         </div>
-        <figcaption>Big Walter rises from the creek.</figcaption>
+        <figcaption>The pillow gets fluffed. Mom’s belly performs.</figcaption>
       </figure>
-
-      <p class="story-text">“He’s bigger than my backpack,” Shane said. Dad laughed. “A lot bigger.”</p>
 
     </article>
 
     <!-- SCENE 4 -->
     <article class="scene-section" id="scene-4">
       <div class="scene-header">
-        <span class="scene-pill">Scene 4 • A look up close</span>
+        <span class="scene-pill">Scene 4 • A giggly goodnight hug</span>
       </div>
 
-      <p class="story-text">Dad laid Walter for a moment on the damp grass beside the creek and kept a hand on him. Shane leaned in. The catfish was smooth and gray, with long whiskers by his mouth.</p>
+      <p class="story-text">Theresa looked down, and she started to grin;<br>There wasn’t a chance she could hold it all in.</p>
 
-      <p class="story-text">“Can I take a picture?” Shane asked. Dad handed him the phone. Shane took one quick photo.</p>
+      <p class="story-text">She chuckled, she snorted, and out came three more:<br>Pip-pop! and a bop! as she stepped toward the door!</p>
+
+      <p class="story-text">“Well, Shane,” chuckled Mom, wiping tears from her eyes,<br>“I didn’t intend for bedtime surprise!</p>
+
+      <p class="story-text">It seems that my motor just won’t settle down,<br>I might just toot-toot all the way across town!”</p>
+
+      <p class="story-text">Shane sat right up and he gave her a hug,<br>Wrapped safe in his blankets so cozy and snug.</p>
+
+      <p class="story-text">“Don’t worry, sweet Mom, it’s the best book by far—<br>“You toot like a rocket that shoots for a star!”</p>
+
+      <p class="story-text">Theresa smoothed back Shane’s neat spiky brown hair,<br>And gave him a kiss on his cheek right then there.</p>
+
+      <p class="story-text">“Goodnight, little buddy. Sweet dreams until dawn.”<br>She gave a big stretch and a sleepy, slow yawn.</p>
+
+      <p class="story-text">She switched off the lamp with a gentle soft click,<br>And tiptoed outside on her toes very quick.</p>
+
+      <p class="story-text">And just as the door closed, as quiet could be...<br>One final soft poot floated out full of glee.</p>
 
 <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="Boy_kneeling_by_giant_fish_20260915121008.jpeg" 
-            alt="Dad steadies Big Walter beside the creek while Shane takes a photo."
+            src="goodnight_hug.webp" 
+            alt="Theresa kneeling beside the bedside wrapping Shane in a warm hug, both sharing one last quiet chuckle, a crescent moon glowing through the window." 
             loading="lazy"
             width="1376" 
             height="768"
           >
           <span class="figure-overlay-hint">🔍 Tap to zoom</span>
         </div>
-        <figcaption>Shane takes a quick picture of Walter.</figcaption>
+        <figcaption>One final soft poot, and sweet dreams.</figcaption>
       </figure>
 
-      <p class="story-text">“What should we do now?” Dad asked. Shane looked at the creek. “Let him go home,” he said. Together they slid Walter back into the water.</p>
-
     </article>
-
-    <!-- SCENE 5 -->
-    <article class="scene-section" id="scene-5">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 5 • Walter goes home</span>
-      </div>
-
-      <p class="story-text">For a moment Walter stayed beside them. Then he flicked his tail. Splash! Cold creek water spotted Shane’s life jacket and Dad’s shirt.</p>
-
-      <p class="story-text">They laughed as the big shape disappeared below the dock. Shane waved at the water. “Bye, Walter.”</p>
-
-<figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img 
-            src="Children_laughing_after_water_splash_20260915121008.jpeg" 
-            onerror="this.onerror=null; this.src='Children_laughing_after_water_splash_20260915121008.jpeg';"
-            alt="Alex and Shane soaked in water, laughing and giving a triumphant dripping high-five as Big Walter splashes into the distance." 
-            loading="lazy"
-            width="1376" 
-            height="768"
-          >
-          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
-        </div>
-        <figcaption>Walter splashes them on his way home.</figcaption>
-      </figure>
-
-      <p class="story-text">On the walk home, Shane carried the yellow rod. Dad carried the tackle box. Both of them were still a little wet, and both knew exactly what story they would tell at breakfast.</p>
-
-    </article>
-
-    <!-- Story Themes Box -->
-    <section class="story-themes-box">
-      <h3 class="story-themes-title">🌟 Big Walter's Wisdom</h3>
-      <ul class="story-themes-list">
-        <li>🎣 <strong>Teamwork:</strong> Leaning back, pumping the rod together, and never giving up when the line pulls hard.</li>
-        <li>🐟 <strong>Respect for Wildlife:</strong> Understanding conservation and choosing to release a magnificent king back to his river home.</li>
-        <li>🌊 <strong>Pure Joy:</strong> A soaking-wet high-five and memories that last a lifetime.</li>
-      </ul>
-    </section>
-
     <!-- Interactive Story Branch / Conclusion -->
     <section class="interactive-conclusion">
-      <span class="conclusion-badge">✨ Read Another Adventure</span>
-      <h2 class="conclusion-question">Ready for another bedtime story with Shane and Alex? Pick your next destination!</h2>
+      <span class="conclusion-badge">✨ What Adventure Is Next?</span>
+      <h2 class="conclusion-question">Ready to keep exploring? Choose Shane and Alex's next adventure!</h2>
       
       <div class="choice-grid">
         <a href="../mystery-of-the-back-nine/" class="choice-card">
@@ -1298,10 +1283,10 @@
           <span class="choice-action-btn">Read this adventure ➔</span>
         </a>
 
-        <a href="../" class="choice-card">
-          <span class="choice-card-icon">🌲</span>
-          <strong class="choice-card-title">Shane &amp; the Magic Disc</strong>
-          <span class="choice-card-desc">Travel to Whispering Woods Hole 4 where woodland friends help Shane's orange Roadrunner score a magical hole-in-one!</span>
+        <a href="../the-legend-of-big-whalter/" class="choice-card">
+          <span class="choice-card-icon">🎣</span>
+          <strong class="choice-card-title">Big Walter</strong>
+          <span class="choice-card-desc">Shane meets a very big catfish and helps it go home.</span>
           <span class="choice-action-btn">Read this adventure ➔</span>
         </a>
         <a href="../the-bedtime-toot-tastrophe/" class="choice-card">
@@ -1315,7 +1300,7 @@
 
     <!-- Footer -->
     <footer class="story-footer">
-      <p>🎣 <em>Big Walter</em> • A Miller's Creek Fishing Adventure</p>
+      <p>💨 <em>The Bedtime Toot-Tastrophe</em> • A Giggly Bedtime Adventure</p>
       <div class="footer-links">
         <span>Designed for cozy bedtime &amp; mobile reading</span>
       </div>
