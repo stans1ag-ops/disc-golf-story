@@ -4,7 +4,7 @@
 The moon was a crescent, the stars were in sight,
 And Mt. Pleasant was settling into the night.
 Young Shane brushed his teeth till they sparkled like snow,
-Then hopped in his bed with a six-year-old glow.
+Then hopped in his bed with a five-year-old glow.
 His blankets were pulled to his chin, warm and neat,
 Tucked snug from his ears right on down to his feet.
 In walked his mom, Theresa, smiling and kind,
@@ -12,7 +12,7 @@ With glasses in place and a story in mind.
 She sat on the mattress and opened the book,
 And gave little Shane her sweet motherly look.
 She opened her mouth for the very first word,
-When suddenly—POOT!—came the weirdest sound heard.
+When suddenly—TOOT!—came the weirdest sound heard.
 A squeak like a mouse on a tiny brass horn!
 The funniest noise since the day Shane was born.
 Shane opened his eyes and he poked out his head:
@@ -64,4 +64,4 @@ She gave a big stretch and a sleepy, slow yawn.
 She switched off the lamp with a gentle soft click,
 And tiptoed outside on her toes very quick.
 And just as the door closed, as quiet could be...
-One final soft poot floated out full of glee.
+One final soft toot floated out full of glee.
