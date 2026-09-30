@@ -1,6 +1,6 @@
 # Shane & Alex's Bedtime Stories
 
-Eight illustrated bedtime stories for Shane and Dad. Each takes about two to three minutes to read aloud. The five featured stories also have short moving storybook videos made from the watercolor illustrations.
+Illustrated bedtime stories for Shane and Dad. Each takes about two to three minutes to read aloud. The Red Sled Ride also has a complete narrated 3D film made in Blender; four other featured stories have short moving storybook videos made from the watercolor illustrations.
 
 The stories use clear words, small surprises, and short lines Shane can say along with Dad. They cover fishing on Houghton Lake, disc golf, biking, sledding, an Uno game, and three earlier woodland and fishing adventures.
 
@@ -20,4 +20,4 @@ The builder changes the story text, page titles, descriptions, navigation labels
 
 ## Rebuild the videos
 
-See [`blender_scripts/README.md`](blender_scripts/README.md) for the Blender and FFmpeg command. The video source is [`blender_scripts/render_storybook.py`](blender_scripts/render_storybook.py).
+See [`blender_scripts/README.md`](blender_scripts/README.md) for Blender and FFmpeg commands. The sledding film's source is [`blender_scripts/render_sled_3d.py`](blender_scripts/render_sled_3d.py), with an editable [`red_sled_ride.blend`](blender_scripts/red_sled_ride.blend) scene. The watercolor video source is [`blender_scripts/render_storybook.py`](blender_scripts/render_storybook.py).

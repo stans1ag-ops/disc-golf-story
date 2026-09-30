@@ -2,3 +2,4 @@
 __pycache__/
 storybook_preview_*.png
 *.blend1
+.renders/

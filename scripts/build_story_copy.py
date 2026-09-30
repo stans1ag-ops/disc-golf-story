@@ -36,7 +36,7 @@ VIDEO_OUTPUTS = {
     "the-fish-that-pulled-back": "pontoon_storybook",
     "the-daring-disc-dash": "disc_golf_storybook",
     "the-bouncing-bicycle-brigade": "biking_storybook",
-    "the-super-snowy-sled": "sledding_storybook",
+    "the-super-snowy-sled": "sledding_3d",
     "the-wild-uno-uproar": "uno_storybook",
 }
 OLD_TITLES = {
@@ -154,6 +154,7 @@ def update_story_page(slug, story):
         source = source[:match.start()] + build_article(number, scene, match.group(0)) + source[match.end():]
 
     if 'class="story-animation-card"' in source:
+        is_3d_sled = slug == "the-super-snowy-sled"
         video_base = VIDEO_OUTPUTS[slug]
         source = replace_once(source, r'poster="[^"]+"',
                               f'poster="{video_base}_poster.jpg"', f"{slug} video poster")
@@ -166,14 +167,15 @@ def update_story_page(slug, story):
         source = replace_once(source, r'<h2 class="animation-title">.*?</h2>',
                               '<h2 class="animation-title">Watch the story come to life</h2>',
                               f"{slug} animation title")
-        source = replace_once(source, r'<p class="animation-subtitle">.*?</p>',
-                              '<p class="animation-subtitle">Three watercolor scenes with gentle motion, made for a short bedtime watch.</p>',
+        source = replace_once(source, r'<p class="animation-subtitle"[^>]*>.*?</p>',
+                              ('<p class="animation-subtitle" id="animation-description">Join Shane and Dad for a snowy climb, three bouncy bumps, snow angels, and warm cocoa in this narrated 3D adventure.</p>'
+                               if is_3d_sled else '<p class="animation-subtitle">Three watercolor scenes with gentle motion, made for a short bedtime watch.</p>'),
                               f"{slug} animation subtitle")
         source = replace_once(source, r'<span class="anim-pill-badge">.*?</span>',
-                              '<span class="anim-pill-badge">✨ Moving Storybook</span>',
+                              ('<span class="anim-pill-badge">✨ 3D Adventure</span>' if is_3d_sled else '<span class="anim-pill-badge">✨ Moving Storybook</span>'),
                               f"{slug} animation badge")
         source = replace_once(source, r'<span class="anim-caption-text">.*?</span>',
-                              f'<span class="anim-caption-text">{escape(story["preview"])}</span>',
+                              ('<span class="anim-caption-text">Shane and Dad’s snowy day • 1 min 52 sec • Narrated</span>' if is_3d_sled else f'<span class="anim-caption-text">{escape(story["preview"])}</span>'),
                               f"{slug} animation caption")
         source = source.replace("            loop \n            autoplay \n", "")
         source = source.replace("            muted \n", "")

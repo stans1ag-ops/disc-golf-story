@@ -821,10 +821,10 @@
     <!-- Moving Storybook Section -->
     <section class="story-animation-card" id="story-animation">
       <div class="animation-badge-wrapper">
-        <span class="scene-pill">🎬 Moving Storybook</span>
+        <span class="scene-pill">🎬 3D Story Film</span>
       </div>
       <h2 class="animation-title">Watch the story come to life</h2>
-      <p class="animation-subtitle">Three watercolor scenes with gentle motion, made for a short bedtime watch.</p>
+      <p class="animation-subtitle" id="animation-description">Join Shane and Dad for a snowy climb, three bouncy bumps, snow angels, and warm cocoa in this narrated 3D adventure.</p>
 
       <div class="animation-player-frame">
         <div class="video-aspect-box">
@@ -832,16 +832,18 @@
             id="story-anim-video" 
             controls 
             playsinline 
-            poster="sledding_storybook_poster.jpg"
+            poster="sledding_3d_poster.jpg"
             preload="metadata"
+            aria-label="The Red Sled Ride — narrated 3D animation"
+            aria-describedby="animation-description"
           >
-            <source src="sledding_storybook.mp4" type="video/mp4">
+            <source src="sledding_3d.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
         <div class="animation-controls-bar">
-          <span class="anim-pill-badge">✨ Moving Storybook</span>
-          <span class="anim-caption-text">A climb, three bumps, and a warm cup of cocoa.</span>
+          <span class="anim-pill-badge">✨ 3D Adventure</span>
+          <span class="anim-caption-text">Shane and Dad’s snowy day • 1 min 52 sec • Narrated</span>
           <button type="button" class="btn-fullscreen" onclick="toggleVideoFullscreen(this)" aria-label="Toggle Fullscreen">⛶ Fullscreen</button>
         </div>
       </div>
@@ -1066,6 +1068,7 @@
           narrationAudio.load();
           return;
         }
+        document.getElementById('story-anim-video').pause();
         narrationAudio.play();
         btnReadAloud.classList.add('speaking');
         readAloudIcon.textContent = '⏹️';
@@ -1079,6 +1082,11 @@
     narrationAudio.addEventListener('timeupdate', () => highlightForTime(narrationAudio.currentTime));
     narrationAudio.addEventListener('ended', resetReadAloudUI);
     narrationAudio.addEventListener('error', resetReadAloudUI);
+
+    document.getElementById('story-anim-video').addEventListener('play', () => {
+      narrationAudio.pause();
+      resetReadAloudUI();
+    });
 
 
     // Fullscreen Video Toggle
