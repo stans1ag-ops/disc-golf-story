@@ -1,4 +1,4 @@
-"""Build Tyson's Big Adventures section: 6 story pages + Tyson hub.
+"""Build Tyson's Big Adventures section and hub from canonical story copy.
 
 Run once (or after editing TYSON_STORIES below) from the repo root:
     python3 scripts/build_tyson_site.py
@@ -11,8 +11,10 @@ separately with the TTS Storyteller voice and dropped into each story dir.
 from html import escape
 from pathlib import Path
 import glob
+import json
 import re
 import shutil
+from loose_tooth_story import STORY as LOOSE_TOOTH_STORY
 
 REPO = Path(__file__).resolve().parents[1]
 TEMPLATE = REPO / "shane-and-the-magic-disc" / "index.html"
@@ -295,6 +297,8 @@ TYSON_STORIES = [
     },
 ]
 
+TYSON_STORIES.append(LOOSE_TOOTH_STORY)
+
 HUB_CARDS = [
     ("the-big-splash", "🎣", "🎣 Adventure #1", "tag-blue", "Lake Fishing with Dad",
      "Tyson and the Big Splash", "A stick, a flying hat, and one small fish.", "casting.webp",
@@ -317,12 +321,18 @@ HUB_CARDS = [
 ]
 
 
+HUB_CARDS.append((LOOSE_TOOTH_STORY["slug"], "🦷", "🦷 Adventure #7", "tag-gold",
+                  "First Loose Tooth with Mom & Dad", LOOSE_TOOTH_STORY["title"],
+                  LOOSE_TOOTH_STORY["preview"], "wiggle-wobble.webp",
+                  LOOSE_TOOTH_STORY["images"][0][3]))
+
+
 def build_menu(stories, current_slug):
-    links = ['''          <a href="../" class="story-menu-link" role="menuitem">
+    links = [f'''          <a href="../" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🏠</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Tyson&apos;s Story Hub</strong>
-              <span class="menu-link-desc">All 6 Tyson Adventures</span>
+              <span class="menu-link-desc">All {len(stories)} Tyson Adventures</span>
             </div>
           </a>''']
     for s in stories:
@@ -339,7 +349,7 @@ def build_menu(stories, current_slug):
             <span class="menu-link-icon">📖</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Shane&apos;s Stories</strong>
-              <span class="menu-link-desc">Shane&apos;s 8 Bedtime Adventures</span>
+              <span class="menu-link-desc">Shane&apos;s Bedtime Adventures</span>
             </div>
           </a>''')
     return "\n".join(links)
@@ -372,7 +382,8 @@ def build_article(number, heading, paragraphs, figure_html, chant=None):
     figure_after = min(2, len(paragraphs))
     for index, paragraph in enumerate(paragraphs, start=1):
         cls = "lead-paragraph story-text" if number == 1 and index == 1 else "story-text"
-        lines.append(f'      <p class="{cls}">{escape(paragraph)}</p>')
+        verse = escape(paragraph).replace("\n", "<br>\n        ")
+        lines.append(f'      <p class="{cls}">{verse}</p>')
         lines.append('')
         if index == figure_after and figure_html:
             lines.append(figure_html)
@@ -476,6 +487,45 @@ def build_story_page(story, stories, idx):
         <span>Designed for cozy bedtime &amp; mobile reading</span>
       </div>
     </footer>''', source, count=1, flags=re.S)
+    if story["slug"] == LOOSE_TOOTH_STORY["slug"]:
+        source = add_tooth_film(source)
+        source = '\n'.join(line.rstrip() for line in source.splitlines()) + '\n'
+    return source
+
+
+def add_tooth_film(source):
+    """Keep the existing reading layout, with a captioned film after the story."""
+    source = source.replace('aspect-ratio: 1376 / 768;', 'aspect-ratio: 3 / 2;')
+    source = source.replace('width="1920"', 'width="1536"').replace('height="1280"', 'height="1024"')
+    source = source.replace('  </style>', '    .scene-pill { white-space: normal; max-width: 100%; text-align: center; line-height: 1.5; }\n  </style>', 1)
+    video = '''    <section class="interactive-conclusion" aria-labelledby="film-title">
+      <span class="conclusion-badge">🎬 A Narrated 3D Adventure</span>
+      <h2 class="conclusion-question" id="film-title">Watch the Tooth Take a Bounce</h2>
+      <p>A wiggly tooth, a backyard bounce, and a little fairy magic.</p>
+      <video id="story-film" controls playsinline preload="metadata" poster="tooth-bounce-poster.jpg"
+             style="display:block;width:100%;border-radius:18px;" aria-label="Tyson and the Tooth That Took a Bounce, narrated animated film">
+        <source src="tooth-bounce-3d.mp4" type="video/mp4">
+        <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+        Your browser cannot play this film. <a href="tooth-bounce-3d.mp4">Download the narrated film</a>.
+      </video>
+      <p style="font-family:var(--font-sans);font-size:.8rem;margin-top:12px;margin-bottom:0;">Narrated with a synthetic storyteller voice.</p>
+    </section>
+
+'''
+    source = source.replace('    <section class="interactive-conclusion">', video + '    <section class="interactive-conclusion">', 1)
+    timing_path = REPO / 'tyson' / LOOSE_TOOTH_STORY['slug'] / 'narration-timings.json'
+    if timing_path.exists():
+        starts = [entry['start'] for entry in json.loads(timing_path.read_text())['paragraphs']]
+        source = re.sub(r'    function computeTimings\(\) \{.*?\n    \}',
+                        '    function computeTimings() {\n'
+                        f'      paraTimings = {json.dumps(starts)};\n'
+                        '      return Number.isFinite(narrationAudio.duration);\n    }',
+                        source, count=1, flags=re.S)
+    source = source.replace('    narrationAudio.addEventListener(\'ended\', resetReadAloudUI);',
+        '''    const storyFilm = document.getElementById('story-film');
+    storyFilm.addEventListener('play', () => { narrationAudio.pause(); resetReadAloudUI(); });
+    narrationAudio.addEventListener('play', () => storyFilm.pause());
+    narrationAudio.addEventListener('ended', resetReadAloudUI);''')
     return source
 
 
@@ -487,7 +537,8 @@ def build_markdown(story):
         "",
     ]
     for heading, paragraphs in story["scenes"]:
-        lines.extend([f'## {heading}', "", "\n\n".join(paragraphs), ""])
+        verses = '\n\n'.join(paragraph.replace('\n', '<br>\n') for paragraph in paragraphs)
+        lines.extend([f'## {heading}', "", verses, ""])
     lines.extend([f'> **Say it with Tyson:** {story["chant"]}', ""])
     return "\n".join(lines).rstrip() + "\n"
 
@@ -496,6 +547,11 @@ def copy_images(story):
     dest = REPO / "tyson" / story["slug"]
     dest.mkdir(parents=True, exist_ok=True)
     for pattern, name, caption, alt in story["images"]:
+        # Authored images already in the checkout also support reproducible builds.
+        if (dest / name).exists():
+            continue
+        if not pattern:
+            raise FileNotFoundError(f"Create the story illustration first: {dest / name}")
         matches = sorted(glob.glob(str(IMG_SRC / pattern)))
         if not matches:
             raise ValueError(f"No image matches {pattern}")
@@ -504,11 +560,15 @@ def copy_images(story):
 
 def build_hub():
     source = (REPO / "index.html").read_text()
+    # The root promotes Tyson's collection; its own hub must not inherit that
+    # relative link (which would incorrectly resolve as /tyson/tyson/).
+    source = re.sub(r"    <!-- Tyson's Stories Promo -->.*?(?=    <!-- The \d+ Stories Section -->)",
+                    '', source, count=1, flags=re.S)
     source = re.sub(r'<title>.*?</title>',
                     '<title>Tyson&apos;s Big Adventures — Illustrated Bedtime Stories</title>',
                     source, count=1, flags=re.S)
     source = re.sub(r'<meta name="description" content="[^"]*">',
-                    '<meta name="description" content="Six short illustrated bedtime adventures for Tyson, Mom, and Dad.">',
+                    f'<meta name="description" content="{len(TYSON_STORIES)} short illustrated bedtime adventures for Tyson, Mom, and Dad.">',
                     source, count=1)
     source = source.replace(
         '<span>📖 Shane &amp; Alex\'s Stories</span>',
@@ -523,13 +583,13 @@ def build_hub():
         source, count=1, flags=re.S)
     source = re.sub(
         r'<p class="hero-subtitle">.*?</p>',
-        '<p class="hero-subtitle">Six short adventures with big surprises, simple words to say together, and cozy endings.</p>',
+        '<p class="hero-subtitle">Seven short adventures with big surprises, simple words to say together, and cozy endings.</p>',
         source, count=1, flags=re.S)
     source = re.sub(
         r'<div class="hero-stats">.*?</div>',
         '''<div class="hero-stats">
         <span class="stat-pill">⏱️ About 3-4 Min Each</span>
-        <span class="stat-pill">🎨 24 Story Illustrations</span>
+        <span class="stat-pill">🎨 28 Story Illustrations</span>
         <span class="stat-pill">🗣️ Lines to Say Together</span>
         <span class="stat-pill">📱 Mobile &amp; Bedtime Friendly</span>
       </div>
@@ -539,7 +599,7 @@ def build_hub():
         source, count=1, flags=re.S)
     source = re.sub(
         r'<h2 class="section-title">.*?</h2>',
-        '<h2 class="section-title">✨ Six Bedtime Adventures</h2>',
+        '<h2 class="section-title">✨ Seven Bedtime Adventures</h2>',
         source, count=1, flags=re.S)
     source = re.sub(
         r'<span class="section-subtitle">.*?</span>',
@@ -571,6 +631,8 @@ def build_hub():
             </div>
           </div>
         </a>''')
+        if slug == LOOSE_TOOTH_STORY['slug']:
+            cards[-1] = '\n'.join(line.rstrip() for line in cards[-1].splitlines())
     source = re.sub(r'<div class="story-grid">.*?</div>\s*</section>',
                     '<div class="story-grid">\n\n' + "\n\n".join(cards) + '\n\n      </div>\n    </section>',
                     source, count=1, flags=re.S)

@@ -1,0 +1,132 @@
+{
+  "voice": "Kokoro v1.0 af_heart (synthetic)",
+  "duration": 164.823,
+  "title": {
+    "start": 0.4,
+    "end": 2.5973333333333333
+  },
+  "paragraphs": [
+    {
+      "scene": 1,
+      "start": 3.297,
+      "end": 12.769,
+      "text": "Tyson brushed and stopped to stare;\nA tiny tooth was wobbling there.\n“My first loose tooth!” he cried with glee.\n“A wiggly tooth belongs to me!”"
+    },
+    {
+      "scene": 1,
+      "start": 13.269,
+      "end": 22.976,
+      "text": "Dad, Alex, said, “Let's see it go—\nJust gentle wiggles, nice and slow.”\nTheresa smiled, her eyes so bright:\n“We'll let it go when time is right.”"
+    },
+    {
+      "scene": 1,
+      "start": 23.476,
+      "end": 32.799,
+      "text": "With clean hands, Tyson gently tried;\nThat little tooth went side to side.\nHe nudged it with his tongue once more;\nIt held on tighter than before."
+    },
+    {
+      "scene": 1,
+      "start": 33.299,
+      "end": 42.515,
+      "text": "“Wiggle, wobble! Won't you fall?”\nIt would not budge much more at all.\n“Let's take a break,” he heard Dad say.\nSo Tyson dashed outside to play."
+    },
+    {
+      "scene": 2,
+      "start": 43.715,
+      "end": 53.763,
+      "text": "The trampoline was round and green,\nThe bounciest thing he'd ever seen.\nIts net zipped shut; Mom watched nearby,\nWhile Tyson bounced beneath the sky."
+    },
+    {
+      "scene": 2,
+      "start": 54.263,
+      "end": 62.945,
+      "text": "A little hop! A happy spin!\nA breeze tickled his cheek and chin.\nHe laughed and bounced above the ground;\nHis tooth slipped out without a sound."
+    },
+    {
+      "scene": 2,
+      "start": 63.445,
+      "end": 71.68,
+      "text": "It tumbled past the padded side\nAnd in the grass it went to hide.\nNo tiny tap. No shout of “Hey!”\nHe never felt it slip away."
+    },
+    {
+      "scene": 2,
+      "start": 72.18,
+      "end": 81.951,
+      "text": "When play was done, he touched his chin.\nHis tongue explored his toothy grin.\nHe found a gap! His eyes grew round:\n“My tooth is gone—but can't be found!”"
+    },
+    {
+      "scene": 3,
+      "start": 83.151,
+      "end": 92.516,
+      "text": "They searched the grass; they checked each shoe.\nThey looked beneath the trampoline, too.\nBut not a speck of tooth was there.\nTyson sniffled in the evening air."
+    },
+    {
+      "scene": 3,
+      "start": 93.016,
+      "end": 103.128,
+      "text": "“No tooth beneath my pillow tonight!\nThe fairy won't come on her flight!”\nMom hugged him close. Dad held him tight.\n“Let's leave a note,” said Mom. “We'll write.”"
+    },
+    {
+      "scene": 3,
+      "start": 103.628,
+      "end": 111.82,
+      "text": "Dear Tooth Fairy, my tooth came free\nWhile I was bouncing happily.\nI didn't notice it fall that day;\nIt landed somewhere far away."
+    },
+    {
+      "scene": 3,
+      "start": 112.32,
+      "end": 121.152,
+      "text": "We searched and searched, but couldn't see\nThe little tooth that came from me.\nPlease visit even though it's gone.\nLove, Tyson. Then he gave a yawn."
+    },
+    {
+      "scene": 4,
+      "start": 122.352,
+      "end": 132.677,
+      "text": "He tucked the note, then climbed in bed.\nMom kissed his cheek; Dad stroked his head.\nThe moon shone softly, silver-white;\nHis little room grew still that night."
+    },
+    {
+      "scene": 4,
+      "start": 133.177,
+      "end": 141.881,
+      "text": "On whisper-wings, a fairy flew\nAnd read the note that told her true.\n“A missing tooth? That's quite all right.\nYour note has brought me here tonight.”"
+    },
+    {
+      "scene": 4,
+      "start": 142.381,
+      "end": 152.131,
+      "text": "She left a dollar, crisp and green,\nBeneath his pillow, quite unseen.\nAt dawn he peeked—then gave a shout:\n“She came! She came! It all worked out!”"
+    },
+    {
+      "scene": 4,
+      "start": 152.631,
+      "end": 162.423,
+      "text": "Theresa laughed; Dad grinned along.\nHis tooth was lost, but hope stayed strong.\nOne dollar! One new gap to show!\nAnd one more way for him to grow."
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "heading": "Wiggle, wobble, not quite yet",
+      "start": 3.297,
+      "end": 43.715
+    },
+    {
+      "scene": 2,
+      "heading": "The bounce he didn't notice",
+      "start": 43.715,
+      "end": 83.151
+    },
+    {
+      "scene": 3,
+      "heading": "A note instead of a tooth",
+      "start": 83.151,
+      "end": 122.352
+    },
+    {
+      "scene": 4,
+      "heading": "A dollar and a brand-new grin",
+      "start": 122.352,
+      "end": 163.623
+    }
+  ]
+}

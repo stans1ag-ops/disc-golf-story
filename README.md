@@ -2,6 +2,12 @@
 
 Illustrated bedtime stories for Shane and Dad. Each takes about two to three minutes to read aloud. The Red Sled Ride also has a complete narrated 3D film made in Blender; four other featured stories have short moving storybook videos made from the watercolor illustrations.
 
+The [Tyson storybook](tyson/) contains seven adventures with Mom (Theresa) and
+Dad (Alex). Its newest story, [Tyson and the Tooth That Took a Bounce](tyson/the-tooth-that-took-a-bounce/),
+is told in rhyme: his first loose tooth disappears during a trampoline bounce,
+but a note brings a Tooth Fairy visit and a dollar. It includes four illustrated
+scenes, neural read-aloud narration, and a captioned 3D film.
+
 The stories use clear words, small surprises, and short lines Shane can say along with Dad. They cover fishing on Houghton Lake, disc golf, biking, sledding, an Uno game, and three earlier woodland and fishing adventures.
 
 ## The website
@@ -17,6 +23,16 @@ python3 scripts/build_story_copy.py
 ```
 
 The builder changes the story text, page titles, descriptions, navigation labels, and hub previews. It keeps the existing page layout and illustrations.
+
+Tyson's newest story is authored in `scripts/loose_tooth_story.py`. To rebuild
+Tyson's pages, navigation, and collection hub after editing the story:
+
+```bash
+python3 scripts/build_tyson_site.py
+```
+
+Existing illustrations are reused from each story directory. See the media
+instructions below to regenerate narration and animation when the copy changes.
 
 ## Rebuild the videos
 
