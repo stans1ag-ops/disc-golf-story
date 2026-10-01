@@ -27,6 +27,22 @@ def timestamp(seconds):
     return f'{hours:02}:{minutes:02}:{seconds:02}.{milliseconds:03}'
 
 
+def caption_text(data):
+    """Short couplet cues keep the animated action visible on small screens."""
+    cues = [f'{timestamp(data["title"]["start"])} --> {timestamp(data["title"]["end"])}\n{STORY["title"]}']
+    for paragraph in data['paragraphs']:
+        lines = paragraph['text'].splitlines()
+        couplets = ['\n'.join(lines[index:index + 2]) for index in range(0, len(lines), 2)]
+        weights = [len(couplet) for couplet in couplets]
+        start = paragraph['start']
+        duration = paragraph['end'] - start
+        for couplet, weight in zip(couplets, weights):
+            end = start + duration * weight / sum(weights)
+            cues.append(f'{timestamp(start)} --> {timestamp(end)}\n{couplet}')
+            start = end
+    return 'WEBVTT\n\n' + '\n\n'.join(cues) + '\n'
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--models', type=Path, required=True)
@@ -84,10 +100,7 @@ def main():
     data = {'voice': 'Kokoro v1.0 af_heart (synthetic)', 'duration': round(position / rate, 3),
             'title': {'start': title_start, 'end': title_end}, 'paragraphs': paragraphs, 'scenes': scenes}
     (OUT / 'narration-timings.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
-    cues = [f'{timestamp(title_start)} --> {timestamp(title_end)}\n{STORY["title"]}']
-    for paragraph in paragraphs:
-        cues.append(f'{timestamp(paragraph["start"])} --> {timestamp(paragraph["end"])}\n{paragraph["text"]}')
-    (OUT / 'narration.vtt').write_text('WEBVTT\n\n' + '\n\n'.join(cues) + '\n')
+    (OUT / 'narration.vtt').write_text(caption_text(data))
     print(f'Recorded {len(paragraphs)} stanzas, {position / rate:.2f} seconds.')
 
 
