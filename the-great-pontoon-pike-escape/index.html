@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="The Great Pontoon Pike Escape - A rhyming bedtime adventure starring Shane, Tyson, Theresa, and Alex fishing on Houghton Lake.">
+  <title>The Great Pontoon Pike Escape — Shane &amp; Alex's Bedtime Stories</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    button { font-family: inherit; font-size: inherit; color: inherit; border: none; background: none; cursor: pointer; -webkit-appearance: none; appearance: none; }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #0077B6;
+      --accent-secondary: #0096C7;
+      --accent-highlight: #E06714;
+      --accent-sparkle: #F4A261;
+      --accent-green: #2D6A4F;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #005F73;
+      --accent-secondary: #0A9396;
+      --accent-highlight: #CA6702;
+      --accent-green: #295D47;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #0F171E;
+      --bg-card: #18232D;
+      --bg-card-subtle: #21303E;
+      --bg-toolbar: rgba(15, 23, 30, 0.96);
+      --text-main: #E2E8F0;
+      --text-muted: #94A3B8;
+      --text-accent: #38BDF8;
+      --accent-secondary: #7DD3FC;
+      --accent-highlight: #FB923C;
+      --accent-green: #34D399;
+      --border-color: #26384A;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+      padding-bottom: 60px;
+    }
+
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #0077B6, #48CAE4, #00B4D8);
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: var(--bg-toolbar);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .toolbar-inner {
+      width: 100%;
+      max-width: 820px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .story-nav-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-story-selector {
+      background: var(--bg-card);
+      color: var(--text-accent);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      min-height: 38px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-story-selector:hover {
+      transform: translateY(-1px);
+      border-color: var(--text-accent);
+    }
+
+    .story-chevron {
+      font-size: 0.72rem;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-story-selector.open .story-chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 8px;
+      min-width: 310px;
+      z-index: 1100;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      animation: menuSlideDown 0.18s ease-out;
+    }
+
+    .story-dropdown-menu.open {
+      display: flex !important;
+    }
+
+    @keyframes menuSlideDown {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .story-menu-link:hover {
+      background-color: var(--bg-card-subtle);
+      transform: translateX(3px);
+    }
+
+    .story-menu-link.active {
+      background-color: rgba(0, 119, 182, 0.12);
+      border: 1px solid var(--text-accent);
+    }
+
+    .menu-link-icon { font-size: 1.35rem; flex-shrink: 0; }
+    .menu-link-text { display: flex; flex-direction: column; text-align: left; }
+    .menu-link-title { font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--text-main); }
+    .menu-link-desc { font-family: var(--font-sans); font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+    .toolbar-actions { display: flex; align-items: center; gap: 6px; }
+    .btn-tool {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      transition: all 0.2s ease;
+    }
+    .btn-tool:hover {
+      background: var(--bg-card-subtle);
+      border-color: var(--text-accent);
+    }
+
+    .theme-selector {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .theme-btn {
+      padding: 4px 8px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      transition: background-color 0.2s ease;
+    }
+    .theme-btn.active {
+      background: var(--bg-card-subtle);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Main Container */
+    .story-container {
+      width: 100%;
+      max-width: 820px;
+      padding: 24px 20px 60px;
+      margin: 0 auto;
+    }
+
+    /* Story Header */
+    .story-header {
+      text-align: center;
+      padding: 36px 20px 28px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border: 2px solid var(--border-color);
+      border-radius: 28px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 36px;
+    }
+
+    .badge-adventure {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-accent);
+      background: rgba(0, 119, 182, 0.12);
+      border: 1px solid rgba(0, 119, 182, 0.25);
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5.2vw, 3rem);
+      font-weight: 700;
+      line-height: 1.18;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .highlight-word {
+      color: var(--accent-highlight);
+      background: linear-gradient(120deg, rgba(224, 103, 20, 0.15) 0%, rgba(244, 162, 97, 0.25) 100%);
+      padding: 0 8px;
+      border-radius: 8px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .story-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .meta-item {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-weight: 600;
+    }
+
+    /* Audio Player Card */
+    .audio-player-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 20px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .audio-player-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .audio-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .audio-play-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0077B6, #0096C7);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .audio-info-title {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .audio-info-sub {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn-audio-main {
+      background: linear-gradient(135deg, var(--text-accent), var(--accent-secondary));
+      color: white;
+      border-radius: 24px;
+      padding: 10px 20px;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(0, 119, 182, 0.25);
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+    .btn-audio-main:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0, 119, 182, 0.35);
+    }
+
+    .audio-progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .audio-scrubber {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-card-subtle);
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .audio-scrubber-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--text-accent), var(--accent-highlight));
+      width: 0%;
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .btn-speed {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 4px 8px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn-speed:hover {
+      background: var(--bg-card-subtle);
+    }
+
+    /* Scene Section */
+    .scene-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 32px 28px;
+      margin-bottom: 36px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .scene-header {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .scene-pill {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-accent);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 4px 14px;
+      border-radius: 14px;
+    }
+
+    .lead-paragraph {
+      font-size: 1.12rem;
+      font-weight: 500;
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+
+    .story-text {
+      margin-bottom: 18px;
+      line-height: 1.8;
+      transition: background-color 0.2s ease;
+      border-radius: 6px;
+      padding: 2px 4px;
+    }
+
+    .story-text.para-speaking, .chant-text.para-speaking {
+      background-color: rgba(224, 103, 20, 0.18) !important;
+      outline: 2px solid var(--accent-highlight);
+      border-radius: 8px;
+    }
+
+    /* Figures / Watercolor Illustrations */
+    .story-figure {
+      margin: 28px 0;
+      text-align: center;
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      cursor: pointer;
+      border-radius: var(--border-radius-img);
+      overflow: hidden;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      background: var(--bg-card-subtle);
+      aspect-ratio: 16 / 9;
+    }
+
+    .figure-img-wrapper:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--text-accent);
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+
+    figcaption {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* Silly Chant Box */
+    .silly-chant-box {
+      background: linear-gradient(135deg, rgba(224, 103, 20, 0.08) 0%, rgba(244, 162, 97, 0.15) 100%);
+      border: 2px dashed var(--accent-highlight);
+      border-radius: 20px;
+      padding: 22px 20px;
+      margin: 26px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .chant-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--accent-highlight);
+      padding: 4px 14px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 6px rgba(224, 103, 20, 0.3);
+    }
+
+    .chant-text {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    /* Sound Effect Callouts */
+    .sound-break {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .sound-fx {
+      font-family: var(--font-display);
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: 0.04em;
+    }
+
+    .sound-large {
+      font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+      color: var(--accent-highlight);
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.08);
+      animation: popSlight 2.4s infinite ease-in-out;
+    }
+
+    @keyframes popSlight {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    /* Interactive Next Adventure Section */
+    .interactive-conclusion {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 28px;
+      padding: 36px 24px;
+      box-shadow: var(--shadow-md);
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-accent);
+      background: rgba(0, 119, 182, 0.12);
+      padding: 4px 14px;
+      border-radius: 14px;
+      margin-bottom: 12px;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 24px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      text-align: left;
+    }
+
+    @media (min-width: 600px) {
+      .choice-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 18px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.22s ease;
+    }
+
+    .choice-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--text-accent);
+      box-shadow: var(--shadow-md);
+    }
+
+    .choice-card-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .choice-card-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
+    .choice-card-desc { font-family: var(--font-sans); font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; margin-bottom: 14px; }
+    .choice-action-btn { font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; color: var(--text-accent); margin-top: auto; }
+
+    /* Footer */
+    .story-footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer;
+      z-index: 2010;
+      line-height: 1;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+    .lightbox-close-btn:hover { opacity: 1; }
+
+    .lightbox-img-container {
+      max-width: 1000px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img-container img {
+      max-width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-caption {
+      margin-top: 14px;
+      color: #E2E8F0;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      text-align: center;
+      max-width: 750px;
+      line-height: 1.5;
+    }
+
+    /* Floating Scroll To Top Button */
+    .btn-floating-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      box-shadow: var(--shadow-md);
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      z-index: 850;
+    }
+
+    .btn-floating-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .btn-floating-top:hover {
+      transform: translateY(-2px);
+      border-color: var(--text-accent);
+    }
+
+    @media (max-width: 640px) {
+      .story-container { padding: 16px 14px 40px; }
+      .scene-section { padding: 24px 18px; }
+      .story-title { font-size: 1.9rem; }
+      .chant-text { font-size: 1.08rem; }
+      .audio-controls-row { flex-wrap: wrap; }
+      .btn-audio-main { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Story Library Hub</strong>
+              <span class="menu-link-desc">All Bedtime Adventures &amp; Bookshelf</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Great Pontoon Pike Escape</strong>
+              <span class="menu-link-desc">Houghton Lake • The 24-Inch Northern Pike!</span>
+            </div>
+          </a>
+          <a href="../the-houghton-lake-patrol/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚤</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Houghton Lake Patrol</strong>
+              <span class="menu-link-desc">Pontoon Fishing • Splishing &amp; Splashing</span>
+            </div>
+          </a>
+          <a href="../the-daring-disc-dash/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Daring Disc Dash</strong>
+              <span class="menu-link-desc">Disc Golf • Zippity-Zap Chains</span>
+            </div>
+          </a>
+          <a href="../the-bouncing-bicycle-brigade/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Bouncing Bicycle Brigade</strong>
+              <span class="menu-link-desc">Bike Adventure • Puddle Splashes</span>
+            </div>
+          </a>
+          <a href="../the-super-snowy-sled/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🛷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Super Snowy Sled</strong>
+              <span class="menu-link-desc">Winter Hill • Hot Cocoa &amp; Swoosh</span>
+            </div>
+          </a>
+          <a href="../the-wild-uno-uproar/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🃏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Wild Uno Uproar</strong>
+              <span class="menu-link-desc">Bedtime Card War • Wild Draw-Four!</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Content Container -->
+  <main class="story-container">
+
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">🎣 Shane &amp; Tyson's Houghton Lake Adventure</span>
+      <h1 class="story-title">The Great Pontoon <span class="highlight-word">Pike Escape</span></h1>
+      <p class="story-subtitle">A rhyming family fishing adventure of tangled sweatshirt drawstrings, a 24-inch monster pike, and the unforgettable missing net!</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>4-5 min read</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>5 Watercolor Illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎙️ <strong>Voice Narration Included</strong></span>
+        <span>•</span>
+        <span class="meta-item">🗣️ <strong>Silly Rhyming Chants</strong></span>
+      </div>
+
+      <!-- Audio Narration Player -->
+      <div class="audio-player-card">
+        <div class="audio-player-header">
+          <div class="audio-title-group">
+            <div class="audio-play-icon-box">🎙️</div>
+            <div>
+              <div class="audio-info-title">Listen to Full Bedtime Story Narration</div>
+              <div class="audio-info-sub">Warm, expressive storybook narration featuring Shane, Tyson, Theresa &amp; Alex</div>
+            </div>
+          </div>
+          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
+        </div>
+
+        <div class="audio-controls-row">
+          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
+            <span id="audio-play-icon">▶</span>
+            <span id="audio-play-label">Play Voice Narration</span>
+          </button>
+
+          <div class="audio-progress-container">
+            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
+              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
+            </div>
+            <div class="audio-time-row">
+              <span id="audio-time-current">0:00</span>
+              <span id="audio-time-total">--:--</span>
+            </div>
+          </div>
+        </div>
+
+        <audio id="story-audio-element" preload="metadata">
+          <source src="narration.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+    <article class="scene-section" id="scene-1">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • The Houghton Lake Pontoon Crew</span>
+      </div>
+
+      <p class="lead-paragraph story-text">The summer sun shone warm and sweet, without a cloud or hint of sleet. Up where the pines stand proud and high, beneath the bright blue Michigan sky, lay Houghton Lake, so calm and wide, with gentle ripples on the tide!</p>
+
+      <p class="story-text">Aboard the peppy pontoon boat, the finest crew that was afloat: Dad Alex grinning at the wheel, with shiny hooks and rods of steel! Young Shane (age five, with eyes of blue), and brother Tyson, smiling too! Both buckled snug in safety vests, like orange robins in their nests!</p>
+
+      <!-- Illustration 1: Pontoon Crew -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="pike_scene1_pontoon_crew.jpg" 
+            alt="Mom Theresa in glasses and grey hoodie holding a fishing rod, Dad Alex steering, and sons Shane and Tyson in orange life vests looking into Houghton Lake." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Theresa patiently fishes with her rod while Captain Alex steers the pontoon and Shane and Tyson watch the lily pads.</figcaption>
+      </figure>
+
+      <p class="story-text">And there sat Mom—Theresa dear, the patient fisher of the year! In cozy sweatshirt, warm and grey, she held her fishing rod all day. While little minnows danced in line, and bobbers drifted on the brine, Theresa hadn't had much luck—no perchy bite, no bass to pluck!</p>
+
+      <p class="story-text">Shane tapped her knee and gave a wink, "Don't worry, Mom! Don't even blink! Let's say our special fishing cheer, to bring the hungry fishes near!" Shane, Tyson, Dad, and Mom began, the loudest chant in Michigan:</p>
+
+      <!-- Silly Chant 1 -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🗣️ Chant Along with Shane &amp; Tyson!</span>
+        <p class="chant-text">
+          "Wiggle-waggle, reel and row!<br>
+          Deep down where the lilies grow!<br>
+          Nibble, nibble, take a bite,<br>
+          Give the line a tug tonight!"
+        </p>
+      </div>
+    </article>
+
+    <!-- SCENE 2 -->
+    <article class="scene-section" id="scene-2">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • The Strike of the Century!</span>
+      </div>
+
+      <p class="story-text">The engine rested by the weeds, among the swaying water-reeds. The water shimmered like a cup, when all at once—the line zipped up!</p>
+
+      <div class="sound-break">
+        <span class="sound-fx sound-large">TUG! YANK!</span>
+      </div>
+
+      <p class="story-text">The slender yellow pole bent double toward a watery hole! The tip plunged down! The rod groaned low, like Robin Hood’s bent wooden bow! Theresa gasped and gripped it tight, her brown eyes sparkling with delight!</p>
+
+      <!-- Illustration 2: Big Bite -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="pike_scene2_theresa_bite.jpg" 
+            alt="Theresa with glasses and hoodie reeling furiously as the fishing rod bends into a deep bow, with Shane and Tyson shouting with glee on the pontoon." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Theresa feels an enormous bite! The rod curves in a giant horseshoe arch as Shane and Tyson jump for joy.</figcaption>
+      </figure>
+
+      <p class="story-text">"I’ve got one!" cried the happy Mom, her quiet afternoon was gone! She spun the handle—<em>CLICK-CRANK-SPIN!</em> The unseen monster pulled her in! The reel shrieked out: <em>ZRRRR-WHIRRR-SCREECH!</em> Farther than any arm could reach!</p>
+
+      <p class="story-text">"Oh my!" Mom gasped, "He's strong and stout! This isn't just a tiny trout! He pulls like five or six or eight! He must be twenty pounds of weight! It’s bigger than I've ever seen, the biggest fish there's ever been!"</p>
+
+      <p class="story-text">Shane bounced in place with happy squeals, while Tyson laughed at spinning reels! They clapped their hands and stomped the floor, and shouted out the chant once more:</p>
+
+      <!-- Silly Chant 2 -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🗣️ Louder &amp; Faster!</span>
+        <p class="chant-text">
+          "Reel it, wheel it, crank it fast!<br>
+          Catch the biggest fish at last!<br>
+          Watch the line go zip-zap-zoosh,<br>
+          Bring him home with a mighty WHOOSH!"
+        </p>
+      </div>
+    </article>
+
+    <!-- SCENE 3 -->
+    <article class="scene-section" id="scene-3">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • The Tangled Drawstring Tangle!</span>
+      </div>
+
+      <p class="story-text">Theresa leaned across the seat, to pull the prize up to her feet. <em>Crank-crank!</em> She wound with all her might, her knuckles white, the line drawn tight! Her hooded sweatshirt hung down low, with two white drawstrings on the go!</p>
+
+      <p class="story-text">And as she cranked with speedy zeal—<strong>WHOOOOOOP!</strong>—the strings caught in the reel! <em>Snick-snack!</em> The little handle twirled, and sucked the drawstrings in a whirl! The hoodie cords wrapped round and round, tightly against the spool-wheel bound!</p>
+
+      <div class="sound-break">
+        <span class="sound-fx sound-large">WHOOOOOOP!</span>
+      </div>
+
+      <!-- Illustration 3: Tangled Drawstring -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="pike_scene3_drawstring_tangle.jpg" 
+            alt="Theresa laughing comically as her sweatshirt drawstrings wrap into the fishing reel while Alex, Shane, and Tyson help untangle the cords." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Disaster and giggles! Mom’s hoodie drawstrings get sucked into the spinning reel as Dad and the boys rush to the rescue.</figcaption>
+      </figure>
+
+      <p class="story-text">Mom couldn’t pull! Mom couldn’t crank! She leaned towards the pontoon plank! "Oh help!" laughed Mom, surprised and stuck, "Look what became of my good luck! My sweatshirt’s hitched unto the line, and this big fish is doing fine!"</p>
+
+      <p class="story-text">Dad Alex vaulted from the wheel, "Hold steady, Mom! I'll fix the reel!" Shane held the rod to keep it high, while Tyson watched with eagle eye! With gentle tugs and nimble hands, Dad loosened up the tangled strands! <em>Zip! Snip! Pluck-pluck!</em> The knots came free! And everyone yelled out with glee:</p>
+
+      <!-- Silly Chant 3 -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🗣️ The Untangling Chant!</span>
+        <p class="chant-text">
+          "Twist it, turn it, loop-de-loop!<br>
+          Mommy’s hoodie’s in the soup!<br>
+          Free the strings and crank the gear,<br>
+          Bring that giant fishy near!"
+        </p>
+      </div>
+    </article>
+
+    <!-- SCENE 4 -->
+    <article class="scene-section" id="scene-4">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • The Twenty-Four Inch Giant &amp; The Missing Net!</span>
+      </div>
+
+      <p class="story-text">Now free to fight! Now free to pull! Theresa wound the spool up full! The water churned, the bubbles flew, up toward the pontoon and the crew!</p>
+
+      <p class="story-text">Then—<strong>SWOOSH!</strong>—beside the silver side, broke through the surface, wild and wide, a creature grand, a creature bold, with scales of olive, green, and gold! A Northern Pike! So long and sleek, with duckbill snout and toothy cheek! At least two feet—a two-foot dread! Full twenty-four big inches spread!</p>
+
+      <!-- Illustration 4: Giant Pike & Missing Net -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="pike_scene4_giant_pike_no_net.jpg" 
+            alt="A huge 24-inch Northern Pike leaping by the pontoon boat as Dad Alex gasps in panic without a net and Shane and Tyson stare with eyes wide." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>The 24-inch Northern Pike breaches the surface! But Dad throws his hands up in panic: "We don't have a net on the boat!"</figcaption>
+      </figure>
+
+      <p class="story-text">"LOOK AT THAT PIKE!" Shane shouted high, his round blue eyes as wide as pie! "He's giant!" Tyson yelled in joy, "He's almost bigger than a boy!"</p>
+
+      <p class="story-text">Theresa held him by the boat, the finest trophy all afloat! "Quick, Alex, grab the landing net!" cried Mom, "Before he gets upset!" Alex looked left, he looked around, he searched the bench, he searched the ground! He searched the box, he searched the deck, with hands on hips and craned-up neck!</p>
+
+      <p class="story-text">Then Alex’s jaw dropped in surprise, with wide, comedic, startled eyes: "Oh NO!" cried Dad, "You won't believe! The net is on the dock, I grieve! We left the net back on the shore, beside the boathouse cabin door!"</p>
+    </article>
+
+    <!-- SCENE 5 -->
+    <article class="scene-section" id="scene-5">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 5 • The Great Pike Roll &amp; The Unforgettable Day!</span>
+      </div>
+
+      <p class="story-text">Right as they stared in disbelief, the Northern Pike had sweet relief! He gave a wink, he gave a flip, he didn't want a boat ride trip!</p>
+
+      <div class="sound-break">
+        <span class="sound-fx sound-large">SPLOOOOOOOOOSH!</span>
+      </div>
+
+      <p class="story-text">The mighty pike rolled round and round, a somersault without a sound! He shook his head, he thrashed his tail, and whipped the lake just like a whale! <em>POP!</em> went the hook right out his jaw! The cleanest leap they ever saw! He splashed a shower of sparkling spray, and swished his tail and sped away!</p>
+
+      <!-- Illustration 5: Pike Escape Celebration -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="pike_scene5_pike_escape_celebration.jpg" 
+            alt="The giant pike splashes away as the hook pops free, and Theresa, Alex, Shane, and Tyson laugh and high-five in the golden sunset glow." 
+            loading="lazy"
+            width="1376" 
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>The big pike rolls, spits the hook, and splashes away! The family bursts into laughter and high-fives under the warm sunset glow.</figcaption>
+      </figure>
+
+      <p class="story-text">Down through the lily pads he dived, the grandest pike that ever thrived! A tiny moment hung in air, with water dripping in their hair... Then Tyson giggled, Shane broke out, and Dad and Mom began to shout!</p>
+
+      <p class="story-text">They looked at Mom's loose sweatshirt strings, and all the silly tangled things! "He got away!" cried Shane with glee, "A giant fish as big as me!" They slapped high-fives and hugged so tight, beneath the golden sunset light!</p>
+
+      <p class="story-text">Sure, they were just a bit dismayed, the fish had won the game they played! But oh, the fun! The wild hullabaloo! The greatest catch they ever knew! And as the pontoon purred back home, across the pink and amber foam, they sang the chant for everyone, of Houghton Lake, the pike, and fun:</p>
+
+      <!-- Silly Chant 4 -->
+      <div class="silly-chant-box">
+        <span class="chant-badge">🎉 The Great Pike Finale Chant!</span>
+        <p class="chant-text">
+          "Houghton Lake and sunny skies,<br>
+          Mommy hooked the giant prize!<br>
+          No big net, the hook went slack,<br>
+          Next summer time, we’ll be right back!"
+        </p>
+      </div>
+
+      <p class="story-text" style="text-align: center; font-style: italic; margin-top: 24px;">Goodnight, Shane. Goodnight, Tyson. Goodnight, Houghton Lake... and goodnight, big Northern Pike!</p>
+    </article>
+
+    <!-- Next Bedtime Adventure -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">✨ Explore More Bedtime Adventures</span>
+      <h2 class="conclusion-question">Where should Shane and the family head next?</h2>
+      
+      <div class="choice-grid">
+        <a href="../the-houghton-lake-patrol/" class="choice-card">
+          <span class="choice-card-icon">🚤</span>
+          <strong class="choice-card-title">The Houghton Lake Pontoon Patrol</strong>
+          <span class="choice-card-desc">Captain Shane and Dad Alex cruise for bass and sing the Wiggle-Waggle fishing chant!</span>
+          <span class="choice-action-btn">Read Pontoon Patrol ➔</span>
+        </a>
+
+        <a href="../the-daring-disc-dash/" class="choice-card">
+          <span class="choice-card-icon">🥏</span>
+          <strong class="choice-card-title">The Daring Disc Dash</strong>
+          <span class="choice-card-desc">Head to Whispering Woods with the orange Roadrunner disc! Watch for zipping curves and clattering chains.</span>
+          <span class="choice-action-btn">Read Disc Golf Story ➔</span>
+        </a>
+
+        <a href="../the-bouncing-bicycle-brigade/" class="choice-card">
+          <span class="choice-card-icon">🚲</span>
+          <strong class="choice-card-title">The Bouncing Bicycle Brigade</strong>
+          <span class="choice-card-desc">Click your helmets, hop on the pedals, splash through giant puddles, and climb the Big Bumpy Hill!</span>
+          <span class="choice-action-btn">Read Biking Story ➔</span>
+        </a>
+
+        <a href="../the-wild-uno-uproar/" class="choice-card">
+          <span class="choice-card-icon">🃏</span>
+          <strong class="choice-card-title">The Wild Uno Uproar</strong>
+          <span class="choice-card-desc">Cozy up by the fire in dinosaur pajamas for a hilarious battle of Wild Draw-Fours!</span>
+          <span class="choice-action-btn">Read Uno Story ➔</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>🎣 <em>The Great Pontoon Pike Escape</em> • Starring Shane, Tyson, Theresa &amp; Alex</p>
+      <p style="margin-top: 6px; font-size: 0.8rem;">Created with rhyming rhythms, silly chants, and watercolor illustrations for bedtime reading</p>
+    </footer>
+
+  </main>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (winScroll > 300) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    });
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {
+      btnStoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        } else {
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('shane-stories-theme', theme); } catch (e) {}
+
+      themeButtons.forEach(b => {
+        if (b.dataset.themeVal === theme) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    });
+
+    try {
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('night');
+      }
+    } catch (e) {}
+
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {
+      currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10);
+    } catch (e) {}
+
+    function updateFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try { localStorage.setItem('shane-stories-fontsize', currentFontSize); } catch (e) {}
+    }
+
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // 6. Voice Narration Audio Player
+    const storyAudio = document.getElementById('story-audio-element');
+    const btnAudioToggle = document.getElementById('btn-audio-toggle');
+    const audioPlayIcon = document.getElementById('audio-play-icon');
+    const audioPlayLabel = document.getElementById('audio-play-label');
+    const audioScrubber = document.getElementById('audio-scrubber');
+    const audioScrubberFill = document.getElementById('audio-scrubber-fill');
+    const audioTimeCurrent = document.getElementById('audio-time-current');
+    const audioTimeTotal = document.getElementById('audio-time-total');
+    const btnAudioSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    if (storyAudio && btnAudioToggle) {
+      storyAudio.addEventListener('loadedmetadata', () => {
+        audioTimeTotal.textContent = formatTime(storyAudio.duration);
+      });
+
+      storyAudio.addEventListener('timeupdate', () => {
+        if (!isNaN(storyAudio.duration) && storyAudio.duration > 0) {
+          const pct = (storyAudio.currentTime / storyAudio.duration) * 100;
+          audioScrubberFill.style.width = pct + '%';
+          audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
+          audioTimeTotal.textContent = formatTime(storyAudio.duration);
+        }
+      });
+
+      storyAudio.addEventListener('ended', () => {
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = 'Play Voice Narration';
+        audioScrubberFill.style.width = '0%';
+      });
+
+      btnAudioToggle.addEventListener('click', () => {
+        if (storyAudio.paused) {
+          storyAudio.play();
+          audioPlayIcon.textContent = '⏸';
+          audioPlayLabel.textContent = 'Pause Narration';
+        } else {
+          storyAudio.pause();
+          audioPlayIcon.textContent = '▶';
+          audioPlayLabel.textContent = 'Resume Narration';
+        }
+      });
+
+      audioScrubber.addEventListener('click', (e) => {
+        const rect = audioScrubber.getBoundingClientRect();
+        const clickPos = (e.clientX - rect.left) / rect.width;
+        if (!isNaN(storyAudio.duration)) {
+          storyAudio.currentTime = clickPos * storyAudio.duration;
+        }
+      });
+
+      const speeds = [1.0, 1.15, 1.25, 0.9];
+      let speedIdx = 0;
+      btnAudioSpeed.addEventListener('click', () => {
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const s = speeds[speedIdx];
+        storyAudio.playbackRate = s;
+        btnAudioSpeed.textContent = `Speed: ${s}×`;
+      });
+    }
+  </script>
+</body>
+</html>

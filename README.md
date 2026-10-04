@@ -8,7 +8,7 @@ is told in rhyme: his first loose tooth disappears during a trampoline bounce,
 but a note brings a Tooth Fairy visit and a dollar. It includes four illustrated
 scenes, neural read-aloud narration, and a captioned 3D film.
 
-The stories use clear words, small surprises, and short lines Shane can say along with Dad. They cover fishing on Houghton Lake, disc golf, biking, sledding, an Uno game, and three earlier woodland and fishing adventures.
+The stories use clear words, small surprises, and short lines Shane can say along with Dad. They cover fishing on Houghton Lake (including the newest family adventure, **The Great Pontoon Pike Escape**, starring Shane, Tyson, Mom Theresa, and Dad Alex with five watercolor illustrations and voice narration), disc golf, biking, sledding, an Uno game, and three earlier woodland and fishing adventures.
 
 ## The website
 
