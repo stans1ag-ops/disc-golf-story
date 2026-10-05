@@ -8,7 +8,7 @@ is told in rhyme: his first loose tooth disappears during a trampoline bounce,
 but a note brings a Tooth Fairy visit and a dollar. It includes four illustrated
 scenes, neural read-aloud narration, and a captioned 3D film.
 
-The stories use clear words, small surprises, and short lines Shane can say along with Dad. They cover classic fairy tales (including **The Three Little Pigs** with seven vintage storybook illustrations and full voice narration), fishing on Houghton Lake (including the family adventure **The Great Pontoon Pike Escape**), disc golf, biking, sledding, an Uno game, bedtime giggles (**The Bedtime Toot-Tastrophe**), and earlier woodland and fishing adventures.
+The stories use clear words, small surprises, and short lines Shane can say along with Dad. They cover classic fairy tales (including **The Three Little Pigs** and **Jack and the Beanstalk** with classic storybook illustrations and full voice narration), fishing on Houghton Lake (including the family adventure **The Great Pontoon Pike Escape**), disc golf, biking, sledding, an Uno game, bedtime giggles (**The Bedtime Toot-Tastrophe**), and earlier woodland and fishing adventures.
 
 ## The website
 

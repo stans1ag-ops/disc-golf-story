@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Jack and the Beanstalk - A classic fairy tale for Shane with full voice narration and Arthur Rackham-style watercolor illustrations.">
+  <title>Jack and the Beanstalk — Shane &amp; Alex's Bedtime Stories</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    button { font-family: inherit; font-size: inherit; color: inherit; border: none; background: none; cursor: pointer; -webkit-appearance: none; appearance: none; }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #2D6A4F;
+      --accent-secondary: #40916C;
+      --accent-highlight: #D97706;
+      --accent-sparkle: #F59E0B;
+      --accent-giant: #8B0000;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #255C43;
+      --accent-secondary: #357A5B;
+      --accent-highlight: #B45309;
+      --accent-giant: #781010;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #101614;
+      --bg-card: #18221E;
+      --bg-card-subtle: #222F2A;
+      --bg-toolbar: rgba(16, 22, 20, 0.96);
+      --text-main: #E2E8F0;
+      --text-muted: #94A3B8;
+      --text-accent: #52B788;
+      --accent-secondary: #74C69D;
+      --accent-highlight: #F59E0B;
+      --accent-giant: #EF4444;
+      --border-color: #273832;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+      padding-bottom: 60px;
+    }
+
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #2D6A4F, #52B788, #D97706);
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: var(--bg-toolbar);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .toolbar-inner {
+      width: 100%;
+      max-width: 820px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .story-nav-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-story-selector {
+      background: var(--bg-card);
+      color: var(--text-accent);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn-story-selector:hover {
+      background: var(--bg-card-subtle);
+    }
+
+    .story-chevron {
+      font-size: 0.75rem;
+      transition: transform 0.2s;
+    }
+    .btn-story-selector.open .story-chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 8px;
+      width: 290px;
+      max-height: 400px;
+      overflow-y: auto;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 1000;
+    }
+    .story-dropdown-menu.open {
+      display: flex;
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      transition: background-color 0.15s ease;
+    }
+    .story-menu-link:hover {
+      background: var(--bg-card-subtle);
+    }
+    .story-menu-link.active {
+      background: rgba(45, 106, 79, 0.12);
+      color: var(--text-accent);
+      font-weight: 700;
+    }
+    .menu-link-icon { font-size: 1.15rem; }
+    .menu-link-text { display: flex; flex-direction: column; }
+    .menu-link-title { font-weight: 600; line-height: 1.25; }
+    .menu-link-desc { font-size: 0.72rem; color: var(--text-muted); }
+
+    .toolbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-tool {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 4px 10px;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+      transition: background-color 0.15s;
+    }
+    .btn-tool:hover { background: var(--bg-card-subtle); }
+
+    .theme-selector {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .theme-btn {
+      padding: 3px 8px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      transition: background-color 0.2s ease;
+    }
+    .theme-btn.active {
+      background: var(--bg-card-subtle);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Main Container */
+    .story-container {
+      width: 100%;
+      max-width: 800px;
+      padding: 28px 20px 60px;
+      margin: 0 auto;
+    }
+
+    /* Story Header */
+    .story-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .badge-adventure {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-accent);
+      background: rgba(45, 106, 79, 0.12);
+      border: 1px solid rgba(45, 106, 79, 0.25);
+      padding: 4px 14px;
+      border-radius: 18px;
+      margin-bottom: 14px;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .highlight-word {
+      color: var(--text-accent);
+      background: linear-gradient(120deg, rgba(45, 106, 79, 0.15) 0%, rgba(82, 183, 136, 0.25) 100%);
+      padding: 0 8px;
+      border-radius: 8px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .story-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .meta-item {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-weight: 600;
+    }
+
+    /* Audio Player Card */
+    .audio-player-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 20px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .audio-player-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .audio-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .audio-play-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2D6A4F, #40916C);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .audio-info-title {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .audio-info-sub {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn-audio-main {
+      background: linear-gradient(135deg, var(--text-accent), var(--accent-secondary));
+      color: white;
+      border-radius: 24px;
+      padding: 10px 20px;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(45, 106, 79, 0.25);
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+    .btn-audio-main:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(45, 106, 79, 0.35);
+    }
+
+    .audio-progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .audio-scrubber {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-card-subtle);
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .audio-scrubber-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--text-accent), var(--accent-highlight));
+      width: 0%;
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .btn-speed {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 4px 8px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn-speed:hover {
+      background: var(--bg-card-subtle);
+    }
+
+    /* Scene Sections */
+    .scene-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 32px 28px;
+      margin-bottom: 36px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .scene-header {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .scene-pill {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-accent);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 4px 14px;
+      border-radius: 14px;
+    }
+
+    .lead-paragraph {
+      font-size: 1.12rem;
+      font-weight: 500;
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+
+    .story-text {
+      margin-bottom: 18px;
+      line-height: 1.8;
+      border-radius: 6px;
+      padding: 2px 4px;
+    }
+
+    /* Figures / Book Illustrations */
+    .story-figure {
+      margin: 28px 0;
+      text-align: center;
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      cursor: pointer;
+      border-radius: var(--border-radius-img);
+      overflow: hidden;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      background: var(--bg-card-subtle);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .figure-img-wrapper:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--text-accent);
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: calc(var(--border-radius-img) - 2px);
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 14px;
+      background: rgba(0, 0, 0, 0.72);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+
+    figcaption {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+      line-height: 1.5;
+      font-style: italic;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Giant Roar Chant Box */
+    .giant-chant-box {
+      background: linear-gradient(135deg, rgba(139, 0, 0, 0.08) 0%, rgba(217, 119, 6, 0.12) 100%);
+      border: 2px solid var(--accent-giant);
+      border-left: 6px solid var(--accent-giant);
+      border-radius: 18px;
+      padding: 22px 20px;
+      margin: 24px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .giant-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--accent-giant);
+      padding: 4px 14px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 6px rgba(139, 0, 0, 0.3);
+    }
+
+    .giant-chant-text {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-giant);
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+    }
+
+    [data-theme="night"] .giant-chant-text {
+      color: #F87171;
+    }
+
+    /* Sound Effect Callouts */
+    .sound-break {
+      text-align: center;
+      margin: 22px 0;
+    }
+
+    .sound-fx {
+      font-family: var(--font-display);
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: 0.04em;
+    }
+
+    .sound-large {
+      font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+      color: var(--accent-highlight);
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.08);
+      animation: popSlight 2.4s infinite ease-in-out;
+    }
+
+    @keyframes popSlight {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    /* Parent / Discussion Section */
+    .discussion-card {
+      background: linear-gradient(135deg, rgba(45, 106, 79, 0.06) 0%, rgba(217, 119, 6, 0.08) 100%);
+      border: 2px solid var(--border-color);
+      border-left: 5px solid var(--text-accent);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin: 32px 0;
+      font-family: var(--font-sans);
+    }
+    .discussion-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-accent);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .discussion-text {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--text-main);
+    }
+
+    /* Interactive Next Adventure Section */
+    .interactive-conclusion {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 28px;
+      padding: 36px 24px;
+      box-shadow: var(--shadow-md);
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-accent);
+      background: rgba(45, 106, 79, 0.12);
+      padding: 4px 14px;
+      border-radius: 14px;
+      margin-bottom: 12px;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 24px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      text-align: left;
+    }
+
+    @media (min-width: 600px) {
+      .choice-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 18px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.22s ease;
+    }
+
+    .choice-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--text-accent);
+      box-shadow: var(--shadow-md);
+    }
+
+    .choice-card-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .choice-card-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
+    .choice-card-desc { font-family: var(--font-sans); font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; margin-bottom: 14px; }
+    .choice-action-btn { font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; color: var(--text-accent); margin-top: auto; }
+
+    /* Footer */
+    .story-footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      line-height: 1.6;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer;
+      z-index: 2010;
+      line-height: 1;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+    .lightbox-close-btn:hover { opacity: 1; }
+
+    .lightbox-img-container {
+      max-width: 800px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img-container img {
+      max-width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-caption {
+      margin-top: 14px;
+      color: #E2E8F0;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      text-align: center;
+      max-width: 750px;
+      line-height: 1.5;
+    }
+
+    /* Floating Scroll To Top Button */
+    .btn-floating-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      box-shadow: var(--shadow-md);
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      z-index: 850;
+    }
+
+    .btn-floating-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .btn-floating-top:hover {
+      transform: translateY(-2px);
+      border-color: var(--text-accent);
+    }
+
+    @media (max-width: 640px) {
+      .story-container { padding: 16px 14px 40px; }
+      .scene-section { padding: 24px 18px; }
+      .story-title { font-size: 1.9rem; }
+      .audio-controls-row { flex-wrap: wrap; }
+      .btn-audio-main { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Story Library Hub</strong>
+              <span class="menu-link-desc">All Bedtime Adventures &amp; Bookshelf</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🌱</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Jack and the Beanstalk</strong>
+              <span class="menu-link-desc">Magic Beans • Castle in the Clouds</span>
+            </div>
+          </a>
+          <a href="../the-three-little-pigs/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Three Little Pigs</strong>
+              <span class="menu-link-desc">Straw, Sticks &amp; Bricks</span>
+            </div>
+          </a>
+          <a href="../the-great-pontoon-pike-escape/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Great Pontoon Pike Escape</strong>
+              <span class="menu-link-desc">Houghton Lake • 24-Inch Pike!</span>
+            </div>
+          </a>
+          <a href="../the-bedtime-toot-tastrophe/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">💨</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Bedtime Toot-Tastrophe</strong>
+              <span class="menu-link-desc">Bedtime Giggles with Shane</span>
+            </div>
+          </a>
+          <a href="../the-fish-that-pulled-back/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚤</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Fish That Pulled Back</strong>
+              <span class="menu-link-desc">Pontoon Fishing Adventure</span>
+            </div>
+          </a>
+          <a href="../the-daring-disc-dash/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Daring Disc Dash</strong>
+              <span class="menu-link-desc">Disc Golf in Whispering Woods</span>
+            </div>
+          </a>
+          <a href="../the-bouncing-bicycle-brigade/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Bouncing Bicycle Brigade</strong>
+              <span class="menu-link-desc">Big Bumpy Hill &amp; Puddle Splashes</span>
+            </div>
+          </a>
+          <a href="../the-super-snowy-sled/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🛷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Super Snowy Sled</strong>
+              <span class="menu-link-desc">Sledding Hill &amp; Hot Cocoa</span>
+            </div>
+          </a>
+          <a href="../the-wild-uno-uproar/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🃏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Wild Uno Uproar</strong>
+              <span class="menu-link-desc">Bedtime Card Showdown</span>
+            </div>
+          </a>
+          <a href="../shane-and-the-magic-disc/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🌲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane and the Magic Disc</strong>
+              <span class="menu-link-desc">The Roadrunner &amp; Glowing Basket</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Container -->
+  <main class="story-container">
+
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">✨ Classic Fairy Tale for Shane</span>
+      <h1 class="story-title">Jack and the <span class="highlight-word">Beanstalk</span></h1>
+      <p class="story-subtitle">Five magic beans, a towering beanstalk reaching into the clouds, and a daring boy who outwitted a roaring giant!</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>4 min listen</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>5 Arthur Rackham Style Illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎙️ <strong>Voice Narration Included</strong></span>
+        <span>•</span>
+        <span class="meta-item">🗣️ <strong>Fee-Fi-Fo-Fum!</strong></span>
+      </div>
+
+      <!-- Audio Narration Player -->
+      <div class="audio-player-card">
+        <div class="audio-player-header">
+          <div class="audio-title-group">
+            <div class="audio-play-icon-box">🎙️</div>
+            <div>
+              <div class="audio-info-title">Listen to Full Story Narration</div>
+              <div class="audio-info-sub">Classic read-aloud voice narration for bedtime</div>
+            </div>
+          </div>
+          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
+        </div>
+
+        <div class="audio-controls-row">
+          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
+            <span id="audio-play-icon">▶</span>
+            <span id="audio-play-label">Play Voice Narration</span>
+          </button>
+
+          <div class="audio-progress-container">
+            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
+              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
+            </div>
+            <div class="audio-time-row">
+              <span id="audio-time-current">0:00</span>
+              <span id="audio-time-total">4:09</span>
+            </div>
+          </div>
+        </div>
+
+        <audio id="story-audio-element" preload="metadata">
+          <source src="narration.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+    <article class="scene-section" id="scene-1">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • Five Magic Beans</span>
+      </div>
+
+      <p class="lead-paragraph story-text">
+        Once upon a time, there lived a poor widow and her only son, Jack. One morning, Jack’s mother told him to take their cow to market and sell her, for they had no money left.
+      </p>
+
+      <p class="story-text">
+        On the way, Jack met a curious old man who offered him five magic beans in exchange for the cow. The man swore they would bring Jack great fortune. Trusting the promise, Jack handed over the cow and ran home with his prize.
+      </p>
+
+      <!-- Illustration 1: Magic Beans -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="scene1_magic_beans.jpg" 
+            alt="Jack trading his family's dairy cow with a wise old traveler in a long coat, who holds out five glowing magic beans on a winding country road." 
+            loading="lazy"
+            width="600" 
+            height="900"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Jack meets the curious old man on the country lane and trades their cow for five magic beans.</figcaption>
+      </figure>
+
+      <p class="story-text">
+        But when Jack’s mother saw the beans, she was furious. “You foolish boy!” she cried. “You’ve traded our only cow for a handful of nonsense!” In a fit of anger, she tossed the beans out the window. Jack went to bed heartbroken and hungry.
+      </p>
+    </article>
+
+    <!-- SCENE 2 -->
+    <article class="scene-section" id="scene-2">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • The Beanstalk to the Clouds</span>
+      </div>
+
+      <p class="lead-paragraph story-text">
+        When dawn broke, Jack looked out the window—and gasped. Overnight, the beans had sprouted into a towering beanstalk that reached all the way to the clouds! Trembling with wonder, he began to climb, higher and higher, until he reached a strange kingdom in the sky.
+      </p>
+
+      <!-- Illustration 2: Climbing the Beanstalk -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="scene2_climbing_beanstalk.jpg" 
+            alt="Jack climbing the colossal twisting beanstalk high above the clouds, looking up with wonder at the giant's stone fortress in the sky." 
+            loading="lazy"
+            width="600" 
+            height="900"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Jack climbs the spiraling beanstalk through the clouds to discover a colossal castle perched in the sky.</figcaption>
+      </figure>
+
+      <p class="story-text">
+        In a massive stone house, Jack met the wife of a fearsome giant. “Please,” Jack begged, “may I have a little food? I’ve climbed so far and I’m starving.” The kind woman gave him bread and milk.
+      </p>
+
+      <p class="story-text">
+        But just then, the ground began to quake. The giant was coming home! Jack darted behind the stove as the monstrous voice bellowed through the hall:
+      </p>
+
+      <!-- Giant Roar 1 -->
+      <div class="giant-chant-box">
+        <span class="giant-badge">👹 The Giant's Roar</span>
+        <p class="giant-chant-text">
+          “Fee, fi, fo, fum,<br>
+          I smell the blood of an Englishman!<br>
+          Be he alive or be he dead,<br>
+          I’ll grind his bones to make my bread!”
+        </p>
+      </div>
+
+      <!-- Illustration 3: Giant in Kitchen -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="scene3_giant_in_kitchen.jpg" 
+            alt="The towering giant with a crooked nose stooping through the kitchen door, as his timid wife stands by the table and Jack hides behind the stove." 
+            loading="lazy"
+            width="542" 
+            height="770"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>“Fee-fi-fo-fum!” The fearsome giant stomps into the kitchen, illustrated by Arthur Rackham.</figcaption>
+      </figure>
+
+      <p class="story-text">
+        “Don’t be silly,” said his wife. “There’s no boy here.” The giant grumbled but sat down to eat. After his meal, he opened a sack bursting with gold coins, counted them carefully, and fell asleep. Seizing his chance, Jack crept out, stole a sack of gold, and scrambled down the beanstalk. His mother wept with joy—they could live well for a time.
+      </p>
+    </article>
+
+    <!-- SCENE 3 -->
+    <article class="scene-section" id="scene-3">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • The Hen That Lays Golden Eggs</span>
+      </div>
+
+      <p class="lead-paragraph story-text">
+        Yet greed and curiosity soon returned. Jack climbed the beanstalk again, back to the giant’s house. Once more, the giant’s wife pitied him and gave him food. But before Jack could finish, the thunderous footsteps shook the floor again. The giant burst in, roaring:
+      </p>
+
+      <!-- Giant Roar 2 -->
+      <div class="giant-chant-box">
+        <span class="giant-badge">👹 The Giant Returns</span>
+        <p class="giant-chant-text">
+          “Fee, fi, fo, fum,<br>
+          I smell the blood of an Englishman!<br>
+          Be he alive or be he dead,<br>
+          I’ll grind his bones to make my bread!”
+        </p>
+      </div>
+
+      <p class="story-text">
+        Again, his wife soothed him, and he ate until he was full. Then he brought out a hen and barked, “Lay!” To Jack’s amazement, the hen laid a golden egg. When the giant fell asleep, Jack snatched the hen and hurried down the beanstalk. His mother was delighted—but warned him never to climb again.
+      </p>
+    </article>
+
+    <!-- SCENE 4 -->
+    <article class="scene-section" id="scene-4">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • The Golden Singing Harp</span>
+      </div>
+
+      <p class="lead-paragraph story-text">
+        Days later, Jack’s daring nature got the better of him. He climbed once more to the castle in the clouds. The giant’s wife, though wary, gave him food again. But before long, the giant stomped through the door, growling:
+      </p>
+
+      <!-- Giant Roar 3 -->
+      <div class="giant-chant-box">
+        <span class="giant-badge">👹 The Third Roar</span>
+        <p class="giant-chant-text">
+          “Fee, fi, fo, fum,<br>
+          I smell the blood of an Englishman!<br>
+          Be he alive or be he dead,<br>
+          I’ll grind his bones to make my bread!”
+        </p>
+      </div>
+
+      <p class="story-text">
+        “Don’t be ridiculous!” said his wife, though her eyes flickered toward Jack’s hiding place.
+      </p>
+
+      <p class="story-text">
+        That night, while the giant snored, Jack crept into his chamber and saw a golden harp that played music by itself. He reached out, but the harp suddenly cried, “Help, master! A boy is stealing me!” The giant awoke with a roar and gave chase. Jack fled down the beanstalk, the harp clutched in his arms.
+      </p>
+
+      <!-- Illustration 4: Golden Harp -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="scene4_golden_harp.jpg" 
+            alt="Jack tiptoeing across the stone hall toward the massive wooden table where the giant snores, reaching up to take the winged golden harp and golden hen." 
+            loading="lazy"
+            width="600" 
+            height="900"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Jack quietly reaches for the magical golden harp and golden hen while the giant soundly snores.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 5 -->
+    <article class="scene-section" id="scene-5">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 5 • The Giant Falls!</span>
+      </div>
+
+      <p class="lead-paragraph story-text">
+        As Jack’s boots hit the ground, he shouted to his mother, “Bring me the axe!” He seized it and swung with all his might, chopping at the beanstalk. Wood splintered and vines tore until the enormous stalk cracked in two.
+      </p>
+
+      <div class="sound-break">
+        <span class="sound-fx sound-large">CRACK! CHOP! CRASH!</span>
+      </div>
+
+      <!-- Illustration 5: Chopping the Beanstalk -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="scene5_chopping_beanstalk.jpg" 
+            alt="Jack swinging the axe into the giant beanstalk as the giant plummets from the clouds, his mother watching in astonishment." 
+            loading="lazy"
+            width="400" 
+            height="600"
+          >
+          <span class="figure-overlay-hint">🔍 Tap to zoom</span>
+        </div>
+        <figcaption>Jack swings the axe with all his might, chopping down the towering beanstalk!</figcaption>
+      </figure>
+
+      <p class="story-text">
+        With a final thunderous crash, the giant plunged from the sky—dead where he fell.
+      </p>
+
+      <p class="story-text">
+        From that day on, Jack and his mother lived in comfort and peace, their hearts full of gratitude and awe for the strange adventure that had changed their lives forever.
+      </p>
+
+      <!-- Discussion Guide -->
+      <div class="discussion-card">
+        <h3 class="discussion-title">🎯 Bedtime Discussion for Shane &amp; Dad Alex</h3>
+        <p class="discussion-text">
+          <em>Jack and the Beanstalk</em> sparks fun conversations about bravery, curiosity, and smart choices! Ask Shane: <strong>“Was Jack brave or a little bit sneaky to climb the beanstalk?”</strong> and <strong>“What would you have done if someone offered you five magic beans?”</strong>
+        </p>
+      </div>
+    </article>
+
+    <!-- Next Adventures Recommendation -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">🌟 More Bedtime Stories</span>
+      <h2 class="conclusion-question">What shall we read next, Shane?</h2>
+
+      <div class="choice-grid">
+        <a href="../the-three-little-pigs/" class="choice-card">
+          <span class="choice-card-icon">🐷</span>
+          <h3 class="choice-card-title">The Three Little Pigs</h3>
+          <p class="choice-card-desc">Three little pigs build houses of straw, sticks, and bricks to outsmart the big bad wolf!</p>
+          <span class="choice-action-btn">Read Story ➔</span>
+        </a>
+
+        <a href="../the-great-pontoon-pike-escape/" class="choice-card">
+          <span class="choice-card-icon">🎣</span>
+          <h3 class="choice-card-title">The Great Pontoon Pike Escape</h3>
+          <p class="choice-card-desc">Shane, Tyson, Theresa, and Alex hook a giant 24-inch Northern Pike on Houghton Lake!</p>
+          <span class="choice-action-btn">Read Story ➔</span>
+        </a>
+
+        <a href="../the-bedtime-toot-tastrophe/" class="choice-card">
+          <span class="choice-card-icon">💨</span>
+          <h3 class="choice-card-title">The Bedtime Toot-Tastrophe</h3>
+          <p class="choice-card-desc">Mom Theresa tries to read a quiet bedtime story, but hilarious sounds keep popping up!</p>
+          <span class="choice-action-btn">Read Story ➔</span>
+        </a>
+
+        <a href="../" class="choice-card">
+          <span class="choice-card-icon">🏠</span>
+          <h3 class="choice-card-title">Shane &amp; Alex's Bookshelf</h3>
+          <p class="choice-card-desc">Explore the entire bedtime adventure library and pick any story you want tonight.</p>
+          <span class="choice-action-btn">Browse All Stories ➔</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Story Footer -->
+    <footer class="story-footer">
+      <p>🌱 <strong>Jack and the Beanstalk</strong> • A Classic English Fairy Tale</p>
+      <p style="margin-top: 6px; font-size: 0.8rem;">Story and voice narration preserved from American Literature • Classic illustrations in the style of Arthur Rackham (1918)</p>
+    </footer>
+
+  </main>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (winScroll > 300) {
+        topBtn.classList.add('visible');
+        topBtn.style.display = 'flex';
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    });
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {
+      btnStoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        } else {
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('shane-stories-theme', theme); } catch (e) {}
+
+      themeButtons.forEach(b => {
+        if (b.dataset.themeVal === theme) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    });
+
+    try {
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('night');
+      }
+    } catch (e) {}
+
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {
+      currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10);
+    } catch (e) {}
+
+    function updateFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try { localStorage.setItem('shane-stories-fontsize', currentFontSize); } catch (e) {}
+    }
+
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // 6. Voice Narration Audio Player
+    const storyAudio = document.getElementById('story-audio-element');
+    const btnAudioToggle = document.getElementById('btn-audio-toggle');
+    const audioPlayIcon = document.getElementById('audio-play-icon');
+    const audioPlayLabel = document.getElementById('audio-play-label');
+    const audioScrubber = document.getElementById('audio-scrubber');
+    const audioScrubberFill = document.getElementById('audio-scrubber-fill');
+    const audioTimeCurrent = document.getElementById('audio-time-current');
+    const audioTimeTotal = document.getElementById('audio-time-total');
+    const btnAudioSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    if (storyAudio && btnAudioToggle) {
+      storyAudio.addEventListener('loadedmetadata', () => {
+        if (!isNaN(storyAudio.duration) && isFinite(storyAudio.duration)) {
+          audioTimeTotal.textContent = formatTime(storyAudio.duration);
+        }
+      });
+
+      storyAudio.addEventListener('timeupdate', () => {
+        const duration = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 249;
+        const pct = (storyAudio.currentTime / duration) * 100;
+        audioScrubberFill.style.width = pct + '%';
+        audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
+        audioTimeTotal.textContent = formatTime(duration);
+      });
+
+      storyAudio.addEventListener('ended', () => {
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = 'Play Voice Narration';
+        audioScrubberFill.style.width = '0%';
+      });
+
+      btnAudioToggle.addEventListener('click', () => {
+        if (storyAudio.paused) {
+          storyAudio.play();
+          audioPlayIcon.textContent = '⏸';
+          audioPlayLabel.textContent = 'Pause Narration';
+        } else {
+          storyAudio.pause();
+          audioPlayIcon.textContent = '▶';
+          audioPlayLabel.textContent = 'Resume Narration';
+        }
+      });
+
+      audioScrubber.addEventListener('click', (e) => {
+        const rect = audioScrubber.getBoundingClientRect();
+        const clickPos = (e.clientX - rect.left) / rect.width;
+        const duration = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 249;
+        storyAudio.currentTime = clickPos * duration;
+      });
+
+      const speeds = [1.0, 1.15, 1.25, 0.9];
+      let speedIdx = 0;
+      btnAudioSpeed.addEventListener('click', () => {
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const s = speeds[speedIdx];
+        storyAudio.playbackRate = s;
+        btnAudioSpeed.textContent = `Speed: ${s}×`;
+      });
+    }
+  </script>
+</body>
+</html>
