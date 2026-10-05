@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Read The Three Little Pigs classic fairy tale with seven vintage illustrations and full voice narration for Shane.">
+  <title>The Three Little Pigs — Shane’s Bedtime Stories</title>
+
+  <!-- Google Fonts with full system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      touch-action: manipulation;
+    }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #C85A17;
+      --accent-brick: #B83B26;
+      --accent-straw: #D4A373;
+      --accent-stick: #8C6239;
+      --accent-green: #2D6A4F;
+      --accent-gold: #E09F3E;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #A8420B;
+      --accent-brick: #9C2E1B;
+      --accent-straw: #B88554;
+      --accent-stick: #704B28;
+      --accent-green: #265942;
+      --accent-gold: #C0852A;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #121815;
+      --bg-card: #1A221E;
+      --bg-card-subtle: #232E29;
+      --bg-toolbar: rgba(18, 24, 21, 0.96);
+      --text-main: #EDE7DC;
+      --text-muted: #A3B1A8;
+      --text-accent: #F48C42;
+      --accent-brick: #E26D5C;
+      --accent-straw: #E9C46A;
+      --accent-stick: #C49A6C;
+      --accent-green: #74C69D;
+      --accent-gold: #F4A261;
+      --border-color: #2F3E37;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+      padding-bottom: 60px;
+    }
+
+    /* Reading Progress Bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-brick), var(--text-accent), var(--accent-gold));
+      z-index: 1000;
+      transition: width 0.1s linear;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: var(--bg-toolbar);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+    }
+
+    .toolbar-inner {
+      width: 100%;
+      max-width: 860px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    /* Story Switcher Dropdown */
+    .story-nav-container {
+      position: relative;
+    }
+
+    .btn-story-selector {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .btn-story-selector:hover {
+      background: var(--bg-card-subtle);
+      border-color: var(--text-accent);
+    }
+
+    .story-chevron {
+      font-size: 0.75rem;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-story-selector.open .story-chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      width: 310px;
+      max-height: 440px;
+      overflow-y: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 1000;
+    }
+
+    .story-dropdown-menu.open {
+      display: flex !important;
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .story-menu-link:hover {
+      background-color: var(--bg-card-subtle);
+      transform: translateX(3px);
+    }
+
+    .story-menu-link.active {
+      background-color: rgba(200, 90, 23, 0.12);
+      border: 1px solid var(--text-accent);
+    }
+
+    .menu-link-icon { font-size: 1.35rem; flex-shrink: 0; }
+    .menu-link-text { display: flex; flex-direction: column; text-align: left; }
+    .menu-link-title { font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--text-main); }
+    .menu-link-desc { font-family: var(--font-sans); font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+    .toolbar-actions { display: flex; align-items: center; gap: 6px; }
+    .btn-tool {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      transition: all 0.2s ease;
+    }
+    .btn-tool:hover {
+      background: var(--bg-card-subtle);
+      border-color: var(--text-accent);
+    }
+
+    .theme-selector {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .theme-btn {
+      padding: 4px 8px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      transition: background-color 0.2s ease;
+    }
+    .theme-btn.active {
+      background: var(--bg-card-subtle);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Main Container */
+    .story-container {
+      width: 100%;
+      max-width: 820px;
+      padding: 24px 20px 60px;
+      margin: 0 auto;
+    }
+
+    /* Story Header */
+    .story-header {
+      text-align: center;
+      padding: 36px 20px 28px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border: 2px solid var(--border-color);
+      border-radius: 28px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 36px;
+    }
+
+    .badge-adventure {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-brick);
+      background: rgba(184, 59, 38, 0.12);
+      border: 1px solid rgba(184, 59, 38, 0.28);
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 5.2vw, 3.1rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .story-title .highlight-word {
+      color: var(--accent-brick);
+      background: linear-gradient(120deg, rgba(184, 59, 38, 0.15) 0%, rgba(224, 159, 62, 0.25) 100%);
+      padding: 0 8px;
+      border-radius: 8px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.08rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 20px;
+      line-height: 1.55;
+    }
+
+    .story-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 16px;
+    }
+
+    /* Audio Player Card */
+    .audio-player-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 20px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .audio-player-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .audio-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .audio-play-icon-box {
+      font-size: 1.4rem;
+      background: rgba(200, 90, 23, 0.12);
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .audio-info-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .audio-info-sub {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .btn-speed {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 12px;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .btn-speed:hover {
+      background: var(--bg-card-subtle);
+      color: var(--text-main);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-audio-main {
+      background: linear-gradient(135deg, var(--accent-brick), var(--text-accent));
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(184, 59, 38, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .btn-audio-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(184, 59, 38, 0.4);
+    }
+
+    .audio-progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .audio-scrubber {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-card-subtle);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .audio-scrubber-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-brick), var(--text-accent));
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Scene Sections */
+    .scene-section {
+      margin-bottom: 48px;
+      padding-top: 12px;
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .scene-pill {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    [data-theme="night"] .scene-pill {
+      color: var(--accent-gold);
+    }
+
+    p.story-text {
+      margin-bottom: 1.35em;
+      color: var(--text-main);
+      text-wrap: pretty;
+      transition: background-color 0.3s ease;
+      font-size: 1.05rem;
+    }
+
+    .lead-paragraph::first-letter {
+      font-family: var(--font-display);
+      font-size: 3.4em;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.18em;
+      margin-top: 0.08em;
+      color: var(--accent-brick);
+      font-weight: 700;
+    }
+
+    .para-speaking {
+      background-color: rgba(224, 159, 62, 0.22);
+      border-radius: 8px;
+      padding: 4px 8px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+    /* Rhyming Chant Boxes */
+    .chant-box {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin: 22px 0 24px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .chant-box.wolf {
+      border-left: 6px solid #4A5568;
+      background: linear-gradient(135deg, rgba(74, 85, 104, 0.06), var(--bg-card));
+    }
+
+    .chant-box.pig {
+      border-left: 6px solid #E06714;
+      background: linear-gradient(135deg, rgba(224, 103, 20, 0.08), var(--bg-card));
+    }
+
+    .chant-box.huff-puff {
+      border-left: 6px solid var(--accent-brick);
+      background: linear-gradient(135deg, rgba(184, 59, 38, 0.1), var(--bg-card));
+    }
+
+    .chant-speaker {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .chant-box.wolf .chant-speaker { color: #4A5568; }
+    .chant-box.pig .chant-speaker { color: #E06714; }
+    .chant-box.huff-puff .chant-speaker { color: var(--accent-brick); }
+
+    [data-theme="night"] .chant-box.wolf .chant-speaker { color: #A0AEC0; }
+    [data-theme="night"] .chant-box.pig .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.huff-puff .chant-speaker { color: #E26D5C; }
+
+    .chant-text {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+
+    /* Illustrations */
+    .story-figure {
+      margin: 28px auto 32px;
+      max-width: 520px;
+      position: relative;
+      border-radius: var(--border-radius-img);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .story-figure:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      width: 100%;
+      background: var(--bg-card-subtle);
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .figure-img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 14px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      pointer-events: none;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 18px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.5;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-card);
+    }
+
+    .story-figure figcaption::before {
+      content: "✦ ";
+      color: var(--accent-brick);
+      font-style: normal;
+      font-size: 0.8rem;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      touch-action: manipulation;
+    }
+
+    .lightbox-modal.active {
+      display: flex !important;
+    }
+
+    .lightbox-img-container {
+      max-width: 900px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .lightbox-modal img {
+      max-width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-caption {
+      color: #E2E8F0;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      margin-top: 14px;
+      text-align: center;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #FFFFFF;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Floating Scroll To Top Button */
+    .btn-floating-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      z-index: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-floating-top.visible {
+      display: flex !important;
+    }
+
+    .btn-floating-top:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Interactive Conclusion */
+    .interactive-conclusion {
+      margin-top: 48px;
+      padding: 32px 24px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-brick);
+      margin-bottom: 12px;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3.5vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .choice-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 2px solid var(--border-color);
+      border-radius: 18px;
+      padding: 20px 18px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 140px;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .choice-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-brick);
+      box-shadow: var(--shadow-md);
+    }
+
+    .choice-card-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .choice-card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .choice-card-desc {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: block;
+    }
+
+    .choice-action-btn {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+    }
+
+    /* Footer */
+    .story-footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .audio-controls-row { flex-wrap: wrap; }
+      .btn-audio-main { width: 100%; justify-content: center; }
+      .story-figure { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Story Library Hub</strong>
+              <span class="menu-link-desc">All Bedtime Adventures &amp; Bookshelf</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🐷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Three Little Pigs</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Straw, Sticks &amp; Bricks</span>
+            </div>
+          </a>
+          <a href="../the-great-pontoon-pike-escape/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Great Pontoon Pike Escape</strong>
+              <span class="menu-link-desc">Houghton Lake • Monster 24" Pike</span>
+            </div>
+          </a>
+          <a href="../the-bedtime-toot-tastrophe/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">💨</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Bedtime Toot-Tastrophe</strong>
+              <span class="menu-link-desc">Bedtime Giggles • Mom &amp; Shane</span>
+            </div>
+          </a>
+          <a href="../the-fish-that-pulled-back/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚤</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Fish That Pulled Back</strong>
+              <span class="menu-link-desc">Pontoon Fishing • A Big Splash</span>
+            </div>
+          </a>
+          <a href="../the-daring-disc-dash/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Disc in the Chains</strong>
+              <span class="menu-link-desc">Disc Golf • Hear the Chains</span>
+            </div>
+          </a>
+          <a href="../the-bouncing-bicycle-brigade/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane and the Big Hill</strong>
+              <span class="menu-link-desc">Biking • Climb the Hill</span>
+            </div>
+          </a>
+          <a href="../the-super-snowy-sled/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🛷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Red Sled Ride</strong>
+              <span class="menu-link-desc">Sledding • Three Snowy Bumps</span>
+            </div>
+          </a>
+          <a href="../the-wild-uno-uproar/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🃏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">One Card Left</strong>
+              <span class="menu-link-desc">Uno • Shane's Last Card</span>
+            </div>
+          </a>
+          <a href="../shane-and-the-magic-disc/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🌲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane and the Magic Disc</strong>
+              <span class="menu-link-desc">Whispering Woods • Secret in Ferns</span>
+            </div>
+          </a>
+          <a href="../mystery-of-the-back-nine/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🔍</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Mystery of the Back Nine</strong>
+              <span class="menu-link-desc">Woodland Tracks • Turkey Clues</span>
+            </div>
+          </a>
+          <a href="../the-legend-of-big-whalter/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐟</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Big Walter</strong>
+              <span class="menu-link-desc">Miller's Creek • The Giant Catfish</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Content Container -->
+  <main class="story-container">
+
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">🐷 Classic Fairy Tale</span>
+      <h1 class="story-title">The Three <span class="highlight-word">Little Pigs</span></h1>
+      <p class="story-subtitle">The classic tale of straw, sticks, bricks, and a big bad wolf who huffs and puffs!</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>4-5 min read</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>7 Story Illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎙️ <strong>Voice Narration</strong></span>
+        <span>•</span>
+        <span class="meta-item">🗣️ <strong>Say-Along Chants</strong></span>
+      </div>
+
+      <!-- Audio Narration Player -->
+      <div class="audio-player-card">
+        <div class="audio-player-header">
+          <div class="audio-title-group">
+            <div class="audio-play-icon-box">🎙️</div>
+            <div>
+              <div class="audio-info-title">Listen to Full Story Narration</div>
+              <div class="audio-info-sub">Classic read-aloud voice narration with music and expressive sound</div>
+            </div>
+          </div>
+          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
+        </div>
+
+        <div class="audio-controls-row">
+          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
+            <span id="audio-play-icon">▶</span>
+            <span id="audio-play-label">Play Voice Narration</span>
+          </button>
+
+          <div class="audio-progress-container">
+            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
+              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
+            </div>
+            <div class="audio-time-row">
+              <span id="audio-time-current">0:00</span>
+              <span id="audio-time-total">4:21</span>
+            </div>
+          </div>
+        </div>
+
+        <audio id="story-audio-element" preload="metadata">
+          <source src="narration.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+    <article class="scene-section" id="scene-1">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • Seeking Their Fortunes</span>
+      </div>
+
+      <p class="lead-paragraph story-text">Once upon a time there was an old mother pig who had three little pigs and not enough food to feed them. So when they were old enough, she sent them out into the world to seek their fortunes.</p>
+
+      <!-- Illustration 1: Mother Pig and the Three Pigs -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_farewell.jpg" 
+            alt="The old mother pig waving farewell to her three young pigs as they start down the country lane." 
+            loading="lazy"
+            width="399" 
+            height="517"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The old mother pig sends her three little pigs out into the world to seek their fortunes.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 2 -->
+    <article class="scene-section" id="scene-2">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • The House of Straw</span>
+      </div>
+
+      <p class="story-text">The first little pig was very lazy. He didn't want to work at all and he built his house out of straw.</p>
+
+      <p class="story-text">The next day, a wolf happened to pass by the lane where the three little pigs lived; and he saw the straw house, and he smelled the pig inside. He thought the pig would make a mighty fine meal and his mouth began to water.</p>
+
+      <p class="story-text">So he knocked on the door and said:</p>
+
+      <div class="chant-box wolf">
+        <div class="chant-speaker">🐺 The Wolf knocks</div>
+        <div class="chant-text">
+          "Little pig! Little pig!<br>
+          Let me in! Let me in!"
+        </div>
+      </div>
+
+      <p class="story-text">But the little pig saw the wolf's big paws through the keyhole, so he answered back:</p>
+
+      <div class="chant-box pig">
+        <div class="chant-speaker">🐷 The First Little Pig answers</div>
+        <div class="chant-text">
+          "No! No! No!<br>
+          Not by the hairs on my chinny chin chin!"
+        </div>
+      </div>
+
+      <p class="story-text">Then the wolf showed his teeth and said:</p>
+
+      <div class="chant-box huff-puff">
+        <div class="chant-speaker">💨 The Wolf growls</div>
+        <div class="chant-text">
+          "Then I'll huff<br>
+          and I'll puff<br>
+          and I'll blow your house down."
+        </div>
+      </div>
+
+      <!-- Illustration 2: Straw House Blown Down -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_straw.jpg" 
+            alt="The big bad wolf huffing and blowing hard, sending straw flying everywhere as the first pig escapes." 
+            loading="lazy"
+            width="377" 
+            height="480"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>With a mighty huff and puff, the wolf blows down the little straw house.</figcaption>
+      </figure>
+
+      <p class="story-text">So he huffed and he puffed and he blew the house down! The wolf opened his jaws very wide and bit down as hard as he could, but the first little pig escaped and ran away to hide with the second little pig.</p>
+    </article>
+
+    <!-- SCENE 3 -->
+    <article class="scene-section" id="scene-3">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • The House of Sticks</span>
+      </div>
+
+      <p class="story-text">The second little pig worked a little bit harder but he was somewhat lazy too and he built his house out of sticks. Then, they sang and danced and played together the rest of the day.</p>
+
+      <p class="story-text">The wolf continued down the lane and he passed by the second house made of sticks; and he saw the house, and he smelled the pigs inside, and his mouth began to water as he thought about the fine dinner they would make.</p>
+
+      <p class="story-text">So he knocked on the door and said:</p>
+
+      <div class="chant-box wolf">
+        <div class="chant-speaker">🐺 The Wolf knocks</div>
+        <div class="chant-text">
+          "Little pigs! Little pigs!<br>
+          Let me in! Let me in!"
+        </div>
+      </div>
+
+      <p class="story-text">But the little pigs saw the wolf's pointy ears through the keyhole, so they answered back:</p>
+
+      <div class="chant-box pig">
+        <div class="chant-speaker">🐷 Both Little Pigs answer</div>
+        <div class="chant-text">
+          "No! No! No!<br>
+          Not by the hairs on our chinny chin chin!"
+        </div>
+      </div>
+
+      <p class="story-text">So the wolf showed his teeth and said:</p>
+
+      <div class="chant-box huff-puff">
+        <div class="chant-speaker">💨 The Wolf growls</div>
+        <div class="chant-text">
+          "Then I'll huff<br>
+          and I'll puff<br>
+          and I'll blow your house down!"
+        </div>
+      </div>
+
+      <!-- Illustration 3: Stick House Blown Down (NEW) -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_stick_house.jpg" 
+            alt="The wolf huffing and blowing the stick house into flying twigs as the two little pigs run away on their hind trotters." 
+            loading="lazy"
+            width="896" 
+            height="1152"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The wolf blows the stick house to pieces, but both little pigs scramble away just in time!</figcaption>
+      </figure>
+
+      <p class="story-text">So he huffed and he puffed and he blew the house down! The wolf was greedy and he tried to catch both pigs at once, but he was too greedy and got neither! His big jaws clamped down on nothing but air and the two little pigs scrambled away as fast as their little hooves would carry them.</p>
+    </article>
+
+    <!-- SCENE 4 -->
+    <article class="scene-section" id="scene-4">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • The Sturdy Brick House</span>
+      </div>
+
+      <p class="story-text">The third little pig worked hard all day and built his house with bricks. It was a sturdy house complete with a fine fireplace and chimney. It looked like it could withstand the strongest winds.</p>
+
+      <!-- Illustration 4: Building the Brick House -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_brick_building.jpg" 
+            alt="The third little pig standing atop a ladder laying sturdy red bricks with mortar and trowel." 
+            loading="lazy"
+            width="370" 
+            height="481"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The hardworking third little pig carefully builds a sturdy house of bricks.</figcaption>
+      </figure>
+
+      <p class="story-text">The wolf chased them down the lane and he almost caught them. But they made it to the brick house and slammed the door closed before the wolf could catch them. The three little pigs they were very frightened, they knew the wolf wanted to eat them. And that was very, very true. The wolf hadn't eaten all day and he had worked up a large appetite chasing the pigs around and now he could smell all three of them inside and he knew that the three little pigs would make a lovely feast.</p>
+    </article>
+
+    <!-- SCENE 5 -->
+    <article class="scene-section" id="scene-5">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 5 • Huffing and Puffing in Vain</span>
+      </div>
+
+      <p class="story-text">So the wolf knocked on the door and said:</p>
+
+      <div class="chant-box wolf">
+        <div class="chant-speaker">🐺 The Wolf knocks</div>
+        <div class="chant-text">
+          "Little pigs! Little pigs!<br>
+          Let me in! Let me in!"
+        </div>
+      </div>
+
+      <p class="story-text">But the little pigs saw the wolf's narrow eyes through the keyhole, so they answered back:</p>
+
+      <div class="chant-box pig">
+        <div class="chant-speaker">🐷 The Three Little Pigs answer together</div>
+        <div class="chant-text">
+          "No! No! No!<br>
+          Not by the hairs on our chinny chin chin!"
+        </div>
+      </div>
+
+      <p class="story-text">So the wolf showed his teeth and said:</p>
+
+      <div class="chant-box huff-puff">
+        <div class="chant-speaker">💨 The Wolf roars</div>
+        <div class="chant-text">
+          "Then I'll huff<br>
+          and I'll puff<br>
+          and I'll blow your house down."
+        </div>
+      </div>
+
+      <p class="story-text">Well! he huffed and he puffed. He puffed and he huffed. And he huffed, huffed, and he puffed, puffed; but he could not blow the house down. At last, he was so out of breath that he couldn't huff and he couldn't puff anymore. So he stopped to rest and thought a bit.</p>
+
+      <!-- Illustration 5: Wolf Exhausted at the Brick House (NEW) -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_wolf_brick.jpg" 
+            alt="The exhausted big bad wolf slumping outside the solid brick wall, tongue hanging out and out of breath." 
+            loading="lazy"
+            width="896" 
+            height="1152"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Completely out of breath, the exhausted wolf slumps outside the unmoved brick house.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 6 -->
+    <article class="scene-section" id="scene-6">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 6 • Down the Chimney</span>
+      </div>
+
+      <p class="story-text">But this was too much. The wolf danced about with rage and swore he would come down the chimney and eat up the little pig for his supper. But while he was climbing on to the roof the little pig made up a blazing fire and put on a big pot full of water to boil. Then, just as the wolf was coming down the chimney, the little piggy pulled off the lid, and plop! in fell the wolf into the scalding water.</p>
+
+      <!-- Illustration 6: Wolf in the Boiling Pot -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_wolf_in_pot.jpg" 
+            alt="The clever pig pulling off the pot lid by the roaring fireplace as the wolf falls down into the pot." 
+            loading="lazy"
+            width="390" 
+            height="500"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Just as the wolf drops down the chimney, the clever pig uncovers the boiling pot!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 7 -->
+    <article class="scene-section" id="scene-7">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 7 • Safe at Last &amp; Supper</span>
+      </div>
+
+      <p class="story-text">So the little piggy put on the cover again, boiled the wolf up, and the three little pigs ate him for supper.</p>
+
+      <!-- Illustration 7: The Three Pigs Celebrate Supper (NEW) -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img 
+            src="three_little_pigs_supper.jpg" 
+            alt="The three happy little pigs smiling around a wooden kitchen table by the warm hearth fire, eating supper safely together." 
+            loading="lazy"
+            width="896" 
+            height="1152"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Safe at last inside the brick house, the three little pigs celebrate happily over a cozy supper!</figcaption>
+      </figure>
+    </article>
+
+    <!-- Interactive Conclusion / Teaching Moment -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">💡 Bedtime Question for Shane</span>
+      <h2 class="conclusion-question">"Why did the third little pig's house stay standing when the wolf huffed and puffed?"</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 580px; margin: 0 auto 24px; line-height: 1.6;">
+        Taking your time, working hard, and building things strong pays off every single time.
+      </p>
+
+      <div class="choice-grid">
+        <a href="../the-great-pontoon-pike-escape/" class="choice-card">
+          <span class="choice-card-icon">🎣</span>
+          <strong class="choice-card-title">The Great Pontoon Pike Escape</strong>
+          <span class="choice-card-desc">Shane, Tyson, Mom &amp; Dad wrestle a 24-inch pike on Houghton Lake!</span>
+          <span class="choice-action-btn">Read Next Adventure ➔</span>
+        </a>
+
+        <a href="../the-bedtime-toot-tastrophe/" class="choice-card">
+          <span class="choice-card-icon">💨</span>
+          <strong class="choice-card-title">The Bedtime Toot-Tastrophe</strong>
+          <span class="choice-card-desc">Mom tries to read a quiet bedtime story, but giggly toots steal the show!</span>
+          <span class="choice-action-btn">Read Next Adventure ➔</span>
+        </a>
+      </div>
+
+      <a href="../" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--accent-brick); text-decoration: none; margin-top: 10px;">
+        <span>🏠 Back to Shane's Storybook Library</span>
+        <span>➔</span>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>⭐ <strong>Shane &amp; Alex's Bedtime Stories Collection</strong></p>
+      <p style="margin-top: 6px;">Classic Fairy Tale • Illustrated in vintage Edwardian storybook watercolor style</p>
+      <div class="footer-links">
+        <a href="../" style="color: var(--text-accent); text-decoration: none;">Library Home</a>
+        <span>•</span>
+        <a href="#top" style="color: var(--text-accent); text-decoration: none;" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Top of Page</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (winScroll > 300) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    });
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {
+      btnStoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        } else {
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('shane-stories-theme', theme); } catch (e) {}
+
+      themeButtons.forEach(b => {
+        if (b.dataset.themeVal === theme) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    });
+
+    try {
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('night');
+      }
+    } catch (e) {}
+
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {
+      currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10);
+    } catch (e) {}
+
+    function updateFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try { localStorage.setItem('shane-stories-fontsize', currentFontSize); } catch (e) {}
+    }
+
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent.replace('✦ ', '') : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (lightboxModal.classList.contains('active')) {
+          lightboxModal.classList.remove('active');
+          lightboxModal.style.display = 'none';
+          lightboxImg.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+        if (storyDropdown) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+        }
+      }
+    });
+
+    // 6. Voice Narration Audio Player
+    const storyAudio = document.getElementById('story-audio-element');
+    const btnAudioToggle = document.getElementById('btn-audio-toggle');
+    const audioPlayIcon = document.getElementById('audio-play-icon');
+    const audioPlayLabel = document.getElementById('audio-play-label');
+    const audioScrubber = document.getElementById('audio-scrubber');
+    const audioScrubberFill = document.getElementById('audio-scrubber-fill');
+    const audioTimeCurrent = document.getElementById('audio-time-current');
+    const audioTimeTotal = document.getElementById('audio-time-total');
+    const btnAudioSpeed = document.getElementById('btn-audio-speed');
+
+    // Pre-calculate paragraph elements for highlighting
+    const storyParagraphs = Array.from(document.querySelectorAll('.story-text, .chant-box'));
+    let paraTimings = [];
+
+    function computeTimings() {
+      const total = storyAudio.duration || 261.13;
+      if (!total || !isFinite(total)) return false;
+      const lens = storyParagraphs.map(p => ((p.innerText || p.textContent) || '').trim().length || 1);
+      const sum = lens.reduce((a, b) => a + b, 0);
+      let acc = 0;
+      paraTimings = lens.map(l => { const t = acc / sum * total; acc += l; return t; });
+      return true;
+    }
+
+    function highlightForTime(t) {
+      if (!paraTimings.length) return;
+      let idx = 0;
+      for (let i = 0; i < paraTimings.length; i++) { if (t >= paraTimings[i]) idx = i; }
+      storyParagraphs.forEach((p, i) => {
+        if (i === idx) {
+          if (!p.classList.contains('para-speaking')) {
+            p.classList.add('para-speaking');
+          }
+        } else {
+          p.classList.remove('para-speaking');
+        }
+      });
+    }
+
+    function resetHighlights() {
+      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
+    }
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    if (storyAudio && btnAudioToggle) {
+      storyAudio.addEventListener('loadedmetadata', () => {
+        audioTimeTotal.textContent = formatTime(storyAudio.duration);
+        computeTimings();
+      });
+
+      storyAudio.addEventListener('timeupdate', () => {
+        const dur = storyAudio.duration || 261.13;
+        if (dur > 0) {
+          const pct = (storyAudio.currentTime / dur) * 100;
+          audioScrubberFill.style.width = pct + '%';
+          audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
+          audioTimeTotal.textContent = formatTime(dur);
+          highlightForTime(storyAudio.currentTime);
+        }
+      });
+
+      storyAudio.addEventListener('ended', () => {
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = 'Play Voice Narration';
+        audioScrubberFill.style.width = '0%';
+        resetHighlights();
+      });
+
+      btnAudioToggle.addEventListener('click', () => {
+        if (storyAudio.paused) {
+          computeTimings();
+          storyAudio.play();
+          audioPlayIcon.textContent = '⏸';
+          audioPlayLabel.textContent = 'Pause Narration';
+        } else {
+          storyAudio.pause();
+          audioPlayIcon.textContent = '▶';
+          audioPlayLabel.textContent = 'Resume Narration';
+        }
+      });
+
+      audioScrubber.addEventListener('click', (e) => {
+        const rect = audioScrubber.getBoundingClientRect();
+        const clickPos = (e.clientX - rect.left) / rect.width;
+        const dur = storyAudio.duration || 261.13;
+        if (dur > 0) {
+          storyAudio.currentTime = clickPos * dur;
+          computeTimings();
+        }
+      });
+
+      const speeds = [1.0, 1.15, 1.25, 0.9];
+      let speedIdx = 0;
+      btnAudioSpeed.addEventListener('click', () => {
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const s = speeds[speedIdx];
+        storyAudio.playbackRate = s;
+        btnAudioSpeed.textContent = `Speed: ${s}×`;
+      });
+    }
+  </script>
+</body>
+</html>
