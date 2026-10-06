@@ -1,6 +1,6 @@
 # Jack and the Beanstalk
 *A Classic Children's Fairy Tale for Shane*
-*Reading & Audio Time: ~4 minutes • With Voice Narration & Arthur Rackham Style Illustrations*
+*Reading & Audio Time: ~4 minutes • With Voice Narration & 9 Arthur Rackham Style Illustrations*
 
 ---
 
@@ -13,12 +13,16 @@ On the way, Jack met a curious old man who offered him five magic beans in excha
 
 But when Jack’s mother saw the beans, she was furious. “You foolish boy!” she cried. “You’ve traded our only cow for a handful of nonsense!” In a fit of anger, she tossed the beans out the window. Jack went to bed heartbroken and hungry.
 
+*Illustration 2: `scene1b_beans_tossed.jpg` — Jack's furious mother throws the magic beans out the window into the cottage garden while Jack looks on heartbroken.*
+
 ---
 
 ### Scene 2: The Beanstalk to the Clouds
 When dawn broke, Jack looked out the window—and gasped. Overnight, the beans had sprouted into a towering beanstalk that reached all the way to the clouds! Trembling with wonder, he began to climb, higher and higher, until he reached a strange kingdom in the sky.
 
-*Illustration 2: `scene2_climbing_beanstalk.jpg` — Jack climbing the colossal spiraling beanstalk up into the clouds toward the giant's stone fortress.*
+*Illustration 3: `scene2a_beanstalk_morning.jpg` — Jack leans out his bedroom window at sunrise, gasping at the colossal beanstalk towering into the heavens.*
+
+*Illustration 4: `scene2_climbing_beanstalk.jpg` — Jack climbing the colossal spiraling beanstalk up into the clouds toward the giant's stone fortress.*
 
 In a massive stone house, Jack met the wife of a fearsome giant. “Please,” Jack begged, “may I have a little food? I’ve climbed so far and I’m starving.” The kind woman gave him bread and milk.
 
@@ -30,7 +34,7 @@ But just then, the ground began to quake. The giant was coming home! Jack darted
 > *Be he alive or be he dead,*  
 > *I’ll grind his bones to make my bread!”*
 
-*Illustration 3: `scene3_giant_in_kitchen.jpg` — The fearsome giant stomps into the kitchen bellowing Fee-Fi-Fo-Fum, illustrated by Arthur Rackham.*
+*Illustration 5: `scene3_giant_in_kitchen.jpg` — The fearsome giant stomps into the kitchen bellowing Fee-Fi-Fo-Fum, illustrated by Arthur Rackham.*
 
 “Don’t be silly,” said his wife. “There’s no boy here.” The giant grumbled but sat down to eat. After his meal, he opened a sack bursting with gold coins, counted them carefully, and fell asleep. Seizing his chance, Jack crept out, stole a sack of gold, and scrambled down the beanstalk. His mother wept with joy—they could live well for a time.
 
@@ -46,6 +50,8 @@ Yet greed and curiosity soon returned. Jack climbed the beanstalk again, back to
 
 Again, his wife soothed him, and he ate until he was full. Then he brought out a hen and barked, “Lay!” To Jack’s amazement, the hen laid a golden egg. When the giant fell asleep, Jack snatched the hen and hurried down the beanstalk. His mother was delighted—but warned him never to climb again.
 
+*Illustration 6: `scene3b_golden_egg_hen.jpg` — The giant watches the magical speckled hen lay a radiant golden egg upon the heavy wooden table while Jack watches from hiding.*
+
 ---
 
 ### Scene 4: The Golden Singing Harp
@@ -60,7 +66,9 @@ Days later, Jack’s daring nature got the better of him. He climbed once more t
 
 That night, while the giant snored, Jack crept into his chamber and saw a golden harp that played music by itself. He reached out, but the harp suddenly cried, “Help, master! A boy is stealing me!” The giant awoke with a roar and gave chase. Jack fled down the beanstalk, the harp clutched in his arms.
 
-*Illustration 4: `scene4_golden_harp.jpg` — Jack stealthily reaches for the winged golden harp and golden hen while the giant snores on the table.*
+*Illustration 7: `scene4_golden_harp.jpg` — Jack stealthily reaches for the winged golden harp and golden hen while the giant snores on the table.*
+
+*Illustration 8: `scene4b_giant_chase.jpg` — The roaring giant pursues Jack down the beanstalk through the dark storm clouds.*
 
 ---
 
@@ -69,7 +77,7 @@ As Jack’s boots hit the ground, he shouted to his mother, “Bring me the axe!
 
 *CRACK! CHOP! CRASH!*
 
-*Illustration 5: `scene5_chopping_beanstalk.jpg` — Jack chops the base of the beanstalk as the giant falls, illustrated by Arthur Rackham.*
+*Illustration 9: `scene5_chopping_beanstalk.jpg` — Jack chops the base of the beanstalk as the giant falls, illustrated by Arthur Rackham.*
 
 With a final thunderous crash, the giant plunged from the sky—dead where he fell.
 
@@ -79,4 +87,4 @@ From that day on, Jack and his mother lived in comfort and peace, their hearts f
 
 ### Sources & Credits
 - **Story text & narration audio**: American Literature (`https://americanliterature.com/childrens-stories/jack-and-the-beanstalk`)
-- **Illustrations**: Arthur Rackham (1918) original plates + 3 newly created companion illustrations matching the Arthur Rackham pen-and-ink and watercolor wash style.
+- **Illustrations**: Arthur Rackham (1918) original plates + companion illustrations matching the Arthur Rackham pen-and-ink and watercolor wash style.

@@ -1,11 +1,24 @@
 # The Three Little Pigs
-*A Classic Fairy Tale*
+*A Classic Fairy Tale with 12 Vintage Illustrations & Voice Narration*
+*Source: https://americanliterature.com/childrens-stories/the-three-little-pigs*
 
 Once upon a time there was an old mother pig who had three little pigs and not enough food to feed them. So when they were old enough, she sent them out into the world to seek their fortunes.
 
-The first little pig was very lazy. He didn't want to work at all and he built his house out of straw. The second little pig worked a little bit harder but he was somewhat lazy too and he built his house out of sticks. Then, they sang and danced and played together the rest of the day.
+*Illustration 1: `three_little_pigs_farewell.jpg` — Mother pig waving farewell to her three little pigs.*
+
+The first little pig was very lazy. He didn't want to work at all and he built his house out of straw.
+
+*Illustration 2: `three_little_pigs_straw_building.jpg` — The first little pig quickly builds a house of golden straw.*
+
+The second little pig worked a little bit harder but he was somewhat lazy too and he built his house out of sticks. Then, they sang and danced and played together the rest of the day.
+
+*Illustration 3: `three_little_pigs_stick_building.jpg` — The second little pig gathers twigs and branches to make a stick house.*
+
+*Illustration 4: `three_little_pigs_dancing_playing.jpg` — The first two little pigs singing, dancing, and playing without a care.*
 
 The third little pig worked hard all day and built his house with bricks. It was a sturdy house complete with a fine fireplace and chimney. It looked like it could withstand the strongest winds.
+
+*Illustration 5: `three_little_pigs_brick_building.jpg` — The hardworking third little pig carefully lays bricks and mortar.*
 
 The next day, a wolf happened to pass by the lane where the three little pigs lived; and he saw the straw house, and he smelled the pig inside. He thought the pig would make a mighty fine meal and his mouth began to water.
 
@@ -27,6 +40,8 @@ Then the wolf showed his teeth and said:
 
 So he huffed and he puffed and he blew the house down! The wolf opened his jaws very wide and bit down as hard as he could, but the first little pig escaped and ran away to hide with the second little pig.
 
+*Illustration 6: `three_little_pigs_straw.jpg` — The wolf blows down the straw house with a mighty huff and puff.*
+
 The wolf continued down the lane and he passed by the second house made of sticks; and he saw the house, and he smelled the pigs inside, and his mouth began to water as he thought about the fine dinner they would make.
 
 So he knocked on the door and said:
@@ -45,9 +60,13 @@ So the wolf showed his teeth and said:
 > and I'll puff  
 > and I'll blow your house down!  
 
+*Illustration 7: `three_little_pigs_stick_house.jpg` — The wolf blows the stick house to pieces as the two pigs scramble away.*
+
 So he huffed and he puffed and he blew the house down! The wolf was greedy and he tried to catch both pigs at once, but he was too greedy and got neither! His big jaws clamped down on nothing but air and the two little pigs scrambled away as fast as their little hooves would carry them.
 
 The wolf chased them down the lane and he almost caught them. But they made it to the brick house and slammed the door closed before the wolf could catch them. The three little pigs they were very frightened, they knew the wolf wanted to eat them. And that was very, very true. The wolf hadn't eaten all day and he had worked up a large appetite chasing the pigs around and now he could smell all three of them inside and he knew that the three little pigs would make a lovely feast.
+
+*Illustration 8: `three_little_pigs_chase_to_brick.jpg` — The wolf furiously chases the two pigs down the lane to the brick house.*
 
 So the wolf knocked on the door and said:
 
@@ -67,6 +86,14 @@ So the wolf showed his teeth and said:
 
 Well! he huffed and he puffed. He puffed and he huffed. And he huffed, huffed, and he puffed, puffed; but he could not blow the house down. At last, he was so out of breath that he couldn't huff and he couldn't puff anymore. So he stopped to rest and thought a bit.
 
+*Illustration 9: `three_little_pigs_wolf_brick.jpg` — The exhausted wolf slumps outside the unmoved brick wall.*
+
 But this was too much. The wolf danced about with rage and swore he would come down the chimney and eat up the little pig for his supper. But while he was climbing on to the roof the little pig made up a blazing fire and put on a big pot full of water to boil. Then, just as the wolf was coming down the chimney, the little piggy pulled off the lid, and plop! in fell the wolf into the scalding water.
 
+*Illustration 10: `three_little_pigs_wolf_on_roof.jpg` — The wolf creeps onto the rooftop towards the chimney.*
+
+*Illustration 11: `three_little_pigs_wolf_in_pot.jpg` — The wolf plunges into the boiling pot.*
+
 So the little piggy put on the cover again, boiled the wolf up, and the three little pigs ate him for supper.
+
+*Illustration 12: `three_little_pigs_supper.jpg` — The three little pigs celebrate happily over supper inside the brick house.*

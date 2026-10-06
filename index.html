@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Illustrated bedtime adventures and classic stories for Shane and Dad Alex, with voice narration and moving storybook videos.">
-  <title>Shane &amp; Alex's Bedtime Stories — Illustrated Adventures</title>
+  <meta name="description" content="Illustrated bedtime adventures and classic fairy tales for Shane, Tyson, and the whole family, with voice narration and moving storybook videos.">
+  <title>Bedtime Stories &amp; Classic Tales — Shane, Tyson &amp; Classics</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,6 +70,7 @@
     html {
       font-size: var(--base-font-size);
       scroll-behavior: smooth;
+      scroll-padding-top: 72px;
       -webkit-text-size-adjust: 100%;
     }
 
@@ -205,7 +206,7 @@
     .hero-stats {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
       font-family: var(--font-sans);
       font-size: 0.88rem;
@@ -222,7 +223,54 @@
       font-weight: 600;
     }
 
+    /* Hub Jump Navigation */
+    .hub-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .hub-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      color: var(--text-main);
+      padding: 9px 18px;
+      border-radius: 24px;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.22s ease;
+    }
+
+    .hub-nav-btn:hover {
+      border-color: var(--text-accent);
+      color: var(--text-accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      background: var(--bg-card-subtle);
+    }
+
+    .hub-nav-btn .count-badge {
+      background: rgba(224, 103, 20, 0.14);
+      color: var(--text-accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+
     /* Section Headings */
+    .section-container {
+      margin-bottom: 56px;
+    }
+
     .section-header {
       margin-bottom: 24px;
       display: flex;
@@ -231,6 +279,7 @@
       flex-wrap: wrap;
       gap: 8px;
     }
+
     .section-title {
       font-family: var(--font-display);
       font-size: 1.65rem;
@@ -240,6 +289,7 @@
       align-items: center;
       gap: 8px;
     }
+
     .section-subtitle {
       font-family: var(--font-sans);
       font-size: 0.9rem;
@@ -251,7 +301,6 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 28px;
-      margin-bottom: 50px;
     }
 
     @media (min-width: 680px) {
@@ -430,6 +479,8 @@
       .hero-title { font-size: 2rem; }
       .hero-subtitle { font-size: 0.98rem; }
       .hub-container { padding: 20px 14px 40px; }
+      .hub-nav { gap: 8px; }
+      .hub-nav-btn { font-size: 0.85rem; padding: 7px 14px; }
     }
   </style>
 </head>
@@ -439,7 +490,7 @@
   <header class="top-toolbar">
     <div class="toolbar-inner">
       <a href="index.html" class="brand-logo">
-        <span>📖 Shane &amp; Alex's Stories</span>
+        <span>📖 Bedtime Stories Library</span>
       </a>
 
       <div class="toolbar-actions">
@@ -457,7 +508,7 @@
 
     <!-- Hero Banner -->
     <section class="hero-banner">
-      <span class="hero-badge">🌟 Bedtime Adventures for Shane (Age 5) &amp; Dad (Alex)</span>
+      <span class="hero-badge">🌟 19 Bedtime Adventures &amp; Classic Tales Across 3 Collections</span>
       <h1 class="hero-title">Welcome to Our <span class="highlight">Storybook</span></h1>
       <p class="hero-subtitle">
         Bedtime adventures and classic stories with big surprises, simple words to say together, and cozy endings.
@@ -465,94 +516,42 @@
 
       <div class="hero-stats">
         <span class="stat-pill">⏱️ About 2-5 Min Each</span>
-        <span class="stat-pill">🎨 46 Story Illustrations</span>
-        <span class="stat-pill">🎙️ Voice Narration</span>
-        <span class="stat-pill">🎬 Moving Storybook Videos</span>
-        <span class="stat-pill">🗣️ Lines to Say Together</span>
+        <span class="stat-pill">📚 19 Stories Total</span>
+        <span class="stat-pill">🎨 90+ Illustrations</span>
+        <span class="stat-pill">🎙️ Spoken Narration</span>
+        <span class="stat-pill">🎬 Storybook Videos</span>
         <span class="stat-pill">📱 Mobile &amp; Bedtime Friendly</span>
       </div>
+
+      <!-- Quick Section Jump Navigation -->
+      <nav class="hub-nav" aria-label="Story Collections Navigation">
+        <a href="#shane-stories" class="hub-nav-btn">
+          <span>🌟</span> <strong>Shane's Adventures</strong> <span class="count-badge">10</span>
+        </a>
+        <a href="#tyson-stories" class="hub-nav-btn">
+          <span>⚡</span> <strong>Tyson's Adventures</strong> <span class="count-badge">7</span>
+        </a>
+        <a href="#classics-stories" class="hub-nav-btn">
+          <span>🏰</span> <strong>Classic Fairy Tales</strong> <span class="count-badge">2</span>
+        </a>
+      </nav>
     </section>
 
 
-    <!-- Tyson's Stories Promo -->
-    <section style="margin-bottom: 40px;">
-      <a href="tyson/" class="story-card" style="display:block;">
-        <div class="card-body" style="text-align:center; padding: 30px 24px;">
-          <span class="hero-badge" style="margin-bottom: 12px;">🌟 New Collection</span>
-          <h3 class="card-title" style="font-size: 1.6rem;">Tyson&apos;s Big Adventures</h3>
-          <p class="card-chant-preview" style="text-align:center; border-left:none; border-top: 3px solid var(--text-accent);">
-            Seven bedtime stories starring Tyson (age 7) — fishing, football, bikes, and a first loose tooth.
-          </p>
-          <div class="card-footer" style="justify-content:center; border-top:none; padding-top: 4px;">
-            <span>Explore Tyson&apos;s Stories</span>
-            <span class="card-arrow">➔</span>
-          </div>
-        </div>
-      </a>
-    </section>
-
-    <!-- Shane's Stories Section -->
-    <section id="shane-stories">
+    <!-- ============================================== -->
+    <!-- SECTION 1: SHANE'S BEDTIME ADVENTURES          -->
+    <!-- ============================================== -->
+    <section id="shane-stories" class="section-container">
       <div class="section-header">
-        <h2 class="section-title">🌟 Shane's Bedtime Adventures</h2>
-        <span class="section-subtitle">Pick a story for tonight starring Shane, Dad Alex, Mom Theresa, Tyson, and classic tales!</span>
+        <div>
+          <h2 class="section-title">🌟 Shane's Bedtime Adventures</h2>
+          <span class="section-subtitle">10 illustrated stories starring Shane (age 5), Dad Alex, Mom Theresa, and Tyson</span>
+        </div>
       </div>
 
       <div class="story-grid">
 
-        <!-- Jack and the Beanstalk -->
-        <a href="jack-and-the-beanstalk/" class="story-card">
-          <div class="card-img-wrapper">
-            <img 
-              src="jack-and-the-beanstalk/scene2_climbing_beanstalk.jpg" 
-              alt="Jack climbing the giant beanstalk through the clouds toward the giant's castle."
-              loading="lazy"
-              width="688"
-              height="387"
-              style="object-position: center 20%;"
-            >
-            <span class="card-badge">🌱 Classic Tale</span>
-            <span class="card-anim-tag" style="background: linear-gradient(135deg, #2D6A4F, #52B788);">🎙️ Voice Narration</span>
-            <span class="card-time">⏱️ 4 min</span>
-          </div>
-          <div class="card-body">
-            <span class="card-theme-tag tag-green">Classic Fairy Tale • 5 Illustrations</span>
-            <h3 class="card-title">Jack and the Beanstalk</h3>
-            <p class="card-chant-preview">"Fee, fi, fo, fum, I smell the blood of an Englishman! Be he alive or be he dead..."</p>
-            <div class="card-footer">
-              <span>Read Story &amp; Listen to Narration</span>
-              <span class="card-arrow">➔</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- The Three Little Pigs -->
-        <a href="the-three-little-pigs/" class="story-card">
-          <div class="card-img-wrapper">
-            <img 
-              src="the-three-little-pigs/three_little_pigs_supper.jpg" 
-              alt="The three little pigs smiling and eating supper safely together inside the brick house."
-              loading="lazy"
-              width="688"
-              height="387"
-              style="object-position: center 25%;"
-            >
-            <span class="card-badge">🐷 Classic Tale</span>
-            <span class="card-anim-tag" style="background: linear-gradient(135deg, #B83B26, #E09F3E);">🎙️ Voice Narration</span>
-            <span class="card-time">⏱️ 4-5 min</span>
-          </div>
-          <div class="card-body">
-            <span class="card-theme-tag tag-red">Classic Fairy Tale • 7 Illustrations</span>
-            <h3 class="card-title">The Three Little Pigs</h3>
-            <p class="card-chant-preview">"Little pig, little pig, let me in!" — "No! No! No! Not by the hairs on my chinny chin chin!"</p>
-            <div class="card-footer">
-              <span>Read Story &amp; Listen to Narration</span>
-              <span class="card-arrow">➔</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- New Featured Story: The Great Pontoon Pike Escape -->
+        <!-- Shane Story 1: The Great Pontoon Pike Escape -->
         <a href="the-great-pontoon-pike-escape/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -577,7 +576,7 @@
           </div>
         </a>
 
-        <!-- Story 1: Pontoon Fishing at Houghton Lake -->
+        <!-- Shane Story 2: Pontoon Fishing at Houghton Lake -->
         <a href="the-fish-that-pulled-back/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -602,7 +601,7 @@
           </div>
         </a>
 
-        <!-- Story 2: Disc Golf -->
+        <!-- Shane Story 3: Disc Golf -->
         <a href="the-daring-disc-dash/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -627,7 +626,7 @@
           </div>
         </a>
 
-        <!-- Story 3: Biking -->
+        <!-- Shane Story 4: Biking -->
         <a href="the-bouncing-bicycle-brigade/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -652,7 +651,7 @@
           </div>
         </a>
 
-        <!-- Story 4: Sledding in the Snow -->
+        <!-- Shane Story 5: Sledding in the Snow -->
         <a href="the-super-snowy-sled/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -677,7 +676,7 @@
           </div>
         </a>
 
-        <!-- Story 5: Playing Uno -->
+        <!-- Shane Story 6: Playing Uno -->
         <a href="the-wild-uno-uproar/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -702,8 +701,7 @@
           </div>
         </a>
 
-
-        <!-- Story 6: The original forest adventure -->
+        <!-- Shane Story 7: The original forest adventure -->
         <a href="shane-and-the-magic-disc/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -727,7 +725,7 @@
           </div>
         </a>
 
-        <!-- Story 7: The original woodland mystery -->
+        <!-- Shane Story 8: The original woodland mystery -->
         <a href="mystery-of-the-back-nine/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -751,7 +749,7 @@
           </div>
         </a>
 
-        <!-- Story 8: The original fishing tale -->
+        <!-- Shane Story 9: The original fishing tale -->
         <a href="the-legend-of-big-whalter/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -775,7 +773,7 @@
           </div>
         </a>
 
-        <!-- Story 9: The Bedtime Toot-Tastrophe -->
+        <!-- Shane Story 10: The Bedtime Toot-Tastrophe -->
         <a href="the-bedtime-toot-tastrophe/" class="story-card">
           <div class="card-img-wrapper">
             <img 
@@ -804,10 +802,272 @@
     </section>
 
 
+    <!-- ============================================== -->
+    <!-- SECTION 2: TYSON'S BIG ADVENTURES             -->
+    <!-- ============================================== -->
+    <section id="tyson-stories" class="section-container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">⚡ Tyson's Big Adventures</h2>
+          <span class="section-subtitle">7 bedtime stories starring Tyson (age 7) &mdash; fishing, football, Pokémon, Mario, bikes, and a first loose tooth</span>
+        </div>
+        <a href="tyson/" style="font-family: var(--font-sans); font-size: 0.88rem; font-weight: 700; color: var(--text-accent); text-decoration: none;">Explore Tyson's Hub ➔</a>
+      </div>
+
+      <div class="story-grid">
+
+        <!-- Tyson Story 1: Tyson and the Big Splash -->
+        <a href="tyson/the-big-splash/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/the-big-splash/casting.webp" 
+              alt="Tyson casting his fishing line from a boat on a sunny lake."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">🎣 Adventure #1</span>
+            <span class="card-anim-tag">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-blue">Lake Fishing with Dad</span>
+            <h3 class="card-title">Tyson and the Big Splash</h3>
+            <p class="card-chant-preview">A stick, a flying hat, and one small fish.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tyson Story 2: Tyson and Pikachu’s Lost Ball -->
+        <a href="tyson/pikachus-lost-ball/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/pikachus-lost-ball/tail-in-bush.webp" 
+              alt="Tyson peeking at Pikachu's tail in a park bush."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">⚡ Adventure #2</span>
+            <span class="card-anim-tag">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-orange">Park Day with Mom</span>
+            <h3 class="card-title">Tyson and Pikachu’s Lost Ball</h3>
+            <p class="card-chant-preview">A stuck ball, a pool noodle, and a sock hat.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tyson Story 3: Tyson and the Sneaky Flag Play -->
+        <a href="tyson/the-sneaky-flag-play/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/the-sneaky-flag-play/big-run.webp" 
+              alt="Tyson running with a football, blue flags flapping."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">🏈 Adventure #3</span>
+            <span class="card-anim-tag">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-green">Flag Football with Dad</span>
+            <h3 class="card-title">Tyson and the Sneaky Flag Play</h3>
+            <p class="card-chant-preview">Look for the space — and hold on to your hat.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tyson Story 4: Tyson and Mario’s Missing Star -->
+        <a href="tyson/marios-missing-star/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/marios-missing-star/green-pipe.webp" 
+              alt="Mario popping out of a green pipe in the backyard."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">🍄 Adventure #4</span>
+            <span class="card-anim-tag">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-red">Mario’s World with Mom</span>
+            <h3 class="card-title">Tyson and Mario’s Missing Star</h3>
+            <p class="card-chant-preview">A missing star, a thorn, and a happy Yoshi.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tyson Story 5: Tyson and the Bike Bell Clue -->
+        <a href="tyson/the-bike-bell-clue/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/the-bike-bell-clue/bike-ride.webp" 
+              alt="Tyson and Dad riding bikes on a sunny park path."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">🚲 Adventure #5</span>
+            <span class="card-anim-tag">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-gold">Bikes &amp; Mystery with Dad</span>
+            <h3 class="card-title">Tyson and the Bike Bell Clue</h3>
+            <p class="card-chant-preview">Ding, ding! The car finder is on the case.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tyson Story 6: Tyson and the Fish That Said Plop -->
+        <a href="tyson/the-fish-that-said-plop/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/the-fish-that-said-plop/squirtle-hello.webp" 
+              alt="Squirtle popping up beside Tyson and Mom on the dock."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">💧 Adventure #6</span>
+            <span class="card-anim-tag">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-blue">Pond Day with Mom</span>
+            <h3 class="card-title">Tyson and the Fish That Said Plop</h3>
+            <p class="card-chant-preview">A prankster Pokémon and a leaf-boat race.</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tyson Story 7: Tyson and the Tooth That Took a Bounce -->
+        <a href="tyson/the-tooth-that-took-a-bounce/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="tyson/the-tooth-that-took-a-bounce/wiggle-wobble.webp" 
+              alt="Tyson shows his first loose tooth while Alex and Theresa encourage him with gentle smiles."
+              loading="lazy"
+              width="1920"
+              height="1280"
+            >
+            <span class="card-badge">🦷 Adventure #7</span>
+            <span class="card-anim-tag" style="background: linear-gradient(135deg, #0077B6, #00B4D8);">🎬 Video &amp; Narration</span>
+            <span class="card-time">⏱️ 3-4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-gold">First Loose Tooth with Mom &amp; Dad</span>
+            <h3 class="card-title">Tyson and the Tooth That Took a Bounce</h3>
+            <p class="card-chant-preview">His tooth bounced away. Could a note save the day?</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================== -->
+    <!-- SECTION 3: CLASSIC FAIRY TALES                 -->
+    <!-- ============================================== -->
+    <section id="classics-stories" class="section-container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">🏰 Classic Fairy Tales</h2>
+          <span class="section-subtitle">Timeless illustrated classics with rich vintage artwork and spoken narration</span>
+        </div>
+      </div>
+
+      <div class="story-grid">
+
+        <!-- Classic Story 1: The Three Little Pigs -->
+        <a href="the-three-little-pigs/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="the-three-little-pigs/three_little_pigs_supper.jpg" 
+              alt="The three little pigs smiling and eating supper safely together inside the sturdy brick house."
+              loading="lazy"
+              width="688"
+              height="387"
+              style="object-position: center 25%;"
+            >
+            <span class="card-badge">🐷 Classic Tale</span>
+            <span class="card-anim-tag" style="background: linear-gradient(135deg, #B83B26, #E09F3E);">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 4-5 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-red">Classic Fairy Tale • 12 Illustrations</span>
+            <h3 class="card-title">The Three Little Pigs</h3>
+            <p class="card-chant-preview">"Little pig, little pig, let me in!" — "No! No! No! Not by the hairs on my chinny chin chin!"</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen to Narration</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Classic Story 2: Jack and the Beanstalk -->
+        <a href="jack-and-the-beanstalk/" class="story-card">
+          <div class="card-img-wrapper">
+            <img 
+              src="jack-and-the-beanstalk/scene2_climbing_beanstalk.jpg" 
+              alt="Jack climbing the giant beanstalk through the clouds toward the giant's castle."
+              loading="lazy"
+              width="688"
+              height="387"
+              style="object-position: center 20%;"
+            >
+            <span class="card-badge">🌱 Classic Tale</span>
+            <span class="card-anim-tag" style="background: linear-gradient(135deg, #2D6A4F, #52B788);">🎙️ Voice Narration</span>
+            <span class="card-time">⏱️ 4 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-theme-tag tag-green">Classic Fairy Tale • 9 Illustrations</span>
+            <h3 class="card-title">Jack and the Beanstalk</h3>
+            <p class="card-chant-preview">"Fee, fi, fo, fum, I smell the blood of an Englishman! Be he alive or be he dead..."</p>
+            <div class="card-footer">
+              <span>Read Story &amp; Listen to Narration</span>
+              <span class="card-arrow">➔</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+
     <!-- Hub Footer -->
     <footer class="hub-footer">
-      <p>⭐ <strong>Shane &amp; Alex's Bedtime Stories Collection</strong></p>
-      <p style="margin-top: 6px;">Made for Shane: simple words, big moments, and a quiet finish before bed</p>
+      <p>⭐ <strong>Bedtime Stories &amp; Classic Tales Collection</strong></p>
+      <p style="margin-top: 6px;">Stories for Shane &amp; Tyson, plus timeless fairy tales: simple words, big moments, and a quiet finish before bed</p>
     </footer>
 
   </main>

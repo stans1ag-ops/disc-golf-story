@@ -537,12 +537,6 @@
       font-style: normal;
     }
 
-    .para-speaking {
-      background-color: rgba(72, 202, 228, 0.25);
-      border-radius: 8px;
-      padding: 4px 8px;
-    }
-
     /* Interactive Conclusion */
     .interactive-conclusion {
       margin-top: 48px;
@@ -1216,51 +1210,16 @@
     const readAloudIcon = document.getElementById('read-aloud-icon');
     const narrationAudio = new Audio('narration.mp3');
     narrationAudio.preload = 'metadata';
-    const storyParagraphs = Array.from(document.querySelectorAll('.story-text, .chant-text'));
-    let paraTimings = [];
-
-    function computeTimings() {
-      const total = narrationAudio.duration;
-      if (!total || !isFinite(total)) return false;
-      const lens = storyParagraphs.map(p => ((p.innerText || p.textContent) || '').trim().length || 1);
-      const sum = lens.reduce((a, b) => a + b, 0);
-      let acc = 0;
-      paraTimings = lens.map(l => { const t = acc / sum * total; acc += l; return t; });
-      return true;
-    }
 
     function resetReadAloudUI() {
       btnReadAloud.classList.remove('speaking');
       readAloudIcon.textContent = '🔊';
       readAloudText.textContent = 'Listen to Bedtime Story';
-      storyParagraphs.forEach(p => p.classList.remove('para-speaking'));
-    }
-
-    function highlightForTime(t) {
-      if (!paraTimings.length) return;
-      let idx = 0;
-      for (let i = 0; i < paraTimings.length; i++) { if (t >= paraTimings[i]) idx = i; }
-      storyParagraphs.forEach((p, i) => {
-        if (i === idx) {
-          if (!p.classList.contains('para-speaking')) {
-            p.classList.add('para-speaking');
-            p.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        } else {
-          p.classList.remove('para-speaking');
-        }
-      });
     }
 
     btnReadAloud.addEventListener('click', () => {
       if (narrationAudio.paused) {
         if (narrationAudio.ended) narrationAudio.currentTime = 0;
-        if (!computeTimings()) {
-          readAloudText.textContent = 'Loading…';
-          narrationAudio.addEventListener('loadedmetadata', () => btnReadAloud.click(), { once: true });
-          narrationAudio.load();
-          return;
-        }
         narrationAudio.play();
         btnReadAloud.classList.add('speaking');
         readAloudIcon.textContent = '⏹️';
@@ -1271,7 +1230,6 @@
       }
     });
 
-    narrationAudio.addEventListener('timeupdate', () => highlightForTime(narrationAudio.currentTime));
     narrationAudio.addEventListener('ended', resetReadAloudUI);
     narrationAudio.addEventListener('error', resetReadAloudUI);
 
