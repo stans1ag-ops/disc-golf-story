@@ -886,10 +886,121 @@
       gap: 16px;
     }
 
+    /* Story Video Section */
+    .story-animation-card {
+      margin-top: 48px;
+      margin-bottom: 24px;
+      padding: 30px 24px 26px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+    }
+
+    .animation-badge-wrapper {
+      margin-bottom: 12px;
+    }
+
+    .animation-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .animation-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 22px;
+      line-height: 1.5;
+    }
+
+    .animation-player-frame {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000000;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+      border: 2px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-aspect-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0d1520;
+    }
+
+    .video-aspect-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .animation-controls-bar {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .anim-pill-badge {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      background: linear-gradient(135deg, var(--accent-brick), #E09F3E);
+      padding: 4px 10px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .anim-caption-text {
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      font-style: italic;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .btn-fullscreen {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-accent);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-fullscreen:hover {
+      background: var(--border-color);
+      transform: translateY(-1px);
+    }
+
     @media (max-width: 640px) {
       .audio-controls-row { flex-wrap: wrap; }
       .btn-audio-main { width: 100%; justify-content: center; }
       .story-figure { max-width: 100%; }
+      .animation-controls-bar { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -1423,6 +1534,36 @@
       </figure>
     </article>
 
+    <!-- Narrated Story Video Section -->
+    <section class="story-animation-card" id="story-video">
+      <div class="animation-badge-wrapper">
+        <span class="anim-pill-badge">🎬 Narrated Story Video</span>
+      </div>
+      <h2 class="animation-title">Watch the story come to life</h2>
+      <p class="animation-subtitle">All 12 classic illustrations matched with full voice narration for bedtime viewing and listening.</p>
+
+      <div class="animation-player-frame">
+        <div class="video-aspect-box">
+          <video 
+            id="story-anim-video" 
+            controls 
+            playsinline 
+            poster="three_little_pigs_story_video_poster.jpg"
+            preload="metadata"
+            aria-label="The Three Little Pigs — Full voice narration over illustrations"
+          >
+            <source src="three_little_pigs_story_video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="animation-controls-bar">
+          <span class="anim-pill-badge">🐷 Full Classic Tale</span>
+          <span class="anim-caption-text">"Little pig, little pig, let me in!" • 4 min 21 sec • Spoken Narration</span>
+          <button type="button" class="btn-fullscreen" onclick="toggleVideoFullscreen(this)" aria-label="Toggle Fullscreen">⛶ Fullscreen</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Interactive Conclusion / Teaching Moment -->
     <section class="interactive-conclusion">
       <span class="conclusion-badge">💡 Bedtime Question for Shane</span>
@@ -1692,6 +1833,40 @@
         storyAudio.playbackRate = s;
         btnAudioSpeed.textContent = `Speed: ${s}×`;
       });
+    }
+
+    // Video Player & Audio Coordination
+    const storyAnimVideo = document.getElementById('story-anim-video');
+    if (storyAnimVideo) {
+      storyAnimVideo.addEventListener('play', () => {
+        if (storyAudio && !storyAudio.paused) {
+          storyAudio.pause();
+          if (audioPlayIcon) audioPlayIcon.textContent = '▶';
+          if (audioPlayLabel) audioPlayLabel.textContent = 'Play Voice Narration';
+        }
+      });
+      if (storyAudio) {
+        storyAudio.addEventListener('play', () => {
+          if (!storyAnimVideo.paused) {
+            storyAnimVideo.pause();
+          }
+        });
+      }
+    }
+
+    function toggleVideoFullscreen(btn) {
+      const container = btn.closest('.animation-player-frame');
+      const video = container.querySelector('video');
+      if (!video) return;
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
     }
   </script>
 </body>

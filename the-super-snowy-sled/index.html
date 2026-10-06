@@ -817,37 +817,6 @@
 
     </article>
 
-    <!-- Moving Storybook Section -->
-    <section class="story-animation-card" id="story-animation">
-      <div class="animation-badge-wrapper">
-        <span class="scene-pill">🎬 3D Story Film</span>
-      </div>
-      <h2 class="animation-title">Watch the story come to life</h2>
-      <p class="animation-subtitle" id="animation-description">Join Shane and Dad for a snowy climb, three bouncy bumps, snow angels, and warm cocoa in this narrated 3D adventure.</p>
-
-      <div class="animation-player-frame">
-        <div class="video-aspect-box">
-          <video 
-            id="story-anim-video" 
-            controls 
-            playsinline 
-            poster="sledding_3d_poster.jpg"
-            preload="metadata"
-            aria-label="The Red Sled Ride — narrated 3D animation"
-            aria-describedby="animation-description"
-          >
-            <source src="sledding_3d.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-        </div>
-        <div class="animation-controls-bar">
-          <span class="anim-pill-badge">✨ 3D Adventure</span>
-          <span class="anim-caption-text">Shane and Dad’s snowy day • 1 min 52 sec • Narrated</span>
-          <button type="button" class="btn-fullscreen" onclick="toggleVideoFullscreen(this)" aria-label="Toggle Fullscreen">⛶ Fullscreen</button>
-        </div>
-      </div>
-    </section>
-
     <!-- Interactive Story Branch / Conclusion -->
     <section class="interactive-conclusion">
       <span class="conclusion-badge">✨ Next Bedtime Adventure</span>
@@ -1031,7 +1000,6 @@
     btnReadAloud.addEventListener('click', () => {
       if (narrationAudio.paused) {
         if (narrationAudio.ended) narrationAudio.currentTime = 0;
-        document.getElementById('story-anim-video').pause();
         narrationAudio.play();
         btnReadAloud.classList.add('speaking');
         readAloudIcon.textContent = '⏹️';
@@ -1044,28 +1012,6 @@
 
     narrationAudio.addEventListener('ended', resetReadAloudUI);
     narrationAudio.addEventListener('error', resetReadAloudUI);
-
-    document.getElementById('story-anim-video').addEventListener('play', () => {
-      narrationAudio.pause();
-      resetReadAloudUI();
-    });
-
-
-    // Fullscreen Video Toggle
-    function toggleVideoFullscreen(btn) {
-      const container = btn.closest('.animation-player-frame');
-      const video = container.querySelector('video');
-      if (!video) return;
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      } else if (video.webkitEnterFullscreen) {
-        video.webkitEnterFullscreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
-    }
   </script>
 </body>
 </html>

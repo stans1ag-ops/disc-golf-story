@@ -1281,20 +1281,6 @@
 
     </article>
 
-    <!-- Interactive Story Branch / Conclusion -->
-        <section class="interactive-conclusion" aria-labelledby="film-title">
-      <span class="conclusion-badge">🎬 A Narrated 3D Adventure</span>
-      <h2 class="conclusion-question" id="film-title">Watch the Tooth Take a Bounce</h2>
-      <p>A wiggly tooth, a backyard bounce, and a little fairy magic.</p>
-      <video id="story-film" controls playsinline preload="metadata" poster="tooth-bounce-poster.jpg"
-             style="display:block;width:100%;border-radius:18px;" aria-label="Tyson and the Tooth That Took a Bounce, narrated animated film">
-        <source src="tooth-bounce-3d.mp4" type="video/mp4">
-        <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
-        Your browser cannot play this film. <a href="tooth-bounce-3d.mp4">Download the narrated film</a>.
-      </video>
-      <p style="font-family:var(--font-sans);font-size:.8rem;margin-top:12px;margin-bottom:0;">Narrated with a synthetic storyteller voice.</p>
-    </section>
-
     <section class="interactive-conclusion">
       <span class="conclusion-badge">✨ What Adventure Is Next?</span>
       <h2 class="conclusion-question">Ready to keep exploring? Choose Tyson&apos;s next adventure!</h2>
@@ -1508,9 +1494,6 @@
       }
     });
 
-    const storyFilm = document.getElementById('story-film');
-    storyFilm.addEventListener('play', () => { narrationAudio.pause(); resetReadAloudUI(); });
-    narrationAudio.addEventListener('play', () => storyFilm.pause());
     narrationAudio.addEventListener('ended', resetReadAloudUI);
     narrationAudio.addEventListener('error', resetReadAloudUI);
   </script>
