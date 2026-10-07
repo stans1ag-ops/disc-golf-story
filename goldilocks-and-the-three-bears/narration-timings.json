@@ -1,0 +1,121 @@
+{
+  "audio": "narration.mp3",
+  "duration": 418.104,
+  "timing_method": "Word timestamps from PocketSphinx forced alignment of story.md to the existing narration.mp3 (16 kHz, 10 ms frames).",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": [
+    0,
+    265,
+    896,
+    934
+  ],
+  "scenes": [
+    {
+      "image": "goldilocks_01.jpg",
+      "start": 0,
+      "cue": "Once upon a time"
+    },
+    {
+      "image": "goldilocks_02.jpg",
+      "start": 66.58,
+      "cue": "and while they were away"
+    },
+    {
+      "image": "goldilocks_03.jpg",
+      "start": 128.95,
+      "cue": "first she tasted the porridge"
+    },
+    {
+      "image": "goldilocks_04.jpg",
+      "start": 149.76,
+      "cue": "then goldilocks who was tired",
+      "crop": [
+        0,
+        265,
+        336,
+        715
+      ]
+    },
+    {
+      "image": "goldilocks_04.jpg",
+      "start": 178.8,
+      "cue": "till the bottom of the chair came out"
+    },
+    {
+      "image": "goldilocks_05.jpg",
+      "start": 187.14,
+      "cue": "now being determined to rest",
+      "crop": [
+        435,
+        330,
+        896,
+        620
+      ]
+    },
+    {
+      "image": "goldilocks_05.jpg",
+      "start": 214.01,
+      "cue": "so she covered herself up comfortably"
+    },
+    {
+      "image": "goldilocks_06.jpg",
+      "start": 224.05,
+      "cue": "so they came home to breakfast"
+    },
+    {
+      "image": "goldilocks_07.jpg",
+      "start": 252.35,
+      "cue": "but the porridge was all gone"
+    },
+    {
+      "image": "goldilocks_08.jpg",
+      "start": 260.93,
+      "cue": "upon this the three bears"
+    },
+    {
+      "image": "goldilocks_09.jpg",
+      "start": 299.67,
+      "cue": "then the three bears thought they had better"
+    },
+    {
+      "image": "goldilocks_05.jpg",
+      "start": 307.31,
+      "cue": "now goldilocks had pulled the pillow",
+      "crop": [
+        435,
+        330,
+        896,
+        620
+      ]
+    },
+    {
+      "image": "goldilocks_10.jpg",
+      "start": 340.8,
+      "cue": "there was goldilocks's yellow head"
+    },
+    {
+      "image": "goldilocks_11.jpg",
+      "start": 382.81,
+      "cue": "up she started",
+      "crop": [
+        0,
+        265,
+        420,
+        815
+      ]
+    },
+    {
+      "image": "goldilocks_11.jpg",
+      "start": 402.56,
+      "cue": "so naughty frightened little goldilocks jumped"
+    },
+    {
+      "image": "goldilocks_12.jpg",
+      "start": 405.61,
+      "cue": "or ran into the wood"
+    }
+  ]
+}

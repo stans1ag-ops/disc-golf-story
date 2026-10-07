@@ -1,10 +1,14 @@
+import argparse
+import json
 import os
 import sys
 import subprocess
 import tempfile
+from pathlib import Path
 from PIL import Image, ImageFilter, ImageOps
 
 sys.stdout.reconfigure(encoding='utf-8')
+ROOT = Path(__file__).resolve().parents[1]
 
 STORIES = [
     {
@@ -67,11 +71,22 @@ STORIES = [
             ("little_red_hood_huntsman.jpg", 34.5),
             ("little_red_hood_stones.jpg", 26.732),
         ]
+    },
+    {
+        "id": "goldilocks-and-the-three-bears",
+        "dir": "goldilocks-and-the-three-bears",
+        "audio": "goldilocks-and-the-three-bears/narration.mp3",
+        "video_output": "goldilocks-and-the-three-bears/goldilocks_story_video.mp4",
+        "poster_output": "goldilocks-and-the-three-bears/goldilocks_story_video_poster.jpg",
+        "poster_source": "goldilocks_01.jpg",
+        "timeline": "goldilocks-and-the-three-bears/narration-timings.json",
     }
 ]
 
-def create_storybook_frame(img_path, width=1280, height=720):
+def create_storybook_frame(img_path, width=1280, height=720, crop=None):
     img = Image.open(img_path).convert('RGB')
+    if crop is not None:
+        img = img.crop(crop)
     iw, ih = img.size
     
     # Background: resize to fill 1280x720 and apply GaussianBlur
@@ -97,21 +112,43 @@ def build_story_video(story):
     print(f"Building video for: {story['id']}")
     print(f"==========================================")
     
+    audio_path = ROOT / story['audio']
+    audio_dur = float(subprocess.check_output([
+        "ffprobe", "-v", "error", "-show_entries", "format=duration",
+        "-of", "csv=p=0", str(audio_path)
+    ], text=True).strip())
+    artwork_crop = None
+    if 'timeline' in story:
+        timeline = json.loads((ROOT / story['timeline']).read_text(encoding='utf-8'))
+        if abs(timeline['duration'] - audio_dur) > 0.05:
+            raise ValueError("Narration has changed; remeasure the illustration cues before rendering.")
+        scenes = timeline['scenes']
+        starts = [scene['start'] for scene in scenes]
+        if not starts or starts[0] != 0 or any(a >= b for a, b in zip(starts, starts[1:])) or starts[-1] >= audio_dur:
+            raise ValueError("Illustration cues must start at zero and increase within the narration duration.")
+        artwork_crop = timeline['artwork_crop']
+        segments = [
+            (scene['image'], end - scene['start'], scene.get('crop', artwork_crop))
+            for scene, end in zip(scenes, starts[1:] + [audio_dur])
+        ]
+    else:
+        segments = [(image, duration, None) for image, duration in story['segments']]
+
     with tempfile.TemporaryDirectory() as tmpdir:
         # 1. Process all segment images into 1280x720 frames
         frame_files = []
-        for idx, (img_rel, dur) in enumerate(story['segments']):
-            full_img_path = os.path.join(story['dir'], img_rel)
-            frame_img = create_storybook_frame(full_img_path)
+        for idx, (img_rel, dur, crop) in enumerate(segments):
+            full_img_path = ROOT / story['dir'] / img_rel
+            frame_img = create_storybook_frame(full_img_path, crop=crop)
             frame_path = os.path.join(tmpdir, f"frame_{idx:03d}.jpg")
             frame_img.save(frame_path, "JPEG", quality=93)
             frame_files.append((frame_path, dur))
-            print(f"  Frame {idx+1}/{len(story['segments'])}: {img_rel} ({dur:.1f}s)")
+            print(f"  Frame {idx+1}/{len(segments)}: {img_rel} ({dur:.2f}s)", flush=True)
         
         # 2. Build poster image
-        poster_src = os.path.join(story['dir'], story['poster_source'])
-        poster_img = create_storybook_frame(poster_src)
-        poster_img.save(story['poster_output'], "JPEG", quality=92)
+        poster_src = ROOT / story['dir'] / story['poster_source']
+        poster_img = create_storybook_frame(poster_src, crop=artwork_crop)
+        poster_img.save(ROOT / story['poster_output'], "JPEG", quality=92)
         print(f"  Saved poster to {story['poster_output']}")
         
         # 3. Create concat demuxer file
@@ -121,37 +158,35 @@ def build_story_video(story):
                 # Use forward slashes for ffmpeg concat
                 clean_path = fpath.replace("\\", "/")
                 f.write(f"file '{clean_path}'\n")
+                f.write("option framerate 24\n")
                 f.write(f"duration {dur}\n")
             # Repeat last file per concat demuxer requirement
             clean_path = frame_files[-1][0].replace("\\", "/")
             f.write(f"file '{clean_path}'\n")
+            f.write("option framerate 24\n")
         
-        # 4. Get exact audio duration
-        probe_cmd = [
-            "ffprobe", "-v", "error", "-show_entries", "format=duration",
-            "-of", "csv=p=0", story['audio']
-        ]
-        audio_dur = float(subprocess.check_output(probe_cmd, text=True).strip())
+        # 4. Report the probed audio duration
         print(f"  Exact audio duration: {audio_dur:.2f}s")
 
         # 5. Run FFmpeg to encode video exactly to audio duration
         cmd = [
             "ffmpeg", "-y",
             "-f", "concat", "-safe", "0", "-i", concat_txt_path,
-            "-i", story['audio'],
+            "-i", str(audio_path),
             "-t", str(audio_dur),
             "-c:v", "libx264",
             "-preset", "fast",
+            "-tune", "stillimage",
             "-crf", "21",
             "-pix_fmt", "yuv420p",
-            "-r", "24",
+            "-vf", "fps=24:round=near",
             "-c:a", "aac",
             "-b:a", "192k",
             "-movflags", "+faststart",
-            story['video_output']
+            str(ROOT / story['video_output'])
         ]
         
-        print("  Running FFmpeg...")
+        print("  Running FFmpeg...", flush=True)
         res = subprocess.run(cmd, capture_output=True, text=True)
         if res.returncode != 0:
             print(f"  Error building {story['video_output']}:")
@@ -159,10 +194,16 @@ def build_story_video(story):
             raise RuntimeError(f"FFmpeg failed with exit code {res.returncode}")
         
         # Check output file size
-        size_mb = os.path.getsize(story['video_output']) / (1024 * 1024)
+        size_mb = os.path.getsize(ROOT / story['video_output']) / (1024 * 1024)
         print(f"  SUCCESS! {story['video_output']} created ({size_mb:.1f} MB)")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Render narrated videos from existing story illustrations.")
+    parser.add_argument('--story', choices=[story['id'] for story in STORIES],
+                        help="Build just this story; by default, build all classic stories.")
+    args = parser.parse_args()
     for story in STORIES:
+        if args.story and story['id'] != args.story:
+            continue
         build_story_video(story)
     print("\nAll story videos built successfully!")
