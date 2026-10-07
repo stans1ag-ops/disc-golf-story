@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Read Little Red Riding Hood classic fairy tale with 10 illustrations and full voice narration.">
-  <title>Little Red Riding Hood — Shane’s Bedtime Stories</title>
+  <meta name="description" content="Read Goldilocks and the Three Bears classic fairy tale with 12 illustrations and full voice narration.">
+  <title>Goldilocks and the Three Bears — Shane’s Bedtime Stories</title>
 
   <!-- Google Fonts with full system fallbacks -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -577,6 +577,36 @@
     [data-theme="night"] .chant-box.pig .chant-speaker { color: #F4A261; }
     [data-theme="night"] .chant-box.huff-puff .chant-speaker { color: #E26D5C; }
 
+    .chant-box.bear-great {
+      border-left: 6px solid #7A5C3E;
+      background: linear-gradient(135deg, rgba(122, 92, 62, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-middle {
+      border-left: 6px solid #B07A3F;
+      background: linear-gradient(135deg, rgba(176, 122, 63, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-wee {
+      border-left: 6px solid var(--accent-gold);
+      background: linear-gradient(135deg, rgba(224, 159, 62, 0.12), var(--bg-card));
+    }
+
+    .chant-box.goldilocks {
+      border-left: 6px solid #D4762E;
+      background: linear-gradient(135deg, rgba(212, 118, 46, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-great .chant-speaker { color: #7A5C3E; }
+    .chant-box.bear-middle .chant-speaker { color: #B07A3F; }
+    .chant-box.bear-wee .chant-speaker { color: var(--accent-gold); }
+    .chant-box.goldilocks .chant-speaker { color: #D4762E; }
+
+    [data-theme="night"] .chant-box.bear-great .chant-speaker { color: #C49A6C; }
+    [data-theme="night"] .chant-box.bear-middle .chant-speaker { color: #E0A866; }
+    [data-theme="night"] .chant-box.bear-wee .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.goldilocks .chant-speaker { color: #F4A261; }
+
     .chant-text {
       font-family: var(--font-display);
       font-size: 1.15rem;
@@ -915,17 +945,17 @@
             </div>
           </a>
           <a href="index.html" class="story-menu-link active" role="menuitem">
-            <span class="menu-link-icon">🧺</span>
-            <div class="menu-link-text">
-              <strong class="menu-link-title">Little Red Riding Hood</strong>
-              <span class="menu-link-desc">Classic Fairy Tale • The Wolf in Grandma&apos;s Bed</span>
-            </div>
-          </a>
-          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🥣</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Goldilocks and the Three Bears</strong>
               <span class="menu-link-desc">Classic Fairy Tale • Too Hot, Too Cold, Just Right</span>
+            </div>
+          </a>
+          <a href="../little-red-riding-hood/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🧺</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Little Red Riding Hood</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • The Wolf in Grandma&apos;s Bed</span>
             </div>
           </a>
           <a href="../the-three-little-pigs/" class="story-menu-link" role="menuitem">
@@ -1033,14 +1063,14 @@
 
     <!-- Story Header -->
     <section class="story-header">
-      <span class="badge-adventure">🧺 Classic Fairy Tale</span>
-      <h1 class="story-title">Little Red <span class="highlight-word">Riding Hood</span></h1>
-      <p class="story-subtitle">The classic tale of a red hood, a deep forest, and a wolf with very big teeth!</p>
+      <span class="badge-adventure">🥣 Classic Fairy Tale</span>
+      <h1 class="story-title">Goldilocks and the <span class="highlight-word">Three Bears</span></h1>
+      <p class="story-subtitle">The classic tale of three bears, three bowls of porridge — and one very curious little girl!</p>
       
       <div class="story-meta">
-        <span class="meta-item">⏱️ <strong>5-6 min read</strong></span>
+        <span class="meta-item">⏱️ <strong>6-7 min read</strong></span>
         <span>•</span>
-        <span class="meta-item">🎨 <strong>10 Story Illustrations</strong></span>
+        <span class="meta-item">🎨 <strong>12 Story Illustrations</strong></span>
         <span>•</span>
         <span class="meta-item">🎙️ <strong>Voice Narration</strong></span>
         <span>•</span>
@@ -1072,7 +1102,7 @@
             </div>
             <div class="audio-time-row">
               <span id="audio-time-current">0:00</span>
-              <span id="audio-time-total">5:05</span>
+              <span id="audio-time-total">6:58</span>
             </div>
           </div>
         </div>
@@ -1087,268 +1117,369 @@
     <!-- SCENE 1 -->
     <article class="scene-section" id="scene-1">
       <div class="scene-header">
-        <span class="scene-pill">Scene 1 • The Little Red Hood</span>
+        <span class="scene-pill">Scene 1 • The Three Bears' House in the Wood</span>
       </div>
 
-      <p class="lead-paragraph story-text">Once upon a time, there was a sweet little girl who was loved by everyone who met her — but most of all by her grandmother. The old woman loved her so much that she made her a small red velvet hood. It suited her perfectly, and from that day on, everyone called her Little Red Riding Hood.</p>
-      <!-- Illustration 1: The Gift of the Red Hood -->
+      <p class="lead-paragraph story-text">Once upon a time there were three Bears, who lived together in a house of their own, in a wood. One of them was a Little Wee Bear, and one was a Middle-sized Bear, and the other was a Great Big Bear.</p>
+      <p class="story-text">They had each a bowl for their porridge; a little bowl for the Little Wee Bear; and a middle-sized bowl for the Middle-sized Bear; and a great bowl for the Great Big Bear. And they had each a chair to sit in; a little chair for the Little Wee Bear; and a middle-sized chair for the Middle-sized Bear; and a great chair for the Great Big Bear. And they had each a bed to sleep in; a little bed for the Little Wee Bear; and a middle-sized bed for the Middle-sized Bear; and a great bed for the Great Big Bear.</p>
+      <p class="story-text">One day, after they had made the porridge for their breakfast, and poured it into their porridge-bowls, they walked out into the wood while the porridge was cooling, that they might not burn their mouths by beginning too soon, for they were polite, well-brought-up Bears.</p>
+      <!-- Illustration 1 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_gift.jpg"
-            alt="Little Red Riding Hood walking through the village in her red velvet hood, carrying her basket."
+            src="goldilocks_01.jpg"
+            alt="The three bears walking through the sunny woods toward their little cottage while their porridge cools."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>Little Red Riding Hood sets out in the red velvet hood her grandmother made for her.</figcaption>
+        <figcaption>The Three Bears walk out into the wood while their porridge cools.</figcaption>
       </figure>
     </article>
 
     <!-- SCENE 2 -->
     <article class="scene-section" id="scene-2">
       <div class="scene-header">
-        <span class="scene-pill">Scene 2 • Cake and Wine for Grandma</span>
+        <span class="scene-pill">Scene 2 • Goldilocks Peeps In</span>
       </div>
 
-      <p class="story-text">One morning, her mother said, "Come, Little Red Riding Hood, here is a piece of cake and a bottle of wine. Take them to your grandmother — she is sick and weak, and this will do her good. Go before it gets too hot, and remember to walk carefully. Don't stray from the path, or you might fall and break the bottle. And when you arrive, don't forget to say good morning before you peek around her room."</p>
-      <p class="story-text">"I'll be careful, Mother," said Little Red Riding Hood, and she promised with a smile.</p>
-      <!-- Illustration 2: The Basket -->
+      <p class="story-text">And while they were away a little girl called Goldilocks, who lived at the other side of the wood and had been sent on an errand by her mother, passed by the house, and looked in at the window. And then she peeped in at the keyhole, for she was not at all a well-brought-up little girl.</p>
+      <p class="story-text">Then seeing nobody in the house she lifted the latch. The door was not fastened, because the Bears were good Bears, who did nobody any harm, and never suspected that anybody would harm them. So Goldilocks opened the door and went in; and well pleased was she when she saw the porridge on the table.</p>
+      <!-- Illustration 2 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_basket.jpg"
-            alt="A mother handing a wicker basket of cake and a bottle of wine to Little Red Riding Hood at the cottage door."
+            src="goldilocks_02.jpg"
+            alt="Goldilocks peeping through the keyhole of the bears' wooden cottage door, which has a sign reading The Bears."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>Her mother hands her a basket of cake and wine, and reminds her to stay on the path.</figcaption>
+        <figcaption>Goldilocks peeps in at the keyhole — and finding nobody home, she lifts the latch.</figcaption>
       </figure>
     </article>
 
     <!-- SCENE 3 -->
     <article class="scene-section" id="scene-3">
       <div class="scene-header">
-        <span class="scene-pill">Scene 3 • The Wolf on the Path</span>
+        <span class="scene-pill">Scene 3 • Too Hot, Too Cold, Just Right</span>
       </div>
 
-      <p class="story-text">The grandmother lived deep in the forest, about half a league from the village. Just as Little Red Riding Hood entered the woods, a wolf appeared on the path. She didn't know what a wicked creature he was, and she felt no fear at all.</p>
-      <p class="story-text">"Good morning, Little Red Riding Hood," said the wolf.</p>
-      <p class="story-text">"Good morning, Mr. Wolf," she replied politely.</p>
-      <p class="story-text">"Where are you going so early?" he asked. "To my grandmother's house," said the girl. "And what is that in your basket?" "Cake and wine. Grandma has been sick, so Mother sent me to cheer her up." "And where does your grandmother live?" asked the wolf. "A little farther into the woods — under the three great oak trees, near the hazel bushes. You must know it," she said.</p>
-      <p class="story-text">The wolf licked his lips and thought, <em>What a tender young thing! She will taste even better than the old woman. I will eat them both — but I will have to be clever about it.</em></p>
-      <!-- Illustration 3: Meeting the Wolf -->
+      <p class="story-text">If she had been a well-brought-up little girl she would have waited till the Bears came home, and then, perhaps, they would have asked her to breakfast; for they were good Bears — a little rough or so, as the manner of Bears is, but for all that very good-natured and hospitable. But she was an impudent, rude little girl, and so she set about helping herself.</p>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🥣 Goldilocks tastes the Great Big Bear&apos;s porridge</div>
+        <div class="chant-text">
+          "Too hot!"
+        </div>
+      </div>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🥣 Goldilocks tastes the Middle-sized Bear&apos;s porridge</div>
+        <div class="chant-text">
+          "Too cold!"
+        </div>
+      </div>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🥣 Goldilocks tastes the Little Wee Bear&apos;s porridge</div>
+        <div class="chant-text">
+          "Just right — and she ate it all up, every bit!"
+        </div>
+      </div>
+      <p class="story-text">First she tasted the porridge of the Great Big Bear, and that was too hot for her. Next she tasted the porridge of the Middle-sized Bear, but that was too cold for her. And then she went to the porridge of the Little Wee Bear, and tasted it, and that was neither too hot nor too cold, but just right, and she liked it so well that she ate it all up, every bit!</p>
+      <!-- Illustration 3 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_meets_wolf.jpg"
-            alt="A sly gray wolf stepping onto a forest path in front of Little Red Riding Hood in her red hood."
+            src="goldilocks_03.jpg"
+            alt="Goldilocks tasting porridge from a spoon at the bears' kitchen table, with three bowls of porridge before her."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>A wolf appears on the forest path — and Little Red Riding Hood does not know what a wicked creature he is.</figcaption>
+        <figcaption>She tasted the Little Wee Bear's porridge — just right! — and ate it all up.</figcaption>
       </figure>
     </article>
 
     <!-- SCENE 4 -->
     <article class="scene-section" id="scene-4">
       <div class="scene-header">
-        <span class="scene-pill">Scene 4 • Flowers in the Forest</span>
+        <span class="scene-pill">Scene 4 • The Three Chairs</span>
       </div>
 
-      <p class="story-text">He walked beside her for a bit, then said slyly, "Look how pretty the flowers are here, Little Red Riding Hood. Why not pick some for your grandmother? And listen — don't you hear how sweetly the birds are singing? You walk along so seriously, as if you were going to school, when the forest is alive with joy!"</p>
-      <p class="story-text">Little Red Riding Hood looked up and saw sunlight dancing through the trees, making the wildflowers sparkle. <em>Grandma would love a bouquet,</em> she thought. <em>I still have plenty of time.</em> So she stepped off the path to gather flowers. Each time she picked one, she saw another even prettier farther away, and she wandered deeper and deeper into the forest.</p>
-      <!-- Illustration 4: Gathering Flowers -->
+      <p class="story-text">Then Goldilocks, who was tired, for she had been catching butterflies instead of running on her errand, sat down in the chair of the Great Big Bear, but that was too hard for her. And then she sat down in the chair of the Middle-sized Bear, and that was too soft for her.</p>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🪑 Goldilocks tries the Great Big Bear&apos;s chair</div>
+        <div class="chant-text">
+          "Too hard!"
+        </div>
+      </div>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🪑 Goldilocks tries the Middle-sized Bear&apos;s chair</div>
+        <div class="chant-text">
+          "Too soft!"
+        </div>
+      </div>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🪑 Goldilocks tries the Little Wee Bear&apos;s chair</div>
+        <div class="chant-text">
+          "Just right!"
+        </div>
+      </div>
+      <p class="story-text">But when she sat down in the chair of the Little Wee Bear, that was neither too hard nor too soft, but just right. So she seated herself in it, and there she sat till the bottom of the chair came out, and down she came, plump upon the ground; and that made her very cross, for she was a bad-tempered little girl.</p>
+      <!-- Illustration 4 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_flowers.jpg"
-            alt="Little Red Riding Hood gathering bright wildflowers in a sun-dappled forest, wandering away from the path."
+            src="goldilocks_04.jpg"
+            alt="Goldilocks sitting crossly on the floor among the splinters of the little chair she has just broken through."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>She steps off the path to gather flowers — and wanders deeper and deeper into the forest.</figcaption>
-      </figure>
-      <p class="story-text">Meanwhile, the wolf ran straight to the grandmother's house and knocked at the door.</p>
-      <p class="story-text">"Who's there?" called the grandmother.</p>
-      <p class="story-text">"It's me — Little Red Riding Hood," said the wolf sweetly. "I've brought you cake and wine."</p>
-      <p class="story-text">"Lift the latch," said the grandmother. "I'm too weak to get up."</p>
-      <p class="story-text">The wolf lifted the latch, pushed open the door, and without a word, leapt upon the old woman and swallowed her whole.</p>
-      <!-- Illustration 5: The Wolf at the Door -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_wolf_at_door.jpg"
-            alt="The wolf pushing open the wooden door of the grandmother's forest cottage."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>The wolf runs straight to the grandmother's cottage and pushes open the door.</figcaption>
+        <figcaption>The bottom of the Little Wee Bear's chair came out — and down she came, plump upon the ground!</figcaption>
       </figure>
     </article>
 
     <!-- SCENE 5 -->
     <article class="scene-section" id="scene-5">
       <div class="scene-header">
-        <span class="scene-pill">Scene 5 • The Wolf in Grandmother's Bed</span>
+        <span class="scene-pill">Scene 5 • The Three Beds</span>
       </div>
 
-      <p class="story-text">Then he put on her nightgown and cap, pulled the curtains, and lay down in her bed.</p>
-      <!-- Illustration 6: Disguised in Bed -->
+      <p class="story-text">Now, being determined to rest, Goldilocks went upstairs into the bedchamber in which the Three Bears slept.</p>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🛏️ Goldilocks tries the Great Big Bear&apos;s bed</div>
+        <div class="chant-text">
+          "Too high at the head!"
+        </div>
+      </div>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🛏️ Goldilocks tries the Middle-sized Bear&apos;s bed</div>
+        <div class="chant-text">
+          "Too high at the foot!"
+        </div>
+      </div>
+      <div class="chant-box goldilocks">
+        <div class="chant-speaker">🛏️ Goldilocks tries the Little Wee Bear&apos;s bed</div>
+        <div class="chant-text">
+          "Just right — and she fell fast asleep."
+        </div>
+      </div>
+      <p class="story-text">And first she lay down upon the bed of the Great Big Bear, but that was too high at the head for her. And next she lay down upon the bed of the Middle-sized Bear, and that was too high at the foot for her. And then she lay down upon the bed of the Little Wee Bear, and that was neither too high at the head nor at the foot, but just right. So she covered herself up comfortably, and lay there till she fell fast asleep.</p>
+      <!-- Illustration 5 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_wolf_in_bed.jpg"
-            alt="The wolf lying in the grandmother's bed wearing her nightgown and cap, curtains half drawn."
+            src="goldilocks_05.jpg"
+            alt="Goldilocks fast asleep in the little bed, tucked under a patchwork quilt, with the three bears' beds around her."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>The wolf puts on the grandmother's nightgown and cap, and lies down in her bed.</figcaption>
+        <figcaption>She covered herself up comfortably in the Little Wee Bear's bed, and fell fast asleep.</figcaption>
       </figure>
-      <p class="story-text">When Little Red Riding Hood finally reached the cottage, she was surprised to find the door standing open. The room felt strange and quiet. "Oh dear," she whispered, "why do I feel so uneasy today?" She called out, "Good morning, Grandma!" but there was no answer.</p>
-      <p class="story-text">She went to the bed and drew back the curtains. There lay her grandmother, cap pulled low, face shadowed, looking quite odd.</p>
     </article>
 
     <!-- SCENE 6 -->
     <article class="scene-section" id="scene-6">
       <div class="scene-header">
-        <span class="scene-pill">Scene 6 • What Big Ears You Have!</span>
+        <span class="scene-pill">Scene 6 • "Somebody Has Been at My Porridge!"</span>
       </div>
 
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "Oh, Grandma, what big ears you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf answers</div>
-        <div class="chant-text">
-          "The better to hear you with, my child."
-        </div>
-      </div>
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "But, Grandma, what big eyes you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf answers</div>
-        <div class="chant-text">
-          "The better to see you with, my dear."
-        </div>
-      </div>
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "And what big hands you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf answers</div>
-        <div class="chant-text">
-          "The better to hug you with."
-        </div>
-      </div>
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "But, Grandma — what a terrible big mouth you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf roars</div>
-        <div class="chant-text">
-          "The better to eat you with!"
-        </div>
-      </div>
-      <!-- Illustration 7: What Big Ears You Have -->
+      <p class="story-text">By this time the Three Bears thought their porridge would be cool enough for them to eat it properly; so they came home to breakfast. Now careless Goldilocks had left the spoon of the Great Big Bear standing in his porridge.</p>
+      <!-- Illustration 6 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_big_ears.jpg"
-            alt="Little Red Riding Hood pulling back the bed curtain to find the wolf disguised as her grandmother."
+            src="goldilocks_06.jpg"
+            alt="The three bears standing in their cottage doorway, staring at the porridge bowls on the table with the spoons left standing in them."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>"Oh, Grandma, what big ears you have!" — "The better to hear you with, my child."</figcaption>
+        <figcaption>The Three Bears came home to breakfast — and saw the spoons standing in the porridge.</figcaption>
       </figure>
-      <p class="story-text">The wolf roared, "The better to eat you with!" and before she could scream, he sprang from the bed and swallowed Little Red Riding Hood whole.</p>
-      <!-- Illustration 8: "The Better to Eat You With!" -->
+      <div class="chant-box bear-great">
+        <div class="chant-speaker">🐻 The Great Big Bear, in his great, rough, gruff voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN AT MY PORRIDGE!"
+        </div>
+      </div>
+      <div class="chant-box bear-middle">
+        <div class="chant-speaker">🐻 The Middle-sized Bear, in his middle-sized voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN AT MY PORRIDGE!"
+        </div>
+      </div>
+      <div class="chant-box bear-wee">
+        <div class="chant-speaker">🐻 The Little Wee Bear, in his little wee voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN AT MY PORRIDGE, AND HAS EATEN IT ALL UP!"
+        </div>
+      </div>
+      <p class="story-text">Then the Middle-sized Bear looked at his porridge and saw the spoon was standing in it too. Then the Little Wee Bear looked at his, and there was the spoon in the porridge-bowl, but the porridge was all gone!</p>
+      <!-- Illustration 7 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_attack.jpg"
-            alt="The wolf springing from the grandmother's bed toward Little Red Riding Hood."
+            src="goldilocks_07.jpg"
+            alt="The three bears seated at their breakfast table, the Little Wee Bear gazing sadly at his empty little bowl."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>"The better to eat you with!" roared the wolf, and he sprang from the bed.</figcaption>
-      </figure>
-      <p class="story-text">Full and satisfied, the wolf climbed back into bed and soon began to snore loudly. Just then, a passing huntsman heard the noise and muttered, "That old woman snores like a beast! I should check on her."</p>
-      <!-- Illustration 9: The Huntsman Hears Snoring -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_huntsman.jpg"
-            alt="A huntsman with a rifle pausing outside the forest cottage, hearing loud snoring from within."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>A passing huntsman hears the wolf snoring loudly inside the cottage.</figcaption>
+        <figcaption>The Little Wee Bear's porridge was all gone — every bit!</figcaption>
       </figure>
     </article>
 
     <!-- SCENE 7 -->
     <article class="scene-section" id="scene-7">
       <div class="scene-header">
-        <span class="scene-pill">Scene 7 • The Huntsman's Rescue</span>
+        <span class="scene-pill">Scene 7 • "Somebody Has Been Sitting in My Chair!"</span>
       </div>
 
-      <p class="story-text">He stepped inside and saw the wolf stretched out in the bed. "So it's you, you wicked creature!" he said, raising his gun. But then he thought, <em>Maybe the old woman's still inside.</em> So instead of shooting, he took a pair of scissors and carefully cut open the wolf's belly.</p>
-      <p class="story-text">After two careful snips, he saw a flash of red inside. A few more cuts — and out sprang Little Red Riding Hood, trembling but unharmed. "Oh, how frightened I was! It was so dark inside!" she cried. Then the huntsman cut a little more, and out came the grandmother, pale but alive.</p>
-      <p class="story-text">To make sure the wolf could never harm anyone again, they filled his belly with heavy stones. When he awoke and tried to flee, the weight pulled him down, and he fell dead on the spot.</p>
-      <p class="story-text">The huntsman skinned the wolf and went on his way. The grandmother ate her cake and drank her wine and soon felt much better. As for Little Red Riding Hood, she thought to herself, <em>From now on, I'll never wander from the path again when Mother tells me not to.</em></p>
-      <!-- Illustration 10: Safe at Last -->
+      <p class="story-text">Upon this the Three Bears, seeing that some one had entered their house, and eaten up the Little Wee Bear's breakfast, began to look about them. Now the careless Goldilocks had not put the hard cushion straight when she rose from the chair of the Great Big Bear.</p>
+      <div class="chant-box bear-great">
+        <div class="chant-speaker">🐻 The Great Big Bear, in his great, rough, gruff voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN SITTING IN MY CHAIR!"
+        </div>
+      </div>
+      <div class="chant-box bear-middle">
+        <div class="chant-speaker">🐻 The Middle-sized Bear, in his middle-sized voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN SITTING IN MY CHAIR!"
+        </div>
+      </div>
+      <div class="chant-box bear-wee">
+        <div class="chant-speaker">🐻 The Little Wee Bear, in his little wee voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN SITTING IN MY CHAIR, AND HAS SAT THE BOTTOM THROUGH!"
+        </div>
+      </div>
+      <p class="story-text">And the careless Goldilocks had squatted down the soft cushion of the Middle-sized Bear.</p>
+      <!-- Illustration 8 -->
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img
-            src="little_red_hood_stones.jpg"
-            alt="Little Red Riding Hood hugging the brave huntsman in thanks, with her grandmother safe beside them."
+            src="goldilocks_08.jpg"
+            alt="The three bears gathered around the little chair with its woven seat broken through, the Little Wee Bear pointing at it."
             loading="lazy"
             width="896"
             height="1200"
           >
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
-        <figcaption>Safe at last — Little Red Riding Hood thanks the brave huntsman.</figcaption>
+        <figcaption>&quot;Somebody has been sitting in my chair — and has sat the bottom through!&quot;</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 8 -->
+    <article class="scene-section" id="scene-8">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 8 • "Somebody Has Been Lying in My Bed!"</span>
+      </div>
+
+      <p class="story-text">Then the Three Bears thought they had better make further search in case it was a burglar, so they went upstairs into their bedchamber.</p>
+      <!-- Illustration 9 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="goldilocks_09.jpg"
+            alt="The three bears climbing the wooden stairs by candlelight, the Great Big Bear leading the way upstairs."
+            loading="lazy"
+            width="896"
+            height="1200"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Upstairs they went, the Great Big Bear carrying a candle, to search the bedchamber.</figcaption>
+      </figure>
+      <p class="story-text">Now Goldilocks had pulled the pillow of the Great Big Bear out of its place.</p>
+      <div class="chant-box bear-great">
+        <div class="chant-speaker">🐻 The Great Big Bear, in his great, rough, gruff voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN LYING IN MY BED!"
+        </div>
+      </div>
+      <p class="story-text">And Goldilocks had pulled the bolster of the Middle-sized Bear out of its place.</p>
+      <div class="chant-box bear-middle">
+        <div class="chant-speaker">🐻 The Middle-sized Bear, in his middle-sized voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN LYING IN MY BED!"
+        </div>
+      </div>
+      <p class="story-text">But when the Little Wee Bear came to look at his bed, there was the bolster in its place! And the pillow was in its place upon the bolster! And upon the pillow — ? There was Goldilocks's yellow head — which was not in its place, for she had no business there.</p>
+      <!-- Illustration 10 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="goldilocks_10.jpg"
+            alt="The three bears staring in astonishment at the little bed, where Goldilocks lies fast asleep under the patchwork quilt."
+            loading="lazy"
+            width="896"
+            height="1200"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>And upon the pillow — there was Goldilocks's yellow head!</figcaption>
+      </figure>
+      <div class="chant-box bear-wee">
+        <div class="chant-speaker">🐻 The Little Wee Bear, in his little wee voice</div>
+        <div class="chant-text">
+          "SOMEBODY HAS BEEN LYING IN MY BED — AND HERE SHE IS STILL!"
+        </div>
+      </div>
+    </article>
+
+    <!-- SCENE 9 -->
+    <article class="scene-section" id="scene-9">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 9 • And Away She Ran</span>
+      </div>
+
+      <p class="story-text">Now Goldilocks had heard in her sleep the great, rough, gruff voice of the Great Big Bear; but she was so fast asleep that it was no more to her than the roaring of wind, or the rumbling of thunder. And she had heard the middle-sized voice of the Middle-sized Bear, but it was only as if she had heard some one speaking in a dream. But when she heard the little wee voice of the Little Wee Bear, it was so sharp, and so shrill, that it awakened her at once.</p>
+      <!-- Illustration 11 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="goldilocks_11.jpg"
+            alt="Goldilocks leaping out of the open bedroom window in fright while the three bears watch from beside the bed."
+            loading="lazy"
+            width="896"
+            height="1200"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Up she started — and jumped out of the open window!</figcaption>
+      </figure>
+      <p class="story-text">Up she started, and when she saw the Three Bears on one side of the bed, she tumbled herself out at the other, and ran to the window. Now the window was open, because the Bears, like good, tidy Bears, as they were, always opened their bedchamber window when they got up in the morning. So naughty, frightened little Goldilocks jumped; and whether she broke her neck in the fall, or ran into the wood and was lost there, or found her way out of the wood and got whipped for being a bad girl and playing truant, no one can say. But the Three Bears never saw anything more of her.</p>
+      <!-- Illustration 12 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="goldilocks_12.jpg"
+            alt="Goldilocks running away down a moonlit forest path, the bears' little cottage glowing behind her in the distance."
+            loading="lazy"
+            width="896"
+            height="1200"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>And away she ran into the wood — and the Three Bears never saw anything more of her.</figcaption>
       </figure>
     </article>
 
@@ -1544,7 +1675,7 @@
       });
 
       storyAudio.addEventListener('timeupdate', () => {
-        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 261.13;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 418.10;
         const pct = (storyAudio.currentTime / dur) * 100;
         audioScrubberFill.style.width = pct + '%';
         audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
@@ -1572,7 +1703,7 @@
       audioScrubber.addEventListener('click', (e) => {
         const rect = audioScrubber.getBoundingClientRect();
         const clickPos = (e.clientX - rect.left) / rect.width;
-        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 261.13;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 418.10;
         storyAudio.currentTime = clickPos * dur;
       });
 
