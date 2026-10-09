@@ -1,0 +1,171 @@
+{
+  "slug": "the-gingerbread-man",
+  "title": "The Gingerbread Man",
+  "subtitle": "A freshly baked cookie, a very silly chase, and one hungry little boy!",
+  "source_url": "https://americanliterature.com/childrens-stories/the-gingerbread-man",
+  "public_domain_source": "https://www.gutenberg.org/ebooks/25877",
+  "adaptation_note": "A fresh read-aloud retelling of George Haven Putnam's public-domain The Little Gingerbread Man, following the cook, Mouser, Towser, Jocko, and Bobby version linked by the user. The slapstick is softened; the original cookie-eating ending is retained.",
+  "illustration_style": "Use case: illustration-story. Create a single finished watercolor illustration for a classic children's storybook of The Gingerbread Man, warm vintage Edwardian picture-book art with delicate pen outlines, visible cold-pressed paper, translucent hand-painted washes, warm sunlight, lively expressions, coherent cozy English cottage setting. Wide landscape 16:9 composition suitable for a narrated story video; full image is painted artwork, no lettering, no borders, no panels, no watermarks, no photorealism. Character continuity: the cook is a kindly stout older woman with a gray bun, faded blue long-sleeved dress and white apron; the Gingerbread Man is a very small golden-brown human-shaped cookie, seed-dark eyes, a curved dark raisin smile, thin white sugar trim and a little white sugary frilled hat, no clothing, no candy buttons; Mouser is a gray tabby cat; Towser is a brown and cream floppy-eared dog; Jocko is a small brown monkey with a tan face and a long intact tail; Bobby is a five-year-old fair-skinned boy with sandy blond hair, cream long-sleeved shirt and red pinafore, barefoot. Keep scale believable: cookie about six inches tall. ",
+  "scenes": [
+    {
+      "heading": "A Warm, Spicy Kitchen",
+      "paragraphs": [
+        "One sunny morning, the cook went into the kitchen to make gingerbread. She stirred flour, water, dark treacle, ginger, and a pinch of spice in a big bowl. Round and round went her spoon. Soon the kitchen smelled sweet and warm.",
+        "She rolled the golden dough across the table. With her tins, she cut round cakes and square cakes. Then she smiled. \"I shall make something special for little Bobby,\" she said. \"A little gingerbread man!\""
+      ],
+      "caption": "The cook mixes a bowl of sweet, spicy gingerbread dough.",
+      "number": 1,
+      "image": "gingerbread_01.jpg",
+      "image_prompt": "A sunny cottage kitchen with the cook stirring gingerbread dough in an earthenware bowl at a wooden worktable, flour, ginger jar, treacle pitcher and rolling pin neatly nearby. No living cookie yet. Inviting establishing scene.",
+      "alt": "A sunny cottage kitchen with the cook stirring gingerbread dough in an earthenware bowl at a wooden worktable, flour, ginger jar, treacle pitcher and rolling pin neatly nearby."
+    },
+    {
+      "heading": "A Very Jolly Little Man",
+      "paragraphs": [
+        "The cook shaped a body, a head, two arms, and two little legs. She gave him tiny hands and feet. She made bright eyes from seeds and almonds, and a merry mouth from a raisin. On top of his head, she added a frilly sugar hat.",
+        "What a jolly little fellow he was! He almost seemed to be smiling at a secret joke. The cook put him at the back of the baking tray, behind the round cakes and the square cakes. Then she slid the tray into the oven and went upstairs to sweep."
+      ],
+      "caption": "Seed eyes, a raisin smile, and a frilly sugar hat make a jolly little fellow.",
+      "number": 2,
+      "image": "gingerbread_02.jpg",
+      "image_prompt": "The cook carefully decorates a tiny complete gingerbread man on a wooden board beside round and square unbaked cookies; his frilled sugar hat, dark seed eyes and curved raisin mouth are clearly visible. Her expression is fond and amused. Cottage oven in background.",
+      "alt": "The cook carefully decorates a tiny complete gingerbread man on a wooden board beside round and square unbaked cookies; his frilled sugar hat, dark seed eyes and curved raisin mouth are clearly visible."
+    },
+    {
+      "heading": "Hop, Skip, and Jump!",
+      "paragraphs": [
+        "When the clock struck twelve, the cook hurried back to the kitchen. She opened the oven door. The cakes were brown and ready. So was the gingerbread man—but he was standing up!",
+        "Before the cook could blink, he hopped over the round cakes, skipped over the square cakes, and jumped past her arm. Down he landed on the kitchen floor. His tiny feet went pit-pat, pit-pat, toward the open back door.",
+        "\"Come back!\" called the cook. But the little fellow only sang:"
+      ],
+      "chant": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!",
+      "caption": "Out of the oven he leaps, and away he runs!",
+      "number": 3,
+      "image": "gingerbread_03.jpg",
+      "image_prompt": "The cook has opened the old cottage oven and the lively gingerbread man springs out across the baking tray toward the open garden door, whole and smiling. The cook reacts with surprised delight. Dynamic hop captured midair; avoid flame danger.",
+      "alt": "The cook has opened the old cottage oven and the lively gingerbread man springs out across the baking tray toward the open garden door, whole and smiling."
+    },
+    {
+      "heading": "Mouser Wakes Up",
+      "paragraphs": [
+        "Right across the doorway lay Mouser the cat, fast asleep in the sunshine. \"Mouser! Mouser! Stop the gingerbread man!\" cried the cook. \"I made him for little Bobby!\"",
+        "Mouser rolled over. Was somebody calling in her dream? The cook called again, and the cat sprang to her feet. But just as Mouser turned her head, the gingerbread man slipped under her tail and dashed into the garden.",
+        "Now the cat ran after the cookie, and the cook ran after the cat. Down the sunny path they went, past flowers and buzzing bees."
+      ],
+      "caption": "The speedy cookie slips past sleepy Mouser.",
+      "number": 4,
+      "image": "gingerbread_04.jpg",
+      "image_prompt": "At the open cottage back door the tiny gingerbread man darts beneath the raised tail of Mouser the gray tabby, who has just woken up on the sunlit doorstep. The cook follows beyond the doorway, garden path and flowers beckon. Clearly show cookie and cat separately.",
+      "alt": "At the open cottage back door the tiny gingerbread man darts beneath the raised tail of Mouser the gray tabby, who has just woken up on the sunlit doorstep."
+    },
+    {
+      "heading": "Between Towser's Legs",
+      "paragraphs": [
+        "At the bottom of the garden, Towser the dog was snoozing beside a warm stone wall. \"Towser! Towser! Stop him!\" called the cook. The dog gave a snore. She called again. At last he jumped up to see what the fuss was about.",
+        "That was the gingerbread man's chance. He darted between the dog's legs and scrambled onto the wall. Towser looked down the path and saw Mouser running toward him, with the cook close behind. Where was that little cookie?",
+        "From the top of the wall came a cheerful song:"
+      ],
+      "chant": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!",
+      "caption": "Towser wakes too late to stop the little runner.",
+      "number": 5,
+      "image": "gingerbread_05.jpg",
+      "image_prompt": "On the garden path beside a low stone wall the gingerbread man slips between Towser the brown-and-cream dog's legs while the dog wakes and looks puzzled. Mouser and the cook run toward them behind. Whole smiling cookie, gentle comic action.",
+      "alt": "On the garden path beside a low stone wall the gingerbread man slips between Towser the brown-and-cream dog's legs while the dog wakes and looks puzzled."
+    },
+    {
+      "heading": "What a Tumble!",
+      "paragraphs": [
+        "Towser thought the cook wanted him to catch the cat. Off he rushed toward Mouser! Mouser was running so fast that she could not stop. Bump! The cat and dog rolled into a noisy tangle.",
+        "The cook tried to stop too. Her apron fluttered. Her feet slipped. Over she went, right into the middle of the muddle!",
+        "There were barks and meows and a great deal of scrambling. A dog paw appeared here. A cat tail appeared there. Then the cook's head popped up between them. What a tumble they had taken!"
+      ],
+      "caption": "Cat, dog, and cook tumble into one very silly heap.",
+      "number": 6,
+      "image": "gingerbread_06.jpg",
+      "image_prompt": "A harmless comic garden-path tumble: gray tabby cat, floppy-eared brown-and-cream dog and blue-dressed cook tangled in an awkward heap beside a stone wall, surprised expressions, apron's edge fluttering. The intact little gingerbread man watches from the wall above. No injuries, bites, scratches or violence.",
+      "alt": "A harmless comic garden-path tumble: gray tabby cat, floppy-eared brown-and-cream dog and blue-dressed cook tangled in an awkward heap beside a stone wall, surprised expressions, apron's edge fluttering."
+    },
+    {
+      "heading": "Laughing on the Wall",
+      "paragraphs": [
+        "Up on the wall, the gingerbread man laughed until his little seed eyes shone. Nobody had caught him. He was sure nobody ever could!",
+        "Mouser untangled herself and went back to the kitchen. She had had quite enough of chasing cookies. Towser shook himself, looked up, and finally spotted the little fellow. The cook stood up, straightened her apron, and followed him.",
+        "Here came the dog again! The gingerbread man turned, jumped down on the far side of the wall, and raced into the field."
+      ],
+      "chant": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!",
+      "caption": "The gingerbread man laughs from his perch on the garden wall.",
+      "number": 7,
+      "image": "gingerbread_07.jpg",
+      "image_prompt": "The gingerbread man stands proudly atop the garden's low stone wall laughing, sugar hat and seed eyes clear, while Towser approaches below and the cook follows farther back. Sunny field with a broad leafy tree beyond. Mouser heading toward cottage.",
+      "alt": "The gingerbread man stands proudly atop the garden's low stone wall laughing, sugar hat and seed eyes clear, while Towser approaches below and the cook follows farther back."
+    },
+    {
+      "heading": "Jocko's Great Big Leap",
+      "paragraphs": [
+        "In the middle of the field stood a tall tree. At its foot sat Jocko the monkey. Jocko was wide awake. He saw a tiny brown fellow running through the grass, with a dog and a cook behind him.",
+        "\"Jocko! Jocko! Stop the gingerbread man!\" called the cook. The monkey sprang into the air. But his leap was much too big! He sailed right over the gingerbread man and landed on Towser's back.",
+        "Towser spun around in surprise. Jocko jumped away, chattering loudly. While they sorted themselves out, the gingerbread man reached the tree."
+      ],
+      "caption": "Jocko leaps right over the gingerbread man!",
+      "number": 8,
+      "image": "gingerbread_08.jpg",
+      "image_prompt": "The gingerbread man races across a sunny green field toward a leafy oak while Jocko the little brown monkey makes an exuberant leap that carries him past the tiny cookie and toward Towser behind. Cook at stone wall in distance. Gentle comic energy; long monkey tail intact.",
+      "alt": "The gingerbread man races across a sunny green field toward a leafy oak while Jocko the little brown monkey makes an exuberant leap that carries him past the tiny cookie and toward Towser behind."
+    },
+    {
+      "heading": "Up, Up, Into the Tree",
+      "paragraphs": [
+        "\"A dog cannot climb a tree,\" thought the gingerbread man. \"And I don't think the cook can climb one either. I have never met a monkey before, so I am not sure about him. But up I go!\"",
+        "Hand over hand, he climbed the trunk. Higher and higher he went, until he reached a leafy branch near the top. The cook and Towser looked very small below him.",
+        "He swung one little leg over the branch and called down:"
+      ],
+      "chant": "Climb, climb, as fast as you can! You can't catch me, I'm the Gingerbread Man!",
+      "caption": "The little cookie climbs toward the highest branches.",
+      "number": 9,
+      "image": "gingerbread_09.jpg",
+      "image_prompt": "The small gingerbread man climbs hand over hand up a leafy oak trunk toward high branches while Jocko climbs a lower branch behind him. Towser and the cook below look up. Breezy leaves and open sunlit countryside, adventurous but not frightening.",
+      "alt": "The small gingerbread man climbs hand over hand up a leafy oak trunk toward high branches while Jocko climbs a lower branch behind him."
+    },
+    {
+      "heading": "A Monkey Can Climb!",
+      "paragraphs": [
+        "But Jocko could climb a tree. Oh, how he could climb! In one spring he reached a low branch. In another moment he was up among the leaves.",
+        "The gingerbread man hurried to the very end of his branch. He hung there by one little hand. Jocko swung underneath, stretched out his long arm, and caught him.",
+        "Now the monkey held the little cookie up and looked at him hungrily. The gingerbread man's merry raisin smile drooped. His seed eyes filled with tears. For the first time all day, he had nothing to sing."
+      ],
+      "caption": "Jocko catches the gingerbread man among the leaves.",
+      "number": 10,
+      "image": "gingerbread_10.jpg",
+      "image_prompt": "High in the leafy oak, Jocko the brown monkey sits safely astride a thick branch gently holding the whole tiny gingerbread man in one hand. The cookie looks suddenly worried; monkey curious. Clear subjects against airy leaves, no biting, no damage.",
+      "alt": "High in the leafy oak, Jocko the brown monkey sits safely astride a thick branch gently holding the whole tiny gingerbread man in one hand."
+    },
+    {
+      "heading": "Little Bobby Comes Running",
+      "paragraphs": [
+        "Just then, little Bobby came running across the field. He had been taking a nap upstairs. In his dreams, he kept hearing somebody call his name. When he woke, he heard barking and chattering outside.",
+        "He ran downstairs without even stopping to put on his shoes. His bare feet pattered down the garden path. Over the low wall he climbed, and across the grass he ran.",
+        "Under the tree, Bobby looked up. \"Drop it, Jocko!\" he called. Jocko knew he must mind Bobby. He let go, and the gingerbread man fell straight into the front of Bobby's pinafore."
+      ],
+      "caption": "Bobby catches the cookie in his outstretched pinafore.",
+      "number": 11,
+      "image": "gingerbread_11.jpg",
+      "image_prompt": "Bobby the barefoot sandy-haired boy in his cream shirt and red pinafore stands beneath the oak holding out the front of his pinafore as the intact gingerbread man drops neatly into it from Jocko's hand on a low branch above. Cook smiles nearby, Towser watches. Gentle storybook staging.",
+      "alt": "Bobby the barefoot sandy-haired boy in his cream shirt and red pinafore stands beneath the oak holding out the front of his pinafore as the intact gingerbread man drops neatly into it from Jocko's hand on a low branch above."
+    },
+    {
+      "heading": "Three Bites, and All Gone",
+      "paragraphs": [
+        "Bobby lifted up the gingerbread man. What a lovely cookie! The raisin mouth drooped lower, but Bobby was hungry. He took one big bite and ate the little legs and part of the body.",
+        "\"Oh!\" cried the gingerbread man. \"I'm one-third gone!\"",
+        "Bobby took a second bite. This time the arms and the rest of the body disappeared. \"Oh!\" cried the gingerbread man. \"I'm two-thirds gone!\"",
+        "Then Bobby took a third bite and ate the head, sugar hat and all. \"Oh!\" said the gingerbread man. \"I'm all gone!\"",
+        "And so he was. The cook had found Bobby's treat at last. The chase was over, and that was the end of the gingerbread man."
+      ],
+      "caption": "Three bites later, only a few sweet crumbs remain.",
+      "number": 12,
+      "image": "gingerbread_12.jpg",
+      "image_prompt": "The story's cheerful final moment: barefoot Bobby beneath the oak happily licking the last gingerbread crumbs from his fingers; a few golden cookie crumbs rest in the fold of his red pinafore. Cook, gray cat and brown-and-cream dog nearby; monkey on tree branch above. No whole gingerbread character remains, no body fragments, no gore. Warm peaceful countryside ending.",
+      "alt": "The story's cheerful final moment: barefoot Bobby beneath the oak happily licking the last gingerbread crumbs from his fingers; a few golden cookie crumbs rest in the fold of his red pinafore."
+    }
+  ]
+}
