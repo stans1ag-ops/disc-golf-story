@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Read Little Red Riding Hood classic fairy tale with 10 illustrations and full voice narration.">
-  <title>Little Red Riding Hood — Shane’s Bedtime Stories</title>
+  <meta name="description" content="Read The Gingerbread Man, a classic fairy tale about a runaway cookie, with a complete read-aloud narration.">
+  <title>The Gingerbread Man — Shane’s Bedtime Stories</title>
 
   <!-- Google Fonts with full system fallbacks -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -577,6 +577,36 @@
     [data-theme="night"] .chant-box.pig .chant-speaker { color: #F4A261; }
     [data-theme="night"] .chant-box.huff-puff .chant-speaker { color: #E26D5C; }
 
+    .chant-box.bear-great {
+      border-left: 6px solid #7A5C3E;
+      background: linear-gradient(135deg, rgba(122, 92, 62, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-middle {
+      border-left: 6px solid #B07A3F;
+      background: linear-gradient(135deg, rgba(176, 122, 63, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-wee {
+      border-left: 6px solid var(--accent-gold);
+      background: linear-gradient(135deg, rgba(224, 159, 62, 0.12), var(--bg-card));
+    }
+
+    .chant-box.goldilocks {
+      border-left: 6px solid #D4762E;
+      background: linear-gradient(135deg, rgba(212, 118, 46, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-great .chant-speaker { color: #7A5C3E; }
+    .chant-box.bear-middle .chant-speaker { color: #B07A3F; }
+    .chant-box.bear-wee .chant-speaker { color: var(--accent-gold); }
+    .chant-box.goldilocks .chant-speaker { color: #D4762E; }
+
+    [data-theme="night"] .chant-box.bear-great .chant-speaker { color: #C49A6C; }
+    [data-theme="night"] .chant-box.bear-middle .chant-speaker { color: #E0A866; }
+    [data-theme="night"] .chant-box.bear-wee .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.goldilocks .chant-speaker { color: #F4A261; }
+
     .chant-text {
       font-family: var(--font-display);
       font-size: 1.15rem;
@@ -868,6 +898,51 @@
       color: var(--accent-brick);
     }
 
+    /* Narrated Story Video */
+    .story-video-card {
+      margin-top: 48px;
+      padding: clamp(18px, 4vw, 32px);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .story-video-title {
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      line-height: 1.3;
+    }
+
+    .story-video-description {
+      margin: 12px 0 20px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .story-video-card video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #181c18;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+    }
+
+    .story-video-download {
+      display: inline-block;
+      margin-top: 14px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-accent);
+      text-underline-offset: 3px;
+    }
+
     /* Footer */
     .story-footer {
       margin-top: 40px;
@@ -886,121 +961,10 @@
       gap: 16px;
     }
 
-    /* Story Video Section */
-    .story-animation-card {
-      margin-top: 48px;
-      margin-bottom: 24px;
-      padding: 30px 24px 26px;
-      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
-      border-radius: 24px;
-      border: 2px solid var(--border-color);
-      box-shadow: var(--shadow-lg);
-      text-align: center;
-      position: relative;
-    }
-
-    .animation-badge-wrapper {
-      margin-bottom: 12px;
-    }
-
-    .animation-title {
-      font-family: var(--font-display);
-      font-size: clamp(1.35rem, 4vw, 1.75rem);
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
-
-    .animation-subtitle {
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      max-width: 580px;
-      margin: 0 auto 22px;
-      line-height: 1.5;
-    }
-
-    .animation-player-frame {
-      border-radius: 18px;
-      overflow: hidden;
-      background: #000000;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
-      border: 2px solid var(--border-color);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .video-aspect-box {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #0d1520;
-    }
-
-    .video-aspect-box video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .animation-controls-bar {
-      background: var(--bg-card);
-      border-top: 1px solid var(--border-color);
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .anim-pill-badge {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #FFFFFF;
-      background: linear-gradient(135deg, var(--accent-hood), #E09F3E);
-      padding: 4px 10px;
-      border-radius: 12px;
-      white-space: nowrap;
-    }
-
-    .anim-caption-text {
-      font-family: var(--font-sans);
-      font-size: 0.84rem;
-      color: var(--text-muted);
-      font-style: italic;
-      flex-grow: 1;
-      text-align: left;
-    }
-
-    .btn-fullscreen {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--text-accent);
-      background: var(--bg-card-subtle);
-      border: 1px solid var(--border-color);
-      padding: 6px 12px;
-      border-radius: 14px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    .btn-fullscreen:hover {
-      background: var(--border-color);
-      transform: translateY(-1px);
-    }
-
     @media (max-width: 640px) {
       .audio-controls-row { flex-wrap: wrap; }
       .btn-audio-main { width: 100%; justify-content: center; }
       .story-figure { max-width: 100%; }
-      .animation-controls-bar { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -1018,13 +982,6 @@
           <span class="story-chevron">▾</span>
         </button>
         <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
-          <a href="../the-gingerbread-man/" class="story-menu-link" role="menuitem">
-            <span class="menu-link-icon">🍪</span>
-            <div class="menu-link-text">
-              <strong class="menu-link-title">The Gingerbread Man</strong>
-              <span class="menu-link-desc">Classic Fairy Tale • Run, Run, as Fast as You Can!</span>
-            </div>
-          </a>
 
           <a href="../" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🏠</span>
@@ -1034,17 +991,23 @@
             </div>
           </a>
           <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🍪</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Gingerbread Man</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Run, Run, as Fast as You Can!</span>
+            </div>
+          </a>
+          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥣</span><div class="menu-link-text">
+              <strong class="menu-link-title">Goldilocks and the Three Bears</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Too Hot, Too Cold, Just Right</span>
+            </div>
+          </a>
+          <a href="../little-red-riding-hood/" class="story-menu-link" role="menuitem">
             <span class="menu-link-icon">🧺</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">Little Red Riding Hood</strong>
               <span class="menu-link-desc">Classic Fairy Tale • The Wolf in Grandma&apos;s Bed</span>
-            </div>
-          </a>
-          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link" role="menuitem">
-            <span class="menu-link-icon">🥣</span>
-            <div class="menu-link-text">
-              <strong class="menu-link-title">Goldilocks and the Three Bears</strong>
-              <span class="menu-link-desc">Classic Fairy Tale • Too Hot, Too Cold, Just Right</span>
             </div>
           </a>
           <a href="../the-three-little-pigs/" class="story-menu-link" role="menuitem">
@@ -1152,359 +1115,122 @@
 
     <!-- Story Header -->
     <section class="story-header">
-      <span class="badge-adventure">🧺 Classic Fairy Tale</span>
-      <h1 class="story-title">Little Red <span class="highlight-word">Riding Hood</span></h1>
-      <p class="story-subtitle">The classic tale of a red hood, a deep forest, and a wolf with very big teeth!</p>
+      <span class="badge-adventure">🍪 Classic Fairy Tale</span>
+      <h1 class="story-title">The <span class="highlight-word">Gingerbread Man</span></h1>
+      <p class="story-subtitle">A freshly baked cookie, a very silly chase, and one hungry little boy!</p>
       
       <div class="story-meta">
-        <span class="meta-item">⏱️ <strong>5-6 min read</strong></span>
-        <span>•</span>
-        <span class="meta-item">🎨 <strong>10 Story Illustrations</strong></span>
-        <span>•</span>
-        <span class="meta-item">🎙️ <strong>Voice Narration</strong></span>
+        <span class="meta-item">⏱️ <strong>8 min read</strong></span>
         <span>•</span>
         <span class="meta-item">🗣️ <strong>Say-Along Chants</strong></span>
       </div>
 
-      <!-- Audio Narration Player -->
-      <div class="audio-player-card">
-        <div class="audio-player-header">
-          <div class="audio-title-group">
-            <div class="audio-play-icon-box">🎙️</div>
-            <div>
-              <div class="audio-info-title">Listen to Full Story Narration</div>
-              <div class="audio-info-sub">Classic read-aloud voice narration with music and expressive sound</div>
-            </div>
-          </div>
-          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
-        </div>
-
-        <div class="audio-controls-row">
-          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
-            <span id="audio-play-icon">▶</span>
-            <span id="audio-play-label">Play Voice Narration</span>
-          </button>
-
-          <div class="audio-progress-container">
-            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
-              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
-            </div>
-            <div class="audio-time-row">
-              <span id="audio-time-current">0:00</span>
-              <span id="audio-time-total">5:05</span>
-            </div>
-          </div>
-        </div>
-
-        <audio id="story-audio-element" preload="metadata">
-          <source src="narration.mp3" type="audio/mpeg">
-          Your browser does not support audio playback.
-        </audio>
-      </div>
     </section>
 
-    <!-- SCENE 1 -->
     <article class="scene-section" id="scene-1">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 1 • The Little Red Hood</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 1 • A Warm, Spicy Kitchen</span></div>
+      <p class="lead-paragraph story-text">One sunny morning, the cook went into the kitchen to make gingerbread. She stirred flour, water, dark treacle, ginger, and a pinch of spice in a big bowl. Round and round went her spoon. Soon the kitchen smelled sweet and warm.</p>
+      <p class="story-text">She rolled the golden dough across the table. With her tins, she cut round cakes and square cakes. Then she smiled. &quot;I shall make something special for little Bobby,&quot; she said. &quot;A little gingerbread man!&quot;</p>
 
-      <p class="lead-paragraph story-text">Once upon a time, there was a sweet little girl who was loved by everyone who met her — but most of all by her grandmother. The old woman loved her so much that she made her a small red velvet hood. It suited her perfectly, and from that day on, everyone called her Little Red Riding Hood.</p>
-      <!-- Illustration 1: The Gift of the Red Hood -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_gift.jpg"
-            alt="Little Red Riding Hood walking through the village in her red velvet hood, carrying her basket."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>Little Red Riding Hood sets out in the red velvet hood her grandmother made for her.</figcaption>
-      </figure>
     </article>
 
-    <!-- SCENE 2 -->
     <article class="scene-section" id="scene-2">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 2 • Cake and Wine for Grandma</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 2 • A Very Jolly Little Man</span></div>
+      <p class="story-text">The cook shaped a body, a head, two arms, and two little legs. She gave him tiny hands and feet. She made bright eyes from seeds and almonds, and a merry mouth from a raisin. On top of his head, she added a frilly sugar hat.</p>
+      <p class="story-text">What a jolly little fellow he was! He almost seemed to be smiling at a secret joke. The cook put him at the back of the baking tray, behind the round cakes and the square cakes. Then she slid the tray into the oven and went upstairs to sweep.</p>
 
-      <p class="story-text">One morning, her mother said, "Come, Little Red Riding Hood, here is a piece of cake and a bottle of wine. Take them to your grandmother — she is sick and weak, and this will do her good. Go before it gets too hot, and remember to walk carefully. Don't stray from the path, or you might fall and break the bottle. And when you arrive, don't forget to say good morning before you peek around her room."</p>
-      <p class="story-text">"I'll be careful, Mother," said Little Red Riding Hood, and she promised with a smile.</p>
-      <!-- Illustration 2: The Basket -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_basket.jpg"
-            alt="A mother handing a wicker basket of cake and a bottle of wine to Little Red Riding Hood at the cottage door."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>Her mother hands her a basket of cake and wine, and reminds her to stay on the path.</figcaption>
-      </figure>
     </article>
 
-    <!-- SCENE 3 -->
     <article class="scene-section" id="scene-3">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 3 • The Wolf on the Path</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 3 • Hop, Skip, and Jump!</span></div>
+      <p class="story-text">When the clock struck twelve, the cook hurried back to the kitchen. She opened the oven door. The cakes were brown and ready. So was the gingerbread man—but he was standing up!</p>
+      <p class="story-text">Before the cook could blink, he hopped over the round cakes, skipped over the square cakes, and jumped past her arm. Down he landed on the kitchen floor. His tiny feet went pit-pat, pit-pat, toward the open back door.</p>
+      <p class="story-text">&quot;Come back!&quot; called the cook. But the little fellow only sang:</p>
+      <div class="chant-box goldilocks"><div class="chant-speaker">🍪 The Gingerbread Man</div><p class="chant-text story-text">Run, run, as fast as you can! You can&#x27;t catch me, I&#x27;m the Gingerbread Man!</p></div>
 
-      <p class="story-text">The grandmother lived deep in the forest, about half a league from the village. Just as Little Red Riding Hood entered the woods, a wolf appeared on the path. She didn't know what a wicked creature he was, and she felt no fear at all.</p>
-      <p class="story-text">"Good morning, Little Red Riding Hood," said the wolf.</p>
-      <p class="story-text">"Good morning, Mr. Wolf," she replied politely.</p>
-      <p class="story-text">"Where are you going so early?" he asked. "To my grandmother's house," said the girl. "And what is that in your basket?" "Cake and wine. Grandma has been sick, so Mother sent me to cheer her up." "And where does your grandmother live?" asked the wolf. "A little farther into the woods — under the three great oak trees, near the hazel bushes. You must know it," she said.</p>
-      <p class="story-text">The wolf licked his lips and thought, <em>What a tender young thing! She will taste even better than the old woman. I will eat them both — but I will have to be clever about it.</em></p>
-      <!-- Illustration 3: Meeting the Wolf -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_meets_wolf.jpg"
-            alt="A sly gray wolf stepping onto a forest path in front of Little Red Riding Hood in her red hood."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>A wolf appears on the forest path — and Little Red Riding Hood does not know what a wicked creature he is.</figcaption>
-      </figure>
     </article>
 
-    <!-- SCENE 4 -->
     <article class="scene-section" id="scene-4">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 4 • Flowers in the Forest</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 4 • Mouser Wakes Up</span></div>
+      <p class="story-text">Right across the doorway lay Mouser the cat, fast asleep in the sunshine. &quot;Mouser! Mouser! Stop the gingerbread man!&quot; cried the cook. &quot;I made him for little Bobby!&quot;</p>
+      <p class="story-text">Mouser rolled over. Was somebody calling in her dream? The cook called again, and the cat sprang to her feet. But just as Mouser turned her head, the gingerbread man slipped under her tail and dashed into the garden.</p>
+      <p class="story-text">Now the cat ran after the cookie, and the cook ran after the cat. Down the sunny path they went, past flowers and buzzing bees.</p>
 
-      <p class="story-text">He walked beside her for a bit, then said slyly, "Look how pretty the flowers are here, Little Red Riding Hood. Why not pick some for your grandmother? And listen — don't you hear how sweetly the birds are singing? You walk along so seriously, as if you were going to school, when the forest is alive with joy!"</p>
-      <p class="story-text">Little Red Riding Hood looked up and saw sunlight dancing through the trees, making the wildflowers sparkle. <em>Grandma would love a bouquet,</em> she thought. <em>I still have plenty of time.</em> So she stepped off the path to gather flowers. Each time she picked one, she saw another even prettier farther away, and she wandered deeper and deeper into the forest.</p>
-      <!-- Illustration 4: Gathering Flowers -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_flowers.jpg"
-            alt="Little Red Riding Hood gathering bright wildflowers in a sun-dappled forest, wandering away from the path."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>She steps off the path to gather flowers — and wanders deeper and deeper into the forest.</figcaption>
-      </figure>
-      <p class="story-text">Meanwhile, the wolf ran straight to the grandmother's house and knocked at the door.</p>
-      <p class="story-text">"Who's there?" called the grandmother.</p>
-      <p class="story-text">"It's me — Little Red Riding Hood," said the wolf sweetly. "I've brought you cake and wine."</p>
-      <p class="story-text">"Lift the latch," said the grandmother. "I'm too weak to get up."</p>
-      <p class="story-text">The wolf lifted the latch, pushed open the door, and without a word, leapt upon the old woman and swallowed her whole.</p>
-      <!-- Illustration 5: The Wolf at the Door -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_wolf_at_door.jpg"
-            alt="The wolf pushing open the wooden door of the grandmother's forest cottage."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>The wolf runs straight to the grandmother's cottage and pushes open the door.</figcaption>
-      </figure>
     </article>
 
-    <!-- SCENE 5 -->
     <article class="scene-section" id="scene-5">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 5 • The Wolf in Grandmother's Bed</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 5 • Between Towser&#x27;s Legs</span></div>
+      <p class="story-text">At the bottom of the garden, Towser the dog was snoozing beside a warm stone wall. &quot;Towser! Towser! Stop him!&quot; called the cook. The dog gave a snore. She called again. At last he jumped up to see what the fuss was about.</p>
+      <p class="story-text">That was the gingerbread man&#x27;s chance. He darted between the dog&#x27;s legs and scrambled onto the wall. Towser looked down the path and saw Mouser running toward him, with the cook close behind. Where was that little cookie?</p>
+      <p class="story-text">From the top of the wall came a cheerful song:</p>
+      <div class="chant-box goldilocks"><div class="chant-speaker">🍪 The Gingerbread Man</div><p class="chant-text story-text">Run, run, as fast as you can! You can&#x27;t catch me, I&#x27;m the Gingerbread Man!</p></div>
 
-      <p class="story-text">Then he put on her nightgown and cap, pulled the curtains, and lay down in her bed.</p>
-      <!-- Illustration 6: Disguised in Bed -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_wolf_in_bed.jpg"
-            alt="The wolf lying in the grandmother's bed wearing her nightgown and cap, curtains half drawn."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>The wolf puts on the grandmother's nightgown and cap, and lies down in her bed.</figcaption>
-      </figure>
-      <p class="story-text">When Little Red Riding Hood finally reached the cottage, she was surprised to find the door standing open. The room felt strange and quiet. "Oh dear," she whispered, "why do I feel so uneasy today?" She called out, "Good morning, Grandma!" but there was no answer.</p>
-      <p class="story-text">She went to the bed and drew back the curtains. There lay her grandmother, cap pulled low, face shadowed, looking quite odd.</p>
     </article>
 
-    <!-- SCENE 6 -->
     <article class="scene-section" id="scene-6">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 6 • What Big Ears You Have!</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 6 • What a Tumble!</span></div>
+      <p class="story-text">Towser thought the cook wanted him to catch the cat. Off he rushed toward Mouser! Mouser was running so fast that she could not stop. Bump! The cat and dog rolled into a noisy tangle.</p>
+      <p class="story-text">The cook tried to stop too. Her apron fluttered. Her feet slipped. Over she went, right into the middle of the muddle!</p>
+      <p class="story-text">There were barks and meows and a great deal of scrambling. A dog paw appeared here. A cat tail appeared there. Then the cook&#x27;s head popped up between them. What a tumble they had taken!</p>
 
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "Oh, Grandma, what big ears you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf answers</div>
-        <div class="chant-text">
-          "The better to hear you with, my child."
-        </div>
-      </div>
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "But, Grandma, what big eyes you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf answers</div>
-        <div class="chant-text">
-          "The better to see you with, my dear."
-        </div>
-      </div>
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "And what big hands you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf answers</div>
-        <div class="chant-text">
-          "The better to hug you with."
-        </div>
-      </div>
-      <div class="chant-box pig">
-        <div class="chant-speaker">🧺 Little Red Riding Hood asks</div>
-        <div class="chant-text">
-          "But, Grandma — what a terrible big mouth you have!"
-        </div>
-      </div>
-      <div class="chant-box wolf">
-        <div class="chant-speaker">🐺 The Wolf roars</div>
-        <div class="chant-text">
-          "The better to eat you with!"
-        </div>
-      </div>
-      <!-- Illustration 7: What Big Ears You Have -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_big_ears.jpg"
-            alt="Little Red Riding Hood pulling back the bed curtain to find the wolf disguised as her grandmother."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>"Oh, Grandma, what big ears you have!" — "The better to hear you with, my child."</figcaption>
-      </figure>
-      <p class="story-text">The wolf roared, "The better to eat you with!" and before she could scream, he sprang from the bed and swallowed Little Red Riding Hood whole.</p>
-      <!-- Illustration 8: "The Better to Eat You With!" -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_attack.jpg"
-            alt="The wolf springing from the grandmother's bed toward Little Red Riding Hood."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>"The better to eat you with!" roared the wolf, and he sprang from the bed.</figcaption>
-      </figure>
-      <p class="story-text">Full and satisfied, the wolf climbed back into bed and soon began to snore loudly. Just then, a passing huntsman heard the noise and muttered, "That old woman snores like a beast! I should check on her."</p>
-      <!-- Illustration 9: The Huntsman Hears Snoring -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_huntsman.jpg"
-            alt="A huntsman with a rifle pausing outside the forest cottage, hearing loud snoring from within."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>A passing huntsman hears the wolf snoring loudly inside the cottage.</figcaption>
-      </figure>
     </article>
 
-    <!-- SCENE 7 -->
     <article class="scene-section" id="scene-7">
-      <div class="scene-header">
-        <span class="scene-pill">Scene 7 • The Huntsman's Rescue</span>
-      </div>
+      <div class="scene-header"><span class="scene-pill">Scene 7 • Laughing on the Wall</span></div>
+      <p class="story-text">Up on the wall, the gingerbread man laughed until his little seed eyes shone. Nobody had caught him. He was sure nobody ever could!</p>
+      <p class="story-text">Mouser untangled herself and went back to the kitchen. She had had quite enough of chasing cookies. Towser shook himself, looked up, and finally spotted the little fellow. The cook stood up, straightened her apron, and followed him.</p>
+      <p class="story-text">Here came the dog again! The gingerbread man turned, jumped down on the far side of the wall, and raced into the field.</p>
+      <div class="chant-box goldilocks"><div class="chant-speaker">🍪 The Gingerbread Man</div><p class="chant-text story-text">Run, run, as fast as you can! You can&#x27;t catch me, I&#x27;m the Gingerbread Man!</p></div>
 
-      <p class="story-text">He stepped inside and saw the wolf stretched out in the bed. "So it's you, you wicked creature!" he said, raising his gun. But then he thought, <em>Maybe the old woman's still inside.</em> So instead of shooting, he took a pair of scissors and carefully cut open the wolf's belly.</p>
-      <p class="story-text">After two careful snips, he saw a flash of red inside. A few more cuts — and out sprang Little Red Riding Hood, trembling but unharmed. "Oh, how frightened I was! It was so dark inside!" she cried. Then the huntsman cut a little more, and out came the grandmother, pale but alive.</p>
-      <p class="story-text">To make sure the wolf could never harm anyone again, they filled his belly with heavy stones. When he awoke and tried to flee, the weight pulled him down, and he fell dead on the spot.</p>
-      <p class="story-text">The huntsman skinned the wolf and went on his way. The grandmother ate her cake and drank her wine and soon felt much better. As for Little Red Riding Hood, she thought to herself, <em>From now on, I'll never wander from the path again when Mother tells me not to.</em></p>
-      <!-- Illustration 10: Safe at Last -->
-      <figure class="story-figure">
-        <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img
-            src="little_red_hood_stones.jpg"
-            alt="Little Red Riding Hood hugging the brave huntsman in thanks, with her grandmother safe beside them."
-            loading="lazy"
-            width="896"
-            height="1200"
-          >
-          <span class="figure-overlay-hint">🔍 Zoom</span>
-        </div>
-        <figcaption>Safe at last — Little Red Riding Hood thanks the brave huntsman.</figcaption>
-      </figure>
     </article>
 
-    <!-- Narrated Story Video Section -->
-    <section class="story-animation-card" id="story-video">
-      <div class="animation-badge-wrapper">
-        <span class="anim-pill-badge">🎬 Narrated Story Video</span>
-      </div>
-      <h2 class="animation-title">Watch the story come to life</h2>
-      <p class="animation-subtitle">All 10 vintage storybook illustrations matched with full voice narration for bedtime viewing and listening.</p>
+    <article class="scene-section" id="scene-8">
+      <div class="scene-header"><span class="scene-pill">Scene 8 • Jocko&#x27;s Great Big Leap</span></div>
+      <p class="story-text">In the middle of the field stood a tall tree. At its foot sat Jocko the monkey. Jocko was wide awake. He saw a tiny brown fellow running through the grass, with a dog and a cook behind him.</p>
+      <p class="story-text">&quot;Jocko! Jocko! Stop the gingerbread man!&quot; called the cook. The monkey sprang into the air. But his leap was much too big! He sailed right over the gingerbread man and landed on Towser&#x27;s back.</p>
+      <p class="story-text">Towser spun around in surprise. Jocko jumped away, chattering loudly. While they sorted themselves out, the gingerbread man reached the tree.</p>
 
-      <div class="animation-player-frame">
-        <div class="video-aspect-box">
-          <video 
-            id="story-anim-video" 
-            controls 
-            playsinline 
-            poster="little_red_riding_hood_story_video_poster.jpg"
-            preload="metadata"
-            aria-label="Little Red Riding Hood — Full voice narration over illustrations"
-          >
-            <source src="little_red_riding_hood_story_video.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-        </div>
-        <div class="animation-controls-bar">
-          <span class="anim-pill-badge">🧺 Full Classic Tale</span>
-          <span class="anim-caption-text">"The better to hear you with, my child!" • 5 min 5 sec • Spoken Narration</span>
-          <button type="button" class="btn-fullscreen" onclick="toggleVideoFullscreen(this)" aria-label="Toggle Fullscreen">⛶ Fullscreen</button>
-        </div>
-      </div>
-    </section>
+    </article>
+
+    <article class="scene-section" id="scene-9">
+      <div class="scene-header"><span class="scene-pill">Scene 9 • Up, Up, Into the Tree</span></div>
+      <p class="story-text">&quot;A dog cannot climb a tree,&quot; thought the gingerbread man. &quot;And I don&#x27;t think the cook can climb one either. I have never met a monkey before, so I am not sure about him. But up I go!&quot;</p>
+      <p class="story-text">Hand over hand, he climbed the trunk. Higher and higher he went, until he reached a leafy branch near the top. The cook and Towser looked very small below him.</p>
+      <p class="story-text">He swung one little leg over the branch and called down:</p>
+      <div class="chant-box goldilocks"><div class="chant-speaker">🍪 The Gingerbread Man</div><p class="chant-text story-text">Climb, climb, as fast as you can! You can&#x27;t catch me, I&#x27;m the Gingerbread Man!</p></div>
+
+    </article>
+
+    <article class="scene-section" id="scene-10">
+      <div class="scene-header"><span class="scene-pill">Scene 10 • A Monkey Can Climb!</span></div>
+      <p class="story-text">But Jocko could climb a tree. Oh, how he could climb! In one spring he reached a low branch. In another moment he was up among the leaves.</p>
+      <p class="story-text">The gingerbread man hurried to the very end of his branch. He hung there by one little hand. Jocko swung underneath, stretched out his long arm, and caught him.</p>
+      <p class="story-text">Now the monkey held the little cookie up and looked at him hungrily. The gingerbread man&#x27;s merry raisin smile drooped. His seed eyes filled with tears. For the first time all day, he had nothing to sing.</p>
+
+    </article>
+
+    <article class="scene-section" id="scene-11">
+      <div class="scene-header"><span class="scene-pill">Scene 11 • Little Bobby Comes Running</span></div>
+      <p class="story-text">Just then, little Bobby came running across the field. He had been taking a nap upstairs. In his dreams, he kept hearing somebody call his name. When he woke, he heard barking and chattering outside.</p>
+      <p class="story-text">He ran downstairs without even stopping to put on his shoes. His bare feet pattered down the garden path. Over the low wall he climbed, and across the grass he ran.</p>
+      <p class="story-text">Under the tree, Bobby looked up. &quot;Drop it, Jocko!&quot; he called. Jocko knew he must mind Bobby. He let go, and the gingerbread man fell straight into the front of Bobby&#x27;s pinafore.</p>
+
+    </article>
+
+    <article class="scene-section" id="scene-12">
+      <div class="scene-header"><span class="scene-pill">Scene 12 • Three Bites, and All Gone</span></div>
+      <p class="story-text">Bobby lifted up the gingerbread man. What a lovely cookie! The raisin mouth drooped lower, but Bobby was hungry. He took one big bite and ate the little legs and part of the body.</p>
+      <p class="story-text">&quot;Oh!&quot; cried the gingerbread man. &quot;I&#x27;m one-third gone!&quot;</p>
+      <p class="story-text">Bobby took a second bite. This time the arms and the rest of the body disappeared. &quot;Oh!&quot; cried the gingerbread man. &quot;I&#x27;m two-thirds gone!&quot;</p>
+      <p class="story-text">Then Bobby took a third bite and ate the head, sugar hat and all. &quot;Oh!&quot; said the gingerbread man. &quot;I&#x27;m all gone!&quot;</p>
+      <p class="story-text">And so he was. The cook had found Bobby&#x27;s treat at last. The chase was over, and that was the end of the gingerbread man.</p>
+
+    </article>
 
     <!-- Footer -->
     <footer class="story-footer">
       <p>⭐ <strong>Shane &amp; Alex's Bedtime Stories Collection</strong></p>
-      <p style="margin-top: 6px;">Classic Fairy Tale • Illustrated in vintage Edwardian storybook watercolor style</p>
+      <p style="margin-top: 6px;">A read-aloud retelling of the classic tale by George Haven Putnam. <a href="https://americanliterature.com/childrens-stories/the-gingerbread-man">Read the source story</a>.</p>
       <div class="footer-links">
         <a href="../" style="color: var(--text-accent); text-decoration: none;">Library Home</a>
         <span>•</span>
@@ -1669,6 +1395,7 @@
 
     // 6. Voice Narration Audio Player
     const storyAudio = document.getElementById('story-audio-element');
+    const storyVideo = document.getElementById('story-video');
     const btnAudioToggle = document.getElementById('btn-audio-toggle');
     const audioPlayIcon = document.getElementById('audio-play-icon');
     const audioPlayLabel = document.getElementById('audio-play-label');
@@ -1686,6 +1413,17 @@
     }
 
     if (storyAudio && btnAudioToggle) {
+      storyAudio.addEventListener('play', () => {
+        storyVideo?.pause();
+        audioPlayIcon.textContent = '⏸';
+        audioPlayLabel.textContent = 'Pause Narration';
+      });
+
+      storyAudio.addEventListener('pause', () => {
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = storyAudio.ended ? 'Play Voice Narration' : 'Resume Narration';
+      });
+
       storyAudio.addEventListener('loadedmetadata', () => {
         if (!isNaN(storyAudio.duration) && isFinite(storyAudio.duration)) {
           audioTimeTotal.textContent = formatTime(storyAudio.duration);
@@ -1693,7 +1431,7 @@
       });
 
       storyAudio.addEventListener('timeupdate', () => {
-        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 261.13;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 1;
         const pct = (storyAudio.currentTime / dur) * 100;
         audioScrubberFill.style.width = pct + '%';
         audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
@@ -1709,19 +1447,15 @@
       btnAudioToggle.addEventListener('click', () => {
         if (storyAudio.paused) {
           storyAudio.play();
-          audioPlayIcon.textContent = '⏸';
-          audioPlayLabel.textContent = 'Pause Narration';
         } else {
           storyAudio.pause();
-          audioPlayIcon.textContent = '▶';
-          audioPlayLabel.textContent = 'Resume Narration';
         }
       });
 
       audioScrubber.addEventListener('click', (e) => {
         const rect = audioScrubber.getBoundingClientRect();
         const clickPos = (e.clientX - rect.left) / rect.width;
-        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 261.13;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 1;
         storyAudio.currentTime = clickPos * dur;
       });
 
@@ -1735,39 +1469,9 @@
       });
     }
 
-    // Video Player & Audio Coordination
-    const storyAnimVideo = document.getElementById('story-anim-video');
-    if (storyAnimVideo) {
-      storyAnimVideo.addEventListener('play', () => {
-        if (storyAudio && !storyAudio.paused) {
-          storyAudio.pause();
-          if (audioPlayIcon) audioPlayIcon.textContent = '▶';
-          if (audioPlayLabel) audioPlayLabel.textContent = 'Play Voice Narration';
-        }
-      });
-      if (storyAudio) {
-        storyAudio.addEventListener('play', () => {
-          if (!storyAnimVideo.paused) {
-            storyAnimVideo.pause();
-          }
-        });
-      }
-    }
-
-    function toggleVideoFullscreen(btn) {
-      const container = btn.closest('.animation-player-frame');
-      const video = container.querySelector('video');
-      if (!video) return;
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      } else if (video.webkitEnterFullscreen) {
-        video.webkitEnterFullscreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
-    }
+    storyVideo?.addEventListener('play', () => {
+      storyAudio?.pause();
+    });
   </script>
 </body>
 </html>
