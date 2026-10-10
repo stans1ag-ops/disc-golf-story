@@ -80,6 +80,15 @@ STORIES = [
         "poster_output": "goldilocks-and-the-three-bears/goldilocks_story_video_poster.jpg",
         "poster_source": "goldilocks_01.jpg",
         "timeline": "goldilocks-and-the-three-bears/narration-timings.json",
+    },
+    {
+        "id": "the-gingerbread-man",
+        "dir": "the-gingerbread-man",
+        "audio": "the-gingerbread-man/narration.mp3",
+        "video_output": "the-gingerbread-man/the_gingerbread_man_story_video.mp4",
+        "poster_output": "the-gingerbread-man/the_gingerbread_man_story_video_poster.jpg",
+        "poster_source": "gingerbread_03.jpg",
+        "timeline": "the-gingerbread-man/narration-timings.json",
     }
 ]
 

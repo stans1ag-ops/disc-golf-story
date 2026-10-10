@@ -1,0 +1,1024 @@
+"""Build the complete HTML story page for The Gingerbread Man."""
+
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT_FILE = ROOT / "the-gingerbread-man" / "index.html"
+
+# Load CSS template from goldilocks-and-the-three-bears/index.html
+goldilocks_html = (ROOT / "goldilocks-and-the-three-bears" / "index.html").read_text(encoding="utf-8")
+
+# Extract CSS from <style> to </style>
+css_start = goldilocks_html.find("<style>")
+css_end = goldilocks_html.find("</style>") + len("</style>")
+base_css = goldilocks_html[css_start:css_end]
+
+# Extra CSS rules for Gingerbread chant boxes
+extra_chant_css = """
+    .chant-box.gingerbread {
+      border-left: 6px solid #D4762E;
+      background: linear-gradient(135deg, rgba(212, 118, 46, 0.12), var(--bg-card));
+    }
+    .chant-box.cook {
+      border-left: 6px solid #B83B26;
+      background: linear-gradient(135deg, rgba(184, 59, 38, 0.1), var(--bg-card));
+    }
+    .chant-box.bobby {
+      border-left: 6px solid #2D6A4F;
+      background: linear-gradient(135deg, rgba(45, 106, 79, 0.1), var(--bg-card));
+    }
+    .chant-box.bite {
+      border-left: 6px solid #C85A17;
+      background: linear-gradient(135deg, rgba(200, 90, 23, 0.12), var(--bg-card));
+    }
+    .chant-box.gingerbread .chant-speaker { color: #D4762E; }
+    .chant-box.cook .chant-speaker { color: #B83B26; }
+    .chant-box.bobby .chant-speaker { color: #2D6A4F; }
+    .chant-box.bite .chant-speaker { color: #C85A17; }
+    [data-theme="night"] .chant-box.gingerbread .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.cook .chant-speaker { color: #E26D5C; }
+    [data-theme="night"] .chant-box.bobby .chant-speaker { color: #74C69D; }
+    [data-theme="night"] .chant-box.bite .chant-speaker { color: #F48C42; }
+
+    /* Interactive Conclusion */
+    .interactive-conclusion {
+      margin-top: 48px;
+      padding: clamp(22px, 4vw, 36px);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 4px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3vw, 1.55rem);
+      color: var(--text-main);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 28px 0 20px;
+      text-align: left;
+    }
+    .choice-card {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .choice-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    .choice-card-icon { font-size: 1.6rem; margin-bottom: 6px; }
+    .choice-card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .choice-card-desc {
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      flex-grow: 1;
+      margin-bottom: 12px;
+    }
+    .choice-action-btn {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+    }
+"""
+
+final_css = base_css.replace("</style>", extra_chant_css + "\n  </style>")
+
+html_content = f"""<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Read The Gingerbread Man with 12 vintage illustrations, full voice narration, and a synchronized narrated story video.">
+  <title>The Gingerbread Man — Shane’s Bedtime Stories</title>
+
+  <!-- Google Fonts with full system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+{final_css}
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Story Library Hub</strong>
+              <span class="menu-link-desc">All Bedtime Adventures &amp; Bookshelf</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🍪</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Gingerbread Man</strong>
+              <span class="menu-link-desc">Classic Children's Tale • "Run, Run, Fast as You Can!"</span>
+            </div>
+          </a>
+          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Goldilocks and the Three Bears</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Too Hot, Too Cold, Just Right</span>
+            </div>
+          </a>
+          <a href="../little-red-riding-hood/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🧺</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Little Red Riding Hood</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • The Wolf in Grandma&apos;s Bed</span>
+            </div>
+          </a>
+          <a href="../the-three-little-pigs/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Three Little Pigs</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Straw, Sticks &amp; Bricks</span>
+            </div>
+          </a>
+          <a href="../jack-and-the-beanstalk/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🌱</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Jack and the Beanstalk</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Magic Beans &amp; Giant</span>
+            </div>
+          </a>
+          <a href="../the-great-pontoon-pike-escape/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Great Pontoon Pike Escape</strong>
+              <span class="menu-link-desc">Houghton Lake • Monster 24" Pike</span>
+            </div>
+          </a>
+          <a href="../the-bedtime-toot-tastrophe/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">💨</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Bedtime Toot-Tastrophe</strong>
+              <span class="menu-link-desc">Bedtime Giggles • The Sneaky Toot Trap</span>
+            </div>
+          </a>
+          <a href="../the-fish-that-pulled-back/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐟</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Fish That Pulled Back</strong>
+              <span class="menu-link-desc">Pontoon Fishing • A Big Splash</span>
+            </div>
+          </a>
+          <a href="../the-daring-disc-dash/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">⛓️</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Disc in the Chains</strong>
+              <span class="menu-link-desc">Disc Golf • Hear the Chains</span>
+            </div>
+          </a>
+          <a href="../the-bouncing-bicycle-brigade/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🚲</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Shane and the Big Hill</strong>
+              <span class="menu-link-desc">Biking • Climb the Hill</span>
+            </div>
+          </a>
+          <a href="../the-super-snowy-sled/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🛷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Red Sled Ride</strong>
+              <span class="menu-link-desc">Sledding • Three Snowy Bumps</span>
+            </div>
+          </a>
+          <a href="../the-wild-uno-uproar/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🃏</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">One Card Left</strong>
+              <span class="menu-link-desc">Uno • Shane's Last Card</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Content Container -->
+  <main class="story-container">
+
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">🍪 Classic Children's Tale</span>
+      <h1 class="story-title">The <span class="highlight-word">Gingerbread Man</span></h1>
+      <p class="story-subtitle">"Run, run, fast as you can! You can't catch me, I'm the Gingerbread Man!"</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>10 min read</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>12 Story Illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎙️ <strong>Voice Narration</strong></span>
+        <span>•</span>
+        <span class="meta-item">🗣️ <strong>Say-Along Chants</strong></span>
+      </div>
+
+      <!-- Audio Narration Player -->
+      <div class="audio-player-card">
+        <div class="audio-player-header">
+          <div class="audio-title-group">
+            <div class="audio-play-icon-box">🎙️</div>
+            <div>
+              <div class="audio-info-title">Listen to Full Story Narration</div>
+              <div class="audio-info-sub">Classic read-aloud voice narration with warm expression</div>
+            </div>
+          </div>
+          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
+        </div>
+
+        <div class="audio-controls-row">
+          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
+            <span id="audio-play-icon">▶</span>
+            <span id="audio-play-label">Play Voice Narration</span>
+          </button>
+
+          <div class="audio-progress-container">
+            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
+              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
+            </div>
+            <div class="audio-time-row">
+              <span id="audio-time-current">0:00</span>
+              <span id="audio-time-total">10:00</span>
+            </div>
+          </div>
+        </div>
+
+        <audio id="story-audio-element" preload="metadata">
+          <source src="narration.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+    <article class="scene-section" id="scene-1">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • Making the Gingerbread Dough</span>
+      </div>
+
+      <p class="lead-paragraph story-text">One day, the cook went into the kitchen to make some gingerbread. She took some flour and water, and treacle and ginger, and mixed them all well together, and she put in some more water to make it thin, and then some more flour to make it thick, and a little salt and some spice, and then she rolled it out into a beautiful, smooth, dark-yellow dough.</p>
+      
+      <!-- Illustration 1 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_01.jpg"
+            alt="The cook stirring rich gingerbread dough in a rustic vintage kitchen with bowls of spices and rolling pin."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The cook mixed flour, water, treacle, and ginger into a smooth, dark-yellow dough.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 2 -->
+    <article class="scene-section" id="scene-2">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • Moulding the Gingerbread Man</span>
+      </div>
+
+      <p class="story-text">Then she took the square tins and cut out some square cakes for the little boys, and with some round tins she cut out some round cakes for the little girls, and then she said, &ldquo;I&rsquo;m going to make a little gingerbread man for little Bobby.&rdquo; So she took a nice round lump of dough for his body, and a smaller lump for his head, which she pulled out a little for the neck. Two other lumps were stuck on beneath for the legs, and were pulled out into proper shape, with feet and toes all complete, and two still smaller pieces were made into arms, with dear little hands and fingers.</p>
+      
+      <p class="story-text">But the nicest work was done on the head, for the top was frizzed up into a pretty sugary hat; on either side was made a dear little ear, and in front, after the nose had been carefully moulded, a beautiful mouth was made out of a big raisin, and two bright little eyes with burnt almonds and caraway seeds.</p>
+
+      <p class="story-text">Then the gingerbread man was finished ready for baking, and a very jolly little man he was. In fact, he looked so sly that the cook was afraid he was plotting some mischief, and when the batter was ready for the oven, she put in the square cakes and she put in the round cakes; and then she put in the little gingerbread man in a far back corner, where he couldn&rsquo;t get away in a hurry.</p>
+
+      <!-- Illustration 2 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_02.jpg"
+            alt="The cook carefully decorating the little gingerbread man with raisin mouth and caraway seed eyes on a floured wooden table."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>A sugary hat, a big raisin mouth, and bright caraway-seed eyes — a very jolly little man!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 3 -->
+    <article class="scene-section" id="scene-3">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • Out of the Oven!</span>
+      </div>
+
+      <p class="story-text">Then she went up to sweep the parlor, and she swept and she swept till the clock struck twelve, when she dropped her broom in a hurry, and exclaiming, &ldquo;Lawks! The gingerbread will be all baked to a cinder,&rdquo; she ran down into the kitchen, and threw open the oven door.</p>
+
+      <p class="story-text">And the square cakes were all done, nice and hard and brown, and the round cakes were all done, nice and hard and brown, and the gingerbread man was all done too, nice and hard and brown; and he was standing up in his corner, with his little caraway-seed eyes sparkling, and his raisin mouth bubbling over with mischief, while he waited for the oven door to be opened.</p>
+
+      <p class="story-text">The instant the door was opened, with a hop, skip, and a jump, he went right over the square cakes and the round cakes, and over the cook&rsquo;s arm, and before she could say &ldquo;Jack Robinson&rdquo; he was running across the kitchen floor, as fast as his little legs would carry him, towards the back door, which was standing wide open, and through which he could see the garden path.</p>
+
+      <div class="chant-box gingerbread">
+        <div class="chant-speaker">🍪 The Gingerbread Man Chants!</div>
+        <div class="chant-text">
+          &ldquo;RUN, RUN, FAST AS YOU CAN!<br>YOU CAN&rsquo;T CATCH ME, I&rsquo;M THE GINGERBREAD MAN!&rdquo;
+        </div>
+      </div>
+
+      <!-- Illustration 3 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_03.jpg"
+            alt="The gingerbread man leaping triumphantly from the open oven door across the kitchen floor."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>With a hop, skip, and a jump, he leaped over the cakes and dashed for the open back door!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 4 -->
+    <article class="scene-section" id="scene-4">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • Mouser the Cat Gives Chase</span>
+      </div>
+
+      <p class="story-text">The old cook turned round as fast as she could, which wasn&rsquo;t very fast, for she was rather a heavy woman and she had been quite taken by surprise, and she saw lying right across the doorway, fast asleep in the sun, old Mouser, the cat.</p>
+
+      <div class="chant-box cook">
+        <div class="chant-speaker">👩‍🍳 The Cook Cries Out</div>
+        <div class="chant-text">
+          &ldquo;Mouser, Mouser! Stop the gingerbread man! I want him for little Bobby.&rdquo;
+        </div>
+      </div>
+
+      <p class="story-text">When the cook first called, Mouser thought it was only someone calling in her dreams, and simply rolled over lazily; and the cook called again, &ldquo;Mouser, Mouser!&rdquo; The old cat sprang up with a jump, but just as she turned round to ask the cook what all the noise was about, the little gingerbread man cleverly jumped under her tail, and in an instant was trotting down the garden walk.</p>
+
+      <p class="story-text">Mouser turned in a hurry and ran after, although she was still rather too sleepy to know what it was she was trying to catch, and after the cat came the cook, lumbering along rather heavily, but also making pretty good speed.</p>
+
+      <!-- Illustration 4 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_04.jpg"
+            alt="The gingerbread man darting swiftly past Mouser the sleepy cat in the sunlit garden doorway."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The clever gingerbread man jumped right under Mouser's tail and trotted down the walk!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 5 -->
+    <article class="scene-section" id="scene-5">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 5 • Towser the Dog Wakes Up</span>
+      </div>
+
+      <p class="story-text">Now at the bottom of the walk, lying fast asleep in the sun against the warm stones of the garden wall, was Towser, the dog.</p>
+
+      <div class="chant-box cook">
+        <div class="chant-speaker">👩‍🍳 The Cook Calls Again</div>
+        <div class="chant-text">
+          &ldquo;Towser, Towser, stop the gingerbread man! I want him for little Bobby.&rdquo;
+        </div>
+      </div>
+
+      <p class="story-text">And when Towser first heard her calling he thought it was someone speaking in his dreams, and he only turned over on his side, with another snore, and then the cook called again, &ldquo;Towser, Towser, stop him, stop him!&rdquo;</p>
+
+      <p class="story-text">Then the dog woke up in good earnest, and jumped up on his feet to see what it was that he should stop. But just as the dog jumped up, the little gingerbread man, who had been watching for the chance, quietly slipped between his legs, and climbed up on the top of the stone wall, so that Towser saw nothing but the cat running towards him down the walk, and behind the cat the cook, now quite out of breath.</p>
+
+      <div class="chant-box gingerbread">
+        <div class="chant-speaker">🍪 The Gingerbread Man Chants!</div>
+        <div class="chant-text">
+          &ldquo;RUN, RUN, FAST AS YOU CAN!<br>YOU CAN&rsquo;T CATCH ME, I&rsquo;M THE GINGERBREAD MAN!&rdquo;
+        </div>
+      </div>
+
+      <!-- Illustration 5 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_05.jpg"
+            alt="The gingerbread man slipping nimbly between the legs of Towser the dog by the garden wall."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>He slipped quietly right between Towser's legs and scrambled up to the top of the stone wall!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 6 -->
+    <article class="scene-section" id="scene-6">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 6 • The Grand Scrimmage!</span>
+      </div>
+
+      <p class="story-text">He thought at once that the cat must have stolen something, and that it was the cat the cook wanted him to stop. Now, if there was anything that Towser liked, it was going after the cat, and he jumped up the walk so fiercely that the poor cat did not have time to stop herself or to get out of his way, and they came together with a great fizzing, and barking, and meowing, and howling, and scratching, and biting, as if a couple of Catherine-wheels had gone off in the wrong way and had got mixed up with one another.</p>
+
+      <p class="story-text">But the old cook had been running so hard that she was not able to stop herself any better than the cat had done, and she fell right on top of the mixed up dog and cat, so that all three rolled over on the walk in a heap together.</p>
+
+      <p class="story-text">And the cat scratched whichever came nearest, whether it was a piece of the dog or of the cook, and the dog bit at whatever came nearest, whether it was a piece of the cat or of the cook, so that the poor cook was badly pummelled on both sides.</p>
+
+      <!-- Illustration 6 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_06.jpg"
+            alt="The cook, Towser the dog, and Mouser the cat tumbling together in a comical heap on the gravel garden path."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>All three rolled over in a great flurry of paws, aprons, barking, meowing, and scratching!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 7 -->
+    <article class="scene-section" id="scene-7">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 7 • Laughing on the Garden Wall</span>
+      </div>
+
+      <p class="story-text">Meanwhile, the gingerbread man had climbed up on the garden wall, and stood on the top with his hands in his pockets, looking at the scrimmage, and laughing till the tears ran down from his little caraway-seed eyes and his raisin mouth was bubbling all over with fun.</p>
+
+      <div class="chant-box gingerbread">
+        <div class="chant-speaker">🍪 The Gingerbread Man Chants!</div>
+        <div class="chant-text">
+          &ldquo;RUN, RUN, FAST AS YOU CAN!<br>YOU CAN&rsquo;T CATCH ME, I&rsquo;M THE GINGERBREAD MAN!&rdquo;
+        </div>
+      </div>
+
+      <!-- Illustration 7 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_07.jpg"
+            alt="The cheeky gingerbread man standing hands-in-pockets atop the stone wall, laughing at the tumble below."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>He stood on the wall with his hands in his pockets, laughing till tears ran from his caraway eyes!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 8 -->
+    <article class="scene-section" id="scene-8">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 8 • Racing Across the Field</span>
+      </div>
+
+      <p class="story-text">After a little while, the cat managed to pull herself out from under the cook and the dog, and a very cast-down and crumpled-up-looking cat she was. She had had enough of hunting gingerbread men, and she crept back to the kitchen to repair damages.</p>
+
+      <p class="story-text">The dog, who was very cross because his face had been badly scratched, let go of the cook, and at last, catching sight of the gingerbread man, made a bolt for the garden wall. The cook picked herself up, and although her face was also badly scratched and her dress was torn, she was determined to see the end of the chase, and she followed after the dog, though this time more slowly.</p>
+
+      <p class="story-text">When the gingerbread man saw the dog coming, he jumped down on the farther side of the wall, and began running across the field. Now in the middle of the field was a tree, and at the foot of the tree was lying Jocko, the monkey. He wasn&rsquo;t asleep—monkeys never are—and when he saw the little man running across the field and heard the cook calling, &ldquo;Jocko, Jocko, stop the gingerbread man,&rdquo; he at once gave one big jump.</p>
+
+      <p class="story-text">But he jumped so fast and so far that he went right over the gingerbread man, and as luck would have it, he came down on the back of Towser, the dog, who had just scrambled over the wall, and whom he had not before noticed. Towser was naturally taken by surprise, but he turned his head around and promptly bit off the end of the monkey&rsquo;s tail, and Jocko quickly jumped off again, chattering his indignation.</p>
+
+      <!-- Illustration 8 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_08.jpg"
+            alt="The gingerbread man sprinting across an open green meadow toward a grand oak tree."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>He jumped down and dashed across the field toward the big tree in the middle of the meadow!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 9 -->
+    <article class="scene-section" id="scene-9">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 9 • Climbing to the Topmost Branch</span>
+      </div>
+
+      <p class="story-text">Meanwhile, the gingerbread man had got to the bottom of the tree, and was saying to himself: &ldquo;Now, I know the dog can&rsquo;t climb a tree, and I don&rsquo;t believe the old cook can climb a tree; and as for the monkey I&rsquo;m not sure, for I&rsquo;ve never seen a monkey before, but I am going up.&rdquo;</p>
+
+      <p class="story-text">So he pulled himself up hand over hand until he had got to the topmost branch.</p>
+
+      <div class="chant-box gingerbread">
+        <div class="chant-speaker">🍪 The Gingerbread Man Chants from the Treetop!</div>
+        <div class="chant-text">
+          &ldquo;CLIMB, CLIMB, FAST AS YOU CAN!<br>YOU CAN&rsquo;T CATCH ME, I&rsquo;M THE GINGERBREAD MAN!&rdquo;
+        </div>
+      </div>
+
+      <!-- Illustration 9 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_09.jpg"
+            alt="The gingerbread man pulling himself hand over hand up the trunk of the oak tree to the topmost branch."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Hand over hand he climbed, straight to the highest branch of the great tree!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 10 -->
+    <article class="scene-section" id="scene-10">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 10 • Caught by Jocko the Monkey</span>
+      </div>
+
+      <p class="story-text">But the monkey had jumped with one spring onto the lowest branch, and in an instant he also was at the top of the tree.</p>
+
+      <p class="story-text">The gingerbread man crawled out to the furthermost end of the branch, and hung by one hand, but the monkey swung himself under the branch, and stretching out his long arm, he pulled the gingerbread man in. Then he held him up and looked at him so hungrily that the little raisin mouth began to pucker down at the corners, and the caraway-seed eyes filled with tears.</p>
+
+      <!-- Illustration 10 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_10.jpg"
+            alt="Jocko the monkey hanging from a tree branch, holding up the worried little gingerbread man."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Jocko swung out, reached with his long arm, and caught the little gingerbread man by the branch!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 11 -->
+    <article class="scene-section" id="scene-11">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 11 • Little Bobby to the Rescue</span>
+      </div>
+
+      <p class="story-text">And then what do you think happened? Why, little Bobby himself came running up. He had been taking his noon-day nap upstairs, and in his dreams it seemed as if he kept hearing people call &ldquo;Little Bobby, little Bobby!&rdquo; until finally he jumped up with a start, and was so sure that someone was calling him that he ran downstairs, without even waiting to put on his shoes.</p>
+
+      <p class="story-text">As he came down, he could see through the window in the field beyond the garden the cook, and the dog, and the monkey, and could even hear the barking of Towser and the chattering of Jocko. He scampered down the walk, with his little bare feet pattering against the warm gravel, climbed over the wall, and in a few seconds arrived under the tree, just as Jocko was holding up the poor little gingerbread man.</p>
+
+      <div class="chant-box bobby">
+        <div class="chant-speaker">👦 Little Bobby Commands</div>
+        <div class="chant-text">
+          &ldquo;Drop it, Jocko!&rdquo;
+        </div>
+      </div>
+
+      <p class="story-text">And drop it Jocko did, for he always had to mind Bobby. He dropped it so straight that the gingerbread man fell right into Bobby&rsquo;s uplifted pinafore.</p>
+
+      <p class="story-text">Then Bobby held him up and looked at him, and the little raisin mouth puckered down lower than ever, and the tears ran right out of the caraway-seed eyes.</p>
+
+      <!-- Illustration 11 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_11.jpg"
+            alt="Little Bobby standing barefoot under the tree catching the falling gingerbread man safely in his pinafore."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>&ldquo;Drop it, Jocko!&rdquo; cried Bobby — and down fell the gingerbread man right into Bobby's pinafore!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 12 -->
+    <article class="scene-section" id="scene-12">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 12 • Three Bites and All Gone!</span>
+      </div>
+
+      <p class="story-text">But Bobby was too hungry to mind gingerbread tears, and he gave one big bite, and swallowed down both legs and a piece of the body.</p>
+
+      <div class="chant-box bite">
+        <div class="chant-speaker">🍪 The First Bite</div>
+        <div class="chant-text">
+          &ldquo;OH!&rdquo; said the gingerbread man, &ldquo;I&rsquo;M ONE-THIRD GONE!&rdquo;
+        </div>
+      </div>
+
+      <p class="story-text">Bobby gave a second bite, and swallowed the rest of the body and the arms.</p>
+
+      <div class="chant-box bite">
+        <div class="chant-speaker">🍪 The Second Bite</div>
+        <div class="chant-text">
+          &ldquo;OH!&rdquo; said the gingerbread man, &ldquo;I&rsquo;M TWO-THIRDS GONE!&rdquo;
+        </div>
+      </div>
+
+      <p class="story-text">Bobby gave a third bite, and gulped down the head.</p>
+
+      <div class="chant-box bite">
+        <div class="chant-speaker">🍪 The Final Bite</div>
+        <div class="chant-text">
+          &ldquo;OH!&rdquo; said the gingerbread man, &ldquo;I&rsquo;M ALL GONE!&rdquo;
+        </div>
+      </div>
+
+      <p class="story-text">And so he was—and that is the end of the story.</p>
+
+      <!-- Illustration 12 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="gingerbread_12.jpg"
+            alt="Little Bobby happily licking cookie crumbs from his fingers under the sunny tree, having eaten the delicious gingerbread man."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>&ldquo;I&rsquo;m all gone!&rdquo; — and so he was, right to the very last delicious sugary crumb.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Interactive Conclusion / Teaching Moment -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">💡 Bedtime Discussion for Shane</span>
+      <h2 class="conclusion-question">&ldquo;Why did the Gingerbread Man keep running away?&rdquo;</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 580px; margin: 0 auto 24px; line-height: 1.6;">
+        The Gingerbread Man thought nobody could ever catch him! Being fast is fun, but overconfidence can lead to big surprises.
+      </p>
+
+      <div class="choice-grid">
+        <a href="../goldilocks-and-the-three-bears/" class="choice-card">
+          <span class="choice-card-icon">🥣</span>
+          <strong class="choice-card-title">Goldilocks &amp; the Three Bears</strong>
+          <span class="choice-card-desc">Three bowls of porridge, three cozy chairs, and one mischievous golden-haired girl!</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+
+        <a href="../the-three-little-pigs/" class="choice-card">
+          <span class="choice-card-icon">🐷</span>
+          <strong class="choice-card-title">The Three Little Pigs</strong>
+          <span class="choice-card-desc">Straw, sticks, and bricks — see whose house stands up to the Big Bad Wolf!</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+
+        <a href="../jack-and-the-beanstalk/" class="choice-card">
+          <span class="choice-card-icon">🌱</span>
+          <strong class="choice-card-title">Jack and the Beanstalk</strong>
+          <span class="choice-card-desc">Five magic beans, a towering beanstalk, and a roaring giant in the clouds!</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+      </div>
+
+      <a href="../#classics-stories" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--accent-brick); text-decoration: none; margin-top: 10px;">
+        <span>🏰 Back to Classic Fairy Tales</span>
+        <span>➔</span>
+      </a>
+    </section>
+
+    <!-- Full Narration with Synchronized Story Illustrations -->
+    <section class="story-video-card" id="story-video-section" aria-labelledby="story-video-title">
+      <span class="scene-pill">🎬 Narrated Storybook</span>
+      <h2 class="story-video-title" id="story-video-title">Watch The Gingerbread Man</h2>
+      <p class="story-video-description" id="story-video-description">Follow the full narration with all 12 story illustrations. Play, pause, or jump to your favorite part, and turn on English captions with the video controls.</p>
+      <video
+        id="story-video"
+        controls
+        playsinline
+        preload="metadata"
+        width="1280"
+        height="720"
+        poster="the_gingerbread_man_story_video_poster.jpg"
+        aria-label="The Gingerbread Man narrated story video"
+        aria-describedby="story-video-description"
+      >
+        <source src="the_gingerbread_man_story_video.mp4" type="video/mp4">
+        <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+        Your browser does not support video playback. <a href="the_gingerbread_man_story_video.mp4">Download the narrated story video.</a>
+      </video>
+      <a class="story-video-download" href="the_gingerbread_man_story_video.mp4" download>Download the story video</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>⭐ <strong>Shane &amp; Alex's Bedtime Stories Collection</strong></p>
+      <p style="margin-top: 6px;">Classic Children's Tale • Illustrated vintage storybook artwork</p>
+      <div class="footer-links">
+        <a href="../" style="color: var(--text-accent); text-decoration: none;">Library Home</a>
+        <span>•</span>
+        <a href="#top" style="color: var(--text-accent); text-decoration: none;" onclick="window.scrollTo({{top: 0, behavior: 'smooth'}}); return false;">Top of Page</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {{
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (winScroll > 300) {{
+        topBtn.classList.add('visible');
+      }} else {{
+        topBtn.classList.remove('visible');
+      }}
+    }});
+
+    topBtn.addEventListener('click', () => {{
+      window.scrollTo({{ top: 0, behavior: 'smooth' }});
+    }});
+
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {{
+      btnStoryMenu.addEventListener('click', (e) => {{
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {{
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }} else {{
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }}
+      }});
+
+      document.addEventListener('click', (e) => {{
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {{
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }}
+      }});
+    }}
+
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {{
+      document.documentElement.setAttribute('data-theme', theme);
+      try {{ localStorage.setItem('shane-stories-theme', theme); }} catch (e) {{}}
+
+      themeButtons.forEach(b => {{
+        if (b.dataset.themeVal === theme) {{
+          b.classList.add('active');
+        }} else {{
+          b.classList.remove('active');
+        }}
+      }});
+    }}
+
+    themeButtons.forEach(btn => {{
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    }});
+
+    try {{
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) {{
+        setTheme(savedTheme);
+      }} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {{
+        setTheme('night');
+      }}
+    }} catch (e) {{}}
+
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {{
+      currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10);
+    }} catch (e) {{}}
+
+    function updateFontSize(delta) {{
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try {{ localStorage.setItem('shane-stories-fontsize', currentFontSize); }} catch (e) {{}}
+    }}
+
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {{
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }}
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {{
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent.replace('✦ ', '') : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }}
+
+    function closeLightbox(e) {{
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {{
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }}
+    }}
+
+    document.addEventListener('keydown', (e) => {{
+      if (e.key === 'Escape') {{
+        if (lightboxModal.classList.contains('active')) {{
+          lightboxModal.classList.remove('active');
+          lightboxModal.style.display = 'none';
+          lightboxImg.style.display = 'none';
+          document.body.style.overflow = '';
+        }}
+        if (storyDropdown) {{
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+        }}
+      }}
+    }});
+
+    // 6. Voice Narration Audio Player
+    const storyAudio = document.getElementById('story-audio-element');
+    const storyVideo = document.getElementById('story-video');
+    const btnAudioToggle = document.getElementById('btn-audio-toggle');
+    const audioPlayIcon = document.getElementById('audio-play-icon');
+    const audioPlayLabel = document.getElementById('audio-play-label');
+    const audioScrubber = document.getElementById('audio-scrubber');
+    const audioScrubberFill = document.getElementById('audio-scrubber-fill');
+    const audioTimeCurrent = document.getElementById('audio-time-current');
+    const audioTimeTotal = document.getElementById('audio-time-total');
+    const btnAudioSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {{
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${{m}}:${{s < 10 ? '0' : ''}}${{s}}`;
+    }}
+
+    if (storyAudio && btnAudioToggle) {{
+      storyAudio.addEventListener('play', () => {{
+        storyVideo?.pause();
+        audioPlayIcon.textContent = '⏸';
+        audioPlayLabel.textContent = 'Pause Narration';
+      }});
+
+      storyAudio.addEventListener('pause', () => {{
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = storyAudio.ended ? 'Play Voice Narration' : 'Resume Narration';
+      }});
+
+      storyAudio.addEventListener('loadedmetadata', () => {{
+        if (!isNaN(storyAudio.duration) && isFinite(storyAudio.duration)) {{
+          audioTimeTotal.textContent = formatTime(storyAudio.duration);
+        }}
+      }});
+
+      storyAudio.addEventListener('timeupdate', () => {{
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 600.05;
+        const pct = (storyAudio.currentTime / dur) * 100;
+        audioScrubberFill.style.width = pct + '%';
+        audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
+        audioTimeTotal.textContent = formatTime(dur);
+      }});
+
+      storyAudio.addEventListener('ended', () => {{
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = 'Play Voice Narration';
+        audioScrubberFill.style.width = '0%';
+      }});
+
+      btnAudioToggle.addEventListener('click', () => {{
+        if (storyAudio.paused) {{
+          storyAudio.play();
+        }} else {{
+          storyAudio.pause();
+        }}
+      }});
+
+      audioScrubber.addEventListener('click', (e) => {{
+        const rect = audioScrubber.getBoundingClientRect();
+        const clickPos = (e.clientX - rect.left) / rect.width;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 600.05;
+        storyAudio.currentTime = clickPos * dur;
+      }});
+
+      const speeds = [1.0, 1.15, 1.25, 0.9];
+      let speedIdx = 0;
+      btnAudioSpeed.addEventListener('click', () => {{
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const s = speeds[speedIdx];
+        storyAudio.playbackRate = s;
+        btnAudioSpeed.textContent = `Speed: ${{s}}×`;
+      }});
+    }}
+
+    storyVideo?.addEventListener('play', () => {{
+      storyAudio?.pause();
+    }});
+  </script>
+</body>
+</html>
+"""
+
+OUT_FILE.write_text(html_content, encoding="utf-8")
+print(f"Generated {OUT_FILE} successfully ({len(html_content)} bytes)")

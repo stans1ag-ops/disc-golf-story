@@ -1,0 +1,72 @@
+{
+  "audio": "narration.mp3",
+  "duration": 600.048,
+  "timing_method": "Exact timestamps from edge-tts subtitle alignment of story text to narration.mp3.",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "gingerbread_01.jpg",
+      "start": 0,
+      "cue": "The Gingerbread Man. One day, the cook went into the kitchen"
+    },
+    {
+      "image": "gingerbread_02.jpg",
+      "start": 23.39,
+      "cue": "Then she took the square tins and cut out some square cakes"
+    },
+    {
+      "image": "gingerbread_03.jpg",
+      "start": 95.05,
+      "cue": "Then she went up to sweep the parlor"
+    },
+    {
+      "image": "gingerbread_04.jpg",
+      "start": 160.94,
+      "cue": "The old cook turned round as fast as she could"
+    },
+    {
+      "image": "gingerbread_05.jpg",
+      "start": 218.11,
+      "cue": "Now at the bottom of the walk, lying fast asleep in the sun"
+    },
+    {
+      "image": "gingerbread_06.jpg",
+      "start": 277.31,
+      "cue": "He thought at once that the cat must have stolen something"
+    },
+    {
+      "image": "gingerbread_07.jpg",
+      "start": 331.73,
+      "cue": "Meanwhile, the gingerbread man had climbed up on the garden wall"
+    },
+    {
+      "image": "gingerbread_08.jpg",
+      "start": 353.26,
+      "cue": "After a little while, the cat managed to pull herself out"
+    },
+    {
+      "image": "gingerbread_09.jpg",
+      "start": 441.89,
+      "cue": "Meanwhile, the gingerbread man had got to the bottom of the tree"
+    },
+    {
+      "image": "gingerbread_10.jpg",
+      "start": 470.76,
+      "cue": "But the monkey had jumped with one spring onto the lowest branch"
+    },
+    {
+      "image": "gingerbread_11.jpg",
+      "start": 498.93,
+      "cue": "And then what do you think happened? Why, little Bobby himself came running up"
+    },
+    {
+      "image": "gingerbread_12.jpg",
+      "start": 566.27,
+      "cue": "But Bobby was too hungry to mind gingerbread tears"
+    }
+  ]
+}
