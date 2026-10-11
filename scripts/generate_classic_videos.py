@@ -89,6 +89,15 @@ STORIES = [
         "poster_output": "the-gingerbread-man/the_gingerbread_man_story_video_poster.jpg",
         "poster_source": "gingerbread_03.jpg",
         "timeline": "the-gingerbread-man/narration-timings.json",
+    },
+    {
+        "id": "the-princess-and-the-pea",
+        "dir": "the-princess-and-the-pea",
+        "audio": "the-princess-and-the-pea/narration.mp3",
+        "video_output": "the-princess-and-the-pea/princess_and_the_pea_story_video.mp4",
+        "poster_output": "the-princess-and-the-pea/princess_and_the_pea_story_video_poster.jpg",
+        "poster_source": "princess_pea_01.jpg",
+        "timeline": "the-princess-and-the-pea/narration-timings.json",
     }
 ]
 

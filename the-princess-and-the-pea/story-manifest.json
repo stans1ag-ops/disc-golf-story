@@ -1,0 +1,55 @@
+{
+  "story_slug": "the-princess-and-the-pea",
+  "title": "The Princess and the Pea",
+  "author": "Hans Christian Andersen",
+  "year": 1835,
+  "source_url": "https://americanliterature.com/author/hans-christian-andersen/short-story/the-princess-and-the-pea",
+  "public_domain": true,
+  "unabridged": true,
+  "narration": {
+    "engine": "edge-tts",
+    "voice": "en-US-AriaNeural",
+    "rate": "-8%",
+    "cost": "$0.00 (Free open-source route, zero paid APIs)",
+    "audio_file": "narration.mp3",
+    "probed_duration": 136.896,
+    "captions_file": "narration.vtt"
+  },
+  "illustrations": {
+    "count": 12,
+    "aspect_ratio": "16:9",
+    "dimensions": [1376, 768],
+    "style": "Traditional storybook watercolor on textured cream paper with fine pencil contours",
+    "files": [
+      "princess_pea_01.jpg",
+      "princess_pea_02.jpg",
+      "princess_pea_03.jpg",
+      "princess_pea_04.jpg",
+      "princess_pea_05.jpg",
+      "princess_pea_06.jpg",
+      "princess_pea_07.jpg",
+      "princess_pea_08.jpg",
+      "princess_pea_09.jpg",
+      "princess_pea_10.jpg",
+      "princess_pea_11.jpg",
+      "princess_pea_12.jpg"
+    ]
+  },
+  "video": {
+    "renderer": "scripts/generate_classic_videos.py",
+    "command": "python3 scripts/generate_classic_videos.py --story the-princess-and-the-pea",
+    "video_file": "princess_and_the_pea_story_video.mp4",
+    "poster_file": "princess_and_the_pea_story_video_poster.jpg",
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "audio_bitrate": "192k",
+    "framerate": 24,
+    "resolution": [1280, 720]
+  },
+  "timeline": {
+    "file": "narration-timings.json",
+    "method": "Exact measured timestamps from edge-tts sentence boundary alignment",
+    "scenes_count": 12,
+    "max_scene_hold_seconds": 29.13
+  }
+}
