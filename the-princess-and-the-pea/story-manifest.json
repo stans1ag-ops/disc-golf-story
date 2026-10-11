@@ -16,7 +16,7 @@
     "captions_file": "narration.vtt"
   },
   "illustrations": {
-    "count": 12,
+    "count": 15,
     "aspect_ratio": "16:9",
     "dimensions": [1376, 768],
     "style": "Traditional storybook watercolor on textured cream paper with fine pencil contours",
@@ -32,7 +32,10 @@
       "princess_pea_09.jpg",
       "princess_pea_10.jpg",
       "princess_pea_11.jpg",
-      "princess_pea_12.jpg"
+      "princess_pea_12.jpg",
+      "princess_pea_13.jpg",
+      "princess_pea_14.jpg",
+      "princess_pea_15.jpg"
     ]
   },
   "video": {
@@ -49,7 +52,7 @@
   "timeline": {
     "file": "narration-timings.json",
     "method": "Exact measured timestamps from edge-tts sentence boundary alignment",
-    "scenes_count": 12,
+    "scenes_count": 15,
     "max_scene_hold_seconds": 29.13
   }
 }

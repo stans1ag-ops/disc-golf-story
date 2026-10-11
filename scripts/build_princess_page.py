@@ -1,4 +1,4 @@
-"""Build the complete HTML story page for The Princess and the Pea (12 scenes)."""
+"""Build the complete HTML story page for The Princess and the Pea (15 scenes)."""
 
 from pathlib import Path
 
@@ -185,73 +185,102 @@ scenes_data = [
         "num": 6,
         "heading": "The King Opens the Door",
         "paragraphs": [
-            "And the old king went to open it. It was a princess standing out there in front of the gate. But, good gracious! What a sight the rain and the wind had made her look.",
-            "The water ran down from her hair and clothes; it ran down into the toes of her shoes and out again at the heels. And yet she said that she was a real princess."
+            "And the old king went to open it."
         ],
         "image": "princess_pea_06.jpg",
         "alt": "The kindly elderly king holding a glowing lantern as he unbars the heavy gate to the stormy night",
-        "caption": "The old king lifted his lantern into the stormy night to greet the dripping traveller."
+        "caption": "The old king lifted his lantern into the stormy night to greet the traveller."
     },
     {
         "num": 7,
-        "heading": "The Queen's Secret Test",
+        "heading": "The Soaked Visitor",
         "paragraphs": [
-            "Well, we'll soon find that out, thought the old queen.",
-            "She went into the bed-room, took all the bedding off the bedstead, and laid a pea on the bottom."
+            "It was a princess standing out there in front of the gate. But, good gracious! What a sight the rain and the wind had made her look.",
+            "The water ran down from her hair and clothes; it ran down into the toes of her shoes and out again at the heels. And yet she said that she was a real princess."
         ],
         "image": "princess_pea_07.jpg",
-        "alt": "Close-up of a single small round green pea resting on the bare wooden slats of the royal bedstead",
-        "caption": "Upon the bare wooden bedstead, the queen carefully laid one tiny, hard round pea."
+        "alt": "The shivering, dripping princess standing in the castle entrance hall in a drenched lavender gown",
+        "caption": "Water ran from her soaked hair and shoes, yet she spoke with gentle princess dignity."
     },
     {
         "num": 8,
+        "heading": "The Queen's Silent Plan",
+        "paragraphs": [
+            "Well, we'll soon find that out, thought the old queen."
+        ],
+        "image": "princess_pea_08.jpg",
+        "alt": "The wise elderly queen smiling knowingly as she inspects a tiny green pea in her hand",
+        "caption": "The wise old queen said nothing, but secretly devised a test of pure sensitivity."
+    },
+    {
+        "num": 9,
+        "heading": "The Single Pea",
+        "paragraphs": [
+            "She went into the bed-room, took all the bedding off the bedstead, and laid a pea on the bottom."
+        ],
+        "image": "princess_pea_09.jpg",
+        "alt": "Close-up of a small round green pea resting on the bare wooden slats of the four-poster bed",
+        "caption": "Upon the bare wooden bedstead, the queen carefully laid one tiny, hard round pea."
+    },
+    {
+        "num": 10,
         "heading": "Twenty Soft Mattresses",
         "paragraphs": [
             "Then she took twenty mattresses and laid them on the pea."
         ],
-        "image": "princess_pea_08.jpg",
+        "image": "princess_pea_10.jpg",
         "alt": "Maidservants and the queen piling twenty colorful, thick mattresses high upon the bed",
         "caption": "Twenty thick, soft mattresses were piled atop the little pea, one above another."
     },
     {
-        "num": 9,
+        "num": 11,
         "heading": "Twenty Eider-Down Beds",
         "paragraphs": [
-            "And then twenty eider-down beds on top of the mattresses. On this the princess had to lie all night."
+            "And then twenty eider-down beds on top of the mattresses."
         ],
-        "image": "princess_pea_09.jpg",
+        "image": "princess_pea_11.jpg",
         "alt": "Fluffy eider-down featherbeds and quilts towering up toward the high stone ceiling",
         "caption": "Twenty light and fluffy eider-down featherbeds were stacked above the mattresses."
     },
     {
-        "num": 10,
+        "num": 12,
+        "heading": "Climbing Up to Sleep",
+        "paragraphs": [
+            "On this the princess had to lie all night."
+        ],
+        "image": "princess_pea_12.jpg",
+        "alt": "The princess in a clean nightgown climbing a wooden ladder to reach the towering bed",
+        "caption": "Using a tall wooden ladder, the weary guest climbed high into the mountain of bedding."
+    },
+    {
+        "num": 13,
         "heading": "A Restless Night",
         "paragraphs": [
             "In the morning she was asked how she had slept."
         ],
-        "image": "princess_pea_10.jpg",
+        "image": "princess_pea_13.jpg",
         "alt": "The princess tossing and turning sleeplessly in the moonlight atop the towering bed",
         "caption": "All night long, the princess tossed and turned, unable to find rest on the strange bed."
     },
     {
-        "num": 11,
+        "num": 14,
         "heading": "Black and Blue!",
         "paragraphs": [
             "\"Oh, very badly!\" said she. \"I have scarcely closed my eyes all night. Heaven only knows what was in the bed, but I was lying on something hard, so that I am black and blue all over my body. It's horrible!\"",
             "Now they knew that she was a real princess, because she had felt the pea right through the twenty mattresses and the twenty eider-down beds. Nobody but a real princess could be as sensitive as that."
         ],
-        "image": "princess_pea_11.jpg",
+        "image": "princess_pea_14.jpg",
         "alt": "The royal family gathered around the breakfast table in delight as the princess explains her night",
         "caption": "Only someone of genuine royal delicacy could feel a tiny pea through forty layers of bedding!"
     },
     {
-        "num": 12,
+        "num": 15,
         "heading": "A Royal Wedding & Museum Treasure",
         "paragraphs": [
             "So the prince took her for his wife, for now he knew that he had a real princess; and the pea was put in the museum, where it may still be seen, if no one has stolen it.",
             "There, that is a true story."
         ],
-        "image": "princess_pea_12.jpg",
+        "image": "princess_pea_15.jpg",
         "alt": "The joyful wedding of the prince and princess, and the pea preserved in a royal museum vitrine",
         "caption": "The prince found his true princess at last, and the famous pea was placed in the royal museum."
     }
@@ -263,7 +292,7 @@ for idx, sc in enumerate(scenes_data):
     loading_attr = 'loading="eager"' if idx == 0 else 'loading="lazy" decoding="async"'
     paras_html = "\n".join(f"        <p>{p}</p>" for p in sc["paragraphs"])
     
-    if sc["num"] == 11:
+    if sc["num"] == 14:
         dialogue_markup = f"""
       <div class="dialogue-box">
         <div class="dialogue-speaker">The Princess's Morning Reply</div>
@@ -307,7 +336,7 @@ html_content = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Read The Princess and the Pea with 12 watercolor illustrations, full voice narration, and a synchronized narrated story video.">
+  <meta name="description" content="Read The Princess and the Pea with 15 watercolor illustrations, full voice narration, and a synchronized narrated story video.">
   <title>The Princess and the Pea — Shane’s Bedtime Stories</title>
 
   <!-- Google Fonts with full system fallbacks -->
@@ -416,7 +445,7 @@ html_content = f"""<!DOCTYPE html>
       <div class="story-meta-badge">
         <span class="badge classic-badge">👑 Classic Fairy Tale</span>
         <span class="badge duration-badge">⏱️ 2 min</span>
-        <span class="badge count-badge">🎨 12 Illustrations</span>
+        <span class="badge count-badge">🎨 15 Illustrations</span>
       </div>
       <h1 class="story-title">The Princess and the Pea</h1>
       <p class="story-subtitle">
@@ -501,7 +530,7 @@ html_content = f"""<!DOCTYPE html>
         Watch the Narrated Story Video
       </h2>
       <p style="text-align: center; color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">
-        Enjoy all 12 traditional watercolor illustrations synchronized with full voice narration and subtitles.
+        Enjoy all 15 traditional watercolor illustrations synchronized with full voice narration and subtitles.
       </p>
 
       <div class="video-wrapper">
@@ -831,4 +860,4 @@ html_content = f"""<!DOCTYPE html>
 """
 
 OUT_FILE.write_text(html_content, encoding="utf-8")
-print(f"Successfully generated {OUT_FILE}")
+print(f"Successfully generated {OUT_FILE} for all 15 scenes.")
