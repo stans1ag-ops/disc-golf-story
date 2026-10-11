@@ -25,9 +25,77 @@ extra_css = """
       border: 1px solid rgba(221, 160, 221, 0.3);
     }
 
+    /* Centered, responsive 16:9 illustration figure */
+    .story-figure {
+      margin: 28px auto 32px;
+      max-width: 680px;
+      width: 100%;
+      position: relative;
+      border-radius: var(--border-radius-img);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .story-figure:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    .figure-img-wrapper {
+      position: relative;
+      width: 100%;
+      background: var(--bg-card-subtle);
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .figure-img-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 540px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .figure-img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 14px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      pointer-events: none;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .story-figure figcaption {
+      padding: 12px 18px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      line-height: 1.5;
+    }
+
     /* Dialogue quote box */
     .dialogue-box {
-      margin: 28px 0;
+      margin: 24px 0;
       padding: 20px 24px;
       border-radius: 16px;
       background: var(--bg-card);
@@ -290,42 +358,44 @@ scenes_data = [
 scenes_html_parts = []
 for idx, sc in enumerate(scenes_data):
     loading_attr = 'loading="eager"' if idx == 0 else 'loading="lazy" decoding="async"'
-    paras_html = "\n".join(f"        <p>{p}</p>" for p in sc["paragraphs"])
+    lead_cls = ' class="lead-paragraph story-text"' if idx == 0 else ' class="story-text"'
     
     if sc["num"] == 14:
-        dialogue_markup = f"""
-      <div class="dialogue-box">
+        body_content = f"""      <div class="dialogue-box">
         <div class="dialogue-speaker">The Princess's Morning Reply</div>
         <p><em>"{sc['paragraphs'][0].strip('"')}"</em></p>
       </div>
-      <p>{sc['paragraphs'][1]}</p>"""
-        body_content = dialogue_markup
+      <p class="story-text">{sc['paragraphs'][1]}</p>"""
     else:
-        body_content = paras_html
+        paras = []
+        for p_idx, p in enumerate(sc["paragraphs"]):
+            cls = lead_cls if (idx == 0 and p_idx == 0) else ' class="story-text"'
+            paras.append(f"      <p{cls}>{p}</p>")
+        body_content = "\n".join(paras)
 
-    part = f"""
-    <!-- Scene {sc['num']} -->
-    <section class="story-scene" id="scene-{sc['num']}" aria-labelledby="scene-{sc['num']}-title">
-      <div class="scene-marker">
-        <span class="scene-pill">Scene {sc['num']}</span>
+    part = f"""    <!-- SCENE {sc['num']} -->
+    <article class="scene-section" id="scene-{sc['num']}">
+      <div class="scene-header">
+        <span class="scene-pill">Scene {sc['num']} • {sc['heading']}</span>
       </div>
-      <h2 id="scene-{sc['num']}-title" class="scene-heading">{sc['heading']}</h2>
-      
-      <figure class="story-scene-figure" data-scene="{sc['num']}">
-        <button class="image-zoom-trigger" aria-label="Zoom in on illustration: {sc['heading']}">
-          <img src="{sc['image']}"
-               alt="{sc['alt']}"
-               width="1280"
-               height="720"
-               {loading_attr}>
-        </button>
+
+{body_content}
+
+      <!-- Illustration {sc['num']} -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="{sc['image']}"
+            alt="{sc['alt']}"
+            {loading_attr}
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
         <figcaption>{sc['caption']}</figcaption>
       </figure>
-
-      <div class="scene-text">
-{body_content}
-      </div>
-    </section>
+    </article>
 """
     scenes_html_parts.append(part)
 
@@ -371,14 +441,7 @@ html_content = f"""<!DOCTYPE html>
             <span class="menu-link-icon">👑</span>
             <div class="menu-link-text">
               <strong class="menu-link-title">The Princess and the Pea</strong>
-              <span class="menu-link-desc">Classic Fairy Tale • Twenty Mattresses &amp; a Pea</span>
-            </div>
-          </a>
-          <a href="../the-gingerbread-man/" class="story-menu-link" role="menuitem">
-            <span class="menu-link-icon">🍪</span>
-            <div class="menu-link-text">
-              <strong class="menu-link-title">The Gingerbread Man</strong>
-              <span class="menu-link-desc">Classic Children's Tale • "Run, Run, Fast as You Can!"</span>
+              <span class="menu-link-desc">Classic Fairy Tale • 15 Illustrations &amp; Video</span>
             </div>
           </a>
           <a href="../goldilocks-and-the-three-bears/" class="story-menu-link" role="menuitem">
@@ -386,6 +449,13 @@ html_content = f"""<!DOCTYPE html>
             <div class="menu-link-text">
               <strong class="menu-link-title">Goldilocks and the Three Bears</strong>
               <span class="menu-link-desc">Classic Fairy Tale • Too Hot, Too Cold, Just Right</span>
+            </div>
+          </a>
+          <a href="../the-gingerbread-man/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🍪</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Gingerbread Man</strong>
+              <span class="menu-link-desc">Classic Children's Tale • "Run, Run, Fast as You Can!"</span>
             </div>
           </a>
           <a href="../little-red-riding-hood/" class="story-menu-link" role="menuitem">
@@ -420,444 +490,400 @@ html_content = f"""<!DOCTYPE html>
         </div>
       </div>
 
-      <!-- Center / Right Controls -->
-      <div class="toolbar-controls">
-        <!-- Font Size Controls -->
-        <div class="font-controls" role="group" aria-label="Text size adjustment">
-          <button id="btn-font-dec" class="toolbar-btn" aria-label="Decrease text size">A−</button>
-          <button id="btn-font-inc" class="toolbar-btn" aria-label="Increase text size">A+</button>
-        </div>
-
-        <!-- Theme Picker -->
-        <div class="theme-controls" role="group" aria-label="Reading theme">
-          <button id="theme-btn-light" class="theme-btn active" data-set-theme="light" aria-label="Day theme (cream)">☀️</button>
-          <button id="theme-btn-sepia" class="theme-btn" data-set-theme="sepia" aria-label="Sepia warm theme">📜</button>
-          <button id="theme-btn-night" class="theme-btn" data-set-theme="night" aria-label="Night reading theme">🌙</button>
+      <!-- Toolbar Actions -->
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+        
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main Content Wrap -->
+  <!-- Main Story Content Container -->
   <main class="story-container">
-    <!-- Story Header Block -->
-    <header class="story-header">
-      <div class="story-meta-badge">
-        <span class="badge classic-badge">👑 Classic Fairy Tale</span>
-        <span class="badge duration-badge">⏱️ 2 min</span>
-        <span class="badge count-badge">🎨 15 Illustrations</span>
-      </div>
-      <h1 class="story-title">The Princess and the Pea</h1>
-      <p class="story-subtitle">
-        A stormy night, a mysterious visitor, and twenty soft featherbeds test whether a visitor is truly royal.
-      </p>
 
-      <!-- Audio Narration Player Card -->
-      <section class="narration-card" aria-label="Story audio narration player">
-        <div class="narration-card-inner">
-          <div class="narration-info">
-            <span class="narration-icon">🎙️</span>
+    <!-- Story Header (Hero Section) -->
+    <section class="story-header">
+      <span class="badge-adventure badge-royal">👑 Classic Fairy Tale</span>
+      <h1 class="story-title">The <span class="highlight-word">Princess and the Pea</span></h1>
+      <p class="story-subtitle">A stormy night, a mysterious visitor, and twenty soft featherbeds test whether a visitor is truly royal.</p>
+      
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>2 min listen</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>15 Story Illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎙️ <strong>Voice Narration</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎬 <strong>Narrated Video</strong></span>
+      </div>
+
+      <!-- Audio Narration Player -->
+      <div class="audio-player-card">
+        <div class="audio-player-header">
+          <div class="audio-title-group">
+            <div class="audio-play-icon-box">🎙️</div>
             <div>
-              <strong class="narration-title">Listen to the Story</strong>
-              <span class="narration-subtitle">Warm English Storybook Voice • Unabridged Classic</span>
+              <div class="audio-info-title">Listen to Full Story Narration</div>
+              <div class="audio-info-sub">Warm English storybook voice • Unabridged classic</div>
             </div>
           </div>
-          
-          <audio id="narration-audio" preload="metadata" src="narration.mp3"></audio>
+          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
+        </div>
 
-          <div class="audio-controls-row">
-            <button id="audio-play-btn" class="audio-play-btn" aria-label="Play narration">
-              <span id="play-icon" aria-hidden="true">▶</span>
-            </button>
-            
-            <div class="audio-timeline-wrap">
-              <input type="range" id="audio-seek-bar" class="audio-seek-bar" value="0" min="0" max="100" step="0.1" aria-label="Audio timeline position">
-              <div class="audio-time-row">
-                <span id="audio-current-time" class="time-label">0:00</span>
-                <span id="audio-total-time" class="time-label">2:17</span>
-              </div>
+        <div class="audio-controls-row">
+          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
+            <span id="audio-play-icon">▶</span>
+            <span id="audio-play-label">Play Voice Narration</span>
+          </button>
+
+          <div class="audio-progress-container">
+            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
+              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
             </div>
-
-            <div class="audio-speed-wrap">
-              <button id="btn-speed" class="btn-speed" aria-label="Playback speed (1x)">1x</button>
+            <div class="audio-time-row">
+              <span id="audio-time-current">0:00</span>
+              <span id="audio-time-total">2:17</span>
             </div>
           </div>
         </div>
-      </section>
-    </header>
+
+        <audio id="story-audio-element" preload="metadata">
+          <source src="narration.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </section>
 
     <!-- Story Content Scenes -->
-    <article class="story-article">
 {all_scenes_html}
-    </article>
 
-    <!-- Interactive Discussion Card -->
+    <!-- Interactive Discussion / Teaching Moment -->
     <section class="interactive-conclusion" aria-labelledby="discussion-title">
-      <span class="conclusion-badge">Bedtime Reflection</span>
+      <span class="conclusion-badge">💡 Bedtime Discussion</span>
       <h2 id="discussion-title" class="conclusion-question">What made the princess truly royal?</h2>
-      <p style="color: var(--text-muted); font-size: 0.96rem; max-width: 580px; margin: 0 auto;">
-        Hans Christian Andersen wrote that beneath outward appearance lies true sensitivity and character.
+      <p style="color: var(--text-muted); font-size: 0.96rem; max-width: 580px; margin: 0 auto 24px; line-height: 1.6;">
+        Hans Christian Andersen shows that true royalty is not about crown or riches, but genuine sensitivity, honesty, and grace under adversity.
       </p>
-      
+
       <div class="choice-grid">
-        <div class="choice-card">
-          <span class="choice-card-icon">👑</span>
-          <strong class="choice-card-title">Inner Royalty</strong>
-          <p class="choice-card-desc">Even soaked in mud and rain, her true sensitivity could not be hidden.</p>
-          <span class="choice-action-btn">True Character ✨</span>
-        </div>
-        <div class="choice-card">
-          <span class="choice-card-icon">🛏️</span>
-          <strong class="choice-card-title">The Clever Queen</strong>
-          <p class="choice-card-desc">The queen devised a gentle test to see beyond outward appearances.</p>
-          <span class="choice-action-btn">Quiet Wisdom 💡</span>
-        </div>
-        <div class="choice-card">
-          <span class="choice-card-icon">🏛️</span>
-          <strong class="choice-card-title">The Famous Pea</strong>
-          <p class="choice-card-desc">Preserved in the museum to remind everyone that true worth is proven inside.</p>
-          <span class="choice-action-btn">Treasured Legend 🌿</span>
-        </div>
+        <a href="../goldilocks-and-the-three-bears/" class="choice-card">
+          <span class="choice-card-icon">🥣</span>
+          <strong class="choice-card-title">Goldilocks &amp; the Three Bears</strong>
+          <span class="choice-card-desc">Three bowls of porridge, three cozy chairs, and one mischievous golden-haired girl!</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+
+        <a href="../the-gingerbread-man/" class="choice-card">
+          <span class="choice-card-icon">🍪</span>
+          <strong class="choice-card-title">The Gingerbread Man</strong>
+          <span class="choice-card-desc">"Run, run, as fast as you can!" A tasty adventurer on the run through the countryside.</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+
+        <a href="../the-three-little-pigs/" class="choice-card">
+          <span class="choice-card-icon">🐷</span>
+          <strong class="choice-card-title">The Three Little Pigs</strong>
+          <span class="choice-card-desc">Straw, sticks, and bricks — see whose house stands up to the Big Bad Wolf!</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
       </div>
+
+      <a href="../#classics-stories" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--accent-brick); text-decoration: none; margin-top: 10px;">
+        <span>🏰 Back to Classic Fairy Tales</span>
+        <span>➔</span>
+      </a>
     </section>
 
-    <!-- Video Presentation Section -->
-    <section class="story-video-section" id="story-video-container" aria-labelledby="video-heading">
-      <div class="scene-marker">
-        <span class="scene-pill">Full Movie</span>
-      </div>
-      <h2 id="video-heading" class="scene-heading" style="text-align: center; margin-bottom: 8px;">
-        Watch the Narrated Story Video
-      </h2>
-      <p style="text-align: center; color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">
-        Enjoy all 15 traditional watercolor illustrations synchronized with full voice narration and subtitles.
+    <!-- Full Narration with Synchronized Story Illustrations -->
+    <section class="story-video-card" id="story-video-section" aria-labelledby="story-video-title">
+      <span class="scene-pill">🎬 Narrated Storybook</span>
+      <h2 class="story-video-title" id="story-video-title">Watch The Princess and the Pea</h2>
+      <p class="story-video-description" id="story-video-description">
+        Follow the full narration with all 15 traditional watercolor illustrations. Play, pause, or jump to your favorite scene, and turn on English captions with the video controls.
       </p>
-
-      <div class="video-wrapper">
-        <video id="story-video"
-               controls
-               playsinline
-               preload="metadata"
-               width="1280"
-               height="720"
-               poster="princess_and_the_pea_story_video_poster.jpg"
-               aria-label="The Princess and the Pea narrated story video">
-          <source src="princess_and_the_pea_story_video.mp4" type="video/mp4">
-          <track kind="captions"
-                 src="narration.vtt"
-                 srclang="en"
-                 label="English"
-                 default>
-          Your browser does not support video playback.
-          <a href="princess_and_the_pea_story_video.mp4">Download the narrated story video.</a>
-        </video>
-      </div>
-
-      <p class="video-download-note" style="text-align: center; margin-top: 14px; font-size: 0.88rem;">
-        <a href="princess_and_the_pea_story_video.mp4" download style="color: var(--text-accent); text-decoration: none; font-weight: 600;">
-          📥 Download Full Story Video (MP4)
-        </a>
-      </p>
+      <video
+        id="story-video"
+        controls
+        playsinline
+        preload="metadata"
+        width="1280"
+        height="720"
+        poster="princess_and_the_pea_story_video_poster.jpg"
+        aria-label="The Princess and the Pea narrated story video"
+        aria-describedby="story-video-description"
+      >
+        <source src="princess_and_the_pea_story_video.mp4" type="video/mp4">
+        <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+        Your browser does not support video playback. <a href="princess_and_the_pea_story_video.mp4">Download the narrated story video.</a>
+      </video>
+      <a class="story-video-download" href="princess_and_the_pea_story_video.mp4" download>Download the story video</a>
     </section>
 
-    <!-- Related Bedtime Stories -->
-    <section class="related-stories-section" aria-labelledby="related-heading">
-      <h3 id="related-heading" class="related-section-title">More Classic Fairy Tales</h3>
-      <div class="related-grid">
-        <a href="../goldilocks-and-the-three-bears/" class="related-card">
-          <span class="related-emoji">🥣</span>
-          <div>
-            <strong class="related-title">Goldilocks and the Three Bears</strong>
-            <span class="related-desc">Too Hot, Too Cold, Just Right • 12 Illustrations &amp; Video</span>
-          </div>
-        </a>
-        <a href="../the-gingerbread-man/" class="related-card">
-          <span class="related-emoji">🍪</span>
-          <div>
-            <strong class="related-title">The Gingerbread Man</strong>
-            <span class="related-desc">Run, Run, as Fast as You Can! • 12 Illustrations &amp; Video</span>
-          </div>
-        </a>
-        <a href="../little-red-riding-hood/" class="related-card">
-          <span class="related-emoji">🧺</span>
-          <div>
-            <strong class="related-title">Little Red Riding Hood</strong>
-            <span class="related-desc">The Wolf in Grandma's Bed • 10 Illustrations &amp; Video</span>
-          </div>
-        </a>
-        <a href="../the-three-little-pigs/" class="related-card">
-          <span class="related-emoji">🐷</span>
-          <div>
-            <strong class="related-title">The Three Little Pigs</strong>
-            <span class="related-desc">Straw, Sticks &amp; Bricks • 12 Illustrations &amp; Video</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer Attribution & Back to Hub -->
+    <!-- Footer -->
     <footer class="story-footer">
-      <p class="footer-attribution">
-        Original story by <strong>Hans Christian Andersen</strong> (1835). Source: <em>American Literature</em>.
-        Adapted for bedtime reading and multimedia storybook presentation.
-      </p>
-      <div class="footer-links-row">
-        <a href="../#classics-stories" class="footer-nav-link">← Back to Classic Fairy Tales</a>
-        <a href="../" class="footer-nav-link">🏠 Story Library Hub</a>
+      <p>⭐ <strong>Shane &amp; Tyson's Bedtime Stories Collection</strong></p>
+      <p style="margin-top: 6px;">The Princess and the Pea • Hans Christian Andersen (1835) • Illustrated storybook edition</p>
+      <div class="footer-links" style="margin-top: 14px;">
+        <a href="../" style="color: var(--text-accent); text-decoration: none;">Library Home</a>
+        <span>•</span>
+        <a href="../#classics-stories" style="color: var(--text-accent); text-decoration: none;">Classic Fairy Tales</a>
+        <span>•</span>
+        <a href="#top" style="color: var(--text-accent); text-decoration: none;" onclick="window.scrollTo({{top: 0, behavior: 'smooth'}}); return false;">Top of Page</a>
       </div>
     </footer>
+
   </main>
 
-  <!-- Image Lightbox Modal -->
-  <div id="image-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Expanded illustration viewer" hidden>
-    <div class="lightbox-backdrop"></div>
-    <div class="lightbox-content">
-      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close enlarged illustration">✕</button>
-      <img id="lightbox-img" src="" alt="" class="lightbox-image">
-      <p id="lightbox-caption" class="lightbox-caption"></p>
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </div>
 
-  <!-- Back to Top Button -->
-  <button id="btn-back-to-top" class="back-to-top-btn" aria-label="Back to top">↑</button>
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
 
-  <!-- Client-side Interactive Script -->
   <script>
-    (function() {{
-      // --- Reading Progress Bar ---
-      const progressBar = document.getElementById('progress-bar');
-      function updateProgress() {{
-        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-        if (progressBar) progressBar.style.width = scrolled + '%';
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {{
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (topBtn) {{
+        if (winScroll > 300) {{
+          topBtn.classList.add('visible');
+          topBtn.style.display = 'flex';
+        }} else {{
+          topBtn.classList.remove('visible');
+          topBtn.style.display = 'none';
+        }}
       }}
-      window.addEventListener('scroll', updateProgress, {{ passive: true }});
+    }});
 
-      // --- Stories Dropdown Menu ---
-      const menuBtn = document.getElementById('btn-story-menu');
-      const dropdown = document.getElementById('story-menu-dropdown');
-      if (menuBtn && dropdown) {{
-        menuBtn.addEventListener('click', (e) => {{
-          e.stopPropagation();
-          const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-          menuBtn.setAttribute('aria-expanded', !expanded);
-          dropdown.classList.toggle('is-open');
-        }});
-        document.addEventListener('click', (e) => {{
-          if (!dropdown.contains(e.target) && !menuBtn.contains(e.target)) {{
-            menuBtn.setAttribute('aria-expanded', 'false');
-            dropdown.classList.remove('is-open');
-          }}
-        }});
-        document.addEventListener('keydown', (e) => {{
-          if (e.key === 'Escape' && dropdown.classList.contains('is-open')) {{
-            menuBtn.setAttribute('aria-expanded', 'false');
-            dropdown.classList.remove('is-open');
-            menuBtn.focus();
-          }}
-        }});
-      }}
+    if (topBtn) {{
+      topBtn.addEventListener('click', () => {{
+        window.scrollTo({{ top: 0, behavior: 'smooth' }});
+      }});
+    }}
 
-      // --- Theme Switching & Persistence ---
-      const THEME_KEY = 'shane-stories-theme';
-      const rootHtml = document.documentElement;
-      const themeButtons = document.querySelectorAll('[data-set-theme]');
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
 
-      function setTheme(theme) {{
-        rootHtml.setAttribute('data-theme', theme);
-        localStorage.setItem(THEME_KEY, theme);
-        themeButtons.forEach(btn => {{
-          const isActive = btn.getAttribute('data-set-theme') === theme;
-          btn.classList.toggle('active', isActive);
-          btn.setAttribute('aria-pressed', isActive);
-        }});
-      }}
-
-      const savedTheme = localStorage.getItem(THEME_KEY) || 'light';
-      setTheme(savedTheme);
-
-      themeButtons.forEach(btn => {{
-        btn.addEventListener('click', () => {{
-          setTheme(btn.getAttribute('data-set-theme'));
-        }});
+    if (btnStoryMenu && storyDropdown) {{
+      btnStoryMenu.addEventListener('click', (e) => {{
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {{
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }} else {{
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }}
       }});
 
-      // --- Font Sizing & Persistence ---
-      const FONT_KEY = 'shane-stories-fontsize';
-      let currentSize = parseInt(localStorage.getItem(FONT_KEY), 10) || 19;
-
-      function setFontSize(px) {{
-        currentSize = Math.max(16, Math.min(25, px));
-        rootHtml.style.setProperty('--base-font-size', currentSize + 'px');
-        localStorage.setItem(FONT_KEY, currentSize);
-      }}
-      setFontSize(currentSize);
-
-      const fontIncBtn = document.getElementById('btn-font-inc');
-      const fontDecBtn = document.getElementById('btn-font-dec');
-      if (fontIncBtn) fontIncBtn.addEventListener('click', () => setFontSize(currentSize + 2));
-      if (fontDecBtn) fontDecBtn.addEventListener('click', () => setFontSize(currentSize - 2));
-
-      // --- Coordinated Audio & Video Playback ---
-      const audio = document.getElementById('narration-audio');
-      const video = document.getElementById('story-video');
-      const playBtn = document.getElementById('audio-play-btn');
-      const playIcon = document.getElementById('play-icon');
-      const seekBar = document.getElementById('audio-seek-bar');
-      const currentTimeEl = document.getElementById('audio-current-time');
-      const totalTimeEl = document.getElementById('audio-total-time');
-      const speedBtn = document.getElementById('btn-speed');
-
-      const SPEEDS = [1, 1.15, 1.25, 0.9];
-      let speedIdx = 0;
-
-      function fmtTime(secs) {{
-        if (isNaN(secs)) return '0:00';
-        const m = Math.floor(secs / 60);
-        const s = Math.floor(secs % 60);
-        return m + ':' + (s < 10 ? '0' : '') + s;
-      }}
-
-      if (audio && video) {{
-        audio.addEventListener('play', () => {{
-          if (!video.paused) video.pause();
-        }});
-        video.addEventListener('play', () => {{
-          if (!audio.paused) audio.pause();
-        }});
-      }}
-
-      if (audio) {{
-        audio.addEventListener('loadedmetadata', () => {{
-          if (totalTimeEl && isFinite(audio.duration)) {{
-            totalTimeEl.textContent = fmtTime(audio.duration);
-          }}
-        }});
-
-        audio.addEventListener('timeupdate', () => {{
-          if (!seekBar._isDragging && isFinite(audio.duration) && audio.duration > 0) {{
-            seekBar.value = (audio.currentTime / audio.duration) * 100;
-          }}
-          if (currentTimeEl) {{
-            currentTimeEl.textContent = fmtTime(audio.currentTime);
-          }}
-        }});
-
-        audio.addEventListener('play', () => {{
-          if (playIcon) playIcon.textContent = '⏸';
-          if (playBtn) playBtn.setAttribute('aria-label', 'Pause narration');
-        }});
-
-        audio.addEventListener('pause', () => {{
-          if (playIcon) playIcon.textContent = '▶';
-          if (playBtn) playBtn.setAttribute('aria-label', 'Play narration');
-        }});
-
-        audio.addEventListener('ended', () => {{
-          if (playIcon) playIcon.textContent = '▶';
-          if (seekBar) seekBar.value = 0;
-        }});
-
-        if (playBtn) {{
-          playBtn.addEventListener('click', () => {{
-            if (audio.paused) {{
-              audio.play();
-            }} else {{
-              audio.pause();
-            }}
-          }});
+      document.addEventListener('click', (e) => {{
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {{
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
         }}
+      }});
+    }}
 
-        if (seekBar) {{
-          seekBar._isDragging = false;
-          seekBar.addEventListener('input', () => {{
-            seekBar._isDragging = true;
-            if (isFinite(audio.duration) && audio.duration > 0) {{
-              const targetTime = (seekBar.value / 100) * audio.duration;
-              if (currentTimeEl) currentTimeEl.textContent = fmtTime(targetTime);
-            }}
-          }});
-          seekBar.addEventListener('change', () => {{
-            if (isFinite(audio.duration) && audio.duration > 0) {{
-              audio.currentTime = (seekBar.value / 100) * audio.duration;
-            }}
-            seekBar._isDragging = false;
-          }});
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {{
+      document.documentElement.setAttribute('data-theme', theme);
+      try {{ localStorage.setItem('shane-stories-theme', theme); }} catch (e) {{}}
+
+      themeButtons.forEach(b => {{
+        if (b.dataset.themeVal === theme) {{
+          b.classList.add('active');
+        }} else {{
+          b.classList.remove('active');
         }}
+      }});
+    }}
 
-        if (speedBtn) {{
-          speedBtn.addEventListener('click', () => {{
-            speedIdx = (speedIdx + 1) % SPEEDS.length;
-            const newSpeed = SPEEDS[speedIdx];
-            audio.playbackRate = newSpeed;
-            speedBtn.textContent = newSpeed + 'x';
-            speedBtn.setAttribute('aria-label', 'Playback speed (' + newSpeed + 'x)');
-          }});
-        }}
+    themeButtons.forEach(btn => {{
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    }});
+
+    try {{
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) {{
+        setTheme(savedTheme);
+      }} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {{
+        setTheme('night');
       }}
+    }} catch (e) {{}}
 
-      // --- Lightbox Image Zoom ---
-      const lightbox = document.getElementById('image-lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const lightboxCap = document.getElementById('lightbox-caption');
-      const lightboxClose = document.getElementById('lightbox-close');
-      let lastFocusedElement = null;
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {{
+      currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10);
+    }} catch (e) {{}}
 
-      function openLightbox(imgSrc, imgAlt, captionText) {{
-        lastFocusedElement = document.activeElement;
-        lightboxImg.src = imgSrc;
-        lightboxImg.alt = imgAlt;
-        lightboxCap.textContent = captionText || imgAlt;
-        lightbox.removeAttribute('hidden');
-        lightboxClose.focus();
-        document.body.style.overflow = 'hidden';
-      }}
+    function updateFontSize(delta) {{
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try {{ localStorage.setItem('shane-stories-fontsize', currentFontSize); }} catch (e) {{}}
+    }}
 
-      function closeLightbox() {{
-        lightbox.setAttribute('hidden', '');
-        lightboxImg.src = '';
+    const btnFontDec = document.getElementById('btn-font-decrease');
+    const btnFontInc = document.getElementById('btn-font-increase');
+    if (btnFontDec) btnFontDec.addEventListener('click', () => updateFontSize(-1));
+    if (btnFontInc) btnFontInc.addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {{
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }}
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {{
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+      
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent.replace('✦ ', '') : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }}
+
+    function closeLightbox(e) {{
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {{
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
         document.body.style.overflow = '';
-        if (lastFocusedElement) lastFocusedElement.focus();
       }}
+    }}
 
-      document.querySelectorAll('.image-zoom-trigger').forEach(trigger => {{
-        trigger.addEventListener('click', () => {{
-          const img = trigger.querySelector('img');
-          const figure = trigger.closest('figure');
-          const cap = figure ? figure.querySelector('figcaption') : null;
-          if (img) openLightbox(img.src, img.alt, cap ? cap.textContent : '');
-        }});
+    document.addEventListener('keydown', (e) => {{
+      if (e.key === 'Escape') {{
+        if (lightboxModal && lightboxModal.classList.contains('active')) {{
+          lightboxModal.classList.remove('active');
+          lightboxModal.style.display = 'none';
+          lightboxImg.style.display = 'none';
+          document.body.style.overflow = '';
+        }}
+        if (storyDropdown) {{
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+        }}
+      }}
+    }});
+
+    // 6. Voice Narration Audio Player
+    const storyAudio = document.getElementById('story-audio-element');
+    const storyVideo = document.getElementById('story-video');
+    const btnAudioToggle = document.getElementById('btn-audio-toggle');
+    const audioPlayIcon = document.getElementById('audio-play-icon');
+    const audioPlayLabel = document.getElementById('audio-play-label');
+    const audioScrubber = document.getElementById('audio-scrubber');
+    const audioScrubberFill = document.getElementById('audio-scrubber-fill');
+    const audioTimeCurrent = document.getElementById('audio-time-current');
+    const audioTimeTotal = document.getElementById('audio-time-total');
+    const btnAudioSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {{
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${{m}}:${{s < 10 ? '0' : ''}}${{s}}`;
+    }}
+
+    if (storyAudio && btnAudioToggle) {{
+      storyAudio.addEventListener('play', () => {{
+        storyVideo?.pause();
+        audioPlayIcon.textContent = '⏸';
+        audioPlayLabel.textContent = 'Pause Narration';
       }});
 
-      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-      if (lightbox) {{
-        const backdrop = lightbox.querySelector('.lightbox-backdrop');
-        if (backdrop) backdrop.addEventListener('click', closeLightbox);
-      }}
+      storyAudio.addEventListener('pause', () => {{
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = storyAudio.ended ? 'Play Voice Narration' : 'Resume Narration';
+      }});
 
-      document.addEventListener('keydown', (e) => {{
-        if (e.key === 'Escape' && lightbox && !lightbox.hasAttribute('hidden')) {{
-          closeLightbox();
+      storyAudio.addEventListener('loadedmetadata', () => {{
+        if (!isNaN(storyAudio.duration) && isFinite(storyAudio.duration)) {{
+          audioTimeTotal.textContent = formatTime(storyAudio.duration);
         }}
       }});
 
-      // --- Back to Top Button ---
-      const backToTopBtn = document.getElementById('btn-back-to-top');
-      if (backToTopBtn) {{
-        window.addEventListener('scroll', () => {{
-          const scrolled = window.pageYOffset || document.documentElement.scrollTop;
-          backToTopBtn.classList.toggle('is-visible', scrolled > 450);
-        }}, {{ passive: true }});
-        backToTopBtn.addEventListener('click', () => {{
-          window.scrollTo({{ top: 0, behavior: 'smooth' }});
-        }});
-      }}
-    }})();
+      storyAudio.addEventListener('timeupdate', () => {{
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 136.9;
+        const pct = (storyAudio.currentTime / dur) * 100;
+        audioScrubberFill.style.width = pct + '%';
+        audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
+        audioTimeTotal.textContent = formatTime(dur);
+      }});
+
+      storyAudio.addEventListener('ended', () => {{
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = 'Play Voice Narration';
+        audioScrubberFill.style.width = '0%';
+      }});
+
+      btnAudioToggle.addEventListener('click', () => {{
+        if (storyAudio.paused) {{
+          storyAudio.play();
+        }} else {{
+          storyAudio.pause();
+        }}
+      }});
+
+      audioScrubber.addEventListener('click', (e) => {{
+        const rect = audioScrubber.getBoundingClientRect();
+        const clickPos = (e.clientX - rect.left) / rect.width;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 136.9;
+        storyAudio.currentTime = clickPos * dur;
+      }});
+
+      const speeds = [1.0, 1.15, 1.25, 0.9];
+      let speedIdx = 0;
+      btnAudioSpeed.addEventListener('click', () => {{
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const s = speeds[speedIdx];
+        storyAudio.playbackRate = s;
+        btnAudioSpeed.textContent = `Speed: ${{s}}×`;
+      }});
+    }}
+
+    storyVideo?.addEventListener('play', () => {{
+      storyAudio?.pause();
+    }});
   </script>
 </body>
 </html>
 """
 
 OUT_FILE.write_text(html_content, encoding="utf-8")
-print(f"Successfully generated {OUT_FILE} for all 15 scenes.")
+print(f"Successfully generated {OUT_FILE} with unified design system and working lightbox.")
