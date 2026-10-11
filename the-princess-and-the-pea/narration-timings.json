@@ -1,0 +1,72 @@
+{
+  "audio": "narration.mp3",
+  "duration": 136.896,
+  "timing_method": "Exact timestamps from edge-tts subtitle alignment of story text to narration.mp3.",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "princess_pea_01.jpg",
+      "start": 0.0,
+      "cue": "The Princess and the Pea. Once upon a time there was a prince who wanted to marry a princess; but she would have to be a real princess."
+    },
+    {
+      "image": "princess_pea_02.jpg",
+      "start": 9.741,
+      "cue": "He travelled all over the world to find one, but nowhere could he get what he wanted."
+    },
+    {
+      "image": "princess_pea_03.jpg",
+      "start": 25.298,
+      "cue": "So he came home again and was sad, for he would have liked very much to have a real princess."
+    },
+    {
+      "image": "princess_pea_04.jpg",
+      "start": 31.657,
+      "cue": "One evening a terrible storm came on. There was thunder and lightning, and the rain poured down in torrents."
+    },
+    {
+      "image": "princess_pea_05.jpg",
+      "start": 39.714,
+      "cue": "Suddenly a knocking was heard at the city gate."
+    },
+    {
+      "image": "princess_pea_06.jpg",
+      "start": 43.220,
+      "cue": "And the old king went to open it. It was a princess standing out there in front of the gate..."
+    },
+    {
+      "image": "princess_pea_07.jpg",
+      "start": 67.377,
+      "cue": "Well, we'll soon find that out, thought the old queen. She went into the bed-room, took all the bedding off the bedstead, and laid a pea on the bottom."
+    },
+    {
+      "image": "princess_pea_08.jpg",
+      "start": 77.703,
+      "cue": "Then she took twenty mattresses and laid them on the pea."
+    },
+    {
+      "image": "princess_pea_09.jpg",
+      "start": 81.807,
+      "cue": "And then twenty eider-down beds on top of the mattresses. On this the princess had to lie all night."
+    },
+    {
+      "image": "princess_pea_10.jpg",
+      "start": 89.578,
+      "cue": "In the morning she was asked how she had slept."
+    },
+    {
+      "image": "princess_pea_11.jpg",
+      "start": 93.097,
+      "cue": "Oh, very badly! said she. I have scarcely closed my eyes all night. Heaven only knows what was in the bed..."
+    },
+    {
+      "image": "princess_pea_12.jpg",
+      "start": 122.228,
+      "cue": "So the prince took her for his wife, for now he knew that he had a real princess; and the pea was put in the museum..."
+    }
+  ]
+}
