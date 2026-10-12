@@ -69,8 +69,16 @@ STORIES = [
             ("little_red_hood_big_ears.jpg", 24.0),
             ("little_red_hood_attack.jpg", 12.0),
             ("little_red_hood_huntsman.jpg", 34.5),
-            ("little_red_hood_stones.jpg", 26.732),
         ]
+    },
+    {
+        "id": "the-three-billy-goats-gruff",
+        "dir": "the-three-billy-goats-gruff",
+        "audio": "the-three-billy-goats-gruff/narration.mp3",
+        "video_output": "the-three-billy-goats-gruff/the_three_billy_goats_gruff_story_video.mp4",
+        "poster_output": "the-three-billy-goats-gruff/the_three_billy_goats_gruff_story_video_poster.jpg",
+        "poster_source": "billy_goats_01.jpg",
+        "timeline": "the-three-billy-goats-gruff/narration-timings.json",
     },
     {
         "id": "goldilocks-and-the-three-bears",

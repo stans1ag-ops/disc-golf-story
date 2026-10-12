@@ -1,0 +1,72 @@
+{
+  "audio": "narration.mp3",
+  "duration": 260.821,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "billy_goats_01.jpg",
+      "start": 0.0,
+      "cue": "Across the Valley"
+    },
+    {
+      "image": "billy_goats_02.jpg",
+      "start": 22.484,
+      "cue": "The Rushing Stream"
+    },
+    {
+      "image": "billy_goats_03.jpg",
+      "start": 34.919,
+      "cue": "The Troll Beneath the Bridge"
+    },
+    {
+      "image": "billy_goats_04.jpg",
+      "start": 51.172,
+      "cue": "The Smallest Goat Steps Out"
+    },
+    {
+      "image": "billy_goats_05.jpg",
+      "start": 65.407,
+      "cue": "Trip, Trap, Trip, Trap!"
+    },
+    {
+      "image": "billy_goats_06.jpg",
+      "start": 75.056,
+      "cue": "Who's That Tripping Over My Bridge?"
+    },
+    {
+      "image": "billy_goats_07.jpg",
+      "start": 87.939,
+      "cue": "The Smallest Goat's Clever Escape"
+    },
+    {
+      "image": "billy_goats_08.jpg",
+      "start": 118.699,
+      "cue": "The Second Goat Approaches"
+    },
+    {
+      "image": "billy_goats_09.jpg",
+      "start": 131.633,
+      "cue": "Trip, Trap on the Planks"
+    },
+    {
+      "image": "billy_goats_10.jpg",
+      "start": 142.391,
+      "cue": "The Second Challenge"
+    },
+    {
+      "image": "billy_goats_11.jpg",
+      "start": 176.041,
+      "cue": "Big Billy Goat Gruff Arrives"
+    },
+    {
+      "image": "billy_goats_12.jpg",
+      "start": 234.449,
+      "cue": "Feasting on the Hillside"
+    }
+  ]
+}
