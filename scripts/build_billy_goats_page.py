@@ -1126,7 +1126,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_01.jpg" 
+            src="billy_goats_01.jpg?v=2" 
             alt="The three Billy Goats Gruff looking out across the quiet valley toward the sunny hillside." 
             loading="eager"
             width="1376" 
@@ -1149,7 +1149,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_02.jpg" 
+            src="billy_goats_02.jpg?v=2" 
             alt="The rushing mountain stream cascading beneath the rustic wooden bridge." 
             loading="lazy"
             width="1376" 
@@ -1172,7 +1172,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_03.jpg" 
+            src="billy_goats_03.jpg?v=2" 
             alt="The grumpy, ugly troll lurking in the shadows under the wooden bridge." 
             loading="lazy"
             width="1376" 
@@ -1195,7 +1195,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_04.jpg" 
+            src="billy_goats_04.jpg?v=2" 
             alt="The smallest Billy Goat Gruff trotting down the flower-lined path toward the bridge." 
             loading="lazy"
             width="1376" 
@@ -1225,7 +1225,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_05.jpg" 
+            src="billy_goats_05.jpg?v=2" 
             alt="The smallest Billy Goat stepping onto the wooden planks, hooves tapping trip-trap." 
             loading="lazy"
             width="1376" 
@@ -1253,7 +1253,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_06.jpg" 
+            src="billy_goats_06.jpg?v=2" 
             alt="The ugly troll pops up over the bridge railing, roaring at the startled little goat." 
             loading="lazy"
             width="1376" 
@@ -1285,7 +1285,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_07.jpg" 
+            src="billy_goats_07.jpg?v=2" 
             alt="The smallest goat skips safely into the meadow while the greedy troll waits." 
             loading="lazy"
             width="1376" 
@@ -1308,7 +1308,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_08.jpg" 
+            src="billy_goats_08.jpg?v=2" 
             alt="The second, middle-sized Billy Goat Gruff trotting down the path." 
             loading="lazy"
             width="1376" 
@@ -1338,7 +1338,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_09.jpg" 
+            src="billy_goats_09.jpg?v=2" 
             alt="The second Billy Goat walking firmly across the wooden bridge." 
             loading="lazy"
             width="1376" 
@@ -1374,7 +1374,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_10.jpg" 
+            src="billy_goats_10.jpg?v=2" 
             alt="The second goat cleverly talks to the troll, pointing out that an even bigger goat is coming." 
             loading="lazy"
             width="1376" 
@@ -1418,7 +1418,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_11.jpg" 
+            src="billy_goats_11.jpg?v=2" 
             alt="The great, magnificent Big Billy Goat Gruff stands tall and fearless on the bridge." 
             loading="lazy"
             width="1376" 
@@ -1448,7 +1448,7 @@ HTML_CONTENT = """<!DOCTYPE html>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
           <img 
-            src="billy_goats_12.jpg" 
+            src="billy_goats_12.jpg?v=2" 
             alt="All three Billy Goats Gruff peacefully grazing and feasting together on the sunlit mountain hillside." 
             loading="lazy"
             width="1376" 
@@ -1493,11 +1493,11 @@ HTML_CONTENT = """<!DOCTYPE html>
             id="story-anim-video" 
             controls 
             playsinline 
-            poster="the_three_billy_goats_gruff_story_video_poster.jpg" 
+            poster="the_three_billy_goats_gruff_story_video_poster.jpg?v=2" 
             preload="metadata"
             aria-label="The Three Billy-Goats Gruff - Full voice narration over illustrations"
           >
-            <source src="the_three_billy_goats_gruff_story_video.mp4" type="video/mp4">
+            <source src="the_three_billy_goats_gruff_story_video.mp4?v=2" type="video/mp4">
             <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
             Your browser does not support HTML5 video.
           </video>
