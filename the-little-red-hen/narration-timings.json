@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 344.171,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "little_red_hen_01.jpg",
+      "start": 0.0,
+      "cue": "The Busy Little Hen in the Farmyard"
+    },
+    {
+      "image": "little_red_hen_02.jpg",
+      "start": 21.899,
+      "cue": "The Lazy Farmyard Friends"
+    },
+    {
+      "image": "little_red_hen_03.jpg",
+      "start": 39.859,
+      "cue": "Discovering the Golden Wheat Seed"
+    },
+    {
+      "image": "little_red_hen_04.jpg",
+      "start": 57.397,
+      "cue": "Who Will Plant the Wheat?"
+    },
+    {
+      "image": "little_red_hen_05.jpg",
+      "start": 81.105,
+      "cue": "Planting in the Warm Soil"
+    },
+    {
+      "image": "little_red_hen_06.jpg",
+      "start": 98.007,
+      "cue": "The Wheat Grows Tall and Golden"
+    },
+    {
+      "image": "little_red_hen_07.jpg",
+      "start": 113.237,
+      "cue": "Who Will Cut the Wheat?"
+    },
+    {
+      "image": "little_red_hen_08.jpg",
+      "start": 136.143,
+      "cue": "Reaping with the Sickle"
+    },
+    {
+      "image": "little_red_hen_09.jpg",
+      "start": 152.255,
+      "cue": "Who Will Thresh the Wheat?"
+    },
+    {
+      "image": "little_red_hen_10.jpg",
+      "start": 174.555,
+      "cue": "Threshing the Golden Grain"
+    },
+    {
+      "image": "little_red_hen_11.jpg",
+      "start": 191.329,
+      "cue": "Who Will Carry the Wheat to the Mill?"
+    },
+    {
+      "image": "little_red_hen_12.jpg",
+      "start": 215.016,
+      "cue": "The Journey to the Mill"
+    },
+    {
+      "image": "little_red_hen_13.jpg",
+      "start": 235.105,
+      "cue": "Who Will Bake the Bread?"
+    },
+    {
+      "image": "little_red_hen_14.jpg",
+      "start": 264.774,
+      "cue": "Kneading and Baking the Loaves"
+    },
+    {
+      "image": "little_red_hen_15.jpg",
+      "start": 287.359,
+      "cue": "Who Will Eat the Bread?"
+    }
+  ]
+}

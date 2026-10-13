@@ -106,6 +106,15 @@ STORIES = [
         "poster_output": "the-princess-and-the-pea/princess_and_the_pea_story_video_poster.jpg",
         "poster_source": "princess_pea_01.jpg",
         "timeline": "the-princess-and-the-pea/narration-timings.json",
+    },
+    {
+        "id": "the-little-red-hen",
+        "dir": "the-little-red-hen",
+        "audio": "the-little-red-hen/narration.mp3",
+        "video_output": "the-little-red-hen/the_little_red_hen_story_video.mp4",
+        "poster_output": "the-little-red-hen/the_little_red_hen_story_video_poster.jpg",
+        "poster_source": "little_red_hen_01.jpg",
+        "timeline": "the-little-red-hen/narration-timings.json",
     }
 ]
 
