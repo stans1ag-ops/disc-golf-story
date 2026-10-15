@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 353.89,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "emperors_new_clothes_01.jpg",
+      "start": 0.0,
+      "cue": "The Emperor's Wardrobe"
+    },
+    {
+      "image": "emperors_new_clothes_02.jpg",
+      "start": 27.275,
+      "cue": "The Two Clever Strangers"
+    },
+    {
+      "image": "emperors_new_clothes_03.jpg",
+      "start": 49.361,
+      "cue": "A Royal Commission"
+    },
+    {
+      "image": "emperors_new_clothes_04.jpg",
+      "start": 72.126,
+      "cue": "The Empty Looms"
+    },
+    {
+      "image": "emperors_new_clothes_05.jpg",
+      "start": 94.114,
+      "cue": "The Faithful Old Minister's Visit"
+    },
+    {
+      "image": "emperors_new_clothes_06.jpg",
+      "start": 116.665,
+      "cue": "Oh, How Magnificent!"
+    },
+    {
+      "image": "emperors_new_clothes_07.jpg",
+      "start": 143.079,
+      "cue": "The Royal Chamberlain's Turn"
+    },
+    {
+      "image": "emperors_new_clothes_08.jpg",
+      "start": 166.97,
+      "cue": "The Emperor Inspects the Looms"
+    },
+    {
+      "image": "emperors_new_clothes_09.jpg",
+      "start": 189.125,
+      "cue": "The Midnight Stitching"
+    },
+    {
+      "image": "emperors_new_clothes_10.jpg",
+      "start": 214.441,
+      "cue": "Dressing the Emperor"
+    },
+    {
+      "image": "emperors_new_clothes_11.jpg",
+      "start": 237.641,
+      "cue": "Admiring the Reflection"
+    },
+    {
+      "image": "emperors_new_clothes_12.jpg",
+      "start": 260.159,
+      "cue": "The Velvet Train"
+    },
+    {
+      "image": "emperors_new_clothes_13.jpg",
+      "start": 282.381,
+      "cue": "The Grand Procession"
+    },
+    {
+      "image": "emperors_new_clothes_14.jpg",
+      "start": 306.657,
+      "cue": "The Child Speaks the Truth"
+    },
+    {
+      "image": "emperors_new_clothes_15.jpg",
+      "start": 330.125,
+      "cue": "Truth, Laughter, and a Royal March"
+    }
+  ]
+}

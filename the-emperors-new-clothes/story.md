@@ -1,0 +1,103 @@
+# The Emperor's New Clothes
+*A Classic Fairy Tale with 15 Storybook Watercolor Illustrations, Voice Narration, and Narrated Video*  
+*Source: Hans Christian Andersen (1837) & American Literature*  
+*Adapted for Shane & Alex's Bedtime Stories*
+
+---
+
+## Story Overview & Visual Design Bible
+
+### Universal Style Lock
+> Traditional children's storybook watercolor on lightly textured cream paper, delicate ink and colored pencil linework, warm washes of royal crimson, sunny ochre, velvet purples, forest greens, earthy browns, and soft sky blues, cozy bedtime lighting, whimsical classic fairy tale aesthetic, no 3D CGI, no hyper-realistic render, no harsh neon colors.
+
+### Character Prompt Anchors
+1. **The Emperor**: Plump, vain, pompous monarch with rosy round cheeks, neatly curled handlebar mustache, ornate golden royal crown studded with rubies and pearls, wearing an opulent ermine-trimmed royal crimson velvet mantle, gold-embroidered doublet, puffed silk breeches, and buckled shoes. In dressing scenes, shown child-safely in charming Victorian-style long ruffled cream undershirt and knee-length drawers.
+2. **The Two Weavers (Rogues)**: Two lean, sharp-witted brothers with clever smirks, mischievous twinkling eyes, rolled-up linen sleeves, Renaissance artisan vests in earthy olive-green and warm ochre, leather belts with pouches, dramatic expressive hand gestures pretending to weave and handle delicate invisible threads.
+3. **The Faithful Old Minister**: Dignified elderly courtier with a long flowing white beard, round gold-rimmed spectacles perched on the tip of his nose, deep sapphire-blue velvet robe with gold trim and official medallion necklace, peering intensely through his spectacles with a comically bewildered, earnest expression.
+4. **The Royal Chamberlain**: Tall, slender court official with a powdered wig, curled mustache, emerald-green velvet coat with brass buttons, monocle, holding a silver staff, looking nervously around with polite astonishment.
+5. **The Honest Little Boy**: Cheerful, innocent 6-year-old child with tousled brown hair, bright sky-blue tunic, linen shorts with suspenders, wide starry eyes, smiling with pure honesty and pointing directly with his index finger.
+6. **The Boy's Father**: Friendly town craftsman in a simple brown wool vest and cap, warm fatherly smile, holding his son up on his shoulders.
+
+### Environment & Landmark Anchors
+1. **The Imperial Palace & Throne Hall (`ref_key_setting.jpg`)**: Grand fairy tale palace hall with soaring stone arches, tall lancet stained-glass windows pouring warm golden sunlight across polished checkered marble floors, deep red velvet drapery with gold tassels, royal crest banners, and ornate gilded candelabras.
+2. **The Palace Weaving Chamber**: Sunlit palace gallery outfitted with two massive antique hand-hewn oak weaving looms with wooden frames, foot treadles, wooden shuttles, and large empty warp rollers.
+3. **The Capital Procession Street (`ref_procession_street.jpg`)**: Picturesque European cobblestone town square lined with timber-framed fairy tale houses, steep red tile roofs, colorful banners fluttering from balconies overflowing with red flower boxes, and cheerful crowds gathered under a bright blue morning sky.
+
+---
+
+## 15-Beat Scene Breakdown
+
+### Beat 1: The Emperor's Wardrobe
+Many years ago, in a bustling kingdom across the sea, lived an Emperor who cared more about new clothes than anything else in the whole wide world! While other rulers spent their mornings reviewing maps, inspecting castles, or meeting with ministers, the people of this city always said: "The Emperor is in his wardrobe!" He had a different splendid coat for every single hour of the day.
+
+*Illustration 1: `emperors_new_clothes_01.jpg` — The plump, vain Emperor admiring his enormous wardrobe filled with colorful velvet coats and golden hats.*
+
+### Beat 2: The Two Clever Strangers
+One bright morning, two sneaky strangers came walking into the royal capital. They bowed low before the guards and announced themselves as master weavers from a distant land. They claimed they could weave the most extraordinary fabric ever known—cloth so magical that it was completely invisible to anyone who was foolish or unfit for their job!
+
+*Illustration 2: `emperors_new_clothes_02.jpg` — Two wily weavers bowing dramatically before the palace gates, promising magical invisible cloth.*
+
+### Beat 3: A Royal Commission
+When the Emperor heard the news, his eyes danced with joy. "What a magnificent suit that would be!" he exclaimed. "If I wore such clothes, I could discover at once which men in my kingdom are wise and which are simpletons!" Without delay, he gave the two weavers a great chest overflowing with shiny gold coins so they could start weaving immediately.
+
+*Illustration 3: `emperors_new_clothes_03.jpg` — The Emperor excitedly handing a heavy chest of gold coins to the two grinning weavers.*
+
+### Beat 4: The Empty Looms
+The two rogues promptly set up two large wooden looms in a grand palace hall. They demanded the finest silk thread and pure spools of spun gold. But as soon as the treasures were brought, they stuffed them straight into their own traveling knapsacks! Then, sitting at the empty frames, they pumped the pedals and clicked their empty shuttles through the air late into the night.
+
+*Illustration 4: `emperors_new_clothes_04.jpg` — The two weavers pretending to work with great speed at two completely empty wooden looms in the palace hall.*
+
+### Beat 5: The Faithful Old Minister's Visit
+After a few days, the Emperor grew impatient to see how his wonderful cloth was turning out. "I will send my faithful old minister," thought the Emperor. "He is sensible and wise, and nobody is better suited for his post." The old minister adjusted his spectacles and stepped into the weaving hall. But when he looked at the looms, he stopped dead in his tracks!
+
+*Illustration 5: `emperors_new_clothes_05.jpg` — The wise old minister peering through his round spectacles at the empty loom with wide, puzzled eyes.*
+
+### Beat 6: "Oh, How Magnificent!"
+The minister rubbed his spectacles and stared again, but there was not a single thread to be seen! "Mercy on me!" thought the poor old man. "Can it be that I am foolish? No one must ever know!" The weavers smiled warmly and asked: "Do you not admire these rich scarlet swirls, Sir Minister?" "Oh, magnificent!" gasped the minister aloud. "Exquisite colors! I shall tell the Emperor at once!"
+
+*Illustration 6: `emperors_new_clothes_06.jpg` — The old minister nodding nervously and smiling as the weavers point into the empty air with flourishes.*
+
+### Beat 7: The Royal Chamberlain's Turn
+Next, the Emperor sent his trusted Royal Chamberlain to find out when the suit would be finished. The Chamberlain leaned over the wooden frame, squinting left and right. Just like the minister, he saw nothing but bare wood and empty air! "Can I be unfit for my grand office?" he worried. So he bowed gracefully and cried: "Charming! A masterpiece of silk and gold!"
+
+*Illustration 7: `emperors_new_clothes_07.jpg` — The elegant Chamberlain adjusting his monocle and praising the invisible fabric before the smiling rogues.*
+
+### Beat 8: The Emperor Inspects the Looms
+Now the entire city could talk of nothing else! At last, the Emperor decided to see the magical cloth for himself. Flanked by his finest courtiers, he swept into the weaving room. The weavers worked faster than ever, slicing the air with clicking scissors. The Emperor blinked once, blinked twice, and rubbed his eyes. He could not see a single strand!
+
+*Illustration 8: `emperors_new_clothes_08.jpg` — The Emperor standing before the empty loom with a frozen, wide-eyed smile of secret panic.*
+
+### Beat 9: The Midnight Stitching
+"This is terrible!" thought the Emperor. "Am I foolish? Am I unfit to be Emperor?" But on no account would he let anyone suspect! "Oh, it has my highest royal approval!" he declared with a beaming smile. The night before the great city procession, the weavers lit sixteen bright candles. Everyone could see them busily cutting the empty air and sewing with threadless needles.
+
+*Illustration 9: `emperors_new_clothes_09.jpg` — The weavers working by the glow of sixteen candles, snipping the air with shiny scissors to finish the suit.*
+
+### Beat 10: Dressing the Emperor
+At dawn, the rogues raised their arms as if holding up a delicate garment. "Here are your Majesty's trousers! Here is the waistcoat! And here is the royal mantle! The fabric is as light as a cobweb—you might think you have nothing on at all, but that is its greatest virtue!" The Emperor removed his robes and prepared to try on his extraordinary new suit.
+
+*Illustration 10: `emperors_new_clothes_10.jpg` — The weavers presenting the invisible clothes with outstretched hands to the eager Emperor.*
+
+### Beat 11: Admiring the Reflection
+The rogues pretended to fasten invisible buttons, smooth invisible sleeves, and drape a splendid invisible train. The Emperor twirled around slowly before a tall golden mirror, standing in his ruffled bedtime drawers and undershirt. "How delightfully they fit!" purred the courtiers. "What a glorious pattern! What royal colors!"
+
+*Illustration 11: `emperors_new_clothes_11.jpg` — The Emperor posing proudly in his silly ruffled undergarments before the tall gilded mirror.*
+
+### Beat 12: The Velvet Train
+"The royal canopy is ready, your Majesty!" announced the master of ceremonies. The noble lords of the bedchamber knelt down upon the velvet carpet and reached out with both hands, pretending to lift the magnificent invisible train. They marched forward with their arms held high in the air, terrified that someone might think them foolish if they let go!
+
+*Illustration 12: `emperors_new_clothes_12.jpg` — Two pompous courtiers walking carefully behind the Emperor, holding up an invisible royal train.*
+
+### Beat 13: The Grand Procession
+Under a high silk canopy embroidered with gold, the Emperor strode through the sunlit capital. The cobblestone avenue was lined with cheering crowds, and spectators leaned out of every flower-decked window. "Look at his Majesty's new clothes!" people cried to one another. "What a graceful train! What a perfect fit!" No one dared admit they could see nothing at all.
+
+*Illustration 13: `emperors_new_clothes_13.jpg` — The Emperor parading proudly through the packed city streets under a golden canopy.*
+
+### Beat 14: The Child Speaks the Truth
+Just as the procession entered the bustling town square, a little boy perched upon his father's shoulders pointed with a bright giggle. "Look, Papa!" cried the child in a clear, happy voice that echoed across the stones. "The Emperor has no clothes on at all!" The father gasped, and the words whispered like a wave from neighbor to neighbor: "The child says he has nothing on!"
+
+*Illustration 14: `emperors_new_clothes_14.jpg` — A cheerful little boy pointing from his father's shoulders, speaking the truth for all the crowd to hear.*
+
+### Beat 15: Truth, Laughter, and a Royal March
+"He has nothing on at all!" shouted all the people in a great chorus of friendly laughter. The Emperor shivered, and his cheeks turned red as a ripe strawberry. He knew deep down that the people were right! But he squared his shoulders, lifted his golden crown, and marched even taller, learning that true dignity comes from honesty, not from fancy clothes.
+
+*Illustration 15: `emperors_new_clothes_15.jpg` — The blushing Emperor marching on with dignified good humor while the happy townspeople cheer and smile.*

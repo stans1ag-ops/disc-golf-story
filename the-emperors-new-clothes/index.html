@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Read The Emperor's New Clothes classic fairy tale with storybook watercolor illustrations, neural voice narration, and captions.">
+  <title>The Emperor's New Clothes — Shane &amp; Alex's Bedtime Stories</title>
+
+  <!-- Google Fonts with full system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      touch-action: manipulation;
+    }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #C85A17;
+      --accent-brick: #B83B26;
+      --accent-green: #2D6A4F;
+      --accent-gold: #E09F3E;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #A8420B;
+      --accent-brick: #9C2E1B;
+      --accent-green: #265942;
+      --accent-gold: #C0852A;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #121815;
+      --bg-card: #1A221E;
+      --bg-card-subtle: #232E29;
+      --bg-toolbar: rgba(18, 24, 21, 0.96);
+      --text-main: #EDE7DC;
+      --text-muted: #A3B1A8;
+      --text-accent: #F48C42;
+      --accent-brick: #E26D5C;
+      --accent-green: #74C69D;
+      --accent-gold: #F4A261;
+      --border-color: #2F3E37;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Reading Progress Bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-brick), var(--accent-gold));
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Sticky Top Toolbar */
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      background: var(--bg-toolbar);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 100;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .toolbar-left, .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-nav-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .btn-nav-home:hover {
+      border-color: var(--accent-brick);
+      color: var(--accent-brick);
+    }
+
+    /* Story dropdown */
+    .story-dropdown-wrapper {
+      position: relative;
+    }
+
+    .btn-story-dropdown {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    .btn-story-dropdown:hover {
+      color: var(--text-main);
+      border-color: var(--text-accent);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      box-shadow: var(--shadow-lg);
+      min-width: 280px;
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 200;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .story-dropdown-menu.show {
+      display: flex;
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      border-radius: 8px;
+      transition: background 0.15s ease;
+    }
+    .story-menu-link:hover {
+      background: var(--bg-card-subtle);
+    }
+    .story-menu-link.active {
+      background: var(--bg-card-subtle);
+      font-weight: 700;
+      color: var(--accent-brick);
+    }
+
+    /* Controls: Text Size & Theme Buttons */
+    .btn-ctrl {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.82rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .btn-ctrl:hover {
+      border-color: var(--accent-brick);
+      color: var(--accent-brick);
+    }
+
+    .theme-group {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .btn-theme {
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .btn-theme.active {
+      background: var(--accent-brick);
+      color: #FFFFFF;
+    }
+
+    /* Story Layout Container */
+    .story-container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+      flex-grow: 1;
+    }
+
+    /* Story Header */
+    .story-header {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    .story-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, rgba(184, 59, 38, 0.12), rgba(224, 159, 62, 0.15));
+      border: 1px solid rgba(184, 59, 38, 0.3);
+      color: var(--accent-brick);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 6vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 18px;
+      line-height: 1.6;
+    }
+
+    .story-meta-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .meta-stat-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 14px;
+    }
+
+    /* Audio Player Card */
+    .story-audio-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 22px;
+      padding: 20px 22px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .audio-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .audio-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .audio-icon-pulse {
+      font-size: 1.4rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--bg-card-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-brick);
+    }
+
+    .audio-info-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .audio-info-sub {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .btn-speed {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 12px;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .btn-speed:hover {
+      background: var(--bg-card-subtle);
+      color: var(--text-main);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-audio-main {
+      background: linear-gradient(135deg, var(--accent-brick), var(--text-accent));
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(184, 59, 38, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .btn-audio-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(184, 59, 38, 0.4);
+    }
+
+    .audio-progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .audio-scrubber {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-card-subtle);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .audio-scrubber-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-brick), var(--accent-gold));
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Scene Sections */
+    .scene-section {
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .scene-pill {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-brick);
+      background: var(--bg-card-subtle);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+
+    .story-text {
+      font-size: 1.08rem;
+      margin-bottom: 18px;
+      color: var(--text-main);
+    }
+
+    /* Chanted Dialogue Boxes */
+    .chant-box {
+      border-left: 4px solid var(--accent-brick);
+      background: var(--bg-card);
+      border-radius: 0 16px 16px 0;
+      padding: 14px 18px;
+      margin: 18px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chant-box.emperor {
+      border-left-color: #C85A17;
+      background: linear-gradient(135deg, rgba(200, 90, 23, 0.06), rgba(224, 159, 62, 0.08));
+    }
+    .chant-box.weavers {
+      border-left-color: #2D6A4F;
+      background: linear-gradient(135deg, rgba(45, 106, 79, 0.06), rgba(116, 198, 157, 0.08));
+    }
+    .chant-box.minister {
+      border-left-color: #2563EB;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(96, 165, 250, 0.08));
+    }
+    .chant-box.chamberlain {
+      border-left-color: #059669;
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.06), rgba(52, 211, 153, 0.08));
+    }
+    .chant-box.child {
+      border-left-color: #D97706;
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.08), rgba(251, 191, 36, 0.12));
+    }
+
+    .chant-speaker {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .chant-text {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    /* Story Illustrations */
+    .story-figure {
+      margin: 24px 0 32px;
+      border-radius: var(--border-radius-img);
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .story-figure:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      cursor: zoom-in;
+      overflow: hidden;
+      background: #F0EAE1;
+      aspect-ratio: 16 / 9;
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .figure-img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(20, 20, 20, 0.7);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    .figure-img-wrapper:hover .figure-overlay-hint {
+      opacity: 1;
+    }
+
+    .figure-pending-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(200, 90, 23, 0.88);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+
+    figcaption {
+      padding: 12px 18px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      line-height: 1.5;
+    }
+
+    /* Interactive Conclusion / Discussion */
+    .interactive-conclusion {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 28px 24px;
+      margin: 50px 0;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+      background: var(--bg-card-subtle);
+      padding: 4px 14px;
+      border-radius: 14px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      color: var(--text-main);
+      margin-bottom: 20px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      text-align: left;
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 18px;
+      transition: all 0.2s ease;
+    }
+    .choice-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .choice-card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .choice-card-title {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .choice-card-desc {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: block;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 10, 10, 0.92);
+      backdrop-filter: blur(10px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: 95vw;
+      max-height: 90vh;
+      border-radius: 14px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      font-size: 2rem;
+      color: #FFFFFF;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .lightbox-close:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* Floating Scroll to Top Button */
+    .btn-scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 90;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+    .btn-scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .btn-scroll-top:hover {
+      background: var(--accent-brick);
+      color: #FFFFFF;
+      border-color: var(--accent-brick);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .top-toolbar {
+        padding: 8px 12px;
+      }
+      .btn-theme {
+        padding: 4px 6px;
+        font-size: 0.7rem;
+      }
+      .story-title {
+        font-size: 1.9rem;
+      }
+      .story-container {
+        padding: 24px 14px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Sticky Top Toolbar -->
+  <header class="top-toolbar">
+    <div class="toolbar-left">
+      <a href="../" class="btn-nav-home" title="Return to Story Hub">
+        <span>←</span> <span>Home</span>
+      </a>
+
+      <!-- Stories Dropdown -->
+      <div class="story-dropdown-wrapper">
+        <button class="btn-story-dropdown" id="story-menu-btn" aria-haspopup="true" aria-expanded="false">
+          <span>📚 Stories</span>
+          <span style="font-size: 0.7rem;">▼</span>
+        </button>
+        <div class="story-dropdown-menu" id="story-menu">
+          <a href="../the-three-little-pigs/" class="story-menu-link">
+            <span>🐷</span> <span>The Three Little Pigs</span>
+          </a>
+          <a href="../jack-and-the-beanstalk/" class="story-menu-link">
+            <span>🌱</span> <span>Jack and the Beanstalk</span>
+          </a>
+          <a href="../little-red-riding-hood/" class="story-menu-link">
+            <span>🧺</span> <span>Little Red Riding Hood</span>
+          </a>
+          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link">
+            <span>🥣</span> <span>Goldilocks &amp; The Three Bears</span>
+          </a>
+          <a href="../the-gingerbread-man/" class="story-menu-link">
+            <span>🍪</span> <span>The Gingerbread Man</span>
+          </a>
+          <a href="../the-princess-and-the-pea/" class="story-menu-link">
+            <span>👑</span> <span>The Princess and the Pea</span>
+          </a>
+          <a href="../the-three-billy-goats-gruff/" class="story-menu-link">
+            <span>🐐</span> <span>The Three Billy-Goats Gruff</span>
+          </a>
+          <a href="../the-little-red-hen/" class="story-menu-link">
+            <span>🐔</span> <span>The Little Red Hen</span>
+          </a>
+          <a href="./" class="story-menu-link active">
+            <span>👑</span> <span>The Emperor's New Clothes</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar-right">
+      <button class="btn-ctrl" id="btn-font-dec" title="Decrease font size" aria-label="Decrease text size">A-</button>
+      <button class="btn-ctrl" id="btn-font-inc" title="Increase font size" aria-label="Increase text size">A+</button>
+      
+      <div class="theme-group" role="group" aria-label="Color Theme">
+        <button class="btn-theme active" data-set-theme="light">Day</button>
+        <button class="btn-theme" data-set-theme="sepia">Sepia</button>
+        <button class="btn-theme" data-set-theme="night">Night</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Story Layout -->
+  <main class="story-container">
+    
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="story-badge">Classic Fairy Tale</span>
+      <h1 class="story-title">The Emperor's New Clothes</h1>
+      <p class="story-subtitle">By Hans Christian Andersen • A cozy bedtime tale about honesty, vanity, and the courage of an innocent child.</p>
+      
+      <div class="story-meta-stats">
+        <span class="meta-stat-pill">📖 15 Story Beats</span>
+        <span class="meta-stat-pill">🎨 Storybook Watercolors</span>
+        <span class="meta-stat-pill">🎙️ Voice Narration (5m 54s)</span>
+        <span class="meta-stat-pill">👶 Ages 4–7</span>
+      </div>
+    </section>
+
+    <!-- Voice Narration Audio Player Card -->
+    <section class="story-audio-card">
+      <div class="audio-header-row">
+        <div class="audio-info">
+          <div class="audio-icon-pulse">🎙️</div>
+          <div>
+            <div class="audio-info-title">Bedtime Voice Narration</div>
+            <div class="audio-info-sub">Gentle, soothing narration matching the story text</div>
+          </div>
+        </div>
+        <button class="btn-speed" id="btn-audio-speed" title="Toggle audio playback speed">1.0x</button>
+      </div>
+
+      <div class="audio-controls-row">
+        <button class="btn-audio-main" id="btn-play-audio">
+          <span id="play-icon">▶</span>
+          <span id="play-label">Play Story</span>
+        </button>
+
+        <div class="audio-progress-container">
+          <div class="audio-scrubber" id="audio-scrubber">
+            <div class="audio-scrubber-fill" id="audio-scrubber-fill"></div>
+          </div>
+          <div class="audio-time-row">
+            <span id="audio-current-time">0:00</span>
+            <span id="audio-total-time">5:54</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden HTML5 Audio Element -->
+      <audio id="story-audio" preload="metadata">
+        <source src="narration.mp3" type="audio/mpeg">
+        <track kind="subtitles" src="narration.vtt" srclang="en" label="English" default>
+      </audio>
+    </section>
+
+    <!-- SCENE 01 -->
+    <article class="scene-section" id="scene-01">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • The Emperor's Wardrobe</span>
+      </div>
+      <p class="story-text">Many years ago, in a bustling kingdom across the sea, lived an Emperor who cared more about new clothes than anything else in the whole wide world! While other rulers spent their mornings reviewing maps, inspecting castles, or meeting with ministers, the people of this city always said:</p>
+      <div class="chant-box emperor">
+        <div class="chant-speaker">👑 The Townsfolk</div>
+        <div class="chant-text">&ldquo;The Emperor is in his wardrobe!&rdquo;</div>
+      </div>
+      <p class="story-text">He had a different splendid coat for every single hour of the day.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_01.jpg" alt="The plump Emperor admiring his vast collection of colorful coats in his palace wardrobe." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Emperor gestures proudly toward his huge wardrobe filled with luxurious velvet coats and feathered hats.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 02 -->
+    <article class="scene-section" id="scene-02">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • The Two Clever Strangers</span>
+      </div>
+      <p class="story-text">One bright morning, two sneaky strangers came walking into the royal capital. They bowed low before the guards and announced themselves as master weavers from a distant land.</p>
+      <div class="chant-box weavers">
+        <div class="chant-speaker">🧵 The Two Weavers</div>
+        <div class="chant-text">&ldquo;We can weave the most magical fabric in all the world—so fine that it is completely invisible to anyone who is foolish or unfit for their job!&rdquo;</div>
+      </div>
+      <p class="story-text">They claimed they could weave the most extraordinary fabric ever known, cloth so magical that it was completely invisible to anyone who was foolish or unfit for their job!</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_02.jpg" alt="The two sly weavers bowing theatrically before the palace guards, describing magical cloth." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The two clever weavers bow before the palace gates, promising to weave magical invisible fabric.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 03 -->
+    <article class="scene-section" id="scene-03">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • A Royal Commission</span>
+      </div>
+      <p class="story-text">When the Emperor heard the news, his eyes danced with joy.</p>
+      <div class="chant-box emperor">
+        <div class="chant-speaker">👑 The Emperor</div>
+        <div class="chant-text">&ldquo;What a magnificent suit that would be! If I wore such clothes, I could discover at once which men in my kingdom are wise and which are simpletons!&rdquo;</div>
+      </div>
+      <p class="story-text">Without delay, he gave the two weavers a great chest overflowing with shiny gold coins so they could start weaving immediately.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_03.jpg" alt="The Emperor presenting an open chest of gold coins from his throne to the bowing weavers." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Emperor excitedly commissions the magical suit, handing a heavy chest of gold coins to the weavers.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 04 -->
+    <article class="scene-section" id="scene-04">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • The Empty Looms</span>
+      </div>
+      <p class="story-text">The two rogues promptly set up two large wooden looms in a grand palace hall. They demanded the finest silk thread and pure spools of spun gold. But as soon as the treasures were brought, they stuffed them straight into their own traveling knapsacks!</p>
+      <div class="chant-box weavers">
+        <div class="chant-speaker">🧵 The Weaving Hall</div>
+        <div class="chant-text">Click-clack, click-clack went the empty wooden shuttles late into the night!</div>
+      </div>
+      <p class="story-text">Then, sitting at the empty frames, they pumped the pedals and clicked their empty shuttles through the air late into the night.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_04.jpg" alt="The two weavers pantomiming weaving with empty shuttles at bare looms while hiding bags of gold thread." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The two weavers pretend to work busily at two completely empty wooden looms in the palace hall.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 05 -->
+    <article class="scene-section" id="scene-05">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 5 • The Faithful Old Minister's Visit</span>
+      </div>
+      <p class="story-text">After a few days, the Emperor grew impatient to see how his wonderful cloth was turning out. "I will send my faithful old minister," thought the Emperor. "He is sensible and wise, and nobody is better suited for his post."</p>
+      <p class="story-text">The old minister adjusted his spectacles and stepped into the weaving hall. But when he looked at the looms, he stopped dead in his tracks!</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_05.jpg" alt="The elderly minister peering through round spectacles at the empty wooden loom with wide, puzzled eyes." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The wise old minister stares through his spectacles at the bare loom, astonished to see nothing at all.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 06 -->
+    <article class="scene-section" id="scene-06">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 6 • &ldquo;Oh, How Magnificent!&rdquo;</span>
+      </div>
+      <p class="story-text">The minister rubbed his spectacles and stared again, but there was not a single thread to be seen! "Mercy on me!" thought the poor old man. "Can it be that I am foolish? No one must ever know!"</p>
+      <div class="chant-box weavers">
+        <div class="chant-speaker">🧵 The Weavers</div>
+        <div class="chant-text">&ldquo;Do you not admire these rich scarlet swirls, Sir Minister? Look at these golden ribbons!&rdquo;</div>
+      </div>
+      <div class="chant-box minister">
+        <div class="chant-speaker">📜 The Faithful Minister</div>
+        <div class="chant-text">&ldquo;Oh, magnificent! Exquisite colors! I shall tell the Emperor at once!&rdquo;</div>
+      </div>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_06.jpg" alt="The minister nodding nervously and smiling as the weavers point into the empty air with flourishes." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The old minister pretends to admire the invisible fabric, terrified that someone might think him foolish.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 07 -->
+    <article class="scene-section" id="scene-07">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 7 • The Royal Chamberlain's Turn</span>
+      </div>
+      <p class="story-text">Next, the Emperor sent his trusted Royal Chamberlain to find out when the suit would be finished. The Chamberlain leaned over the wooden frame, squinting left and right. Just like the minister, he saw nothing but bare wood and empty air!</p>
+      <div class="chant-box chamberlain">
+        <div class="chant-speaker">🧐 The Royal Chamberlain</div>
+        <div class="chant-text">&ldquo;Charming! A masterpiece of silk and gold! The colors are absolutely divine!&rdquo;</div>
+      </div>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_07.jpg" alt="The Chamberlain peering through his golden monocle and raising his hands in exaggerated admiration." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Chamberlain squints through his monocle at the empty loom, praising the nonexistent weave with grand gestures.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 08 -->
+    <article class="scene-section" id="scene-08">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 8 • The Emperor Inspects the Looms</span>
+      </div>
+      <p class="story-text">Now the entire city could talk of nothing else! At last, the Emperor decided to see the magical cloth for himself. Flanked by his finest courtiers, he swept into the weaving room. The weavers worked faster than ever, slicing the air with clicking scissors. The Emperor blinked once, blinked twice, and rubbed his eyes. He could not see a single strand!</p>
+      <div class="chant-box emperor">
+        <div class="chant-speaker">👑 The Emperor's Secret Panic</div>
+        <div class="chant-text">&ldquo;Good gracious! Can it be that I am foolish? Am I not fit to be Emperor?&rdquo;</div>
+      </div>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="emperors_new_clothes_08.jpg" alt="The Emperor leaning over the empty loom with a frozen, wide-eyed smile of secret panic." loading="lazy" width="1376" height="768">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Emperor forces a bright royal smile of approval over the empty loom, hiding his private bewilderment.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 09 -->
+    <article class="scene-section" id="scene-09">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 9 • The Midnight Stitching</span>
+      </div>
+      <p class="story-text">"This is terrible!" thought the Emperor. "Am I foolish? Am I unfit to be Emperor?" But on no account would he let anyone suspect! "Oh, it has my highest royal approval!" he declared with a beaming smile.</p>
+      <p class="story-text">The night before the great city procession, the weavers lit sixteen bright candles. Everyone could see them busily cutting the empty air and sewing with threadless needles.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_key_setting.jpg" alt="The palace chamber illuminated by candlelight as the weavers prepare for the procession." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The weavers work late by the light of sixteen candles, snipping the empty air with shiny scissors.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 10 -->
+    <article class="scene-section" id="scene-10">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 10 • Dressing the Emperor</span>
+      </div>
+      <p class="story-text">At dawn, the rogues raised their arms as if holding up a delicate garment.</p>
+      <div class="chant-box weavers">
+        <div class="chant-speaker">🧵 The Weavers</div>
+        <div class="chant-text">&ldquo;Here are your Majesty's trousers! Here is the waistcoat! And here is the royal mantle! The fabric is as light as a cobweb—you might think you have nothing on at all, but that is its greatest virtue!&rdquo;</div>
+      </div>
+      <p class="story-text">The Emperor removed his robes and prepared to try on his extraordinary new suit.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_characters.jpg" alt="The weavers presenting the invisible clothes to the Emperor." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The weavers present the invisible garments with dramatic flair as the Emperor prepares to try them on.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 11 -->
+    <article class="scene-section" id="scene-11">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 11 • Admiring the Reflection</span>
+      </div>
+      <p class="story-text">The rogues pretended to fasten invisible buttons, smooth invisible sleeves, and drape a splendid invisible train. The Emperor twirled around slowly before a tall golden mirror, standing in his ruffled bedtime drawers and undershirt.</p>
+      <div class="chant-box emperor">
+        <div class="chant-speaker">👑 The Courtiers</div>
+        <div class="chant-text">&ldquo;How delightfully they fit! What a glorious pattern! What royal colors!&rdquo;</div>
+      </div>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_characters.jpg" alt="The Emperor posing proudly in front of a mirror in his ruffled undergarments." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Emperor turns from side to side before the tall gilded mirror, admiring his nonexistent royal robes.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 12 -->
+    <article class="scene-section" id="scene-12">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 12 • The Velvet Train</span>
+      </div>
+      <p class="story-text">"The royal canopy is ready, your Majesty!" announced the master of ceremonies. The noble lords of the bedchamber knelt down upon the velvet carpet and reached out with both hands, pretending to lift the magnificent invisible train.</p>
+      <p class="story-text">They marched forward with their arms held high in the air, terrified that someone might think them foolish if they let go!</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_key_setting.jpg" alt="Courtiers holding up an invisible royal train with arms held high." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Two proud courtiers walk carefully behind the Emperor, carefully lifting the invisible train in their hands.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 13 -->
+    <article class="scene-section" id="scene-13">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 13 • The Grand Procession</span>
+      </div>
+      <p class="story-text">Under a high silk canopy embroidered with gold, the Emperor strode through the sunlit capital. The cobblestone avenue was lined with cheering crowds, and spectators leaned out of every flower-decked window.</p>
+      <div class="chant-box emperor">
+        <div class="chant-speaker">🎉 The Cheering City</div>
+        <div class="chant-text">&ldquo;Look at his Majesty's new clothes! What a graceful train! What a perfect fit!&rdquo;</div>
+      </div>
+      <p class="story-text">No one dared admit they could see nothing at all.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_procession_street.jpg" alt="The sunlit capital street packed with crowds under flower-decked balconies." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The grand procession through the sunny cobblestone avenue lined with cheering spectators.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 14 -->
+    <article class="scene-section" id="scene-14">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 14 • The Child Speaks the Truth</span>
+      </div>
+      <p class="story-text">Just as the procession entered the bustling town square, a little boy perched upon his father's shoulders pointed with a bright giggle.</p>
+      <div class="chant-box child">
+        <div class="chant-speaker">👦 The Honest Little Boy</div>
+        <div class="chant-text">&ldquo;Look, Papa! The Emperor has no clothes on at all!&rdquo;</div>
+      </div>
+      <p class="story-text">The father gasped, and the words whispered like a wave from neighbor to neighbor: "The child says he has nothing on!"</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_characters.jpg" alt="A little boy pointing from his father's shoulders, laughing with honest joy." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The innocent little boy giggles and points, speaking the honest truth for everyone to hear.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 15 -->
+    <article class="scene-section" id="scene-15">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 15 • Truth, Laughter, and a Royal March</span>
+      </div>
+      <div class="chant-box emperor">
+        <div class="chant-speaker">😄 The Whole Town</div>
+        <div class="chant-text">&ldquo;He has nothing on at all!&rdquo;</div>
+      </div>
+      <p class="story-text">The Emperor shivered, and his cheeks turned red as a ripe strawberry. He knew deep down that the people were right! But he squared his shoulders, lifted his golden crown, and marched even taller, learning that true dignity comes from honesty, not from fancy clothes.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="ref_characters.jpg" alt="The blushing Emperor marching on with good humor as the happy townspeople applaud." loading="lazy" width="1376" height="768">
+          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The blushing Emperor marches on with dignity, learning that true character is better than vanity.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Interactive Conclusion / Discussion -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">💭 Bedtime Chat</span>
+      <h2 class="conclusion-question">What did the little boy teach the Emperor and his kingdom?</h2>
+      
+      <div class="choice-grid">
+        <div class="choice-card">
+          <span class="choice-card-icon">🌟</span>
+          <strong class="choice-card-title">Courage &amp; Honesty</strong>
+          <span class="choice-card-desc">Even when everyone else is afraid to look silly, speaking the simple truth with a kind heart is always the bravest thing to do!</span>
+        </div>
+        <div class="choice-card">
+          <span class="choice-card-icon">👑</span>
+          <strong class="choice-card-title">True Worth Within</strong>
+          <span class="choice-card-desc">Fancy clothes and shiny crowns don't make a good leader—kindness, honesty, and caring for others are what truly matter.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close illustration view">&times;</button>
+    <img src="" alt="Enlarged Illustration" class="lightbox-img" id="lightbox-img">
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="btn-scroll-top" id="btn-scroll-top" title="Back to top" aria-label="Scroll back to top">↑</button>
+
+  <script>
+    // Theme Manager
+    const themeButtons = document.querySelectorAll('[data-set-theme]');
+    const htmlElement = document.documentElement;
+
+    function applyTheme(theme) {
+      htmlElement.setAttribute('data-theme', theme);
+      localStorage.setItem('bedtime-story-theme', theme);
+      themeButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-set-theme') === theme);
+      });
+    }
+
+    const savedTheme = localStorage.getItem('bedtime-story-theme') || 'light';
+    applyTheme(savedTheme);
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => applyTheme(btn.getAttribute('data-set-theme')));
+    });
+
+    // Font Sizing
+    let currentFontSize = 19;
+    const btnFontInc = document.getElementById('btn-font-inc');
+    const btnFontDec = document.getElementById('btn-font-dec');
+
+    btnFontInc.addEventListener('click', () => {
+      if (currentFontSize < 25) {
+        currentFontSize += 1.5;
+        htmlElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      }
+    });
+
+    btnFontDec.addEventListener('click', () => {
+      if (currentFontSize > 15) {
+        currentFontSize -= 1.5;
+        htmlElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      }
+    });
+
+    // Story Menu Dropdown
+    const storyMenuBtn = document.getElementById('story-menu-btn');
+    const storyMenu = document.getElementById('story-menu');
+
+    storyMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      storyMenu.classList.toggle('show');
+      storyMenuBtn.setAttribute('aria-expanded', storyMenu.classList.contains('show'));
+    });
+
+    document.addEventListener('click', () => {
+      storyMenu.classList.remove('show');
+      storyMenuBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    // Reading Progress & Scroll to Top
+    const progressBar = document.getElementById('progress-bar');
+    const btnScrollTop = document.getElementById('btn-scroll-top');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+
+      if (scrollTop > 400) {
+        btnScrollTop.classList.add('visible');
+      } else {
+        btnScrollTop.classList.remove('visible');
+      }
+    });
+
+    btnScrollTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Lightbox
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      if (img) {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close')) {
+        lightboxModal.classList.remove('active');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        lightboxModal.classList.remove('active');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Audio Player
+    const audio = document.getElementById('story-audio');
+    const btnPlayAudio = document.getElementById('btn-play-audio');
+    const playIcon = document.getElementById('play-icon');
+    const playLabel = document.getElementById('play-label');
+    const scrubber = document.getElementById('audio-scrubber');
+    const scrubberFill = document.getElementById('audio-scrubber-fill');
+    const currentTimeDisplay = document.getElementById('audio-current-time');
+    const totalTimeDisplay = document.getElementById('audio-total-time');
+    const btnSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    btnPlayAudio.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playIcon.textContent = '⏸';
+        playLabel.textContent = 'Pause';
+      } else {
+        audio.pause();
+        playIcon.textContent = '▶';
+        playLabel.textContent = 'Play Story';
+      }
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const cur = audio.currentTime;
+      const dur = audio.duration || 353.89;
+      const pct = (cur / dur) * 100;
+      scrubberFill.style.width = pct + '%';
+      currentTimeDisplay.textContent = formatTime(cur);
+      totalTimeDisplay.textContent = formatTime(dur);
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      totalTimeDisplay.textContent = formatTime(audio.duration);
+    });
+
+    audio.addEventListener('ended', () => {
+      playIcon.textContent = '▶';
+      playLabel.textContent = 'Play Again';
+      scrubberFill.style.width = '0%';
+    });
+
+    scrubber.addEventListener('click', (e) => {
+      const rect = scrubber.getBoundingClientRect();
+      const clickPos = (e.clientX - rect.left) / rect.width;
+      const dur = audio.duration || 353.89;
+      audio.currentTime = clickPos * dur;
+    });
+
+    const speeds = [1.0, 1.25, 0.9];
+    let speedIndex = 0;
+    btnSpeed.addEventListener('click', () => {
+      speedIndex = (speedIndex + 1) % speeds.length;
+      const spd = speeds[speedIndex];
+      audio.playbackRate = spd;
+      btnSpeed.textContent = spd.toFixed(1) + 'x';
+    });
+  </script>
+</body>
+</html>
