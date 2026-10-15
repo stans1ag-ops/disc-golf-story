@@ -115,6 +115,15 @@ STORIES = [
         "poster_output": "the-little-red-hen/the_little_red_hen_story_video_poster.jpg",
         "poster_source": "little_red_hen_01.jpg",
         "timeline": "the-little-red-hen/narration-timings.json",
+    },
+    {
+        "id": "the-emperors-new-clothes",
+        "dir": "the-emperors-new-clothes",
+        "audio": "the-emperors-new-clothes/narration.mp3",
+        "video_output": "the-emperors-new-clothes/the_emperors_new_clothes_story_video.mp4",
+        "poster_output": "the-emperors-new-clothes/the_emperors_new_clothes_story_video_poster.jpg",
+        "poster_source": "emperors_new_clothes_01.jpg",
+        "timeline": "the-emperors-new-clothes/narration-timings.json",
     }
 ]
 

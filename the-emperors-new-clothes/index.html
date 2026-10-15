@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Read The Emperor's New Clothes classic fairy tale with storybook watercolor illustrations, neural voice narration, and captions.">
+  <meta name="description" content="Read The Emperor's New Clothes classic fairy tale with 15 storybook watercolor illustrations, voice narration, and video.">
   <title>The Emperor's New Clothes — Shane &amp; Alex's Bedtime Stories</title>
 
   <!-- Google Fonts with full system fallbacks -->
@@ -601,22 +601,6 @@
       opacity: 1;
     }
 
-    .figure-pending-badge {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      background: rgba(200, 90, 23, 0.88);
-      color: #FFFFFF;
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: 12px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    }
-
     figcaption {
       padding: 12px 18px;
       font-family: var(--font-sans);
@@ -699,6 +683,90 @@
       color: var(--text-muted);
       line-height: 1.5;
       display: block;
+    }
+
+    /* Story Video Player Section */
+    .story-animation-card {
+      margin-top: 48px;
+      margin-bottom: 40px;
+      padding: 30px 24px 26px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+    }
+
+    .animation-badge-wrapper {
+      margin-bottom: 12px;
+    }
+
+    .animation-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .animation-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .animation-player-frame {
+      max-width: 760px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000000;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .video-aspect-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0D110F;
+    }
+
+    .video-aspect-box video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Story Footer */
+    .story-footer {
+      text-align: center;
+      padding: 32px 0 20px;
+      border-top: 1px solid var(--border-color);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .footer-links a {
+      color: var(--accent-brick);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
     }
 
     /* Lightbox Modal */
@@ -871,8 +939,9 @@
       
       <div class="story-meta-stats">
         <span class="meta-stat-pill">📖 15 Story Beats</span>
-        <span class="meta-stat-pill">🎨 Storybook Watercolors</span>
+        <span class="meta-stat-pill">🎨 15 Storybook Watercolors</span>
         <span class="meta-stat-pill">🎙️ Voice Narration (5m 54s)</span>
+        <span class="meta-stat-pill">🎬 Narrated Story Video</span>
         <span class="meta-stat-pill">👶 Ages 4–7</span>
       </div>
     </section>
@@ -1080,8 +1149,7 @@
       <p class="story-text">The night before the great city procession, the weavers lit sixteen bright candles. Everyone could see them busily cutting the empty air and sewing with threadless needles.</p>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_key_setting.jpg" alt="The palace chamber illuminated by candlelight as the weavers prepare for the procession." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_09.jpg" alt="The weavers working by the glow of candles, snipping the empty air with scissors." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>The weavers work late by the light of sixteen candles, snipping the empty air with shiny scissors.</figcaption>
@@ -1101,8 +1169,7 @@
       <p class="story-text">The Emperor removed his robes and prepared to try on his extraordinary new suit.</p>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_characters.jpg" alt="The weavers presenting the invisible clothes to the Emperor." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_10.jpg" alt="The weavers presenting the invisible clothes to the Emperor in his ruffled undergarments." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>The weavers present the invisible garments with dramatic flair as the Emperor prepares to try them on.</figcaption>
@@ -1121,8 +1188,7 @@
       </div>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_characters.jpg" alt="The Emperor posing proudly in front of a mirror in his ruffled undergarments." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_11.jpg" alt="The Emperor posing proudly in front of a mirror in his ruffled undergarments." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>The Emperor turns from side to side before the tall gilded mirror, admiring his nonexistent royal robes.</figcaption>
@@ -1138,8 +1204,7 @@
       <p class="story-text">They marched forward with their arms held high in the air, terrified that someone might think them foolish if they let go!</p>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_key_setting.jpg" alt="Courtiers holding up an invisible royal train with arms held high." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_12.jpg" alt="Courtiers marching carefully behind the Emperor, holding up an invisible royal train." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>Two proud courtiers walk carefully behind the Emperor, carefully lifting the invisible train in their hands.</figcaption>
@@ -1159,8 +1224,7 @@
       <p class="story-text">No one dared admit they could see nothing at all.</p>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_procession_street.jpg" alt="The sunlit capital street packed with crowds under flower-decked balconies." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_13.jpg" alt="The sunlit capital street packed with crowds under flower-decked balconies." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>The grand procession through the sunny cobblestone avenue lined with cheering spectators.</figcaption>
@@ -1180,8 +1244,7 @@
       <p class="story-text">The father gasped, and the words whispered like a wave from neighbor to neighbor: "The child says he has nothing on!"</p>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_characters.jpg" alt="A little boy pointing from his father's shoulders, laughing with honest joy." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_14.jpg" alt="A little boy pointing from his father's shoulders, laughing with honest joy." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>The innocent little boy giggles and points, speaking the honest truth for everyone to hear.</figcaption>
@@ -1200,8 +1263,7 @@
       <p class="story-text">The Emperor shivered, and his cheeks turned red as a ripe strawberry. He knew deep down that the people were right! But he squared his shoulders, lifted his golden crown, and marched even taller, learning that true dignity comes from honesty, not from fancy clothes.</p>
       <figure class="story-figure">
         <div class="figure-img-wrapper" onclick="openLightbox(this)">
-          <img src="ref_characters.jpg" alt="The blushing Emperor marching on with good humor as the happy townspeople applaud." loading="lazy" width="1376" height="768">
-          <span class="figure-pending-badge">✨ Part 2 Illustration</span>
+          <img src="emperors_new_clothes_15.jpg" alt="The blushing Emperor marching on with good humor as the happy townspeople applaud." loading="lazy" width="1376" height="768">
           <span class="figure-overlay-hint">🔍 Zoom</span>
         </div>
         <figcaption>The blushing Emperor marches on with dignity, learning that true character is better than vanity.</figcaption>
@@ -1227,6 +1289,43 @@
       </div>
     </section>
 
+    <!-- Narrated Story Video Player Card -->
+    <section class="story-animation-card">
+      <div class="animation-badge-wrapper">
+        <span class="story-badge">🎬 Watch &amp; Listen</span>
+      </div>
+      <h2 class="animation-title">The Emperor's New Clothes — Full Story Video</h2>
+      <p class="animation-subtitle">Watch all 15 watercolor storybook illustrations paired with spoken neural voice narration and synchronized subtitles.</p>
+
+      <div class="animation-player-frame">
+        <div class="video-aspect-box">
+          <video 
+            id="story-anim-video" 
+            controls 
+            playsinline 
+            poster="the_emperors_new_clothes_story_video_poster.jpg" 
+            preload="metadata"
+            aria-label="The Emperor's New Clothes - Full voice narration over illustrations"
+          >
+            <source src="the_emperors_new_clothes_story_video.mp4" type="video/mp4">
+            <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Footer -->
+    <footer class="story-footer">
+      <p>⭐ <strong>The Emperor's New Clothes</strong> • Illustrated Bedtime Story</p>
+      <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.85;">Adapted from Hans Christian Andersen's classic fairy tale for Shane &amp; Alex's Bedtime Stories.</p>
+      <div class="footer-links">
+        <a href="../#classics-stories">← Classic Fairy Tales Hub</a>
+        <span>•</span>
+        <a href="../">All Bedtime Stories</a>
+      </div>
+    </footer>
+
   </main>
 
   <!-- Lightbox Modal -->
@@ -1245,14 +1344,18 @@
 
     function applyTheme(theme) {
       htmlElement.setAttribute('data-theme', theme);
-      localStorage.setItem('bedtime-story-theme', theme);
+      try { localStorage.setItem('bedtime-story-theme', theme); } catch (e) {}
       themeButtons.forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-set-theme') === theme);
       });
     }
 
-    const savedTheme = localStorage.getItem('bedtime-story-theme') || 'light';
-    applyTheme(savedTheme);
+    try {
+      const savedTheme = localStorage.getItem('bedtime-story-theme') || 'light';
+      applyTheme(savedTheme);
+    } catch (e) {
+      applyTheme('light');
+    }
 
     themeButtons.forEach(btn => {
       btn.addEventListener('click', () => applyTheme(btn.getAttribute('data-set-theme')));
@@ -1343,8 +1446,9 @@
       }
     });
 
-    // Audio Player
+    // Audio Player & Video Player Coordination
     const audio = document.getElementById('story-audio');
+    const video = document.getElementById('story-anim-video');
     const btnPlayAudio = document.getElementById('btn-play-audio');
     const playIcon = document.getElementById('play-icon');
     const playLabel = document.getElementById('play-label');
@@ -1361,11 +1465,31 @@
       return m + ':' + (s < 10 ? '0' : '') + s;
     }
 
+    // Mutual Pause Coordination
+    if (audio) {
+      audio.addEventListener('play', () => {
+        if (video && !video.paused) {
+          video.pause();
+        }
+      });
+    }
+
+    if (video) {
+      video.addEventListener('play', () => {
+        if (audio && !audio.paused) {
+          audio.pause();
+          if (playIcon) playIcon.textContent = '▶';
+          if (playLabel) playLabel.textContent = 'Play Story';
+        }
+      });
+    }
+
     btnPlayAudio.addEventListener('click', () => {
       if (audio.paused) {
-        audio.play();
-        playIcon.textContent = '⏸';
-        playLabel.textContent = 'Pause';
+        audio.play().then(() => {
+          playIcon.textContent = '⏸';
+          playLabel.textContent = 'Pause';
+        }).catch(() => {});
       } else {
         audio.pause();
         playIcon.textContent = '▶';
