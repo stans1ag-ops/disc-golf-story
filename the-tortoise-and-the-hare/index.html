@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Read The Tortoise and the Hare classic fable with 15 storybook watercolor illustrations, voice narration, and video.">
+  <title>The Tortoise and the Hare — Shane &amp; Alex's Bedtime Stories</title>
+
+  <!-- Google Fonts with full system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      touch-action: manipulation;
+    }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #C85A17;
+      --accent-brick: #B83B26;
+      --accent-green: #2D6A4F;
+      --accent-gold: #E09F3E;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #A8420B;
+      --accent-brick: #9C2E1B;
+      --accent-green: #265942;
+      --accent-gold: #C0852A;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #121815;
+      --bg-card: #1A221E;
+      --bg-card-subtle: #232E29;
+      --bg-toolbar: rgba(18, 24, 21, 0.96);
+      --text-main: #EDE7DC;
+      --text-muted: #A3B1A8;
+      --text-accent: #F48C42;
+      --accent-brick: #E26D5C;
+      --accent-green: #74C69D;
+      --accent-gold: #F4A261;
+      --border-color: #2F3E37;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Reading Progress Bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-brick), var(--accent-gold));
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Sticky Top Toolbar */
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      background: var(--bg-toolbar);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 100;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .toolbar-left, .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-nav-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .btn-nav-home:hover {
+      border-color: var(--accent-brick);
+      color: var(--accent-brick);
+    }
+
+    /* Story dropdown */
+    .story-dropdown-wrapper {
+      position: relative;
+    }
+
+    .btn-story-dropdown {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    .btn-story-dropdown:hover {
+      color: var(--text-main);
+      border-color: var(--text-accent);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      box-shadow: var(--shadow-lg);
+      min-width: 280px;
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 200;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .story-dropdown-menu.show {
+      display: flex;
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      border-radius: 8px;
+      transition: background 0.15s ease;
+    }
+    .story-menu-link:hover {
+      background: var(--bg-card-subtle);
+    }
+    .story-menu-link.active {
+      background: var(--bg-card-subtle);
+      font-weight: 700;
+      color: var(--accent-brick);
+    }
+
+    /* Controls: Text Size & Theme Buttons */
+    .btn-ctrl {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.82rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .btn-ctrl:hover {
+      border-color: var(--accent-brick);
+      color: var(--accent-brick);
+    }
+
+    .theme-group {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .btn-theme {
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .btn-theme.active {
+      background: var(--accent-brick);
+      color: #FFFFFF;
+    }
+
+    /* Story Layout Container */
+    .story-container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+      flex-grow: 1;
+    }
+
+    /* Story Header */
+    .story-header {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    .story-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, rgba(184, 59, 38, 0.12), rgba(224, 159, 62, 0.15));
+      border: 1px solid rgba(184, 59, 38, 0.3);
+      color: var(--accent-brick);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 6vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 18px;
+      line-height: 1.6;
+    }
+
+    .story-meta-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .meta-stat-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 14px;
+    }
+
+    /* Audio Player Card */
+    .story-audio-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 22px;
+      padding: 20px 22px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .audio-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .audio-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .audio-icon-pulse {
+      font-size: 1.4rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--bg-card-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-brick);
+    }
+
+    .audio-info-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .audio-info-sub {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .btn-speed {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 12px;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .btn-speed:hover {
+      background: var(--bg-card-subtle);
+      color: var(--text-main);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-audio-main {
+      background: linear-gradient(135deg, var(--accent-brick), var(--text-accent));
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(184, 59, 38, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .btn-audio-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(184, 59, 38, 0.4);
+    }
+
+    .audio-progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .audio-scrubber {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-card-subtle);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .audio-scrubber-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-brick), var(--accent-gold));
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Scene Sections */
+    .scene-section {
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .scene-pill {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-brick);
+      background: var(--bg-card-subtle);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+
+    .story-text {
+      font-size: 1.08rem;
+      margin-bottom: 18px;
+      color: var(--text-main);
+    }
+
+    /* Chanted Dialogue Boxes */
+    .chant-box {
+      border-left: 4px solid var(--accent-brick);
+      background: var(--bg-card);
+      border-radius: 0 16px 16px 0;
+      padding: 14px 18px;
+      margin: 18px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chant-box.emperor {
+      border-left-color: #C85A17;
+      background: linear-gradient(135deg, rgba(200, 90, 23, 0.06), rgba(224, 159, 62, 0.08));
+    }
+    .chant-box.weavers {
+      border-left-color: #2D6A4F;
+      background: linear-gradient(135deg, rgba(45, 106, 79, 0.06), rgba(116, 198, 157, 0.08));
+    }
+    .chant-box.minister {
+      border-left-color: #2563EB;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(96, 165, 250, 0.08));
+    }
+    .chant-box.chamberlain {
+      border-left-color: #059669;
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.06), rgba(52, 211, 153, 0.08));
+    }
+    .chant-box.child {
+      border-left-color: #D97706;
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.08), rgba(251, 191, 36, 0.12));
+    }
+
+    .chant-speaker {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .chant-text {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    /* Story Illustrations */
+    .story-figure {
+      margin: 24px 0 32px;
+      border-radius: var(--border-radius-img);
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .story-figure:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      cursor: zoom-in;
+      overflow: hidden;
+      background: #F0EAE1;
+      aspect-ratio: 16 / 9;
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .figure-img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(20, 20, 20, 0.7);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    .figure-img-wrapper:hover .figure-overlay-hint {
+      opacity: 1;
+    }
+
+    figcaption {
+      padding: 12px 18px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      line-height: 1.5;
+    }
+
+    /* Interactive Conclusion / Discussion */
+    .interactive-conclusion {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 28px 24px;
+      margin: 50px 0;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+      background: var(--bg-card-subtle);
+      padding: 4px 14px;
+      border-radius: 14px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      color: var(--text-main);
+      margin-bottom: 20px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      text-align: left;
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 18px;
+      transition: all 0.2s ease;
+    }
+    .choice-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .choice-card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .choice-card-title {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .choice-card-desc {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: block;
+    }
+
+    /* Story Video Player Section */
+    .story-animation-card {
+      margin-top: 48px;
+      margin-bottom: 40px;
+      padding: 30px 24px 26px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+    }
+
+    .animation-badge-wrapper {
+      margin-bottom: 12px;
+    }
+
+    .animation-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .animation-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .animation-player-frame {
+      max-width: 760px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000000;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .video-aspect-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0D110F;
+    }
+
+    .video-aspect-box video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Story Footer */
+    .story-footer {
+      text-align: center;
+      padding: 32px 0 20px;
+      border-top: 1px solid var(--border-color);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .footer-links a {
+      color: var(--accent-brick);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 10, 10, 0.92);
+      backdrop-filter: blur(10px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: 95vw;
+      max-height: 90vh;
+      border-radius: 14px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      font-size: 2rem;
+      color: #FFFFFF;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .lightbox-close:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* Floating Scroll to Top Button */
+    .btn-scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 90;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+    .btn-scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .btn-scroll-top:hover {
+      background: var(--accent-brick);
+      color: #FFFFFF;
+      border-color: var(--accent-brick);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .top-toolbar {
+        padding: 8px 12px;
+      }
+      .btn-theme {
+        padding: 4px 6px;
+        font-size: 0.7rem;
+      }
+      .story-title {
+        font-size: 1.9rem;
+      }
+      .story-container {
+        padding: 24px 14px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Sticky Top Toolbar -->
+  <header class="top-toolbar">
+    <div class="toolbar-left">
+      <a href="../" class="btn-nav-home" title="Return to Story Hub">
+        <span>←</span> <span>Home</span>
+      </a>
+
+      <!-- Stories Dropdown -->
+      <div class="story-dropdown-wrapper">
+        <button class="btn-story-dropdown" id="story-menu-btn" aria-haspopup="true" aria-expanded="false">
+          <span>📚 Stories</span>
+          <span style="font-size: 0.7rem;">▼</span>
+        </button>
+        <div class="story-dropdown-menu" id="story-menu">
+          <a href="../the-three-little-pigs/" class="story-menu-link">
+            <span>🐷</span> <span>The Three Little Pigs</span>
+          </a>
+          <a href="../jack-and-the-beanstalk/" class="story-menu-link">
+            <span>🌱</span> <span>Jack and the Beanstalk</span>
+          </a>
+          <a href="../little-red-riding-hood/" class="story-menu-link">
+            <span>🧺</span> <span>Little Red Riding Hood</span>
+          </a>
+          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link">
+            <span>🥣</span> <span>Goldilocks &amp; The Three Bears</span>
+          </a>
+          <a href="../the-gingerbread-man/" class="story-menu-link">
+            <span>🍪</span> <span>The Gingerbread Man</span>
+          </a>
+          <a href="../the-princess-and-the-pea/" class="story-menu-link">
+            <span>👑</span> <span>The Princess and the Pea</span>
+          </a>
+          <a href="../the-three-billy-goats-gruff/" class="story-menu-link">
+            <span>🐐</span> <span>The Three Billy-Goats Gruff</span>
+          </a>
+          <a href="../the-little-red-hen/" class="story-menu-link">
+            <span>🐔</span> <span>The Little Red Hen</span>
+          </a>
+          <a href="../the-emperors-new-clothes/" class="story-menu-link">
+            <span>👑</span> <span>The Emperor's New Clothes</span>
+          </a>
+          <a href="./" class="story-menu-link active">
+            <span>🐢</span> <span>The Tortoise and the Hare</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar-right">
+      <button class="btn-ctrl" id="btn-font-dec" title="Decrease font size" aria-label="Decrease text size">A-</button>
+      <button class="btn-ctrl" id="btn-font-inc" title="Increase font size" aria-label="Increase text size">A+</button>
+      
+      <div class="theme-group" role="group" aria-label="Color Theme">
+        <button class="btn-theme active" data-set-theme="light">Day</button>
+        <button class="btn-theme" data-set-theme="sepia">Sepia</button>
+        <button class="btn-theme" data-set-theme="night">Night</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Story Layout -->
+  <main class="story-container">
+    
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="story-badge">Classic Fairy Tale</span>
+      <h1 class="story-title">The Tortoise and the Hare</h1>
+      <p class="story-subtitle">By Aesop • A cozy bedtime fable about patience, persistence, and why slow and steady wins the race.</p>
+      
+      <div class="story-meta-stats">
+        <span class="meta-stat-pill">📖 15 Story Beats</span>
+        <span class="meta-stat-pill">🎨 15 Storybook Watercolors</span>
+        <span class="meta-stat-pill">🎙️ Voice Narration (2m 19s)</span>
+        <span class="meta-stat-pill">🎬 Narrated Story Video</span>
+        <span class="meta-stat-pill">👶 Ages 4–7</span>
+      </div>
+    </section>
+
+    <!-- Voice Narration Audio Player Card -->
+    <section class="story-audio-card">
+      <div class="audio-header-row">
+        <div class="audio-info">
+          <div class="audio-icon-pulse">🎙️</div>
+          <div>
+            <div class="audio-info-title">Bedtime Voice Narration</div>
+            <div class="audio-info-sub">Gentle, soothing narration matching the story text</div>
+          </div>
+        </div>
+        <button class="btn-speed" id="btn-audio-speed" title="Toggle audio playback speed">1.0x</button>
+      </div>
+
+      <div class="audio-controls-row">
+        <button class="btn-audio-main" id="btn-play-audio">
+          <span id="play-icon">▶</span>
+          <span id="play-label">Play Story</span>
+        </button>
+
+        <div class="audio-progress-container">
+          <div class="audio-scrubber" id="audio-scrubber">
+            <div class="audio-scrubber-fill" id="audio-scrubber-fill"></div>
+          </div>
+          <div class="audio-time-row">
+            <span id="audio-current-time">0:00</span>
+            <span id="audio-total-time">2:19</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden HTML5 Audio Element -->
+      <audio id="story-audio" preload="metadata">
+        <source src="narration.mp3" type="audio/mpeg">
+        <track kind="subtitles" src="narration.vtt" srclang="en" label="English" default>
+      </audio>
+    </section>
+
+    <!-- SCENE 01 -->
+    <article class="scene-section" id="scene-01">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 1 • The Mocking Hare</span>
+      </div>
+      <p class="story-text">A Hare was making fun of the Tortoise one day for being so slow.</p>
+      <div class="chant-box">
+        <div class="chant-speaker">🐇 The Hare</div>
+        <div class="chant-text">“Do you ever get anywhere?” <em>(with a mocking laugh)</em></div>
+      </div>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_01.jpg" alt="The hare laughs mockingly at the slow tortoise on the meadow path." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Hare laughs at the slow Tortoise, asking if he ever gets anywhere.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 02 -->
+    <article class="scene-section" id="scene-02">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 2 • The Tortoise Answers</span>
+      </div>
+      <div class="chant-box">
+        <div class="chant-speaker">🐢 The Tortoise</div>
+        <div class="chant-text">“Yes, and I get there sooner than you think. I’ll run you a race and prove it.”</div>
+      </div>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_02.jpg" alt="Close-up of the tortoise looking up with quiet determination." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Tortoise calmly answers: he will run a race and prove it.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 03 -->
+    <article class="scene-section" id="scene-03">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 3 • The Fox Marks the Course</span>
+      </div>
+      <p class="story-text">The Hare was much amused at the idea of running a race with the Tortoise, but for the fun of the thing he agreed. So the Fox, who had consented to act as judge, marked the distance and started the runners off.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_03.jpg" alt="The fox judge marks the start line as both racers wait." loading="lazy" width="2048" height="1152">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Fox marks the course and gets the runners ready.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 04 -->
+    <article class="scene-section" id="scene-04">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 4 • The Race Begins</span>
+      </div>
+      <p class="story-text">The Fox waved his flag, and the race began! The Hare shot forward like a brown lightning bolt, while the Tortoise set one steady foot in front of the other.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_04.jpg" alt="The hare dashes off in a blur as the tortoise plods forward at the start." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The race begins: the Hare dashes off while the Tortoise plods steadily.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 05 -->
+    <article class="scene-section" id="scene-05">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 5 • Far Ahead</span>
+      </div>
+      <p class="story-text">In no time at all, the Hare was so far ahead that the Tortoise was only a speck on the path behind him. The Hare laughed to himself. This race was already won, he thought.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_05.jpg" alt="The hare looks back laughing with the tiny tortoise far behind on the path." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Far ahead, the Hare looks back and laughs.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 06 -->
+    <article class="scene-section" id="scene-06">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 6 • The Nap</span>
+      </div>
+      <p class="story-text">The Hare was soon far out of sight, and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare, he lay down beside the course to take a nap until the Tortoise should catch up.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_06.jpg" alt="The smug hare lies down in the grass under the oak tree to nap." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Sure of victory, the Hare lies down beside the course for a nap.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 07 -->
+    <article class="scene-section" id="scene-07">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 7 • Fast Asleep</span>
+      </div>
+      <p class="story-text">The Hare curled up in the cool grass and was soon fast asleep, dreaming of his easy victory.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_07.jpg" alt="Close-up of the hare sleeping peacefully under the oak, a butterfly nearby." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Hare sleeps very peacefully, dreaming of winning.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 08 -->
+    <article class="scene-section" id="scene-08">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 8 • The Quiet Passing</span>
+      </div>
+      <p class="story-text">The Tortoise meanwhile kept going slowly but steadily, and, after a time, passed the place where the Hare was sleeping.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_08.jpg" alt="The tortoise plods past the sleeping hare under the oak tree." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Slowly but steadily, the Tortoise passes the sleeping Hare.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 09 -->
+    <article class="scene-section" id="scene-09">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 9 • Steady On</span>
+      </div>
+      <p class="story-text">Step by step, never stopping, never hurrying, the Tortoise kept on toward the flower garland at the finish.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_09.jpg" alt="The tortoise plods on alone toward the flower garland finish." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Never stopping, the Tortoise keeps on toward the finish.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 10 -->
+    <article class="scene-section" id="scene-10">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 10 • The Hare Wakes</span>
+      </div>
+      <p class="story-text">But the Hare slept on very peacefully; and when at last he did wake up, he opened his eyes wide in shock. The Tortoise was gone!</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_10.jpg" alt="The hare jolts awake with wide eyes; the path beside him is empty." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Hare wakes with a shock: the Tortoise is gone!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 11 -->
+    <article class="scene-section" id="scene-11">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 11 • The Desperate Sprint</span>
+      </div>
+      <p class="story-text">The Hare now ran his swiftest, stretching out in a desperate sprint with dust flying behind him.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_11.jpg" alt="The hare sprints at full speed with dust flying behind him." loading="lazy" width="2048" height="1152">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Hare runs his swiftest in a desperate sprint.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 12 -->
+    <article class="scene-section" id="scene-12">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 12 • Near the Goal</span>
+      </div>
+      <p class="story-text">There, just ahead, the flower garland fluttered over the finish line, and the steady Tortoise was almost there.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_12.jpg" alt="The tortoise nears the flower garland finish as the fox watches." loading="lazy" width="2048" height="1152">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The steady Tortoise is almost at the flower garland finish.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 13 -->
+    <article class="scene-section" id="scene-13">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 13 • The Winner</span>
+      </div>
+      <p class="story-text">And then, to the great delight of the Fox, the Tortoise stepped across the finish line. He had won the race!</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_13.jpg" alt="The tortoise crosses the finish line as the fox waves the checkered flag." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>The Tortoise crosses the finish line and wins the race!</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 14 -->
+    <article class="scene-section" id="scene-14">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 14 • Too Late</span>
+      </div>
+      <p class="story-text">Moments later the Hare came panting up the path, too late. He could not overtake the Tortoise in time. He stared at the winner, and his long ears drooped.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_14.jpg" alt="The exhausted hare arrives too late as the tortoise waits at the finish." loading="lazy" width="2048" height="1152">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Too late! The Hare arrives after the Tortoise has won.</figcaption>
+      </figure>
+    </article>
+
+    <!-- SCENE 15 -->
+    <article class="scene-section" id="scene-15">
+      <div class="scene-header">
+        <span class="scene-pill">Scene 15 • Slow and Steady Wins the Race</span>
+      </div>
+      <p class="story-text">Slow and steady wins the race. And from that day on, the Hare never mocked the Tortoise again, and the two became the best of friends.</p>
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img src="tortoise_hare_15.jpg" alt="The tortoise and hare walk home together as friends at sunset." loading="lazy" width="1920" height="1280">
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Slow and steady wins the race, and the two become the best of friends.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Interactive Conclusion / Discussion -->
+    <section class="interactive-conclusion">
+      <span class="conclusion-badge">💭 Bedtime Chat</span>
+      <h2 class="conclusion-question">What did the Tortoise teach the Hare about winning?</h2>
+      
+      <div class="choice-grid">
+        <div class="choice-card">
+          <span class="choice-card-icon">🐢</span>
+          <strong class="choice-card-title">Keep Going</strong>
+          <span class="choice-card-desc">The Tortoise never stopped, even when the race looked impossible. Keeping at something a little every day can beat rushing and giving up!</span>
+        </div>
+        <div class="choice-card">
+          <span class="choice-card-icon">🐇</span>
+          <strong class="choice-card-title">Kindness Over Boasting</strong>
+          <span class="choice-card-desc">The Hare lost because he mocked the Tortoise and got lazy. Being kind and doing your best matters more than showing off.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Narrated Story Video Player Card -->
+    <section class="story-animation-card">
+      <div class="animation-badge-wrapper">
+        <span class="story-badge">🎬 Watch &amp; Listen</span>
+      </div>
+      <h2 class="animation-title">The Tortoise and the Hare — Full Story Video</h2>
+      <p class="animation-subtitle">Watch all 15 watercolor storybook illustrations paired with spoken neural voice narration and synchronized subtitles.</p>
+
+      <div class="animation-player-frame">
+        <div class="video-aspect-box">
+          <video 
+            id="story-anim-video" 
+            controls 
+            playsinline 
+            poster="tortoise_and_the_hare_story_video_poster.jpg" 
+            preload="metadata"
+            aria-label="The Tortoise and the Hare - Full voice narration over illustrations"
+          >
+            <source src="tortoise_and_the_hare_story_video.mp4" type="video/mp4">
+            <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Footer -->
+    <footer class="story-footer">
+      <p>⭐ <strong>The Tortoise and the Hare</strong> • Illustrated Bedtime Story</p>
+      <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.85;">Retold from Aesop's classic fable for Shane &amp; Alex's Bedtime Stories.</p>
+      <div class="footer-links">
+        <a href="../#classics-stories">← Classic Fairy Tales Hub</a>
+        <span>•</span>
+        <a href="../">All Bedtime Stories</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close illustration view">&times;</button>
+    <img src="" alt="Enlarged Illustration" class="lightbox-img" id="lightbox-img">
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="btn-scroll-top" id="btn-scroll-top" title="Back to top" aria-label="Scroll back to top">↑</button>
+
+  <script>
+    // Theme Manager
+    const themeButtons = document.querySelectorAll('[data-set-theme]');
+    const htmlElement = document.documentElement;
+
+    function applyTheme(theme) {
+      htmlElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('bedtime-story-theme', theme); } catch (e) {}
+      themeButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-set-theme') === theme);
+      });
+    }
+
+    try {
+      const savedTheme = localStorage.getItem('bedtime-story-theme') || 'light';
+      applyTheme(savedTheme);
+    } catch (e) {
+      applyTheme('light');
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => applyTheme(btn.getAttribute('data-set-theme')));
+    });
+
+    // Font Sizing
+    let currentFontSize = 19;
+    const btnFontInc = document.getElementById('btn-font-inc');
+    const btnFontDec = document.getElementById('btn-font-dec');
+
+    btnFontInc.addEventListener('click', () => {
+      if (currentFontSize < 25) {
+        currentFontSize += 1.5;
+        htmlElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      }
+    });
+
+    btnFontDec.addEventListener('click', () => {
+      if (currentFontSize > 15) {
+        currentFontSize -= 1.5;
+        htmlElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      }
+    });
+
+    // Story Menu Dropdown
+    const storyMenuBtn = document.getElementById('story-menu-btn');
+    const storyMenu = document.getElementById('story-menu');
+
+    storyMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      storyMenu.classList.toggle('show');
+      storyMenuBtn.setAttribute('aria-expanded', storyMenu.classList.contains('show'));
+    });
+
+    document.addEventListener('click', () => {
+      storyMenu.classList.remove('show');
+      storyMenuBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    // Reading Progress & Scroll to Top
+    const progressBar = document.getElementById('progress-bar');
+    const btnScrollTop = document.getElementById('btn-scroll-top');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+
+      if (scrollTop > 400) {
+        btnScrollTop.classList.add('visible');
+      } else {
+        btnScrollTop.classList.remove('visible');
+      }
+    });
+
+    btnScrollTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Lightbox
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      if (img) {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close')) {
+        lightboxModal.classList.remove('active');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        lightboxModal.classList.remove('active');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Audio Player & Video Player Coordination
+    const audio = document.getElementById('story-audio');
+    const video = document.getElementById('story-anim-video');
+    const btnPlayAudio = document.getElementById('btn-play-audio');
+    const playIcon = document.getElementById('play-icon');
+    const playLabel = document.getElementById('play-label');
+    const scrubber = document.getElementById('audio-scrubber');
+    const scrubberFill = document.getElementById('audio-scrubber-fill');
+    const currentTimeDisplay = document.getElementById('audio-current-time');
+    const totalTimeDisplay = document.getElementById('audio-total-time');
+    const btnSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    // Mutual Pause Coordination
+    if (audio) {
+      audio.addEventListener('play', () => {
+        if (video && !video.paused) {
+          video.pause();
+        }
+      });
+    }
+
+    if (video) {
+      video.addEventListener('play', () => {
+        if (audio && !audio.paused) {
+          audio.pause();
+          if (playIcon) playIcon.textContent = '▶';
+          if (playLabel) playLabel.textContent = 'Play Story';
+        }
+      });
+    }
+
+    btnPlayAudio.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().then(() => {
+          playIcon.textContent = '⏸';
+          playLabel.textContent = 'Pause';
+        }).catch(() => {});
+      } else {
+        audio.pause();
+        playIcon.textContent = '▶';
+        playLabel.textContent = 'Play Story';
+      }
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const cur = audio.currentTime;
+      const dur = audio.duration || 353.89;
+      const pct = (cur / dur) * 100;
+      scrubberFill.style.width = pct + '%';
+      currentTimeDisplay.textContent = formatTime(cur);
+      totalTimeDisplay.textContent = formatTime(dur);
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      totalTimeDisplay.textContent = formatTime(audio.duration);
+    });
+
+    audio.addEventListener('ended', () => {
+      playIcon.textContent = '▶';
+      playLabel.textContent = 'Play Again';
+      scrubberFill.style.width = '0%';
+    });
+
+    scrubber.addEventListener('click', (e) => {
+      const rect = scrubber.getBoundingClientRect();
+      const clickPos = (e.clientX - rect.left) / rect.width;
+      const dur = audio.duration || 353.89;
+      audio.currentTime = clickPos * dur;
+    });
+
+    const speeds = [1.0, 1.25, 0.9];
+    let speedIndex = 0;
+    btnSpeed.addEventListener('click', () => {
+      speedIndex = (speedIndex + 1) % speeds.length;
+      const spd = speeds[speedIndex];
+      audio.playbackRate = spd;
+      btnSpeed.textContent = spd.toFixed(1) + 'x';
+    });
+  </script>
+</body>
+</html>

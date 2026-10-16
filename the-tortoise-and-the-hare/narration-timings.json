@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 138.514,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "tortoise_hare_01.jpg",
+      "start": 0.0,
+      "cue": "The Mocking Hare"
+    },
+    {
+      "image": "tortoise_hare_02.jpg",
+      "start": 11.049,
+      "cue": "The Tortoise Answers"
+    },
+    {
+      "image": "tortoise_hare_03.jpg",
+      "start": 18.103,
+      "cue": "The Fox Marks the Course"
+    },
+    {
+      "image": "tortoise_hare_04.jpg",
+      "start": 31.433,
+      "cue": "The Race Begins"
+    },
+    {
+      "image": "tortoise_hare_05.jpg",
+      "start": 41.883,
+      "cue": "Far Ahead"
+    },
+    {
+      "image": "tortoise_hare_06.jpg",
+      "start": 53.512,
+      "cue": "The Nap"
+    },
+    {
+      "image": "tortoise_hare_07.jpg",
+      "start": 66.874,
+      "cue": "Fast Asleep"
+    },
+    {
+      "image": "tortoise_hare_08.jpg",
+      "start": 73.072,
+      "cue": "The Quiet Passing"
+    },
+    {
+      "image": "tortoise_hare_09.jpg",
+      "start": 80.876,
+      "cue": "Steady On"
+    },
+    {
+      "image": "tortoise_hare_10.jpg",
+      "start": 88.087,
+      "cue": "The Hare Wakes"
+    },
+    {
+      "image": "tortoise_hare_11.jpg",
+      "start": 97.166,
+      "cue": "The Desperate Sprint"
+    },
+    {
+      "image": "tortoise_hare_12.jpg",
+      "start": 103.831,
+      "cue": "Near the Goal"
+    },
+    {
+      "image": "tortoise_hare_13.jpg",
+      "start": 111.06,
+      "cue": "The Winner"
+    },
+    {
+      "image": "tortoise_hare_14.jpg",
+      "start": 118.451,
+      "cue": "Too Late"
+    },
+    {
+      "image": "tortoise_hare_15.jpg",
+      "start": 128.66,
+      "cue": "Slow and Steady Wins the Race"
+    }
+  ]
+}

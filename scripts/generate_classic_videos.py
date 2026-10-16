@@ -124,7 +124,16 @@ STORIES = [
         "poster_output": "the-emperors-new-clothes/the_emperors_new_clothes_story_video_poster.jpg",
         "poster_source": "emperors_new_clothes_01.jpg",
         "timeline": "the-emperors-new-clothes/narration-timings.json",
-    }
+    },
+    {
+        "id": "the-tortoise-and-the-hare",
+        "dir": "the-tortoise-and-the-hare",
+        "audio": "the-tortoise-and-the-hare/narration.mp3",
+        "video_output": "the-tortoise-and-the-hare/tortoise_and_the_hare_story_video.mp4",
+        "poster_output": "the-tortoise-and-the-hare/tortoise_and_the_hare_story_video_poster.jpg",
+        "poster_source": "tortoise_hare_01.jpg",
+        "timeline": "the-tortoise-and-the-hare/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):
