@@ -134,6 +134,15 @@ STORIES = [
         "poster_source": "tortoise_hare_01.jpg",
         "timeline": "the-tortoise-and-the-hare/narration-timings.json",
     },
+    {
+        "id": "the-elves-and-the-shoemaker",
+        "dir": "the-elves-and-the-shoemaker",
+        "audio": "the-elves-and-the-shoemaker/narration.mp3",
+        "video_output": "the-elves-and-the-shoemaker/elves_and_the_shoemaker_story_video.mp4",
+        "poster_output": "the-elves-and-the-shoemaker/elves_and_the_shoemaker_story_video_poster.jpg",
+        "poster_source": "elves_shoemaker_01.jpg",
+        "timeline": "the-elves-and-the-shoemaker/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):

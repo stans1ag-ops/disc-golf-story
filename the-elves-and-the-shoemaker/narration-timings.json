@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 164.84,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "elves_shoemaker_01.jpg",
+      "start": 0.0,
+      "cue": "The Last Piece of Leather"
+    },
+    {
+      "image": "elves_shoemaker_02.jpg",
+      "start": 10.865,
+      "cue": "Cutting by Candlelight"
+    },
+    {
+      "image": "elves_shoemaker_03.jpg",
+      "start": 19.547,
+      "cue": "A Clear Conscience"
+    },
+    {
+      "image": "elves_shoemaker_04.jpg",
+      "start": 25.893,
+      "cue": "Morning Wonder"
+    },
+    {
+      "image": "elves_shoemaker_05.jpg",
+      "start": 34.876,
+      "cue": "A Masterpiece"
+    },
+    {
+      "image": "elves_shoemaker_06.jpg",
+      "start": 44.915,
+      "cue": "The Generous Buyer"
+    },
+    {
+      "image": "elves_shoemaker_07.jpg",
+      "start": 56.122,
+      "cue": "Leather for Two Pairs"
+    },
+    {
+      "image": "elves_shoemaker_08.jpg",
+      "start": 61.788,
+      "cue": "Two Pairs by Morning"
+    },
+    {
+      "image": "elves_shoemaker_09.jpg",
+      "start": 70.512,
+      "cue": "Honest Independence"
+    },
+    {
+      "image": "elves_shoemaker_10.jpg",
+      "start": 81.723,
+      "cue": "The Christmas Eve Plan"
+    },
+    {
+      "image": "elves_shoemaker_11.jpg",
+      "start": 92.384,
+      "cue": "Hiding and Watching"
+    },
+    {
+      "image": "elves_shoemaker_12.jpg",
+      "start": 100.62,
+      "cue": "The Midnight Workers"
+    },
+    {
+      "image": "elves_shoemaker_13.jpg",
+      "start": 116.577,
+      "cue": "A Grateful Plan"
+    },
+    {
+      "image": "elves_shoemaker_14.jpg",
+      "start": 132.154,
+      "cue": "Gifts on the Table"
+    },
+    {
+      "image": "elves_shoemaker_15.jpg",
+      "start": 141.764,
+      "cue": "Dance of Joy"
+    }
+  ]
+}
