@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 181.166,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "chicken_little_01.jpg",
+      "start": 0.0,
+      "cue": "Morning in the Rickyard"
+    },
+    {
+      "image": "chicken_little_02.jpg",
+      "start": 7.675,
+      "cue": "Whack!"
+    },
+    {
+      "image": "chicken_little_03.jpg",
+      "start": 18.469,
+      "cue": "The Sky's A-Falling!"
+    },
+    {
+      "image": "chicken_little_04.jpg",
+      "start": 26.389,
+      "cue": "Cocky-locky Joins"
+    },
+    {
+      "image": "chicken_little_05.jpg",
+      "start": 43.104,
+      "cue": "Ducky-daddles Joins"
+    },
+    {
+      "image": "chicken_little_06.jpg",
+      "start": 60.037,
+      "cue": "Goosey-poosey Joins"
+    },
+    {
+      "image": "chicken_little_07.jpg",
+      "start": 77.107,
+      "cue": "Turkey-lurkey Joins"
+    },
+    {
+      "image": "chicken_little_08.jpg",
+      "start": 89.773,
+      "cue": "Foxy-woxy Appears"
+    },
+    {
+      "image": "chicken_little_09.jpg",
+      "start": 105.322,
+      "cue": "The Dark Hole"
+    },
+    {
+      "image": "chicken_little_10.jpg",
+      "start": 119.636,
+      "cue": "Into the Burrow"
+    },
+    {
+      "image": "chicken_little_11.jpg",
+      "start": 129.386,
+      "cue": "Hrumph! Hrumph! Hrumph!"
+    },
+    {
+      "image": "chicken_little_12.jpg",
+      "start": 141.975,
+      "cue": "Cock-a-doodle-doo!"
+    },
+    {
+      "image": "chicken_little_13.jpg",
+      "start": 153.398,
+      "cue": "Henny-penny Flees"
+    },
+    {
+      "image": "chicken_little_14.jpg",
+      "start": 168.621,
+      "cue": "Safe at Last"
+    },
+    {
+      "image": "chicken_little_15.jpg",
+      "start": 173.026,
+      "cue": "Only an Acorn"
+    }
+  ]
+}

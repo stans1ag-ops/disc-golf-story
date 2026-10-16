@@ -143,6 +143,15 @@ STORIES = [
         "poster_source": "elves_shoemaker_01.jpg",
         "timeline": "the-elves-and-the-shoemaker/narration-timings.json",
     },
+    {
+        "id": "chicken-little",
+        "dir": "chicken-little",
+        "audio": "chicken-little/narration.mp3",
+        "video_output": "chicken-little/chicken_little_story_video.mp4",
+        "poster_output": "chicken-little/chicken_little_story_video_poster.jpg",
+        "poster_source": "chicken_little_07.jpg",
+        "timeline": "chicken-little/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):
