@@ -152,6 +152,15 @@ STORIES = [
         "poster_source": "chicken_little_07.jpg",
         "timeline": "chicken-little/narration-timings.json",
     },
+    {
+        "id": "rumpelstiltskin",
+        "dir": "rumpelstiltskin",
+        "audio": "rumpelstiltskin/narration.mp3",
+        "video_output": "rumpelstiltskin/rumpelstiltskin_story_video.mp4",
+        "poster_output": "rumpelstiltskin/rumpelstiltskin_story_video_poster.jpg",
+        "poster_source": "rumpelstiltskin_06.jpg",
+        "timeline": "rumpelstiltskin/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):

@@ -1,0 +1,102 @@
+{
+  "audio": "narration.mp3",
+  "duration": 338.503,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "rumpelstiltskin_01.jpg",
+      "start": 0.0,
+      "cue": "The Miller's Daughter"
+    },
+    {
+      "image": "rumpelstiltskin_02.jpg",
+      "start": 7.139,
+      "cue": "The Miller's Boast"
+    },
+    {
+      "image": "rumpelstiltskin_03.jpg",
+      "start": 27.917,
+      "cue": "The Straw Chamber"
+    },
+    {
+      "image": "rumpelstiltskin_04.jpg",
+      "start": 47.745,
+      "cue": "Tears in the Night"
+    },
+    {
+      "image": "rumpelstiltskin_05.jpg",
+      "start": 60.799,
+      "cue": "The Little Man"
+    },
+    {
+      "image": "rumpelstiltskin_06.jpg",
+      "start": 79.827,
+      "cue": "Whirr, Whirr, Whirr"
+    },
+    {
+      "image": "rumpelstiltskin_07.jpg",
+      "start": 100.345,
+      "cue": "The Greedy King"
+    },
+    {
+      "image": "rumpelstiltskin_08.jpg",
+      "start": 119.447,
+      "cue": "The Ring"
+    },
+    {
+      "image": "rumpelstiltskin_09.jpg",
+      "start": 140.505,
+      "cue": "A Terrible Promise"
+    },
+    {
+      "image": "rumpelstiltskin_10.jpg",
+      "start": 157.072,
+      "cue": "The Third Night"
+    },
+    {
+      "image": "rumpelstiltskin_11.jpg",
+      "start": 182.651,
+      "cue": "The Queen"
+    },
+    {
+      "image": "rumpelstiltskin_12.jpg",
+      "start": 190.949,
+      "cue": "The Little Man Returns"
+    },
+    {
+      "image": "rumpelstiltskin_13.jpg",
+      "start": 214.446,
+      "cue": "Three Days"
+    },
+    {
+      "image": "rumpelstiltskin_14.jpg",
+      "start": 226.414,
+      "cue": "The Name Guessing"
+    },
+    {
+      "image": "rumpelstiltskin_15.jpg",
+      "start": 249.981,
+      "cue": "Not My Name"
+    },
+    {
+      "image": "rumpelstiltskin_16.jpg",
+      "start": 264.015,
+      "cue": "The Fire in the Forest"
+    },
+    {
+      "image": "rumpelstiltskin_17.jpg",
+      "start": 295.809,
+      "cue": "Rumpelstiltskin!"
+    },
+    {
+      "image": "rumpelstiltskin_18.jpg",
+      "start": 330.55,
+      "cue": "The Child Is Safe"
+    }
+  ]
+}
