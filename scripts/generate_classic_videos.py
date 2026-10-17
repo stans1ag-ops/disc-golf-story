@@ -161,6 +161,15 @@ STORIES = [
         "poster_source": "rumpelstiltskin_06.jpg",
         "timeline": "rumpelstiltskin/narration-timings.json",
     },
+    {
+        "id": "hansel-and-gretel",
+        "dir": "hansel-and-gretel",
+        "audio": "hansel-and-gretel/narration.mp3",
+        "video_output": "hansel-and-gretel/hansel_and_gretel_story_video.mp4",
+        "poster_output": "hansel-and-gretel/hansel_gretel_story_video_poster.jpg",
+        "poster_source": "hansel_gretel_11.jpg",
+        "timeline": "hansel-and-gretel/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):

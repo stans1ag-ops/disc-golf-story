@@ -1,0 +1,112 @@
+{
+  "audio": "narration.mp3",
+  "duration": 659.458,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "hansel_gretel_01.jpg",
+      "start": 0.0,
+      "cue": "The Woodcutter's Cottage"
+    },
+    {
+      "image": "hansel_gretel_02.jpg",
+      "start": 19.101,
+      "cue": "The Stepmother's Plan"
+    },
+    {
+      "image": "hansel_gretel_03.jpg",
+      "start": 58.122,
+      "cue": "The White Pebbles"
+    },
+    {
+      "image": "hansel_gretel_04.jpg",
+      "start": 89.083,
+      "cue": "Into the Forest"
+    },
+    {
+      "image": "hansel_gretel_05.jpg",
+      "start": 120.547,
+      "cue": "The False Axe"
+    },
+    {
+      "image": "hansel_gretel_06.jpg",
+      "start": 155.909,
+      "cue": "Home by Moonlight"
+    },
+    {
+      "image": "hansel_gretel_07.jpg",
+      "start": 188.337,
+      "cue": "The Locked Door"
+    },
+    {
+      "image": "hansel_gretel_08.jpg",
+      "start": 219.513,
+      "cue": "Crumbs of Bread"
+    },
+    {
+      "image": "hansel_gretel_09.jpg",
+      "start": 258.162,
+      "cue": "Lost in the Forest"
+    },
+    {
+      "image": "hansel_gretel_10.jpg",
+      "start": 290.023,
+      "cue": "The Snow-White Bird"
+    },
+    {
+      "image": "hansel_gretel_11.jpg",
+      "start": 311.137,
+      "cue": "The Gingerbread House"
+    },
+    {
+      "image": "hansel_gretel_12.jpg",
+      "start": 343.77,
+      "cue": "The Kind Old Woman"
+    },
+    {
+      "image": "hansel_gretel_13.jpg",
+      "start": 379.974,
+      "cue": "The Witch Revealed"
+    },
+    {
+      "image": "hansel_gretel_14.jpg",
+      "start": 423.432,
+      "cue": "The Bone Trick"
+    },
+    {
+      "image": "hansel_gretel_15.jpg",
+      "start": 464.546,
+      "cue": "Tomorrow I Will Kill Him"
+    },
+    {
+      "image": "hansel_gretel_16.jpg",
+      "start": 490.753,
+      "cue": "The Witch in the Oven"
+    },
+    {
+      "image": "hansel_gretel_17.jpg",
+      "start": 537.992,
+      "cue": "Hansel, We Are Saved!"
+    },
+    {
+      "image": "hansel_gretel_18.jpg",
+      "start": 575.005,
+      "cue": "The White Duck"
+    },
+    {
+      "image": "hansel_gretel_19.jpg",
+      "start": 617.327,
+      "cue": "Home Again"
+    },
+    {
+      "image": "hansel_gretel_20.jpg",
+      "start": 640.809,
+      "cue": "Perfect Happiness"
+    }
+  ]
+}
