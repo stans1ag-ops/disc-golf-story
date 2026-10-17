@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 144.136,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "cried_wolf_01.jpg",
+      "start": 0.0,
+      "cue": "The Bored Shepherd Boy"
+    },
+    {
+      "image": "cried_wolf_02.jpg",
+      "start": 9.466,
+      "cue": "A Lonely Day"
+    },
+    {
+      "image": "cried_wolf_03.jpg",
+      "start": 19.118,
+      "cue": "The Mischievous Idea"
+    },
+    {
+      "image": "cried_wolf_04.jpg",
+      "start": 25.701,
+      "cue": "The Villagers Rush Up"
+    },
+    {
+      "image": "cried_wolf_05.jpg",
+      "start": 34.659,
+      "cue": "The Boy Laughs"
+    },
+    {
+      "image": "cried_wolf_06.jpg",
+      "start": 45.482,
+      "cue": "A Stern Warning"
+    },
+    {
+      "image": "cried_wolf_07.jpg",
+      "start": 53.57,
+      "cue": "He Cries Wolf Again"
+    },
+    {
+      "image": "cried_wolf_08.jpg",
+      "start": 64.778,
+      "cue": "Grumbling Down Again"
+    },
+    {
+      "image": "cried_wolf_09.jpg",
+      "start": 79.146,
+      "cue": "The Last Warning"
+    },
+    {
+      "image": "cried_wolf_10.jpg",
+      "start": 87.458,
+      "cue": "A Real Wolf"
+    },
+    {
+      "image": "cried_wolf_11.jpg",
+      "start": 93.28,
+      "cue": "Wolf! Wolf!"
+    },
+    {
+      "image": "cried_wolf_12.jpg",
+      "start": 99.795,
+      "cue": "Nobody Comes"
+    },
+    {
+      "image": "cried_wolf_13.jpg",
+      "start": 109.027,
+      "cue": "Sunset Worry"
+    },
+    {
+      "image": "cried_wolf_14.jpg",
+      "start": 117.826,
+      "cue": "Found Weeping"
+    },
+    {
+      "image": "cried_wolf_15.jpg",
+      "start": 126.744,
+      "cue": "Nobody Believes a Liar"
+    }
+  ]
+}

@@ -170,6 +170,15 @@ STORIES = [
         "poster_source": "hansel_gretel_11.jpg",
         "timeline": "hansel-and-gretel/narration-timings.json",
     },
+    {
+        "id": "boy-who-cried-wolf",
+        "dir": "boy-who-cried-wolf",
+        "audio": "boy-who-cried-wolf/narration.mp3",
+        "video_output": "boy-who-cried-wolf/boy_who_cried_wolf_story_video.mp4",
+        "poster_output": "boy-who-cried-wolf/cried_wolf_story_video_poster.jpg",
+        "poster_source": "cried_wolf_05.jpg",
+        "timeline": "boy-who-cried-wolf/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):
