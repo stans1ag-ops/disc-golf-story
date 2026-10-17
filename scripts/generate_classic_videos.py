@@ -179,6 +179,15 @@ STORIES = [
         "poster_source": "cried_wolf_05.jpg",
         "timeline": "boy-who-cried-wolf/narration-timings.json",
     },
+    {
+        "id": "steadfast-tin-soldier",
+        "dir": "steadfast-tin-soldier",
+        "audio": "steadfast-tin-soldier/narration.mp3",
+        "video_output": "steadfast-tin-soldier/tin_soldier_story_video.mp4",
+        "poster_output": "steadfast-tin-soldier/tin_soldier_story_video_poster.jpg",
+        "poster_source": "tin_soldier_17.jpg",
+        "timeline": "steadfast-tin-soldier/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):

@@ -1,0 +1,112 @@
+{
+  "audio": "narration.mp3",
+  "duration": 493.721,
+  "timing_method": "Measured PCM sample positions from Kokoro neural narration",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "tin_soldier_01.jpg",
+      "start": 0.0,
+      "cue": "A Birthday Gift"
+    },
+    {
+      "image": "tin_soldier_02.jpg",
+      "start": 30.057,
+      "cue": "The One-Legged Soldier"
+    },
+    {
+      "image": "tin_soldier_03.jpg",
+      "start": 49.547,
+      "cue": "The Paper Dancer"
+    },
+    {
+      "image": "tin_soldier_04.jpg",
+      "start": 101.601,
+      "cue": "The Toys' Midnight Ball"
+    },
+    {
+      "image": "tin_soldier_05.jpg",
+      "start": 140.058,
+      "cue": "The Bogey's Warning"
+    },
+    {
+      "image": "tin_soldier_06.jpg",
+      "start": 161.47,
+      "cue": "Set on the Window Ledge"
+    },
+    {
+      "image": "tin_soldier_07.jpg",
+      "start": 176.988,
+      "cue": "The Fall"
+    },
+    {
+      "image": "tin_soldier_08.jpg",
+      "start": 204.914,
+      "cue": "Two Young Rapscallions"
+    },
+    {
+      "image": "tin_soldier_09.jpg",
+      "start": 221.595,
+      "cue": "The Paper Boat Voyage"
+    },
+    {
+      "image": "tin_soldier_10.jpg",
+      "start": 253.216,
+      "cue": "Under the Dark Plank"
+    },
+    {
+      "image": "tin_soldier_11.jpg",
+      "start": 274.856,
+      "cue": "The Water Rat"
+    },
+    {
+      "image": "tin_soldier_12.jpg",
+      "start": 299.524,
+      "cue": "The Waterfall"
+    },
+    {
+      "image": "tin_soldier_13.jpg",
+      "start": 336.694,
+      "cue": "Swallowed by the Fish"
+    },
+    {
+      "image": "tin_soldier_14.jpg",
+      "start": 346.175,
+      "cue": "Inside the Fish"
+    },
+    {
+      "image": "tin_soldier_15.jpg",
+      "start": 360.931,
+      "cue": "Daylight Again"
+    },
+    {
+      "image": "tin_soldier_16.jpg",
+      "start": 376.919,
+      "cue": "The Cook's Discovery"
+    },
+    {
+      "image": "tin_soldier_17.jpg",
+      "start": 398.136,
+      "cue": "Back Home"
+    },
+    {
+      "image": "tin_soldier_18.jpg",
+      "start": 431.29,
+      "cue": "Thrown into the Stove"
+    },
+    {
+      "image": "tin_soldier_19.jpg",
+      "start": 448.456,
+      "cue": "The Dancer Joins Him"
+    },
+    {
+      "image": "tin_soldier_20.jpg",
+      "start": 474.888,
+      "cue": "A Tin Heart"
+    }
+  ]
+}
