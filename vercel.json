@@ -8,6 +8,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/the-houghton-lake-patrol/",
+      "destination": "/the-fish-that-pulled-back/",
+      "permanent": true
+    },
+    {
+      "source": "/the-houghton-lake-patrol",
+      "destination": "/the-fish-that-pulled-back/",
+      "permanent": true
+    },
+    {
       "source": "/the-houghton-lake-patrol/:path*",
       "destination": "/the-fish-that-pulled-back/",
       "permanent": true
