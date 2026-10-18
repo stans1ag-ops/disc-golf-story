@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "the-fish-that-pulled-back",
+  "title": "The Fish That Pulled Back",
+  "collection": "shane",
+  "order": 1,
+  "description": "A quiet bobber, a sudden tug, and one very big splash.",
+  "subtitle": "Shane and Dad go fishing on Houghton Lake. Something big finds the line.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "the-fish-that-pulled-back/pontoon_boat_shane.jpg",
+    "alt": "Alex and Shane cruising on the pontoon boat on sunny Houghton Lake."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Out on the lake",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane hurried down the dock with his yellow fishing rod. His orange life jacket was buckled tight. “Do you think we’ll see a fish today?” he asked."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Let’s find out,” said Dad. He helped Shane onto the pontoon and started the motor. The boat hummed across Houghton Lake. Near the shore, tall reeds swayed in the breeze."
+        },
+        {
+          "type": "image",
+          "src": "the-fish-that-pulled-back/pontoon_boat_shane.jpg",
+          "alt": "Alex steering the pontoon boat while Shane sits proudly in his orange life vest holding a fishing rod on sunny Houghton Lake.",
+          "caption": "Shane and Dad head out on Houghton Lake.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane pointed to a quiet patch of water. “There. That looks like a good hiding place.” Dad cut the motor. The lake grew still. Shane leaned close and whispered their plan: “Watch the bobber.”"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">Watch the bobber.</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Wait for it",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Dad helped Shane cast. The red and white bobber landed with a tiny plop. They watched it float between the reeds."
+        },
+        {
+          "type": "paragraph",
+          "html": "A leaf drifted past. “Is that a fish?” Shane asked. “Just a leaf,” said Dad. A turtle poked its nose above the water. “How about now?” “That’s our neighbor,” Dad whispered."
+        },
+        {
+          "type": "image",
+          "src": "the-fish-that-pulled-back/pontoon_bobber_bite.jpg",
+          "alt": "Shane holding his yellow fishing rod on the pontoon boat, excitedly pointing as the red and white bobber goes bloop under the ripples.",
+          "caption": "The bobber disappears beneath the water.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Then the bobber dipped. Once. Twice. Down it went! The rod bent in Shane’s hands. Dad put his hands beside Shane’s on the handle. “Ready?” he asked. Shane nodded. Together they reeled."
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">Watch the bobber. Here we go!</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The big splash",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Something green burst out of the lake. Splash! Water sprinkled Shane’s cheeks. A bass shook its tail and dropped back beside the boat."
+        },
+        {
+          "type": "paragraph",
+          "html": "“It pulled back!” Shane laughed. “It sure did,” said Dad. They brought the fish close. Dad held it gently while Shane looked at its bright scales and wide mouth. “Hello, fish,” Shane said."
+        },
+        {
+          "type": "image",
+          "src": "the-fish-that-pulled-back/pontoon_big_catch.jpg",
+          "alt": "Shane and Alex laughing in pure delight on the pontoon boat as a big friendly green bass fish leaps out of the water with sparkling drops.",
+          "caption": "A green bass leaps out of the lake.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "They let the bass slip back into the lake. For a moment it stayed near the boat. Then its tail flicked, and it vanished under the reeds."
+        },
+        {
+          "type": "paragraph",
+          "html": "On the ride home, Shane kept one hand on Dad’s arm and one on the yellow rod. “Can we come back?” he asked. “Of course,” said Dad. “Maybe we’ll see another one.”"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">There it goes!</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ Next Bedtime Adventure</span>\n      <h2 class=\"conclusion-question\">Where should Shane and Dad Alex head next?</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/the-daring-disc-dash/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🥏</span>\n          <strong class=\"choice-card-title\">The Disc in the Chains</strong>\n          <span class=\"choice-card-desc\">Three throws, one orange disc, and the sound Shane loves best.</span>\n          <span class=\"choice-action-btn\">Read Disc Golf Story ➔</span>\n        </a>\n\n        <a href=\"/the-bouncing-bicycle-brigade/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚲</span>\n          <strong class=\"choice-card-title\">Shane and the Big Hill</strong>\n          <span class=\"choice-card-desc\">A bell, a puddle, and a hill that takes one more push.</span>\n          <span class=\"choice-action-btn\">Read Biking Story ➔</span>\n        </a>\n\n        <a href=\"/the-super-snowy-sled/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🛷</span>\n          <strong class=\"choice-card-title\">The Red Sled Ride</strong>\n          <span class=\"choice-card-desc\">A climb, three bumps, and a warm cup of cocoa.</span>\n          <span class=\"choice-action-btn\">Read Sledding Story ➔</span>\n        </a>\n\n        <a href=\"/the-wild-uno-uproar/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🃏</span>\n          <strong class=\"choice-card-title\">One Card Left</strong>\n          <span class=\"choice-card-desc\">A bedtime card game turns on Shane’s last card.</span>\n          <span class=\"choice-action-btn\">Read Uno Story ➔</span>\n        </a>\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Bedtime • a giggly toot-tastrophe</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "the-fish-that-pulled-back/narration.mp3",
+    "video": {
+      "src": "the-fish-that-pulled-back/pontoon_storybook.mp4",
+      "poster": "the-fish-that-pulled-back/pontoon_storybook_poster.jpg"
+    },
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "583d6a12efca4a4b092ac0ac1e0d3e006e474a16ac6b345e53dbaafc382bb1df",
+    "narrationInputHash": "d334d9026c728501f86aaead917b9667eba51b1b4ff1e728b89d2c87f97c8c8d",
+    "videoNarrationHash": "d334d9026c728501f86aaead917b9667eba51b1b4ff1e728b89d2c87f97c8c8d",
+    "videoVisualHash": "3f147e9cf9b9f1d7c9e64e46801781d25c0852c765d7a6b28d7101a862bd73c9"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-24T21:14:24Z"
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "the-super-snowy-sled",
+  "title": "The Red Sled Ride",
+  "collection": "shane",
+  "order": 4,
+  "description": "A climb, three bumps, and a warm cup of cocoa.",
+  "subtitle": "Shane and Dad climb the snowy hill for one wonderful ride.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "the-super-snowy-sled/sledding_fast_swoosh.jpg",
+    "alt": "Alex and Shane flying down the snowy hill together on their bright red sled."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Up the hill",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Snow covered the path, the trees, and the little bench at the bottom of the hill. Shane wore his red coat and pom-pom hat. Dad pulled their red sled by its rope."
+        },
+        {
+          "type": "paragraph",
+          "html": "“This hill looks bigger in snow,” Shane said. They climbed together. Halfway up, Shane stopped to catch his breath. Dad stopped too. “We have plenty of time,” he said."
+        },
+        {
+          "type": "image",
+          "src": "the-super-snowy-sled/sledding_hill_climb.jpg",
+          "alt": "Alex and 5-year-old Shane bundled up in colorful warm puffy snowsuits pulling their bright red sled up a snowy hill with pine trees.",
+          "caption": "Shane and Dad pull the red sled up the hill.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "At the top, Shane brushed snow from the sled. Dad sat behind him. Shane tucked his mittens around the sides. “Ready?” Dad asked. Shane gave a serious nod."
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">Ready, set... whoosh!</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Three bumps",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Dad gave the sled a push. Down they went."
+        },
+        {
+          "type": "paragraph",
+          "html": "The first bump made Shane bounce. “One!” The second made Dad’s hat slip over one eye. “Two!” On the third bump, the sled lifted for a tiny moment, then landed in soft snow. “Three!” they shouted together."
+        },
+        {
+          "type": "image",
+          "src": "the-super-snowy-sled/sledding_fast_swoosh.jpg",
+          "alt": "Alex and Shane flying down the snowy hill together on the red sled, laughing with snow spraying high into the air.",
+          "caption": "The red sled flies down the snowy hill.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "The sled slid into a drift and stopped. Snow flew over their boots. Shane lay back and looked at the white sky. Then he laughed so hard Dad started laughing too."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Again?” Shane asked. Dad looked up at the long hill. “After we warm up.”"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">One, two, three!</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Warm hands",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They made snow angels beside the sled. Shane’s angel had small wings. Dad’s was so big that one wing touched the path."
+        },
+        {
+          "type": "paragraph",
+          "html": "On the bench, Dad opened a thermos of cocoa. Shane held his cup with both mittens. A marshmallow floated on top. After one sip, a white smudge sat above his lip."
+        },
+        {
+          "type": "image",
+          "src": "the-super-snowy-sled/sledding_hot_cocoa.jpg",
+          "alt": "Shane laughing with a funny white marshmallow foam mustache sitting wrapped in a warm blanket beside Alex who holds a thermos of hot cocoa.",
+          "caption": "Cocoa tastes even better after a snowy ride.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad pointed to his own mouth. Shane wiped the wrong side of his face. Dad laughed and helped him find it."
+        },
+        {
+          "type": "paragraph",
+          "html": "The hill was quiet now. They watched the last sledders head home. “We can ride again tomorrow,” Dad said. Shane leaned against him and took one more warm sip."
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">Tomorrow.</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ Next Bedtime Adventure</span>\n      <h2 class=\"conclusion-question\">Ready for another bedtime adventure with Shane and Alex?</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/the-wild-uno-uproar/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🃏</span>\n          <strong class=\"choice-card-title\">One Card Left</strong>\n          <span class=\"choice-card-desc\">A bedtime card game turns on Shane’s last card.</span>\n          <span class=\"choice-action-btn\">Read Uno Story ➔</span>\n        </a>\n\n        <a href=\"/the-fish-that-pulled-back/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚤</span>\n          <strong class=\"choice-card-title\">The Fish That Pulled Back</strong>\n          <span class=\"choice-card-desc\">A quiet bobber, a sudden tug, and one very big splash.</span>\n          <span class=\"choice-action-btn\">Read Pontoon Story ➔</span>\n        </a>\n\n        <a href=\"/the-daring-disc-dash/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🥏</span>\n          <strong class=\"choice-card-title\">The Disc in the Chains</strong>\n          <span class=\"choice-card-desc\">Three throws, one orange disc, and the sound Shane loves best.</span>\n          <span class=\"choice-action-btn\">Read Disc Golf Story ➔</span>\n        </a>\n\n        <a href=\"/the-bouncing-bicycle-brigade/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚲</span>\n          <strong class=\"choice-card-title\">Shane and the Big Hill</strong>\n          <span class=\"choice-card-desc\">A bell, a puddle, and a hill that takes one more push.</span>\n          <span class=\"choice-action-btn\">Read Biking Story ➔</span>\n        </a>\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Bedtime • a giggly toot-tastrophe</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "the-super-snowy-sled/narration.mp3",
+    "video": {
+      "src": "the-super-snowy-sled/sledding_3d.mp4",
+      "poster": "the-super-snowy-sled/sledding_fast_swoosh.jpg"
+    },
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "4c45b08c84c3b91953dad7da57b8406e762d4db8106ebdf2ae4a078d2b67434a",
+    "narrationInputHash": "b26722a1bc9bac885794241e09e9dde9d4acd868798e8aabc89a88b12dc28c5b",
+    "videoNarrationHash": "b26722a1bc9bac885794241e09e9dde9d4acd868798e8aabc89a88b12dc28c5b",
+    "videoVisualHash": "1eb3fa9e416321776b9c79445c468be7af4de5ef3a14843d93c197df986c8a98"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-24T19:12:38Z"
+}

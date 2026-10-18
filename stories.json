@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "title": "Our Storybook",
+  "collections": [
+    {
+      "id": "shane",
+      "title": "Shane’s Adventures",
+      "description": "Fishing, forest mysteries, and family adventures.",
+      "icon": "☀"
+    },
+    {
+      "id": "tyson",
+      "title": "Tyson’s Adventures",
+      "description": "Big discoveries for a growing reader.",
+      "icon": "⚡"
+    },
+    {
+      "id": "classics",
+      "title": "Classic Tales",
+      "description": "Fairy tales and fables, beautifully illustrated.",
+      "icon": "✦"
+    }
+  ],
+  "stories": [
+    "the-great-pontoon-pike-escape",
+    "the-fish-that-pulled-back",
+    "the-daring-disc-dash",
+    "the-bouncing-bicycle-brigade",
+    "the-super-snowy-sled",
+    "the-wild-uno-uproar",
+    "shane-and-the-magic-disc",
+    "mystery-of-the-back-nine",
+    "the-legend-of-big-whalter",
+    "the-bedtime-toot-tastrophe",
+    "tyson/the-big-splash",
+    "tyson/pikachus-lost-ball",
+    "tyson/the-sneaky-flag-play",
+    "tyson/marios-missing-star",
+    "tyson/the-bike-bell-clue",
+    "tyson/the-fish-that-said-plop",
+    "tyson/the-tooth-that-took-a-bounce",
+    "the-three-little-pigs",
+    "jack-and-the-beanstalk",
+    "little-red-riding-hood",
+    "goldilocks-and-the-three-bears",
+    "the-gingerbread-man",
+    "the-princess-and-the-pea",
+    "the-three-billy-goats-gruff",
+    "the-little-red-hen",
+    "the-emperors-new-clothes",
+    "the-tortoise-and-the-hare",
+    "the-elves-and-the-shoemaker",
+    "steadfast-tin-soldier",
+    "boy-who-cried-wolf",
+    "hansel-and-gretel",
+    "rumpelstiltskin",
+    "chicken-little"
+  ]
+}

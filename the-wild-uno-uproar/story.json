@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "the-wild-uno-uproar",
+  "title": "One Card Left",
+  "collection": "shane",
+  "order": 5,
+  "description": "A bedtime card game turns on Shane’s last card.",
+  "subtitle": "Shane has a secret card up his sleeve in a bedtime game with Dad.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "the-wild-uno-uproar/uno_drawfour_play.jpg",
+    "alt": "Shane laughing hysterically as he slaps down a Wild Draw 4 card in dinosaur pajamas."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The bedtime game",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane sat on the rug in his pajamas. Dad shuffled the Uno cards beside the fire. “One game before bed,” Dad said."
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane looked at his hand. Red, blue, yellow, green—and one card he tucked behind the others. Dad laid down a blue card. Shane matched it. Dad played another. Back and forth the colors went."
+        },
+        {
+          "type": "image",
+          "src": "the-wild-uno-uproar/uno_cards_hand.jpg",
+          "alt": "Shane in striped pajamas holds Uno cards while Dad smiles across the rug.",
+          "caption": "Shane keeps one card hidden behind the others.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane kept peeking at his hidden card. Dad noticed. “Do you have a plan?” he asked. “Maybe,” said Shane. He tried not to smile."
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">What’s Shane’s plan?</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "One card left",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane played a red card. Now he held just one. “UNO!” he called."
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad sat up. “Only one? Then I’d better think.” He chose a green card and set it on the pile. Shane looked at the green card. Then he looked at his own. Dad leaned forward."
+        },
+        {
+          "type": "image",
+          "src": "the-wild-uno-uproar/uno_drawfour_play.jpg",
+          "alt": "Shane laughs as he plays a Wild Draw Four card while Dad reacts with surprise.",
+          "caption": "Shane reveals his surprise card.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "“Can you play?” Dad asked. Shane waited one long second. “Yes,” he said. He turned over his last card: Wild Draw Four!"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">One card left!</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Good game",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Dad stared at the card. “You saved that the whole time?” Shane nodded. Dad drew four cards, counting them aloud. “One, two, three, four.”"
+        },
+        {
+          "type": "paragraph",
+          "html": "“I won!” Shane said. Dad gave him a high five. “You did. And you were very sneaky.”"
+        },
+        {
+          "type": "paragraph",
+          "html": "They put the cards back in the box. The fire crackled. Shane curled up beside Dad for a moment before bed."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Same time tomorrow?” Shane asked. “Deal,” said Dad. “But tomorrow I’m watching that secret card.”"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Shane</span>\n        <p class=\"chant-text\">Good game, Dad.</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ Read Another Story</span>\n      <h2 class=\"conclusion-question\">Which adventure should Shane and Alex go on tomorrow?</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/the-fish-that-pulled-back/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚤</span>\n          <strong class=\"choice-card-title\">The Fish That Pulled Back</strong>\n          <span class=\"choice-card-desc\">A quiet bobber, a sudden tug, and one very big splash.</span>\n          <span class=\"choice-action-btn\">Read Pontoon Story ➔</span>\n        </a>\n\n        <a href=\"/the-daring-disc-dash/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🥏</span>\n          <strong class=\"choice-card-title\">The Disc in the Chains</strong>\n          <span class=\"choice-card-desc\">Three throws, one orange disc, and the sound Shane loves best.</span>\n          <span class=\"choice-action-btn\">Read Disc Golf Story ➔</span>\n        </a>\n\n        <a href=\"/the-bouncing-bicycle-brigade/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚲</span>\n          <strong class=\"choice-card-title\">Shane and the Big Hill</strong>\n          <span class=\"choice-card-desc\">A bell, a puddle, and a hill that takes one more push.</span>\n          <span class=\"choice-action-btn\">Read Biking Story ➔</span>\n        </a>\n\n        <a href=\"/the-super-snowy-sled/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🛷</span>\n          <strong class=\"choice-card-title\">The Red Sled Ride</strong>\n          <span class=\"choice-card-desc\">A climb, three bumps, and a warm cup of cocoa.</span>\n          <span class=\"choice-action-btn\">Read Sledding Story ➔</span>\n        </a>\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Bedtime • a giggly toot-tastrophe</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "the-wild-uno-uproar/narration.mp3",
+    "video": {
+      "src": "the-wild-uno-uproar/uno_storybook.mp4",
+      "poster": "the-wild-uno-uproar/uno_storybook_poster.jpg"
+    },
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "e22fdcc199bfbe4a1bd2f8f9e0d71a12912905b1722878a441ffecda56c70d5a",
+    "narrationInputHash": "ecc26aae42dcfd3e4dc2d7a87a26e7408ce3eb57ee853e2e761c58d291e90452",
+    "videoNarrationHash": "ecc26aae42dcfd3e4dc2d7a87a26e7408ce3eb57ee853e2e761c58d291e90452",
+    "videoVisualHash": "e15befa6ea61f9425ef2d96e2298b42857d5f1fcfbb3de90708ff564d7d5ec52"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-24T19:12:38Z"
+}

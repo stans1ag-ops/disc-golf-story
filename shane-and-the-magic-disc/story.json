@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "shane-and-the-magic-disc",
+  "title": "Shane and the Magic Disc",
+  "collection": "shane",
+  "order": 6,
+  "description": "The Roadrunner leads Shane and Dad to a secret in the ferns.",
+  "subtitle": "An orange disc flies into the ferns. Who brings it back?",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "shane-and-the-magic-disc/Children_discover_magical_forest_20260914073926.jpeg",
+    "alt": "Alex and Shane with woodland creatures around a glowing disc golf basket in a sunlit forest."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The sunny trail",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane carried his orange Roadrunner disc into Whispering Woods. Dad carried a pink one. Sunlight made bright spots on the path."
+        },
+        {
+          "type": "paragraph",
+          "html": "“First one to hear the chains?” Dad asked. Shane nodded and hurried to the tee. He liked the sound a disc made when it landed in the basket: ching!"
+        },
+        {
+          "type": "image",
+          "src": "shane-and-the-magic-disc/Father_and_son_holding_discs_20260914073926.jpeg",
+          "alt": "Alex and his son Shane holding their pink and orange disc golf discs at the sunlit Whispering Woods trail entrance.",
+          "caption": "Shane and Dad start their walk through the woods.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The first throw",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane stood sideways and threw. His disc sailed over the grass and landed in the middle of the fairway. Dad gave him a high five. Dad’s pink disc landed near the basket."
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane made a short toss. Ching! The chains rattled. “That’s my favorite sound,” he said. They picked up their discs and went deeper into the woods."
+        },
+        {
+          "type": "image",
+          "src": "shane-and-the-magic-disc/Boy_throwing_orange_disc_20260914073926.jpeg",
+          "alt": "Shane whipping his arm forward as the bright orange Roadrunner disc curves around a flowering bush.",
+          "caption": "The orange Roadrunner takes its first flight.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Where did it go?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At the next tee, the path narrowed between tall trees. Shane threw hard. A gust of wind caught the Roadrunner and tipped it into the ferns."
+        },
+        {
+          "type": "paragraph",
+          "html": "Plip. Then silence."
+        },
+        {
+          "type": "image",
+          "src": "shane-and-the-magic-disc/Children_walking_through_giant_ferns_20260914073926.jpeg",
+          "alt": "Alex and Shane walking through giant ferns as a glowing golden trail of sparkles leads them deeper into the forest.",
+          "caption": "Shane and Dad search the tall ferns.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane searched under one leaf, then another. No orange disc. Dad took his hand. “We’ll look together.” A faint ting came from farther in. They followed the sound past a mossy tree."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "A little help",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In a clearing stood a basket wrapped in purple flowers. Beside it were a white squirrel, a small hedgehog, and a spotted baby deer. Shane’s Roadrunner lay between them."
+        },
+        {
+          "type": "paragraph",
+          "html": "“There it is!” Shane whispered. The squirrel lifted one edge. The hedgehog pushed from behind. The deer gave the disc a final nudge with its nose. Up it popped—and down into the basket. Ching!"
+        },
+        {
+          "type": "image",
+          "src": "shane-and-the-magic-disc/Children_discover_magical_forest_20260914073926.jpeg",
+          "alt": "Shane, Alex, a white squirrel, a hedgehog with a dandelion crown, and a baby deer gathered around the flower-wrapped glowing disc golf basket.",
+          "caption": "Shane finds his disc with three woodland friends.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Thank you",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane laughed. “You made it ring!” He picked up his disc and thanked each animal. The squirrel chirped. The deer dipped its head."
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad tapped his pink disc against the orange one. The animals slipped back into the ferns, leaving the basket quiet again. Shane and Dad walked on. Every few steps, Shane looked over his shoulder, hoping to hear one more little ting."
+        },
+        {
+          "type": "image",
+          "src": "shane-and-the-magic-disc/Celebration_with_bear_hug_20260914073926.jpeg",
+          "alt": "Alex scooping Shane into a joyous celebratory bear hug surrounded by cheering forest animals and swirling golden sparkles.",
+          "caption": "Shane and Dad celebrate with a hug.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Shane and Alex's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/mystery-of-the-back-nine/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🔍</span>\n          <strong class=\"choice-card-title\">The Mystery of the Back Nine</strong>\n          <span class=\"choice-card-desc\">A big feather, muddy tracks, and a family hiding in the leaves.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n\n        <a href=\"/the-legend-of-big-whalter/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <strong class=\"choice-card-title\">Big Walter</strong>\n          <span class=\"choice-card-desc\">Shane meets a very big catfish and helps it go home.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Bedtime • a giggly toot-tastrophe</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "shane-and-the-magic-disc/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "4f102ee60f07da525a9fa0017c62d67e5ccbcf778c8e02a80724e24f8948897f",
+    "narrationInputHash": "889b6166e3b36fbbca687602972a5d9cad6eb3e5b8d52e88b7aba31616523d6f"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-15T18:33:45Z"
+}

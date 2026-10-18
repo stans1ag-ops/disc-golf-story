@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/marios-missing-star",
+  "title": "Tyson and Mario’s Missing Star",
+  "collection": "tyson",
+  "order": 3,
+  "description": "A missing star, a thorn, and a happy Yoshi.",
+  "subtitle": "Down the green pipe to find Mario’s missing star.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/marios-missing-star/green-pipe.webp",
+    "alt": "Mario popping out of a green pipe in the backyard."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The green pipe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson and his mom, Theresa, found a green pipe. A red cap popped out. “Mario!” said Tyson. Mario climbed up. “I need help. My star is gone!” “We can look,” said Mom."
+        },
+        {
+          "type": "image",
+          "src": "tyson/marios-missing-star/green-pipe.webp",
+          "alt": "Tyson and Mom discovering a big green pipe in the backyard with Mario popping out waving hello.",
+          "caption": "A red cap pops out of the green pipe — it’s Mario!",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Whoosh!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They went down the pipe. Whoosh! They landed on soft grass. There were big blocks in the sky. “Where did you see it last?” asked Tyson. “By that hill,” said Mario."
+        },
+        {
+          "type": "paragraph",
+          "html": "They went up the hill. Something yellow shone by a rock. “My star!” said Mario. But it was a banana peel. “Good thing we did not step on it,” said Mom. They put it in a bin."
+        },
+        {
+          "type": "image",
+          "src": "tyson/marios-missing-star/down-the-pipe.webp",
+          "alt": "Tyson, Mom, and Mario tumbling playfully down a swirling green pipe tunnel toward a blocky video-game world.",
+          "caption": "Whoosh! Down into Mario’s blocky world.",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Whoosh!</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Yoshi’s thorn",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then Tyson heard a sound. Sniff. Sniff. Yoshi sat by a bush. He had a tear on his cheek. “What is wrong?” asked Tyson. Yoshi pointed to his foot. A small thorn was stuck in it."
+        },
+        {
+          "type": "paragraph",
+          "html": "Mom took out the thorn with care. Tyson held Yoshi’s hand. “All done,” said Mom."
+        },
+        {
+          "type": "image",
+          "src": "tyson/marios-missing-star/yoshi-thorn.webp",
+          "alt": "Mom gently removing a thorn from Yoshi's foot while Tyson holds Yoshi's hand comfortingly.",
+          "caption": "Mom helps Yoshi while Tyson holds his hand.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The star",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Yoshi stood up. He gave a happy hop. Ding! A bright star fell from the bush. “There it is!” said Mario. Yoshi had been sitting right next to it. Tyson picked up the star. It felt warm in his hands. He gave it to Mario."
+        },
+        {
+          "type": "paragraph",
+          "html": "“You found my star!” said Mario. “And we found someone who needed help,” said Mom. Mario led them back to the pipe. Yoshi waved. Whoosh! They were home. Tyson looked at his shoes. One had a big green spot. “Grass from Mario’s world!” he said. Mom smiled. “Let’s keep that part off the couch.”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/marios-missing-star/the-star.webp",
+          "alt": "Tyson catching a glowing yellow star and handing it to Mario while Yoshi hops happily and Mom smiles.",
+          "caption": "Tyson hands the warm star to Mario.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/tyson/the-bike-bell-clue/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚲</span>\n          <strong class=\"choice-card-title\">Tyson and the Bike Bell Clue</strong>\n          <span class=\"choice-card-desc\">Ding, ding! The car finder is on the case.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/the-fish-that-said-plop/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💧</span>\n          <strong class=\"choice-card-title\">Tyson and the Fish That Said Plop</strong>\n          <span class=\"choice-card-desc\">A prankster Pokémon and a leaf-boat race.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/marios-missing-star/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "3abedcde79a7867cd5fecd706f66c6ea824fd09c4b0d6d03c45981e0c524a34d",
+    "narrationInputHash": "c5f9dc78ec75a0b7ac6bce9d9e48102d0d628d7d10fcadd0235bd1beab08c159"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T01:38:21Z"
+}

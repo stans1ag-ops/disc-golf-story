@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "id": "the-three-little-pigs",
+  "title": "The Three Little Pigs",
+  "collection": "classics",
+  "order": 0,
+  "description": "\"Little pig, little pig, let me in!\" — \"No! No! No! Not by the hairs on my chinny chin chin!\"",
+  "subtitle": "The classic tale of straw, sticks, bricks, and a big bad wolf who huffs and puffs!",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/childrens-stories/the-three-little-pigs",
+  "cover": {
+    "src": "the-three-little-pigs/three_little_pigs_supper.jpg",
+    "alt": "The three little pigs smiling and eating supper safely together inside the sturdy brick house."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Seeking Their Fortunes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once upon a time there was an old mother pig who had three little pigs and not enough food to feed them. So when they were old enough, she sent them out into the world to seek their fortunes."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_farewell.jpg",
+          "alt": "The old mother pig waving farewell to her three young pigs as they start down the country lane.",
+          "caption": "The old mother pig sends her three little pigs out into the world to seek their fortunes.",
+          "width": 399,
+          "height": 517
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Houses of Straw, Sticks & Bricks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The first little pig was very lazy. He didn&#x27;t want to work at all and he built his house out of straw."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_straw_building.jpg",
+          "alt": "The cheerful first little pig in green dungarees building a flimsy cottage of golden straw bundles in a bright meadow.",
+          "caption": "The lazy first little pig quickly builds a flimsy house out of bundles of golden straw.",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "The second little pig worked a little bit harder but he was somewhat lazy too and he built his house out of sticks. Then, they sang and danced and played together the rest of the day."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_stick_building.jpg",
+          "alt": "The second little pig in blue overalls gathering sticks and twigs at the edge of the autumn woods to build his house.",
+          "caption": "The second little pig gathers fallen branches and twigs to make a house of sticks.",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_dancing_playing.jpg",
+          "alt": "The first two little pigs singing, dancing, playing flute and skipping merrily down the road, while the third pig works on his brick house.",
+          "caption": "Finished early, the first two little pigs sing and dance all day without a single worry.",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "The third little pig worked hard all day and built his house with bricks. It was a sturdy house complete with a fine fireplace and chimney. It looked like it could withstand the strongest winds."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_brick_building.jpg",
+          "alt": "The third little pig standing atop a ladder laying sturdy red bricks with mortar and trowel.",
+          "caption": "The hardworking third little pig carefully builds a sturdy house of bricks.",
+          "width": 370,
+          "height": 481
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The Wolf at the Straw House",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The next day, a wolf happened to pass by the lane where the three little pigs lived; and he saw the straw house, and he smelled the pig inside. He thought the pig would make a mighty fine meal and his mouth began to water."
+        },
+        {
+          "type": "paragraph",
+          "html": "So he knocked on the door and said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf knocks</div>\n        <div class=\"chant-text\">\n          \"Little pig! Little pig!<br>\n          Let me in! Let me in!\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "But the little pig saw the wolf&#x27;s big paws through the keyhole, so he answered back:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐷 The First Little Pig answers</div>\n        <div class=\"chant-text\">\n          \"No! No! No!<br>\n          Not by the hairs on my chinny chin chin!\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Then the wolf showed his teeth and said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💨 The Wolf growls</div>\n        <div class=\"chant-text\">\n          \"Then I'll huff<br>\n          and I'll puff<br>\n          and I'll blow your house down.\"\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_straw.jpg",
+          "alt": "The big bad wolf huffing and blowing hard, sending straw flying everywhere as the first pig escapes.",
+          "caption": "With a mighty huff and puff, the wolf blows down the little straw house.",
+          "width": 377,
+          "height": 480
+        },
+        {
+          "type": "paragraph",
+          "html": "So he huffed and he puffed and he blew the house down! The wolf opened his jaws very wide and bit down as hard as he could, but the first little pig escaped and ran away to hide with the second little pig."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The Wolf at the Stick House",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The wolf continued down the lane and he passed by the second house made of sticks; and he saw the house, and he smelled the pigs inside, and his mouth began to water as he thought about the fine dinner they would make."
+        },
+        {
+          "type": "paragraph",
+          "html": "So he knocked on the door and said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf knocks</div>\n        <div class=\"chant-text\">\n          \"Little pigs! Little pigs!<br>\n          Let me in! Let me in!\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "But the little pigs saw the wolf&#x27;s pointy ears through the keyhole, so they answered back:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐷 Both Little Pigs answer</div>\n        <div class=\"chant-text\">\n          \"No! No! No!<br>\n          Not by the hairs on our chinny chin chin!\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "So the wolf showed his teeth and said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💨 The Wolf growls</div>\n        <div class=\"chant-text\">\n          \"Then I'll huff<br>\n          and I'll puff<br>\n          and I'll blow your house down!\"\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_stick_house.jpg",
+          "alt": "The wolf huffing and blowing the stick house into flying twigs as the two little pigs run away on their hind trotters.",
+          "caption": "The wolf blows the stick house to pieces, but both little pigs scramble away just in time!",
+          "width": 896,
+          "height": 1152
+        },
+        {
+          "type": "paragraph",
+          "html": "So he huffed and he puffed and he blew the house down! The wolf was greedy and he tried to catch both pigs at once, but he was too greedy and got neither! His big jaws clamped down on nothing but air and the two little pigs scrambled away as fast as their little hooves would carry them."
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "The Chase & The Sturdy Brick House",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The wolf chased them down the lane and he almost caught them. But they made it to the brick house and slammed the door closed before the wolf could catch them. The three little pigs they were very frightened, they knew the wolf wanted to eat them. And that was very, very true. The wolf hadn&#x27;t eaten all day and he had worked up a large appetite chasing the pigs around and now he could smell all three of them inside and he knew that the three little pigs would make a lovely feast."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_chase_to_brick.jpg",
+          "alt": "The big bad wolf fiercely chasing the two running little pigs down the lane toward the brick cottage.",
+          "caption": "The wolf fiercely chases the two little pigs down the country lane right up to the brick house!",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "So the wolf knocked on the door and said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf knocks</div>\n        <div class=\"chant-text\">\n          \"Little pigs! Little pigs!<br>\n          Let me in! Let me in!\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "But the little pigs saw the wolf&#x27;s narrow eyes through the keyhole, so they answered back:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐷 The Three Little Pigs answer together</div>\n        <div class=\"chant-text\">\n          \"No! No! No!<br>\n          Not by the hairs on our chinny chin chin!\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "So the wolf showed his teeth and said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💨 The Wolf roars</div>\n        <div class=\"chant-text\">\n          \"Then I'll huff<br>\n          and I'll puff<br>\n          and I'll blow your house down.\"\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Well! he huffed and he puffed. He puffed and he huffed. And he huffed, huffed, and he puffed, puffed; but he could not blow the house down. At last, he was so out of breath that he couldn&#x27;t huff and he couldn&#x27;t puff anymore. So he stopped to rest and thought a bit."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_wolf_brick.jpg",
+          "alt": "The exhausted big bad wolf slumping outside the solid brick wall, tongue hanging out and out of breath.",
+          "caption": "Completely out of breath, the exhausted wolf slumps outside the unmoved brick house.",
+          "width": 896,
+          "height": 1152
+        }
+      ]
+    },
+    {
+      "id": "scene-6",
+      "title": "Down the Chimney",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But this was too much. The wolf danced about with rage and swore he would come down the chimney and eat up the little pig for his supper. But while he was climbing on to the roof the little pig made up a blazing fire and put on a big pot full of water to boil. Then, just as the wolf was coming down the chimney, the little piggy pulled off the lid, and plop! in fell the wolf into the scalding water."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_wolf_on_roof.jpg",
+          "alt": "The sneaky big bad wolf prowling across the red tile roof toward the brick chimney under the evening sky.",
+          "caption": "Dusk falls as the enraged wolf creeps onto the roof, plotting to slide down the chimney.",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_wolf_in_pot.jpg",
+          "alt": "The clever pig pulling off the pot lid by the roaring fireplace as the wolf falls down into the pot.",
+          "caption": "Just as the wolf drops down the chimney, the clever pig uncovers the boiling pot!",
+          "width": 390,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "id": "scene-7",
+      "title": "Safe at Last & Supper",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So the little piggy put on the cover again, boiled the wolf up, and the three little pigs ate him for supper."
+        },
+        {
+          "type": "image",
+          "src": "the-three-little-pigs/three_little_pigs_supper.jpg",
+          "alt": "The three happy little pigs smiling around a wooden kitchen table by the warm hearth fire, eating supper safely together.",
+          "caption": "Safe at last inside the brick house, the three little pigs celebrate happily over a cozy supper!",
+          "width": 896,
+          "height": 1152
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💡 Bedtime Question for Shane</span>\n      <h2 class=\"conclusion-question\">\"Why did the third little pig's house stay standing when the wolf huffed and puffed?\"</h2>\n      <p>\n        Taking your time, working hard, and building things strong pays off every single time.\n      </p>\n\n      <div class=\"choice-grid\">\n        <a href=\"/jack-and-the-beanstalk/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌱</span>\n          <strong class=\"choice-card-title\">Jack and the Beanstalk</strong>\n          <span class=\"choice-card-desc\">Five magic beans, a towering beanstalk, and a roaring giant in the clouds!</span>\n          <span class=\"choice-action-btn\">Read Next Fairy Tale ➔</span>\n        </a>\n\n        <a href=\"/the-great-pontoon-pike-escape/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <strong class=\"choice-card-title\">The Great Pontoon Pike Escape</strong>\n          <span class=\"choice-card-desc\">Shane, Tyson, Mom &amp; Dad wrestle a 24-inch pike on Houghton Lake!</span>\n          <span class=\"choice-action-btn\">Read Next Adventure ➔</span>\n        </a>\n\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Mom tries to read a quiet bedtime story, but giggly toots steal the show!</span>\n          <span class=\"choice-action-btn\">Read Next Adventure ➔</span>\n        </a>\n      </div>\n\n      <a href=\"/\">\n        <span>🏠 Back to Shane's Storybook Library</span>\n        <span>➔</span>\n      </a>",
+  "media": {
+    "audio": "the-three-little-pigs/narration.mp3",
+    "video": {
+      "src": "the-three-little-pigs/three_little_pigs_story_video.mp4",
+      "poster": "the-three-little-pigs/three_little_pigs_story_video_poster.jpg"
+    },
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "8d3710ed195922253cf40fd52fd2466c58d89892a3bd7dfb7825894e2a8006bd",
+    "narrationInputHash": "81c602c536bc666ecd11cc1d00858757ab2ef36e8c564c5a11a2d26e819bd16e",
+    "videoNarrationHash": "81c602c536bc666ecd11cc1d00858757ab2ef36e8c564c5a11a2d26e819bd16e",
+    "videoVisualHash": "e344066ab5ef0aa95ece7427f0ab09511f02a06b211e07f6736cb2c2be430472"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-05T23:46:02Z"
+}

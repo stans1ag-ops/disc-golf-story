@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/pikachus-lost-ball",
+  "title": "Tyson and Pikachu’s Lost Ball",
+  "collection": "tyson",
+  "order": 1,
+  "description": "A stuck ball, a pool noodle, and a sock hat.",
+  "subtitle": "A red ball in a tree, a pool noodle, and a sock hat.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/pikachus-lost-ball/tail-in-bush.webp",
+    "alt": "Tyson peeking at Pikachu's tail in a park bush."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "A tail in the bush",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson and his mom, Theresa, were at the park. A yellow tail poked out of a bush. “Pika?” Tyson bent down. It was Pikachu!"
+        },
+        {
+          "type": "paragraph",
+          "html": "“Hi!” said Tyson. “What is wrong?” Pikachu pointed up. A red ball sat in a tree. “Your ball is stuck,” said Mom."
+        },
+        {
+          "type": "image",
+          "src": "tyson/pikachus-lost-ball/tail-in-bush.webp",
+          "alt": "Tyson bending down to peek at Pikachu's yellow tail sticking out of a green bush at the park while Mom smiles behind him.",
+          "caption": "A yellow tail pokes out of the bush — it’s Pikachu!",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Shake the tree",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson looked at the low branch. He could not reach it. “I have a plan,” he said. “Can we shake the tree?” Mom held the trunk. Tyson held it, too. They gave it a small shake."
+        },
+        {
+          "type": "paragraph",
+          "html": "One leaf fell. It landed on Pikachu’s head. “Nice hat,” said Tyson."
+        },
+        {
+          "type": "image",
+          "src": "tyson/pikachus-lost-ball/leaf-hat.webp",
+          "alt": "Mom and Tyson shaking a small tree while a leaf lands on Pikachu's head like a hat.",
+          "caption": "One leaf falls — right onto Pikachu’s head.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The pool noodle",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Pikachu shook off the leaf. The ball did not move. Tyson sat on the grass to think. Then he saw a long blue tube in Mom’s bag. His pool noodle!"
+        },
+        {
+          "type": "paragraph",
+          "html": "“Can we use that?” he asked. Mom held up the soft noodle. It just reached the ball. Tap. Tap. Nothing. “Try from this side,” said Tyson. Mom moved. Tyson stood back with Pikachu. Tap!"
+        },
+        {
+          "type": "image",
+          "src": "tyson/pikachus-lost-ball/pool-noodle.webp",
+          "alt": "Mom reaching up with a long blue pool noodle toward the red ball stuck in the tree while Tyson and Pikachu watch.",
+          "caption": "Mom reaches the ball with the blue pool noodle.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Boing!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The ball fell. Boing! It hit the grass. Boing! It bounced right into Mom’s open bag. Pikachu ran to the bag. Out came the ball. Out came a sock, too. Pikachu had the sock on one ear!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Tyson giggled. “That is an even better hat.” They played catch on the grass. Tyson threw. Mom caught. Pikachu rolled the ball back. At last, it was time to go. Pikachu gave Tyson a soft hug. “Same park next time?” asked Tyson. “Pika, pika!” Tyson smiled. He was sure that meant yes."
+        },
+        {
+          "type": "image",
+          "src": "tyson/pikachus-lost-ball/ball-in-bag.webp",
+          "alt": "The red ball bouncing into Mom's open tote bag with a sock flying onto Pikachu's ear as everyone laughs on the grass.",
+          "caption": "The ball bounces into Mom’s bag — and out pops a sock.",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Pika, pika!</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/tyson/the-sneaky-flag-play/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🏈</span>\n          <strong class=\"choice-card-title\">Tyson and the Sneaky Flag Play</strong>\n          <span class=\"choice-card-desc\">Look for the space — and hold on to your hat.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/marios-missing-star/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🍄</span>\n          <strong class=\"choice-card-title\">Tyson and Mario’s Missing Star</strong>\n          <span class=\"choice-card-desc\">A missing star, a thorn, and a happy Yoshi.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/pikachus-lost-ball/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "7a6bad4dbefb8082a6f44d5bbe14bcaa8d6df91883df4ad0f1389f3ebb2e670f",
+    "narrationInputHash": "7a42c171123a826c6ebea67a4311e63d98fbf39491da7080a190e3378f01d99d"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T01:38:21Z"
+}

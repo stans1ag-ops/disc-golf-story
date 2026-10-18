@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "id": "the-great-pontoon-pike-escape",
+  "title": "The Great Pontoon Pike Escape",
+  "collection": "shane",
+  "order": 0,
+  "description": "\"Reel it, wheel it, crank it fast! Catch the biggest fish at last! Watch the line go zip-zap-zoosh, bring him home with a mighty WHOOSH!\"",
+  "subtitle": "A rhyming family fishing adventure of tangled sweatshirt drawstrings, a 24-inch monster pike, and the unforgettable missing net!",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "the-great-pontoon-pike-escape/pike_scene4_giant_pike_no_net.jpg",
+    "alt": "A 24-inch Northern Pike leaping by the pontoon on Houghton Lake with Shane, Tyson, Theresa, and Alex."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Houghton Lake Pontoon Crew",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The summer sun shone warm and sweet, without a cloud or hint of sleet. Up where the pines stand proud and high, beneath the bright blue Michigan sky, lay Houghton Lake, so calm and wide, with gentle ripples on the tide!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Aboard the peppy pontoon boat, the finest crew that was afloat: Dad Alex grinning at the wheel, with shiny hooks and rods of steel! Young Shane (age five, with eyes of blue), and brother Tyson, smiling too! Both buckled snug in safety vests, like orange robins in their nests!"
+        },
+        {
+          "type": "image",
+          "src": "the-great-pontoon-pike-escape/pike_scene1_pontoon_crew.jpg",
+          "alt": "Mom Theresa in glasses and grey hoodie holding a fishing rod, Dad Alex steering, and sons Shane and Tyson in orange life vests looking into Houghton Lake.",
+          "caption": "Theresa patiently fishes with her rod while Captain Alex steers the pontoon and Shane and Tyson watch the lily pads.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "And there sat Mom—Theresa dear, the patient fisher of the year! In cozy sweatshirt, warm and grey, she held her fishing rod all day. While little minnows danced in line, and bobbers drifted on the brine, Theresa hadn&#x27;t had much luck—no perchy bite, no bass to pluck!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane tapped her knee and gave a wink, &quot;Don&#x27;t worry, Mom! Don&#x27;t even blink! Let&#x27;s say our special fishing cheer, to bring the hungry fishes near!&quot; Shane, Tyson, Dad, and Mom began, the loudest chant in Michigan:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Chant Along with Shane &amp; Tyson!</span>\n        <p class=\"chant-text\">\n          \"Wiggle-waggle, reel and row!<br>\n          Deep down where the lilies grow!<br>\n          Nibble, nibble, take a bite,<br>\n          Give the line a tug tonight!\"\n        </p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The Strike of the Century!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The engine rested by the weeds, among the swaying water-reeds. The water shimmered like a cup, when all at once—the line zipped up!"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"sound-fx sound-large\">TUG! YANK!</span>"
+        },
+        {
+          "type": "paragraph",
+          "html": "The slender yellow pole bent double toward a watery hole! The tip plunged down! The rod groaned low, like Robin Hood’s bent wooden bow! Theresa gasped and gripped it tight, her brown eyes sparkling with delight!"
+        },
+        {
+          "type": "image",
+          "src": "the-great-pontoon-pike-escape/pike_scene2_theresa_bite.jpg",
+          "alt": "Theresa with glasses and hoodie reeling furiously as the fishing rod bends into a deep bow, with Shane and Tyson shouting with glee on the pontoon.",
+          "caption": "Theresa feels an enormous bite! The rod curves in a giant horseshoe arch as Shane and Tyson jump for joy.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;I’ve got one!&quot; cried the happy Mom, her quiet afternoon was gone! She spun the handle—<em>CLICK-CRANK-SPIN!</em> The unseen monster pulled her in! The reel shrieked out: <em>ZRRRR-WHIRRR-SCREECH!</em> Farther than any arm could reach!"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Oh my!&quot; Mom gasped, &quot;He&#x27;s strong and stout! This isn&#x27;t just a tiny trout! He pulls like five or six or eight! He must be twenty pounds of weight! It’s bigger than I&#x27;ve ever seen, the biggest fish there&#x27;s ever been!&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane bounced in place with happy squeals, while Tyson laughed at spinning reels! They clapped their hands and stomped the floor, and shouted out the chant once more:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Louder &amp; Faster!</span>\n        <p class=\"chant-text\">\n          \"Reel it, wheel it, crank it fast!<br>\n          Catch the biggest fish at last!<br>\n          Watch the line go zip-zap-zoosh,<br>\n          Bring him home with a mighty WHOOSH!\"\n        </p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The Tangled Drawstring Tangle!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Theresa leaned across the seat, to pull the prize up to her feet. <em>Crank-crank!</em> She wound with all her might, her knuckles white, the line drawn tight! Her hooded sweatshirt hung down low, with two white drawstrings on the go!"
+        },
+        {
+          "type": "paragraph",
+          "html": "And as she cranked with speedy zeal—<strong>WHOOOOOOP!</strong>—the strings caught in the reel! <em>Snick-snack!</em> The little handle twirled, and sucked the drawstrings in a whirl! The hoodie cords wrapped round and round, tightly against the spool-wheel bound!"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"sound-fx sound-large\">WHOOOOOOP!</span>"
+        },
+        {
+          "type": "image",
+          "src": "the-great-pontoon-pike-escape/pike_scene3_drawstring_tangle.jpg",
+          "alt": "Theresa laughing comically as her sweatshirt drawstrings wrap into the fishing reel while Alex, Shane, and Tyson help untangle the cords.",
+          "caption": "Disaster and giggles! Mom’s hoodie drawstrings get sucked into the spinning reel as Dad and the boys rush to the rescue.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Mom couldn’t pull! Mom couldn’t crank! She leaned towards the pontoon plank! &quot;Oh help!&quot; laughed Mom, surprised and stuck, &quot;Look what became of my good luck! My sweatshirt’s hitched unto the line, and this big fish is doing fine!&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad Alex vaulted from the wheel, &quot;Hold steady, Mom! I&#x27;ll fix the reel!&quot; Shane held the rod to keep it high, while Tyson watched with eagle eye! With gentle tugs and nimble hands, Dad loosened up the tangled strands! <em>Zip! Snip! Pluck-pluck!</em> The knots came free! And everyone yelled out with glee:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ The Untangling Chant!</span>\n        <p class=\"chant-text\">\n          \"Twist it, turn it, loop-de-loop!<br>\n          Mommy’s hoodie’s in the soup!<br>\n          Free the strings and crank the gear,<br>\n          Bring that giant fishy near!\"\n        </p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The Twenty-Four Inch Giant & The Missing Net!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now free to fight! Now free to pull! Theresa wound the spool up full! The water churned, the bubbles flew, up toward the pontoon and the crew!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Then—<strong>SWOOSH!</strong>—beside the silver side, broke through the surface, wild and wide, a creature grand, a creature bold, with scales of olive, green, and gold! A Northern Pike! So long and sleek, with duckbill snout and toothy cheek! At least two feet—a two-foot dread! Full twenty-four big inches spread!"
+        },
+        {
+          "type": "image",
+          "src": "the-great-pontoon-pike-escape/pike_scene4_giant_pike_no_net.jpg",
+          "alt": "A huge 24-inch Northern Pike leaping by the pontoon boat as Dad Alex gasps in panic without a net and Shane and Tyson stare with eyes wide.",
+          "caption": "The 24-inch Northern Pike breaches the surface! But Dad throws his hands up in panic: \"We don't have a net on the boat!\"",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;LOOK AT THAT PIKE!&quot; Shane shouted high, his round blue eyes as wide as pie! &quot;He&#x27;s giant!&quot; Tyson yelled in joy, &quot;He&#x27;s almost bigger than a boy!&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "Theresa held him by the boat, the finest trophy all afloat! &quot;Quick, Alex, grab the landing net!&quot; cried Mom, &quot;Before he gets upset!&quot; Alex looked left, he looked around, he searched the bench, he searched the ground! He searched the box, he searched the deck, with hands on hips and craned-up neck!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Then Alex’s jaw dropped in surprise, with wide, comedic, startled eyes: &quot;Oh NO!&quot; cried Dad, &quot;You won&#x27;t believe! The net is on the dock, I grieve! We left the net back on the shore, beside the boathouse cabin door!&quot;"
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "The Great Pike Roll & The Unforgettable Day!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Right as they stared in disbelief, the Northern Pike had sweet relief! He gave a wink, he gave a flip, he didn&#x27;t want a boat ride trip!"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"sound-fx sound-large\">SPLOOOOOOOOOSH!</span>"
+        },
+        {
+          "type": "paragraph",
+          "html": "The mighty pike rolled round and round, a somersault without a sound! He shook his head, he thrashed his tail, and whipped the lake just like a whale! <em>POP!</em> went the hook right out his jaw! The cleanest leap they ever saw! He splashed a shower of sparkling spray, and swished his tail and sped away!"
+        },
+        {
+          "type": "image",
+          "src": "the-great-pontoon-pike-escape/pike_scene5_pike_escape_celebration.jpg",
+          "alt": "The giant pike splashes away as the hook pops free, and Theresa, Alex, Shane, and Tyson laugh and high-five in the golden sunset glow.",
+          "caption": "The big pike rolls, spits the hook, and splashes away! The family bursts into laughter and high-fives under the warm sunset glow.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Down through the lily pads he dived, the grandest pike that ever thrived! A tiny moment hung in air, with water dripping in their hair... Then Tyson giggled, Shane broke out, and Dad and Mom began to shout!"
+        },
+        {
+          "type": "paragraph",
+          "html": "They looked at Mom&#x27;s loose sweatshirt strings, and all the silly tangled things! &quot;He got away!&quot; cried Shane with glee, &quot;A giant fish as big as me!&quot; They slapped high-fives and hugged so tight, beneath the golden sunset light!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Sure, they were just a bit dismayed, the fish had won the game they played! But oh, the fun! The wild hullabaloo! The greatest catch they ever knew! And as the pontoon purred back home, across the pink and amber foam, they sang the chant for everyone, of Houghton Lake, the pike, and fun:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🎉 The Great Pike Finale Chant!</span>\n        <p class=\"chant-text\">\n          \"Houghton Lake and sunny skies,<br>\n          Mommy hooked the giant prize!<br>\n          No big net, the hook went slack,<br>\n          Next summer time, we’ll be right back!\"\n        </p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Goodnight, Shane. Goodnight, Tyson. Goodnight, Houghton Lake... and goodnight, big Northern Pike!"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ Explore More Bedtime Adventures</span>\n      <h2 class=\"conclusion-question\">Where should Shane and the family head next?</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/the-fish-that-pulled-back/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚤</span>\n          <strong class=\"choice-card-title\">The Houghton Lake Pontoon Patrol</strong>\n          <span class=\"choice-card-desc\">Captain Shane and Dad Alex cruise for bass and sing the Wiggle-Waggle fishing chant!</span>\n          <span class=\"choice-action-btn\">Read Pontoon Patrol ➔</span>\n        </a>\n\n        <a href=\"/the-daring-disc-dash/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🥏</span>\n          <strong class=\"choice-card-title\">The Daring Disc Dash</strong>\n          <span class=\"choice-card-desc\">Head to Whispering Woods with the orange Roadrunner disc! Watch for zipping curves and clattering chains.</span>\n          <span class=\"choice-action-btn\">Read Disc Golf Story ➔</span>\n        </a>\n\n        <a href=\"/the-bouncing-bicycle-brigade/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚲</span>\n          <strong class=\"choice-card-title\">The Bouncing Bicycle Brigade</strong>\n          <span class=\"choice-card-desc\">Click your helmets, hop on the pedals, splash through giant puddles, and climb the Big Bumpy Hill!</span>\n          <span class=\"choice-action-btn\">Read Biking Story ➔</span>\n        </a>\n\n        <a href=\"/the-wild-uno-uproar/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🃏</span>\n          <strong class=\"choice-card-title\">The Wild Uno Uproar</strong>\n          <span class=\"choice-card-desc\">Cozy up by the fire in dinosaur pajamas for a hilarious battle of Wild Draw-Fours!</span>\n          <span class=\"choice-action-btn\">Read Uno Story ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "the-great-pontoon-pike-escape/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "16d87e4d1cf822bf633c53735406bd970e554bcbbac68e67812c9aabd40b3f6d",
+    "narrationInputHash": "48c2e513a6b787598c481cea3d1796d9b9ef01973412882d4414202ac47bdd82"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-04T23:03:10Z"
+}

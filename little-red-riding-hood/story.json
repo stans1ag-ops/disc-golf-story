@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "id": "little-red-riding-hood",
+  "title": "Little Red Riding Hood",
+  "collection": "classics",
+  "order": 2,
+  "description": "\"Oh, Grandma, what big ears you have!\" — \"The better to hear you with, my child!\"",
+  "subtitle": "The classic tale of a red hood, a deep forest, and a wolf with very big teeth!",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/childrens-stories/little-red-riding-hood",
+  "cover": {
+    "src": "little-red-riding-hood/little_red_hood_big_ears.jpg",
+    "alt": "Little Red Riding Hood pulling back the bed curtain to find the wolf disguised as her grandmother."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Little Red Hood",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once upon a time, there was a sweet little girl who was loved by everyone who met her — but most of all by her grandmother. The old woman loved her so much that she made her a small red velvet hood. It suited her perfectly, and from that day on, everyone called her Little Red Riding Hood."
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_gift.jpg",
+          "alt": "Little Red Riding Hood walking through the village in her red velvet hood, carrying her basket.",
+          "caption": "Little Red Riding Hood sets out in the red velvet hood her grandmother made for her.",
+          "width": 896,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Cake and Wine for Grandma",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One morning, her mother said, &quot;Come, Little Red Riding Hood, here is a piece of cake and a bottle of wine. Take them to your grandmother — she is sick and weak, and this will do her good. Go before it gets too hot, and remember to walk carefully. Don&#x27;t stray from the path, or you might fall and break the bottle. And when you arrive, don&#x27;t forget to say good morning before you peek around her room.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;I&#x27;ll be careful, Mother,&quot; said Little Red Riding Hood, and she promised with a smile."
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_basket.jpg",
+          "alt": "A mother handing a wicker basket of cake and a bottle of wine to Little Red Riding Hood at the cottage door.",
+          "caption": "Her mother hands her a basket of cake and wine, and reminds her to stay on the path.",
+          "width": 896,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The Wolf on the Path",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The grandmother lived deep in the forest, about half a league from the village. Just as Little Red Riding Hood entered the woods, a wolf appeared on the path. She didn&#x27;t know what a wicked creature he was, and she felt no fear at all."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Good morning, Little Red Riding Hood,&quot; said the wolf."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Good morning, Mr. Wolf,&quot; she replied politely."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Where are you going so early?&quot; he asked. &quot;To my grandmother&#x27;s house,&quot; said the girl. &quot;And what is that in your basket?&quot; &quot;Cake and wine. Grandma has been sick, so Mother sent me to cheer her up.&quot; &quot;And where does your grandmother live?&quot; asked the wolf. &quot;A little farther into the woods — under the three great oak trees, near the hazel bushes. You must know it,&quot; she said."
+        },
+        {
+          "type": "paragraph",
+          "html": "The wolf licked his lips and thought, <em>What a tender young thing! She will taste even better than the old woman. I will eat them both — but I will have to be clever about it.</em>"
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_meets_wolf.jpg",
+          "alt": "A sly gray wolf stepping onto a forest path in front of Little Red Riding Hood in her red hood.",
+          "caption": "A wolf appears on the forest path — and Little Red Riding Hood does not know what a wicked creature he is.",
+          "width": 896,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Flowers in the Forest",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He walked beside her for a bit, then said slyly, &quot;Look how pretty the flowers are here, Little Red Riding Hood. Why not pick some for your grandmother? And listen — don&#x27;t you hear how sweetly the birds are singing? You walk along so seriously, as if you were going to school, when the forest is alive with joy!&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "Little Red Riding Hood looked up and saw sunlight dancing through the trees, making the wildflowers sparkle. <em>Grandma would love a bouquet,</em> she thought. <em>I still have plenty of time.</em> So she stepped off the path to gather flowers. Each time she picked one, she saw another even prettier farther away, and she wandered deeper and deeper into the forest."
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_flowers.jpg",
+          "alt": "Little Red Riding Hood gathering bright wildflowers in a sun-dappled forest, wandering away from the path.",
+          "caption": "She steps off the path to gather flowers — and wanders deeper and deeper into the forest.",
+          "width": 896,
+          "height": 1200
+        },
+        {
+          "type": "paragraph",
+          "html": "Meanwhile, the wolf ran straight to the grandmother&#x27;s house and knocked at the door."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Who&#x27;s there?&quot; called the grandmother."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;It&#x27;s me — Little Red Riding Hood,&quot; said the wolf sweetly. &quot;I&#x27;ve brought you cake and wine.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Lift the latch,&quot; said the grandmother. &quot;I&#x27;m too weak to get up.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "The wolf lifted the latch, pushed open the door, and without a word, leapt upon the old woman and swallowed her whole."
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_wolf_at_door.jpg",
+          "alt": "The wolf pushing open the wooden door of the grandmother's forest cottage.",
+          "caption": "The wolf runs straight to the grandmother's cottage and pushes open the door.",
+          "width": 896,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "The Wolf in Grandmother's Bed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then he put on her nightgown and cap, pulled the curtains, and lay down in her bed."
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_wolf_in_bed.jpg",
+          "alt": "The wolf lying in the grandmother's bed wearing her nightgown and cap, curtains half drawn.",
+          "caption": "The wolf puts on the grandmother's nightgown and cap, and lies down in her bed.",
+          "width": 896,
+          "height": 1200
+        },
+        {
+          "type": "paragraph",
+          "html": "When Little Red Riding Hood finally reached the cottage, she was surprised to find the door standing open. The room felt strange and quiet. &quot;Oh dear,&quot; she whispered, &quot;why do I feel so uneasy today?&quot; She called out, &quot;Good morning, Grandma!&quot; but there was no answer."
+        },
+        {
+          "type": "paragraph",
+          "html": "She went to the bed and drew back the curtains. There lay her grandmother, cap pulled low, face shadowed, looking quite odd."
+        }
+      ]
+    },
+    {
+      "id": "scene-6",
+      "title": "What Big Ears You Have!",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧺 Little Red Riding Hood asks</div>\n        <div class=\"chant-text\">\n          \"Oh, Grandma, what big ears you have!\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf answers</div>\n        <div class=\"chant-text\">\n          \"The better to hear you with, my child.\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧺 Little Red Riding Hood asks</div>\n        <div class=\"chant-text\">\n          \"But, Grandma, what big eyes you have!\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf answers</div>\n        <div class=\"chant-text\">\n          \"The better to see you with, my dear.\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧺 Little Red Riding Hood asks</div>\n        <div class=\"chant-text\">\n          \"And what big hands you have!\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf answers</div>\n        <div class=\"chant-text\">\n          \"The better to hug you with.\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧺 Little Red Riding Hood asks</div>\n        <div class=\"chant-text\">\n          \"But, Grandma — what a terrible big mouth you have!\"\n        </div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐺 The Wolf roars</div>\n        <div class=\"chant-text\">\n          \"The better to eat you with!\"\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_big_ears.jpg",
+          "alt": "Little Red Riding Hood pulling back the bed curtain to find the wolf disguised as her grandmother.",
+          "caption": "\"Oh, Grandma, what big ears you have!\" — \"The better to hear you with, my child.\"",
+          "width": 896,
+          "height": 1200
+        },
+        {
+          "type": "paragraph",
+          "html": "The wolf roared, &quot;The better to eat you with!&quot; and before she could scream, he sprang from the bed and swallowed Little Red Riding Hood whole."
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_attack.jpg",
+          "alt": "The wolf springing from the grandmother's bed toward Little Red Riding Hood.",
+          "caption": "\"The better to eat you with!\" roared the wolf, and he sprang from the bed.",
+          "width": 896,
+          "height": 1200
+        },
+        {
+          "type": "paragraph",
+          "html": "Full and satisfied, the wolf climbed back into bed and soon began to snore loudly. Just then, a passing huntsman heard the noise and muttered, &quot;That old woman snores like a beast! I should check on her.&quot;"
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_huntsman.jpg",
+          "alt": "A huntsman with a rifle pausing outside the forest cottage, hearing loud snoring from within.",
+          "caption": "A passing huntsman hears the wolf snoring loudly inside the cottage.",
+          "width": 896,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "scene-7",
+      "title": "The Huntsman's Rescue",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He stepped inside and saw the wolf stretched out in the bed. &quot;So it&#x27;s you, you wicked creature!&quot; he said, raising his gun. But then he thought, <em>Maybe the old woman's still inside.</em> So instead of shooting, he took a pair of scissors and carefully cut open the wolf's belly."
+        },
+        {
+          "type": "paragraph",
+          "html": "After two careful snips, he saw a flash of red inside. A few more cuts — and out sprang Little Red Riding Hood, trembling but unharmed. &quot;Oh, how frightened I was! It was so dark inside!&quot; she cried. Then the huntsman cut a little more, and out came the grandmother, pale but alive."
+        },
+        {
+          "type": "paragraph",
+          "html": "To make sure the wolf could never harm anyone again, they filled his belly with heavy stones. When he awoke and tried to flee, the weight pulled him down, and he fell dead on the spot."
+        },
+        {
+          "type": "paragraph",
+          "html": "The huntsman skinned the wolf and went on his way. The grandmother ate her cake and drank her wine and soon felt much better. As for Little Red Riding Hood, she thought to herself, <em>From now on, I'll never wander from the path again when Mother tells me not to.</em>"
+        },
+        {
+          "type": "image",
+          "src": "little-red-riding-hood/little_red_hood_stones.jpg",
+          "alt": "Little Red Riding Hood hugging the brave huntsman in thanks, with her grandmother safe beside them.",
+          "caption": "Safe at last — Little Red Riding Hood thanks the brave huntsman.",
+          "width": 896,
+          "height": 1200
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "",
+  "media": {
+    "audio": "little-red-riding-hood/narration.mp3",
+    "video": {
+      "src": "little-red-riding-hood/little_red_riding_hood_story_video.mp4",
+      "poster": "little-red-riding-hood/little_red_riding_hood_story_video_poster.jpg"
+    },
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "2971008b6bdb157f3fe6d8c4dbeec44fb18a40a592de537bc376b7f3eaa86e7d",
+    "narrationInputHash": "60cbc7cafa1b394ffe48abc0d7221a587fce063c51298088160ddcadfbc0b201",
+    "videoNarrationHash": "60cbc7cafa1b394ffe48abc0d7221a587fce063c51298088160ddcadfbc0b201",
+    "videoVisualHash": "19d752f6d56728094c03785ab15d5efce9927bee4c4821ec1a05cdebe42e5ea1"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-06T20:47:07Z"
+}

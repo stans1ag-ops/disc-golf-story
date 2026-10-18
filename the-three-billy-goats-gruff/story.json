@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "id": "the-three-billy-goats-gruff",
+  "title": "The Three Billy-Goats Gruff",
+  "collection": "classics",
+  "order": 6,
+  "description": "\"Trip, trap, trip, trap!\" — \"WHO'S THAT TRIPPING OVER MY BRIDGE?\"",
+  "subtitle": "Three clever goats outsmart a grumpy troll guarding the bridge to reach the sweet green meadow grass.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/childrens-stories/the-three-billy-goats-gruff",
+  "cover": {
+    "src": "the-three-billy-goats-gruff/billy_goats_01.jpg",
+    "alt": "The three Billy Goats Gruff looking out across the quiet valley toward the sunny hillside."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Across the Valley",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once upon a time, there were three billy goats who lived down in a quiet valley. Their family name was &quot;Gruff.&quot; Across the valley, high upon a green mountain hillside, grew sweet clover and tender meadow grass. The three goats looked up from the valley and longed to climb the hillside to feast and grow fat."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_01.jpg",
+          "alt": "The three Billy Goats Gruff looking out across the quiet valley toward the sunny hillside.",
+          "caption": "The three Billy Goats Gruff looking across the valley at the lush green mountain hillside.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Rushing Stream",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "To reach that sunny hillside, they had to cross a rushing mountain stream that tumbled over rocks and stones. And right across the water stretched a narrow wooden bridge made of heavy timber planks."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_02.jpg",
+          "alt": "The rushing mountain stream cascading beneath the rustic wooden bridge.",
+          "caption": "The rushing mountain stream tumbling over river stones beneath the narrow wooden bridge.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 22.484
+    },
+    {
+      "id": "scene-3",
+      "title": "The Troll Beneath the Bridge",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now, under that very bridge lived a great, ugly troll! He had eyes as round and big as saucers, a long crooked nose like a poker, and messy moss in his hair. He was always grumpy, and he guarded his bridge so that no one could pass."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_03.jpg",
+          "alt": "The grumpy, ugly troll lurking in the shadows under the wooden bridge.",
+          "caption": "The great ugly troll with saucer eyes and a crooked nose sitting in the shadows below.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 34.919
+    },
+    {
+      "id": "scene-4",
+      "title": "The Smallest Goat Steps Out",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Early the next morning, the smallest Billy Goat Gruff set off down the path. He had tiny hooves, soft cream-colored fur, and little button horns. Even though he was the littlest, he trotted along with a brave and cheerful heart."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_04.jpg",
+          "alt": "The smallest Billy Goat Gruff trotting down the flower-lined path toward the bridge.",
+          "caption": "The tiny, brave little Billy Goat Gruff trots down the sunny flower-lined path.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 51.172
+    },
+    {
+      "id": "scene-5",
+      "title": "Trip, Trap, Trip, Trap!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He stepped right onto the wooden bridge. His tiny hooves tapped lightly against the boards."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🪵 The Wooden Bridge</div>\n        <div class=\"chant-text\">Trip, trap! Trip, trap!</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "went the bridge under his little feet."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_05.jpg",
+          "alt": "The smallest Billy Goat stepping onto the wooden planks, hooves tapping trip-trap.",
+          "caption": "The smallest goat steps onto the bridge: \"Trip, trap! Trip, trap!\"",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 65.407
+    },
+    {
+      "id": "scene-6",
+      "title": "The Troll's Roar",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Suddenly, a terrible roar boomed from beneath the timber planks! The ugly troll poked his head over the rail, his saucer eyes wide with anger."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧌 The Grumpy Troll</div>\n        <div class=\"chant-text\">\"WHO'S THAT TRIPPING OVER MY BRIDGE?\"</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_06.jpg",
+          "alt": "The ugly troll pops up over the bridge railing, roaring at the startled little goat.",
+          "caption": "The troll pops up over the wooden railing, roaring at the little goat.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 75.056
+    },
+    {
+      "id": "scene-7",
+      "title": "The Smallest Goat's Clever Escape",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "&quot;Oh, it is only I, the tiniest Billy Goat Gruff,&quot; said the little goat in his small, squeaky voice. &quot;I am going up to the hillside to make myself fat.&quot;"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧌 The Troll</div>\n        <div class=\"chant-text\">\"Now I am coming to gobble you up!\"</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Oh, please don&#x27;t take me! I am far too little,&quot; said the clever goat. &quot;Wait a moment for the second Billy Goat Gruff. He is much bigger than I am!&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Well, be off with you then!&quot; grunted the greedy troll, thinking of a bigger meal. And the smallest goat skipped safely across to the meadow."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_07.jpg",
+          "alt": "The smallest goat skips safely into the meadow while the greedy troll waits.",
+          "caption": "The tiny goat skips safely to the sunny hillside while the greedy troll waits.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 87.939
+    },
+    {
+      "id": "scene-8",
+      "title": "The Second Goat Approaches",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "A little while later, down came the second Billy Goat Gruff. He was medium-sized, with a warm brown coat, sturdy legs, and curved horns. He trotted down toward the stream, eager to join his brother."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_08.jpg",
+          "alt": "The second, middle-sized Billy Goat Gruff trotting down the path.",
+          "caption": "The middle-sized Billy Goat Gruff trotting down the path toward the bridge.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 118.699
+    },
+    {
+      "id": "scene-9",
+      "title": "Trip, Trap on the Planks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The second goat trotted onto the bridge. His hooves made a firmer, louder click on the wood."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🪵 The Wooden Bridge</div>\n        <div class=\"chant-text\">Trip, trap, trip, trap, trip, trap!</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "went the bridge under his steady stride."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_09.jpg",
+          "alt": "The second Billy Goat walking firmly across the wooden bridge.",
+          "caption": "The second goat crosses the bridge: \"Trip, trap, trip, trap, trip, trap!\"",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 131.633
+    },
+    {
+      "id": "scene-10",
+      "title": "The Second Challenge",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Up popped the troll&#x27;s hairy head once more!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧌 The Troll</div>\n        <div class=\"chant-text\">\"WHO'S THAT TRIPPING OVER MY BRIDGE?\"</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;It is I, the second Billy Goat Gruff,&quot; said the goat in a clear, bold voice. &quot;I am going up to the hillside to make myself fat.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Now I am coming to gobble you up!&quot; howled the troll."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Oh no, do not take me!&quot; said the second goat calmly. &quot;Wait a little while for Big Billy Goat Gruff. He is much, much bigger than I!&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Very well! Be off with you!&quot; growled the greedy troll. And the second goat bounded safely across to the grassy hillside."
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_10.jpg",
+          "alt": "The second goat cleverly talks to the troll, pointing out that an even bigger goat is coming.",
+          "caption": "The second goat outsmarts the greedy troll with calm, clever thinking.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 142.391
+    },
+    {
+      "id": "scene-11",
+      "title": "Big Billy Goat Gruff Arrives",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Just then, a deep shadow fell across the forest path. Down came the great, magnificent Big Billy Goat Gruff! He was enormous and strong, with thick shaggy grey fur, a long wispy beard, and two great curved horns as hard as stone."
+        },
+        {
+          "type": "paragraph",
+          "html": "He strode onto the bridge, and the heavy timbers creaked and groaned under his mighty weight:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🪵 The Bridge Creaks and Groans</div>\n        <div class=\"chant-text\">TRIP, TRAP, TRIP, TRAP, TRIP, TRAP!</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧌 The Troll</div>\n        <div class=\"chant-text\">\"WHO'S THAT TRAMPING OVER MY BRIDGE?\"</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐐 Big Billy Goat Gruff</div>\n        <div class=\"chant-text\">\"IT IS I! THE BIG BILLY GOAT GRUFF!\"</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Now I am coming to gobble you up!&quot; cried the troll, leaping forward onto the boards."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Well, come along then!&quot; shouted Big Billy Goat Gruff. He lowered his mighty horns, charged right at the bully, and with a tremendous crack and a great heave, butted the troll right off the bridge and down into the rushing river! Splash! Away the soggy troll tumbled down the cascade, never to bother anyone again!"
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_11.jpg",
+          "alt": "The great, magnificent Big Billy Goat Gruff stands tall and fearless on the bridge.",
+          "caption": "The magnificent Big Billy Goat Gruff stands fearless and defeats the troll.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 176.041
+    },
+    {
+      "id": "scene-12",
+      "title": "Feasting on the Hillside",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then Big Billy Goat Gruff strode triumphantly across the bridge to join his two brothers."
+        },
+        {
+          "type": "paragraph",
+          "html": "Up on the sunny hillside, the three Billy Goats Gruff ate the sweet green clover and tender grass all summer long. They grew so fat and round they could scarcely walk home again! And if the fat hasn&#x27;t fallen off them, why, they are still fat to this very day!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">📖 Tale's End</div>\n        <div class=\"chant-text\">Snip, snap, snout, this tale's told out!</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-three-billy-goats-gruff/billy_goats_12.jpg",
+          "alt": "All three Billy Goats Gruff peacefully grazing and feasting together on the sunlit mountain hillside.",
+          "caption": "The three Billy Goats Gruff feast peacefully together on the sunlit hillside meadow.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 234.449
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">How did the Three Billy Goats solve their problem?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🧠</span>\n          <strong class=\"choice-card-title\">Clever Thinking &amp; Teamwork</strong>\n          <span class=\"choice-card-desc\">The two smaller goats used their wits, and the big brother used his strength to protect the family from the bully!</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌿</span>\n          <strong class=\"choice-card-title\">Patience &amp; Bravery</strong>\n          <span class=\"choice-card-desc\">Each goat took his turn, stayed calm, and together they made it to the sweet meadow on the mountain.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "the-three-billy-goats-gruff/narration.mp3",
+    "video": {
+      "src": "the-three-billy-goats-gruff/the_three_billy_goats_gruff_story_video.mp4",
+      "poster": "the-three-billy-goats-gruff/the_three_billy_goats_gruff_story_video_poster.jpg"
+    },
+    "captions": "the-three-billy-goats-gruff/narration.vtt",
+    "duration": 260.821,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "1062bcca2ceee67ad1698895631a9f94cb83cb7cc9519935cd63ac1ec2b312c7",
+    "narrationInputHash": "df96dd8b78bdd2a7f1f6f93f7b3850b43cc917b859234df6e1d89a0ee8b15660",
+    "videoNarrationHash": "df96dd8b78bdd2a7f1f6f93f7b3850b43cc917b859234df6e1d89a0ee8b15660",
+    "videoVisualHash": "d3d4113a3af747d55a9c6522869b8c0110c6d1d53ad2c232fe02767af0e994f3"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-12T23:39:53Z"
+}

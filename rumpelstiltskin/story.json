@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "id": "rumpelstiltskin",
+  "title": "Rumpelstiltskin",
+  "collection": "classics",
+  "order": 14,
+  "description": "“Whirr, whirr, whirr” — “Perhaps your name is Rumpelstiltskin?”",
+  "subtitle": "By the Brothers Grimm • A bedtime tale about a miller’s daughter, straw spun into gold, and the power of a name.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/author/the-brothers-grimm/fairy-tale/rumpelstiltskin",
+  "cover": {
+    "src": "rumpelstiltskin/rumpelstiltskin_06.jpg",
+    "alt": "The little man spins straw into glowing golden thread at the spinning wheel."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Miller's Daughter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once there was a miller who was poor, but who had a beautiful daughter."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_01.jpg",
+          "alt": "The poor old miller stands proudly beside his beautiful daughter outside their watermill by the stream.",
+          "caption": "A poor miller and his beautiful daughter, by the mill.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Miller's Boast",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now it happened that he had to go and speak to the King, and in order to make himself appear important he said to him..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧔 The Miller</div>\n        <div class=\"chant-text\">“I have a daughter who can spin straw into gold.” — “That is an art which pleases me well,” said the King, “if your daughter is as clever as you say, bring her to-morrow to my palace, and I will try what she can do.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_02.jpg",
+          "alt": "The miller boasts to the greedy king, who is out hunting in the wood with his hounds.",
+          "caption": "The miller's boast catches the greedy King's ear.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 7.139
+    },
+    {
+      "id": "scene-3",
+      "title": "The Straw Chamber",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And when the girl was brought to him he took her into a room which was quite full of straw, gave her a spinning-wheel and a reel, and said..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👑 The King</div>\n        <div class=\"chant-text\">“Now set to work, and if by to-morrow morning early you have not spun this straw into gold during the night, you must die.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_03.jpg",
+          "alt": "The frightened miller's daughter stands alone in the moonlit stone chamber piled high with straw.",
+          "caption": "A room full of straw — spin it by morning, or die.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 27.917
+    },
+    {
+      "id": "scene-4",
+      "title": "Tears in the Night",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So there sat the poor miller&#x27;s daughter, and for her life could not tell what to do; she had no idea how straw could be spun into gold, and she grew more and more miserable, until at last she began to weep."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_04.jpg",
+          "alt": "The miller's daughter sits weeping in the corner of the straw-filled chamber at night.",
+          "caption": "She sits in the corner and weeps.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 47.745
+    },
+    {
+      "id": "scene-5",
+      "title": "The Little Man",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But all at once the door opened, and in came a little man..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧙 The Little Man</div>\n        <div class=\"chant-text\">“Good evening, Mistress Miller; why are you crying so?” — “What will you give me,” said the manikin, “if I do it for you?” — “My necklace,” said the girl.</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_05.jpg",
+          "alt": "A droll little man in a crooked pointed cap hobbles through the chamber door, tipping his cap to the surprised girl.",
+          "caption": "“What will you give me, if I do it for you?”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 60.799
+    },
+    {
+      "id": "scene-6",
+      "title": "Whirr, Whirr, Whirr",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The little man took the necklace, seated himself in front of the wheel, and “whirr, whirr, whirr,” three turns, and the reel was full. And so it went on until the morning, when all the straw was spun, and all the reels were full of gold."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_06.jpg",
+          "alt": "The little man spins busily at the wheel as straw turns into glowing golden thread and full golden reels pile up.",
+          "caption": "Whirr, whirr, whirr — straw into gold!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 79.827
+    },
+    {
+      "id": "scene-7",
+      "title": "The Greedy King",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "By day-break the King was already there, and when he saw the gold he was astonished and delighted, but his heart became only more greedy. He had the miller&#x27;s daughter taken into another room full of straw, which was much larger, and commanded her to spin that also in one night if she valued her life."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_07.jpg",
+          "alt": "The greedy king grabs handfuls of gold in the morning-lit chamber, eyes gleaming with greed.",
+          "caption": "The King sees the gold — and wants more.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 100.345
+    },
+    {
+      "id": "scene-8",
+      "title": "The Ring",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The girl knew not how to help herself, and was crying, when the door again opened, and the little man appeared..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧙 The Little Man</div>\n        <div class=\"chant-text\">“What will you give me if I spin the straw into gold for you?” — “The ring on my finger,” answered the girl.</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_08.jpg",
+          "alt": "In the second, larger straw chamber the little man spins again while the girl watches, her gold ring now his payment.",
+          "caption": "The ring on her finger buys a second night of gold.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 119.447
+    },
+    {
+      "id": "scene-9",
+      "title": "A Terrible Promise",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The King rejoiced beyond measure at the sight, but still he had not gold enough; and he had the miller&#x27;s daughter taken into a still larger room full of straw, and said..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👑 The King</div>\n        <div class=\"chant-text\">“You must spin this, too, in the course of this night; but if you succeed, you shall be my wife.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_09.jpg",
+          "alt": "In the third, largest chamber overflowing with straw, the little man eagerly demands the girl's promise of her first child.",
+          "caption": "“If you succeed, you shall be my wife.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 140.505
+    },
+    {
+      "id": "scene-10",
+      "title": "The Third Night",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When the girl was alone the manikin came again for the third time, and said, “What will you give me if I spin the straw for you this time also?” “I have nothing left that I could give,” answered the girl. “Then promise me, if you should become Queen, your first child.” And, not knowing how else to help herself in this strait, she promised the manikin what he wanted, and for that he once more spun the straw into gold."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_10.jpg",
+          "alt": "The little man spins triumphantly amid mountains of gold while the girl watches with dread, having promised her first child.",
+          "caption": "She promises her first child — and the gold is spun.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 157.072
+    },
+    {
+      "id": "scene-11",
+      "title": "The Queen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And when the King came in the morning, and found all as he had wished, he took her in marriage, and the pretty miller&#x27;s daughter became a Queen."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_11.jpg",
+          "alt": "A joyful medieval wedding feast: the miller's daughter, now a bride in ivory, holds hands with the beaming king.",
+          "caption": "The miller's daughter becomes a Queen!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 182.651
+    },
+    {
+      "id": "scene-12",
+      "title": "The Little Man Returns",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "A year after, she had a beautiful child, and she never gave a thought to the manikin. But suddenly he came into her room, and said, “Now give me what you promised.” The Queen was horrorstruck, and offered the manikin all the riches of the kingdom if he would leave her the child."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧙 The Little Man</div>\n        <div class=\"chant-text\">“No, something that is living is dearer to me than all the treasures in the world.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_12.jpg",
+          "alt": "In the sunlit nursery the horrorstruck Queen clutches her baby as the little man points demandingly at the child from the doorway.",
+          "caption": "“Now give me what you promised.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 190.949
+    },
+    {
+      "id": "scene-13",
+      "title": "Three Days",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then the Queen began to weep and cry, so that the manikin pitied her..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧙 The Little Man</div>\n        <div class=\"chant-text\">“I will give you three days' time; if by that time you find out my name, then shall you keep your child.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_13.jpg",
+          "alt": "The weeping Queen buries her face in her hands while the little man, moved by pity, holds up three fingers.",
+          "caption": "Three days to find out his name.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 214.446
+    },
+    {
+      "id": "scene-14",
+      "title": "The Name Guessing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So the Queen thought the whole night of all the names that she had ever heard, and she sent a messenger over the country to inquire, far and wide, for any other names that there might be. When the manikin came the next day, she began with Caspar, Melchior, Balthazar, and said all the names she knew, one after another; but to every one the little man said, “That is not my name.”"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_14.jpg",
+          "alt": "The Queen stands at a palace balcony at dawn, sending mounted messengers riding out across the countryside to ask for names.",
+          "caption": "Messengers ride out far and wide for names.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 226.414
+    },
+    {
+      "id": "scene-15",
+      "title": "Not My Name",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "On the second day she repeated to the manikin the most uncommon and curious names she could find. “Perhaps your name is Shortribs, or Sheepshanks, or Laceleg?” but he always answered, “That is not my name.”"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_15.jpg",
+          "alt": "The Queen reads curious names from a long scroll while the little man stands with arms crossed, smugly shaking his head.",
+          "caption": "“That is not my name.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 249.981
+    },
+    {
+      "id": "scene-16",
+      "title": "The Fire in the Forest",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "On the third day the messenger came back again, and said, “I have not been able to find a single new name, but as I came to a high mountain at the end of the forest, where the fox and the hare bid each other good night, there I saw a little house, and before the house a fire was burning, and round about the fire quite a ridiculous little man was jumping: he hopped upon one leg, and shouted...”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🔥 The Little Man's Song</div>\n        <div class=\"chant-text\">“To-day I bake, to-morrow brew, the next I'll have the young Queen's child. Ha! glad am I that no one knew that Rumpelstiltskin I am styled.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_16.jpg",
+          "alt": "Deep in the forest at dusk, the little man dances gleefully around a fire by his hut while a royal messenger peeks from behind a tree.",
+          "caption": "The messenger overhears the little man's song!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 264.015
+    },
+    {
+      "id": "scene-17",
+      "title": "Rumpelstiltskin!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "You may think how glad the Queen was when she heard the name! And when soon afterwards the little man came in, and asked, “Now Mistress Queen, what is my name?” at first she said, “Is your name Conrad?” “No.” “Is your name Harry?” “No.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👸 The Queen</div>\n        <div class=\"chant-text\">“Perhaps your name is Rumpelstiltskin?” — “The devil has told you that! the devil has told you that!” cried the little man, and in his anger he plunged his right foot so deep into the earth that his whole leg went in.</div>"
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_17.jpg",
+          "alt": "In a furious rage the little man stamps his foot deep into the floorboards while the triumphant Queen holds her baby safely.",
+          "caption": "“Perhaps your name is Rumpelstiltskin?!”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 295.809
+    },
+    {
+      "id": "scene-18",
+      "title": "The Child Is Safe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And so the Queen kept her child, and they lived in peace and happiness ever after. The end."
+        },
+        {
+          "type": "image",
+          "src": "rumpelstiltskin/rumpelstiltskin_18.jpg",
+          "alt": "The Queen sits in a sunlit chamber, smiling softly as she rocks her sleeping baby in her arms.",
+          "caption": "The Queen keeps her child. The end.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 330.55
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What should the miller’s daughter have thought about before making her promise?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🤝</span>\n          <strong class=\"choice-card-title\">Think Before You Promise</strong>\n          <span class=\"choice-card-desc\">The miller’s daughter promised her first child without thinking it through. Never promise something you aren’t sure you can give — a promise is a serious thing.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🕵️</span>\n          <strong class=\"choice-card-title\">Cleverness Wins</strong>\n          <span class=\"choice-card-desc\">The Queen saved her child by being clever and sending messengers to learn the little man’s name. Using your wits is better than giving up.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "rumpelstiltskin/narration.mp3",
+    "video": {
+      "src": "rumpelstiltskin/rumpelstiltskin_story_video.mp4",
+      "poster": "rumpelstiltskin/rumpelstiltskin_story_video_poster.jpg"
+    },
+    "captions": "rumpelstiltskin/narration.vtt",
+    "duration": 338.503,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "55a7b2def244af9e13d57af08dc22a46b246808714bd65659ddc2d42a83a248b",
+    "narrationInputHash": "ad0c3b97841e8c8186f750fb5985486b70f2cf4d9fd94812c2020126c8141ed1",
+    "videoNarrationHash": "ad0c3b97841e8c8186f750fb5985486b70f2cf4d9fd94812c2020126c8141ed1",
+    "videoVisualHash": "dc59831700abeecda1478c5cbad3a0ee36bb07cb205e995e9b5a264ddf4d5925"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": [
+      "rumpelstiltskin/references/king_ref.jpg",
+      "rumpelstiltskin/references/miller_daughter_ref.jpg",
+      "rumpelstiltskin/references/rumpelstiltskin_ref.jpg",
+      "rumpelstiltskin/references/straw_chamber_ref.jpg"
+    ]
+  },
+  "addedAt": "2026-10-17T11:45:45Z"
+}
