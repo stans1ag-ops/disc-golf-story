@@ -28,7 +28,7 @@ def save_json(p,data):
 class SpokenHTML(HTMLParser):
     def __init__(self):super().__init__();self.parts=[];self.stack=[]
     def handle_starttag(self,tag,attrs):
-        a=dict(attrs);classes=a.get('class','');ignore=any(x in classes for x in ['chant-label','chant-header','sound-label','sound-header'])
+        a=dict(attrs);classes=a.get('class','');ignore=any(x in classes for x in ['chant-label','chant-header','chant-speaker','sound-label','sound-header'])
         if tag=='br':self.parts.append(' ');return
         self.stack.append(ignore or bool(self.stack and self.stack[-1]))
     def handle_endtag(self,tag):
@@ -188,9 +188,11 @@ def video(s,p,force=False):
 def status(s):
     state=checkpoint(s);current=state.get('narration')==narration_fingerprint(s)
     stale=s['media'].get('narrationInputHash')!=input_hash(s)
-    print(json.dumps({'story':s['title'],'scenes':len(s['scenes']),'illustrations':sum(b['type']=='image' for sc in s['scenes'] for b in sc['blocks']),'narration':'needs rebuild' if stale else 'current' if current else 'existing published audio' if s['media'].get('audio') and not state else 'needs rebuild','video':bool(s['media'].get('video')),'captions':bool(s['media'].get('captions')),'checkpoints':str(state_path(s).relative_to(ROOT))},indent=2))
+    images=[b for sc in s['scenes'] for b in sc['blocks'] if b['type']=='image']
+    complete=sum((ROOT/b['src']).is_file() and (ROOT/b['src']).stat().st_size>0 and bool(b.get('alt','').strip()) for b in images)
+    print(json.dumps({'story':s['title'],'scenes':len(s['scenes']),'blankScenes':[sc['id'] for sc in s['scenes'] if not scene_text(sc)],'plannedIllustrations':len(images),'finishedIllustrations':complete,'narration':'needs rebuild' if stale else 'current' if current else 'existing published audio' if s['media'].get('audio') and not state else 'needs rebuild','video':bool(s['media'].get('video')),'captions':bool(s['media'].get('captions')),'checkpoints':str(state_path(s).relative_to(ROOT))},indent=2))
 
-def publish(s):
+def publish(s,check_only=False):
     images=[b for sc in s['scenes'] for b in sc['blocks'] if b['type']=='image']
     if not s['description'] or any(not scene_text(sc) for sc in s['scenes']):raise ValueError('Complete the description and every scene first.')
     if s['collection']=='classics' and len(images)<12:raise ValueError('New classic stories need at least 12 finished illustrations; target 15 or more.')
@@ -201,6 +203,7 @@ def publish(s):
     if s['collection']=='classics' and not s['media'].get('video'):raise ValueError('Render the classic story video first.')
     if checkpoint(s).get('narration')!=narration_fingerprint(s):raise ValueError('Narration is stale. Regenerate it from the final story text before publishing.')
     catalog=json.loads((ROOT/'stories.json').read_text())
+    if check_only:print('Ready to publish. Catalog unchanged.');return
     if s['id'] not in catalog['stories']:catalog['stories'].append(s['id']);save_json(ROOT/'stories.json',catalog)
     print('Added to the catalog. Run build and checks to prepare the website preview.')
 
@@ -210,6 +213,7 @@ def main():
     for command in ['plan','export','status','narrate','video','publish']:
         sub=subs.add_parser(command);sub.add_argument('slug')
         if command in ['narrate','video']:sub.add_argument('--force',action='store_true')
+        if command=='publish':sub.add_argument('--check',action='store_true',help='Check prerequisites without changing the catalog')
     subs.add_parser('setup-models');subs.add_parser('build');args=parser.parse_args()
     if args.command=='new':new_story(args);return
     if args.command=='setup-models':setup_models();return
@@ -217,7 +221,7 @@ def main():
     s,p=load(args.slug)
     if args.command=='narrate':narrate(s,p,args.force)
     elif args.command=='video':video(s,p,args.force)
-    elif args.command=='publish':publish(s)
+    elif args.command=='publish':publish(s,args.check)
     else:globals()[args.command](s)
 
 if __name__=='__main__':

@@ -4,6 +4,7 @@
   const $=(s,root=document)=>root.querySelector(s), $$=(s,root=document)=>[...root.querySelectorAll(s)];
   const safeText=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let prefs={};try{prefs=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
+  if(!prefs||typeof prefs!=='object'||Array.isArray(prefs))prefs={};
   if(!Array.isArray(prefs.favorites))prefs.favorites=[];
   if(!prefs.progress||typeof prefs.progress!=='object')prefs.progress={};
   function save(){try{localStorage.setItem(KEY,JSON.stringify(prefs))}catch(e){}}
@@ -56,19 +57,19 @@
   }
   const dataElement=$('#story-data');if(!dataElement)return;
   const story=JSON.parse(dataElement.textContent),audio=$('#story-audio'),video=$('#story-video');
-  let activeScene=0,lastStored=0,hasInteracted=false;
+  let activeScene=0,lastStored=0,hasInteracted=false,saveTimer;
   let font=Number(prefs.fontSize);
   if(!Number.isFinite(font)){for(const key of ['shane-stories-fontsize','shane-stories-font-size','disc-golf-story-fontsize']){try{font=Number(localStorage.getItem(key));if(font>=16)break}catch(e){}}}
   if(!Number.isFinite(font)||font<16)font=20;
   function setFont(size){font=Math.max(16,Math.min(30,size));prefs.fontSize=font;document.documentElement.style.setProperty('--reading-size',font+'px');$('#font-decrease').disabled=font<=16;$('#font-increase').disabled=font>=30;save()}
   setFont(font);$('#font-decrease').addEventListener('click',()=>setFont(font-2));$('#font-increase').addEventListener('click',()=>setFont(font+2));
   const previous={...(prefs.progress[story.id]||{})};
-  function storeProgress(force=false){if(!hasInteracted)return;if(!force&&Date.now()-lastStored<1000)return;lastStored=Date.now();const p=prefs.progress[story.id]||{};prefs.progress[story.id]={...p,scene:story.scenes[activeScene]?.id||'scene-1',time:audio?.currentTime||p.time||0,videoTime:video?.currentTime||p.videoTime||0,updatedAt:Date.now(),completed:p.completed||false};save()}
+  function storeProgress(force=false){if(!hasInteracted)return;clearTimeout(saveTimer);if(!force&&Date.now()-lastStored<1000){saveTimer=setTimeout(()=>storeProgress(true),1000-(Date.now()-lastStored));return}lastStored=Date.now();const p=prefs.progress[story.id]||{};prefs.progress[story.id]={...p,scene:story.scenes[activeScene]?.id||'scene-1',time:audio?.currentTime||p.time||0,videoTime:video?.currentTime||p.videoTime||0,updatedAt:Date.now(),completed:p.completed||false};save()}
   for(const event of ['pointerdown','keydown','wheel','touchstart'])document.addEventListener(event,()=>{hasInteracted=true},{passive:true});
   window.addEventListener('pagehide',()=>storeProgress(true));document.addEventListener('visibilitychange',()=>{if(document.hidden)storeProgress(true)});
   const progress=$('#reading-progress'),scenes=$$('.story-scene');
   const sceneObserver=new IntersectionObserver(entries=>{const candidates=entries.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);if(!candidates.length)return;const index=Number(candidates[0].target.dataset.sceneIndex);activeScene=index;$('#scene-select').value=story.scenes[index].id;progress.style.width=((index+1)/scenes.length*100)+'%';storeProgress()},{rootMargin:'-155px 0px -50% 0px',threshold:0});scenes.forEach(s=>sceneObserver.observe(s));
-  $('#scene-select').addEventListener('change',e=>{hasInteracted=true;go(document.getElementById(e.target.value));history.replaceState(null,'','#'+e.target.value);if(prefs.follow&&audio&&!audio.paused&&story.hasCues){const cue=story.scenes.find(s=>s.id===e.target.value);audio.currentTime=cue.start}});
+  $('#scene-select').addEventListener('change',e=>{hasInteracted=true;activeScene=story.scenes.findIndex(s=>s.id===e.target.value);storeProgress(true);go(document.getElementById(e.target.value));history.replaceState(null,'','#'+e.target.value);if(prefs.follow&&audio&&!audio.paused&&story.hasCues){const cue=story.scenes.find(s=>s.id===e.target.value);audio.currentTime=cue.start}});
   if(previous.scene||previous.time){const notice=$('#resume-notice');notice.innerHTML=`<span>Welcome back. Your place in this story is saved.</span><div><button type="button" id="resume-story">Resume</button><button type="button" id="restart-story">Start over</button></div>`;notice.hidden=false;$('#resume-story').addEventListener('click',()=>{go(document.getElementById(previous.scene||'scene-1'));notice.hidden=true});$('#restart-story').addEventListener('click',()=>{if(audio)audio.currentTime=0;if(video)video.currentTime=0;prefs.progress[story.id]={scene:'scene-1',time:0,videoTime:0,updatedAt:Date.now(),completed:false};save();go(scenes[0]);notice.hidden=true})}
   const status=$('#audio-status');
   async function playAudio(){if(!audio)return;hasInteracted=true;if(status)status.textContent='Loading narration…';try{await audio.play();if(status)status.textContent=''}catch(e){if(status)status.textContent='Tap the audio player to start. If the audio does not load, check your connection.'}}
@@ -85,7 +86,7 @@
     audio.addEventListener('timeupdate',()=>{if(story.hasCues){let index=0;story.scenes.forEach((s,i)=>{if(s.start<=audio.currentTime)index=i});if(index!==lastCue){lastCue=index;scenes.forEach((el,i)=>el.classList.toggle('narrating',i===index));if(prefs.follow&&!audio.paused){activeScene=index;go(scenes[index]);$('#scene-select').value=story.scenes[index].id}}}storeProgress()});
     audio.addEventListener('ended',()=>{prefs.progress[story.id]={...(prefs.progress[story.id]||{}),completed:true,time:0,updatedAt:Date.now()};save();toast('The end. A lovely adventure!')});
   }
-  if(video){video.addEventListener('loadedmetadata',()=>{if(previous.videoTime>0&&previous.videoTime<video.duration-1)video.currentTime=previous.videoTime});video.addEventListener('play',()=>{hasInteracted=true;audio?.pause();setMode('watch')});video.addEventListener('pause',()=>storeProgress(true));video.addEventListener('timeupdate',()=>storeProgress());video.addEventListener('error',()=>{$('#video-status').textContent='The video could not load. Check your connection and try again.'});video.addEventListener('ended',()=>{prefs.progress[story.id]={...(prefs.progress[story.id]||{}),completed:true,videoTime:0,updatedAt:Date.now()};save()})}
+  if(video){video.playbackRate=audio?.playbackRate||1;video.addEventListener('loadedmetadata',()=>{if(previous.videoTime>0&&previous.videoTime<video.duration-1)video.currentTime=previous.videoTime});video.addEventListener('play',()=>{hasInteracted=true;audio?.pause();setMode('watch')});video.addEventListener('pause',()=>storeProgress(true));video.addEventListener('timeupdate',()=>storeProgress());video.addEventListener('error',()=>{$('#video-status').textContent='The video could not load. Check your connection and try again.'});video.addEventListener('ended',()=>{prefs.progress[story.id]={...(prefs.progress[story.id]||{}),completed:true,videoTime:0,updatedAt:Date.now()};save()})}
   function setMode(mode){$$('[data-mode]').forEach(b=>{const active=b.dataset.mode===mode;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','true');else b.removeAttribute('aria-current')})}
   $$('[data-mode]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();const mode=b.dataset.mode;setMode(mode);if(mode==='read'){audio?.pause();video?.pause();go(scenes[activeScene]||scenes[0])}else if(mode==='listen'){go($('#listen'));playAudio()}else {audio?.pause();go($('#watch'));video?.play().catch(()=>{$('#video-status').textContent='Tap the video player to begin.'})}}));
   const dialog=$('#illustration-dialog');let trigger;

@@ -16,3 +16,7 @@ test('new-story workflow creates an unpublished draft and does not alter the cat
  const id='workflow-test-draft',folder=path.join(ROOT,id);const before=fs.readFileSync(path.join(ROOT,'stories.json'),'utf8');
  try{cp.execFileSync('python3',['scripts/story.py','new',id,'--title','A Test Adventure','--collection','classics'],{cwd:ROOT});const s=read(id);assert.equal(s.scenes.length,15);assert(fs.existsSync(path.join(folder,'illustration-plan.json')));assert.equal(fs.readFileSync(path.join(ROOT,'stories.json'),'utf8'),before);const published=cp.spawnSync('python3',['scripts/story.py','publish',id],{cwd:ROOT,encoding:'utf8'});assert.notEqual(published.status,0);assert.equal(fs.readFileSync(path.join(ROOT,'stories.json'),'utf8'),before)}finally{fs.rmSync(folder,{recursive:true,force:true})}
 });
+test('spoken exports omit presentation speaker labels and status distinguishes planned art',()=>{
+ const result=cp.execFileSync('python3',['-c',"import sys,json;sys.path.insert(0,'scripts');import story;print(story.spoken('<div class=\"chant-speaker\">🐇 The Hare</div><p>Catch me!</p>'));s,p=story.load('steadfast-tin-soldier');story.status(s)"],{cwd:ROOT,encoding:'utf8'});
+ assert.match(result,/^Catch me!/);assert.doesNotMatch(result,/The Hare/);assert.match(result,/finishedIllustrations/);assert.match(result,/blankScenes/);
+});
