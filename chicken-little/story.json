@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "id": "chicken-little",
+  "title": "Chicken Little",
+  "collection": "classics",
+  "order": 15,
+  "description": "“The sky's a-falling!” — “Cock-a-doodle-doo!”",
+  "subtitle": "A traditional folk tale • Also known as Henny-Penny • A funny bedtime tale about panicking — and checking for acorns.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/childrens-stories/henny-penny-the-sky-is-falling",
+  "cover": {
+    "src": "chicken-little/chicken_little_07.jpg",
+    "alt": "Henny-penny, Cocky-locky, Ducky-daddles, Goosey-poosey, and Turkey-lurkey hurrying down the country path together."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Morning in the Rickyard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One day Henny-penny was picking up corn in the rickyard under the big oak tree."
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_01.jpg",
+          "alt": "Henny-penny the little brown hen pecks corn happily under the big oak tree.",
+          "caption": "Henny-penny pecks corn in the sunny rickyard.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "Whack!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Whack! An acorn hit her upon the head."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Henny-penny</div>\n        <div class=\"chant-text\">“Goodness gracious me! The sky's a-going to fall; I must go and tell the King.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_02.jpg",
+          "alt": "An acorn bonks the startled hen on the head under the oak tree.",
+          "caption": "Whack! An acorn hits her on the head!",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 7.675
+    },
+    {
+      "id": "scene-3",
+      "title": "The Sky's A-Falling!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So she went along, and she went along, and she went along..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Henny-penny</div>\n        <div class=\"chant-text\">“The sky's a-falling! The sky's a-falling!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_03.jpg",
+          "alt": "The panicked hen runs flapping down the country lane.",
+          "caption": "She runs down the lane in a panic.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 18.469
+    },
+    {
+      "id": "scene-4",
+      "title": "Cocky-locky Joins",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Till she met Cocky-locky."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐓 Cocky-locky</div>\n        <div class=\"chant-text\">“Where are you going, Henny-penny?” — “Oh! I'm going to tell the King the sky's a-falling.” — “May I come with you?” — “Certainly!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_04.jpg",
+          "alt": "Henny-penny meets Cocky-locky the proud rooster on the lane.",
+          "caption": "Cocky-locky joins the march.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 26.389
+    },
+    {
+      "id": "scene-5",
+      "title": "Ducky-daddles Joins",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They went along, and they went along, till they met Ducky-daddles."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦆 Ducky-daddles</div>\n        <div class=\"chant-text\">“Oh! we're going to tell the King the sky's a-falling.” — “May I come with you?” — “Certainly!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_05.jpg",
+          "alt": "The hen and rooster meet Ducky-daddles the little yellow duck by the pond.",
+          "caption": "Ducky-daddles waddles along too.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 43.104
+    },
+    {
+      "id": "scene-6",
+      "title": "Goosey-poosey Joins",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They went along, and they went along, till they met Goosey-poosey."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🪿 Goosey-poosey</div>\n        <div class=\"chant-text\">“Oh! we're going to tell the King the sky's a-falling.” — “May I come with you?” — “Certainly!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_06.jpg",
+          "alt": "The three birds meet Goosey-poosey the elegant white goose in the meadow.",
+          "caption": "Goosey-poosey bends her long neck to listen.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 60.037
+    },
+    {
+      "id": "scene-7",
+      "title": "Turkey-lurkey Joins",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They went along, and they went along, till they met Turkey-lurkey."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦃 Turkey-lurkey</div>\n        <div class=\"chant-text\">“May I come with you?” — “Oh, certainly!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_07.jpg",
+          "alt": "All five birds hurry together down the country path.",
+          "caption": "The whole flock hurries along together.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 77.107
+    },
+    {
+      "id": "scene-8",
+      "title": "Foxy-woxy Appears",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They went along, and they went along, till they met Foxy-woxy at the edge of the dark wood."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦊 Foxy-woxy</div>\n        <div class=\"chant-text\">“Oh! but this is not the way to the King. I know the proper way; shall I show it you?” — “Oh, certainly, Foxy-woxy!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_08.jpg",
+          "alt": "The sly fox smiles cunningly at the five worried birds.",
+          "caption": "Foxy-woxy offers to show the way.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 89.773
+    },
+    {
+      "id": "scene-9",
+      "title": "The Dark Hole",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So they went along, and they went along, till they came to a narrow and dark hole. This was the door of Foxy-woxy&#x27;s burrow."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦊 Foxy-woxy</div>\n        <div class=\"chant-text\">“This is the short cut to the King's palace. Follow me!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_09.jpg",
+          "alt": "The fox points at the narrow dark burrow hole while the birds peer nervously.",
+          "caption": "A narrow, dark hole — the fox's burrow.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 105.322
+    },
+    {
+      "id": "scene-10",
+      "title": "Into the Burrow",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So Foxy-woxy slipped into the dark burrow, and turned round to wait. Now Turkey-lurkey was the first to go through the dark hole into the burrow."
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_10.jpg",
+          "alt": "Inside the dark burrow, the fox waits with glinting eyes as Turkey-lurkey steps in.",
+          "caption": "Turkey-lurkey is the first to step inside.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 119.636
+    },
+    {
+      "id": "scene-11",
+      "title": "Hrumph! Hrumph! Hrumph!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He hadn&#x27;t got far when — “Hrumph!” Foxy-woxy snapped off Turkey-lurkey&#x27;s head. Then Goosey-poosey went in, and — “Hrumph!” Then Ducky-daddles waddled down, and — “Hrumph!”"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_11.jpg",
+          "alt": "The worried birds wait outside the dark hole as the fox's tail disappears inside.",
+          "caption": "One by one, the friends go into the dark.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 129.386
+    },
+    {
+      "id": "scene-12",
+      "title": "Cock-a-doodle-doo!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then Cocky-locky strutted down into the burrow. But Cocky-locky will always crow whether you want him to do so or not..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐓 Cocky-locky</div>\n        <div class=\"chant-text\">“Cock-a-doodle-doo!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_12.jpg",
+          "alt": "Cocky-locky throws his head back and crows with all his might in the dark.",
+          "caption": "Cocky-locky crows with all his might!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 141.975
+    },
+    {
+      "id": "scene-13",
+      "title": "Henny-penny Flees",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now when Henny-penny, who had just got into the dark burrow, heard Cocky-locky crow..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Henny-penny</div>\n        <div class=\"chant-text\">“My goodness! It must be dawn. Time for me to lay my egg.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_13.jpg",
+          "alt": "Henny-penny turns and bustles out of the dark hole into bright daylight.",
+          "caption": "Henny-penny turns and bustles off to her nest.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 153.398
+    },
+    {
+      "id": "scene-14",
+      "title": "Safe at Last",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So she escaped — but she never told the King the sky was falling!"
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_14.jpg",
+          "alt": "Henny-penny sits safely in her cozy straw nest at dawn.",
+          "caption": "Safe in her nest — but the King never heard!",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 168.621
+    },
+    {
+      "id": "scene-15",
+      "title": "Only an Acorn",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "After all, the sky was never falling at all. It was only ever an acorn. The end."
+        },
+        {
+          "type": "image",
+          "src": "chicken-little/chicken_little_15.jpg",
+          "alt": "Henny-penny gazes thoughtfully at a single acorn under the oak tree.",
+          "caption": "It was only ever an acorn. The end.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 173.026
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What should Henny-penny have done before running to tell the King?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🐔</span>\n          <strong class=\"choice-card-title\">Check First</strong>\n          <span class=\"choice-card-desc\">Henny-penny never looked up to see what hit her! When something surprises you, take a breath and check what really happened before you panic.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🦊</span>\n          <strong class=\"choice-card-title\">Beware of Flattery</strong>\n          <span class=\"choice-card-desc\">Foxy-woxy tricked the birds by pretending to help. Be careful of strangers offering shortcuts — and always tell a grown-up where you are going.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "chicken-little/narration.mp3",
+    "video": {
+      "src": "chicken-little/chicken_little_story_video.mp4",
+      "poster": "chicken-little/chicken_little_story_video_poster.jpg"
+    },
+    "captions": "chicken-little/narration.vtt",
+    "duration": 181.166,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "9c84e69ec64a5ccab688bf1c7521b00654b56a26018262e53c1ef338b298b2d0",
+    "narrationInputHash": "b4dda11c83ef977faaa47d5c762f5a3e5b32e5ff8016ddacce857b64bb893fbf",
+    "videoNarrationHash": "b4dda11c83ef977faaa47d5c762f5a3e5b32e5ff8016ddacce857b64bb893fbf",
+    "videoVisualHash": "9d307ce94945a72dd5c437051a3524aefad3f4f0b558e315fb1c6647102a7d1d"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": [
+      "chicken-little/references/flock_ref.jpg",
+      "chicken-little/references/foxy_woxy_ref.jpg",
+      "chicken-little/references/henny_penny_ref.jpg",
+      "chicken-little/references/rickyard_ref.jpg"
+    ]
+  },
+  "addedAt": "2026-10-16T22:48:28Z"
+}

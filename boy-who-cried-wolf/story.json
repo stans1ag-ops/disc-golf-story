@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "boy-who-cried-wolf",
+  "title": "The Boy Who Cried Wolf",
+  "collection": "classics",
+  "order": 12,
+  "description": "“Wolf! The wolf is chasing the sheep!” — “Nobody believes a liar!”",
+  "subtitle": "An Aesop’s fable • A bedtime tale about a bored shepherd boy, two false alarms, and why nobody believes a liar.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/author/aesop/short-story/the-boy-who-cried-wolf",
+  "cover": {
+    "src": "boy-who-cried-wolf/cried_wolf_05.jpg",
+    "alt": "The shepherd boy laughs at the furious villagers after his false wolf alarm."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Bored Shepherd Boy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "There once was a shepherd boy who was bored as he sat on the hillside watching the village sheep."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_01.jpg",
+          "alt": "A bored shepherd boy sits on a sunny hillside watching his flock of white sheep graze, the village in the valley below.",
+          "caption": "A shepherd boy, bored on the hillside.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "A Lonely Day",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It was rather lonely for him all day, so he played on his shepherd&#x27;s pipe, and thought upon a plan by which he could get a little company and some excitement."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_02.jpg",
+          "alt": "The shepherd boy plays his pipe on the grassy hillside, his sheepdog beside him, looking lonely and restless.",
+          "caption": "Lonely and restless, he hatches a plan.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 9.466
+    },
+    {
+      "id": "scene-3",
+      "title": "The Mischievous Idea",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "To amuse himself he took a great breath and sang out..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧒 The Boy</div>\n        <div class=\"chant-text\">“Wolf! The wolf is chasing the sheep!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_03.jpg",
+          "alt": "The mischievous boy cups his hands around his mouth, about to shout from the hillside with a naughty grin.",
+          "caption": "“Wolf! The wolf is chasing the sheep!”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 19.118
+    },
+    {
+      "id": "scene-4",
+      "title": "The Villagers Rush Up",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The villagers came running up the hill to help the boy drive the wolf away. But when they arrived at the top of the hill, they found no wolf."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_04.jpg",
+          "alt": "Villagers rush up the winding hillside path in alarm, carrying pitchforks and sticks toward the pasture.",
+          "caption": "The villagers come running — but there is no wolf.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 25.701
+    },
+    {
+      "id": "scene-5",
+      "title": "The Boy Laughs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The boy laughed at the sight of their angry faces."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧑‍🌾 The Villagers</div>\n        <div class=\"chant-text\">“Don't cry 'wolf', shepherd boy, when there's no wolf!” — They went grumbling back down the hill.</div>"
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_05.jpg",
+          "alt": "The boy doubles over laughing at the furious villagers, who shake their fists — there is no wolf anywhere.",
+          "caption": "The boy laughs at their angry faces.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 34.659
+    },
+    {
+      "id": "scene-6",
+      "title": "A Stern Warning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The boy felt a little ashamed, but not for long. For the joke had been such fun, he could think of nothing else all day."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_06.jpg",
+          "alt": "A stern village woman raises her finger to scold the sheepish boy while other villagers walk grumbling back down the path.",
+          "caption": "A stern warning — but the joke was too much fun.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 45.482
+    },
+    {
+      "id": "scene-7",
+      "title": "He Cries Wolf Again",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Later, the boy sang out again, &quot;Wolf! The wolf is chasing the sheep!&quot; To his naughty delight, he watched the villagers run up the hill to help him drive the wolf away."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_07.jpg",
+          "alt": "The boy grins gleefully, cupping his hands to shout toward the village a second time, his sheep grazing peacefully behind him.",
+          "caption": "He cries wolf a second time.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 53.57
+    },
+    {
+      "id": "scene-8",
+      "title": "Grumbling Down Again",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When the villagers saw no wolf they sternly said, &quot;Save your frightened song for when there is really something wrong! Don&#x27;t cry &#x27;wolf&#x27; when there is NO wolf!&quot; But the boy just grinned and watched them go grumbling down the hill once more."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_08.jpg",
+          "alt": "Angry villagers trudge grumbling back down the path while the boy waves mockingly from the hill.",
+          "caption": "Grumbling down the hill once more.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 64.778
+    },
+    {
+      "id": "scene-9",
+      "title": "The Last Warning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "That evening the boy promised himself he would never play the trick again. But a promise made to yourself is easy to forget."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_09.jpg",
+          "alt": "A stern grey-bearded villager points a warning finger at the cheeky, unrepentant boy as evening light softens the pasture.",
+          "caption": "One last warning.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 79.146
+    },
+    {
+      "id": "scene-10",
+      "title": "A Real Wolf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Later, he saw a REAL wolf prowling about his flock, come out from the dark forest."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_10.jpg",
+          "alt": "A real grey wolf prowls low out of the dark forest edge toward the grazing sheep; the boy turns in alarm in the distance.",
+          "caption": "This time the wolf is REAL.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 87.458
+    },
+    {
+      "id": "scene-11",
+      "title": "Wolf! Wolf!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Alarmed, he leaped to his feet and sang out as loudly as he could, &quot;Wolf! Wolf!&quot;"
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_11.jpg",
+          "alt": "The terrified boy leaps up shouting toward the village as the wolf prowls among the scattering sheep.",
+          "caption": "He cries for help — and means it this time.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 93.28
+    },
+    {
+      "id": "scene-12",
+      "title": "Nobody Comes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But the villagers thought he was trying to fool them again, and so they didn&#x27;t come. &quot;He cannot fool us again,&quot; they said, and went on with their work."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_12.jpg",
+          "alt": "In the village, people calmly go about their evening business, deliberately ignoring the distant cry; a tiny figure shouts unheard on the hill.",
+          "caption": "“He cannot fool us again.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 99.795
+    },
+    {
+      "id": "scene-13",
+      "title": "Sunset Worry",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At sunset, everyone wondered why the shepherd boy hadn&#x27;t returned to the village with their sheep. They went up the hill to find the boy."
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_13.jpg",
+          "alt": "At sunset the villagers gather in the square with worried faces, the old man pointing up the hill where the boy has not returned.",
+          "caption": "Why hasn't the boy come home?",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 109.027
+    },
+    {
+      "id": "scene-14",
+      "title": "Found Weeping",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They found him weeping."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">😢 The Boy</div>\n        <div class=\"chant-text\">“There really was a wolf here! The flock has scattered! I cried out, 'Wolf!' Why didn't you come?”</div>"
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_14.jpg",
+          "alt": "At dusk, villagers with lanterns find the weeping boy sitting alone among trampled grass, his sheep scattered and huddled far away.",
+          "caption": "“Why didn't you come?”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 117.826
+    },
+    {
+      "id": "scene-15",
+      "title": "Nobody Believes a Liar",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "An old man tried to comfort the boy as they walked back to the village. &quot;We&#x27;ll help you look for the lost sheep in the morning,&quot; he said, putting his arm around the youth. And that is the end of the tale."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧓 The Wise Old Man</div>\n        <div class=\"chant-text\">“Nobody believes a liar, even when he is telling the truth!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "boy-who-cried-wolf/cried_wolf_15.jpg",
+          "alt": "The kind old man puts a comforting arm around the tearful boy as they walk back down to the village at dusk.",
+          "caption": "“Nobody believes a liar, even when he is telling the truth!”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 126.744
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What should the boy have done instead of crying “wolf” for fun?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🗣️</span>\n          <strong class=\"choice-card-title\">Tell the Truth</strong>\n          <span class=\"choice-card-desc\">Lying for fun cost the boy his flock. Telling the truth, even when it’s boring, keeps people’s trust — and trust is hard to win back.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎺</span>\n          <strong class=\"choice-card-title\">Find a Better Game</strong>\n          <span class=\"choice-card-desc\">The boy was bored, and boredom made him mischievous. When you’re bored, find a real game to play — like the boy’s pipe — instead of tricking people.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "boy-who-cried-wolf/narration.mp3",
+    "video": {
+      "src": "boy-who-cried-wolf/boy_who_cried_wolf_story_video.mp4",
+      "poster": "boy-who-cried-wolf/cried_wolf_story_video_poster.jpg"
+    },
+    "captions": "boy-who-cried-wolf/narration.vtt",
+    "duration": 144.136,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "d8233916fa6276dd64e3e3513d621126dbc1cf2b63b395956bb509ea7f05d488",
+    "narrationInputHash": "4f50de61caaa0458f1dd328bec4f0041652a57c31c2bf51d97bd9b8d64f2f4db",
+    "videoNarrationHash": "4f50de61caaa0458f1dd328bec4f0041652a57c31c2bf51d97bd9b8d64f2f4db",
+    "videoVisualHash": "f2836d582dfa3d3102fc2b22afd26e60ef7d1c89b3c440079b8b0fb4d9b35931"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": [
+      "boy-who-cried-wolf/references/boy_ref.jpg",
+      "boy-who-cried-wolf/references/old_man_ref.jpg",
+      "boy-who-cried-wolf/references/pasture_ref.jpg",
+      "boy-who-cried-wolf/references/wolf_ref.jpg"
+    ]
+  },
+  "addedAt": "2026-10-17T18:36:40Z"
+}

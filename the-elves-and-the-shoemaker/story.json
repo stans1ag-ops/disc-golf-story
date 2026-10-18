@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "id": "the-elves-and-the-shoemaker",
+  "title": "The Elves and the Shoemaker",
+  "collection": "classics",
+  "order": 10,
+  "description": "“Who is finishing my shoes at night?” — “Now we are boys so fine to see!”",
+  "subtitle": "By the Brothers Grimm • A cozy bedtime tale about kindness, gratitude, and secret midnight helpers.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/author/the-brothers-grimm/short-story/the-elves-and-the-shoemaker",
+  "cover": {
+    "src": "the-elves-and-the-shoemaker/elves_shoemaker_12.jpg",
+    "alt": "Two tiny elves stitching and hammering shoes at the workbench at midnight."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Last Piece of Leather",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "A shoemaker, through no fault of his own, had become so poor that he had nothing left but leather for one pair of shoes."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_01.jpg",
+          "alt": "The elderly shoemaker gazes sadly at his last small piece of leather at dusk.",
+          "caption": "The poor shoemaker has only one last piece of leather left.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "Cutting by Candlelight",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "That evening, he cut out the shoes he would make in the morning. Then, with a clear conscience, he went quietly to bed and fell asleep."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_02.jpg",
+          "alt": "The shoemaker cuts leather pieces by warm candlelight in the evening.",
+          "caption": "By candlelight, he cuts out the shoes for the morning.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 10.865
+    },
+    {
+      "id": "scene-3",
+      "title": "A Clear Conscience",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He slept soundly all night long, never dreaming of the wonderful surprise the morning would bring."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_03.jpg",
+          "alt": "The shoemaker sleeps peacefully in bed under a patchwork quilt in the moonlight.",
+          "caption": "He sleeps soundly, dreaming of nothing at all.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 19.547
+    },
+    {
+      "id": "scene-4",
+      "title": "Morning Wonder",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In the morning, when he sat down to work, the two shoes stood quite finished on his table! He was astounded, and did not know what to say."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_04.jpg",
+          "alt": "The astounded shoemaker stares at the finished shoes on his workbench.",
+          "caption": "In the morning, the shoes stand quite finished on his table!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 25.893
+    },
+    {
+      "id": "scene-5",
+      "title": "A Masterpiece",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He picked up the shoes to look more closely. They were so neatly made that there was not one bad stitch in them, just as if they were meant to be a masterpiece."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_05.jpg",
+          "alt": "Close-up of the perfectly stitched brown leather shoes gleaming in the light.",
+          "caption": "Not one bad stitch — a true masterpiece.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 34.876
+    },
+    {
+      "id": "scene-6",
+      "title": "The Generous Buyer",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Soon a buyer came in, and the shoes pleased him so well that he paid more for them than was usual. With the money, the shoemaker was able to buy leather for two pairs of shoes."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_06.jpg",
+          "alt": "A happy customer hands the shoemaker extra gold coins for the fine shoes.",
+          "caption": "The buyer pays more than the usual price.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 44.915
+    },
+    {
+      "id": "scene-7",
+      "title": "Leather for Two Pairs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He cut them out that evening, and went to bed with fresh courage, eager for the morning."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_07.jpg",
+          "alt": "The shoemaker cuts fresh new leather by candlelight with a hopeful smile.",
+          "caption": "With fresh courage, he cuts leather for two pairs.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 56.122
+    },
+    {
+      "id": "scene-8",
+      "title": "Two Pairs by Morning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In the morning, the two pairs were already made! Buyers came gladly and paid him well, so he bought leather for four pairs of shoes."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_08.jpg",
+          "alt": "Two pairs of finished shoes stand neatly on the sunlit workbench.",
+          "caption": "In the morning, two pairs stand finished on the bench!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 61.788
+    },
+    {
+      "id": "scene-9",
+      "title": "Honest Independence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And so it went on. Whatever he cut out in the evening was finished by the morning, and soon he had his honest independence again, and in time became a wealthy man."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_09.jpg",
+          "alt": "The proud shoemaker stands among four pairs of shoes in his prosperous workshop.",
+          "caption": "Soon he has his honest independence again.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 70.512
+    },
+    {
+      "id": "scene-10",
+      "title": "The Christmas Eve Plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now, one evening not long before Christmas, the shoemaker said to his wife..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👨‍🔧 The Shoemaker</div>\n        <div class=\"chant-text\">“What do you say if we stay up tonight, to see who it is that lends us this helping hand?”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_10.jpg",
+          "alt": "The shoemaker leans toward his wife by candlelight, suggesting they stay up and watch.",
+          "caption": "He suggests they stay up to meet their secret helper.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 81.723
+    },
+    {
+      "id": "scene-11",
+      "title": "Hiding and Watching",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "His wife liked the idea. She lit a candle, and they hid themselves behind the clothes hanging in the corner, and watched."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_11.jpg",
+          "alt": "The old couple hides behind hanging clothes, peeking out with a candle.",
+          "caption": "They hide behind the hanging clothes and watch.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 92.384
+    },
+    {
+      "id": "scene-12",
+      "title": "The Midnight Workers",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At midnight, two tiny little men came in. They sat down at the shoemaker&#x27;s table and began to stitch and sew and hammer so skillfully and so quickly with their little fingers that the shoemaker could not turn away his eyes for astonishment."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_12.jpg",
+          "alt": "Two tiny elves stitch and hammer shoes on the workbench at midnight.",
+          "caption": "Two tiny elves work with astonishing speed!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 100.62
+    },
+    {
+      "id": "scene-13",
+      "title": "A Grateful Plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The next morning his wife said..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👵 The Wife</div>\n        <div class=\"chant-text\">“The little men have made us rich, and we really must show that we are grateful. I will make them little shirts and coats and trousers, and knit them each a pair of stockings, and you shall make them two little pairs of shoes.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_13.jpg",
+          "alt": "The grateful couple sews tiny clothes and tiny shoes by lamplight.",
+          "caption": "They make tiny clothes and tiny shoes to say thank you.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 116.577
+    },
+    {
+      "id": "scene-14",
+      "title": "Gifts on the Table",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When everything was ready, they laid the pretty little clothes on the table instead of the cut-out leather, and hid themselves to see what the little men would do."
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_14.jpg",
+          "alt": "Tiny folded clothes, stockings, and little shoes wait on the candlelit bench.",
+          "caption": "The tiny gifts wait on the table instead of leather.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 132.154
+    },
+    {
+      "id": "scene-15",
+      "title": "Dance of Joy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At midnight the elves came bounding in. They found the little clothes and were overjoyed. They dressed themselves in the greatest delight..."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧝 The Elves</div>\n        <div class=\"chant-text\">“Now we are boys so fine to see, why should we longer cobblers be?”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-elves-and-the-shoemaker/elves_shoemaker_15.jpg",
+          "alt": "The two elves in fine new clothes dance joyfully out the cottage door into the moonlight.",
+          "caption": "Dressed in finery, the elves dance right out the door!",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 141.764
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">How did the shoemaker and his wife say thank you to the elves?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🧝</span>\n          <strong class=\"choice-card-title\">Say Thank You</strong>\n          <span class=\"choice-card-desc\">The shoemaker and his wife didn’t just enjoy their good fortune — they made beautiful gifts to thank their secret helpers. Saying thank you with actions means the most!</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">👞</span>\n          <strong class=\"choice-card-title\">Kindness Comes Back</strong>\n          <span class=\"choice-card-desc\">The elves helped because the shoemaker was honest and hardworking, and his kindness came back to him. Being good to others brings good things around.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "the-elves-and-the-shoemaker/narration.mp3",
+    "video": {
+      "src": "the-elves-and-the-shoemaker/elves_and_the_shoemaker_story_video.mp4",
+      "poster": "the-elves-and-the-shoemaker/elves_and_the_shoemaker_story_video_poster.jpg"
+    },
+    "captions": "the-elves-and-the-shoemaker/narration.vtt",
+    "duration": 164.84,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "68682e5fb9814a21010bdc6a4e730249bc551feb4899b0ef878a9cb93af4c6ed",
+    "narrationInputHash": "038d959bfee6045fdef0713d89dcb24185a06198182841e0472346b4c4d1f39e",
+    "videoNarrationHash": "038d959bfee6045fdef0713d89dcb24185a06198182841e0472346b4c4d1f39e",
+    "videoVisualHash": "32366380f5fcbf1d610f6e3c892179a434739076441be211fe4841e45bf1d0e6"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": [
+      "the-elves-and-the-shoemaker/references/elves_ref.jpg",
+      "the-elves-and-the-shoemaker/references/shoemaker_ref.jpg",
+      "the-elves-and-the-shoemaker/references/wife_ref.jpg",
+      "the-elves-and-the-shoemaker/references/workshop_ref.jpg"
+    ]
+  },
+  "addedAt": "2026-10-16T16:42:19Z"
+}

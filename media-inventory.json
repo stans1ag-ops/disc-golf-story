@@ -1,0 +1,1706 @@
+{
+  "boy-who-cried-wolf/boy_who_cried_wolf_story_video.mp4": {
+    "sha": "94ba0ff9e41ea5bf234b21f9afc8dc18b556e0eb",
+    "size": 9469940
+  },
+  "boy-who-cried-wolf/cried_wolf_01.jpg": {
+    "sha": "dc4fa4c826df948331514d67d2536cf0309a67c7",
+    "size": 701990
+  },
+  "boy-who-cried-wolf/cried_wolf_02.jpg": {
+    "sha": "025ea5b23ee901f10de79e122e49c8ee9d407d77",
+    "size": 819929
+  },
+  "boy-who-cried-wolf/cried_wolf_03.jpg": {
+    "sha": "c2adfe3957d25ec28c5d4cdc01111753730d3525",
+    "size": 825591
+  },
+  "boy-who-cried-wolf/cried_wolf_04.jpg": {
+    "sha": "666eb927483153a7d4d0dd4ad2ef51b9f4867fdf",
+    "size": 869068
+  },
+  "boy-who-cried-wolf/cried_wolf_05.jpg": {
+    "sha": "f67a5d5a769f819ec5371720db568687c5d4803f",
+    "size": 742961
+  },
+  "boy-who-cried-wolf/cried_wolf_06.jpg": {
+    "sha": "ec85d7a01cf2c089420ad09c86b570ab3f6abc98",
+    "size": 852819
+  },
+  "boy-who-cried-wolf/cried_wolf_07.jpg": {
+    "sha": "aeea3a6d4ff7270dc7b9edc5dd17fee9bf1298db",
+    "size": 795650
+  },
+  "boy-who-cried-wolf/cried_wolf_08.jpg": {
+    "sha": "c16280941f263ce4aea11883ed85febf41477ec3",
+    "size": 843510
+  },
+  "boy-who-cried-wolf/cried_wolf_09.jpg": {
+    "sha": "7141b82615f2959bb026175dfbd13776bb34ae13",
+    "size": 698016
+  },
+  "boy-who-cried-wolf/cried_wolf_10.jpg": {
+    "sha": "64cb17a9f2b3f9300f61bfcfa06fb19105c48413",
+    "size": 838255
+  },
+  "boy-who-cried-wolf/cried_wolf_11.jpg": {
+    "sha": "b81483abffd51a1fc11e9eb76dd93edbd6fa1d2f",
+    "size": 799765
+  },
+  "boy-who-cried-wolf/cried_wolf_12.jpg": {
+    "sha": "40d868ae1569f32df10a6da808666a8f5bf0aad5",
+    "size": 813128
+  },
+  "boy-who-cried-wolf/cried_wolf_13.jpg": {
+    "sha": "9ba7da68eac8997e8168f3a815f56addccbb5139",
+    "size": 955279
+  },
+  "boy-who-cried-wolf/cried_wolf_14.jpg": {
+    "sha": "c945908770ce2ddf75a5eedc3c16d5248583fd06",
+    "size": 679543
+  },
+  "boy-who-cried-wolf/cried_wolf_15.jpg": {
+    "sha": "869b0ebe5cf415908740625d181ae31444429e70",
+    "size": 780302
+  },
+  "boy-who-cried-wolf/cried_wolf_story_video_poster.jpg": {
+    "sha": "de1292eb084f827cbfb7963b08a070147658d07b",
+    "size": 313045
+  },
+  "boy-who-cried-wolf/narration.mp3": {
+    "sha": "6b8b8f25fef4f545726eabbc4e71ef93c3cff964",
+    "size": 3460653
+  },
+  "boy-who-cried-wolf/narration.vtt": {
+    "sha": "ac0d92ef111bcd3b8c38c8ff587ba82667d0215d",
+    "size": 3118
+  },
+  "boy-who-cried-wolf/references/boy_ref.jpg": {
+    "sha": "c381224cbc886643fdbaba22a83162f13cb8c387",
+    "size": 513382
+  },
+  "boy-who-cried-wolf/references/old_man_ref.jpg": {
+    "sha": "83b40122622297f490d637e8ea0b3f6fafaf3d78",
+    "size": 544465
+  },
+  "boy-who-cried-wolf/references/pasture_ref.jpg": {
+    "sha": "5fc676bb6f8b7eee6564c18941456da485acf348",
+    "size": 876940
+  },
+  "boy-who-cried-wolf/references/wolf_ref.jpg": {
+    "sha": "25e7a63788b815213c181dd1f45e008e866cb84e",
+    "size": 502435
+  },
+  "chicken-little/chicken_little_01.jpg": {
+    "sha": "d74bb6b968256c973980a9778c5de28b7ead624d",
+    "size": 849598
+  },
+  "chicken-little/chicken_little_02.jpg": {
+    "sha": "61eb26d38706d853a73c275dc713172c2a43231d",
+    "size": 821307
+  },
+  "chicken-little/chicken_little_03.jpg": {
+    "sha": "d33d5f7c1781988bf921b4d71b773010bdc53653",
+    "size": 836387
+  },
+  "chicken-little/chicken_little_04.jpg": {
+    "sha": "ea4eb244ba0dba91e4dafe088b8a95644ed7a980",
+    "size": 817679
+  },
+  "chicken-little/chicken_little_05.jpg": {
+    "sha": "7ef59c4779a7c89757d8c768d952937c1e6ffad1",
+    "size": 886554
+  },
+  "chicken-little/chicken_little_06.jpg": {
+    "sha": "8e330bd9f682d1be2693083d2e4b8ccbeca896e2",
+    "size": 716855
+  },
+  "chicken-little/chicken_little_07.jpg": {
+    "sha": "8b1d79fdbcf61e40361ca88f962021fadf21252b",
+    "size": 837342
+  },
+  "chicken-little/chicken_little_08.jpg": {
+    "sha": "05b895708191281dc24b9e6fb469b482370ba53f",
+    "size": 849261
+  },
+  "chicken-little/chicken_little_09.jpg": {
+    "sha": "a34b0aaf0706b6a2798c588322d1e34033bec6c5",
+    "size": 890950
+  },
+  "chicken-little/chicken_little_10.jpg": {
+    "sha": "abafb18fb3956c66797807c2c5d077c23737831f",
+    "size": 772277
+  },
+  "chicken-little/chicken_little_11.jpg": {
+    "sha": "7ce91504ddc636a6733182dcc55618e4d8919b60",
+    "size": 889741
+  },
+  "chicken-little/chicken_little_12.jpg": {
+    "sha": "6d1160ebb7cd35e88bf2d49696b5445fedb1e4f2",
+    "size": 794958
+  },
+  "chicken-little/chicken_little_13.jpg": {
+    "sha": "583b60561b5fc4f71eab85b968efe57e3e089100",
+    "size": 724628
+  },
+  "chicken-little/chicken_little_14.jpg": {
+    "sha": "5d5c1dc495426e463a5836b19ed807d18694c705",
+    "size": 793029
+  },
+  "chicken-little/chicken_little_15.jpg": {
+    "sha": "07097dc37573788befe45e241c15300c05c70e05",
+    "size": 851020
+  },
+  "chicken-little/chicken_little_story_video.mp4": {
+    "sha": "b8bead676b75ed21f33128232ad0a0163779f8f1",
+    "size": 13503653
+  },
+  "chicken-little/chicken_little_story_video_poster.jpg": {
+    "sha": "4a28725fb99a276c9975f3911fe612a261baf0a2",
+    "size": 408474
+  },
+  "chicken-little/narration.mp3": {
+    "sha": "1b7d44071b146f554c750b9f6f399c3166627876",
+    "size": 4349421
+  },
+  "chicken-little/narration.vtt": {
+    "sha": "bb1a0f1a9f32ea6fe97efe7c9bcc0bfd209cd909",
+    "size": 4012
+  },
+  "chicken-little/references/flock_ref.jpg": {
+    "sha": "83916a0d757f7ffdd5ac2715662aa718d767986f",
+    "size": 504896
+  },
+  "chicken-little/references/foxy_woxy_ref.jpg": {
+    "sha": "1cde469383bf530bd3e231126815682997017815",
+    "size": 521446
+  },
+  "chicken-little/references/henny_penny_ref.jpg": {
+    "sha": "e3550e63b25938899d2ee47dbafb2ea7c182be65",
+    "size": 445377
+  },
+  "chicken-little/references/rickyard_ref.jpg": {
+    "sha": "d45f28a8530375cbf0df13dc8a30702d8dcf8cb9",
+    "size": 805864
+  },
+  "goldilocks-and-the-three-bears/goldilocks_01.jpg": {
+    "sha": "78b223d8e11e99f50325542141c7e7a3857cd7f2",
+    "size": 299117
+  },
+  "goldilocks-and-the-three-bears/goldilocks_02.jpg": {
+    "sha": "17e32db8dbce4b19736eb05d4fa88a9ad1c7a36c",
+    "size": 338239
+  },
+  "goldilocks-and-the-three-bears/goldilocks_03.jpg": {
+    "sha": "6bdb60624af603cbd2bd07b8d99bf05d2adf016b",
+    "size": 321618
+  },
+  "goldilocks-and-the-three-bears/goldilocks_04.jpg": {
+    "sha": "29b5810b49ebe3723a85b8368bf8d82cac2a9f17",
+    "size": 277246
+  },
+  "goldilocks-and-the-three-bears/goldilocks_05.jpg": {
+    "sha": "1cc7d1c155039ee6e6def1135941065b30a48ea0",
+    "size": 253607
+  },
+  "goldilocks-and-the-three-bears/goldilocks_06.jpg": {
+    "sha": "a70f65a5dfdbfc91ea8b1ab5c2fd28fdbf54b5fd",
+    "size": 294542
+  },
+  "goldilocks-and-the-three-bears/goldilocks_07.jpg": {
+    "sha": "e1f08fdd29e8d3e5408901185619256dc9e75c2d",
+    "size": 283513
+  },
+  "goldilocks-and-the-three-bears/goldilocks_08.jpg": {
+    "sha": "b5877b6dac76b0a83b33fc7682adbf763cee933a",
+    "size": 273237
+  },
+  "goldilocks-and-the-three-bears/goldilocks_09.jpg": {
+    "sha": "21767ecb72b6ff4360c4de603daed22e9dd6d2f0",
+    "size": 264109
+  },
+  "goldilocks-and-the-three-bears/goldilocks_10.jpg": {
+    "sha": "ed4bd6ca2bb633d7fe6c158359c6a92cb390f1fd",
+    "size": 239971
+  },
+  "goldilocks-and-the-three-bears/goldilocks_11.jpg": {
+    "sha": "4c15878ca47ec67c996fbd2922641fc95b510745",
+    "size": 303101
+  },
+  "goldilocks-and-the-three-bears/goldilocks_12.jpg": {
+    "sha": "f14236e8f8aaf30f2725633c16a537670bc3e041",
+    "size": 294685
+  },
+  "goldilocks-and-the-three-bears/goldilocks_story_video.mp4": {
+    "sha": "175400c8f246508b969d29bb1c2a8debf07078c3",
+    "size": 19004845
+  },
+  "goldilocks-and-the-three-bears/goldilocks_story_video_poster.jpg": {
+    "sha": "1beb6acdd1d44ae9cefda7cfe59e189ed62014b0",
+    "size": 335542
+  },
+  "goldilocks-and-the-three-bears/narration.mp3": {
+    "sha": "f810d61a90fcc59c49ae020f61e1c4b3380d1c80",
+    "size": 3344869
+  },
+  "goldilocks-and-the-three-bears/narration.vtt": {
+    "sha": "ff821d91e907e564892600f2e4b337c1b74993f0",
+    "size": 10207
+  },
+  "hansel-and-gretel/hansel_and_gretel_story_video.mp4": {
+    "sha": "f0200f34fd5aa6e6cdbf5af306936f42b4c14508",
+    "size": 41435042
+  },
+  "hansel-and-gretel/hansel_gretel_01.jpg": {
+    "sha": "2a37f643b28a12d34fc6be1b014a68812c7ba484",
+    "size": 804489
+  },
+  "hansel-and-gretel/hansel_gretel_02.jpg": {
+    "sha": "29a6864ec2b457749a6c4dd4610771d3c06250d5",
+    "size": 843749
+  },
+  "hansel-and-gretel/hansel_gretel_03.jpg": {
+    "sha": "fb2a3304688e7f51ccdf03eb37c7ce1fa337bc8d",
+    "size": 784099
+  },
+  "hansel-and-gretel/hansel_gretel_04.jpg": {
+    "sha": "f6826829e97fdeda242f5c727abca1150c4037cf",
+    "size": 858244
+  },
+  "hansel-and-gretel/hansel_gretel_05.jpg": {
+    "sha": "6ad9275d8b0b0542a502d0863cb3c40b6463d661",
+    "size": 876404
+  },
+  "hansel-and-gretel/hansel_gretel_06.jpg": {
+    "sha": "9e5cec6a681236c691a57d971ea73c8cab8b9076",
+    "size": 907973
+  },
+  "hansel-and-gretel/hansel_gretel_07.jpg": {
+    "sha": "b5bba3dc0cd103439bd3a5b64b23021d6548d8e8",
+    "size": 759856
+  },
+  "hansel-and-gretel/hansel_gretel_08.jpg": {
+    "sha": "b8f6361a6d39dbdf7792f2ae167fbab997fad8ee",
+    "size": 797347
+  },
+  "hansel-and-gretel/hansel_gretel_09.jpg": {
+    "sha": "004a73af3cd03b70bc1e0125d8c0c5fdc3bbfc3c",
+    "size": 846955
+  },
+  "hansel-and-gretel/hansel_gretel_10.jpg": {
+    "sha": "455ec0bee01cce9d31bf0fa6795aef560c1e7a35",
+    "size": 808524
+  },
+  "hansel-and-gretel/hansel_gretel_11.jpg": {
+    "sha": "089800a699bd91a460938cf2dc5e2fea1356ba01",
+    "size": 984838
+  },
+  "hansel-and-gretel/hansel_gretel_12.jpg": {
+    "sha": "28af0dfafff4d60ac01a39838c3a5c63317686d2",
+    "size": 952589
+  },
+  "hansel-and-gretel/hansel_gretel_13.jpg": {
+    "sha": "c1fc2ba9d6a4cdf00900657a98a87c8d553ec072",
+    "size": 894847
+  },
+  "hansel-and-gretel/hansel_gretel_14.jpg": {
+    "sha": "d2bbd4da269ed399839649b6a5a13433a549d93a",
+    "size": 842565
+  },
+  "hansel-and-gretel/hansel_gretel_15.jpg": {
+    "sha": "14636cdb2bd71607f9e3f9d5043b621bb38e374c",
+    "size": 869877
+  },
+  "hansel-and-gretel/hansel_gretel_16.jpg": {
+    "sha": "a185fd72761812b9e46e0928f752ad30696dafe4",
+    "size": 933356
+  },
+  "hansel-and-gretel/hansel_gretel_17.jpg": {
+    "sha": "33b59aa31180c10ea8c2c9b460aa77f241911fa4",
+    "size": 1083488
+  },
+  "hansel-and-gretel/hansel_gretel_18.jpg": {
+    "sha": "618c4fa09d5072cdeb8cad45d0f110d44f0f8e10",
+    "size": 730641
+  },
+  "hansel-and-gretel/hansel_gretel_19.jpg": {
+    "sha": "8286adb8afa287505a97e19b7a106f08ef05970e",
+    "size": 895560
+  },
+  "hansel-and-gretel/hansel_gretel_20.jpg": {
+    "sha": "a21b4002d3b449e191cf6f12688b9fa0165f2231",
+    "size": 1056600
+  },
+  "hansel-and-gretel/hansel_gretel_story_video_poster.jpg": {
+    "sha": "a0fe7a02887ca82ae16966a2b5570cabbb445fe2",
+    "size": 407744
+  },
+  "hansel-and-gretel/narration.mp3": {
+    "sha": "05b75288a5141d2cb172c46c5e555747b0589f9d",
+    "size": 15828525
+  },
+  "hansel-and-gretel/narration.vtt": {
+    "sha": "9b8a65ca16a6719b5f6afe242bbf5d636167670c",
+    "size": 13217
+  },
+  "hansel-and-gretel/references/forest_ref.jpg": {
+    "sha": "91e0ad95970bf91516ad257a612e3ae3e39523c7",
+    "size": 896280
+  },
+  "hansel-and-gretel/references/gingerbread_house_ref.jpg": {
+    "sha": "8e03f716d0be6d512291fcbcbc76724fe60bdd43",
+    "size": 903011
+  },
+  "hansel-and-gretel/references/hansel_gretel_ref.jpg": {
+    "sha": "23e1a81810b6c5f805f8d3d730326a7df6d61eb5",
+    "size": 543523
+  },
+  "hansel-and-gretel/references/witch_ref.jpg": {
+    "sha": "9bd0fd3a952aa662819f798eb546d97d12603a68",
+    "size": 525663
+  },
+  "jack-and-the-beanstalk/jack_and_the_beanstalk_story_video.mp4": {
+    "sha": "6b6d522026ea2405e5927a53c23d4d042bd3e243",
+    "size": 12399601
+  },
+  "jack-and-the-beanstalk/jack_and_the_beanstalk_story_video_poster.jpg": {
+    "sha": "1fbaa593a2bdc8756f53d569b6c685eb0da4ad67",
+    "size": 180448
+  },
+  "jack-and-the-beanstalk/narration.mp3": {
+    "sha": "50584f458d30b5d73fd9bf46c711ee3b4f241e32",
+    "size": 3986538
+  },
+  "jack-and-the-beanstalk/scene1_magic_beans.jpg": {
+    "sha": "7ee7582e62ddd986c254453d57c372194519bb0b",
+    "size": 1114279
+  },
+  "jack-and-the-beanstalk/scene1b_beans_tossed.jpg": {
+    "sha": "8548f9bf89a70a8cacf7212324baffb11b6fc71d",
+    "size": 1184857
+  },
+  "jack-and-the-beanstalk/scene2_climbing_beanstalk.jpg": {
+    "sha": "de90b6dead22005411fc9489b4907e94835b5600",
+    "size": 952203
+  },
+  "jack-and-the-beanstalk/scene2a_beanstalk_morning.jpg": {
+    "sha": "f6ec4d2927d43713bf58c1e6d09526d153524c82",
+    "size": 1236507
+  },
+  "jack-and-the-beanstalk/scene3_giant_in_kitchen.jpg": {
+    "sha": "ad1ad536826cf5ca1a8e4e1c6168049754251b69",
+    "size": 108706
+  },
+  "jack-and-the-beanstalk/scene3b_golden_egg_hen.jpg": {
+    "sha": "414be6436d7272288b00a4d5cb69d295dac64a0f",
+    "size": 1219448
+  },
+  "jack-and-the-beanstalk/scene4_golden_harp.jpg": {
+    "sha": "7bd3a97024678d04a827b124854e24615f00d916",
+    "size": 1105722
+  },
+  "jack-and-the-beanstalk/scene4b_giant_chase.jpg": {
+    "sha": "89ac365996966d547ddf8f226c2362cbd8cb27f4",
+    "size": 1146312
+  },
+  "jack-and-the-beanstalk/scene5_chopping_beanstalk.jpg": {
+    "sha": "67d7bb38c72a51e8c51b895d87f8ad40ae937afc",
+    "size": 89830
+  },
+  "little-red-riding-hood/little_red_hood_attack.jpg": {
+    "sha": "f5486b2677fa1ad03fdce5e1f0c2f9765be0728e",
+    "size": 1153733
+  },
+  "little-red-riding-hood/little_red_hood_basket.jpg": {
+    "sha": "35f79399c4952b20636b4f3f47acb4c31b122939",
+    "size": 1220237
+  },
+  "little-red-riding-hood/little_red_hood_big_ears.jpg": {
+    "sha": "cc2f315fc4818357e1c95e6c477ca7f00da934f3",
+    "size": 1029892
+  },
+  "little-red-riding-hood/little_red_hood_flowers.jpg": {
+    "sha": "c30dc3f0b24da24a347e78fda0ed0d2381360a61",
+    "size": 1179276
+  },
+  "little-red-riding-hood/little_red_hood_gift.jpg": {
+    "sha": "f16dfea6c02e895cd9023e20ddeb00a2e82c0a8c",
+    "size": 1154701
+  },
+  "little-red-riding-hood/little_red_hood_huntsman.jpg": {
+    "sha": "ba7dc31dacc37b0ad3521c90a99a47472d46a435",
+    "size": 964525
+  },
+  "little-red-riding-hood/little_red_hood_meets_wolf.jpg": {
+    "sha": "dca114533fed8527fb264c54f6de5a836e017699",
+    "size": 1208684
+  },
+  "little-red-riding-hood/little_red_hood_stones.jpg": {
+    "sha": "8cb16bf7bf529c61c75c6ea57f0fc67f2f7edc01",
+    "size": 1006311
+  },
+  "little-red-riding-hood/little_red_hood_wolf_at_door.jpg": {
+    "sha": "971a87d4a029a2a829d7aaf210a967a58579aef7",
+    "size": 1274558
+  },
+  "little-red-riding-hood/little_red_hood_wolf_in_bed.jpg": {
+    "sha": "c9e587915c080e27d3d98a9d7c5def3830f7abb0",
+    "size": 939045
+  },
+  "little-red-riding-hood/little_red_riding_hood_story_video.mp4": {
+    "sha": "b1cbdf8b9376ca982ee030f26e6fddbc3db97ed5",
+    "size": 11117615
+  },
+  "little-red-riding-hood/little_red_riding_hood_story_video_poster.jpg": {
+    "sha": "d3d5e492547c3dc9857dc4106019803ddc133508",
+    "size": 236219
+  },
+  "little-red-riding-hood/narration.mp3": {
+    "sha": "79c17848f5dc1f2df6300033e8535290f910cec8",
+    "size": 2441893
+  },
+  "mystery-of-the-back-nine/Alex_and_Shane_walking_past_20260915121009.jpeg": {
+    "sha": "6999b4af603e8cbf159d717f07ee22df3a989f5b",
+    "size": 891214
+  },
+  "mystery-of-the-back-nine/Boy_peeking_at_wild_turkeys_20260915121009.jpeg": {
+    "sha": "091e6df57ff602229777e603159485489be81f40",
+    "size": 1064082
+  },
+  "mystery-of-the-back-nine/Characters_celebrating_with_discs_20260915121009.jpeg": {
+    "sha": "b749b1675b381cf08d0183212c84412f512d3149",
+    "size": 917677
+  },
+  "mystery-of-the-back-nine/Children_discovering_dinosaur_footprints_20260915121009.jpeg": {
+    "sha": "e297484d7b234e83ae9a3c8b2682bf0465a437d3",
+    "size": 945666
+  },
+  "mystery-of-the-back-nine/Children_examining_giant_turkey_20260915121009.jpeg": {
+    "sha": "d5a5f17dd01fc3613ddaa2dcb181d12d4dcf6d7b",
+    "size": 730223
+  },
+  "mystery-of-the-back-nine/narration.mp3": {
+    "sha": "d18371dc2f3e7f8cc1bfa22d9a7aaf9e06c9472c",
+    "size": 866341
+  },
+  "rumpelstiltskin/narration.mp3": {
+    "sha": "85ce5c99c6030bd1ce7b8d686c1db23e734f64e9",
+    "size": 8125677
+  },
+  "rumpelstiltskin/narration.vtt": {
+    "sha": "611f837345ccf01f8eb6024d5e8346d6c18a8738",
+    "size": 6478
+  },
+  "rumpelstiltskin/references/king_ref.jpg": {
+    "sha": "8becb9892af40e92c07efc8fa4dee3b105802793",
+    "size": 587899
+  },
+  "rumpelstiltskin/references/miller_daughter_ref.jpg": {
+    "sha": "cee92ec5b45493cd5e5e7bbf8375c752f39f7c2c",
+    "size": 439613
+  },
+  "rumpelstiltskin/references/rumpelstiltskin_ref.jpg": {
+    "sha": "33b172c31beb1ea297fb0d6fd7a2726fa8671346",
+    "size": 551751
+  },
+  "rumpelstiltskin/references/straw_chamber_ref.jpg": {
+    "sha": "cc84f108248b3042ff1a425ad9bbda4c1607036b",
+    "size": 812980
+  },
+  "rumpelstiltskin/rumpelstiltskin_01.jpg": {
+    "sha": "3bcfa60b8d36ef29a127e5493dbd16252447edac",
+    "size": 951899
+  },
+  "rumpelstiltskin/rumpelstiltskin_02.jpg": {
+    "sha": "abda35d265bd659869615d71d300dd2fef3cd516",
+    "size": 825568
+  },
+  "rumpelstiltskin/rumpelstiltskin_03.jpg": {
+    "sha": "ce463370df039e1ee6f47f6e9ceb5a09fce2235e",
+    "size": 854251
+  },
+  "rumpelstiltskin/rumpelstiltskin_04.jpg": {
+    "sha": "f0795604babe0890ea96757797da0c59646a1eb9",
+    "size": 785597
+  },
+  "rumpelstiltskin/rumpelstiltskin_05.jpg": {
+    "sha": "5fbc7ffaf3f42915ac35857ad3118e6a35f095b2",
+    "size": 841176
+  },
+  "rumpelstiltskin/rumpelstiltskin_06.jpg": {
+    "sha": "fa7c5005d3afa8509b605fa70f846c0135ec4ce3",
+    "size": 903222
+  },
+  "rumpelstiltskin/rumpelstiltskin_07.jpg": {
+    "sha": "4f3600921f5711e06e1986bbecf5ebede8430cf8",
+    "size": 856291
+  },
+  "rumpelstiltskin/rumpelstiltskin_08.jpg": {
+    "sha": "b6dea3597ef42208b15b1d0a96c3ba3cea1ef3d1",
+    "size": 1106542
+  },
+  "rumpelstiltskin/rumpelstiltskin_09.jpg": {
+    "sha": "35cec3e7dfde009f30de7d8ef7c4d0430ab5c31a",
+    "size": 1027360
+  },
+  "rumpelstiltskin/rumpelstiltskin_10.jpg": {
+    "sha": "2e848c55c1f34a1ed43ca64228d4eb740bcbd5c7",
+    "size": 919266
+  },
+  "rumpelstiltskin/rumpelstiltskin_11.jpg": {
+    "sha": "336ce170781d4000c4e4c9ae79fe34757c9fb079",
+    "size": 939148
+  },
+  "rumpelstiltskin/rumpelstiltskin_12.jpg": {
+    "sha": "594694c8ce7fde48c146548ca895f51c2d0bca6b",
+    "size": 805407
+  },
+  "rumpelstiltskin/rumpelstiltskin_13.jpg": {
+    "sha": "d27db1bb0277f4887ebe28662b75ce9e714b0c73",
+    "size": 800482
+  },
+  "rumpelstiltskin/rumpelstiltskin_14.jpg": {
+    "sha": "c7be9dacde3223026929197a25fe80e962218f2b",
+    "size": 718107
+  },
+  "rumpelstiltskin/rumpelstiltskin_15.jpg": {
+    "sha": "32dbf47cc22388895523f846444e7333810b9978",
+    "size": 714970
+  },
+  "rumpelstiltskin/rumpelstiltskin_16.jpg": {
+    "sha": "f7396796195fce14d60a498fdfff190518602a88",
+    "size": 960133
+  },
+  "rumpelstiltskin/rumpelstiltskin_17.jpg": {
+    "sha": "597b9b4a737daa6293f9dd5f8365e8290784353e",
+    "size": 1028307
+  },
+  "rumpelstiltskin/rumpelstiltskin_18.jpg": {
+    "sha": "985c3378adcbb8a40f5173657bbd8b8934d5c7f6",
+    "size": 724290
+  },
+  "rumpelstiltskin/rumpelstiltskin_story_video.mp4": {
+    "sha": "73264cce58316d22600c9918bdaceaf4d3e7543a",
+    "size": 22525262
+  },
+  "rumpelstiltskin/rumpelstiltskin_story_video_poster.jpg": {
+    "sha": "6880bcdcf0d1fe0c06fdab40e4c80cc2db79cfd5",
+    "size": 360934
+  },
+  "shane-and-the-magic-disc/Boy_throwing_orange_disc_20260914073926.jpeg": {
+    "sha": "fd3055df12f68a05542f0ce504a27aeae5555720",
+    "size": 933092
+  },
+  "shane-and-the-magic-disc/Celebration_with_bear_hug_20260914073926.jpeg": {
+    "sha": "05aa36a25a750aa3079751cb72698da5c70181bd",
+    "size": 846498
+  },
+  "shane-and-the-magic-disc/Children_discover_magical_forest_20260914073926.jpeg": {
+    "sha": "2017f76437560a1e70154ec0799db89c6cce604b",
+    "size": 873139
+  },
+  "shane-and-the-magic-disc/Children_walking_through_giant_ferns_20260914073926.jpeg": {
+    "sha": "77deda0f3c2b38cd744aa6e736c88012908c8bd0",
+    "size": 937966
+  },
+  "shane-and-the-magic-disc/Father_and_son_holding_discs_20260914073926.jpeg": {
+    "sha": "53cd86e46691eb91e872fa3e2e97e5d65d9ec252",
+    "size": 885822
+  },
+  "shane-and-the-magic-disc/narration.mp3": {
+    "sha": "6a0b86922d5f6ef3da2e7e9d553c4e6eab042432",
+    "size": 1103845
+  },
+  "steadfast-tin-soldier/narration.mp3": {
+    "sha": "dbd3cbff07c3fb358316d558f3fa395014eefbef",
+    "size": 11850669
+  },
+  "steadfast-tin-soldier/narration.vtt": {
+    "sha": "087685e095c4018b3bc952fcaec6e9e2d1a53e8a",
+    "size": 10682
+  },
+  "steadfast-tin-soldier/references/bogey_ref.jpg": {
+    "sha": "6350667c8c6115385e547f1bb4a184f1eb6be7b0",
+    "size": 658976
+  },
+  "steadfast-tin-soldier/references/dancer_ref.jpg": {
+    "sha": "383d40952f58418ccac10208da5971083377c28f",
+    "size": 690590
+  },
+  "steadfast-tin-soldier/references/nursery_ref.jpg": {
+    "sha": "f308e73a3160f70058b66f49c3d17b222a6c7d15",
+    "size": 630089
+  },
+  "steadfast-tin-soldier/references/soldier_ref.jpg": {
+    "sha": "af670d187de89a203b44a03c2ba2d8b2491ec008",
+    "size": 641860
+  },
+  "steadfast-tin-soldier/tin_soldier_01.jpg": {
+    "sha": "a3138986e6bf4a34b9b85c1dcc65af643e424c98",
+    "size": 703484
+  },
+  "steadfast-tin-soldier/tin_soldier_02.jpg": {
+    "sha": "44e7aceaedfc3ba675328f74f98f9a848ac6c0c9",
+    "size": 610637
+  },
+  "steadfast-tin-soldier/tin_soldier_03.jpg": {
+    "sha": "6611e585369b6c3d488bc113736849f478759ec0",
+    "size": 646218
+  },
+  "steadfast-tin-soldier/tin_soldier_04.jpg": {
+    "sha": "17698ff5ae29c2e41b29b59259fd3c7e402c1577",
+    "size": 655427
+  },
+  "steadfast-tin-soldier/tin_soldier_05.jpg": {
+    "sha": "0b972c3563fb52f9b8a6e537b136516765b00c1e",
+    "size": 733455
+  },
+  "steadfast-tin-soldier/tin_soldier_06.jpg": {
+    "sha": "67cbf27083ed68a5b56ff5f7cff7a98191165ed8",
+    "size": 681584
+  },
+  "steadfast-tin-soldier/tin_soldier_07.jpg": {
+    "sha": "8ef26d0dcfcc260a677b419dd0f6fd23cac0e332",
+    "size": 657064
+  },
+  "steadfast-tin-soldier/tin_soldier_08.jpg": {
+    "sha": "388fa72d24f3f1e570adb9ca6d4d8746e3207e5e",
+    "size": 719716
+  },
+  "steadfast-tin-soldier/tin_soldier_09.jpg": {
+    "sha": "e28f175a8f805f228aacb26e3ab96c44c216346a",
+    "size": 715079
+  },
+  "steadfast-tin-soldier/tin_soldier_10.jpg": {
+    "sha": "99c7c4b543eab6a4e84d5935ffcfeb4bb9362122",
+    "size": 723184
+  },
+  "steadfast-tin-soldier/tin_soldier_11.jpg": {
+    "sha": "d2688b6c8ccb2f79d6b43fa3b94b35d4bb312f14",
+    "size": 768496
+  },
+  "steadfast-tin-soldier/tin_soldier_12.jpg": {
+    "sha": "cbc48cc25362ad280e518dbdfdf896908372c5ba",
+    "size": 920329
+  },
+  "steadfast-tin-soldier/tin_soldier_13.jpg": {
+    "sha": "e085d1cec3599592a9e4c7d32984c2a31939bfc7",
+    "size": 752938
+  },
+  "steadfast-tin-soldier/tin_soldier_14.jpg": {
+    "sha": "42d1f25aa07e6b23322309772ff1e33fe75313ab",
+    "size": 645591
+  },
+  "steadfast-tin-soldier/tin_soldier_15.jpg": {
+    "sha": "4182aeba89f602af51beb966b10b38ae464b4d6e",
+    "size": 748006
+  },
+  "steadfast-tin-soldier/tin_soldier_16.jpg": {
+    "sha": "a6634b6e59f0758aaed4f351a3518f2fa9e10178",
+    "size": 824256
+  },
+  "steadfast-tin-soldier/tin_soldier_17.jpg": {
+    "sha": "6badbbf38daf815fa0ce06d7da47494fd5a2ef95",
+    "size": 674510
+  },
+  "steadfast-tin-soldier/tin_soldier_18.jpg": {
+    "sha": "b94b55325c2c4f91e26f59f4f570c890b98601a3",
+    "size": 687001
+  },
+  "steadfast-tin-soldier/tin_soldier_19.jpg": {
+    "sha": "745957671c9c69b775ed7869afc2f43b6b261f56",
+    "size": 728907
+  },
+  "steadfast-tin-soldier/tin_soldier_20.jpg": {
+    "sha": "e86b6070f4c44663bb91084b0c37918c5c4e9ba5",
+    "size": 500631
+  },
+  "steadfast-tin-soldier/tin_soldier_story_video.mp4": {
+    "sha": "276672deeeb97de47b6d8b8175b3d71b6ebc2681",
+    "size": 28458637
+  },
+  "steadfast-tin-soldier/tin_soldier_story_video_poster.jpg": {
+    "sha": "1f4541bb067f096b9384001bd34cad5bf272be76",
+    "size": 284201
+  },
+  "the-bedtime-toot-tastrophe/first_squeak.webp": {
+    "sha": "6e506f2bb24c102161b54f5b1eec51e9b330019d",
+    "size": 813746
+  },
+  "the-bedtime-toot-tastrophe/goodnight_hug.webp": {
+    "sha": "c7d1aad939e857494e092cd3466e6b952a4b283f",
+    "size": 744512
+  },
+  "the-bedtime-toot-tastrophe/narration.mp3": {
+    "sha": "42acbccd9ff7c035222afa70c74b6a86a1552608",
+    "size": 1669285
+  },
+  "the-bedtime-toot-tastrophe/page_turn_rumble.webp": {
+    "sha": "65eaad6a00baa1013dda578ea2b006f02034ff45",
+    "size": 940118
+  },
+  "the-bedtime-toot-tastrophe/pillow_fluff_fanfare.webp": {
+    "sha": "c94f2af34d0d5f237a605e365a94964a09f174a5",
+    "size": 768698
+  },
+  "the-bouncing-bicycle-brigade/biking_hill_top.jpg": {
+    "sha": "f6e13e85caa116b55d6d044e14ef6c168750cd1c",
+    "size": 736850
+  },
+  "the-bouncing-bicycle-brigade/biking_prep_helmets.jpg": {
+    "sha": "5712435e96112c9c99c80dc1b9e772e2ca38a5d8",
+    "size": 839183
+  },
+  "the-bouncing-bicycle-brigade/biking_puddle_splash.jpg": {
+    "sha": "1c9e298f9332850066033feb4073d2553fed3d9f",
+    "size": 811072
+  },
+  "the-bouncing-bicycle-brigade/biking_storybook.mp4": {
+    "sha": "0b0798f28b7aa37d4b8d3b185b73c64420d96a53",
+    "size": 4573764
+  },
+  "the-bouncing-bicycle-brigade/biking_storybook_poster.jpg": {
+    "sha": "5be310c12011e0a018be0bc9416a6a5560ef1ffc",
+    "size": 204807
+  },
+  "the-bouncing-bicycle-brigade/narration.mp3": {
+    "sha": "a05e251f7b80f294e0f667e1befb123355acb07d",
+    "size": 801637
+  },
+  "the-daring-disc-dash/disc_chains_cheer.jpg": {
+    "sha": "6427dc45469d6cd2aa6f6a26e19b7a6fbe8e10bb",
+    "size": 836687
+  },
+  "the-daring-disc-dash/disc_flying_trail.jpg": {
+    "sha": "221536f73830cfac0d14d99cb0c053ea2a3f999f",
+    "size": 875565
+  },
+  "the-daring-disc-dash/disc_golf_storybook.mp4": {
+    "sha": "2072516d28f259dba7c3e13d54304de21a132f26",
+    "size": 4775511
+  },
+  "the-daring-disc-dash/disc_golf_storybook_poster.jpg": {
+    "sha": "25d5ddcf007a33edcf23717fa149a67c84d02367",
+    "size": 181466
+  },
+  "the-daring-disc-dash/disc_golf_tee_pad.jpg": {
+    "sha": "564650d23c72cb6be617da1b10da8f9cdac233b6",
+    "size": 792818
+  },
+  "the-daring-disc-dash/narration.mp3": {
+    "sha": "a52da28718ad6344b096b332dc1d26a1cc3490b5",
+    "size": 977893
+  },
+  "the-elves-and-the-shoemaker/elves_and_the_shoemaker_story_video.mp4": {
+    "sha": "23a96c79e160993a0194f634b2d41ad47be43751",
+    "size": 11145071
+  },
+  "the-elves-and-the-shoemaker/elves_and_the_shoemaker_story_video_poster.jpg": {
+    "sha": "99a59776ce5bed5f734b7d6839d8262495bbb7cc",
+    "size": 318229
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_01.jpg": {
+    "sha": "edcf2d3e290daa7c496e60e3700c8b9c1e6bc899",
+    "size": 790760
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_02.jpg": {
+    "sha": "a69981246dab74fe013927fbc40bda276b8aaeb1",
+    "size": 824276
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_03.jpg": {
+    "sha": "eee393f5e431b44ec60d0917db785a625cd2b692",
+    "size": 723867
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_04.jpg": {
+    "sha": "37bfc9b81412c6acf08b4d24f29ce9125ec28859",
+    "size": 846660
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_05.jpg": {
+    "sha": "b087a71b1eb422477ac4a20e624be6ce206e0ead",
+    "size": 586961
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_06.jpg": {
+    "sha": "5998430d30a31e43f9b90a998526def6100660f4",
+    "size": 849844
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_07.jpg": {
+    "sha": "25290b613b42b66136f09024ede0e52306dd2880",
+    "size": 841741
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_08.jpg": {
+    "sha": "0c7ae78d047bda81f8103245b3b7e9fff17ae5e0",
+    "size": 845473
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_09.jpg": {
+    "sha": "5e9e9f65bc3b4903309db63150c559f1b7a5eebc",
+    "size": 893053
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_10.jpg": {
+    "sha": "9a2422a69cf4b1f25532b4f64efd284a322ec2ef",
+    "size": 803222
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_11.jpg": {
+    "sha": "dbcfb75ff1c186a842bcd608ebb466fe1f2ad75d",
+    "size": 662821
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_12.jpg": {
+    "sha": "0a82995011bee43d5aa0ed48b5959efcfe705122",
+    "size": 816269
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_13.jpg": {
+    "sha": "4530cb024fda1c776ff70cde6f1eb5ffff492f92",
+    "size": 842197
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_14.jpg": {
+    "sha": "d5d91c498fc291c88670c1702d0ad3939d1ab663",
+    "size": 733556
+  },
+  "the-elves-and-the-shoemaker/elves_shoemaker_15.jpg": {
+    "sha": "8e14f0c3906d59d911c2c4b97041252d83b44f15",
+    "size": 859093
+  },
+  "the-elves-and-the-shoemaker/narration.mp3": {
+    "sha": "12010517f8614180793c46fc142202bddf07e874",
+    "size": 3957741
+  },
+  "the-elves-and-the-shoemaker/narration.vtt": {
+    "sha": "ed684bd57eb6daedfc4710fdbfabcf73f7745821",
+    "size": 3431
+  },
+  "the-elves-and-the-shoemaker/references/elves_ref.jpg": {
+    "sha": "0d5387c35601afd9e86f1d6b4d12b9a7c146b36e",
+    "size": 462868
+  },
+  "the-elves-and-the-shoemaker/references/shoemaker_ref.jpg": {
+    "sha": "c292e75c3a024aa3b2ad92e3b3ddb6efa36d15f9",
+    "size": 429060
+  },
+  "the-elves-and-the-shoemaker/references/wife_ref.jpg": {
+    "sha": "b43db71adab1948192dac01cad1a70434491a83b",
+    "size": 366301
+  },
+  "the-elves-and-the-shoemaker/references/workshop_ref.jpg": {
+    "sha": "826efc53f2b001a44bef4a802a8c460172414344",
+    "size": 780648
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_01.jpg": {
+    "sha": "1cc2e13e92c161545685bf28a0213935a2a87078",
+    "size": 991395
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_02.jpg": {
+    "sha": "269941a7ddaaa4dacc5a1b9ddfa29753061fef32",
+    "size": 1000382
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_03.jpg": {
+    "sha": "bc90ff2f13da15e99fbb7c8189a49bbbb0b7fea7",
+    "size": 967228
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_04.jpg": {
+    "sha": "d6191fe551078c842d76a2650eceede5b32862ce",
+    "size": 1004369
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_05.jpg": {
+    "sha": "9063787eeefc6427bbce031288101c7ae1da0aaa",
+    "size": 1007775
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_06.jpg": {
+    "sha": "692418b5ad52365a368ba50fac44ed1113e82c00",
+    "size": 1046244
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_07.jpg": {
+    "sha": "4f56dc9a272a0844276aeb7ca9a12dfa9bba28cf",
+    "size": 1121314
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_08.jpg": {
+    "sha": "393dee022d67492f712d6e3f720db657a97eeaa0",
+    "size": 1184278
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_09.jpg": {
+    "sha": "b532260cfa28d000f7782d533a313634dd0b9a4e",
+    "size": 1033763
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_10.jpg": {
+    "sha": "fd0bf53089cc5c2a5fc06e6cb1a108c0e7bf5260",
+    "size": 1196050
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_11.jpg": {
+    "sha": "b823a87d049acc291345cdd7b6e277cb266cc0db",
+    "size": 1225267
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_12.jpg": {
+    "sha": "5fe50680c36b9b9dee76287558385ffef9eff8f8",
+    "size": 1332665
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_13.jpg": {
+    "sha": "58135c600e334542a9d7ed010151d8f8ceec332a",
+    "size": 1396456
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_14.jpg": {
+    "sha": "e159e1df8fbf4330f7482d60d55f08bd741e5705",
+    "size": 1406395
+  },
+  "the-emperors-new-clothes/emperors_new_clothes_15.jpg": {
+    "sha": "94b9ba91ea8501cdc48f941bcb183cba1d4cc40c",
+    "size": 1468843
+  },
+  "the-emperors-new-clothes/narration.mp3": {
+    "sha": "5081b70aef0eb1039d4be121c9542b3b8f017d68",
+    "size": 8494893
+  },
+  "the-emperors-new-clothes/narration.vtt": {
+    "sha": "951a2f25d023ca7afcd776e9401d5e26a7235c89",
+    "size": 8115
+  },
+  "the-emperors-new-clothes/ref_characters.jpg": {
+    "sha": "f675e99a8df2df096e74fbac81fc10b7a2051466",
+    "size": 863856
+  },
+  "the-emperors-new-clothes/ref_key_setting.jpg": {
+    "sha": "7432948f9415b8630498796ae7759b8c54b87ee3",
+    "size": 987931
+  },
+  "the-emperors-new-clothes/ref_procession_street.jpg": {
+    "sha": "def84b3b2ad3879c44c24cc2fdf1fccd2171f235",
+    "size": 1010348
+  },
+  "the-emperors-new-clothes/the_emperors_new_clothes_story_video.mp4": {
+    "sha": "8500d0ca1731f3bf9e2a56f3b06044309b0bfd4e",
+    "size": 24298664
+  },
+  "the-emperors-new-clothes/the_emperors_new_clothes_story_video_poster.jpg": {
+    "sha": "f056ca6e2489a2a797d672b5bef4516e313c42ab",
+    "size": 385215
+  },
+  "the-fish-that-pulled-back/narration.mp3": {
+    "sha": "06fe02a5b9398fc1ddcb693ec15f26d34945c829",
+    "size": 850789
+  },
+  "the-fish-that-pulled-back/pontoon_big_catch.jpg": {
+    "sha": "7d395f6e8ec17dd4399e6295a3c6ee73256d17dd",
+    "size": 733612
+  },
+  "the-fish-that-pulled-back/pontoon_boat_shane.jpg": {
+    "sha": "a5b1cff6bee9f86705669c55f0cef255b3f2ed2f",
+    "size": 746983
+  },
+  "the-fish-that-pulled-back/pontoon_bobber_bite.jpg": {
+    "sha": "5d5da61f880419e42c262b5781b64dd3677798e3",
+    "size": 713659
+  },
+  "the-fish-that-pulled-back/pontoon_storybook.mp4": {
+    "sha": "e0f2f0757b909271e96e8d8d56441399f7e27374",
+    "size": 3867279
+  },
+  "the-fish-that-pulled-back/pontoon_storybook_poster.jpg": {
+    "sha": "ffae0c3df9d227319812300fce1b1cdfbe957ee6",
+    "size": 162391
+  },
+  "the-gingerbread-man/gingerbread_01.jpg": {
+    "sha": "ff9d32f3b23eb1a6e42eaf525f9ff2e2040b5ace",
+    "size": 978519
+  },
+  "the-gingerbread-man/gingerbread_02.jpg": {
+    "sha": "14812c1b7f83b3e3313df740363d0a33dff52dfc",
+    "size": 1130913
+  },
+  "the-gingerbread-man/gingerbread_03.jpg": {
+    "sha": "741aaa86708d3271ad87ef865654868d77641e4d",
+    "size": 969929
+  },
+  "the-gingerbread-man/gingerbread_04.jpg": {
+    "sha": "8b0ebb81a84762843e187760364dd22ae154d9ef",
+    "size": 1073263
+  },
+  "the-gingerbread-man/gingerbread_05.jpg": {
+    "sha": "0346585312757b71aba9ed0619f61de58abe5ce9",
+    "size": 1094347
+  },
+  "the-gingerbread-man/gingerbread_06.jpg": {
+    "sha": "7bc183ab3bbdd348633f114b9edab92043b3c107",
+    "size": 1102253
+  },
+  "the-gingerbread-man/gingerbread_07.jpg": {
+    "sha": "ad1276f98a19c60b2e208b8bbe902063d8a69447",
+    "size": 1097035
+  },
+  "the-gingerbread-man/gingerbread_08.jpg": {
+    "sha": "f276298228f97ae464808303e978917e9c6da8b5",
+    "size": 1060880
+  },
+  "the-gingerbread-man/gingerbread_09.jpg": {
+    "sha": "f90b2db66ade34784f83c497db4dc2f678dd0edf",
+    "size": 1040797
+  },
+  "the-gingerbread-man/gingerbread_10.jpg": {
+    "sha": "1a3e23dcd06f4ce295f61fe77491d3cdc86a68cb",
+    "size": 1068944
+  },
+  "the-gingerbread-man/gingerbread_11.jpg": {
+    "sha": "3f9a45b903984013ddfa5a0758de8c89d6762616",
+    "size": 1057778
+  },
+  "the-gingerbread-man/gingerbread_12.jpg": {
+    "sha": "e549b7f787d93a766fb5c970467c60eb6b2faa0a",
+    "size": 1073830
+  },
+  "the-gingerbread-man/narration.mp3": {
+    "sha": "4fa1b318e23a25c6e4b6747e3fb34c90ab719d94",
+    "size": 3600288
+  },
+  "the-gingerbread-man/narration.vtt": {
+    "sha": "1d477c02226ba7abbc630e3d7c7b87c146fc81fc",
+    "size": 12136
+  },
+  "the-gingerbread-man/the_gingerbread_man_story_video.mp4": {
+    "sha": "db3dd1b9a155cdd5b82519a2b3b028413df823d2",
+    "size": 36428842
+  },
+  "the-gingerbread-man/the_gingerbread_man_story_video_poster.jpg": {
+    "sha": "47653499b5df622a7ad791c42d87a8d365bbd25d",
+    "size": 402307
+  },
+  "the-great-pontoon-pike-escape/narration.mp3": {
+    "sha": "9c07f44b8de9dbfb95bebf28e808119c925999c4",
+    "size": 3082752
+  },
+  "the-great-pontoon-pike-escape/pike_scene1_pontoon_crew.jpg": {
+    "sha": "944605b30c925e3690c2bb68170e60005d3e4cd5",
+    "size": 947034
+  },
+  "the-great-pontoon-pike-escape/pike_scene2_theresa_bite.jpg": {
+    "sha": "6ddaa887ee8bccf97f3fed8e95c9fc2fa39fb69a",
+    "size": 875423
+  },
+  "the-great-pontoon-pike-escape/pike_scene3_drawstring_tangle.jpg": {
+    "sha": "ddf3a1d27e8d66f94ce2ff4b3533d4e1859afb0c",
+    "size": 869627
+  },
+  "the-great-pontoon-pike-escape/pike_scene4_giant_pike_no_net.jpg": {
+    "sha": "c70a04a4ceb6c72b76c2bc55347004c090c99875",
+    "size": 881306
+  },
+  "the-great-pontoon-pike-escape/pike_scene5_pike_escape_celebration.jpg": {
+    "sha": "9e2fcfaeeeb28abf3291dbe69d3cab95fc307665",
+    "size": 879422
+  },
+  "the-legend-of-big-whalter/Boy_kneeling_by_giant_fish_20260915121008.jpeg": {
+    "sha": "8d29b2f651edee4caa5db3a3cd39bc1250e02cf8",
+    "size": 785904
+  },
+  "the-legend-of-big-whalter/Boys_struggling_with_fishing_rod_20260915121008.jpeg": {
+    "sha": "c767dd791ee2f9fb3b560c46856730d406392753",
+    "size": 918259
+  },
+  "the-legend-of-big-whalter/Children_catching_massive_catfish_20260915121008.jpeg": {
+    "sha": "d750c1791d0e662fe0edfb6d4957f9e916308ef0",
+    "size": 903182
+  },
+  "the-legend-of-big-whalter/Children_laughing_after_water_splash_20260915121008.jpeg": {
+    "sha": "858fde3e4df9410ecace60d6a185d8c8395f8931",
+    "size": 840989
+  },
+  "the-legend-of-big-whalter/Father_and_son_fishing_20260915121008.jpeg": {
+    "sha": "9b55d473b2b8a31cd8979858cdabab42707927b2",
+    "size": 797363
+  },
+  "the-legend-of-big-whalter/narration.mp3": {
+    "sha": "98ea099462d39b59a990defb07dacc3daab570d9",
+    "size": 965989
+  },
+  "the-little-red-hen/little_red_hen_01.jpg": {
+    "sha": "453b416922881187b8158f2470d982b5353f92d0",
+    "size": 963249
+  },
+  "the-little-red-hen/little_red_hen_02.jpg": {
+    "sha": "c21094a388665688e9dcbd873563f4e7a1659778",
+    "size": 931493
+  },
+  "the-little-red-hen/little_red_hen_03.jpg": {
+    "sha": "3b0b1f9f0b3d640e706f87e838099625fe48e5f1",
+    "size": 988146
+  },
+  "the-little-red-hen/little_red_hen_04.jpg": {
+    "sha": "015e0d4ad8762968fd136cb04af82aef2f27d899",
+    "size": 1025296
+  },
+  "the-little-red-hen/little_red_hen_05.jpg": {
+    "sha": "5dfed9c3520e5eae99a287a2e8427215a0db98fe",
+    "size": 1009701
+  },
+  "the-little-red-hen/little_red_hen_06.jpg": {
+    "sha": "1ceb281972d3b6c4c15ceb7a044a4c989668bc00",
+    "size": 1083285
+  },
+  "the-little-red-hen/little_red_hen_07.jpg": {
+    "sha": "09e9ed9a4097b89963d353f01bb33d55429614a6",
+    "size": 1160338
+  },
+  "the-little-red-hen/little_red_hen_08.jpg": {
+    "sha": "c4834da28e661e93582a33d68df2295edcb59bc7",
+    "size": 1213387
+  },
+  "the-little-red-hen/little_red_hen_09.jpg": {
+    "sha": "de45a72676aea1c3e9739875faf067c3417d75a8",
+    "size": 978698
+  },
+  "the-little-red-hen/little_red_hen_10.jpg": {
+    "sha": "1260afe979fc43c6b7a1a8eda835285adc84bfdc",
+    "size": 1244665
+  },
+  "the-little-red-hen/little_red_hen_11.jpg": {
+    "sha": "d1db347e5b38b34fe2a49a7c06ecb940f8fa4deb",
+    "size": 956178
+  },
+  "the-little-red-hen/little_red_hen_12.jpg": {
+    "sha": "fcc32e88e99b4974190a3f46803d8ff8b26be049",
+    "size": 968395
+  },
+  "the-little-red-hen/little_red_hen_13.jpg": {
+    "sha": "90ee4568e599abdcab2276226c643a29fca3dd07",
+    "size": 956974
+  },
+  "the-little-red-hen/little_red_hen_14.jpg": {
+    "sha": "8041703bb13ac01d2db2b9040bfb2382052b93bf",
+    "size": 982043
+  },
+  "the-little-red-hen/little_red_hen_15.jpg": {
+    "sha": "625243a1469453a8a1a6674181ab1e6509a2019b",
+    "size": 961009
+  },
+  "the-little-red-hen/narration.mp3": {
+    "sha": "44a9d3067bb738fba4c4c65779ba9da51ee07624",
+    "size": 8261613
+  },
+  "the-little-red-hen/narration.vtt": {
+    "sha": "36357bc48aedccdc767a5778208518b0495a46a1",
+    "size": 7868
+  },
+  "the-little-red-hen/ref_cast_ensemble.jpg": {
+    "sha": "a88a3aef768265695ec512f26e27e4ee924318b6",
+    "size": 1070642
+  },
+  "the-little-red-hen/ref_characters.jpg": {
+    "sha": "a88a3aef768265695ec512f26e27e4ee924318b6",
+    "size": 1070642
+  },
+  "the-little-red-hen/ref_key_setting.jpg": {
+    "sha": "0b7276ed64f390188a2f008a14b5c8ea6f1c922b",
+    "size": 932800
+  },
+  "the-little-red-hen/the_little_red_hen_story_video.mp4": {
+    "sha": "ad1d89f2f7bff031a3f34b544c1fcac62a80ea24",
+    "size": 22814750
+  },
+  "the-little-red-hen/the_little_red_hen_story_video_poster.jpg": {
+    "sha": "d15f83ab23136220323121a4dcb6f5069d68e777",
+    "size": 347891
+  },
+  "the-princess-and-the-pea/narration.mp3": {
+    "sha": "8377fe90c1604fe6ab3ebad7a373b4fc921d5fad",
+    "size": 821376
+  },
+  "the-princess-and-the-pea/narration.srt": {
+    "sha": "8ab19fa90b2fc65ecb62ac37e9f37f871511f685",
+    "size": 2932
+  },
+  "the-princess-and-the-pea/narration.vtt": {
+    "sha": "6fb48fecc7028f2d73a7a644f1e47ac56ec481c9",
+    "size": 2678
+  },
+  "the-princess-and-the-pea/princess_and_the_pea_story_video.mp4": {
+    "sha": "0f1ff3f671bac434b42b7b5f5209ddf8b835653c",
+    "size": 9913268
+  },
+  "the-princess-and-the-pea/princess_and_the_pea_story_video_poster.jpg": {
+    "sha": "5d7e58080387f85eb48887821da8033821f68ee9",
+    "size": 407624
+  },
+  "the-princess-and-the-pea/princess_pea_01.jpg": {
+    "sha": "60e1aed73af4cb7f6327d38119f79610c0c47810",
+    "size": 1117353
+  },
+  "the-princess-and-the-pea/princess_pea_02.jpg": {
+    "sha": "9b3c7b66d140e7c1de24e7880339f241047768e6",
+    "size": 1062040
+  },
+  "the-princess-and-the-pea/princess_pea_03.jpg": {
+    "sha": "bcc51a1304feb907910a3917b0c338de562dcbd1",
+    "size": 945727
+  },
+  "the-princess-and-the-pea/princess_pea_04.jpg": {
+    "sha": "6872f01d31378e7af98034b3d65eca9c8db0105e",
+    "size": 1056101
+  },
+  "the-princess-and-the-pea/princess_pea_05.jpg": {
+    "sha": "b07067ea16654bda3e7ccbc94ff0b7fd5e2b4a1b",
+    "size": 1028406
+  },
+  "the-princess-and-the-pea/princess_pea_06.jpg": {
+    "sha": "015faaf90c805e2f44ccc688caf2351d441106a0",
+    "size": 1006491
+  },
+  "the-princess-and-the-pea/princess_pea_07.jpg": {
+    "sha": "de1365694e5b4706e8caba06761bbb61eb42b0e5",
+    "size": 1083305
+  },
+  "the-princess-and-the-pea/princess_pea_08.jpg": {
+    "sha": "cd416e3dd830dc1d03aa0c19abf23ea5ce59cc6c",
+    "size": 1113182
+  },
+  "the-princess-and-the-pea/princess_pea_09.jpg": {
+    "sha": "8bab4041bcd686b834ff92a544bb8b6c5adf33f0",
+    "size": 1049757
+  },
+  "the-princess-and-the-pea/princess_pea_10.jpg": {
+    "sha": "1aa45a9ea95a5bf1c9fd7dc25b07179f0310a4f2",
+    "size": 1110326
+  },
+  "the-princess-and-the-pea/princess_pea_11.jpg": {
+    "sha": "61e542d7a1d09c2a0bf7a1b7942659a65e544c84",
+    "size": 1052651
+  },
+  "the-princess-and-the-pea/princess_pea_12.jpg": {
+    "sha": "3ad98e0a312015a0879e3a9a78a3d4ca94098250",
+    "size": 1122911
+  },
+  "the-princess-and-the-pea/princess_pea_13.jpg": {
+    "sha": "bfc2fc5a65ab74e6dba48315f003446233ef7201",
+    "size": 1028812
+  },
+  "the-princess-and-the-pea/princess_pea_14.jpg": {
+    "sha": "b79bbf3dad3d5cd55e585f0931f72921eb4d0710",
+    "size": 1023594
+  },
+  "the-princess-and-the-pea/princess_pea_15.jpg": {
+    "sha": "2b7fcdc3c60ba0205d621ee450f930745a15cb3e",
+    "size": 1130074
+  },
+  "the-super-snowy-sled/narration.mp3": {
+    "sha": "06d4f5317c0333b827b26f8991d7af4a3b3a9266",
+    "size": 891301
+  },
+  "the-super-snowy-sled/sledding_3d.mp4": {
+    "sha": "1b9cb7ab6fde4be5279a7e9f10c271765b47a9e6",
+    "size": 20030046
+  },
+  "the-super-snowy-sled/sledding_3d_poster.jpg": {
+    "sha": "86f75e3484ea619ba349289fb2cafc95221fe27e",
+    "size": 125512
+  },
+  "the-super-snowy-sled/sledding_fast_swoosh.jpg": {
+    "sha": "59d8bff1981e1bccb617405ed28775afdbd7abd5",
+    "size": 742363
+  },
+  "the-super-snowy-sled/sledding_hill_climb.jpg": {
+    "sha": "d933a200fe757cbe65985939960843f28529c9b8",
+    "size": 842563
+  },
+  "the-super-snowy-sled/sledding_hot_cocoa.jpg": {
+    "sha": "a08a19465ba3e9b64e692c63f3fc75ca3762ae08",
+    "size": 790522
+  },
+  "the-super-snowy-sled/sledding_storybook.mp4": {
+    "sha": "fc7da6eeabe5766e8a1729fbd70a95a43acdd950",
+    "size": 4038168
+  },
+  "the-super-snowy-sled/sledding_storybook_poster.jpg": {
+    "sha": "de76a118565f97cc55a4bee2ad3cffe2b6fb5a84",
+    "size": 173525
+  },
+  "the-three-billy-goats-gruff/billy_goats_01.jpg": {
+    "sha": "b0a2aeb08577fe14ba225f36a1e11ff7966500df",
+    "size": 986993
+  },
+  "the-three-billy-goats-gruff/billy_goats_02.jpg": {
+    "sha": "5337d320caa8c5ea0b76130095be56c5eb8e55e5",
+    "size": 1026116
+  },
+  "the-three-billy-goats-gruff/billy_goats_03.jpg": {
+    "sha": "dbe121caf8d714c3e5a876d47ca2e0f3f4d13689",
+    "size": 927930
+  },
+  "the-three-billy-goats-gruff/billy_goats_04.jpg": {
+    "sha": "2f65e12aaa16f16be24a1b67a61c9a340e27f0e2",
+    "size": 1009976
+  },
+  "the-three-billy-goats-gruff/billy_goats_05.jpg": {
+    "sha": "cd5b18db984b70c6e99984eb3f67b1da2ddfd626",
+    "size": 971334
+  },
+  "the-three-billy-goats-gruff/billy_goats_06.jpg": {
+    "sha": "9a9373f32a4268e38b65d0cb518bb72659f91dc9",
+    "size": 1008565
+  },
+  "the-three-billy-goats-gruff/billy_goats_07.jpg": {
+    "sha": "c283de34528cd440865cd2eb30bdb09930920c45",
+    "size": 1051759
+  },
+  "the-three-billy-goats-gruff/billy_goats_08.jpg": {
+    "sha": "91f5f26cb5ad0807fc034cfde435df15d0cab84a",
+    "size": 1045413
+  },
+  "the-three-billy-goats-gruff/billy_goats_09.jpg": {
+    "sha": "5777528fa4b02a017750acb524791bbd54822704",
+    "size": 1057349
+  },
+  "the-three-billy-goats-gruff/billy_goats_10.jpg": {
+    "sha": "f323ec77ec648bfe05e9c98934a8c6a8ce0a54ce",
+    "size": 1061796
+  },
+  "the-three-billy-goats-gruff/billy_goats_11.jpg": {
+    "sha": "bd0ca3f1c179f09ae5555146d3c7f7d96d59559b",
+    "size": 1047994
+  },
+  "the-three-billy-goats-gruff/billy_goats_12.jpg": {
+    "sha": "36459c24334412fd994ef1c2f2953e5d32d988e9",
+    "size": 484612
+  },
+  "the-three-billy-goats-gruff/narration.mp3": {
+    "sha": "8344524647728441fb47d24c7c21c0d200aae37a",
+    "size": 6261165
+  },
+  "the-three-billy-goats-gruff/narration.vtt": {
+    "sha": "8a9d2bf3f2450c23ce88d1e5ae4b39faeafbf798",
+    "size": 5511
+  },
+  "the-three-billy-goats-gruff/ref_bridge_setting.jpg": {
+    "sha": "ff44f739ecb85507daeb2f2224defb95d805e5a4",
+    "size": 1155465
+  },
+  "the-three-billy-goats-gruff/ref_cast_ensemble.jpg": {
+    "sha": "269fbd7b50a21da65c54ca504deffd157eb5efd7",
+    "size": 826220
+  },
+  "the-three-billy-goats-gruff/the_three_billy_goats_gruff_story_video.mp4": {
+    "sha": "9abd44ff0f18daa42f6e2c7000f4bb75542ec15f",
+    "size": 19271424
+  },
+  "the-three-billy-goats-gruff/the_three_billy_goats_gruff_story_video_poster.jpg": {
+    "sha": "ac6c397f41440901d10b6a24a325b1f2a6cbab2e",
+    "size": 377043
+  },
+  "the-three-little-pigs/narration.mp3": {
+    "sha": "3dd1d5f82229d9ca5accf3196158f45ac998501d",
+    "size": 4179217
+  },
+  "the-three-little-pigs/three_little_pigs_brick_building.jpg": {
+    "sha": "e4fb6aa83f03c4a0f93cf9725ea3772674314f46",
+    "size": 65130
+  },
+  "the-three-little-pigs/three_little_pigs_chase_to_brick.jpg": {
+    "sha": "be55ddf6b31266bc42c11d76913e4efb28b29c97",
+    "size": 1293286
+  },
+  "the-three-little-pigs/three_little_pigs_dancing_playing.jpg": {
+    "sha": "01564c0936825267b9bb096c95090990cb41f1ae",
+    "size": 1323235
+  },
+  "the-three-little-pigs/three_little_pigs_farewell.jpg": {
+    "sha": "9e3a8fd376fac5866c76ab77375238d994bbbbd7",
+    "size": 64007
+  },
+  "the-three-little-pigs/three_little_pigs_stick_building.jpg": {
+    "sha": "e613fd3b7fbc1f7064eccd9d18aa1a87f51d6a75",
+    "size": 1413642
+  },
+  "the-three-little-pigs/three_little_pigs_stick_house.jpg": {
+    "sha": "d6040e991368a9c16fe8f4d9a9abd54e634cb200",
+    "size": 1002485
+  },
+  "the-three-little-pigs/three_little_pigs_story_video.mp4": {
+    "sha": "8d43b260b0e7b3039bcaba95c0ef58394397c686",
+    "size": 13280653
+  },
+  "the-three-little-pigs/three_little_pigs_story_video_poster.jpg": {
+    "sha": "af4159e1a7bde9577680dbb92767575ff3120fad",
+    "size": 234433
+  },
+  "the-three-little-pigs/three_little_pigs_straw.jpg": {
+    "sha": "f847d0e701b2b746a77e558b9b3efbec6b0f8270",
+    "size": 80668
+  },
+  "the-three-little-pigs/three_little_pigs_straw_building.jpg": {
+    "sha": "6e4a076dd460521eaddb422b4965b30a06da7e2d",
+    "size": 1281596
+  },
+  "the-three-little-pigs/three_little_pigs_supper.jpg": {
+    "sha": "5c63842df2f4ce9adf0783b518575fa265e0d419",
+    "size": 1023582
+  },
+  "the-three-little-pigs/three_little_pigs_wolf_brick.jpg": {
+    "sha": "b69849250ea3d87db1b32226d65117b82b192df7",
+    "size": 851894
+  },
+  "the-three-little-pigs/three_little_pigs_wolf_in_pot.jpg": {
+    "sha": "2ce53df83f20478ca969dd00bee94d0b8ea913fd",
+    "size": 33300
+  },
+  "the-three-little-pigs/three_little_pigs_wolf_on_roof.jpg": {
+    "sha": "18f858330c0e8b2aaebd2989d87ce9037d3c0058",
+    "size": 1126942
+  },
+  "the-tortoise-and-the-hare/fox_ref.jpg": {
+    "sha": "96ea675266642cb66f7ba09caa313021c57e40a3",
+    "size": 418878
+  },
+  "the-tortoise-and-the-hare/hare_ref.jpg": {
+    "sha": "21eb0eb9ed87c602e360f6b7432a87dd840282e0",
+    "size": 447961
+  },
+  "the-tortoise-and-the-hare/meadow_ref.jpg": {
+    "sha": "d012206eea698a6fc2975b6c6e8bcb9240fdd471",
+    "size": 848381
+  },
+  "the-tortoise-and-the-hare/narration.mp3": {
+    "sha": "a49a4da3638d778030bdccd26e886d3afd6c2174",
+    "size": 3325869
+  },
+  "the-tortoise-and-the-hare/narration.vtt": {
+    "sha": "18e975903ba707eab1eb041b2b84a678c42a73f5",
+    "size": 2910
+  },
+  "the-tortoise-and-the-hare/tortoise_and_the_hare_story_video.mp4": {
+    "sha": "8c28713c5ac996e69effc3cbf5e03e98456db695",
+    "size": 10495233
+  },
+  "the-tortoise-and-the-hare/tortoise_and_the_hare_story_video_poster.jpg": {
+    "sha": "9043c8577c331833a6f33dd65dc12f6755c0d81d",
+    "size": 382961
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_01.jpg": {
+    "sha": "39ea71c4cc12e0d70af6450278613ac0790c46ec",
+    "size": 927034
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_02.jpg": {
+    "sha": "95116283daee375c65665080a76e917e70a778a3",
+    "size": 635715
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_03.jpg": {
+    "sha": "b63386d9a4187d58085d871b0dea89521bd65895",
+    "size": 875159
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_04.jpg": {
+    "sha": "1d3cb32ad80eb608ac9de00c401af4c453a9dbe8",
+    "size": 921124
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_05.jpg": {
+    "sha": "67f96b24f2fe2872ef9b97eeb09bcc48125d6dc3",
+    "size": 943281
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_06.jpg": {
+    "sha": "bd93082d066c80461d8ec4c90cb1d01e0cf6a432",
+    "size": 933846
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_07.jpg": {
+    "sha": "4804b79868ff3a28815a34b5ad482117962c22e1",
+    "size": 893052
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_08.jpg": {
+    "sha": "736108aae831961cc5798b1f181fc435cb904577",
+    "size": 935443
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_09.jpg": {
+    "sha": "b9317c6b10c8ff958e50204a5351218aa35fc872",
+    "size": 880298
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_10.jpg": {
+    "sha": "0842b4664d383737c5b8426b37691b568a70dfd7",
+    "size": 927837
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_11.jpg": {
+    "sha": "ec94425e44cfab464eda0d63022c9c3b9c2f2e6c",
+    "size": 803943
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_12.jpg": {
+    "sha": "e4ac3af8ec5fbe6dc28a0bd2e6f02ed82bdeb062",
+    "size": 866536
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_13.jpg": {
+    "sha": "86678f538c717948a431283c27aa3b1e576624d5",
+    "size": 888718
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_14.jpg": {
+    "sha": "dad0d374791240cd6818aac4934201b6b5a7caa5",
+    "size": 881381
+  },
+  "the-tortoise-and-the-hare/tortoise_hare_15.jpg": {
+    "sha": "bd5384c0d884cf56325ab867ce474f30bc6de155",
+    "size": 923592
+  },
+  "the-tortoise-and-the-hare/tortoise_ref.jpg": {
+    "sha": "6e3f0b3fe9c607b16a1db2412761fd58df508cec",
+    "size": 480994
+  },
+  "the-wild-uno-uproar/narration.mp3": {
+    "sha": "c183d3431e411625fa16f3392eee0dd7bb72782b",
+    "size": 772645
+  },
+  "the-wild-uno-uproar/uno_cards_hand.jpg": {
+    "sha": "d3567c62a7dd08cb6d5c3c10c357351d9351ea08",
+    "size": 856497
+  },
+  "the-wild-uno-uproar/uno_drawfour_play.jpg": {
+    "sha": "c3fc209acef300d649e5457a00976e5416a4e273",
+    "size": 848841
+  },
+  "the-wild-uno-uproar/uno_storybook.mp4": {
+    "sha": "360dc1fd0e4b414c8cda7e46f0bfd4637915705f",
+    "size": 4239857
+  },
+  "the-wild-uno-uproar/uno_storybook_poster.jpg": {
+    "sha": "38f458d919a8c136b459e87f25eda9de26d56883",
+    "size": 191938
+  },
+  "tyson/marios-missing-star/down-the-pipe.webp": {
+    "sha": "3b5190ae4f5c6b9601a947cc8377b805f9db7263",
+    "size": 760130
+  },
+  "tyson/marios-missing-star/green-pipe.webp": {
+    "sha": "53ae3adf48b9e544a05ad6925b926cbee5cd6113",
+    "size": 786724
+  },
+  "tyson/marios-missing-star/narration.mp3": {
+    "sha": "13fde9fffcdf26d1ccd74cfe25f5091cab1dd596",
+    "size": 909733
+  },
+  "tyson/marios-missing-star/the-star.webp": {
+    "sha": "0a6f14a0d8f763ad887b4a09f3334dbf58287178",
+    "size": 651254
+  },
+  "tyson/marios-missing-star/yoshi-thorn.webp": {
+    "sha": "6d393e8170507b0e7cbe0345ab0843cc9d4cc0a9",
+    "size": 610348
+  },
+  "tyson/pikachus-lost-ball/ball-in-bag.webp": {
+    "sha": "a54af30dc94b4772d45f7fee85382b16777865ed",
+    "size": 697608
+  },
+  "tyson/pikachus-lost-ball/leaf-hat.webp": {
+    "sha": "05ed95ee727001677d1680583834e3e4e6cf3d81",
+    "size": 709076
+  },
+  "tyson/pikachus-lost-ball/narration.mp3": {
+    "sha": "83661f3fd1fc81e0ff68af0e2707aae4de469b45",
+    "size": 810469
+  },
+  "tyson/pikachus-lost-ball/pool-noodle.webp": {
+    "sha": "b5329e81d5579f32c5fb4a325fac0cf4f6f4f8c1",
+    "size": 701828
+  },
+  "tyson/pikachus-lost-ball/tail-in-bush.webp": {
+    "sha": "10d8b3405a4a5919a3c0a24a247f3db5f4d0807a",
+    "size": 716336
+  },
+  "tyson/the-big-splash/casting.webp": {
+    "sha": "551b84fcdd5a37d3bc5b6940b628dcd91f5b2e5d",
+    "size": 619596
+  },
+  "tyson/the-big-splash/first-fish.webp": {
+    "sha": "12c9e585b16b3fb0d90e7efa7354976faea2ce96",
+    "size": 738936
+  },
+  "tyson/the-big-splash/hat.webp": {
+    "sha": "7b2f0e19eb5bdf56dca5c6f90331bda73b5326fb",
+    "size": 719924
+  },
+  "tyson/the-big-splash/narration.mp3": {
+    "sha": "8302c4a6a93052dd211c867e75a244d3d3ee0133",
+    "size": 665701
+  },
+  "tyson/the-big-splash/stick.webp": {
+    "sha": "372621c48e45a18fad99e02676bf97a0af215034",
+    "size": 723846
+  },
+  "tyson/the-bike-bell-clue/bell-triumph.webp": {
+    "sha": "39e490302442b153146c6df472cb2e06a39a7143",
+    "size": 666204
+  },
+  "tyson/the-bike-bell-clue/bike-ride.webp": {
+    "sha": "b69a38345f0d432374b9f7251153ac0f02632063",
+    "size": 724630
+  },
+  "tyson/the-bike-bell-clue/found-car.webp": {
+    "sha": "fab69c64988c88aaa2a3414df367add12b153746",
+    "size": 690738
+  },
+  "tyson/the-bike-bell-clue/narration.mp3": {
+    "sha": "0bbf9e21ce76d0d9befab4ffa5f26e9be4a7ced0",
+    "size": 1044901
+  },
+  "tyson/the-bike-bell-clue/search-bench.webp": {
+    "sha": "114efd9a162fcc81ff6e10981e9e146f089490a2",
+    "size": 750088
+  },
+  "tyson/the-fish-that-said-plop/big-splash.webp": {
+    "sha": "19be4f6e36f49d907c94eb20d7c671c67acac2a7",
+    "size": 669506
+  },
+  "tyson/the-fish-that-said-plop/leaf-boat.webp": {
+    "sha": "4ffd2560cf530a4e0ab7963eb4f0b2bd3c2d2729",
+    "size": 751610
+  },
+  "tyson/the-fish-that-said-plop/leaf-prank.webp": {
+    "sha": "17759e3198eae1828eb9a1e4ab5b3feee69c4b62",
+    "size": 736486
+  },
+  "tyson/the-fish-that-said-plop/narration.mp3": {
+    "sha": "daf16d2476760d1c4e829ecae099a4ef00e13ab5",
+    "size": 796645
+  },
+  "tyson/the-fish-that-said-plop/squirtle-hello.webp": {
+    "sha": "8d8d89155167ff47f723f679c9005a890b4c2996",
+    "size": 720400
+  },
+  "tyson/the-sneaky-flag-play/big-run.webp": {
+    "sha": "a71f2b5346f0a4f59f36f126ff4831feb04e8654",
+    "size": 604606
+  },
+  "tyson/the-sneaky-flag-play/helping-ben.webp": {
+    "sha": "7fced8aca4cd07697884a5482fe9f20716255fe6",
+    "size": 684112
+  },
+  "tyson/the-sneaky-flag-play/high-five.webp": {
+    "sha": "d4f35d882112076013ae38e4d4a536ddb2481973",
+    "size": 572734
+  },
+  "tyson/the-sneaky-flag-play/narration.mp3": {
+    "sha": "5d17ec8dc6cd7cf668c177ae21d1297de507a31f",
+    "size": 779749
+  },
+  "tyson/the-sneaky-flag-play/touchdown.webp": {
+    "sha": "24dab13128617648bbce010183894f8134f3ea97",
+    "size": 597876
+  },
+  "tyson/the-tooth-that-took-a-bounce/fairy-note.webp": {
+    "sha": "b5bb4ac151b9c9d0eab9f7124a3c4ee82f5af896",
+    "size": 681238
+  },
+  "tyson/the-tooth-that-took-a-bounce/morning-dollar.webp": {
+    "sha": "734bbd8d37cba9004ed66df8ef01ef68eadeaac6",
+    "size": 601866
+  },
+  "tyson/the-tooth-that-took-a-bounce/narration.mp3": {
+    "sha": "a0bf866b43aa82024855b0f4d2ea9c866a547a7b",
+    "size": 3957164
+  },
+  "tyson/the-tooth-that-took-a-bounce/narration.vtt": {
+    "sha": "7bbf1509e0def375595c9e123f9cd9ca5f256d3b",
+    "size": 3495
+  },
+  "tyson/the-tooth-that-took-a-bounce/tooth-bounce-3d.mp4": {
+    "sha": "63be40ecbe766fcab6027fc7ad723accd9e1ecd4",
+    "size": 39750622
+  },
+  "tyson/the-tooth-that-took-a-bounce/tooth-bounce-poster.jpg": {
+    "sha": "31301da85cf4ec0b75090a81326ed2b995dea327",
+    "size": 206872
+  },
+  "tyson/the-tooth-that-took-a-bounce/trampoline-bounce.webp": {
+    "sha": "4466b385d2db4afe579a07b9fedb0e9c98747603",
+    "size": 866214
+  },
+  "tyson/the-tooth-that-took-a-bounce/wiggle-wobble.webp": {
+    "sha": "28bd72fa445b9ed999c0e0c583d6af83ccf81909",
+    "size": 772398
+  }
+}

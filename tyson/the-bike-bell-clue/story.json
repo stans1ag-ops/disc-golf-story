@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-bike-bell-clue",
+  "title": "Tyson and the Bike Bell Clue",
+  "collection": "tyson",
+  "order": 4,
+  "description": "Ding, ding! The car finder is on the case.",
+  "subtitle": "Ding, ding! The car finder is on the case.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/the-bike-bell-clue/bike-ride.webp",
+    "alt": "Tyson and Dad riding bikes on a sunny park path."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Ding, ding!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson and his dad, Alex, put on their helmets. They rode their bikes on the park path. Ding, ding! Tyson rang his bell."
+        },
+        {
+          "type": "paragraph",
+          "html": "Up ahead, a boy stood by a bench. He was looking under it. “Did you lose something?” asked Tyson."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-bike-bell-clue/bike-ride.webp",
+          "alt": "Tyson and Dad riding bicycles side by side on a sunny park path, both wearing helmets, Tyson ringing his bell.",
+          "caption": "Tyson and Dad ride the park path.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The search",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "“My toy car,” said the boy. “It is red. It was in my pocket.” Tyson and Dad stopped their bikes. They got off to help. “Where did you go?” asked Tyson. “To the swings. Then here.”"
+        },
+        {
+          "type": "paragraph",
+          "html": "They looked by the swings. No car. They looked by the slide. No car. Dad found a red leaf. “Does your car have a stem?” he asked. The boy gave a small smile. “No.”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-bike-bell-clue/search-bench.webp",
+          "alt": "Tyson, Dad, and the boy searching around a park bench while Dad holds up a red leaf.",
+          "caption": "Searching by the bench — does the car have a stem?",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Cars roll",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson looked down the path. There was a hill between the swings and the bench. “Cars roll,” he said. “Maybe it went down there.” They walked to the foot of the hill."
+        },
+        {
+          "type": "paragraph",
+          "html": "Tyson saw a red dot in the grass. He bent down. A bottle cap. “Not yet,” he said. Then he saw four tiny wheels. They stuck up from behind a pine cone. “Found it!”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-bike-bell-clue/found-car.webp",
+          "alt": "Tyson bending down at the foot of a grassy hill spotting four tiny wheels of the red toy car behind a pine cone.",
+          "caption": "Four tiny wheels behind a pine cone — found it!",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The car finder",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The boy hugged his car. “Thanks!” He rolled it on the bench. It went fast. “Your car had a big trip,” said Tyson. Tyson and Dad got back on their bikes. “You used a good clue,” said Dad."
+        },
+        {
+          "type": "paragraph",
+          "html": "Tyson rang his bell. Ding, ding! “What is that for?” asked Dad. “It means the car finder is back at work!” Just then, Dad dropped his glove. Tyson laughed. “Another job!”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-bike-bell-clue/bell-triumph.webp",
+          "alt": "The boy hugging his red toy car while Tyson rings his bell triumphantly and Dad laughs.",
+          "caption": "Ding, ding! The car finder is back at work.",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Ding, ding!</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/tyson/the-fish-that-said-plop/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💧</span>\n          <strong class=\"choice-card-title\">Tyson and the Fish That Said Plop</strong>\n          <span class=\"choice-card-desc\">A prankster Pokémon and a leaf-boat race.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/the-tooth-that-took-a-bounce/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🦷</span>\n          <strong class=\"choice-card-title\">Tyson and the Tooth That Took a Bounce</strong>\n          <span class=\"choice-card-desc\">His tooth bounced away. Could a note save the day?</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/the-bike-bell-clue/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "d3f86ddf6f02432a7e8fb5686ac96b696f60210e2d2667c1ba7c27bd50a6a640",
+    "narrationInputHash": "5956019cbb7b6c63f2aad409ce829d64fa8ed4940f6e52adffae2a3638d49518"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T01:38:21Z"
+}

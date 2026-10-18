@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "id": "the-emperors-new-clothes",
+  "title": "The Emperor's New Clothes",
+  "collection": "classics",
+  "order": 8,
+  "description": "“The Emperor is in his wardrobe!” — “The Emperor has no clothes on at all!”",
+  "subtitle": "By Hans Christian Andersen • A cozy bedtime tale about honesty, vanity, and the courage of an innocent child.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "",
+  "cover": {
+    "src": "the-emperors-new-clothes/emperors_new_clothes_01.jpg",
+    "alt": "The vain Emperor in his royal crimson robes admiring his grand wardrobe of colorful coats."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Emperor's Wardrobe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Many years ago, in a bustling kingdom across the sea, lived an Emperor who cared more about new clothes than anything else in the whole wide world! While other rulers spent their mornings reviewing maps, inspecting castles, or meeting with ministers, the people of this city always said:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👑 The Townsfolk</div>\n        <div class=\"chant-text\">“The Emperor is in his wardrobe!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "He had a different splendid coat for every single hour of the day."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_01.jpg",
+          "alt": "The plump Emperor admiring his vast collection of colorful coats in his palace wardrobe.",
+          "caption": "The Emperor gestures proudly toward his huge wardrobe filled with luxurious velvet coats and feathered hats.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Two Clever Strangers",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One bright morning, two sneaky strangers came walking into the royal capital. They bowed low before the guards and announced themselves as master weavers from a distant land."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧵 The Two Weavers</div>\n        <div class=\"chant-text\">“We can weave the most magical fabric in all the world—so fine that it is completely invisible to anyone who is foolish or unfit for their job!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "They claimed they could weave the most extraordinary fabric ever known, cloth so magical that it was completely invisible to anyone who was foolish or unfit for their job!"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_02.jpg",
+          "alt": "The two sly weavers bowing theatrically before the palace guards, describing magical cloth.",
+          "caption": "The two clever weavers bow before the palace gates, promising to weave magical invisible fabric.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 27.275
+    },
+    {
+      "id": "scene-3",
+      "title": "A Royal Commission",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When the Emperor heard the news, his eyes danced with joy."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👑 The Emperor</div>\n        <div class=\"chant-text\">“What a magnificent suit that would be! If I wore such clothes, I could discover at once which men in my kingdom are wise and which are simpletons!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Without delay, he gave the two weavers a great chest overflowing with shiny gold coins so they could start weaving immediately."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_03.jpg",
+          "alt": "The Emperor presenting an open chest of gold coins from his throne to the bowing weavers.",
+          "caption": "The Emperor excitedly commissions the magical suit, handing a heavy chest of gold coins to the weavers.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 49.361
+    },
+    {
+      "id": "scene-4",
+      "title": "The Empty Looms",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The two rogues promptly set up two large wooden looms in a grand palace hall. They demanded the finest silk thread and pure spools of spun gold. But as soon as the treasures were brought, they stuffed them straight into their own traveling knapsacks!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧵 The Weaving Hall</div>\n        <div class=\"chant-text\">Click-clack, click-clack went the empty wooden shuttles late into the night!</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Then, sitting at the empty frames, they pumped the pedals and clicked their empty shuttles through the air late into the night."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_04.jpg",
+          "alt": "The two weavers pantomiming weaving with empty shuttles at bare looms while hiding bags of gold thread.",
+          "caption": "The two weavers pretend to work busily at two completely empty wooden looms in the palace hall.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 72.126
+    },
+    {
+      "id": "scene-5",
+      "title": "The Faithful Old Minister's Visit",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "After a few days, the Emperor grew impatient to see how his wonderful cloth was turning out. &quot;I will send my faithful old minister,&quot; thought the Emperor. &quot;He is sensible and wise, and nobody is better suited for his post.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "The old minister adjusted his spectacles and stepped into the weaving hall. But when he looked at the looms, he stopped dead in his tracks!"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_05.jpg",
+          "alt": "The elderly minister peering through round spectacles at the empty wooden loom with wide, puzzled eyes.",
+          "caption": "The wise old minister stares through his spectacles at the bare loom, astonished to see nothing at all.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 94.114
+    },
+    {
+      "id": "scene-6",
+      "title": "“Oh, How Magnificent!”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The minister rubbed his spectacles and stared again, but there was not a single thread to be seen! &quot;Mercy on me!&quot; thought the poor old man. &quot;Can it be that I am foolish? No one must ever know!&quot;"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧵 The Weavers</div>\n        <div class=\"chant-text\">“Do you not admire these rich scarlet swirls, Sir Minister? Look at these golden ribbons!”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">📜 The Faithful Minister</div>\n        <div class=\"chant-text\">“Oh, magnificent! Exquisite colors! I shall tell the Emperor at once!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_06.jpg",
+          "alt": "The minister nodding nervously and smiling as the weavers point into the empty air with flourishes.",
+          "caption": "The old minister pretends to admire the invisible fabric, terrified that someone might think him foolish.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 116.665
+    },
+    {
+      "id": "scene-7",
+      "title": "The Royal Chamberlain's Turn",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Next, the Emperor sent his trusted Royal Chamberlain to find out when the suit would be finished. The Chamberlain leaned over the wooden frame, squinting left and right. Just like the minister, he saw nothing but bare wood and empty air!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧐 The Royal Chamberlain</div>\n        <div class=\"chant-text\">“Charming! A masterpiece of silk and gold! The colors are absolutely divine!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_07.jpg",
+          "alt": "The Chamberlain peering through his golden monocle and raising his hands in exaggerated admiration.",
+          "caption": "The Chamberlain squints through his monocle at the empty loom, praising the nonexistent weave with grand gestures.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 143.079
+    },
+    {
+      "id": "scene-8",
+      "title": "The Emperor Inspects the Looms",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now the entire city could talk of nothing else! At last, the Emperor decided to see the magical cloth for himself. Flanked by his finest courtiers, he swept into the weaving room. The weavers worked faster than ever, slicing the air with clicking scissors. The Emperor blinked once, blinked twice, and rubbed his eyes. He could not see a single strand!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👑 The Emperor's Secret Panic</div>\n        <div class=\"chant-text\">“Good gracious! Can it be that I am foolish? Am I not fit to be Emperor?”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_08.jpg",
+          "alt": "The Emperor leaning over the empty loom with a frozen, wide-eyed smile of secret panic.",
+          "caption": "The Emperor forces a bright royal smile of approval over the empty loom, hiding his private bewilderment.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 166.97
+    },
+    {
+      "id": "scene-9",
+      "title": "The Midnight Stitching",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "&quot;This is terrible!&quot; thought the Emperor. &quot;Am I foolish? Am I unfit to be Emperor?&quot; But on no account would he let anyone suspect! &quot;Oh, it has my highest royal approval!&quot; he declared with a beaming smile."
+        },
+        {
+          "type": "paragraph",
+          "html": "The night before the great city procession, the weavers lit sixteen bright candles. Everyone could see them busily cutting the empty air and sewing with threadless needles."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_09.jpg",
+          "alt": "The weavers working by the glow of candles, snipping the empty air with scissors.",
+          "caption": "The weavers work late by the light of sixteen candles, snipping the empty air with shiny scissors.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 189.125
+    },
+    {
+      "id": "scene-10",
+      "title": "Dressing the Emperor",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At dawn, the rogues raised their arms as if holding up a delicate garment."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🧵 The Weavers</div>\n        <div class=\"chant-text\">“Here are your Majesty's trousers! Here is the waistcoat! And here is the royal mantle! The fabric is as light as a cobweb—you might think you have nothing on at all, but that is its greatest virtue!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Emperor removed his robes and prepared to try on his extraordinary new suit."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_10.jpg",
+          "alt": "The weavers presenting the invisible clothes to the Emperor in his ruffled undergarments.",
+          "caption": "The weavers present the invisible garments with dramatic flair as the Emperor prepares to try them on.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 214.441
+    },
+    {
+      "id": "scene-11",
+      "title": "Admiring the Reflection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The rogues pretended to fasten invisible buttons, smooth invisible sleeves, and drape a splendid invisible train. The Emperor twirled around slowly before a tall golden mirror, standing in his ruffled bedtime drawers and undershirt."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👑 The Courtiers</div>\n        <div class=\"chant-text\">“How delightfully they fit! What a glorious pattern! What royal colors!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_11.jpg",
+          "alt": "The Emperor posing proudly in front of a mirror in his ruffled undergarments.",
+          "caption": "The Emperor turns from side to side before the tall gilded mirror, admiring his nonexistent royal robes.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 237.641
+    },
+    {
+      "id": "scene-12",
+      "title": "The Velvet Train",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "&quot;The royal canopy is ready, your Majesty!&quot; announced the master of ceremonies. The noble lords of the bedchamber knelt down upon the velvet carpet and reached out with both hands, pretending to lift the magnificent invisible train."
+        },
+        {
+          "type": "paragraph",
+          "html": "They marched forward with their arms held high in the air, terrified that someone might think them foolish if they let go!"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_12.jpg",
+          "alt": "Courtiers marching carefully behind the Emperor, holding up an invisible royal train.",
+          "caption": "Two proud courtiers walk carefully behind the Emperor, carefully lifting the invisible train in their hands.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 260.159
+    },
+    {
+      "id": "scene-13",
+      "title": "The Grand Procession",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Under a high silk canopy embroidered with gold, the Emperor strode through the sunlit capital. The cobblestone avenue was lined with cheering crowds, and spectators leaned out of every flower-decked window."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🎉 The Cheering City</div>\n        <div class=\"chant-text\">“Look at his Majesty's new clothes! What a graceful train! What a perfect fit!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "No one dared admit they could see nothing at all."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_13.jpg",
+          "alt": "The sunlit capital street packed with crowds under flower-decked balconies.",
+          "caption": "The grand procession through the sunny cobblestone avenue lined with cheering spectators.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 282.381
+    },
+    {
+      "id": "scene-14",
+      "title": "The Child Speaks the Truth",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Just as the procession entered the bustling town square, a little boy perched upon his father&#x27;s shoulders pointed with a bright giggle."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👦 The Honest Little Boy</div>\n        <div class=\"chant-text\">“Look, Papa! The Emperor has no clothes on at all!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "The father gasped, and the words whispered like a wave from neighbor to neighbor: &quot;The child says he has nothing on!&quot;"
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_14.jpg",
+          "alt": "A little boy pointing from his father's shoulders, laughing with honest joy.",
+          "caption": "The innocent little boy giggles and points, speaking the honest truth for everyone to hear.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 306.657
+    },
+    {
+      "id": "scene-15",
+      "title": "Truth, Laughter, and a Royal March",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">😄 The Whole Town</div>\n        <div class=\"chant-text\">“He has nothing on at all!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Emperor shivered, and his cheeks turned red as a ripe strawberry. He knew deep down that the people were right! But he squared his shoulders, lifted his golden crown, and marched even taller, learning that true dignity comes from honesty, not from fancy clothes."
+        },
+        {
+          "type": "image",
+          "src": "the-emperors-new-clothes/emperors_new_clothes_15.jpg",
+          "alt": "The blushing Emperor marching on with good humor as the happy townspeople applaud.",
+          "caption": "The blushing Emperor marches on with dignity, learning that true character is better than vanity.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 330.125
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What did the little boy teach the Emperor and his kingdom?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌟</span>\n          <strong class=\"choice-card-title\">Courage &amp; Honesty</strong>\n          <span class=\"choice-card-desc\">Even when everyone else is afraid to look silly, speaking the simple truth with a kind heart is always the bravest thing to do!</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">👑</span>\n          <strong class=\"choice-card-title\">True Worth Within</strong>\n          <span class=\"choice-card-desc\">Fancy clothes and shiny crowns don't make a good leader—kindness, honesty, and caring for others are what truly matter.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "the-emperors-new-clothes/narration.mp3",
+    "video": {
+      "src": "the-emperors-new-clothes/the_emperors_new_clothes_story_video.mp4",
+      "poster": "the-emperors-new-clothes/the_emperors_new_clothes_story_video_poster.jpg"
+    },
+    "captions": "the-emperors-new-clothes/narration.vtt",
+    "duration": 353.89,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "1a029b8c9c03c9d80bb51af4e74e604d5735f2e3c593c9ab2f6ff2a09f81285a",
+    "narrationInputHash": "5e50fc9bd093e4ba8c2a0c6ebd145990a4740c8f4743a9155098a32cc2a245c6",
+    "videoNarrationHash": "5e50fc9bd093e4ba8c2a0c6ebd145990a4740c8f4743a9155098a32cc2a245c6",
+    "videoVisualHash": "fa856732769e07b96912b2bf5e23009c69e68f1a8857bf93895b824a6b844180"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-15T10:46:17Z"
+}

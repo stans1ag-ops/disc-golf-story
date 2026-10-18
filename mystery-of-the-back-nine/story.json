@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "mystery-of-the-back-nine",
+  "title": "The Mystery of the Back Nine",
+  "collection": "shane",
+  "order": 7,
+  "description": "A big feather, muddy tracks, and a family hiding in the leaves.",
+  "subtitle": "A feather and strange tracks lead Shane to a surprise in the woods.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "mystery-of-the-back-nine/Children_discovering_dinosaur_footprints_20260915121009.jpeg",
+    "alt": "Alex and Shane discovering giant turkey tracks in the mud by a creek."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The first clue",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At hole ten, Shane’s orange Roadrunner landed beside a pile of leaves. As he reached for it, he spotted a feather almost as long as his arm."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Who dropped this?” he asked. Dad turned it over. Brown and black stripes ran across it. “A big bird,” Dad said. Shane slipped the feather into his bag. “Then we have a mystery.”"
+        },
+        {
+          "type": "image",
+          "src": "mystery-of-the-back-nine/Alex_and_Shane_walking_past_20260915121009.jpeg",
+          "alt": "Alex and Shane walking past the wooden Hole 10 sign, entering the sunlit Whispering Woods back nine with their discs ready.",
+          "caption": "Shane and Dad begin the back nine.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Muddy tracks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They followed the path to a creek. In the soft mud were three-toed prints. Some were big. Some were tiny."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Dinosaur feet?” Shane whispered. Dad crouched beside him. “Maybe bird feet. Look at the little ones.” Shane imagined a big bird walking with its babies. “Let’s see where they went.”"
+        },
+        {
+          "type": "image",
+          "src": "mystery-of-the-back-nine/Children_examining_giant_turkey_20260915121009.jpeg",
+          "alt": "Alex kneeling beside Shane on the trail holding a giant bronze-striped feather while Shane points with excitement.",
+          "caption": "The giant feather is their first clue.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "A sound in the leaves",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At hole twelve, Shane threw past a fallen log. Before he could fetch his disc, something scratched in the leaves."
+        },
+        {
+          "type": "paragraph",
+          "html": "Scratch, scratch. Cluck."
+        },
+        {
+          "type": "image",
+          "src": "mystery-of-the-back-nine/Children_discovering_dinosaur_footprints_20260915121009.jpeg",
+          "alt": "Shane crouching and Alex kneeling beside the muddy creek bank, examining the giant three-toed arrow tracks and tiny baby footprints.",
+          "caption": "Three-toed tracks appear beside the creek.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane held Dad’s hand. They moved quietly to the log and peeked over. Something brown and round moved in a patch of sunlight. Then four smaller shapes hurried after it."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The family",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It was a family of wild turkeys. One big turkey spread its tail like a fan. Another scratched the ground. Four fluffy chicks followed close behind."
+        },
+        {
+          "type": "paragraph",
+          "html": "One chick pecked the edge of Shane’s orange disc. Tock, tock. Shane covered his mouth so he would not laugh too loudly."
+        },
+        {
+          "type": "image",
+          "src": "mystery-of-the-back-nine/Boy_peeking_at_wild_turkeys_20260915121009.jpeg",
+          "alt": "Shane peeking over a mossy log watching the proud daddy turkey with puffed feathers, mama turkey, and a chick pecking his orange disc.",
+          "caption": "Shane spots the turkey family.",
+          "width": 1376,
+          "height": 768
+        },
+        {
+          "type": "paragraph",
+          "html": "The big turkey called, “Gobble, gobble!” The chicks hurried away with their parents. Shane waited until they were gone before picking up his disc."
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Mystery solved",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane held up the feather. Its stripes matched the big turkey’s tail. He looked back at the three-toed tracks. “It was them!” he said."
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad tapped his pink disc against Shane’s Roadrunner. “Good looking, detective.” Shane put the feather safely in his bag. They walked to the next hole, watching the leaves in case another clue appeared."
+        },
+        {
+          "type": "image",
+          "src": "mystery-of-the-back-nine/Characters_celebrating_with_discs_20260915121009.jpeg",
+          "alt": "Alex and Shane smiling in the woods, holding the giant turkey feather and clicking their orange and pink discs in victory.",
+          "caption": "Shane has found the answer to his mystery.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Would you like to head to the lake cottage to catch the legendary giant catfish, or return to the Whispering Woods front nine?</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/the-legend-of-big-whalter/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <strong class=\"choice-card-title\">Big Walter</strong>\n          <span class=\"choice-card-desc\">Shane meets a very big catfish and helps it go home.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n\n        <a href=\"/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌲</span>\n          <strong class=\"choice-card-title\">Shane &amp; the Magic Disc</strong>\n          <span class=\"choice-card-desc\">Journey back to Whispering Woods Hole 4 where woodland friends help Roadrunner score an ace.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>\n\n      <div class=\"choice-feedback\">\n        <p class=\"choice-feedback-text\"></p>\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Bedtime • a giggly toot-tastrophe</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "mystery-of-the-back-nine/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "4b433b592a457ad4afd82eb446f9ad5070295af8bdd432ae68d0fca09d6bf435",
+    "narrationInputHash": "a9fce1dd3a8b4ba8778eac61d1094d14ef53551e6337b38e3194a6bb9f2dbcf7"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-15T18:33:45Z"
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "id": "the-little-red-hen",
+  "title": "The Little Red Hen",
+  "collection": "classics",
+  "order": 7,
+  "description": "“Who will help me plant this wheat?” — “Not I!” — “Then I will!”",
+  "subtitle": "A beloved story of industry, patience, and the warm, delicious reward of hard work shared with those who care.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/childrens-stories/the-little-red-hen",
+  "cover": {
+    "src": "the-little-red-hen/little_red_hen_01.jpg",
+    "alt": "The Little Red Hen busily scratching in the sunny farmyard with her three fluffy yellow chicks."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Busy Little Hen in the Farmyard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once upon a time, on a warm and sunny farmyard, lived a cheerful Little Red Hen. She had bright russet-red feathers, lively dark eyes, and a neat yellow beak."
+        },
+        {
+          "type": "paragraph",
+          "html": "While the rest of the farm slept, she busily scratched and pecked in her picketty-pecketty way, always looking after her three fluffy yellow chicks."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_01.jpg",
+          "alt": "The Little Red Hen scratching in the sunny barnyard with her three fluffy yellow chicks near the rustic wooden barn.",
+          "caption": "The Little Red Hen busily scratching in the sunny farmyard with her three fluffy yellow chicks.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Lazy Farmyard Friends",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Sharing the farmyard were three very lazy friends: a plump pink Pig who loved snoring in the mud sty, a sleek calico Cat curled up asleep on the porch steps, and a chubby grey Rat snoozing by the warm hay bales."
+        },
+        {
+          "type": "paragraph",
+          "html": "None of them ever wanted to lift a paw to help."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_02.jpg",
+          "alt": "The three lazy friends: the pink pig asleep in the mud, the calico cat on the steps, and the grey rat by the hay.",
+          "caption": "The three lazy friends fast asleep in the warm sunshine: the pig, the cat, and the rat.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 21.899
+    },
+    {
+      "id": "scene-3",
+      "title": "Discovering the Golden Wheat Seed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One bright morning, while scratching near the wooden garden fence, the Little Red Hen uncovered something unusual in the warm soil."
+        },
+        {
+          "type": "paragraph",
+          "html": "It was a slender, gleaming golden seed! “Cluck, cluck!” she gasped in wonder. It was a seed of wheat, full of promise and life."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_03.jpg",
+          "alt": "The Little Red Hen discovering the gleaming golden wheat seed in the rich dark soil.",
+          "caption": "The Little Red Hen uncovers a single gleaming golden wheat seed in the dark garden earth.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 39.859
+    },
+    {
+      "id": "scene-4",
+      "title": "“Who Will Plant the Wheat?”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The Little Red Hen knew that if the seed was planted in the rich earth, it would grow into tall wheat to make flour for bread. She looked across the farmyard and called out cheerfully:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Who will help me plant this wheat seed?”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💤 The Lazy Friends</div>\n        <div class=\"chant-text\">“Not I!” grunted the Pig.<br>“Not I!” yawned the Cat.<br>“Not I!” squeaked the Rat.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_04.jpg",
+          "alt": "The Little Red Hen holding the golden seed and calling out, while the pig, cat, and rat turn away.",
+          "caption": "The Little Red Hen calls out across the fence, but the pig, cat, and rat refuse to help.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 57.397
+    },
+    {
+      "id": "scene-5",
+      "title": "Planting in the Warm Soil",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Then I will plant it myself!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And she did! With her industrious feet and bill, she carefully dug a neat little furrow in the garden soil, tucked the golden grain inside, smoothed the earth over it, and watered it with care under the morning sun."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_05.jpg",
+          "alt": "The Little Red Hen watering the freshly planted seed in the neat garden furrow with her chicks watching.",
+          "caption": "The Little Red Hen carefully waters the planted seed as her three happy chicks chirp nearby.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 81.105
+    },
+    {
+      "id": "scene-6",
+      "title": "The Wheat Grows Tall and Golden",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "All through the long sunny summer, gentle rains fell and warm breezes blew. Day by day, a tiny green shoot poked through the dirt and grew taller and stronger, until a glorious stalk of golden wheat swayed proudly in the autumn breeze."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_06.jpg",
+          "alt": "A magnificent stalk of tall golden ripe wheat swaying in the autumn breeze beside the barnyard fence.",
+          "caption": "The tall stalk of ripe golden wheat sways proudly in the warm autumn breeze.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 98.007
+    },
+    {
+      "id": "scene-7",
+      "title": "“Who Will Cut the Wheat?”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At last, the grain was ripe and ready. The Little Red Hen looked over at her resting companions and called out:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“The wheat is ripe! Who will help me cut the wheat?”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💤 The Lazy Friends</div>\n        <div class=\"chant-text\">“Not I!” grunted the Pig, rolling onto his side.<br>“Not I!” meowed the Cat, lazily stretching her paws.<br>“Not I!” squeaked the Rat, twitching his sleepy whiskers.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_07.jpg",
+          "alt": "The Little Red Hen asking for help to cut the ripe wheat while the pig rolls in mud, cat stretches, and rat snoozes.",
+          "caption": "The Little Red Hen asks for help to cut the wheat, but her lazy companions turn away.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 113.237
+    },
+    {
+      "id": "scene-8",
+      "title": "Reaping with the Sickle",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Then I will cut it myself!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And she did! She brought a little hand sickle from the tool shed and carefully reaped the tall golden stalk, laying the rich heads of grain gently upon the ground while her baby chicks chirped with excitement."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_08.jpg",
+          "alt": "The Little Red Hen using a sickle to harvest the golden wheat, tying neat bundles as her chicks peck at grains.",
+          "caption": "The Little Red Hen reaps the tall golden wheat with her sickle, tying neat sheaves with twine.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 136.143
+    },
+    {
+      "id": "scene-9",
+      "title": "“Who Will Thresh the Wheat?”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now the wheat stalks were gathered, but the golden kernels had to be threshed from the chaff. Hopeful and patient, the Little Red Hen called across the yard:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Who will help me thresh the wheat?”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💤 The Lazy Friends</div>\n        <div class=\"chant-text\">“Not I!” grunted the Pig with a heavy sigh.<br>“Not I!” purred the Cat without opening an eye.<br>“Not I!” squeaked the Rat, curling up tighter.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_09.jpg",
+          "alt": "The Little Red Hen calling across the farmyard beside sheaves of wheat, while the pig, cat, and rat turn away in refusal.",
+          "caption": "The Little Red Hen asks who will help thresh the wheat, but her lazy farmyard companions turn away.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 152.255
+    },
+    {
+      "id": "scene-10",
+      "title": "Threshing the Golden Grain",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Then I will thresh it myself!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And she did! After tucking her three downy chicks into their cozy nest for an afternoon nap, she patiently threshed the stalks until a neat wooden bowl overflowed with clean, plump golden grains."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_10.jpg",
+          "alt": "The Little Red Hen threshing the golden wheat with a wooden flail inside the sunlit barn doorway, filling a bowl with clean grain while her chicks nap in a straw nest.",
+          "caption": "In the sunlit barn, the Little Red Hen threshes the golden wheat until a wooden bowl overflows with plump grains.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 174.555
+    },
+    {
+      "id": "scene-11",
+      "title": "“Who Will Carry the Wheat to the Mill?”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The plump grains were gathered, but they needed to be ground into soft white flour. The Little Red Hen poured the grain into a sturdy cloth sack and called out:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Who will carry this sack of wheat to the mill?”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💤 The Lazy Friends</div>\n        <div class=\"chant-text\">“Not I!” grunted the Pig, closing his eyes.<br>“Not I!” meowed the Cat, licking her front paw.<br>“Not I!” squeaked the Rat, tucking in his tail.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_11.jpg",
+          "alt": "The Little Red Hen standing proudly beside a full burlap sack of golden wheat, asking who will carry it to the mill.",
+          "caption": "The Little Red Hen stands beside the heavy sack of grain, ready for the journey to the mill.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 191.329
+    },
+    {
+      "id": "scene-12",
+      "title": "The Journey to the Mill",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Then I will carry it myself!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And she did! Hoisting the sack over her wing, she trudged down the winding lane past clover fields to the old stone watermill. The friendly miller poured the wheat between the turning millstones, and soon she was carrying home a sack of fine, powdery white flour."
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_12.jpg",
+          "alt": "The friendly miller pouring golden wheat between turning millstones to grind fine white flour, as the waterwheel splashes outside the stone archway.",
+          "caption": "At the rustic stone watermill, turning millstones grind the golden grain into soft white flour.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 215.016
+    },
+    {
+      "id": "scene-13",
+      "title": "“Who Will Bake the Bread?”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Back home in the cozy farmhouse kitchen, the Little Red Hen tied a fresh white apron around her waist and put on a baker&#x27;s cap. She set out the mixing bowl, yeast, and fresh water. Looking out the open kitchen window, she called:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Who will help me bake this flour into bread?”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💤 The Lazy Friends</div>\n        <div class=\"chant-text\">“Not I!” grunted the Pig from the shade of an apple tree.<br>“Not I!” chuckled the Cat from her rocking chair.<br>“Not I!” snickered the Rat from behind the flour barrel.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_13.jpg",
+          "alt": "The Little Red Hen in her baker's hat and apron calling out from the kitchen table surrounded by flour, yeast, and mixing bowls toward the open window.",
+          "caption": "In her baker's hat and apron, the Little Red Hen sets out her ingredients and asks who will help bake the bread.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 235.105
+    },
+    {
+      "id": "scene-14",
+      "title": "Kneading and Baking the Loaves",
+      "blocks": [
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Then I will bake it myself!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And she did! She mixed the flour and water, kneaded the smooth dough with gentle care, shaped it into round loaves, and slipped them into the warm brick hearth oven."
+        },
+        {
+          "type": "paragraph",
+          "html": "Before long, the most delicious, mouth-watering aroma of fresh baking bread drifted out the window and across the whole farmyard!"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_14.jpg",
+          "alt": "The Little Red Hen sliding shaped loaves of dough on a wooden peel into the glowing red brick hearth oven as steam rises, watched by her three chicks.",
+          "caption": "The Little Red Hen slides the shaped loaves of dough into the glowing brick hearth oven to bake.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 264.774
+    },
+    {
+      "id": "scene-15",
+      "title": "“Who Will Eat the Bread?”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At last, the oven door opened, and out came two golden-brown loaves of bread, crusty and steaming and smelling wonderful. Instantly, the Pig, the Cat, and the Rat scrambled to the kitchen window, their eyes wide and their mouths watering hungrily."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Little Red Hen</div>\n        <div class=\"chant-text\">“Who will help me eat the bread?”</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">😋 The Eager Friends</div>\n        <div class=\"chant-text\">“I will!” shouted the Pig, jumping to his feet.<br>“I will!” cried the Cat, leaping onto the sill.<br>“I will!” squeaked the Rat, hopping up and down.</div>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍞 A Sweet Reward</div>\n        <div class=\"chant-text\">“Oh no, you won't!” smiled the Little Red Hen.<br>“My three little chicks and I will eat it all ourselves!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And she sliced the warm crusty loaf, spread it with sweet butter, and shared every delicious bite with her happy little chicks. And they did!"
+        },
+        {
+          "type": "image",
+          "src": "the-little-red-hen/little_red_hen_15.jpg",
+          "alt": "The Little Red Hen buttering warm slices of crusty fresh bread on the table for her happy chicks, while the hungry pig, cat, and rat watch through the open window.",
+          "caption": "The Little Red Hen spreads fresh butter on warm slices of crusty bread for her chicks, while the hungry animals watch through the window.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 287.359
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What did the Little Red Hen teach her farmyard friends?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🍞</span>\n          <strong class=\"choice-card-title\">Hard Work &amp; Fairness</strong>\n          <span class=\"choice-card-desc\">When we help with the work from the very beginning, we get to share in the wonderful rewards together at the end!</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌾</span>\n          <strong class=\"choice-card-title\">Perseverance &amp; Care</strong>\n          <span class=\"choice-card-desc\">Even when nobody offered a helping hand, the Little Red Hen stayed patient and took loving care of her chicks.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "the-little-red-hen/narration.mp3",
+    "video": {
+      "src": "the-little-red-hen/the_little_red_hen_story_video.mp4",
+      "poster": "the-little-red-hen/the_little_red_hen_story_video_poster.jpg"
+    },
+    "captions": "the-little-red-hen/narration.vtt",
+    "duration": 344.171,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "ac4ee70e34eb034184aacc56fb5354d947c6dec1290b1f29b2f19da2000d0ce5",
+    "narrationInputHash": "a20393de258b0677647642a0ab464019a1df51fa7e4ddbcde6ed8117920f7794",
+    "videoNarrationHash": "a20393de258b0677647642a0ab464019a1df51fa7e4ddbcde6ed8117920f7794",
+    "videoVisualHash": "548f635bf6ef761a7658a1707a2b5d569b84af592792549e50ecd61eeb457521"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-13T23:17:31Z"
+}

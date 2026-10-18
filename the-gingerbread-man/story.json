@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "id": "the-gingerbread-man",
+  "title": "The Gingerbread Man",
+  "collection": "classics",
+  "order": 4,
+  "description": "“Run, run, fast as you can! You can’t catch me, I’m the Gingerbread Man!”",
+  "subtitle": "\"Run, run, fast as you can! You can't catch me, I'm the Gingerbread Man!\"",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/childrens-stories/the-gingerbread-man",
+  "cover": {
+    "src": "the-gingerbread-man/gingerbread_03.jpg",
+    "alt": "The little gingerbread man springing out of the open oven into the kitchen with the cook watching in surprise."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Making the Gingerbread Dough",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One day, the cook went into the kitchen to make some gingerbread. She took some flour and water, and treacle and ginger, and mixed them all well together, and she put in some more water to make it thin, and then some more flour to make it thick, and a little salt and some spice, and then she rolled it out into a beautiful, smooth, dark-yellow dough."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_01.jpg",
+          "alt": "The cook stirring rich gingerbread dough in a rustic vintage kitchen with bowls of spices and rolling pin.",
+          "caption": "The cook mixed flour, water, treacle, and ginger into a smooth, dark-yellow dough.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 0
+    },
+    {
+      "id": "scene-2",
+      "title": "Moulding the Gingerbread Man",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then she took the square tins and cut out some square cakes for the little boys, and with some round tins she cut out some round cakes for the little girls, and then she said, “I’m going to make a little gingerbread man for little Bobby.” So she took a nice round lump of dough for his body, and a smaller lump for his head, which she pulled out a little for the neck. Two other lumps were stuck on beneath for the legs, and were pulled out into proper shape, with feet and toes all complete, and two still smaller pieces were made into arms, with dear little hands and fingers."
+        },
+        {
+          "type": "paragraph",
+          "html": "But the nicest work was done on the head, for the top was frizzed up into a pretty sugary hat; on either side was made a dear little ear, and in front, after the nose had been carefully moulded, a beautiful mouth was made out of a big raisin, and two bright little eyes with burnt almonds and caraway seeds."
+        },
+        {
+          "type": "paragraph",
+          "html": "Then the gingerbread man was finished ready for baking, and a very jolly little man he was. In fact, he looked so sly that the cook was afraid he was plotting some mischief, and when the batter was ready for the oven, she put in the square cakes and she put in the round cakes; and then she put in the little gingerbread man in a far back corner, where he couldn’t get away in a hurry."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_02.jpg",
+          "alt": "The cook carefully decorating the little gingerbread man with raisin mouth and caraway seed eyes on a floured wooden table.",
+          "caption": "A sugary hat, a big raisin mouth, and bright caraway-seed eyes — a very jolly little man!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 23.39
+    },
+    {
+      "id": "scene-3",
+      "title": "Out of the Oven!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then she went up to sweep the parlor, and she swept and she swept till the clock struck twelve, when she dropped her broom in a hurry, and exclaiming, “Lawks! The gingerbread will be all baked to a cinder,” she ran down into the kitchen, and threw open the oven door."
+        },
+        {
+          "type": "paragraph",
+          "html": "And the square cakes were all done, nice and hard and brown, and the round cakes were all done, nice and hard and brown, and the gingerbread man was all done too, nice and hard and brown; and he was standing up in his corner, with his little caraway-seed eyes sparkling, and his raisin mouth bubbling over with mischief, while he waited for the oven door to be opened."
+        },
+        {
+          "type": "paragraph",
+          "html": "The instant the door was opened, with a hop, skip, and a jump, he went right over the square cakes and the round cakes, and over the cook’s arm, and before she could say “Jack Robinson” he was running across the kitchen floor, as fast as his little legs would carry him, towards the back door, which was standing wide open, and through which he could see the garden path."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The Gingerbread Man Chants!</div>\n        <div class=\"chant-text\">\n          “RUN, RUN, FAST AS YOU CAN!<br>YOU CAN’T CATCH ME, I’M THE GINGERBREAD MAN!”\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_03.jpg",
+          "alt": "The gingerbread man leaping triumphantly from the open oven door across the kitchen floor.",
+          "caption": "With a hop, skip, and a jump, he leaped over the cakes and dashed for the open back door!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 95.05
+    },
+    {
+      "id": "scene-4",
+      "title": "Mouser the Cat Gives Chase",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The old cook turned round as fast as she could, which wasn’t very fast, for she was rather a heavy woman and she had been quite taken by surprise, and she saw lying right across the doorway, fast asleep in the sun, old Mouser, the cat."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👩‍🍳 The Cook Cries Out</div>\n        <div class=\"chant-text\">\n          “Mouser, Mouser! Stop the gingerbread man! I want him for little Bobby.”\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "When the cook first called, Mouser thought it was only someone calling in her dreams, and simply rolled over lazily; and the cook called again, “Mouser, Mouser!” The old cat sprang up with a jump, but just as she turned round to ask the cook what all the noise was about, the little gingerbread man cleverly jumped under her tail, and in an instant was trotting down the garden walk."
+        },
+        {
+          "type": "paragraph",
+          "html": "Mouser turned in a hurry and ran after, although she was still rather too sleepy to know what it was she was trying to catch, and after the cat came the cook, lumbering along rather heavily, but also making pretty good speed."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_04.jpg",
+          "alt": "The gingerbread man darting swiftly past Mouser the sleepy cat in the sunlit garden doorway.",
+          "caption": "The clever gingerbread man jumped right under Mouser's tail and trotted down the walk!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 160.94
+    },
+    {
+      "id": "scene-5",
+      "title": "Towser the Dog Wakes Up",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now at the bottom of the walk, lying fast asleep in the sun against the warm stones of the garden wall, was Towser, the dog."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👩‍🍳 The Cook Calls Again</div>\n        <div class=\"chant-text\">\n          “Towser, Towser, stop the gingerbread man! I want him for little Bobby.”\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And when Towser first heard her calling he thought it was someone speaking in his dreams, and he only turned over on his side, with another snore, and then the cook called again, “Towser, Towser, stop him, stop him!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Then the dog woke up in good earnest, and jumped up on his feet to see what it was that he should stop. But just as the dog jumped up, the little gingerbread man, who had been watching for the chance, quietly slipped between his legs, and climbed up on the top of the stone wall, so that Towser saw nothing but the cat running towards him down the walk, and behind the cat the cook, now quite out of breath."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The Gingerbread Man Chants!</div>\n        <div class=\"chant-text\">\n          “RUN, RUN, FAST AS YOU CAN!<br>YOU CAN’T CATCH ME, I’M THE GINGERBREAD MAN!”\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_05.jpg",
+          "alt": "The gingerbread man slipping nimbly between the legs of Towser the dog by the garden wall.",
+          "caption": "He slipped quietly right between Towser's legs and scrambled up to the top of the stone wall!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 218.11
+    },
+    {
+      "id": "scene-6",
+      "title": "The Grand Scrimmage!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He thought at once that the cat must have stolen something, and that it was the cat the cook wanted him to stop. Now, if there was anything that Towser liked, it was going after the cat, and he jumped up the walk so fiercely that the poor cat did not have time to stop herself or to get out of his way, and they came together with a great fizzing, and barking, and meowing, and howling, and scratching, and biting, as if a couple of Catherine-wheels had gone off in the wrong way and had got mixed up with one another."
+        },
+        {
+          "type": "paragraph",
+          "html": "But the old cook had been running so hard that she was not able to stop herself any better than the cat had done, and she fell right on top of the mixed up dog and cat, so that all three rolled over on the walk in a heap together."
+        },
+        {
+          "type": "paragraph",
+          "html": "And the cat scratched whichever came nearest, whether it was a piece of the dog or of the cook, and the dog bit at whatever came nearest, whether it was a piece of the cat or of the cook, so that the poor cook was badly pummelled on both sides."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_06.jpg",
+          "alt": "The cook, Towser the dog, and Mouser the cat tumbling together in a comical heap on the gravel garden path.",
+          "caption": "All three rolled over in a great flurry of paws, aprons, barking, meowing, and scratching!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 277.31
+    },
+    {
+      "id": "scene-7",
+      "title": "Laughing on the Garden Wall",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Meanwhile, the gingerbread man had climbed up on the garden wall, and stood on the top with his hands in his pockets, looking at the scrimmage, and laughing till the tears ran down from his little caraway-seed eyes and his raisin mouth was bubbling all over with fun."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The Gingerbread Man Chants!</div>\n        <div class=\"chant-text\">\n          “RUN, RUN, FAST AS YOU CAN!<br>YOU CAN’T CATCH ME, I’M THE GINGERBREAD MAN!”\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_07.jpg",
+          "alt": "The cheeky gingerbread man standing hands-in-pockets atop the stone wall, laughing at the tumble below.",
+          "caption": "He stood on the wall with his hands in his pockets, laughing till tears ran from his caraway eyes!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 331.73
+    },
+    {
+      "id": "scene-8",
+      "title": "Racing Across the Field",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "After a little while, the cat managed to pull herself out from under the cook and the dog, and a very cast-down and crumpled-up-looking cat she was. She had had enough of hunting gingerbread men, and she crept back to the kitchen to repair damages."
+        },
+        {
+          "type": "paragraph",
+          "html": "The dog, who was very cross because his face had been badly scratched, let go of the cook, and at last, catching sight of the gingerbread man, made a bolt for the garden wall. The cook picked herself up, and although her face was also badly scratched and her dress was torn, she was determined to see the end of the chase, and she followed after the dog, though this time more slowly."
+        },
+        {
+          "type": "paragraph",
+          "html": "When the gingerbread man saw the dog coming, he jumped down on the farther side of the wall, and began running across the field. Now in the middle of the field was a tree, and at the foot of the tree was lying Jocko, the monkey. He wasn’t asleep—monkeys never are—and when he saw the little man running across the field and heard the cook calling, “Jocko, Jocko, stop the gingerbread man,” he at once gave one big jump."
+        },
+        {
+          "type": "paragraph",
+          "html": "But he jumped so fast and so far that he went right over the gingerbread man, and as luck would have it, he came down on the back of Towser, the dog, who had just scrambled over the wall, and whom he had not before noticed. Towser was naturally taken by surprise, but he turned his head around and promptly bit off the end of the monkey’s tail, and Jocko quickly jumped off again, chattering his indignation."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_08.jpg",
+          "alt": "The gingerbread man sprinting across an open green meadow toward a grand oak tree.",
+          "caption": "He jumped down and dashed across the field toward the big tree in the middle of the meadow!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 353.26
+    },
+    {
+      "id": "scene-9",
+      "title": "Climbing to the Topmost Branch",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Meanwhile, the gingerbread man had got to the bottom of the tree, and was saying to himself: “Now, I know the dog can’t climb a tree, and I don’t believe the old cook can climb a tree; and as for the monkey I’m not sure, for I’ve never seen a monkey before, but I am going up.”"
+        },
+        {
+          "type": "paragraph",
+          "html": "So he pulled himself up hand over hand until he had got to the topmost branch."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The Gingerbread Man Chants from the Treetop!</div>\n        <div class=\"chant-text\">\n          “CLIMB, CLIMB, FAST AS YOU CAN!<br>YOU CAN’T CATCH ME, I’M THE GINGERBREAD MAN!”\n        </div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_09.jpg",
+          "alt": "The gingerbread man pulling himself hand over hand up the trunk of the oak tree to the topmost branch.",
+          "caption": "Hand over hand he climbed, straight to the highest branch of the great tree!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 441.89
+    },
+    {
+      "id": "scene-10",
+      "title": "Caught by Jocko the Monkey",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But the monkey had jumped with one spring onto the lowest branch, and in an instant he also was at the top of the tree."
+        },
+        {
+          "type": "paragraph",
+          "html": "The gingerbread man crawled out to the furthermost end of the branch, and hung by one hand, but the monkey swung himself under the branch, and stretching out his long arm, he pulled the gingerbread man in. Then he held him up and looked at him so hungrily that the little raisin mouth began to pucker down at the corners, and the caraway-seed eyes filled with tears."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_10.jpg",
+          "alt": "Jocko the monkey hanging from a tree branch, holding up the worried little gingerbread man.",
+          "caption": "Jocko swung out, reached with his long arm, and caught the little gingerbread man by the branch!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 470.76
+    },
+    {
+      "id": "scene-11",
+      "title": "Little Bobby to the Rescue",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And then what do you think happened? Why, little Bobby himself came running up. He had been taking his noon-day nap upstairs, and in his dreams it seemed as if he kept hearing people call “Little Bobby, little Bobby!” until finally he jumped up with a start, and was so sure that someone was calling him that he ran downstairs, without even waiting to put on his shoes."
+        },
+        {
+          "type": "paragraph",
+          "html": "As he came down, he could see through the window in the field beyond the garden the cook, and the dog, and the monkey, and could even hear the barking of Towser and the chattering of Jocko. He scampered down the walk, with his little bare feet pattering against the warm gravel, climbed over the wall, and in a few seconds arrived under the tree, just as Jocko was holding up the poor little gingerbread man."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">👦 Little Bobby Commands</div>\n        <div class=\"chant-text\">\n          “Drop it, Jocko!”\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And drop it Jocko did, for he always had to mind Bobby. He dropped it so straight that the gingerbread man fell right into Bobby’s uplifted pinafore."
+        },
+        {
+          "type": "paragraph",
+          "html": "Then Bobby held him up and looked at him, and the little raisin mouth puckered down lower than ever, and the tears ran right out of the caraway-seed eyes."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_11.jpg",
+          "alt": "Little Bobby standing barefoot under the tree catching the falling gingerbread man safely in his pinafore.",
+          "caption": "“Drop it, Jocko!” cried Bobby — and down fell the gingerbread man right into Bobby's pinafore!",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 498.93
+    },
+    {
+      "id": "scene-12",
+      "title": "Three Bites and All Gone!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But Bobby was too hungry to mind gingerbread tears, and he gave one big bite, and swallowed down both legs and a piece of the body."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The First Bite</div>\n        <div class=\"chant-text\">\n          “OH!” said the gingerbread man, “I’M ONE-THIRD GONE!”\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Bobby gave a second bite, and swallowed the rest of the body and the arms."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The Second Bite</div>\n        <div class=\"chant-text\">\n          “OH!” said the gingerbread man, “I’M TWO-THIRDS GONE!”\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Bobby gave a third bite, and gulped down the head."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🍪 The Final Bite</div>\n        <div class=\"chant-text\">\n          “OH!” said the gingerbread man, “I’M ALL GONE!”\n        </div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And so he was—and that is the end of the story."
+        },
+        {
+          "type": "image",
+          "src": "the-gingerbread-man/gingerbread_12.jpg",
+          "alt": "Little Bobby happily licking cookie crumbs from his fingers under the sunny tree, having eaten the delicious gingerbread man.",
+          "caption": "“I’m all gone!” — and so he was, right to the very last delicious sugary crumb.",
+          "width": 1376,
+          "height": 768
+        }
+      ],
+      "start": 566.27
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💡 Bedtime Discussion for Shane</span>\n      <h2 class=\"conclusion-question\">“Why did the Gingerbread Man keep running away?”</h2>\n      <p>\n        The Gingerbread Man thought nobody could ever catch him! Being fast is fun, but overconfidence can lead to big surprises.\n      </p>\n\n      <div class=\"choice-grid\">\n        <a href=\"/goldilocks-and-the-three-bears/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🥣</span>\n          <strong class=\"choice-card-title\">Goldilocks &amp; the Three Bears</strong>\n          <span class=\"choice-card-desc\">Three bowls of porridge, three cozy chairs, and one mischievous golden-haired girl!</span>\n          <span class=\"choice-action-btn\">Read Next Fairy Tale ➔</span>\n        </a>\n\n        <a href=\"/the-three-little-pigs/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🐷</span>\n          <strong class=\"choice-card-title\">The Three Little Pigs</strong>\n          <span class=\"choice-card-desc\">Straw, sticks, and bricks — see whose house stands up to the Big Bad Wolf!</span>\n          <span class=\"choice-action-btn\">Read Next Fairy Tale ➔</span>\n        </a>\n\n        <a href=\"/jack-and-the-beanstalk/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌱</span>\n          <strong class=\"choice-card-title\">Jack and the Beanstalk</strong>\n          <span class=\"choice-card-desc\">Five magic beans, a towering beanstalk, and a roaring giant in the clouds!</span>\n          <span class=\"choice-action-btn\">Read Next Fairy Tale ➔</span>\n        </a>\n      </div>\n\n      <a href=\"/\">\n        <span>🏰 Back to Classic Fairy Tales</span>\n        <span>➔</span>\n      </a>",
+  "media": {
+    "audio": "the-gingerbread-man/narration.mp3",
+    "video": {
+      "src": "the-gingerbread-man/the_gingerbread_man_story_video.mp4",
+      "poster": "the-gingerbread-man/the_gingerbread_man_story_video_poster.jpg"
+    },
+    "captions": "the-gingerbread-man/narration.vtt",
+    "duration": 600.048,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "7220a686808c7b4685b8d0d352a282cf6e337a003f675b46d5091167eb93c2c0",
+    "narrationInputHash": "46ad00200ddb20747933b8648b3fb3e2485b92eda1d5d722d3ad923ae3db1553",
+    "videoNarrationHash": "46ad00200ddb20747933b8648b3fb3e2485b92eda1d5d722d3ad923ae3db1553",
+    "videoVisualHash": "4ba9206fc1784366e39720095df356a46c20bd15d00bef6b49026329464f7976"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-10T12:08:28Z"
+}

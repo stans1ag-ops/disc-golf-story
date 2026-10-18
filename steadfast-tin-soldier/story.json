@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "id": "steadfast-tin-soldier",
+  "title": "The Steadfast Tin Soldier",
+  "collection": "classics",
+  "order": 11,
+  "description": "“That would be a wife for me” — a soldier sails to the ends of the earth, and finds his way home.",
+  "subtitle": "A Hans Christian Andersen tale • A bedtime story about a brave one-legged tin soldier, a paper dancer, and love that stays steadfast to the very end.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://americanliterature.com/author/hans-christian-andersen/short-story/the-brave-tin-soldier",
+  "cover": {
+    "src": "steadfast-tin-soldier/tin_soldier_17.jpg",
+    "alt": "The one-legged tin soldier and the paper dancer face each other in the nursery, gazing into each other's eyes."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "A Birthday Gift",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "There were once five-and-twenty tin soldiers. They were all brothers, born of the same old tin spoon. They shouldered their muskets and looked straight ahead of them, splendid in their uniforms, all red and blue."
+        },
+        {
+          "type": "paragraph",
+          "html": "The very first thing in the world that they heard was, “Tin soldiers!” A small boy shouted it and clapped his hands as the lid was lifted off their box on his birthday. He immediately set them up on the table."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_01.jpg",
+          "alt": "A small boy joyfully lifts the lid of a birthday box revealing twenty-five tin soldier toys in red and blue uniforms standing in neat rows.",
+          "caption": "Twenty-five tin soldiers, brothers of the same tin spoon.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The One-Legged Soldier",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "All the soldiers looked exactly alike except one. He looked a little different as he had been cast last of all. The tin was short, so he had only one leg. But there he stood, as steady on one leg as any of the other soldiers on their two. But just you see, he&#x27;ll be the remarkable one."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_02.jpg",
+          "alt": "A row of tin soldiers on a wooden table; one stands apart, brave and upright with only one leg.",
+          "caption": "One leg, but as steady as all the rest.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 30.057
+    },
+    {
+      "id": "scene-3",
+      "title": "The Paper Dancer",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "On the table with the soldiers were many other playthings, and one that no eye could miss was a marvelous castle of cardboard. It had little windows through which you could look right inside it. And in front of the castle were miniature trees around a little mirror supposed to represent a lake."
+        },
+        {
+          "type": "paragraph",
+          "html": "But prettiest of all was the little lady who stood in the open doorway of the castle. Though she was a paper doll, she wore a dress of the fluffiest gauze. A tiny blue ribbon went over her shoulder for a scarf, and in the middle of it shone a spangle that was as big as her face. The little lady held out both her arms, as a ballet dancer does, and one leg was lifted so high behind her that the tin soldier couldn&#x27;t see it at all, and he supposed she must have only one leg, as he did."
+        },
+        {
+          "type": "paragraph",
+          "html": "“That would be a wife for me,” he thought."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_03.jpg",
+          "alt": "A cardboard castle with tiny windows and a mirror lake, where a paper ballet dancer in a gauze dress with a golden spangle stands at the open door while the tin soldier gazes at her.",
+          "caption": "“That would be a wife for me,” he thought.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 49.547
+    },
+    {
+      "id": "scene-4",
+      "title": "The Toys' Midnight Ball",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When the evening came the other tin soldiers were put away in their box, and the people of the house went to bed. Now the toys began to play among themselves at visits, and battles, and at giving balls. The tin soldiers rattled about in their box, for they wanted to play too, but they could not get the lid open. The nutcracker turned somersaults, and the slate pencil squeaked out jokes on the slate. The toys made such a noise that they woke up the canary bird, who made them a speech, all in verse. The only two who stayed still were the tin soldier and the little dancer. Not once did he take his eyes off her."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_04.jpg",
+          "alt": "At midnight, toys come alive for a ball in the nursery: a nutcracker somersaults while the tin soldier and the paper dancer stay perfectly still, gazing at each other.",
+          "caption": "The toys play — but the two stay still.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 101.601
+    },
+    {
+      "id": "scene-5",
+      "title": "The Bogey's Warning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then the clock struck twelve and — clack! — up popped the lid of the snuffbox. But there was no snuff in it — out bounced a little black bogey, a jack-in-the-box."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🖤 The Bogey</div>\n        <div class=\"chant-text\">“Tin soldier, will you please keep your eyes to yourself?” — “Just you wait till tomorrow.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_05.jpg",
+          "alt": "At midnight, a little black bogey springs out of a snuffbox and points a warning finger at the motionless tin soldier.",
+          "caption": "“Just you wait till tomorrow.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 140.058
+    },
+    {
+      "id": "scene-6",
+      "title": "Set on the Window Ledge",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But when morning came, and the children got up, the soldier was set on the window ledge. And whether the bogey did it, or there was a gust of wind, all of a sudden the window flew open and the soldier pitched out headlong from the third floor."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_06.jpg",
+          "alt": "Morning light: the tin soldier stands at attention on a wooden window ledge before an open casement window as a gust ruffles the curtains.",
+          "caption": "The window flew open — and out he pitched.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 161.47
+    },
+    {
+      "id": "scene-7",
+      "title": "The Fall",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He fell at breathtaking speed and landed cap first, with his bayonet buried between the paving stones and his one leg stuck straight in the air. The housemaid and the little boy ran down to look for him and, though they nearly stepped on the tin soldier, they walked right past without seeing him."
+        },
+        {
+          "type": "paragraph",
+          "html": "If the soldier had called, “Here I am!” they would surely have found him, but he thought it contemptible to raise an uproar while he was wearing his uniform."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_07.jpg",
+          "alt": "The tiny tin soldier lies upside down wedged between cobblestones, his bayonet stuck between the stones and his one leg pointing skyward, unnoticed.",
+          "caption": "Cap first between the paving stones — but he calls out to no one.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 176.988
+    },
+    {
+      "id": "scene-8",
+      "title": "Two Young Rapscallions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Soon it began to rain. The drops fell faster and faster, until they came down by the bucketful. As soon as the rain let up, along came two young rapscallions."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Hi, look!” one of them said, “there&#x27;s a tin soldier. Let&#x27;s send him sailing.”"
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_08.jpg",
+          "alt": "On a wet cobblestone street after the rain, two cheerful boys discover the upside-down tin soldier and one holds a folded newspaper boat.",
+          "caption": "“There's a tin soldier. Let's send him sailing.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 204.914
+    },
+    {
+      "id": "scene-9",
+      "title": "The Paper Boat Voyage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They made a boat out of newspaper, put the tin soldier in the middle of it, and away he went down the gutter with the two young rapscallions running beside him and clapping their hands. High heavens! How the waves splashed, and how fast the water ran down the gutter."
+        },
+        {
+          "type": "paragraph",
+          "html": "The paper boat pitched, and tossed, and sometimes it whirled about so rapidly that it made the soldier&#x27;s head spin. But he stood as steady as ever. Never once flinching, he kept his eyes front, and carried his gun shoulder-high."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_09.jpg",
+          "alt": "A newspaper boat carrying the tin soldier, musket shoulder-high, rushes down a foaming rain-swollen gutter while two boys run alongside clapping.",
+          "caption": "He kept his eyes front, and carried his gun shoulder-high.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 221.595
+    },
+    {
+      "id": "scene-10",
+      "title": "Under the Dark Plank",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Suddenly the boat rushed under a long plank where the gutter was boarded over. It was as dark as the soldier&#x27;s own box."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Where can I be going?” the soldier wondered. “This must be that black bogey&#x27;s revenge. Ah! if only I had the little lady with me, it could be twice as dark here for all that I would care.”"
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_10.jpg",
+          "alt": "The newspaper boat with the steadfast tin soldier drifts under a long dark wooden plank; darkness closes in like a tunnel with a sliver of daylight far ahead.",
+          "caption": "“Where can I be going?”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 253.216
+    },
+    {
+      "id": "scene-11",
+      "title": "The Water Rat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Out popped a great water rat who lived under the gutter plank. “Have you a passport?” said the rat. “Hand it over.”"
+        },
+        {
+          "type": "paragraph",
+          "html": "The soldier kept quiet and held his musket tighter. On rushed the boat, and the rat came right after it, gnashing his teeth as he called to the sticks and straws: “Halt him! Stop him! He didn&#x27;t pay his toll. He hasn&#x27;t shown his passport.”"
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_11.jpg",
+          "alt": "In the dark gutter tunnel, a great water rat emerges baring its teeth at the steadfast tin soldier, who holds his musket tight as the boat rushes onward.",
+          "caption": "“Have you a passport? Hand it over.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 274.856
+    },
+    {
+      "id": "scene-12",
+      "title": "The Waterfall",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The boat plunged into the whirlpool. The poor tin soldier stood as staunch as he could, and no one can say that he so much as blinked an eye. Thrice and again the boat spun around. It filled to the top — and was bound to sink. The water was up to his neck and still the boat went down, deeper, deeper, deeper, and the paper got soft and limp. Then the water rushed over his head."
+        },
+        {
+          "type": "paragraph",
+          "html": "He thought of the pretty little dancer whom he&#x27;d never see again, and in his ears rang an old, old song."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🎵 The Old Song</div>\n        <div class=\"chant-text\">“Farewell, farewell, O warrior brave, nobody can from Death thee save.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_12.jpg",
+          "alt": "The newspaper boat plunges down into a foaming canal waterfall, the tin soldier neck-deep in water, the boat spinning and sinking.",
+          "caption": "Thrice and again the boat spun around.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 299.524
+    },
+    {
+      "id": "scene-13",
+      "title": "Swallowed by the Fish",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And now the paper boat broke beneath him, and the soldier sank right through. And just at that moment he was swallowed by a most enormous fish."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_13.jpg",
+          "alt": "An enormous fish glides through deep blue water; inside its belly can be seen the soft silhouette of the tiny tin soldier, safe and unharmed.",
+          "caption": "Swallowed by a most enormous fish.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 336.694
+    },
+    {
+      "id": "scene-14",
+      "title": "Inside the Fish",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "My! how dark it was inside that fish. It was darker than under the gutter-plank and it was so cramped, but the tin soldier still was staunch. He lay there full length, soldier fashion, with musket to shoulder."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_14.jpg",
+          "alt": "Inside the fish, in warm deep darkness lit by a soft glow, the tiny tin soldier lies full length with his musket to his shoulder, steadfast and calm.",
+          "caption": "Still was staunch — musket to shoulder.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 346.175
+    },
+    {
+      "id": "scene-15",
+      "title": "Daylight Again",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then the fish flopped and floundered in a most unaccountable way. Finally it was perfectly still, and after a while something struck through him like a flash of lightning. The tin soldier saw daylight again, and he heard a voice say, “The Tin Soldier!”"
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_15.jpg",
+          "alt": "Morning: a fisherman's net lifts a great flopping fish from the sparkling canal; sunlight flashes on the water like lightning.",
+          "caption": "“The Tin Soldier!”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 360.931
+    },
+    {
+      "id": "scene-16",
+      "title": "The Cook's Discovery",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The fish had been caught, carried to market, bought, and brought to a kitchen where the cook cut him open with her big knife. She picked the soldier up bodily between her two fingers, and carried him off upstairs. Everyone wanted to see this remarkable traveler who had traveled about in a fish&#x27;s stomach, but the tin soldier took no pride in it."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_16.jpg",
+          "alt": "In a cozy kitchen, an amazed cook gently lifts the tiny tin soldier from the opened fish on a wooden table, market baskets nearby.",
+          "caption": "The remarkable traveler, carried upstairs.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 376.919
+    },
+    {
+      "id": "scene-17",
+      "title": "Back Home",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They put him on the table and — lo and behold, what curious things can happen in this world — there he was, back in the same room as before. He saw the same children, the same toys were on the table, and there was the same fine castle with the pretty little dancer. She still balanced on one leg, with the other raised high. She too was steadfast. That touched the soldier so deeply that he would have cried tin tears, only soldiers never cry. He looked at her, and she looked at him, and never a word was said."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_17.jpg",
+          "alt": "Back in the nursery at evening, the tin soldier and the paper dancer face each other before the cardboard castle, gazing deeply into each other's eyes.",
+          "caption": "She too was steadfast — and never a word was said.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 398.136
+    },
+    {
+      "id": "scene-18",
+      "title": "Thrown into the Stove",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Just as things were going so nicely for them, one of the little boys snatched up the tin soldier and threw him into the stove. He did it for no reason at all. That black bogey in the snuffbox must have put him up to it. The tin soldier stood there dressed in flames."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_18.jpg",
+          "alt": "A glowing parlor stove with its door open, warm golden light flickering gently; the tin soldier stands steadfast amid the warm glow, musket on his shoulder.",
+          "caption": "The tin soldier stood there dressed in flames.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 431.29
+    },
+    {
+      "id": "scene-19",
+      "title": "The Dancer Joins Him",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He felt a terrible heat, but whether it came from the flames or from his love he didn&#x27;t know. He looked at the little lady, and she looked at him, and he felt himself melting. But still he stood steadfast, with his musket held trim on his shoulder."
+        },
+        {
+          "type": "paragraph",
+          "html": "Then the door blew open. A puff of wind struck the dancer. She flew like a sylph, straight into the fire with the soldier, blazed up in a flash, and was gone."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_19.jpg",
+          "alt": "A gust of wind carries the delicate paper dancer gracefully through the warm glow toward the tin soldier in the stove.",
+          "caption": "She flew like a sylph, straight into the fire with the soldier.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 448.456
+    },
+    {
+      "id": "scene-20",
+      "title": "A Tin Heart",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The tin soldier melted, all in a lump. The next day, when a servant took up the ashes she found him in the shape of a little tin heart. But of the pretty dancer nothing was left except her spangle, and it was burned as black as a coal. And that is the end of the tale."
+        },
+        {
+          "type": "image",
+          "src": "steadfast-tin-soldier/tin_soldier_20.jpg",
+          "alt": "The morning after: a servant holds a dustpan of cool grey ashes, where a small tin heart and a blackened golden spangle rest in soft dawn light.",
+          "caption": "A little tin heart — and a blackened spangle.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 474.888
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What does it mean to be steadfast, like the tin soldier?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">💛</span>\n          <strong class=\"choice-card-title\">Stand Firm</strong>\n          <span class=\"choice-card-desc\">The tin soldier never wavered — not in the gutter, not in the fish, not in the stove. Staying brave and true when things are hard is what makes a hero.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">💃</span>\n          <strong class=\"choice-card-title\">Steadfast Hearts Find Each Other</strong>\n          <span class=\"choice-card-desc\">The little dancer was steadfast too, and in the end they were together. Kind, brave hearts always find each other.</span>\n        </div>\n      </div>",
+  "media": {
+    "audio": "steadfast-tin-soldier/narration.mp3",
+    "video": {
+      "src": "steadfast-tin-soldier/tin_soldier_story_video.mp4",
+      "poster": "steadfast-tin-soldier/tin_soldier_story_video_poster.jpg"
+    },
+    "captions": "steadfast-tin-soldier/narration.vtt",
+    "duration": 493.721,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "5afcb86b4212701df4bf26510a436b24023dac133b83d02f8a47c67058bcc635",
+    "narrationInputHash": "cb0fefb1f11a955151d7500f518eba1a5deb8c7376df4811daf77cbe7090aa67",
+    "videoNarrationHash": "cb0fefb1f11a955151d7500f518eba1a5deb8c7376df4811daf77cbe7090aa67",
+    "videoVisualHash": "d7aa1521a62c65ee270b13d4391e4906c24d09b3ef58cec4f2deef8f3f5a7184"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": [
+      "steadfast-tin-soldier/references/bogey_ref.jpg",
+      "steadfast-tin-soldier/references/dancer_ref.jpg",
+      "steadfast-tin-soldier/references/nursery_ref.jpg",
+      "steadfast-tin-soldier/references/soldier_ref.jpg"
+    ]
+  },
+  "addedAt": "2026-10-17T22:30:05Z"
+}

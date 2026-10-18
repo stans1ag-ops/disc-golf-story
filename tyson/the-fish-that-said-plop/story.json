@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-fish-that-said-plop",
+  "title": "Tyson and the Fish That Said Plop",
+  "collection": "tyson",
+  "order": 5,
+  "description": "A prankster Pokémon and a leaf-boat race.",
+  "subtitle": "A prankster Pokémon and a leaf-boat race.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/the-fish-that-said-plop/squirtle-hello.webp",
+    "alt": "Squirtle popping up beside Tyson and Mom on the dock."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Squirtle says hello",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson and his mom, Theresa, went to the pond. They wore life jackets and sat on the dock. Tyson cast his line. Plop!"
+        },
+        {
+          "type": "paragraph",
+          "html": "A round head popped up. “Squirtle!” said Tyson. The little Pokémon waved. “Do you like to fish?” asked Mom. Squirtle nodded. Then it ducked under the water."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-fish-that-said-plop/squirtle-hello.webp",
+          "alt": "Tyson and Mom on a wooden dock at a calm pond with Squirtle popping up out of the water waving hello.",
+          "caption": "A round head pops up — Squirtle!",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The leaf prank",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson’s float bobbed. Once. Twice. He lifted his rod. At the end of the line was a wet leaf. Squirtle popped up and clapped. “That is not a fish!” said Tyson."
+        },
+        {
+          "type": "paragraph",
+          "html": "Squirtle looked at the leaf. Then it looked at Tyson. It gave a big grin. Tyson cast again. Plop! The float bobbed. Tyson reeled in. This time, he had a small twig. Squirtle clapped even harder. “Are you putting things on my hook?” asked Tyson. Squirtle hid its face. But Tyson could see its grin."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-fish-that-said-plop/leaf-prank.webp",
+          "alt": "Tyson lifting his rod to find a soggy leaf on the hook while Squirtle pops up clapping with a mischievous grin and Mom laughs.",
+          "caption": "A wet leaf on the line — Squirtle claps.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The leaf-boat game",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Mom laughed. “I think we have a pond prank.” Tyson set his rod down. “I have a new game,” he said. Mom put a leaf on the water. It was shaped like a boat. “Can you push it to that reed?”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Squirtle blew a tiny puff of water. The leaf spun in a circle. “Too much!” said Tyson. Squirtle tried a soft puff. The leaf slid to the reed. “You did it!”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-fish-that-said-plop/leaf-boat.webp",
+          "alt": "Mom's leaf shaped like a little boat on the water near reeds while Squirtle blows a soft puff of water to push it and Tyson cheers.",
+          "caption": "Squirtle puffs the leaf-boat to the reeds.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "One happy splash",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then Squirtle gave one happy splash. Plop! A drop landed on Tyson’s nose. Mom held out a towel. “Did we catch any fish?” she asked. “No,” said Tyson. “But we found a very silly friend.”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-fish-that-said-plop/big-splash.webp",
+          "alt": "Squirtle making a big joyful splash at sunset with a sparkling drop landing on Tyson's nose while Mom holds out a towel.",
+          "caption": "Plop! A drop lands right on Tyson’s nose.",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Plop!</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/tyson/the-tooth-that-took-a-bounce/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🦷</span>\n          <strong class=\"choice-card-title\">Tyson and the Tooth That Took a Bounce</strong>\n          <span class=\"choice-card-desc\">His tooth bounced away. Could a note save the day?</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/the-big-splash/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <strong class=\"choice-card-title\">Tyson and the Big Splash</strong>\n          <span class=\"choice-card-desc\">A stick, a flying hat, and one small fish.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/the-fish-that-said-plop/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "c8c0cf8ab95906fd4017be84222e3806f704125412eb3abd9c2fe431c48f1c5f",
+    "narrationInputHash": "031f518a5dec2452b343f81f5036dd0cadb19957ebabff8a9aec3685c3eb48d4"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T01:38:21Z"
+}

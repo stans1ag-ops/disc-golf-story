@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "jack-and-the-beanstalk",
+  "title": "Jack and the Beanstalk",
+  "collection": "classics",
+  "order": 1,
+  "description": "\"Fee, fi, fo, fum, I smell the blood of an Englishman! Be he alive or be he dead...\"",
+  "subtitle": "Five magic beans, a towering beanstalk reaching into the clouds, and a daring boy who outwitted a roaring giant!",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "",
+  "cover": {
+    "src": "jack-and-the-beanstalk/scene2_climbing_beanstalk.jpg",
+    "alt": "Jack climbing the giant beanstalk through the clouds toward the giant's castle."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Five Magic Beans",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once upon a time, there lived a poor widow and her only son, Jack. One morning, Jack’s mother told him to take their cow to market and sell her, for they had no money left."
+        },
+        {
+          "type": "paragraph",
+          "html": "On the way, Jack met a curious old man who offered him five magic beans in exchange for the cow. The man swore they would bring Jack great fortune. Trusting the promise, Jack handed over the cow and ran home with his prize."
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene1_magic_beans.jpg",
+          "alt": "Jack trading his family's dairy cow with a wise old traveler in a long coat, who holds out five glowing magic beans on a winding country road.",
+          "caption": "Jack meets the curious old man on the country lane and trades their cow for five magic beans.",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "type": "paragraph",
+          "html": "But when Jack’s mother saw the beans, she was furious. “You foolish boy!” she cried. “You’ve traded our only cow for a handful of nonsense!” In a fit of anger, she tossed the beans out the window. Jack went to bed heartbroken and hungry."
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene1b_beans_tossed.jpg",
+          "alt": "Jack's furious mother throws the five magic beans out the cottage window into the garden, while Jack stands sad and heartbroken.",
+          "caption": "In a fit of anger, Jack's mother flings the magic beans out the window into the cottage garden.",
+          "width": 1024,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The Beanstalk to the Clouds",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When dawn broke, Jack looked out the window—and gasped. Overnight, the beans had sprouted into a towering beanstalk that reached all the way to the clouds! Trembling with wonder, he began to climb, higher and higher, until he reached a strange kingdom in the sky."
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene2a_beanstalk_morning.jpg",
+          "alt": "Jack leaning out of his cottage bedroom window at sunrise, gazing up in awe at the colossal spiraling beanstalk reaching past the clouds.",
+          "caption": "At sunrise, Jack gasps in amazement as the beanstalk towers up through the mist into the heavens.",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene2_climbing_beanstalk.jpg",
+          "alt": "Jack climbing the colossal twisting beanstalk high above the clouds, looking up with wonder at the giant's stone fortress in the sky.",
+          "caption": "Jack climbs the spiraling beanstalk through the clouds to discover a colossal castle perched in the sky.",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "type": "paragraph",
+          "html": "In a massive stone house, Jack met the wife of a fearsome giant. “Please,” Jack begged, “may I have a little food? I’ve climbed so far and I’m starving.” The kind woman gave him bread and milk."
+        },
+        {
+          "type": "paragraph",
+          "html": "But just then, the ground began to quake. The giant was coming home! Jack darted behind the stove as the monstrous voice bellowed through the hall:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"giant-badge\">👹 The Giant's Roar</span>\n        <p class=\"giant-chant-text\">\n          “Fee, fi, fo, fum,<br>\n          I smell the blood of an Englishman!<br>\n          Be he alive or be he dead,<br>\n          I’ll grind his bones to make my bread!”\n        </p>"
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene3_giant_in_kitchen.jpg",
+          "alt": "The towering giant with a crooked nose stooping through the kitchen door, as his timid wife stands by the table and Jack hides behind the stove.",
+          "caption": "“Fee-fi-fo-fum!” The fearsome giant stomps into the kitchen, illustrated by Arthur Rackham.",
+          "width": 542,
+          "height": 770
+        },
+        {
+          "type": "paragraph",
+          "html": "“Don’t be silly,” said his wife. “There’s no boy here.” The giant grumbled but sat down to eat. After his meal, he opened a sack bursting with gold coins, counted them carefully, and fell asleep. Seizing his chance, Jack crept out, stole a sack of gold, and scrambled down the beanstalk. His mother wept with joy—they could live well for a time."
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The Hen That Lays Golden Eggs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Yet greed and curiosity soon returned. Jack climbed the beanstalk again, back to the giant’s house. Once more, the giant’s wife pitied him and gave him food. But before Jack could finish, the thunderous footsteps shook the floor again. The giant burst in, roaring:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"giant-badge\">👹 The Giant Returns</span>\n        <p class=\"giant-chant-text\">\n          “Fee, fi, fo, fum,<br>\n          I smell the blood of an Englishman!<br>\n          Be he alive or be he dead,<br>\n          I’ll grind his bones to make my bread!”\n        </p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Again, his wife soothed him, and he ate until he was full. Then he brought out a hen and barked, “Lay!” To Jack’s amazement, the hen laid a golden egg. When the giant fell asleep, Jack snatched the hen and hurried down the beanstalk. His mother was delighted—but warned him never to climb again."
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene3b_golden_egg_hen.jpg",
+          "alt": "The giant at the heavy table watching a magical hen lay a glowing golden egg, while little Jack watches from behind the iron stove.",
+          "caption": "“Lay!” barked the giant—and the magical speckled hen laid a brilliant golden egg upon the table.",
+          "width": 1024,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The Golden Singing Harp",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Days later, Jack’s daring nature got the better of him. He climbed once more to the castle in the clouds. The giant’s wife, though wary, gave him food again. But before long, the giant stomped through the door, growling:"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"giant-badge\">👹 The Third Roar</span>\n        <p class=\"giant-chant-text\">\n          “Fee, fi, fo, fum,<br>\n          I smell the blood of an Englishman!<br>\n          Be he alive or be he dead,<br>\n          I’ll grind his bones to make my bread!”\n        </p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "“Don’t be ridiculous!” said his wife, though her eyes flickered toward Jack’s hiding place."
+        },
+        {
+          "type": "paragraph",
+          "html": "That night, while the giant snored, Jack crept into his chamber and saw a golden harp that played music by itself. He reached out, but the harp suddenly cried, “Help, master! A boy is stealing me!” The giant awoke with a roar and gave chase. Jack fled down the beanstalk, the harp clutched in his arms."
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene4_golden_harp.jpg",
+          "alt": "Jack tiptoeing across the stone hall toward the massive wooden table where the giant snores, reaching up to take the winged golden harp and golden hen.",
+          "caption": "Jack quietly reaches for the magical golden harp and golden hen while the giant soundly snores.",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene4b_giant_chase.jpg",
+          "alt": "The furious giant climbing down the massive swirling beanstalk in hot pursuit through storm clouds as nimble Jack scrambles down with the golden harp.",
+          "caption": "The enraged giant roars and climbs down the beanstalk in hot pursuit through the storm clouds!",
+          "width": 1024,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "The Giant Falls!",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As Jack’s boots hit the ground, he shouted to his mother, “Bring me the axe!” He seized it and swung with all his might, chopping at the beanstalk. Wood splintered and vines tore until the enormous stalk cracked in two."
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"sound-fx sound-large\">CRACK! CHOP! CRASH!</span>"
+        },
+        {
+          "type": "image",
+          "src": "jack-and-the-beanstalk/scene5_chopping_beanstalk.jpg",
+          "alt": "Jack swinging the axe into the giant beanstalk as the giant plummets from the clouds, his mother watching in astonishment.",
+          "caption": "Jack swings the axe with all his might, chopping down the towering beanstalk!",
+          "width": 400,
+          "height": 600
+        },
+        {
+          "type": "paragraph",
+          "html": "With a final thunderous crash, the giant plunged from the sky—dead where he fell."
+        },
+        {
+          "type": "paragraph",
+          "html": "From that day on, Jack and his mother lived in comfort and peace, their hearts full of gratitude and awe for the strange adventure that had changed their lives forever."
+        },
+        {
+          "type": "callout",
+          "html": "<h3 class=\"discussion-title\">🎯 Bedtime Discussion for Shane &amp; Dad Alex</h3>\n        <p class=\"discussion-text\">\n          <em>Jack and the Beanstalk</em> sparks fun conversations about bravery, curiosity, and smart choices! Ask Shane: <strong>“Was Jack brave or a little bit sneaky to climb the beanstalk?”</strong> and <strong>“What would you have done if someone offered you five magic beans?”</strong>\n        </p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">🌟 More Bedtime Stories</span>\n      <h2 class=\"conclusion-question\">What shall we read next, Shane?</h2>\n\n      <div class=\"choice-grid\">\n        <a href=\"/the-three-little-pigs/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🐷</span>\n          <h3 class=\"choice-card-title\">The Three Little Pigs</h3>\n          <p class=\"choice-card-desc\">Three little pigs build houses of straw, sticks, and bricks to outsmart the big bad wolf!</p>\n          <span class=\"choice-action-btn\">Read Story ➔</span>\n        </a>\n\n        <a href=\"/the-great-pontoon-pike-escape/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <h3 class=\"choice-card-title\">The Great Pontoon Pike Escape</h3>\n          <p class=\"choice-card-desc\">Shane, Tyson, Theresa, and Alex hook a giant 24-inch Northern Pike on Houghton Lake!</p>\n          <span class=\"choice-action-btn\">Read Story ➔</span>\n        </a>\n\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <h3 class=\"choice-card-title\">The Bedtime Toot-Tastrophe</h3>\n          <p class=\"choice-card-desc\">Mom Theresa tries to read a quiet bedtime story, but hilarious sounds keep popping up!</p>\n          <span class=\"choice-action-btn\">Read Story ➔</span>\n        </a>\n\n        <a href=\"/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🏠</span>\n          <h3 class=\"choice-card-title\">Shane &amp; Alex's Bookshelf</h3>\n          <p class=\"choice-card-desc\">Explore the entire bedtime adventure library and pick any story you want tonight.</p>\n          <span class=\"choice-action-btn\">Browse All Stories ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "jack-and-the-beanstalk/narration.mp3",
+    "video": {
+      "src": "jack-and-the-beanstalk/jack_and_the_beanstalk_story_video.mp4",
+      "poster": "jack-and-the-beanstalk/jack_and_the_beanstalk_story_video_poster.jpg"
+    },
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "01415716bd472ae40b4b54fe55657f57be07a13663955d97f9dd5f4bdd96ba1a",
+    "narrationInputHash": "eea1cdeefbd148e4aadb17085fb75e01bf37cf9617b946e2c14c8e119708ea97",
+    "videoNarrationHash": "eea1cdeefbd148e4aadb17085fb75e01bf37cf9617b946e2c14c8e119708ea97",
+    "videoVisualHash": "7231cd5a833b71662a51d3a525b8d946d7e92de4a1283f58df321f777428ede9"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-05T23:52:22Z"
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-big-splash",
+  "title": "Tyson and the Big Splash",
+  "collection": "tyson",
+  "order": 0,
+  "description": "A stick, a flying hat, and one small fish.",
+  "subtitle": "Tyson and Dad go fishing. A stick, a flying hat, and one small fish.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/the-big-splash/casting.webp",
+    "alt": "Tyson casting his fishing line from a boat on a sunny lake."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Morning at the lake",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson and his dad, Alex, went to the lake. Tyson had his rod. Dad had the worms. Both had their life jackets on."
+        },
+        {
+          "type": "paragraph",
+          "html": "“I will catch a big fish!” said Tyson. Dad put a worm on the hook. Tyson cast his line. Plop! His red float sat on the water."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-big-splash/casting.webp",
+          "alt": "Tyson casting his fishing line from a boat on a sunny lake while Dad holds the net and a duck swims nearby.",
+          "caption": "Tyson casts his line as a duck swims past.",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "They sat. They waited. A duck swam past. “Do you know where the fish are?” Tyson asked it. “Quack,” said the duck. “That was not much help,” said Dad."
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The stick fish",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then the float went down. “Dad! I have one!” Tyson held his rod up. He turned the reel. The line pulled hard. “It must be huge!” he said."
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad got the net. Tyson reeled some more. Up came a stick."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-big-splash/stick.webp",
+          "alt": "Tyson laughing in the boat holding up a stick on his fishing line while Dad holds the net.",
+          "caption": "Up came a stick — not quite a fish.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "One stick and one hat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson stared at it. Dad stared at it. “That fish has a lot of legs,” said Dad."
+        },
+        {
+          "type": "paragraph",
+          "html": "Tyson laughed so hard his hat fell off. Dad caught it in the net. “One stick and one hat!” said Tyson."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-big-splash/hat.webp",
+          "alt": "Tyson's baseball cap flying off his head into Dad's fishing net as they both laugh in the boat.",
+          "caption": "Tyson laughs so hard his hat flies into Dad's net.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Small fish, big splash",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He tried again. This time, he cast near some weeds. Plop. Wait. Tug! A small fish flashed in the sun. Dad helped bring it in."
+        },
+        {
+          "type": "paragraph",
+          "html": "“My first real fish!” said Tyson. It was no bigger than his hand. Dad took a photo. Then they let the fish go. Splash! Water hit Dad right on the nose."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-big-splash/first-fish.webp",
+          "alt": "Tyson proudly holding up a tiny fish while Dad takes a photo, then a big splash of water.",
+          "caption": "His first real fish — no bigger than his hand.",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "Tyson grinned. “Small fish. Big splash!” On the way home, Dad asked, “What was your best catch?” “The fish,” said Tyson. “But you caught a pretty nice hat.”"
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Plop!</p>"
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/tyson/pikachus-lost-ball/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">⚡</span>\n          <strong class=\"choice-card-title\">Tyson and Pikachu’s Lost Ball</strong>\n          <span class=\"choice-card-desc\">A stuck ball, a pool noodle, and a sock hat.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/the-sneaky-flag-play/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🏈</span>\n          <strong class=\"choice-card-title\">Tyson and the Sneaky Flag Play</strong>\n          <span class=\"choice-card-desc\">Look for the space — and hold on to your hat.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/the-big-splash/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "e9098f7f7c3c1fdcc20cb70bee292ef9a64b32c49c233e6b7ff93032c11e9f6d",
+    "narrationInputHash": "081310a38e1c88ddc06147f3ef9fb8b1150763eb2516c4572579b054cf324a89"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T01:38:21Z"
+}

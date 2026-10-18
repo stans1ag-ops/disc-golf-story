@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "id": "the-bedtime-toot-tastrophe",
+  "title": "The Bedtime Toot-Tastrophe",
+  "collection": "shane",
+  "order": 9,
+  "description": "Mom’s bedtime story gets interrupted by the funniest sounds ever.",
+  "subtitle": "Mom’s bedtime story gets interrupted by the funniest sounds ever.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "the-bedtime-toot-tastrophe/first_squeak.webp",
+    "alt": "Theresa trying not to giggle while a tiny golden ‘squeak!’ puff floats by Shane’s bedside at twilight."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The first squeak",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The moon was a crescent, the stars were in sight,<br>And Mt. Pleasant was settling into the night."
+        },
+        {
+          "type": "paragraph",
+          "html": "Young Shane brushed his teeth till they sparkled like snow,<br>Then hopped in his bed with a five-year-old glow."
+        },
+        {
+          "type": "paragraph",
+          "html": "His blankets were pulled to his chin, warm and neat,<br>Tucked snug from his ears right on down to his feet."
+        },
+        {
+          "type": "paragraph",
+          "html": "In walked his mom, Theresa, smiling and kind,<br>With glasses in place and a story in mind."
+        },
+        {
+          "type": "paragraph",
+          "html": "She sat on the mattress and opened the book,<br>And gave little Shane her sweet motherly look."
+        },
+        {
+          "type": "paragraph",
+          "html": "She opened her mouth for the very first word,<br>When suddenly—TOOT!—came the weirdest sound heard."
+        },
+        {
+          "type": "paragraph",
+          "html": "A squeak like a mouse on a tiny brass horn!<br>The funniest noise since the day Shane was born."
+        },
+        {
+          "type": "image",
+          "src": "the-bedtime-toot-tastrophe/first_squeak.webp",
+          "alt": "Theresa sitting on the edge of Shane’s bed with a storybook, eyes wide with surprise, as a tiny golden ‘squeak!’ puff drifts near the bed skirt.",
+          "caption": "The very first squeak escapes mid-story.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "The page-turn rumble",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Shane opened his eyes and he poked out his head:<br>“Did someone just blow a kazoo near my bed?”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Theresa turned pink. “Oh, dear me, that was odd!<br>“A squeak in the floorboards!” she claimed with a nod."
+        },
+        {
+          "type": "paragraph",
+          "html": "She cleared out her throat and she straightened her spine,<br>“Now back to our tale of the brave porcupine...”"
+        },
+        {
+          "type": "paragraph",
+          "html": "She leaned just an inch to turn over page three,<br>When out slipped a rumble as loud as the sea!"
+        },
+        {
+          "type": "paragraph",
+          "html": "PBBBBBT-whistle-POP! went the seat of the chair,<br>A gust that tossed ribbons of dust in the air."
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane burst out laughing. “Mom, that wasn’t the floor!<br>“That sounded like thunder behind the front door!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Theresa pressed tight on her lips with a blush,<br>“Hush, sweetheart,” she whispered, “now listen and hush!”"
+        },
+        {
+          "type": "image",
+          "src": "the-bedtime-toot-tastrophe/page_turn_rumble.webp",
+          "alt": "Theresa leaning forward to turn a picture-book page, biting her lip to hold in laughter, as a swirling gust lifts her hair and Shane peeks over his duvet with hands over his mouth.",
+          "caption": "The rumble that wasn’t the floorboards.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "The pillow-fluff fanfare",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "She pinched her knees shut and she held in her breath;<br>She tried to stay quieter than silent death."
+        },
+        {
+          "type": "paragraph",
+          "html": "She squeezed and she squirmed and she counted to eight,<br>Her tummy was rumbling like heavy freight."
+        },
+        {
+          "type": "paragraph",
+          "html": "“I’m fine,” Theresa said, “it’s just broccoli from lunch,<br>“Or maybe the fiber bar snacks that I munch!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "She stood up to pat Shane’s soft pillow in place,<br>Determined to salvage a straight, solemn face."
+        },
+        {
+          "type": "paragraph",
+          "html": "She bent at the waist, gave the pillow a fluff—<br>And HONK! went her belly! A giant steam puff!"
+        },
+        {
+          "type": "paragraph",
+          "html": "TOOT-A-LOO! BUBBLE-POP! PARP-ITY-WHEEZE!<br>The window blinds rattled from Mom’s little breeze!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Now Shane lost his marbles; he rolled on the sheets,<br>His giggles as sweet as the baker’s best treats."
+        },
+        {
+          "type": "paragraph",
+          "html": "He kicked up his heels and he clutched at his vest:<br>“Mom, you’re an orchestra! You are the best!”"
+        },
+        {
+          "type": "image",
+          "src": "the-bedtime-toot-tastrophe/pillow_fluff_fanfare.webp",
+          "alt": "Theresa fluffing Shane’s pillow with cheeks flushed rosy pink behind her glasses, curtains fluttering behind her, while Shane rolls on the bed with feet in the air in a huge toothy grin.",
+          "caption": "The pillow gets fluffed. Mom’s belly performs.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "A giggly goodnight hug",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Theresa looked down, and she started to grin;<br>There wasn’t a chance she could hold it all in."
+        },
+        {
+          "type": "paragraph",
+          "html": "She chuckled, she snorted, and out came three more:<br>Pip-pop! and a bop! as she stepped toward the door!"
+        },
+        {
+          "type": "paragraph",
+          "html": "“Well, Shane,” chuckled Mom, wiping tears from her eyes,<br>“I didn’t intend for bedtime surprise!"
+        },
+        {
+          "type": "paragraph",
+          "html": "It seems that my motor just won’t settle down,<br>I might just toot-toot all the way across town!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Shane sat right up and he gave her a hug,<br>Wrapped safe in his blankets so cozy and snug."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Don’t worry, sweet Mom, it’s the best book by far—<br>“You toot like a rocket that shoots for a star!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Theresa smoothed back Shane’s neat spiky brown hair,<br>And gave him a kiss on his cheek right then there."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Goodnight, little buddy. Sweet dreams until dawn.”<br>She gave a big stretch and a sleepy, slow yawn."
+        },
+        {
+          "type": "paragraph",
+          "html": "She switched off the lamp with a gentle soft click,<br>And tiptoed outside on her toes very quick."
+        },
+        {
+          "type": "paragraph",
+          "html": "And just as the door closed, as quiet could be...<br>One final soft toot floated out full of glee."
+        },
+        {
+          "type": "image",
+          "src": "the-bedtime-toot-tastrophe/goodnight_hug.webp",
+          "alt": "Theresa kneeling beside the bedside wrapping Shane in a warm hug, both sharing one last quiet chuckle, a crescent moon glowing through the window.",
+          "caption": "One final soft toot, and sweet dreams.",
+          "width": 1376,
+          "height": 768
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Shane and Alex's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/mystery-of-the-back-nine/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🔍</span>\n          <strong class=\"choice-card-title\">The Mystery of the Back Nine</strong>\n          <span class=\"choice-card-desc\">A big feather, muddy tracks, and a family hiding in the leaves.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n\n        <a href=\"/the-legend-of-big-whalter/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <strong class=\"choice-card-title\">Big Walter</strong>\n          <span class=\"choice-card-desc\">Shane meets a very big catfish and helps it go home.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/the-bedtime-toot-tastrophe/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">💨</span>\n          <strong class=\"choice-card-title\">The Bedtime Toot-Tastrophe</strong>\n          <span class=\"choice-card-desc\">Bedtime • a giggly toot-tastrophe</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "the-bedtime-toot-tastrophe/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "e779d419213f92e91cbb0b0f1077e482430c31d09b8e4b9773155cf1b2676aa5",
+    "narrationInputHash": "4d7a2e066e661d8a7d9bf65078818f726c93c9fc163ab9c16c4784ba4050629b"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T23:27:16Z"
+}

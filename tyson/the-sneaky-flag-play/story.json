@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-sneaky-flag-play",
+  "title": "Tyson and the Sneaky Flag Play",
+  "collection": "tyson",
+  "order": 2,
+  "description": "Look for the space — and hold on to your hat.",
+  "subtitle": "Look for the open space — and hold on to your hat.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/the-sneaky-flag-play/big-run.webp",
+    "alt": "Tyson running with a football, blue flags flapping."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Stopped every time",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson was seven, and he loved flag football. Today, his dad, Alex, came to watch. Tyson had two blue flags on his belt. He tucked in his shirt. He was ready."
+        },
+        {
+          "type": "paragraph",
+          "html": "On his first run, he went left. A kid pulled his flag. On his next run, he went right. A kid pulled his flag again. Tyson sat by Dad for a drink. “They get me every time,” he said."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-sneaky-flag-play/big-run.webp",
+          "alt": "Tyson running with a football on a green field, two blue flags flapping on his belt.",
+          "caption": "Tyson runs with his blue flags flapping.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Look for the space",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Dad took a sip, too. “What do you see when you run?” “The kid in front of me.” “What else could you look for?” Tyson looked at the field. He saw kids. He saw flags. Then he saw a wide patch of open grass. “A space!” he said."
+        },
+        {
+          "type": "paragraph",
+          "html": "Back in the game, Tyson got the ball. He looked up. A kid ran toward him. Tyson took one step left. The kid went left, too. Then Tyson cut right. There was the space! Run, run, run! His flags flapped behind him. He crossed the line. His team cheered. Dad jumped up. His hat fell into his lap."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-sneaky-flag-play/touchdown.webp",
+          "alt": "Tyson cutting past a defender toward a wide patch of open grass on the flag football field.",
+          "caption": "Tyson cuts right — there’s the space!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Run, run, run!</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Helping Ben",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "On the next play, Tyson’s friend Ben fell. The ball rolled away. Tyson stopped and held out his hand. Ben got up. “Thanks,” said Ben. Soon, Ben made a great catch. Tyson cheered the loudest."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-sneaky-flag-play/helping-ben.webp",
+          "alt": "Tyson holding out his hand to help his fallen friend Ben up off the grass during the flag football game.",
+          "caption": "Tyson stops to help his friend Ben up.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Hold on to your hat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "After the game, Dad gave Tyson a high five. “Did you see my run?” asked Tyson. “I sure did. I saw you help Ben, too.” Tyson grinned. “Next time, hold on to your hat!”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-sneaky-flag-play/high-five.webp",
+          "alt": "Dad giving Tyson a big high five on the sideline after the flag football game, both grinning.",
+          "caption": "A high five with Dad after the game.",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n      \n      <div class=\"choice-grid\">\n        <a href=\"/tyson/marios-missing-star/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🍄</span>\n          <strong class=\"choice-card-title\">Tyson and Mario’s Missing Star</strong>\n          <span class=\"choice-card-desc\">A missing star, a thorn, and a happy Yoshi.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/the-bike-bell-clue/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🚲</span>\n          <strong class=\"choice-card-title\">Tyson and the Bike Bell Clue</strong>\n          <span class=\"choice-card-desc\">Ding, ding! The car finder is on the case.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/the-sneaky-flag-play/narration.mp3",
+    "video": null,
+    "captions": null,
+    "duration": null,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "7212edc73544486de5272e1a1084df31cbab68f5e32a45356388b41f2e84e6e6",
+    "narrationInputHash": "88aae7dc0c76a64bd7b10ef6711bf9421e77e91c5b0107b71e88e3ae80439452"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-09-26T01:38:21Z"
+}

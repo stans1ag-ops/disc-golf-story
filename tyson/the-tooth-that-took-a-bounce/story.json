@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-tooth-that-took-a-bounce",
+  "title": "Tyson and the Tooth That Took a Bounce",
+  "collection": "tyson",
+  "order": 6,
+  "description": "His tooth bounced away. Could a note save the day?",
+  "subtitle": "A stubborn tooth, a trampoline, and a little note full of hope.",
+  "readingLevel": "Early reader",
+  "edition": "Family original",
+  "sourceUrl": "",
+  "cover": {
+    "src": "tyson/the-tooth-that-took-a-bounce/wiggle-wobble.webp",
+    "alt": "Tyson shows his first loose tooth while Alex and Theresa encourage him with gentle smiles."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Wiggle, wobble, not quite yet",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tyson brushed and stopped to stare;<br>\n        A tiny tooth was wobbling there.<br>\n        “My first loose tooth!” he cried with glee.<br>\n        “A wiggly tooth belongs to me!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Dad, Alex, said, “Let&#x27;s see it go—<br>\n        Just gentle wiggles, nice and slow.”<br>\n        Theresa smiled, her eyes so bright:<br>\n        “We'll let it go when time is right.”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-tooth-that-took-a-bounce/wiggle-wobble.webp",
+          "alt": "Tyson shows his first loose tooth while Alex and Theresa encourage him with gentle smiles.",
+          "caption": "A tiny wiggle. A very big first!",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "paragraph",
+          "html": "With clean hands, Tyson gently tried;<br>\n        That little tooth went side to side.<br>\n        He nudged it with his tongue once more;<br>\n        It held on tighter than before."
+        },
+        {
+          "type": "paragraph",
+          "html": "“Wiggle, wobble! Won&#x27;t you fall?”<br>\n        It would not budge much more at all.<br>\n        “Let's take a break,” he heard Dad say.<br>\n        So Tyson dashed outside to play."
+        }
+      ],
+      "start": 3.297
+    },
+    {
+      "id": "scene-2",
+      "title": "The bounce he didn't notice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The trampoline was round and green,<br>\n        The bounciest thing he'd ever seen.<br>\n        Its net zipped shut; Mom watched nearby,<br>\n        While Tyson bounced beneath the sky."
+        },
+        {
+          "type": "paragraph",
+          "html": "A little hop! A happy spin!<br>\n        A breeze tickled his cheek and chin.<br>\n        He laughed and bounced above the ground;<br>\n        His tooth slipped out without a sound."
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-tooth-that-took-a-bounce/trampoline-bounce.webp",
+          "alt": "Tyson bounces inside an enclosed backyard trampoline, unaware that his tiny tooth has fallen into the grass.",
+          "caption": "Boing! His tooth takes a tiny trip of its own.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "paragraph",
+          "html": "It tumbled past the padded side<br>\n        And in the grass it went to hide.<br>\n        No tiny tap. No shout of “Hey!”<br>\n        He never felt it slip away."
+        },
+        {
+          "type": "paragraph",
+          "html": "When play was done, he touched his chin.<br>\n        His tongue explored his toothy grin.<br>\n        He found a gap! His eyes grew round:<br>\n        “My tooth is gone—but can't be found!”"
+        }
+      ],
+      "start": 43.715
+    },
+    {
+      "id": "scene-3",
+      "title": "A note instead of a tooth",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "They searched the grass; they checked each shoe.<br>\n        They looked beneath the trampoline, too.<br>\n        But not a speck of tooth was there.<br>\n        Tyson sniffled in the evening air."
+        },
+        {
+          "type": "paragraph",
+          "html": "“No tooth beneath my pillow tonight!<br>\n        The fairy won't come on her flight!”<br>\n        Mom hugged him close. Dad held him tight.<br>\n        “Let's leave a note,” said Mom. “We'll write.”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-tooth-that-took-a-bounce/fairy-note.webp",
+          "alt": "Tyson writes a note to the Tooth Fairy at his bedroom desk, with Theresa and Alex reassuring him.",
+          "caption": "No tooth to leave? A little note will do.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "paragraph",
+          "html": "Dear Tooth Fairy, my tooth came free<br>\n        While I was bouncing happily.<br>\n        I didn't notice it fall that day;<br>\n        It landed somewhere far away."
+        },
+        {
+          "type": "paragraph",
+          "html": "We searched and searched, but couldn&#x27;t see<br>\n        The little tooth that came from me.<br>\n        Please visit even though it's gone.<br>\n        Love, Tyson. Then he gave a yawn."
+        }
+      ],
+      "start": 83.151
+    },
+    {
+      "id": "scene-4",
+      "title": "A dollar and a brand-new grin",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "He tucked the note, then climbed in bed.<br>\n        Mom kissed his cheek; Dad stroked his head.<br>\n        The moon shone softly, silver-white;<br>\n        His little room grew still that night."
+        },
+        {
+          "type": "paragraph",
+          "html": "On whisper-wings, a fairy flew<br>\n        And read the note that told her true.<br>\n        “A missing tooth? That's quite all right.<br>\n        Your note has brought me here tonight.”"
+        },
+        {
+          "type": "image",
+          "src": "tyson/the-tooth-that-took-a-bounce/morning-dollar.webp",
+          "alt": "Tyson wakes with a gap-toothed smile and finds a one-dollar bill under his pillow as Mom and Dad smile beside his bed.",
+          "caption": "One missing tooth. One wonderful dollar.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "paragraph",
+          "html": "She left a dollar, crisp and green,<br>\n        Beneath his pillow, quite unseen.<br>\n        At dawn he peeked—then gave a shout:<br>\n        “She came! She came! It all worked out!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Theresa laughed; Dad grinned along.<br>\n        His tooth was lost, but hope stayed strong.<br>\n        One dollar! One new gap to show!<br>\n        And one more way for him to grow."
+        },
+        {
+          "type": "callout",
+          "html": "<span class=\"chant-badge\">🗣️ Say it with Tyson</span>\n        <p class=\"chant-text\">Wiggle, wobble, bounce away! A little note can save the day!</p>"
+        }
+      ],
+      "start": 122.352
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">✨ What Adventure Is Next?</span>\n      <h2 class=\"conclusion-question\">Ready to keep exploring? Choose Tyson's next adventure!</h2>\n\n      <div class=\"choice-grid\">\n        <a href=\"/tyson/the-big-splash/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">🎣</span>\n          <strong class=\"choice-card-title\">Tyson and the Big Splash</strong>\n          <span class=\"choice-card-desc\">A stick, a flying hat, and one small fish.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n        <a href=\"/tyson/pikachus-lost-ball/\" class=\"choice-card\">\n          <span class=\"choice-card-icon\">⚡</span>\n          <strong class=\"choice-card-title\">Tyson and Pikachu’s Lost Ball</strong>\n          <span class=\"choice-card-desc\">A stuck ball, a pool noodle, and a sock hat.</span>\n          <span class=\"choice-action-btn\">Read this adventure ➔</span>\n        </a>\n      </div>",
+  "media": {
+    "audio": "tyson/the-tooth-that-took-a-bounce/narration.mp3",
+    "video": {
+      "src": "tyson/the-tooth-that-took-a-bounce/tooth-bounce-3d.mp4",
+      "poster": "tyson/the-tooth-that-took-a-bounce/wiggle-wobble.webp"
+    },
+    "captions": "tyson/the-tooth-that-took-a-bounce/narration.vtt",
+    "duration": 164.823,
+    "provenance": "Existing published media; retained during migration",
+    "adoptedTextHash": "e69a80883227aefd6ed1264f5481a2f290de8bbc949fccdf09db5da8f486b6ba",
+    "narrationInputHash": "c365a3714d0582c4dadec9a5c87f5f4308d7fa312c2a3ca93621e98574eb8d1d",
+    "videoNarrationHash": "c365a3714d0582c4dadec9a5c87f5f4308d7fa312c2a3ca93621e98574eb8d1d",
+    "videoVisualHash": "a6f067fbc2710b351d29ec955e7199b8ab2cdc4280079a2c71b4c4f956052347"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook illustration",
+    "referenceImages": []
+  },
+  "addedAt": "2026-10-01T19:24:43Z"
+}
