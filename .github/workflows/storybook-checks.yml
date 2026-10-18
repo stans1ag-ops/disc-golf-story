@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 24
       - name: Install exact project dependency versions
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
       - name: Build all stories and responsive artwork
         run: npm run build
       - name: Validate content, links, captions, and media

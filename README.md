@@ -9,7 +9,7 @@ Use Node 24 and Python 3.12. The static website build uses Node and Sharp;
 Python supports story authoring and the content checks.
 
 ```bash
-npm install
+npm ci
 npm run build
 npm run check
 npm test
