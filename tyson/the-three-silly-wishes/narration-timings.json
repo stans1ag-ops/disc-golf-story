@@ -1,0 +1,72 @@
+{
+  "audio": "narration.mp3",
+  "duration": 88.735958,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "page-01.webp",
+      "start": 0.0,
+      "cue": "Page 1 — A Very Boring Morning"
+    },
+    {
+      "image": "page-02.webp",
+      "start": 13.036,
+      "cue": "Page 2 — The Treasure Trunk"
+    },
+    {
+      "image": "page-03.webp",
+      "start": 18.557,
+      "cue": "Page 3 — Three Wishes?!"
+    },
+    {
+      "image": "page-04.webp",
+      "start": 26.042,
+      "cue": "Page 4 — Wish Number One"
+    },
+    {
+      "image": "page-05.webp",
+      "start": 32.96,
+      "cue": "Page 5 — Donut Mountain"
+    },
+    {
+      "image": "page-06.webp",
+      "start": 41.471,
+      "cue": "Page 6 — The Family Finds Out"
+    },
+    {
+      "image": "page-07.webp",
+      "start": 48.701,
+      "cue": "Page 7 — Wish Number Two"
+    },
+    {
+      "image": "page-08.webp",
+      "start": 54.826,
+      "cue": "Page 8 — Flip-O-Rama (Page A)"
+    },
+    {
+      "image": "page-09.webp",
+      "start": 60.675,
+      "cue": "Page 9 — Flip-O-Rama (Page B) / The Big Realization"
+    },
+    {
+      "image": "page-10.webp",
+      "start": 65.623,
+      "cue": "Page 10 — Wish Number Three"
+    },
+    {
+      "image": "page-11.webp",
+      "start": 72.965,
+      "cue": "Page 11 — Just Right"
+    },
+    {
+      "image": "page-12.webp",
+      "start": 80.195,
+      "cue": "Page 12 — The End... Or Is It?"
+    }
+  ]
+}
