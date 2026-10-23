@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "id": "cinderella",
+  "title": "Cinderella",
+  "collection": "classics",
+  "order": 999,
+  "description": "“Little tree, little tree, shake over me” — silver and gold, three dances, and a shoe that fits only one foot.",
+  "subtitle": "A Brothers Grimm tale • A bedtime story about a kind-hearted kitchen-maid, a hazel tree, two white pigeons, and a golden shoe that fits only one foot.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://seiyaku.com/lit/grimm/en/021.html",
+  "addedAt": "2026-10-23T14:03:28.184729+00:00",
+  "cover": {
+    "src": "cinderella/cinderella_10.jpg",
+    "alt": "Cinderella appears at the ballroom entrance in her radiant gold and silver dress as the guests stare in wonder."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "A Mother's Blessing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "There was once a rich man whose wife lay sick, and when she felt her end drawing near she called her only daughter to her bed, and said, “Dear child, be pious and good, and God will always take care of you, and I will look down upon you from heaven, and will be with you.” And then she closed her eyes and died."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_01.jpg",
+          "alt": "A gentle mother in a bed with white pillows holds her young daughter's hand beside the bed, speaking a loving blessing in soft window light.",
+          "caption": "“Dear child, be pious and good.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Grave, and a New Wife",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The maiden went every day to her mother&#x27;s grave and wept, and was always pious and good. When winter came, the snow covered the grave with a white covering, and when the spring sun melted it away, the man took himself another wife."
+        },
+        {
+          "type": "paragraph",
+          "html": "The new wife brought two daughters into the house. They were beautiful and fair of face, but black and ugly of heart."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_02.jpg",
+          "alt": "A simple grave in a churchyard garden at the turn of the seasons, half in melting snow and half in fresh spring grass and flowers, a white bird flying above.",
+          "caption": "Winter passed, spring came — and with it, a stepmother.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 21.185
+    },
+    {
+      "id": "scene-3",
+      "title": "The Kitchen-Maid",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then began a very evil time for the poor step-child. “Is the stupid creature to sit in the same room with us?” said they. “Those who eat food must earn it. Out with her, for a kitchen-maid!” They took away her pretty dresses, and put on her an old grey kirtle, and gave her wooden shoes to wear."
+        },
+        {
+          "type": "paragraph",
+          "html": "There she had to do heavy work from morning till night: get up before daybreak, draw water, make the fires, cook, and wash. Besides this, the sisters did their utmost to torment her, mocking her, and strewing peas and lentils among the ashes for her to pick out again. In the evenings, when she was tired out, she had no bed to lie on, but had to sleep by the fireside in the cinders. And as she always looked dusty and dirty, they named her Cinderella."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_03.jpg",
+          "alt": "In a big kitchen, Cinderella in her grey kirtle and wooden clogs carries a water bucket by the hearth while her stepmother and stepsisters laugh at her from the doorway.",
+          "caption": "Dusty and dirty from the cinders — so they named her Cinderella.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 43.344
+    },
+    {
+      "id": "scene-4",
+      "title": "What Shall I Bring You?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It happened one day that the father was going to the fair, and he asked his two step-daughters what he should bring back for them. “Fine clothes!” said one. “Pearls and jewels!” said the other. “But what will you have, Cinderella?” said he. “The first twig, father, that strikes against your hat on the way home; that is what I should like you to bring me.”"
+        },
+        {
+          "type": "paragraph",
+          "html": "So he bought fine clothes, pearls, and jewels for the two step-daughters, and on his way back, as he rode through a green lane, a hazel-twig struck against his hat, and he broke it off and carried it home."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_04.jpg",
+          "alt": "A father in traveling coat and hat asks his daughters for their fair wishes: the stepsisters demand clothes and jewels while Cinderella asks modestly for a twig.",
+          "caption": "“The first twig that strikes against your hat.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 91.617
+    },
+    {
+      "id": "scene-5",
+      "title": "The Hazel Tree",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When he reached home he gave the step-daughters the things they had wished for, and to Cinderella he gave the hazel-twig. She thanked him, and went to her mother&#x27;s grave, and planted the twig there, weeping so bitterly that her tears fell upon it and watered it, and it flourished and became a fine tree."
+        },
+        {
+          "type": "paragraph",
+          "html": "Cinderella went to it three times a day, and wept and prayed, and each time a white bird rose up from the tree, and if she uttered any wish, the bird brought her whatever she had wished for."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_05.jpg",
+          "alt": "Cinderella kneels at her mother's grave planting a small hazel twig, her tears watering it, while a small white bird watches from a branch.",
+          "caption": "Watered with tears, the twig became a fine tree.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 126.26
+    },
+    {
+      "id": "scene-6",
+      "title": "The King's Festival",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now it came to pass that the king gave a festival that should last for three days, and all the beautiful young women of the country were invited, so that the king&#x27;s son might choose a bride from among them. When the two step-sisters heard that they too were invited, they were delighted, and they called Cinderella and said, “Comb our hair, brush our shoes, and make our buckles fast — we are going to the festival at the king&#x27;s castle!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "Cinderella could not help crying, for she too would have liked to go to the dance, and she begged her step-mother to let her. “What, you Cinderella!” said she. “In all your dust and dirt, you want to go to the festival? You who have no dress and no shoes — you want to dance!” But as Cinderella kept on asking, at last the step-mother said, “I have strewed a dishful of lentils in the ashes; if you can pick them all up again in two hours, you may go with us.”"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_06.jpg",
+          "alt": "In a dressing room full of ribbons, Cinderella combs a stepsister's hair and brushes the other's shoe while the sisters preen for the king's festival.",
+          "caption": "“Comb our hair, brush our shoes — we are going to the festival!”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 156.391
+    },
+    {
+      "id": "scene-7",
+      "title": "The Birds Pick the Lentils",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then the maiden went out by the back door into the garden, and called. Then through the kitchen window came two white doves, and after them the turtle-doves, and at last a crowd of all the birds under heaven, chirping and fluttering, and they settled among the ashes. The doves nodded their little heads and began: pick, peck, pick, peck — and all the others began: pick, peck, pick, peck — and put all the good grains into the dish. Before an hour was over, all was done, and they flew away."
+        },
+        {
+          "type": "paragraph",
+          "html": "Then Cinderella brought the dish to her step-mother, feeling joyful, thinking that now she might go to the feast. But the step-mother said, “No, Cinderella, you have no proper clothes, and you do not know how to dance; you would be laughed at!” And when Cinderella cried, she added, “If you can pick two dishes full of lentils out of the ashes, clean and whole, you shall go with us” — thinking to herself, “for that is not possible.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🕊️ Cinderella's Call</div>\n        <div class=\"chant-text\">“O gentle doves, O turtle-doves, and all the birds that be, the lentils that in ashes lie, come and pick up for me! The good must be put in the dish, the bad you may eat if you wish.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_07.jpg",
+          "alt": "A joyful flock of doves and small birds flies through the kitchen window and picks lentils from the hearth ashes into a dish while Cinderella watches in amazement.",
+          "caption": "Pick, peck, pick, peck — every good grain in the dish.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 209.829
+    },
+    {
+      "id": "scene-8",
+      "title": "Refused, and Left Behind",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When she had strewed two dishes full of lentils among the ashes, Cinderella went again into the garden and called the birds, and they came as before — two white doves, the turtle-doves, and all the birds under heaven — and before half an hour was over, it was all done."
+        },
+        {
+          "type": "paragraph",
+          "html": "But the step-mother said, “All this is of no use to you; you cannot come with us, for you have no proper clothes and cannot dance; you would put us to shame.” Then she turned her back on poor Cinderella, and made haste to set out with her two proud daughters."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_08.jpg",
+          "alt": "At the front door, the stepmother sweeps out with her two finery-clad daughters while Cinderella stands alone in the doorway holding two empty dishes.",
+          "caption": "Both tasks done — and still she may not go.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 276.284
+    },
+    {
+      "id": "scene-9",
+      "title": "Little Tree, Little Tree",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now, as there was no one left in the house, Cinderella went to her mother&#x27;s grave, under the hazel tree, and cried. Then the bird threw down a dress of gold and silver, and a pair of slippers embroidered with silk and silver. In all haste Cinderella put on the dress and went to the festival."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🌳 At the Hazel Tree</div>\n        <div class=\"chant-text\">“Little tree, little tree, shake over me, that silver and gold may come down and cover me.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_09.jpg",
+          "alt": "Beneath the hazel tree at the grave, the white bird throws down a shimmering gold and silver dress that floats toward Cinderella with sparkling slippers beside it.",
+          "caption": "Silver and gold came down and covered her.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 308.274
+    },
+    {
+      "id": "scene-10",
+      "title": "A Foreign Princess?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But her step-mother and sisters did not know her, and thought she must be a foreign princess, she looked so beautiful in her golden dress. Of Cinderella they never thought at all, supposing she was sitting at home picking lentils out of the ashes."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_10.jpg",
+          "alt": "Cinderella appears transformed in her radiant gold and silver dress at the ballroom entrance as wondering guests stare and her stepfamily whispers that she must be a foreign princess.",
+          "caption": "So beautiful, they never guessed who she was.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 332.485
+    },
+    {
+      "id": "scene-11",
+      "title": "She Is My Partner",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The king&#x27;s son came to meet her, took her by the hand, and danced with her, and he would dance with no one else, so that he need not let go of her hand; and when anyone else came to invite her, he answered, “She is my partner.”"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_11.jpg",
+          "alt": "In a glittering candlelit ballroom, the prince dances hand in hand with Cinderella in her gold and silver dress at the center of the floor.",
+          "caption": "“She is my partner.”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 347.91
+    },
+    {
+      "id": "scene-12",
+      "title": "The Pigeon-House",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When evening came, she wanted to go home, and the prince said he would walk with her, for he wanted to see where the beautiful maiden lived. But she escaped from him and jumped up into the pigeon-house. The prince waited until her father came, and told him the strange maiden had jumped into the pigeon-house. The father thought, “It cannot surely be Cinderella,” and called for axes, and had the pigeon-house cut down — but there was no one in it."
+        },
+        {
+          "type": "paragraph",
+          "html": "And when they came into the house, there sat Cinderella in her dirty clothes among the cinders; for she had slipped out, run to the hazel tree, taken off her beautiful dress and laid it on the grave, and the bird had carried it away; then she had put on her little grey kirtle again, and sat down in the kitchen among the cinders."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_12.jpg",
+          "alt": "At dusk in the garden, the puzzled prince stands beside a tall wooden pigeon-house while Cinderella in her golden dress peeks out from behind it, about to slip away.",
+          "caption": "Into the pigeon-house — and home before anyone knew.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 361.932
+    },
+    {
+      "id": "scene-13",
+      "title": "The Second Evening",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The next day, when the festival began anew, and her parents and step-sisters had gone, Cinderella went to the hazel tree and cried. Then the bird cast down a dress still more splendid than the day before. When she appeared in it among the guests, everyone was astonished at her beauty. The prince had been waiting for her; he took her hand and danced with her alone, and if anyone else asked, he said, “She is my partner.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🌳 At the Hazel Tree</div>\n        <div class=\"chant-text\">“Little tree, little tree, shake over me, that silver and gold may come down and cover me.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_13.jpg",
+          "alt": "Cinderella appears at the ballroom doors in an even more splendid sapphire and silver dress as the prince waits eagerly to take her hand and the guests gasp.",
+          "caption": "A dress still more splendid than the day before.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 409.272
+    },
+    {
+      "id": "scene-14",
+      "title": "The Pear Tree",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When evening came she wanted to go home, and the prince followed her, for he wanted to see to what house she belonged; but she broke away and ran into the garden at the back of the house. There stood a fine large tree covered with splendid pears; she leapt as lightly as a squirrel among its branches, and the prince did not know what had become of her. He waited until her father came, and told him the strange maiden had run from him and gone up into the pear-tree. The father thought, “It cannot surely be Cinderella,” and called for an axe, and felled the tree — but there was no one in it."
+        },
+        {
+          "type": "paragraph",
+          "html": "And when they went into the kitchen, there sat Cinderella among the cinders, as usual; for she had climbed down the other side of the tree, taken back her beautiful clothes to the bird on the hazel tree, and put on her old grey kirtle again."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_14.jpg",
+          "alt": "Cinderella in her splendid dress climbs nimbly among the branches of a great pear tree while the prince below scratches his head, completely puzzled.",
+          "caption": "As lightly as a squirrel, up into the pear tree.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 441.372
+    },
+    {
+      "id": "scene-15",
+      "title": "The Third Evening",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "On the third day, when her parents and step-sisters had set off, Cinderella went again to her mother&#x27;s grave and said to the tree. Then the bird cast down a dress the like of which had never been seen for splendour and brilliancy, and slippers that were all of gold. When she appeared at the feast in this dress, nobody knew what to say for wonder. The prince danced with her alone, and if anyone else asked her, he answered, “She is my partner.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🌳 At the Hazel Tree</div>\n        <div class=\"chant-text\">“Little tree, little tree, shake over me, that silver and gold may come down and cover me.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_15.jpg",
+          "alt": "Cinderella appears at the ball in a dress of unmatched splendour, rose-gold and ivory with golden slippers, as the whole ballroom stands speechless and the prince leads her to the dance.",
+          "caption": "A dress the like of which had never been seen.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 492.178
+    },
+    {
+      "id": "scene-16",
+      "title": "The Golden Shoe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When it was evening, Cinderella wanted to go home, and the prince was about to go with her, when she ran past him so quickly that he could not follow her. But he had laid a plan, and had all the steps spread with pitch, so that as she rushed down them, her left shoe remained sticking in it. The prince picked it up, and saw that it was of gold, and very small and dainty."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_16.jpg",
+          "alt": "By moonlight on the palace steps, a single tiny golden slipper gleams stuck on the dark pitch while the prince bends to pick it up and a splendid dress hem vanishes above.",
+          "caption": "Of gold — and very small and dainty.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 525.154
+    },
+    {
+      "id": "scene-17",
+      "title": "The Eldest Sister Tries",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The next morning he went to the father and told him that no one should be his bride save the one whose foot the golden shoe fitted. Then the two sisters were very glad, for they had pretty feet. The eldest went to her room to try on the shoe, with her mother standing by. But she could not force her great toe into it, for the shoe was too small. Then her mother handed her a knife and said, “Cut the toe off; when you are queen, you will never have to go on foot.” So the girl cut off her toe, squeezed her foot into the shoe, swallowed her pain, and went down to the prince. He took her on his horse as his bride and rode off."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_17.jpg",
+          "alt": "The prince presents the tiny golden slipper on a velvet cushion in the hall while the stepmother bows eagerly and the eldest stepsister reaches for it, certain it will be hers.",
+          "caption": "The eldest was certain the shoe would be hers.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 547.638
+    },
+    {
+      "id": "scene-18",
+      "title": "Blood on Her Shoe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But they had to pass by the grave, and there sat the two pigeons on the hazel tree, and they cried. Then the prince looked at her foot and saw the blood. He turned his horse round and took the false bride home again, saying she was not the right one, and the other sister must try on the shoe."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🕊️ The Pigeons</div>\n        <div class=\"chant-text\">“There they go, there they go! There is blood on her shoe; the shoe is too small — not the right bride at all!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_18.jpg",
+          "alt": "The prince rides past the hazel tree with the eldest stepsister before him as two white pigeons sing down from the branches and he twists around, doubtful.",
+          "caption": "The pigeons sang out the truth.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 586.47
+    },
+    {
+      "id": "scene-19",
+      "title": "The Second Sister Tries",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So she went into her room and got her toes in, but her heel was too large. Then her mother handed her the knife, saying, “Cut a piece off your heel; when you are queen, you will never have to go on foot.” So the girl cut a piece off her heel, thrust her foot into the shoe, swallowed her pain, and went down to the prince, who took her on his horse as his bride and rode off. When they passed the hazel tree, the two pigeons sat there and cried: “There is blood on her shoe; the shoe is too small — not the right bride at all!” Then the prince looked at her foot and saw the blood flowing from the shoe and staining her white stocking. He turned his horse round and brought the false bride home again."
+        },
+        {
+          "type": "paragraph",
+          "html": "“This is not the right one,” said he. “Have you no other daughter?” “No,” said the man, “only my dead wife left behind her a little stunted Cinderella; it is impossible that she can be the bride.” But the king&#x27;s son ordered her to be sent for. The mother said, “Oh no, she is much too dirty; she cannot be seen.” But the prince insisted, and Cinderella had to appear."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_19.jpg",
+          "alt": "The younger stepsister sits primly on a stool holding the tiny golden slipper and admiring her own foot, smugly certain it will fit her, while her mother nods encouragement.",
+          "caption": "The second sister was just as sure — and just as wrong.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 611.191
+    },
+    {
+      "id": "scene-20",
+      "title": "The Right Bride",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "First she washed her face and hands clean, and went in and bowed to the prince, who held out to her the golden shoe. Then she sat down on a stool, drew her foot out of the heavy wooden shoe, and slipped it into the golden one, which fitted it perfectly. And when she stood up and the prince looked into her face, he knew again the beautiful maiden who had danced with him, and he cried, “This is the right bride!”"
+        },
+        {
+          "type": "paragraph",
+          "html": "The step-mother and the two sisters were thunderstruck, and grew pale with anger; but the prince put Cinderella before him on his horse and rode off."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_20.jpg",
+          "alt": "Cinderella in her grey kirtle, face and hands washed clean, slips her foot perfectly into the golden slipper as the kneeling prince gazes up in joyful recognition and the stepfamily stands thunderstruck behind.",
+          "caption": "“This is the right bride!”",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 676.731
+    },
+    {
+      "id": "scene-21",
+      "title": "The Right Bride After All",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And as they passed the hazel tree, the two white pigeons cried. And when they had cried this, the two pigeons came flying and perched on Cinderella&#x27;s shoulders, one on the right and one on the left, and stayed there."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🕊️ The Pigeons</div>\n        <div class=\"chant-text\">“There they go, there they go! No blood on her shoe; the shoe&#x27;s not too small — the right bride is she after all!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_21.jpg",
+          "alt": "The prince rides with Cinderella in her radiant dress past the hazel tree as two white pigeons flutter down and perch, one on each of her shoulders.",
+          "caption": "One on the right, and one on the left — and stayed there.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 710.384
+    },
+    {
+      "id": "scene-22",
+      "title": "The Wedding",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And when the wedding with the prince was to be held, the false sisters came, hoping to win favour and take part in the festivities. As the bridal procession went to church, the eldest sister walked on the right side and the youngest on the left, and the pigeons pecked out one eye of each of them. On the way back, the eldest was on the left side and the youngest on the right, and the pigeons pecked out the other eye of each of them. And so, for their wickedness and falsehood, they were punished with blindness for the rest of their days. And that is the end of the tale."
+        },
+        {
+          "type": "image",
+          "src": "cinderella/cinderella_22.jpg",
+          "alt": "A joyful wedding procession walks toward a sunny church, Cinderella in a white and gold wedding dress arm in arm with the prince, guests scattering petals and two white pigeons soaring above.",
+          "caption": "And they lived — the right bride, after all.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 731.367
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">Why did the golden shoe fit Cinderella, and no one else?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🕊️</span>\n          <strong class=\"choice-card-title\">Be Kind, and Patient</strong>\n          <span class=\"choice-card-desc\">Cinderella stayed gentle and good through every mean trick and hard chore, just as her mother asked. Kindness and patience carried her all the way to the palace.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">👠</span>\n          <strong class=\"choice-card-title\">True Worth Shines Through</strong>\n          <span class=\"choice-card-desc\">Ashes and an old grey dress could not hide who Cinderella really was. The prince knew her face the moment she stood up — goodness shines through any disguise.</span>\n        </div>\n      </div>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "cinderella/narration.mp3",
+    "video": {
+      "src": "cinderella/story-video.mp4",
+      "poster": "cinderella/story-video-poster.jpg"
+    },
+    "captions": "cinderella/narration.vtt",
+    "duration": 767.406583,
+    "narrationInputHash": "29179bc2dd8cfb6553633acf806d6b5568841f18b2a1c7497638bcf9217a7268",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration",
+    "videoNarrationHash": "29179bc2dd8cfb6553633acf806d6b5568841f18b2a1c7497638bcf9217a7268",
+    "videoVisualHash": "aa9d314a5846befbd05e63c6e03fa8e7de639333450f6239571d9ef8e5f311d7"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook art on cream paper with fine pencil details",
+    "referenceImages": [
+      "cinderella/references/cinderella_ref.jpg",
+      "cinderella/references/stepfamily_ref.jpg",
+      "cinderella/references/prince_ref.jpg",
+      "cinderella/references/hazel_tree_ref.jpg"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "audio": "narration.mp3",
+  "duration": 767.406583,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "cinderella_01.jpg",
+      "start": 0.0,
+      "cue": "A Mother's Blessing"
+    },
+    {
+      "image": "cinderella_02.jpg",
+      "start": 21.185,
+      "cue": "The Grave, and a New Wife"
+    },
+    {
+      "image": "cinderella_03.jpg",
+      "start": 43.344,
+      "cue": "The Kitchen-Maid"
+    },
+    {
+      "image": "cinderella_04.jpg",
+      "start": 91.617,
+      "cue": "What Shall I Bring You?"
+    },
+    {
+      "image": "cinderella_05.jpg",
+      "start": 126.26,
+      "cue": "The Hazel Tree"
+    },
+    {
+      "image": "cinderella_06.jpg",
+      "start": 156.391,
+      "cue": "The King's Festival"
+    },
+    {
+      "image": "cinderella_07.jpg",
+      "start": 209.829,
+      "cue": "The Birds Pick the Lentils"
+    },
+    {
+      "image": "cinderella_08.jpg",
+      "start": 276.284,
+      "cue": "Refused, and Left Behind"
+    },
+    {
+      "image": "cinderella_09.jpg",
+      "start": 308.274,
+      "cue": "Little Tree, Little Tree"
+    },
+    {
+      "image": "cinderella_10.jpg",
+      "start": 332.485,
+      "cue": "A Foreign Princess?"
+    },
+    {
+      "image": "cinderella_11.jpg",
+      "start": 347.91,
+      "cue": "She Is My Partner"
+    },
+    {
+      "image": "cinderella_12.jpg",
+      "start": 361.932,
+      "cue": "The Pigeon-House"
+    },
+    {
+      "image": "cinderella_13.jpg",
+      "start": 409.272,
+      "cue": "The Second Evening"
+    },
+    {
+      "image": "cinderella_14.jpg",
+      "start": 441.372,
+      "cue": "The Pear Tree"
+    },
+    {
+      "image": "cinderella_15.jpg",
+      "start": 492.178,
+      "cue": "The Third Evening"
+    },
+    {
+      "image": "cinderella_16.jpg",
+      "start": 525.154,
+      "cue": "The Golden Shoe"
+    },
+    {
+      "image": "cinderella_17.jpg",
+      "start": 547.638,
+      "cue": "The Eldest Sister Tries"
+    },
+    {
+      "image": "cinderella_18.jpg",
+      "start": 586.47,
+      "cue": "Blood on Her Shoe"
+    },
+    {
+      "image": "cinderella_19.jpg",
+      "start": 611.191,
+      "cue": "The Second Sister Tries"
+    },
+    {
+      "image": "cinderella_20.jpg",
+      "start": 676.731,
+      "cue": "The Right Bride"
+    },
+    {
+      "image": "cinderella_21.jpg",
+      "start": 710.384,
+      "cue": "The Right Bride After All"
+    },
+    {
+      "image": "cinderella_22.jpg",
+      "start": 731.367,
+      "cue": "The Wedding"
+    }
+  ]
+}
