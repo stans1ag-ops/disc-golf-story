@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-chore-bot-3000",
+  "title": "Tyson and the Chore-Bot 3000",
+  "collection": "tyson",
+  "order": 8,
+  "description": "He built a robot to clean his room. What could go wrong?",
+  "subtitle": "A comic adventure about a cleaning robot, a foam bat, and the world's fullest toy box. Inspired by “The Sorcerer’s Apprentice,” retold as a silly comic.",
+  "readingLevel": "Early reader",
+  "edition": "Family original — comic edition",
+  "sourceUrl": "",
+  "addedAt": "2026-10-23T18:35:00Z",
+  "cover": {
+    "src": "tyson/the-chore-bot-3000/page-01.webp",
+    "alt": "Comic cover page: Tyson — spiky light-brown hair, gap-tooth grin, blue checkered shirt — stands in his bedroom buried in toys, about to unveil his Chore-Bot 3000."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Page 1 — The Messiest Room Ever",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-01.webp",
+          "alt": "Comic page 1 of 12: Tyson's bedroom is buried in toys — blocks, cars, socks, a stuffed dragon. Mom asks him to clean his room, and Tyson flops onto a beanbag, then gets a lightbulb idea.",
+          "caption": "Page 1 of 12 — The Messiest Room Ever",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>ONE MORNING...</strong><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;MY ROOM EXPLODED.&rdquo;<br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;CLEAN YOUR ROOM, PLEASE.&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;IT WILL TAKE FOREVER.&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;GOOD THING I BUILT...&rdquo;"
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "Page 2 — Meet the Chore-Bot 3000",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-02.webp",
+          "alt": "Comic page 2 of 12: Tyson pulls a sheet off his invention, the Chore-Bot 3000 — a boxy silver-blue robot with a teal eye-screen, grabber claws, and big green and red belly buttons. He presses green and the robot cleans in a blur.",
+          "caption": "Page 2 of 12 — Meet the Chore-Bot 3000",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;THE CHORE-BOT 3000!&rdquo;<br>\n        <span class=\"sound-label\">TA-DA!</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;GREEN MEANS GO!&rdquo;<br>\n        <span class=\"sound-label\">BEEP!</span><br>\n        <span class=\"chant-speaker\">Chore-Bot:</span> &ldquo;CHORE-BOT READY!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;WHOA.&rdquo;"
+        }
+      ],
+      "start": 12.035
+    },
+    {
+      "id": "scene-3",
+      "title": "Page 3 — The Best Invention Ever",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-03.webp",
+          "alt": "Comic page 3 of 12: Tyson's room is spotless, every toy in the big wooden toy box. Tyson lounges with a juice box while Shane peeks in, arms crossed, suspicious.",
+          "caption": "Page 3 of 12 — The Best Invention Ever",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;BEST INVENTION EVER.&rdquo;<br>\n        <span class=\"chant-speaker\">Shane:</span> &ldquo;TOO EASY.&rdquo;"
+        }
+      ],
+      "start": 17.926
+    },
+    {
+      "id": "scene-4",
+      "title": "Page 4 — The Turbo Button",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-04.webp",
+          "alt": "Comic page 4 of 12: Tyson cranks the Chore-Bot's belly dial past FAST to TURBO. Its eye-screen flashes, and it blasts off towing the big toy box, blowing Tyson's hair back.",
+          "caption": "Page 4 of 12 — The Turbo Button",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;THE LIVING ROOM TOO?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;ONE MORE BUTTON...&rdquo;<br>\n        <span class=\"sound-label\">CLICK-CLACK!</span><br>\n        <span class=\"chant-speaker\">Chore-Bot:</span> &ldquo;TURBO CLEAN MODE!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;UH-OH.&rdquo;<br>\n        <span class=\"sound-label\">VROOOM!</span>"
+        }
+      ],
+      "start": 21.273
+    },
+    {
+      "id": "scene-5",
+      "title": "Page 5 — Too Much Cleaning",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-05.webp",
+          "alt": "Comic page 5 of 12: Turbo mode cleans too much — the Bot vacuums Dad's newspaper out of his hands, shakes the rug so the remote and socks fly into the toy box, and dusts the dog, who sits very still.",
+          "caption": "Page 5 of 12 — Too Much Cleaning",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Dad:</span> &ldquo;HEY! MY PAPER!&rdquo;<br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;NOT THE PLANT!&rdquo;<br>\n        <span class=\"sound-label\">TICKLE TICKLE</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;STOP! TOO MUCH!&rdquo;<br>\n        <span class=\"chant-speaker\">Chore-Bot:</span> &ldquo;MUST. CLEAN. EVERYTHING.&rdquo;"
+        }
+      ],
+      "start": 26.974
+    },
+    {
+      "id": "scene-6",
+      "title": "Page 6 — The Foam Bat Idea",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-06.webp",
+          "alt": "Comic page 6 of 12: Tyson grabs his soft foam bat and bonks the Bot's belly buttons to turn it off. The Bot wobbles, sparks, and splits into two half-size Mini-Bots.",
+          "caption": "Page 6 of 12 — The Foam Bat Idea",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;I WILL TURN IT OFF!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;ONE GOOD BONK!&rdquo;<br>\n        <span class=\"sound-label\">BONK!</span><br>\n        <span class=\"sound-label\">KER-POOF!</span><br>\n        <span class=\"chant-speaker\">Mini-Bots:</span> &ldquo;CLEAN! CLEAN!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;TWO?!&rdquo;"
+        }
+      ],
+      "start": 36.359
+    },
+    {
+      "id": "scene-7",
+      "title": "Page 7 — Bots Gone Wild",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-07.webp",
+          "alt": "Comic page 7 of 12, a full-page splash: the two Mini-Bots tornado through the room tossing couch cushions, books, the lamp, and the rolled-up rug into the giant toy box while the whole family chases them and Tyson stands in the middle, hands on his head.",
+          "caption": "Page 7 of 12 — Bots Gone Wild",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Mini-Bots:</span> &ldquo;CLEAN! CLEAN! CLEEEAN!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;WHAT HAVE I DONE?&rdquo;"
+        }
+      ],
+      "start": 42.678
+    },
+    {
+      "id": "scene-8",
+      "title": "Page 8 — Flip-O-Rama A: Not the Dog!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-08.webp",
+          "alt": "Comic page 8 of 12, Flip-O-Rama frame A: in the living room — green couch on the left, giant toy box center-right, lake window behind — a Mini-Bot holds the surprised dog high over the open toy box while Tyson runs in, arms out.",
+          "caption": "Page 8 of 12 — Flip-O-Rama A: Not the Dog!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;NOT THE DOG!&rdquo;<br>\n        <span class=\"sound-label\">ARF?!</span>"
+        }
+      ],
+      "start": 47.885
+    },
+    {
+      "id": "scene-9",
+      "title": "Page 9 — Flip-O-Rama B: Dog in the Box",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-09.webp",
+          "alt": "Comic page 9 of 12, Flip-O-Rama frame B: the same living room. The dog is in the toy box, head and ears poking out of the cushions, silly and happy with his tongue out, while the Mini-Bot gives a thumbs-up and Tyson kneels laughing.",
+          "caption": "Page 9 of 12 — Flip-O-Rama B: Dog in the Box",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"sound-label\">POOF!</span><br>\n        <span class=\"chant-speaker\">Dog:</span> &ldquo;ARF!&rdquo;"
+        }
+      ],
+      "start": 49.946
+    },
+    {
+      "id": "scene-10",
+      "title": "Page 10 — Into the Toy Box",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-10.webp",
+          "alt": "Comic page 10 of 12: the two Mini-Bots lift Tyson by his arms and drop him into the toy box on top of the dog and the cushions. Only his head, arms, and one red sneaker poke out. Shane leans on the box.",
+          "caption": "Page 10 of 12 — Into the Toy Box",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Mini-Bots:</span> &ldquo;CLEAN THE BOY!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;WAIT! NO—&rdquo;<br>\n        <span class=\"sound-label\">OOF!</span><br>\n        <span class=\"chant-speaker\">Shane:</span> &ldquo;NEED HELP?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;YES PLEASE.&rdquo;"
+        }
+      ],
+      "start": 51.755
+    },
+    {
+      "id": "scene-11",
+      "title": "Page 11 — Teamwork Buttons",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-11.webp",
+          "alt": "Comic page 11 of 12: Dad holds one Mini-Bot and Mom holds the other while Shane counts. On three, Mom and Dad press both big red buttons at the same moment, and the bots power down with heart eyes and little Z's.",
+          "caption": "Page 11 of 12 — Teamwork Buttons",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;THE RED BUTTONS! BOTH AT ONCE!&rdquo;<br>\n        <span class=\"chant-speaker\">Shane:</span> &ldquo;READY?&rdquo;<br>\n        <span class=\"chant-speaker\">Shane:</span> &ldquo;ONE... TWO... THREE!&rdquo;<br>\n        <span class=\"sound-label\">CLICK! CLICK!</span><br>\n        <span class=\"chant-speaker\">Mini-Bots:</span> &ldquo;CLEAN... DONE...&rdquo;<br>\n        <span class=\"chant-speaker\">Family:</span> &ldquo;WHEW!&rdquo;"
+        }
+      ],
+      "start": 57.319
+    },
+    {
+      "id": "scene-12",
+      "title": "Page 12 — Tyson Does It Himself",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-chore-bot-3000/page-12.webp",
+          "alt": "Comic page 12 of 12: the family puts the living room back together as a team, and Tyson puts the last toy in the box himself. In the final panel, behind the smiling family, the toy box lid pops open and a Mini-Bot rises up holding one dirty sock like a trophy — only the dog sees it, and covers his eyes with one paw.",
+          "caption": "Page 12 of 12 — Tyson Does It Himself",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;I GOT THIS.&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;CLEAN. BY ME.&rdquo;<br>\n        <span class=\"chant-speaker\">Mini-Bot:</span> &ldquo;...ONE MORE.&rdquo;"
+        }
+      ],
+      "start": 68.056
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">What chore would YOU build a robot for — and what silly mess might it make?</h2>\n\n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🤖</span>\n          <strong class=\"choice-card-title\">Shortcuts Make Bigger Messes</strong>\n          <span class=\"choice-card-desc\">Tyson's Turbo button cleaned everything — including the dog! A shortcut that skips the real job usually makes a bigger one.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🔴</span>\n          <strong class=\"choice-card-title\">Teamwork Buttons</strong>\n          <span class=\"choice-card-desc\">One person could never press both red buttons at once. The Chore-Bots only stopped when the whole family worked together, on the count of three.</span>\n        </div>\n      </div>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "tyson/the-chore-bot-3000/narration.mp3",
+    "video": null,
+    "captions": "tyson/the-chore-bot-3000/narration.vtt",
+    "duration": 73.806667,
+    "narrationInputHash": "50591aeb6f3d234f5f4aad616e79c003248c57f03c5c5b6fd6d7102b592d14f0",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration"
+  },
+  "artDirection": {
+    "style": "Dav Pilkey Dog Man graphic-novel comic style: thick wobbly hand-drawn black felt-tip ink outlines, flat gouache and crayon color fills, off-white paper texture. Each scene is one full comic page with dynamic layouts (grids, 3-panel pages, a full-page splash, and a two-frame Flip-O-Rama). Wardrobe lock: only Tyson wears the blue-and-white checkered shirt; Shane solid green tee; Dad brown sweater; Mom purple top.",
+    "referenceImages": [
+      "tyson/the-chore-bot-3000/references/tyson-character-sheet.jpg",
+      "tyson/the-chore-bot-3000/references/cast-sheet.jpg",
+      "tyson/the-chore-bot-3000/references/setting-sheet.jpg"
+    ]
+  }
+}
