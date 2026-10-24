@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-villains-who-gave-up",
+  "title": "Tyson and the Villains Who Gave Up",
+  "collection": "tyson",
+  "order": 10,
+  "description": "Two goofy villains capture Tyson to stop his fun. Big mistake: he torments them with tag, 400 knock-knock jokes, and dance battles until they beg to take him home.",
+  "subtitle": "A comic about endless tag, 400 knock-knock jokes, and a dance battle that defeats the fun-stoppers. Inspired by “The Ransom of Red Chief,” retold as a silly comic.",
+  "readingLevel": "Early reader",
+  "edition": "Family original — comic edition",
+  "sourceUrl": "",
+  "addedAt": "2026-10-24T20:20:00Z",
+  "cover": {
+    "src": "tyson/the-villains-who-gave-up/page-01.webp",
+    "alt": "Comic cover page: Zorp the grumpy alien and Vacky the villainous vacuum peek from behind a bush, spying on Tyson's tag game, and hatch a plan to stop all fun."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Page 1 — The Fun Stoppers",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-01.webp",
+          "alt": "Comic page 1 of 12: Zorp the grumpy alien and Vacky the villainous vacuum peek from behind a bush, spying on Tyson's tag game, and hatch a plan to stop all fun.",
+          "caption": "Page 1 of 12 — The Fun Stoppers",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Zorp:</span> &ldquo;TOO MUCH FUN!&rdquo;<br>\n        <span class=\"chant-speaker\">Vacky:</span> &ldquo;WE MUST STOP IT!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;WE'LL CAPTURE TYSON!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;TAG! YOU'RE IT!&rdquo;"
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "Page 2 — The Capture",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-02.webp",
+          "alt": "Comic page 2 of 12: a big butterfly net drops over Tyson — and he treats being captured like the best ride ever.",
+          "caption": "Page 2 of 12 — The Capture",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"sound-label\">GOTCHA!</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;WHEEE!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;TO THE HIDEOUT!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;BEST RIDE EVER!&rdquo;"
+        }
+      ],
+      "start": 10.092
+    },
+    {
+      "id": "scene-3",
+      "title": "Page 3 — The Ransom Note",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-03.webp",
+          "alt": "Comic page 3 of 12: inside the cardboard castle, Zorp writes a ransom note in giant crayon while Tyson plays with a toy car. Mom reads it on the porch, totally calm.",
+          "caption": "Page 3 of 12 — The Ransom Note",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>AT THE HIDEOUT...</strong><br>\n        <strong>WE HAVE TYSON. NO FUN ALLOWED.</strong><br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;TAKE YOUR TIME!&rdquo;<br>\n        <span class=\"chant-speaker\">Dad:</span> &ldquo;HE'LL WEAR THEM OUT.&rdquo;"
+        }
+      ],
+      "start": 14.057
+    },
+    {
+      "id": "scene-4",
+      "title": "Page 4 — Game One: Tag",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-04.webp",
+          "alt": "Comic page 4 of 12: game one is tag. Tyson taps Zorp and sprints off; Vacky tangles in its own hose; both villains end up collapsed panting on the grass.",
+          "caption": "Page 4 of 12 — Game One: Tag",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;TAG! YOU'RE IT!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;I'M TOO OLD FOR THIS!&rdquo;<br>\n        <span class=\"chant-speaker\">Vacky:</span> &ldquo;MY HOSE!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;AGAIN! AGAIN!&rdquo;"
+        }
+      ],
+      "start": 22.09
+    },
+    {
+      "id": "scene-5",
+      "title": "Page 5 — 400 Knock-Knock Jokes",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-05.webp",
+          "alt": "Comic page 5 of 12: Tyson raps knock-knock jokes until the wall counter reads joke number 387 and both villains droop.",
+          "caption": "Page 5 of 12 — 400 Knock-Knock Jokes",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;KNOCK KNOCK!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;WHO'S THERE?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;BANANA!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;BANANA WHO?&rdquo;<br>\n        <span class=\"sound-label\">JOKE #387!</span><br>\n        <span class=\"chant-speaker\">Vacky:</span> &ldquo;NO MORE BANANAS!&rdquo;"
+        }
+      ],
+      "start": 29.399
+    },
+    {
+      "id": "scene-6",
+      "title": "Page 6 — Dance Battle",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-06.webp",
+          "alt": "Comic page 6 of 12, a widescreen split: Tyson breakdances on the grass, then Zorp and Vacky attempt a robot dance and topple over each other.",
+          "caption": "Page 6 of 12 — Dance Battle",
+          "width": 2240,
+          "height": 1120
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;DANCE BATTLE!&rdquo;<br>\n        <span class=\"chant-speaker\">Vacky:</span> &ldquo;MY CIRCUITS!&rdquo;"
+        }
+      ],
+      "start": 35.249
+    },
+    {
+      "id": "scene-7",
+      "title": "Page 7 — THE ULTIMATE DANCE-OFF!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-07.webp",
+          "alt": "Comic page 7 of 12, a full-page splash: the whole backyard dance-off under a silly cardboard disco ball, with giant BOOGIE! WOOGIE! lettering, Shane and the dog dancing at the edges, Zorp dizzy and Vacky spinning.",
+          "caption": "Page 7 of 12 — THE ULTIMATE DANCE-OFF!",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>THE WHOLE BACKYARD IS DANCING!</strong><br>\n        <span class=\"sound-label\">BOOGIE! WOOGIE! BOOGIE! WOOGIE!</span>"
+        }
+      ],
+      "start": 38.29
+    },
+    {
+      "id": "scene-8",
+      "title": "Page 8 — Flip-O-Rama A: BOOGIE!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-08.webp",
+          "alt": "Comic page 8 of 12, Flip-O-Rama frame A: the backyard — tree with cardboard disco ball on the left, cardboard castle at the right edge — Tyson center in dance pose A, one arm up and one leg kicked out, and one giant word fills the frame: BOOGIE!",
+          "caption": "Page 8 of 12 — Flip-O-Rama A: BOOGIE!",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;DANCE! DANCE!&rdquo;<br>\n        <span class=\"sound-label\">BOOGIE!</span>"
+        }
+      ],
+      "start": 41.064
+    },
+    {
+      "id": "scene-9",
+      "title": "Page 9 — Flip-O-Rama B: WOOGIE!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-09.webp",
+          "alt": "Comic page 9 of 12, Flip-O-Rama frame B: the exact same backyard, the exact same characters — but Tyson is in the opposite dance pose and the giant word is WOOGIE! Flip the two frames fast and Tyson dances: BOOGIE! WOOGIE!",
+          "caption": "Page 9 of 12 — Flip-O-Rama B: WOOGIE!",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;DANCE! DANCE!&rdquo;<br>\n        <span class=\"sound-label\">WOOGIE!</span>"
+        }
+      ],
+      "start": 44.02
+    },
+    {
+      "id": "scene-10",
+      "title": "Page 10 — Please Take Him Back!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-10.webp",
+          "alt": "Comic page 10 of 12: the exhausted villains beg — Zorp on his knees, Vacky waving a white flag — while Tyson is confused, because they just started.",
+          "caption": "Page 10 of 12 — Please Take Him Back!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Zorp:</span> &ldquo;PLEASE! TAKE HIM BACK!&rdquo;<br>\n        <span class=\"chant-speaker\">Vacky:</span> &ldquo;WE GIVE UP!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;BUT WE JUST STARTED!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;NEVER AGAIN!&rdquo;"
+        }
+      ],
+      "start": 46.976
+    },
+    {
+      "id": "scene-11",
+      "title": "Page 11 — The Ride Home",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-11.webp",
+          "alt": "Comic page 11 of 12: Zorp and Vacky fly Tyson home in their silly cardboard rocket, and Zorp hands him a giant rainbow lollipop as a parting gift.",
+          "caption": "Page 11 of 12 — The Ride Home",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Zorp:</span> &ldquo;HOME AT LAST!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;BEST DAY EVER!&rdquo;<br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;THAT WAS FAST!&rdquo;<br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;PLEASE... NEVER COME BACK.&rdquo;"
+        }
+      ],
+      "start": 53.484
+    },
+    {
+      "id": "scene-12",
+      "title": "Page 12 — See You Tomorrow!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-villains-who-gave-up/page-12.webp",
+          "alt": "Comic page 12 of 12: back home on the porch at sunset, Tyson waves 'See you tomorrow!' while behind him the fainted villains lie in a heap on the grass, X-eyes and tongues out, a tiny white flag still tied to Vacky's hose, as the dog licks the giant lollipop.",
+          "caption": "Page 12 of 12 — See You Tomorrow!",
+          "width": 1808,
+          "height": 1344
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;SEE YOU TOMORROW!&rdquo;<br>\n        <span class=\"sound-label\">Z-Z-Z...</span><br>\n        <span class=\"chant-speaker\">Zorp:</span> &ldquo;no more tag...&rdquo;"
+        }
+      ],
+      "start": 60.355
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">Tyson never fought the villains — he just out-played them. What's the funniest way you've ever won a game?</h2>\n\n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🏷️</span>\n          <strong class=\"choice-card-title\">More Fun Beats No Fun</strong>\n          <span class=\"choice-card-desc\">Zorp and Vacky wanted to stop fun, but Tyson answered with MORE fun — tag, jokes, and dancing — until the fun-stoppers gave up. Joy is a pretty good superpower.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🍭</span>\n          <strong class=\"choice-card-title\">The Lollipop Peace Prize</strong>\n          <span class=\"choice-card-desc\">The villains even gave Tyson a giant lollipop to take him home. Sometimes the best ending is everyone laughing — even the villains.</span>\n        </div>\n      </div>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "tyson/the-villains-who-gave-up/narration.mp3",
+    "video": null,
+    "captions": "tyson/the-villains-who-gave-up/narration.vtt",
+    "duration": 64.456292,
+    "narrationInputHash": "a2340a438f6c58f09af72cf49bea079d9482edc9a174449e0bb0703734307498",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration"
+  },
+  "artDirection": {
+    "style": "Dav Pilkey Dog Man graphic-novel comic style: thick wobbly hand-drawn black felt-tip ink outlines, flat gouache and crayon color fills, off-white paper texture. Each scene is one full comic page with dynamic layouts (grids, 3-panel pages, a widescreen split, a full-page splash, and a two-frame Flip-O-Rama dance). Wardrobe lock: only Tyson wears the blue-and-white checkered shirt; Shane solid green tee; Dad brown sweater; Mom purple top. Villains: Zorp is a short round green alien with star-tipped antennae, purple cape, silver boots; Vacky is a round silver vacuum robot on wheels with a trunk-like hose snout, tiny black top hat, dust-bag.",
+    "referenceImages": [
+      "tyson/the-villains-who-gave-up/references/tyson-character-sheet.jpg",
+      "tyson/the-villains-who-gave-up/references/cast_ref_sheet.jpg",
+      "tyson/the-villains-who-gave-up/references/setting_sheet.jpg"
+    ]
+  }
+}
