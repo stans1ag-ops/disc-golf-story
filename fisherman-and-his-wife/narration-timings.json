@@ -1,0 +1,107 @@
+{
+  "audio": "narration.mp3",
+  "duration": 869.183125,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "scene-01.jpg",
+      "start": 0.0,
+      "cue": "The Hovel by the Sea"
+    },
+    {
+      "image": "scene-02.jpg",
+      "start": 13.937,
+      "cue": "The Great Flounder"
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 47.268,
+      "cue": "“Did You Wish for Nothing?”"
+    },
+    {
+      "image": "scene-04.jpg",
+      "start": 84.581,
+      "cue": "The Green and Yellow Sea"
+    },
+    {
+      "image": "scene-05.jpg",
+      "start": 114.005,
+      "cue": "The Pretty Cottage"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 154.375,
+      "cue": "“A Large Stone Castle”"
+    },
+    {
+      "image": "scene-07.jpg",
+      "start": 192.847,
+      "cue": "The Purple Sea"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 224.487,
+      "cue": "The Stone Castle"
+    },
+    {
+      "image": "scene-09.jpg",
+      "start": 283.878,
+      "cue": "“I Must Be King”"
+    },
+    {
+      "image": "scene-10.jpg",
+      "start": 327.426,
+      "cue": "The Dark Grey Sea"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 366.792,
+      "cue": "The Palace Grown Greater"
+    },
+    {
+      "image": "scene-12.jpg",
+      "start": 435.636,
+      "cue": "“I Must Be Emperor”"
+    },
+    {
+      "image": "scene-13.jpg",
+      "start": 470.826,
+      "cue": "The Walk Home"
+    },
+    {
+      "image": "scene-14.jpg",
+      "start": 524.135,
+      "cue": "The Emperor's Throne"
+    },
+    {
+      "image": "scene-15.jpg",
+      "start": 594.405,
+      "cue": "Before the Towering Throne"
+    },
+    {
+      "image": "scene-16.jpg",
+      "start": 636.549,
+      "cue": "Ships in the Storm"
+    },
+    {
+      "image": "scene-17.jpg",
+      "start": 674.408,
+      "cue": "The Great Church"
+    },
+    {
+      "image": "scene-18.jpg",
+      "start": 738.604,
+      "cue": "The Red Dawn"
+    },
+    {
+      "image": "scene-19.jpg",
+      "start": 821.286,
+      "cue": "Back in the Old Hovel"
+    }
+  ]
+}
