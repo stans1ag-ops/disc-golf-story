@@ -1,0 +1,102 @@
+{
+  "audio": "narration.mp3",
+  "duration": 428.60225,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "sleeping_beauty_01.jpg",
+      "start": 0.0,
+      "cue": "The Wish"
+    },
+    {
+      "image": "sleeping_beauty_02.jpg",
+      "start": 30.327,
+      "cue": "A Daughter Is Born"
+    },
+    {
+      "image": "sleeping_beauty_03.jpg",
+      "start": 51.316,
+      "cue": "The Wise Women’s Gifts"
+    },
+    {
+      "image": "sleeping_beauty_04.jpg",
+      "start": 68.277,
+      "cue": "Twelve Golden Plates"
+    },
+    {
+      "image": "sleeping_beauty_05.jpg",
+      "start": 85.526,
+      "cue": "The Twelfth Gift"
+    },
+    {
+      "image": "sleeping_beauty_06.jpg",
+      "start": 121.183,
+      "cue": "The Spindles Burn"
+    },
+    {
+      "image": "sleeping_beauty_07.jpg",
+      "start": 131.045,
+      "cue": "Rosamond Grows Up"
+    },
+    {
+      "image": "sleeping_beauty_08.jpg",
+      "start": 144.025,
+      "cue": "The Old Tower"
+    },
+    {
+      "image": "sleeping_beauty_09.jpg",
+      "start": 178.014,
+      "cue": "The Deep Sleep"
+    },
+    {
+      "image": "sleeping_beauty_10.jpg",
+      "start": 207.318,
+      "cue": "The Animals Sleep"
+    },
+    {
+      "image": "sleeping_beauty_11.jpg",
+      "start": 228.888,
+      "cue": "The Thorn Hedge"
+    },
+    {
+      "image": "sleeping_beauty_12.jpg",
+      "start": 240.564,
+      "cue": "The Rumour"
+    },
+    {
+      "image": "sleeping_beauty_13.jpg",
+      "start": 261.936,
+      "cue": "The Old Man’s Tale"
+    },
+    {
+      "image": "sleeping_beauty_14.jpg",
+      "start": 303.03,
+      "cue": "The Flowers Part"
+    },
+    {
+      "image": "sleeping_beauty_15.jpg",
+      "start": 326.992,
+      "cue": "The Sleeping Courtyard"
+    },
+    {
+      "image": "sleeping_beauty_16.jpg",
+      "start": 337.399,
+      "cue": "The Kitchen Asleep"
+    },
+    {
+      "image": "sleeping_beauty_17.jpg",
+      "start": 358.46,
+      "cue": "The Tower Room"
+    },
+    {
+      "image": "sleeping_beauty_18.jpg",
+      "start": 379.359,
+      "cue": "The Waking and the Wedding"
+    }
+  ]
+}

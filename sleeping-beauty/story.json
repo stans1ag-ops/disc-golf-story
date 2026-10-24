@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "id": "sleeping-beauty",
+  "title": "Sleeping Beauty",
+  "collection": "classics",
+  "order": 999,
+  "description": "“In the fifteenth year…” — a spindle, a hundred years’ sleep, and a hedge that blooms for one prince.",
+  "subtitle": "A Brothers Grimm tale • A bedtime story about a wished-for princess, thirteen wise women, a hedge of thorns, and a hundred years’ sleep.",
+  "readingLevel": "Read together",
+  "edition": "Illustrated classic",
+  "sourceUrl": "https://seiyaku.com/lit/grimm/en/050.html",
+  "addedAt": "2026-10-24T17:24:20.458971+00:00",
+  "cover": {
+    "src": "sleeping-beauty/sleeping_beauty_18.jpg",
+    "alt": "The prince and princess stand hand in hand at their wedding before the smiling king and queen and cheering court."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Wish",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In times past there lived a king and queen who said to each other every day of their lives, “Would that we had a child!” and yet they had none. But it happened once that when the queen was bathing, a frog came out of the water, squatted on the ground, and said to her, “Thy wish shall be fulfilled; before a year has gone by, thou shalt bring a daughter into the world.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">The frog</div>\n        <div class=\"chant-text\">Thy wish shall be fulfilled; before a year has gone by, thou shalt bring a daughter into the world.</div>"
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_01.jpg",
+          "alt": "The king and queen by the garden pond, listening in wonder to a small green frog.",
+          "caption": "A wish at last: the frog promises the king and queen a daughter within the year.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "A Daughter Is Born",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And as the frog foretold, so it happened, and the queen bore a daughter so beautiful that the king could not contain himself for joy, and he ordained a great feast. Not only did he bid to it his relations, friends, and acquaintances, but also the wise women, that they might be kind and favourable to the child."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_02.jpg",
+          "alt": "The king and queen present their beautiful baby daughter in a golden cradle at a joyful feast.",
+          "caption": "Rosamond is born, and the king ordains a great feast.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 30.327
+    },
+    {
+      "id": "scene-3",
+      "title": "The Wise Women’s Gifts",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The feast was celebrated with all splendour, and as it drew to an end, the wise women stood forward to present to the child their wonderful gifts: one bestowed virtue, one beauty, a third riches, and so on, whatever there is in the world to wish for."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_03.jpg",
+          "alt": "Twelve wise women in colorful gowns gather around the baby’s cradle, each bestowing a gift.",
+          "caption": "Virtue, beauty, riches: the wise women bless the baby.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 51.316
+    },
+    {
+      "id": "scene-4",
+      "title": "Twelve Golden Plates",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "There were thirteen wise women in his kingdom, but as the king had only provided twelve golden plates for them to eat from, one of them had to be left out. And when eleven of them had said their say, the feast hall fell quiet, for everyone felt that something was missing."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_04.jpg",
+          "alt": "A steward counts twelve shining golden plates on the banquet table while the king looks on thoughtfully.",
+          "caption": "Thirteen wise women, but only twelve golden plates.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 68.277
+    },
+    {
+      "id": "scene-5",
+      "title": "The Twelfth Gift",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then in came the uninvited thirteenth, burning to revenge herself, and without greeting or respect she cried with a loud voice, “In the fifteenth year of her age the princess shall prick herself with a spindle and shall fall down dead.” Everyone was terrified, when the twelfth came forward, for she had not yet bestowed her gift, and though she could not do away with the evil prophecy, yet she could soften it, so she said, “The princess shall not die, but fall into a deep sleep for a hundred years.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">The twelfth wise woman</div>\n        <div class=\"chant-text\">The princess shall not die, but fall into a deep sleep for a hundred years.</div>"
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_05.jpg",
+          "alt": "A kind wise woman in blue steps forward beside the cradle, raising a hand in gentle blessing.",
+          "caption": "The curse is spoken, and the twelfth gift softens it to a hundred years’ sleep.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 85.526
+    },
+    {
+      "id": "scene-6",
+      "title": "The Spindles Burn",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now the king, being desirous of saving his child even from this misfortune, gave commandment that all the spindles in his kingdom should be burnt up."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_06.jpg",
+          "alt": "Servants carry bundles of wooden spindles to a bonfire in the castle courtyard while the king watches.",
+          "caption": "Every spindle in the kingdom is burnt.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 121.183
+    },
+    {
+      "id": "scene-7",
+      "title": "Rosamond Grows Up",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As the years passed, the maiden grew up, adorned with all the gifts of the wise women, and she was so lovely, modest, sweet, and kind and clever, that no one who saw her could help loving her."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_07.jpg",
+          "alt": "The young princess walks smiling through the castle rose garden, a book in her hand, butterflies around her.",
+          "caption": "Lovely, modest, sweet, kind, and clever: Rosamond grows up.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 131.045
+    },
+    {
+      "id": "scene-8",
+      "title": "The Old Tower",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It happened one day, she being already fifteen years old, that the king and queen rode abroad, and the maiden was left behind alone in the castle. She wandered about into all the nooks and corners, and into all the chambers and parlours, as the fancy took her, till at last she came to an old tower. She climbed the narrow winding stair which led to a little door, with a rusty key sticking out of the lock; she turned the key, and the door opened, and there in the little room sat an old woman with a spindle, diligently spinning her flax."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_08.jpg",
+          "alt": "The princess climbs a winding stone stair toward a little wooden door with a rusty key.",
+          "caption": "Alone in the castle, Rosamond finds the old tower.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 144.025
+    },
+    {
+      "id": "scene-9",
+      "title": "The Deep Sleep",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "“Good day, mother,” said the princess, “what are you doing?” “I am spinning,” answered the old woman, nodding her head. “What thing is that that twists round so briskly?” asked the maiden, and taking the spindle into her hand she began to spin; but no sooner had she touched it than the evil prophecy was fulfilled, and she pricked her finger with it. In that very moment she fell back upon the bed that stood there, and lay in a deep sleep."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">Rosamond</div>\n        <div class=\"chant-text\">Good day, mother, what are you doing?</div>"
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_09.jpg",
+          "alt": "The princess lies peacefully asleep on a small bed, a wooden spindle resting beside her, as the old woman looks on.",
+          "caption": "One touch of the spindle, and Rosamond falls into her deep sleep.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 178.014
+    },
+    {
+      "id": "scene-10",
+      "title": "The Animals Sleep",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And this sleep fell upon the whole castle. The horses in their stalls, the dogs in the yard, the pigeons on the roof, the flies on the wall, the very fire that flickered on the hearth, became still, and slept like the rest; and the meat on the spit ceased roasting. And the wind ceased, and not a leaf fell from the trees about the castle."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_10.jpg",
+          "alt": "Horses doze in their stalls, a brindled dog sleeps in the yard, and pigeons rest on the stable roof.",
+          "caption": "The sleep falls on the whole castle, even the animals.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 207.318
+    },
+    {
+      "id": "scene-11",
+      "title": "The Thorn Hedge",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then round about that place there grew a hedge of thorns thicker every year, until at last the whole castle was hidden from view, and nothing of it could be seen but the vane on the roof."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_11.jpg",
+          "alt": "A huge hedge of dark thorns and roses hides the castle, with only the golden roof vane showing above it.",
+          "caption": "Year by year, the thorn hedge grows until it hides the castle.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 228.888
+    },
+    {
+      "id": "scene-12",
+      "title": "The Rumour",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And a rumour went abroad in all that country of the beautiful sleeping Rosamond, for so was the princess called; and from time to time many kings’ sons came and tried to force their way through the hedge; but it was impossible for them to do so, for the thorns held fast together like strong hands, and the young men could not get free."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_12.jpg",
+          "alt": "A young prince on horseback gazes up at the towering wall of thorns, which holds fast and closed.",
+          "caption": "Princes come to try the hedge, but the thorns hold fast.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 240.564
+    },
+    {
+      "id": "scene-13",
+      "title": "The Old Man’s Tale",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Many a long year afterwards there came a king’s son into that country, and heard an old man tell how there should be a castle standing behind the hedge of thorns, and that there a beautiful enchanted princess named Rosamond had slept for a hundred years, and with her the king and queen, and the whole court. The old man had been told by his grandfather that many king’s sons had sought to pass the thorn-hedge, but had been caught and pierced by the thorns. Then said the young man, “Nevertheless, I do not fear to try; I shall win through and see the lovely Rosamond.”"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">The young prince</div>\n        <div class=\"chant-text\">Nevertheless, I do not fear to try; I shall win through and see the lovely Rosamond.</div>"
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_13.jpg",
+          "alt": "A white-bearded old man tells the tale by a village fire while the young prince listens eagerly.",
+          "caption": "An old man tells the prince of the sleeping princess.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 261.936
+    },
+    {
+      "id": "scene-14",
+      "title": "The Flowers Part",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The good old man tried to dissuade him, but he would not listen to his words. For now the hundred years were at an end, and the day had come when Rosamond should be awakened. When the prince drew near the hedge of thorns, it was changed into a hedge of beautiful large flowers, which parted and bent aside to let him pass, and then closed behind him in a thick hedge."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_14.jpg",
+          "alt": "The prince walks through a hedge turned to beautiful large pink and red flowers, bending aside to let him pass.",
+          "caption": "The hundred years are at an end, and the thorns turn to flowers.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 303.03
+    },
+    {
+      "id": "scene-15",
+      "title": "The Sleeping Courtyard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When he reached the castle-yard, he saw the horses and brindled hunting-dogs lying asleep, and on the roof the pigeons were sitting with their heads under their wings."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_15.jpg",
+          "alt": "The prince steps quietly into the courtyard, where horses, brindled hounds, and pigeons all lie asleep.",
+          "caption": "Inside at last: the courtyard lies asleep.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 326.992
+    },
+    {
+      "id": "scene-16",
+      "title": "The Kitchen Asleep",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And when he came indoors, the flies on the wall were asleep, the cook in the kitchen had his hand uplifted to strike the scullion, and the kitchen-maid had the black fowl on her lap ready to pluck. Then he mounted higher, and saw in the hall the whole court lying asleep, and above them, on their thrones, slept the king and the queen."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_16.jpg",
+          "alt": "The cook dozes in his chair and the kitchen maid sleeps with a black fowl on her lap, a joint roasting over a low fire.",
+          "caption": "The kitchen sleeps, and above it the whole court on their thrones.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 337.399
+    },
+    {
+      "id": "scene-17",
+      "title": "The Tower Room",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And still he went farther, and all was so quiet that he could hear his own breathing; and at last he came to the tower, and went up the winding stair, and opened the door of the little room where Rosamond lay. And when he saw her looking so lovely in her sleep, he could not turn away his eyes; and presently he stooped and kissed her."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_17.jpg",
+          "alt": "The prince kneels beside the bed in the quiet tower room, gazing in wonder at the sleeping princess.",
+          "caption": "Up the winding stair, at last, to where Rosamond lies.",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "start": 358.46
+    },
+    {
+      "id": "scene-18",
+      "title": "The Waking and the Wedding",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And she awaked, and opened her eyes, and looked very kindly on him. And she rose, and they went forth together, and the king and the queen and whole court waked up, and gazed on each other with great eyes of wonderment. And the horses in the yard got up and shook themselves, the hounds sprang up and wagged their tails, the pigeons on the roof drew their heads from under their wings, looked round, and flew into the field, the flies on the wall crept on a little farther, the kitchen fire leapt up and blazed, and cooked the meat, the joint on the spit began to roast, the cook gave the scullion such a box on the ear that he roared out, and the maid went on plucking the fowl. Then the wedding of the Prince and Rosamond was held with all splendour, and they lived very happily together until their lives’ end."
+        },
+        {
+          "type": "image",
+          "src": "sleeping-beauty/sleeping_beauty_18.jpg",
+          "alt": "The prince and princess stand hand in hand before the smiling king and queen and cheering court, flowers everywhere.",
+          "caption": "She wakes, the whole castle wakes, and the wedding is held with all splendour.",
+          "width": 2048,
+          "height": 1152
+        }
+      ],
+      "start": 379.359
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">Why did the hedge of thorns turn to flowers for this prince, and no one else?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌹</span>\n          <strong class=\"choice-card-title\">The Right Time Matters</strong>\n          <span class=\"choice-card-desc\">The hundred years were at an end, and the day had come when Rosamond should be awakened. The hedge was ready to open, and this prince came on exactly the right day.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">👑</span>\n          <strong class=\"choice-card-title\">Courage and a Kind Heart</strong>\n          <span class=\"choice-card-desc\">The old man warned him, but the prince said, “I do not fear to try.” He went bravely and gently, and the flowers bent aside to let him pass.</span>\n        </div>\n      </div>\n      <p class=\"adaptation-note\">A note for grown-ups: in Grimm’s tale the princes caught in the thorns die a lamentable death; this telling says only that the thorns held them fast and they could not get free.</p>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "sleeping-beauty/narration.mp3",
+    "video": {
+      "src": "sleeping-beauty/story-video.mp4",
+      "poster": "sleeping-beauty/story-video-poster.jpg"
+    },
+    "captions": "sleeping-beauty/narration.vtt",
+    "duration": 428.60225,
+    "narrationInputHash": "4ff2c0cd09f23f34421b872e7b7de402ef9ca2bec600a45f2fa0f581f985717b",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration",
+    "videoNarrationHash": "4ff2c0cd09f23f34421b872e7b7de402ef9ca2bec600a45f2fa0f581f985717b",
+    "videoVisualHash": "a253617c38579c37deba225291f70d3b3a8aa7628768c0f2ae17073bb900e554"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook art on cream paper with fine pencil details",
+    "referenceImages": [
+      "sleeping-beauty/references/princess_ref.jpg",
+      "sleeping-beauty/references/wise_woman_ref.jpg",
+      "sleeping-beauty/references/prince_ref.jpg",
+      "sleeping-beauty/references/castle_ref.jpg"
+    ]
+  }
+}
