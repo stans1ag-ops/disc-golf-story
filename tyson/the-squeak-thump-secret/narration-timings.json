@@ -1,0 +1,72 @@
+{
+  "audio": "narration.mp3",
+  "duration": 63.627667,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "page-01.webp",
+      "start": 0.0,
+      "cue": "Page 1 — The Forbidden Toy"
+    },
+    {
+      "image": "page-02.webp",
+      "start": 11.979,
+      "cue": "Page 2 — One Little Squeak"
+    },
+    {
+      "image": "page-03.webp",
+      "start": 15.851,
+      "cue": "Page 3 — Under the Cushions"
+    },
+    {
+      "image": "page-04.webp",
+      "start": 23.461,
+      "cue": "Page 4 — The First Squeak-Thump"
+    },
+    {
+      "image": "page-05.webp",
+      "start": 29.82,
+      "cue": "Page 5 — Dad Comes Home"
+    },
+    {
+      "image": "page-06.webp",
+      "start": 34.118,
+      "cue": "Page 6 — Mom Hears Nothing"
+    },
+    {
+      "image": "page-07.webp",
+      "start": 39.69,
+      "cue": "Page 7 — LOUDER AND LOUDER!"
+    },
+    {
+      "image": "page-08.webp",
+      "start": 42.099,
+      "cue": "Page 8 — Flip-O-Rama A: SQUEAK!"
+    },
+    {
+      "image": "page-09.webp",
+      "start": 44.476,
+      "cue": "Page 9 — Flip-O-Rama B: THUMP!"
+    },
+    {
+      "image": "page-10.webp",
+      "start": 46.852,
+      "cue": "Page 10 — The Confession"
+    },
+    {
+      "image": "page-11.webp",
+      "start": 54.056,
+      "cue": "Page 11 — Just a Toy"
+    },
+    {
+      "image": "page-12.webp",
+      "start": 58.912,
+      "cue": "Page 12 — It Was My Tummy!"
+    }
+  ]
+}

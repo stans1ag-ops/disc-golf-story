@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "tyson/the-squeak-thump-secret",
+  "title": "Tyson and the Squeak-Thump Secret",
+  "collection": "tyson",
+  "order": 9,
+  "description": "He broke the forbidden squeaky duck and hid it under the couch. But something keeps going SQUEAK-THUMP...",
+  "subtitle": "A comic mystery about a broken squeaky duck, a guilty conscience, and a very loud tummy. Inspired by “The Tell-Tale Heart,” retold as a silly comic.",
+  "readingLevel": "Early reader",
+  "edition": "Family original — comic edition",
+  "sourceUrl": "",
+  "addedAt": "2026-10-24T17:40:00Z",
+  "cover": {
+    "src": "tyson/the-squeak-thump-secret/page-01.webp",
+    "alt": "Comic cover page: Mom holds up a big yellow rubber duck toy and lays down the rule — the duck stays outside — while Tyson promises with his fingers crossed behind his back."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Page 1 — The Forbidden Toy",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-01.webp",
+          "alt": "Comic page 1 of 12: Mom holds up a big yellow rubber duck toy and lays down the rule while Tyson promises with his fingers crossed behind his back.",
+          "caption": "Page 1 of 12 — The Forbidden Toy",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Mom:</span> &ldquo;THAT TOY STAYS OUTSIDE.&rdquo;<br>\n        <span class=\"sound-label\">SQUEAK!</span><br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;TOO LOUD FOR INSIDE.&rdquo;<br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;OUTSIDE ONLY. PROMISE?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;I PROMISE!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;JUST ONE SQUEAK...&rdquo;"
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "Page 2 — One Little Squeak",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-02.webp",
+          "alt": "Comic page 2 of 12: alone in the living room, Tyson squeezes the duck harder and harder until it cracks across the belly and its little white squeaker pops out onto the rug.",
+          "caption": "Page 2 of 12 — One Little Squeak",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;JUST ONE SQUEAK.&rdquo;<br>\n        <span class=\"sound-label\">SQUEAK!</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;HEE-HEE!&rdquo;<br>\n        <span class=\"sound-label\">SQUEEEAK!</span><br>\n        <span class=\"sound-label\">CRACK!</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;UH-OH.&rdquo;"
+        }
+      ],
+      "start": 11.979
+    },
+    {
+      "id": "scene-3",
+      "title": "Page 3 — Under the Cushions",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-03.webp",
+          "alt": "Comic page 3 of 12: Tyson lifts the green couch cushion and hides the broken duck pieces underneath, then pats the cushion flat — just as Shane walks in.",
+          "caption": "Page 3 of 12 — Under the Cushions",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>QUICK! BEFORE ANYONE SEES!</strong><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;NOBODY WILL EVER KNOW.&rdquo;<br>\n        <span class=\"chant-speaker\">Shane:</span> &ldquo;WHAT'S THAT NOISE?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;SHHH!&rdquo;"
+        }
+      ],
+      "start": 15.851
+    },
+    {
+      "id": "scene-4",
+      "title": "Page 4 — The First Squeak-Thump",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-04.webp",
+          "alt": "Comic page 4 of 12: Shane steps into the room, and in the corner of the panel, tiny lettering reads squeak-thump. Tyson freezes, then waves it off.",
+          "caption": "Page 4 of 12 — The First Squeak-Thump",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"sound-label\">squeak-thump.</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;DID IT JUST... MOVE?&rdquo;<br>\n        <span class=\"chant-speaker\">Shane:</span> &ldquo;DID YOU HEAR THAT?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;HEAR WHAT?!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;PHEW!&rdquo;"
+        }
+      ],
+      "start": 23.461
+    },
+    {
+      "id": "scene-5",
+      "title": "Page 5 — Dad Comes Home",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-05.webp",
+          "alt": "Comic page 5 of 12: Dad walks in and the sound is louder now — SQUEAK-THUMP! Tyson blames the dog. The dog looks completely innocent.",
+          "caption": "Page 5 of 12 — Dad Comes Home",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"sound-label\">SQUEAK-THUMP!</span><br>\n        <span class=\"chant-speaker\">Dad:</span> &ldquo;WHAT'S THAT SOUND?&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;THE DOG DID IT!&rdquo;<br>\n        <span class=\"chant-speaker\">Dad:</span> &ldquo;WEIRD.&rdquo;"
+        }
+      ],
+      "start": 29.82
+    },
+    {
+      "id": "scene-6",
+      "title": "Page 6 — Mom Hears Nothing",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-06.webp",
+          "alt": "Comic page 6 of 12, a widescreen split: Mom walks in with groceries while huge SQUEAK-THUMP lettering fills the panel and Tyson kneels with his hands over his ears — but Mom hears nothing at all.",
+          "caption": "Page 6 of 12 — Mom Hears Nothing",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"sound-label\">SQUEAK-THUMP! SQUEAK-THUMP!</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;IT'S SO LOUD!&rdquo;<br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;I DON'T HEAR ANYTHING.&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;BUT... BUT...&rdquo;"
+        }
+      ],
+      "start": 34.118
+    },
+    {
+      "id": "scene-7",
+      "title": "Page 7 — LOUDER AND LOUDER!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-07.webp",
+          "alt": "Comic page 7 of 12, a full-page splash: giant SQUEAK-THUMP lettering fills the whole room while the entire family stares at Tyson, who wails with his hands clamped over his ears, and the duck peeks out from under the lifted couch cushion.",
+          "caption": "Page 7 of 12 — LOUDER AND LOUDER!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"sound-label\">SQUEAK-THUMP! SQUEAK-THUMP! SQUEAK-THUMP!</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;MAKE IT STOP!&rdquo;"
+        }
+      ],
+      "start": 39.69
+    },
+    {
+      "id": "scene-8",
+      "title": "Page 8 — Flip-O-Rama A: SQUEAK!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-08.webp",
+          "alt": "Comic page 8 of 12, Flip-O-Rama frame A: the living room — green couch on the left, lake window behind — Tyson center clutching his head while the family stares, and one giant word fills the frame: SQUEAK!",
+          "caption": "Page 8 of 12 — Flip-O-Rama A: SQUEAK!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;IT WON'T STOP!&rdquo;<br>\n        <span class=\"sound-label\">SQUEAK!</span>"
+        }
+      ],
+      "start": 42.099
+    },
+    {
+      "id": "scene-9",
+      "title": "Page 9 — Flip-O-Rama B: THUMP!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-09.webp",
+          "alt": "Comic page 9 of 12, Flip-O-Rama frame B: the exact same living room, the exact same pose — but now the giant word is THUMP! Flip the two frames fast and it beats like a heart: SQUEAK! THUMP!",
+          "caption": "Page 9 of 12 — Flip-O-Rama B: THUMP!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;IT WON'T STOP!&rdquo;<br>\n        <span class=\"sound-label\">THUMP!</span>"
+        }
+      ],
+      "start": 44.476
+    },
+    {
+      "id": "scene-10",
+      "title": "Page 10 — The Confession",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-10.webp",
+          "alt": "Comic page 10 of 12: Tyson stands on the couch cushion and dramatically confesses, then lifts the cushion to reveal the broken yellow duck and its white squeaker underneath.",
+          "caption": "Page 10 of 12 — The Confession",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;I CONFESS!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;I BROKE THE DUCK!&rdquo;<br>\n        <span class=\"chant-speaker\">Family:</span> &ldquo;GASP!&rdquo;<br>\n        <span class=\"chant-speaker\">Mom:</span> &ldquo;TYSON... THANK YOU FOR TELLING US.&rdquo;"
+        }
+      ],
+      "start": 46.852
+    },
+    {
+      "id": "scene-11",
+      "title": "Page 11 — Just a Toy",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-11.webp",
+          "alt": "Comic page 11 of 12: Mom laughs — it's just a toy! Dad tapes the duck's belly crack, Shane hugs the taped-up duck, and Tyson sighs with relief. Then his tummy makes a small sound.",
+          "caption": "Page 11 of 12 — Just a Toy",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Mom:</span> &ldquo;IT'S JUST A TOY, SILLY!&rdquo;<br>\n        <span class=\"chant-speaker\">Dad:</span> &ldquo;ALL FIXED!&rdquo;<br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;PHEW!&rdquo;<br>\n        <span class=\"sound-label\">grrr...</span><br>\n        <span class=\"chant-speaker\">Tyson:</span> &ldquo;HUH?&rdquo;"
+        }
+      ],
+      "start": 54.056
+    },
+    {
+      "id": "scene-12",
+      "title": "Page 12 — It Was My Tummy!",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "tyson/the-squeak-thump-secret/page-12.webp",
+          "alt": "Comic page 12 of 12: at snack time, Tyson realizes the truth — his tummy was the noise all along. The final panel is a close-up of his rumbling tummy with its own tiny speech bubble, while the family laughs and the taped-up duck sits on the table.",
+          "caption": "Page 12 of 12 — It Was My Tummy!",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "type": "paragraph",
+          "html": "<span class=\"chant-speaker\">Tyson:</span> &ldquo;MY TUMMY WAS THE NOISE!&rdquo;<br>\n        <span class=\"sound-label\">GRRRROWL!</span><br>\n        <span class=\"chant-speaker\">Tummy:</span> &ldquo;IT WAS ME ALL ALONG!&rdquo;"
+        }
+      ],
+      "start": 58.912
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">Have you ever felt guilty about a little accident — and did telling the truth make it feel smaller?</h2>\n\n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🛋️</span>\n          <strong class=\"choice-card-title\">Guilt Makes Sounds Louder</strong>\n          <span class=\"choice-card-desc\">Nobody else heard the SQUEAK-THUMP at all! When Tyson felt guilty, a tiny worry sounded like a giant noise. Feelings can turn up the volume.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">💛</span>\n          <strong class=\"choice-card-title\">Confessing Feels Like Relief</strong>\n          <span class=\"choice-card-desc\">The scariest part was hiding it. Once Tyson confessed, Mom just laughed, Dad fixed the duck, and the whole family had a snack. Telling the truth fixed everything.</span>\n        </div>\n      </div>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "tyson/the-squeak-thump-secret/narration.mp3",
+    "video": null,
+    "captions": "tyson/the-squeak-thump-secret/narration.vtt",
+    "duration": 63.627667,
+    "narrationInputHash": "d178e766e08db445079fa6ce46c88c9338a41604ed16b0c16672509fe619748a",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration"
+  },
+  "artDirection": {
+    "style": "Dav Pilkey Dog Man graphic-novel comic style: thick wobbly hand-drawn black felt-tip ink outlines, flat gouache and crayon color fills, off-white paper texture. Each scene is one full comic page with dynamic layouts (grids, 3-panel pages, a widescreen split, a full-page splash, and a two-frame Flip-O-Rama heartbeat). Wardrobe lock: only Tyson wears the blue-and-white checkered shirt; Shane solid green tee; Dad brown sweater; Mom purple top. The squeaky duck is big, bright yellow, orange beak, tiny red bow tie.",
+    "referenceImages": [
+      "tyson/the-squeak-thump-secret/references/tyson-character-sheet.jpg",
+      "tyson/the-squeak-thump-secret/references/cast_ref_sheet.jpg",
+      "tyson/the-squeak-thump-secret/references/setting_sheet.jpg"
+    ]
+  }
+}
