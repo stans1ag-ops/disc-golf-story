@@ -2,9 +2,9 @@ const {test,expect}=require('@playwright/test');
 const fs=require('node:fs'),path=require('node:path');
 const catalog=require('../../stories.json');
 test('catalog search, empty state, reset, and favorites work',async({page})=>{
- await page.goto('/');await expect(page.locator('[data-card-id]')).toHaveCount(33);
+ await page.goto('/');await expect(page.locator('[data-card-id]')).toHaveCount(catalog.stories.length);
  await page.getByRole('searchbox').fill('gingerbread');await expect(page.locator('[data-card-id]:visible')).toHaveCount(1);await expect(page.locator('[data-card-id]:visible h3')).toHaveText('The Gingerbread Man');
- await page.getByRole('searchbox').fill('no such story xyz');await expect(page.getByRole('heading',{name:'No stories found'})).toBeVisible();await page.getByRole('button',{name:'Show all stories'}).click();await expect(page.locator('[data-card-id]:visible')).toHaveCount(33);
+ await page.getByRole('searchbox').fill('no such story xyz');await expect(page.getByRole('heading',{name:'No stories found'})).toBeVisible();await page.getByRole('button',{name:'Show all stories'}).click();await expect(page.locator('[data-card-id]:visible')).toHaveCount(catalog.stories.length);
  const favorite=page.locator('[data-card-id="tyson/pikachus-lost-ball"] [data-favorite]');await favorite.click();await page.locator('#favorites-filter').click();await expect(page.locator('[data-card-id]:visible')).toHaveCount(1);await page.reload();await page.locator('#favorites-filter').click();await expect(page.locator('[data-card-id]:visible')).toHaveCount(1);
 });
 test('duration and media filters use the actual story metadata',async({page})=>{
@@ -31,7 +31,7 @@ test('every story renders with its scenes, images, and no horizontal overflow',a
  expect(errors).toEqual([]);
 });
 test('legacy route redirects and collection pages stay usable without JavaScript',async({browser,request})=>{
- const res=await request.get('/the-houghton-lake-patrol/',{maxRedirects:0});expect(res.status()).toBe(308);expect(res.headers().location).toBe('/the-fish-that-pulled-back/');const ctx=await browser.newContext({javaScriptEnabled:false});const p=await ctx.newPage();await p.goto('http://127.0.0.1:4173/tyson/');await expect(p.locator('[data-card-id]')).toHaveCount(7);await p.getByRole('heading',{name:'Tyson and Pikachu’s Lost Ball'}).getByRole('link').click();await expect(p.locator('.story-scene')).toHaveCount(4);await ctx.close();
+ const res=await request.get('/the-houghton-lake-patrol/',{maxRedirects:0});expect(res.status()).toBe(308);expect(res.headers().location).toBe('/the-fish-that-pulled-back/');const ctx=await browser.newContext({javaScriptEnabled:false});const p=await ctx.newPage();await p.goto('http://127.0.0.1:4173/tyson/');await expect(p.locator('[data-card-id]')).toHaveCount(catalog.stories.filter((s)=>s.startsWith('tyson/')).length);await p.getByRole('heading',{name:'Tyson and Pikachu’s Lost Ball'}).getByRole('link').click();await expect(p.locator('.story-scene')).toHaveCount(4);await ctx.close();
 });
 test('capture representative layouts',async({page},info)=>{
  for(const [url,name] of [['/','library'],['/steadfast-tin-soldier/','classic'],['/tyson/pikachus-lost-ball/','early-reader']]){await page.goto(url);await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:info.outputPath(name+'.png'),fullPage:false});}
