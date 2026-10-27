@@ -1,0 +1,87 @@
+{
+  "audio": "narration.mp3",
+  "duration": 952.205917,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "scene-01.jpg",
+      "start": 0.0,
+      "cue": "The Wish at the Ebony Window"
+    },
+    {
+      "image": "scene-02.jpg",
+      "start": 44.009,
+      "cue": "The Queen and the Magic Looking-Glass"
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 100.774,
+      "cue": "Mercy in the Deep Woods"
+    },
+    {
+      "image": "scene-04.jpg",
+      "start": 158.972,
+      "cue": "Flight Through the Seven Mountains"
+    },
+    {
+      "image": "scene-05.jpg",
+      "start": 186.517,
+      "cue": "The Little Cottage Beyond the Hills"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 233.817,
+      "cue": "Seven Lanterns Round the Seventh Bed"
+    },
+    {
+      "image": "scene-07.jpg",
+      "start": 315.844,
+      "cue": "Morning Covenant at the Cottage Door"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 378.641,
+      "cue": "The First Temptation: The Silk Stay-Laces"
+    },
+    {
+      "image": "scene-09.jpg",
+      "start": 504.383,
+      "cue": "The Second Temptation: The Poisoned Comb"
+    },
+    {
+      "image": "scene-10.jpg",
+      "start": 615.399,
+      "cue": "Brewing the Two-Toned Apple"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 668.692,
+      "cue": "The Third Temptation: The Halved Apple"
+    },
+    {
+      "image": "scene-12.jpg",
+      "start": 746.834,
+      "cue": "Vigil by the Glass Coffin"
+    },
+    {
+      "image": "scene-13.jpg",
+      "start": 821.613,
+      "cue": "The Prince's Plea on the Mountain"
+    },
+    {
+      "image": "scene-14.jpg",
+      "start": 868.996,
+      "cue": "The Stumble on the Mountain Path"
+    },
+    {
+      "image": "scene-15.jpg",
+      "start": 904.014,
+      "cue": "The Royal Wedding & the Final Reckoning"
+    }
+  ]
+}
