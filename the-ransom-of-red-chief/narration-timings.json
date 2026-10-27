@@ -1,0 +1,137 @@
+{
+  "audio": "narration.mp3",
+  "duration": 1417.670333,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "scene-01.jpg",
+      "start": 0.0,
+      "cue": "A Good-Looking Scheme"
+    },
+    {
+      "image": "scene-02.jpg",
+      "start": 77.365,
+      "cue": "The Victim Is Chosen"
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 110.044,
+      "cue": "The Cave in the Cedar Brake"
+    },
+    {
+      "image": "scene-04.jpg",
+      "start": 130.364,
+      "cue": "A Bag of Candy and a Nice Ride"
+    },
+    {
+      "image": "scene-05.jpg",
+      "start": 145.994,
+      "cue": "A Fight Like a Cinnamon Bear"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 166.312,
+      "cue": "Red Chief's Camp"
+    },
+    {
+      "image": "scene-07.jpg",
+      "start": 234.098,
+      "cue": "The During-Dinner Speech"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 294.794,
+      "cue": "Hist! Pard"
+    },
+    {
+      "image": "scene-09.jpg",
+      "start": 374.07,
+      "cue": "Daybreak"
+    },
+    {
+      "image": "scene-10.jpg",
+      "start": 452.708,
+      "cue": "A Pain in My Shoulder"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 491.851,
+      "cue": "The Peaceful Valley"
+    },
+    {
+      "image": "scene-12.jpg",
+      "start": 544.02,
+      "cue": "Breakfast Trouble"
+    },
+    {
+      "image": "scene-13.jpg",
+      "start": 577.663,
+      "cue": "The Sling"
+    },
+    {
+      "image": "scene-14.jpg",
+      "start": 620.363,
+      "cue": "A War-Whoop"
+    },
+    {
+      "image": "scene-15.jpg",
+      "start": 656.969,
+      "cue": "King Herod"
+    },
+    {
+      "image": "scene-16.jpg",
+      "start": 737.887,
+      "cue": "Bill Stands By"
+    },
+    {
+      "image": "scene-17.jpg",
+      "start": 807.032,
+      "cue": "Two Desperate Men"
+    },
+    {
+      "image": "scene-18.jpg",
+      "start": 890.911,
+      "cue": "The Black Scout"
+    },
+    {
+      "image": "scene-19.jpg",
+      "start": 981.642,
+      "cue": "Poplar Cove"
+    },
+    {
+      "image": "scene-20.jpg",
+      "start": 1015.208,
+      "cue": "Bill Wabbles Out"
+    },
+    {
+      "image": "scene-21.jpg",
+      "start": 1088.378,
+      "cue": "What's the Trouble, Bill?"
+    },
+    {
+      "image": "scene-22.jpg",
+      "start": 1197.786,
+      "cue": "Up in the Tree"
+    },
+    {
+      "image": "scene-23.jpg",
+      "start": 1267.993,
+      "cue": "Dorset's Counter-Proposition"
+    },
+    {
+      "image": "scene-24.jpg",
+      "start": 1304.175,
+      "cue": "We'll Take Him Home"
+    },
+    {
+      "image": "scene-25.jpg",
+      "start": 1374.83,
+      "cue": "Ten Minutes"
+    }
+  ]
+}

@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "id": "the-ransom-of-red-chief",
+  "title": "The Ransom of Red Chief",
+  "collection": "short-stories",
+  "order": 999,
+  "description": "Two hapless kidnappers snatch the wrong boy: ten-year-old Johnny Dorset, who would much rather stay in the cave and play Indian than go home. O. Henry's famous comic twist, told exactly as he wrote it.",
+  "subtitle": "An O. Henry tale • Two kidnappers, one very energetic boy, and a ransom that runs the wrong way.",
+  "readingLevel": "Read together",
+  "edition": "Famous short story",
+  "sourceUrl": "https://m.gutenberg.org/ebooks/1595.txt.utf-8",
+  "addedAt": "2026-10-27T18:20:21.550389+00:00",
+  "cover": {
+    "src": "the-ransom-of-red-chief/cover.jpg",
+    "alt": "Johnny, a red-haired boy with two dark feathers in his hair, laughing as he rides on the back of Bill on all fours through the woods."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "A Good-Looking Scheme",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It looked like a good thing: but wait till I tell you. We were down South, in Alabama—Bill Driscoll and myself—when this kidnapping idea struck us. It was, as Bill afterward expressed it, \"during a moment of temporary mental apparition\"; but we didn't find that out till later."
+        },
+        {
+          "type": "paragraph",
+          "html": "There was a town down there, as flat as a flannel-cake, and called Summit, of course. It contained inhabitants of as undeleterious and self-satisfied a class of peasantry as ever clustered around a Maypole."
+        },
+        {
+          "type": "paragraph",
+          "html": "Bill and me had a joint capital of about six hundred dollars, and we needed just two thousand dollars more to pull off a fraudulent town-lot scheme in Western Illinois with. We talked it over on the front steps of the hotel. Philoprogenitiveness, says we, is strong in semi-rural communities; therefore and for other reasons, a kidnapping project ought to do better there than in the radius of newspapers that send reporters out in plain clothes to stir up talk about such things. We knew that Summit couldn't get after us with anything stronger than constables and maybe some lackadaisical bloodhounds and a diatribe or two in the Weekly Farmers' Budget. So, it looked good."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-01.jpg",
+          "alt": "Sam and Bill sitting on the wooden front steps of a small-town hotel, leaning together in cheerful conspiracy over a folded map, flat Alabama main street behind them.",
+          "caption": "Sam and Bill hatch their scheme on the hotel steps in Summit.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Two men sit on the wooden front steps of a small-town hotel, leaning together in cheerful conspiracy over a folded map, a flat Alabama main street with wooden storefronts behind them."
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Victim Is Chosen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "We selected for our victim the only child of a prominent citizen named Ebenezer Dorset. The father was respectable and tight, a mortgage fancier and a stern, upright collection-plate passer and forecloser. The kid was a boy of ten, with bas-relief freckles, and hair the colour of the cover of the magazine you buy at the news-stand when you want to catch a train. Bill and me figured that Ebenezer would melt down for a ransom of two thousand dollars to a cent. But wait till I tell you."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-02.jpg",
+          "alt": "Sam and Bill studying a fine white farmhouse from the street at dusk, a small red-haired boy playing in the yard beyond a fence, Sam pointing thoughtfully.",
+          "caption": "They settle on Ebenezer Dorset's only child.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Two men study a fine white farmhouse from a dusty street at dusk, a small red-haired boy playing in the yard beyond a picket fence, the lean man pointing thoughtfully."
+        }
+      ],
+      "start": 77.365
+    },
+    {
+      "id": "scene-3",
+      "title": "The Cave in the Cedar Brake",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "About two miles from Summit was a little mountain, covered with a dense cedar brake. On the rear elevation of this mountain was a cave. There we stored provisions. One evening after sundown, we drove in a buggy past old Dorset's house. The kid was in the street, throwing rocks at a kitten on the opposite fence."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-03.jpg",
+          "alt": "A cedar-covered mountain slope with a cave mouth, crates and blankets and a coffee pot arranged inside, morning light.",
+          "caption": "Two miles from Summit, a cave stocked with provisions.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. A cedar-covered mountain slope with a cave mouth, wooden crates, folded blankets and a tin coffee pot arranged just inside, soft morning light, no people."
+        }
+      ],
+      "start": 110.044
+    },
+    {
+      "id": "scene-4",
+      "title": "A Bag of Candy and a Nice Ride",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "\"Hey, little boy!\" says Bill, \"would you like to have a bag of candy and a nice ride?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "The boy catches Bill neatly in the eye with a piece of brick."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"That will cost the old man an extra five hundred dollars,\" says Bill, climbing over the wheel."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-04.jpg",
+          "alt": "A horse buggy at sundown on a dusty street, Bill leaning out offering a paper bag of candy with a grin, a red-haired boy laughing in the street.",
+          "caption": "Bill offers candy and a ride — and the price goes up five hundred dollars.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. A horse-drawn buggy at sundown on a dusty street, the heavyset man leaning out offering a paper bag of candy with a grin, a red-haired boy laughing in the street."
+        }
+      ],
+      "start": 130.364
+    },
+    {
+      "id": "scene-5",
+      "title": "A Fight Like a Cinnamon Bear",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "That boy put up a fight like a welter-weight cinnamon bear; but, at last, we got him down in the bottom of the buggy and drove away. We took him up to the cave and I hitched the horse in the cedar brake. After dark I drove the buggy to the little village, three miles away, where we had hired it, and walked back to the mountain."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-05.jpg",
+          "alt": "Inside a buggy, a laughing red-haired boy tumbling playfully among blankets while a heavyset man clutches his bowler hat and the lean driver laughs, dust road behind.",
+          "caption": "The boy puts up a fight like a welter-weight cinnamon bear.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Inside a horse-drawn buggy, a laughing red-haired boy tumbles playfully among blankets while a heavyset man clutches his bowler hat and the lean driver laughs, a dusty road behind them."
+        }
+      ],
+      "start": 145.994
+    },
+    {
+      "id": "scene-6",
+      "title": "Red Chief's Camp",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Bill was pasting court-plaster over the scratches and bruises on his features. There was a fire burning behind the big rock at the entrance of the cave, and the boy was watching a pot of boiling coffee, with two buzzard tail-feathers stuck in his red hair. He points a stick at me when I come up, and says:"
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Ha! cursed paleface, do you dare to enter the camp of Red Chief, the terror of the plains?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"He's all right now,\" says Bill, rolling up his trousers and examining some bruises on his shins. \"We're playing Indian. We're making Buffalo Bill's show look like magic-lantern views of Palestine in the town hall. I'm Old Hank, the Trapper, Red Chief's captive, and I'm to be scalped at daybreak. By Geronimo! that kid can kick hard.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "Yes, sir, that boy seemed to be having the time of his life. The fun of camping out in a cave had made him forget that he was a captive himself. He immediately christened me Snake-eye, the Spy, and announced that, when his braves returned from the warpath, I was to be broiled at the stake at the rising of the sun."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-06.jpg",
+          "alt": "A cave campfire at dusk: a heavyset man dabbing his cheek with court-plaster, a red-haired boy with two feathers in his hair tending a coffee pot over the fire, pointing a stick playfully.",
+          "caption": "Bill patches himself up while Red Chief holds court.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. A cave campfire at dusk: the heavyset man dabbing his cheek with a small plaster, the red-haired boy with two dark feathers in his hair tending a coffee pot over the fire and pointing a stick playfully, blankets and a big rock nearby."
+        }
+      ],
+      "start": 166.312
+    },
+    {
+      "id": "scene-7",
+      "title": "The During-Dinner Speech",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then we had supper; and he filled his mouth full of bacon and bread and gravy, and began to talk. He made a during-dinner speech something like this:"
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I like this fine. I never camped out before; but I had a pet 'possum once, and I was nine last birthday. I hate to go to school. Rats ate up sixteen of Jimmy Talbot's aunt's speckled hen's eggs. Are there any real Indians in these woods? I want some more gravy. Does the trees moving make the wind blow? We had five puppies. What makes your nose so red, Hank? My father has lots of money. Are the stars hot? I whipped Ed Walker twice, Saturday. I don't like girls. You dassent catch toads unless with a string. Do oxen make any noise? Why are oranges round? Have you got beds to sleep on in this cave? Amos Murray has got six toes. A parrot can talk, but a monkey or a fish can't. How many does it take to make twelve?\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-07.jpg",
+          "alt": "Supper at the cave campfire: a red-haired boy mid-chatter with a full mouth, bacon and bread and gravy on tin plates, two men listening with weary amusement.",
+          "caption": "Supper, and a speech with a mouth full of bacon and gravy.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Supper at a cave campfire: the red-haired boy mid-chatter with a full mouth, bacon and bread and gravy on tin plates, the two men listening with weary amusement, firelight glow."
+        }
+      ],
+      "start": 234.098
+    },
+    {
+      "id": "scene-8",
+      "title": "Hist! Pard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Every few minutes he would remember that he was a pesky redskin, and pick up his stick rifle and tiptoe to the mouth of the cave to rubber for the scouts of the hated paleface. Now and then he would let out a war-whoop that made Old Hank the Trapper shiver. That boy had Bill terrorized from the start."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Red Chief,\" says I to the kid, \"would you like to go home?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Aw, what for?\" says he. \"I don't have any fun at home. I hate to go to school. I like to camp out. You won't take me back home again, Snake-eye, will you?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Not right away,\" says I. \"We'll stay here in the cave a while.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"All right!\" says he. \"That'll be fine. I never had such fun in all my life.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "We went to bed about eleven o'clock. We spread down some wide blankets and quilts and put Red Chief between us. We weren't afraid he'd run away. He kept us awake for three hours, jumping up and reaching for his rifle and screeching: \"Hist! pard,\" in mine and Bill's ears, as the fancied crackle of a twig or the rustle of a leaf revealed to his young imagination the stealthy approach of the outlaw band. At last, I fell into a troubled sleep, and dreamed that I had been kidnapped and chained to a tree by a ferocious pirate with red hair."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-08.jpg",
+          "alt": "Night in a cave: two men asleep in blankets by a dying campfire, a small red-haired boy sitting up between them whispering with a hand cupped to his mouth, moonlight at the cave mouth.",
+          "caption": "Three hours of “Hist! pard” and fancied outlaws.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Characters: Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Scene: night in a cave, two men asleep in blankets by a dying campfire, the small boy sitting up between them whispering with a hand cupped to his mouth, moonlight at the cave mouth. Cozy and playful, no weapons, no one frightened. Keep all three characters' faces, hats, feathers and clothing exactly as in the reference images."
+        }
+      ],
+      "start": 294.794
+    },
+    {
+      "id": "scene-9",
+      "title": "Daybreak",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Just at daybreak, I was awakened by a series of awful screams from Bill. They weren't yells, or howls, or shouts, or whoops, or yawps, such as you'd expect from a manly set of vocal organs—they were simply indecent, terrifying, humiliating screams, such as women emit when they see ghosts or caterpillars. It's an awful thing to hear a strong, desperate, fat man scream incontinently in a cave at daybreak."
+        },
+        {
+          "type": "paragraph",
+          "html": "I jumped up to see what the matter was. Red Chief was sitting on Bill's chest, with one hand twined in Bill's hair. In the other he had the sharp case-knife we used for slicing bacon; and he was industriously and realistically trying to take Bill's scalp, according to the sentence that had been pronounced upon him the evening before."
+        },
+        {
+          "type": "paragraph",
+          "html": "I got the knife away from the kid and made him lie down again. But, from that moment, Bill's spirit was broken. He laid down on his side of the bed, but he never closed an eye again in sleep as long as that boy was with us. I dozed off for a while, but along toward sun-up I remembered that Red Chief had said I was to be burned at the stake at the rising of the sun. I wasn't nervous or afraid; but I sat up and lit my pipe and leaned against a rock."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-09.jpg",
+          "alt": "Early morning in a cave: a heavyset man sitting up in blankets hollow-eyed and exhausted, a small boy sleeping soundly curled up beside him, dawn light at the cave mouth.",
+          "caption": "Bill never closes an eye again.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Early morning in a cave: the heavyset man sits up in blankets hollow-eyed and exhausted, the small red-haired boy sleeping soundly curled up beside him, dawn light at the cave mouth, no weapons."
+        }
+      ],
+      "start": 374.07
+    },
+    {
+      "id": "scene-10",
+      "title": "A Pain in My Shoulder",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "\"What you getting up so soon for, Sam?\" asked Bill."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Me?\" says I. \"Oh, I got a kind of a pain in my shoulder. I thought sitting up would rest it.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"You're a liar!\" says Bill. \"You're afraid. You was to be burned at sunrise, and you was afraid he'd do it. And he would, too, if he could find a match. Ain't it awful, Sam? Do you think anybody will pay out money to get a little imp like that back home?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Sure,\" said I. \"A rowdy kid like that is just the kind that parents dote on. Now, you and the Chief get up and cook breakfast, while I go up on the top of this mountain and reconnoitre.\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-10.jpg",
+          "alt": "Morning campfire at a cave: a lean man lighting a pipe leaning on a rock, a heavyset man sitting miserably wrapped in a blanket, a coffee pot steaming.",
+          "caption": "Neither man slept, and neither will admit why.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Morning campfire at a cave mouth: the lean man lights a pipe leaning against a rock, the heavyset man sits miserably wrapped in a blanket, a tin coffee pot steaming over the fire."
+        }
+      ],
+      "start": 452.708
+    },
+    {
+      "id": "scene-11",
+      "title": "The Peaceful Valley",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "I went up on the peak of the little mountain and ran my eye over the contiguous vicinity. Over toward Summit I expected to see the sturdy yeomanry of the village armed with scythes and pitchforks beating the countryside for the dastardly kidnappers. But what I saw was a peaceful landscape dotted with one man ploughing with a dun mule. Nobody was dragging the creek; no couriers dashed hither and yon, bringing tidings of no news to the distracted parents. There was a sylvan attitude of somnolent sleepiness pervading that section of the external outward surface of Alabama that lay exposed to my view. \"Perhaps,\" says I to myself, \"it has not yet been discovered that the wolves have borne away the tender lambkin from the fold. Heaven help the wolves!\" says I, and I went down the mountain to breakfast."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-11.jpg",
+          "alt": "A peaceful Alabama valley seen from a mountaintop: one farmer ploughing with a dun mule, green fields, a sleepy village in the distance, a lean man in a felt hat looking out.",
+          "caption": "Nobody is beating the countryside for the kidnappers.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. A peaceful Alabama valley seen from a mountaintop: one farmer ploughing with a dun mule, green fields and a sleepy village in the distance, a lean man in a felt hat looking out over the view."
+        }
+      ],
+      "start": 491.851
+    },
+    {
+      "id": "scene-12",
+      "title": "Breakfast Trouble",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When I got to the cave I found Bill backed up against the side of it, breathing hard, and the boy threatening to smash him with a rock half as big as a cocoanut."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"He put a red-hot boiled potato down my back,\" explained Bill, \"and then mashed it with his foot; and I boxed his ears. Have you got a gun about you, Sam?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "I took the rock away from the boy and kind of patched up the argument. \"I'll fix you,\" says the kid to Bill. \"No man ever yet struck the Red Chief but what he got paid for it. You better beware!\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-12.jpg",
+          "alt": "Morning at a cave campfire: a heavyset man rubbing his back with a comical wince, a red-haired boy eating breakfast cheerfully, a lean man returning to camp.",
+          "caption": "A red-hot potato, and a patched-up argument.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Morning at a cave campfire: the heavyset man rubs his back with a comical wince, the red-haired boy eats breakfast cheerfully, the lean man returns to camp over a rocky path."
+        }
+      ],
+      "start": 544.02
+    },
+    {
+      "id": "scene-13",
+      "title": "The Sling",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "After breakfast the kid takes a piece of leather with strings wrapped around it out of his pocket and goes outside the cave unwinding it."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"What's he up to now?\" says Bill, anxiously. \"You don't think he'll run away, do you, Sam?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"No fear of it,\" says I. \"He don't seem to be much of a home body. But we've got to fix up some plan about the ransom. There don't seem to be much excitement around Summit on account of his disappearance; but maybe they haven't realized yet that he's gone. His folks may think he's spending the night with Aunt Jane or one of the neighbours. Anyhow, he'll be missed to-day. To-night we must get a message to his father demanding the two thousand dollars for his return.\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-13.jpg",
+          "alt": "Outside a cave: a red-haired boy unwinding a leather sling with strings, curious and cheerful, a heavyset man peeking anxiously from the cave mouth.",
+          "caption": "The boy unwinds something new from his pocket.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Outside a cave mouth: the red-haired boy unwinds a leather sling with strings, curious and cheerful, the heavyset man peeks anxiously from the cave mouth."
+        }
+      ],
+      "start": 577.663
+    },
+    {
+      "id": "scene-14",
+      "title": "A War-Whoop",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Just then we heard a kind of war-whoop, such as David might have emitted when he knocked out the champion Goliath. It was a sling that Red Chief had pulled out of his pocket, and he was whirling it around his head."
+        },
+        {
+          "type": "paragraph",
+          "html": "I dodged, and heard a heavy thud and a kind of a sigh from Bill, like a horse gives out when you take his saddle off. A hard round rock the size of an egg had caught Bill just behind his left ear. He loosened himself all over and fell in the fire across the frying pan of hot water for washing the dishes. I dragged him out and poured cold water on his head for half an hour."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-14.jpg",
+          "alt": "A sunny forest glade: a red-haired boy whirling a leather sling playfully overhead, a lean man ducking comically in the foreground, a heavyset man watching from a safe distance, no one struck.",
+          "caption": "The sling whirls — and Sam ducks.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. A sunny forest glade: the red-haired boy whirls a leather sling playfully overhead, the lean man ducks comically in the foreground, the heavyset man watches from a safe distance, no one struck, no injury."
+        }
+      ],
+      "start": 620.363
+    },
+    {
+      "id": "scene-15",
+      "title": "King Herod",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "By and by, Bill sits up and feels behind his ear and says: \"Sam, do you know who my favourite Biblical character is?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Take it easy,\" says I. \"You'll come to your senses presently.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"King Herod,\" says he. \"You won't go away and leave me here alone, will you, Sam?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "I went out and caught that boy and shook him until his freckles rattled."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"If you don't behave,\" says I, \"I'll take you straight home. Now, are you going to be good, or not?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I was only funning,\" says he sullenly. \"I didn't mean to hurt Old Hank. But what did he hit me for? I'll behave, Snake-eye, if you won't send me home, and if you'll let me play the Black Scout to-day.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I don't know the game,\" says I. \"That's for you and Mr. Bill to decide. He's your playmate for the day. I'm going away for a while, on business. Now, you come in and make friends with him and say you are sorry for hurting him, or home you go, at once.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "I made him and Bill shake hands, and then I took Bill aside and told him I was going to Poplar Cove, a little village three miles from the cave, and find out what I could about how the kidnapping had been regarded in Summit. Also, I thought it best to send a peremptory letter to old man Dorset that day, demanding the ransom and dictating how it should be paid."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-15.jpg",
+          "alt": "At a cave mouth: a red-haired boy and a heavyset man shaking hands solemnly while a lean man pats the boy's shoulder, morning light.",
+          "caption": "Friends again — on the way to Poplar Cove.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. At a cave mouth in morning light: the red-haired boy and the heavyset man shake hands solemnly while the lean man pats the boy's shoulder."
+        }
+      ],
+      "start": 656.969
+    },
+    {
+      "id": "scene-16",
+      "title": "Bill Stands By",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "\"You know, Sam,\" says Bill, \"I've stood by you without batting an eye in earthquakes, fire and flood—in poker games, dynamite outrages, police raids, train robberies and cyclones. I never lost my nerve yet till we kidnapped that two-legged skyrocket of a kid. He's got me going. You won't leave me long with him, will you, Sam?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I'll be back some time this afternoon,\" says I. \"You must keep the boy amused and quiet till I return. And now we'll write the letter to old Dorset.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "Bill and I got paper and pencil and worked on the letter while Red Chief, with a blanket wrapped around him, strutted up and down, guarding the mouth of the cave. Bill begged me tearfully to make the ransom fifteen hundred dollars instead of two thousand. \"I ain't attempting,\" says he, \"to decry the celebrated moral aspect of parental affection, but we're dealing with humans, and it ain't human for anybody to give up two thousand dollars for that forty-pound chunk of freckled wildcat. I'm willing to take a chance at fifteen hundred dollars. You can charge the difference up to me.\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-16.jpg",
+          "alt": "Morning at a cave: a heavyset man talking earnestly with his hands on his chest, a lean man listening, a red-haired boy playing nearby with a stick.",
+          "caption": "'You won't leave me long with him, will you, Sam?'",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Morning at a cave camp: the heavyset man talks earnestly with his hands on his chest, the lean man listens, the red-haired boy plays nearby with a stick."
+        }
+      ],
+      "start": 737.887
+    },
+    {
+      "id": "scene-17",
+      "title": "Two Desperate Men",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So, to relieve Bill, I acceded, and we collaborated a letter that ran this way:"
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-17.jpg",
+          "alt": "At a cave mouth: two men writing a letter on paper with a pencil on a flat rock, a red-haired boy wrapped in a blanket marching guardedly past, the letter paper showing no readable words.",
+          "caption": "The ransom letter is written: fifteen hundred dollars.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. At a cave mouth: two men write a letter on paper with a pencil on a flat rock, a red-haired boy wrapped in a blanket marches guardedly past, the letter paper shows no readable words."
+        },
+        {
+          "type": "callout",
+          "html": "Ebenezer Dorset, Esq.:"
+        },
+        {
+          "type": "callout",
+          "html": "We have your boy concealed in a place far from Summit. It is useless for you or the most skilful detectives to attempt to find him. Absolutely, the only terms on which you can have him restored to you are these: We demand fifteen hundred dollars in large bills for his return; the money to be left at midnight to-night at the same spot and in the same box as your reply—as hereinafter described. If you agree to these terms, send your answer in writing by a solitary messenger to-night at half-past eight o'clock. After crossing Owl Creek, on the road to Poplar Cove, there are three large trees about a hundred yards apart, close to the fence of the wheat field on the right-hand side. At the bottom of the fence-post, opposite the third tree, will be found a small pasteboard box."
+        },
+        {
+          "type": "callout",
+          "html": "The messenger will place the answer in this box and return immediately to Summit."
+        },
+        {
+          "type": "callout",
+          "html": "If you attempt any treachery or fail to comply with our demand as stated, you will never see your boy again."
+        },
+        {
+          "type": "callout",
+          "html": "If you pay the money as demanded, he will be returned to you safe and well within three hours. These terms are final, and if you do not accede to them no further communication will be attempted."
+        },
+        {
+          "type": "callout",
+          "html": "TWO DESPERATE MEN."
+        }
+      ],
+      "start": 807.032
+    },
+    {
+      "id": "scene-18",
+      "title": "The Black Scout",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "I addressed this letter to Dorset, and put it in my pocket. As I was about to start, the kid comes up to me and says:"
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Aw, Snake-eye, you said I could play the Black Scout while you was gone.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Play it, of course,\" says I. \"Mr. Bill will play with you. What kind of a game is it?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I'm the Black Scout,\" says Red Chief, \"and I have to ride to the stockade to warn the settlers that the Indians are coming. I'm tired of playing Indian myself. I want to be the Black Scout.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"All right,\" says I. \"It sounds harmless to me. I guess Mr. Bill will help you foil the pesky savages.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"What am I to do?\" asks Bill, looking at the kid suspiciously."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"You are the hoss,\" says Black Scout. \"Get down on your hands and knees. How can I ride to the stockade without a hoss?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"You'd better keep him interested,\" said I, \"till we get the scheme going. Loosen up.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "Bill gets down on his all fours, and a look comes in his eye like a rabbit's when you catch it in a trap."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"How far is it to the stockade, kid?\" he asks, in a husky manner of voice."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Ninety miles,\" says the Black Scout. \"And you have to hump yourself to get there on time. Whoa, now!\""
+        },
+        {
+          "type": "paragraph",
+          "html": "The Black Scout jumps on Bill's back and digs his heels in his side."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"For Heaven's sake,\" says Bill, \"hurry back, Sam, as soon as you can. I wish we hadn't made the ransom more than a thousand. Say, you quit kicking me or I'll get up and warm you good.\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-18.jpg",
+          "alt": "A red-haired boy with feathers in his hair laughing as he rides on the back of a heavyset man on all fours through the woods, the man with a long-suffering grin.",
+          "caption": "Ninety miles to the stockade — on Bill.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. A red-haired boy with two dark feathers in his hair laughs as he rides on the back of a heavyset man on all fours through the woods, the man with a long-suffering grin."
+        }
+      ],
+      "start": 890.911
+    },
+    {
+      "id": "scene-19",
+      "title": "Poplar Cove",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "I walked over to Poplar Cove and sat around the postoffice and store, talking with the chawbacons that came in to trade. One whiskerando says that he hears Summit is all upset on account of Elder Ebenezer Dorset's boy having been lost or stolen. That was all I wanted to know. I bought some smoking tobacco, referred casually to the price of black-eyed peas, posted my letter surreptitiously and came away. The postmaster said the mail-carrier would come by in an hour to take the mail on to Summit."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-19.jpg",
+          "alt": "A small country post office and store: a lean man in a felt hat slipping a letter into a mail slot while chatting with whiskered locals, jars and a tobacco display.",
+          "caption": "Sam posts the letter and listens for news of Summit.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. A small country post office and general store: a lean man in a felt hat slips a letter into a mail slot while chatting with whiskered locals, jars and a tobacco display on wooden shelves."
+        }
+      ],
+      "start": 981.642
+    },
+    {
+      "id": "scene-20",
+      "title": "Bill Wabbles Out",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When I got back to the cave Bill and the boy were not to be found. I explored the vicinity of the cave, and risked a yodel or two, but there was no response."
+        },
+        {
+          "type": "paragraph",
+          "html": "So I lighted my pipe and sat down on a mossy bank to await developments."
+        },
+        {
+          "type": "paragraph",
+          "html": "In about half an hour I heard the bushes rustle, and Bill wabbled out into the little glade in front of the cave. Behind him was the kid, stepping softly like a scout, with a broad grin on his face. Bill stopped, took off his hat and wiped his face with a red handkerchief. The kid stopped about eight feet behind him."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Sam,\" says Bill, \"I suppose you'll think I'm a renegade, but I couldn't help it. I'm a grown person with masculine proclivities and habits of self-defense, but there is a time when all systems of egotism and predominance fail. The boy is gone. I have sent him home. All is off. There was martyrs in old times,\" goes on Bill, \"that suffered death rather than give up the particular graft they enjoyed. None of 'em ever was subjugated to such supernatural tortures as I have been. I tried to be faithful to our articles of depredation; but there came a limit.\""
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-20.jpg",
+          "alt": "A forest glade: a heavyset man wobbling out of the bushes wiping his face with a red handkerchief, a red-haired boy stepping softly behind him with a broad grin.",
+          "caption": "'The boy is gone. I have sent him home.'",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. A forest glade in front of a cave: the heavyset man wobbles out of the bushes wiping his face with a red handkerchief, the red-haired boy steps softly behind him with a broad grin."
+        }
+      ],
+      "start": 1015.208
+    },
+    {
+      "id": "scene-21",
+      "title": "What's the Trouble, Bill?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "\"What's the trouble, Bill?\" I asks him."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I was rode,\" says Bill, \"the ninety miles to the stockade, not barring an inch. Then, when the settlers was rescued, I was given oats. Sand ain't a palatable substitute. And then, for an hour I had to try to explain to him why there was nothin' in holes, how a road can run both ways and what makes the grass green. I tell you, Sam, a human can only stand so much. I takes him by the neck of his clothes and drags him down the mountain. On the way he kicks my legs black-and-blue from the knees down; and I've got to have two or three bites on my thumb and hand cauterized."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"But he's gone\"—continues Bill—\"gone home. I showed him the road to Summit and kicked him about eight feet nearer there at one kick. I'm sorry we lose the ransom; but it was either that or Bill Driscoll to the madhouse.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "Bill is puffing and blowing, but there is a look of ineffable peace and growing content on his rose-pink features."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Bill,\" says I, \"there isn't any heart disease in your family, is there?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"No,\" says Bill, \"nothing chronic except malaria and accidents. Why?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Then you might turn around,\" says I, \"and have a look behind you.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "Bill turns and sees the boy, and loses his complexion and sits down plump on the ground and begins to pluck aimlessly at grass and little sticks. For an hour I was afraid for his mind. And then I told him that my scheme was to put the whole job through immediately and that we would get the ransom and be off with it by midnight if old Dorset fell in with our proposition. So Bill braced up enough to give the kid a weak sort of a smile and a promise to play the Russian in a Japanese war with him as soon as he felt a little better."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-21.jpg",
+          "alt": "A forest clearing: a heavyset man sitting plump on the ground plucking grass and sticks with a dazed expression, a red-haired boy standing behind him grinning, a lean man looking back over his shoulder.",
+          "caption": "Turn around, Bill.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. A forest clearing: the heavyset man sits plump on the ground plucking grass and sticks with a dazed expression, the red-haired boy stands behind him grinning, the lean man looks back over his shoulder."
+        }
+      ],
+      "start": 1088.378
+    },
+    {
+      "id": "scene-22",
+      "title": "Up in the Tree",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "I had a scheme for collecting that ransom without danger of being caught by counterplots that ought to commend itself to professional kidnappers. The tree under which the answer was to be left—and the money later on—was close to the road fence with big, bare fields on all sides. If a gang of constables should be watching for any one to come for the note they could see him a long way off crossing the fields or in the road. But no, sirree! At half-past eight I was up in that tree as well hidden as a tree toad, waiting for the messenger to arrive."
+        },
+        {
+          "type": "paragraph",
+          "html": "Exactly on time, a half-grown boy rides up the road on a bicycle, locates the pasteboard box at the foot of the fence-post, slips a folded piece of paper into it and pedals away again back toward Summit."
+        },
+        {
+          "type": "paragraph",
+          "html": "I waited an hour and then concluded the thing was square. I slid down the tree, got the note, slipped along the fence till I struck the woods, and was back at the cave in another half an hour. I opened the note, got near the lantern and read it to Bill. It was written with a pen in a crabbed hand, and the sum and substance of it was this:"
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-22.jpg",
+          "alt": "Dusk at a country road: a lean man hidden high in a leafy tree beside a fence, three large trees along a wheat field, a small pasteboard box at a fence post below.",
+          "caption": "At half-past eight, Sam waits in the tree like a tree toad.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Dusk at a country road: a lean man hidden high in a leafy tree beside a fence, three large trees along a wheat field, a small pasteboard box at a fence post below, evening light."
+        }
+      ],
+      "start": 1197.786
+    },
+    {
+      "id": "scene-23",
+      "title": "Dorset's Counter-Proposition",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-23.jpg",
+          "alt": "Night at a cave: a lean man reading a folded letter by lantern light, a heavyset man leaning in with wide stunned eyes, campfire glow, the letter paper showing no readable words.",
+          "caption": "Dorset's reply turns the whole scheme upside down.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Night at a cave: the lean man reads a folded letter by lantern light, the heavyset man leans in with wide stunned eyes, campfire glow, the letter paper shows no readable words."
+        },
+        {
+          "type": "callout",
+          "html": "Two Desperate Men."
+        },
+        {
+          "type": "callout",
+          "html": "Gentlemen: I received your letter to-day by post, in regard to the ransom you ask for the return of my son. I think you are a little high in your demands, and I hereby make you a counter-proposition, which I am inclined to believe you will accept. You bring Johnny home and pay me two hundred and fifty dollars in cash, and I agree to take him off your hands. You had better come at night, for the neighbours believe he is lost, and I couldn't be responsible for what they would do to anybody they saw bringing him back."
+        },
+        {
+          "type": "callout",
+          "html": "Very respectfully, EBENEZER DORSET."
+        }
+      ],
+      "start": 1267.993
+    },
+    {
+      "id": "scene-24",
+      "title": "We'll Take Him Home",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "\"Great pirates of Penzance!\" says I; \"of all the impudent—\""
+        },
+        {
+          "type": "paragraph",
+          "html": "But I glanced at Bill, and hesitated. He had the most appealing look in his eyes I ever saw on the face of a dumb or a talking brute."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Sam,\" says he, \"what's two hundred and fifty dollars, after all? We've got the money. One more night of this kid will send me to a bed in Bedlam. Besides being a thorough gentleman, I think Mr. Dorset is a spendthrift for making us such a liberal offer. You ain't going to let the chance go, are you?\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Tell you the truth, Bill,\" says I, \"this little he ewe lamb has somewhat got on my nerves too. We'll take him home, pay the ransom and make our get-away.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "We took him home that night. We got him to go by telling him that his father had bought a silver-mounted rifle and a pair of moccasins for him, and we were going to hunt bears the next day."
+        },
+        {
+          "type": "paragraph",
+          "html": "It was just twelve o'clock when we knocked at Ebenezer's front door. Just at the moment when I should have been abstracting the fifteen hundred dollars from the box under the tree, according to the original proposition, Bill was counting out two hundred and fifty dollars into Dorset's hand."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-24.jpg",
+          "alt": "Midnight at a farmhouse front door: a heavyset man counting paper bills into the hand of a stern elderly gentleman in a black suit, a lean man holding a red-haired boy's hand on the porch, lantern light.",
+          "caption": "At midnight, Bill counts out two hundred and fifty dollars.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Ebenezer Dorset, a stern elderly gentleman in his sixties with a grey beard and spectacles, black suit and stiff collar, calm and unflappable. Sam, a lean sly man in his thirties with dark hair under a worn brown felt hat, clean-shaven, grey work shirt, brown vest, dark trousers and boots. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Midnight at a farmhouse front door: the heavyset man counts paper bills into the hand of a stern elderly gentleman in a black suit, the lean man holds a red-haired boy's hand on the porch, lantern light."
+        }
+      ],
+      "start": 1304.175
+    },
+    {
+      "id": "scene-25",
+      "title": "Ten Minutes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When the kid found out we were going to leave him at home he started up a howl like a calliope and fastened himself as tight as a leech to Bill's leg. His father peeled him away gradually, like a porous plaster."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"How long can you hold him?\" asks Bill."
+        },
+        {
+          "type": "paragraph",
+          "html": "\"I'm not as strong as I used to be,\" says old Dorset, \"but I think I can promise you ten minutes.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "\"Enough,\" says Bill. \"In ten minutes I shall cross the Central, Southern and Middle Western States, and be legging it trippingly for the Canadian border.\""
+        },
+        {
+          "type": "paragraph",
+          "html": "And, as dark as it was, and as fat as Bill was, and as good a runner as I am, he was a good mile and a half out of Summit before I could catch up with him."
+        },
+        {
+          "type": "image",
+          "src": "the-ransom-of-red-chief/scene-25.jpg",
+          "alt": "Night at a farmhouse door: a red-haired boy howling and clinging to a heavyset man's leg, a stern elderly gentleman gently peeling him away, a lean man laughing at the doorway.",
+          "caption": "'How long can you hold him?' — 'Ten minutes.'",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks. Johnny, a ten-year-old boy with bright red hair, a freckled face and a mischievous grin, two dark buzzard tail-feathers stuck in his hair, homespun shirt and knee breeches. Bill Driscoll, a heavyset round-faced man in his forties with reddish-blond stubble, a round bowler hat, white shirt with rolled sleeves, brown suspenders and dark trousers. Ebenezer Dorset, a stern elderly gentleman in his sixties with a grey beard and spectacles, black suit and stiff collar, calm and unflappable. Night at a farmhouse door: the red-haired boy howls and clings to the heavyset man's leg, the stern elderly gentleman gently peels him away, the lean man laughs at the doorway, moonlight."
+        }
+      ],
+      "start": 1374.83
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">Sam and Bill thought they were the clever ones — but Johnny turned the tables. When has a plan of yours gone funny-sideways? What would you have done with a whole day in Johnny’s cave camp?</h2>\n      <p class=\"conclusion-note\">About this text: unabridged from Project Gutenberg’s Whirligigs (1910), with one period word replaced by a gentler equivalent.</p>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "the-ransom-of-red-chief/narration.mp3",
+    "video": {
+      "src": "the-ransom-of-red-chief/story-video.mp4",
+      "poster": "the-ransom-of-red-chief/story-video-poster.jpg"
+    },
+    "captions": "the-ransom-of-red-chief/narration.vtt",
+    "duration": 1417.670333,
+    "narrationInputHash": "d274ad2c31c1fb2d4b41e07a342ece0db9ad852fc9a9bf3db47bdd40b7edbe1a",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration",
+    "videoNarrationHash": "d274ad2c31c1fb2d4b41e07a342ece0db9ad852fc9a9bf3db47bdd40b7edbe1a",
+    "videoVisualHash": "d5ce27f34cf1a5011244a199d49b677fd6b246f577fa94b85517bdc3310f4112"
+  },
+  "artDirection": {
+    "style": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, rural Alabama in 1907, landscape composition near 16:9, no text, no logos, no watermarks.",
+    "referenceImages": [
+      "the-ransom-of-red-chief/references/sam_ref.jpg",
+      "the-ransom-of-red-chief/references/bill_ref.jpg",
+      "the-ransom-of-red-chief/references/johnny_ref.jpg",
+      "the-ransom-of-red-chief/references/dorset_ref.jpg",
+      "the-ransom-of-red-chief/references/cave_ref.jpg",
+      "the-ransom-of-red-chief/references/summit_ref.jpg",
+      "the-ransom-of-red-chief/references/dorset_house_ref.jpg"
+    ]
+  }
+}

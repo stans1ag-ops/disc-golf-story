@@ -19,6 +19,12 @@
       "title": "Classic Tales",
       "description": "Fairy tales and fables, beautifully illustrated.",
       "icon": "✦"
+    },
+    {
+      "id": "short-stories",
+      "title": "Famous Short Stories",
+      "icon": "✒",
+      "description": "Beloved short stories, beautifully illustrated."
     }
   ],
   "stories": [
@@ -62,6 +68,7 @@
     "tyson/the-squeak-thump-secret",
     "tyson/the-villains-who-gave-up",
     "fisherman-and-his-wife",
-    "snow-white"
+    "snow-white",
+    "the-ransom-of-red-chief"
   ]
 }
