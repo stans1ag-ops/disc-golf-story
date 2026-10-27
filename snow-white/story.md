@@ -9,7 +9,15 @@ Source: https://seiyaku.com/lit/grimm/en/053.html
 
 It was the middle of winter, and the snowflakes were falling like feathers from the sky, and a queen sat at her window working, and her embroidery-frame was of ebony. And as she worked, gazing at times out on the snow, she pricked her finger, and there fell from it three drops of blood on the snow. And when she saw how bright and red it looked, she said to herself, “Oh that I had a child as white as snow, as red as blood, and as black as the wood of the embroidery frame!”
 
+![Snow White's mother, the gentle queen in a white fur-trimmed gown and burgundy velvet shawl, sitting at a carved black ebony window frame with her embroidery hoop as snowflakes fall outside and three drops of blood glisten on the snow.](scene-01a.jpg)
+
+At the carved ebony window frame, three drops of blood fall upon the snow as the queen makes her wish.
+
 Not very long after she had a daughter, with a skin as white as snow, lips as red as blood, and hair as black as ebony, and she was named Snow White. And when she was born the queen died.
+
+![The gentle queen sitting by the carved ebony window frame as snow falls outside, gazing lovingly down at newborn baby Snow White swaddled in white linen in a carved wooden cradle.](scene-01b.jpg)
+
+A daughter with skin as white as snow, lips as red as blood, and hair as black as ebony — named Snow White.
 
 ![A castle window seat framed in carved black ebony, with an embroidery hoop, a silver needle, and a basket of wool, looking out on falling snow.](scene-01.jpg)
 
@@ -20,16 +28,24 @@ The ebony window where the queen wished for a child white as snow, red as blood,
 
 After a year had gone by the king took another wife, a beautiful woman, but proud and overbearing, and she could not bear to be surpassed in beauty by any one. She had a magic looking-glass, and she used to stand before it, and look in it, and say, “Looking-glass upon the wall, who is fairest of us all?” And the looking-glass would answer, “You are fairest of them all.” And she was contented, for she knew that the looking-glass spoke the truth.
 
-Now, Snow White was growing prettier and prettier, and when she was seven years old she was as beautiful as day, far more so than the queen herself. So one day when the queen went to her mirror and said, “Looking-glass upon the wall, who is fairest of us all?” it answered, “Queen, you are full fair, 'tis true, but Snow White fairer is than you.” This gave the queen a great shock, and she became yellow and green with envy, and from that hour her heart turned against Snow White, and she hated her.
-
 ![The queen in obsidian velvet and crimson silk with a spired gold crown, standing before a tall silver mirror filled with swirling emerald smoke.](scene-02.jpg)
 
 The queen consults her magic looking-glass — and hears, for the first time, that Snow White is fairer than she.
+
+Now, Snow White was growing prettier and prettier, and when she was seven years old she was as beautiful as day, far more so than the queen herself. So one day when the queen went to her mirror and said, “Looking-glass upon the wall, who is fairest of us all?” it answered, “Queen, you are full fair, 'tis true, but Snow White fairer is than you.” This gave the queen a great shock, and she became yellow and green with envy, and from that hour her heart turned against Snow White, and she hated her.
+
+![Snow White in an ivory wool bodice, slate-blue skirt, and crimson cloak with a red ribbon in her ebony-black hair, holding white wildflowers in a sunlit woodland clearing.](scene-02b.jpg)
+
+Snow White grows as beautiful as day — far more fair than the queen herself.
 
 
 ## 3. Mercy in the Deep Woods
 
 At last she sent for a huntsman, and said, “Take the child out into the woods, so that I may set eyes on her no more. You must put her to death, and bring me her heart for a token.” The huntsman consented, and led her away; but when he drew his cutlass to pierce Snow White's innocent heart, she began to weep, and to say, “Oh, dear huntsman, do not take my life; I will go away into the wild wood, and never come home again.”
+
+![The bearded huntsman in a forest-green coat, brown leather cloak, and feathered hat standing among mossy oak trees in the deep woods with a sorrowful, compassionate expression.](scene-03a.jpg)
+
+Moved to pity in the deep woods, the huntsman spares Snow White's innocent life.
 
 And as she was so lovely the huntsman had pity on her, and said, “Away with you then, poor child;” for he thought the wild animals would be sure to devour her, and it was as if a stone had been rolled away from his heart when he spared to put her to death. Just at that moment a young wild boar came running by, so he caught and killed it, and taking out its heart, he brought it to the queen for a token. And it was salted and cooked, and the wicked woman ate it up, thinking that there was an end of Snow White.
 
@@ -49,18 +65,30 @@ She runs over sharp stones and through thorn bushes, and the wild beasts do her 
 
 ## 5. The Little Cottage Beyond the Hills
 
-Everything there was very small, but as pretty and clean as possible. There stood the little table ready laid, and covered with a white cloth, and seven little plates, and seven knives and forks, and drinking-cups. By the wall stood seven little beds, side by side, covered with clean white quilts.
-
-Snow White, being very hungry and thirsty, ate from each plate a little porridge and bread, and drank out of each little cup a drop of wine, so as not to finish up one portion alone. After that she felt so tired that she lay down on one of the beds, but it did not seem to suit her; one was too long, another too short, but at last the seventh was quite right; and so she lay down upon it, committed herself to heaven, and fell asleep.
-
 ![A tiny thatched cottage at dusk in a forest clearing, warm light glowing in its windows, smoke curling from the chimney, fireflies among the ferns.](scene-05.jpg)
 
 When evening draws near, she comes to a little house in the forest clearing.
+
+Everything there was very small, but as pretty and clean as possible. There stood the little table ready laid, and covered with a white cloth, and seven little plates, and seven knives and forks, and drinking-cups. By the wall stood seven little beds, side by side, covered with clean white quilts.
+
+![The warm timber-and-stone interior of the seven dwarfs' cottage, showing the long wooden table set with seven tiny bowls, spoons, and cups, and seven carved wooden beds lined up along the wall.](scene-05a.jpg)
+
+Inside the little house: a table laid with seven little plates and cups, and seven little beds side by side.
+
+Snow White, being very hungry and thirsty, ate from each plate a little porridge and bread, and drank out of each little cup a drop of wine, so as not to finish up one portion alone. After that she felt so tired that she lay down on one of the beds, but it did not seem to suit her; one was too long, another too short, but at last the seventh was quite right; and so she lay down upon it, committed herself to heaven, and fell asleep.
+
+![Snow White in her ivory wool dress and crimson cloak leaning over the low wooden table inside the dwarfs' cottage, tasting porridge with a tiny wooden spoon from one of seven small bowls.](scene-05b.jpg)
+
+Hungry and thirsty, Snow White eats a little porridge and bread from each of the seven plates.
 
 
 ## 6. Seven Lanterns Round the Seventh Bed
 
 When it was quite dark, the masters of the house came home. They were seven dwarfs, whose occupation was to dig underground among the mountains. When they had lighted their seven candles, and it was quite light in the little house, they saw that some one must have been in. The first said, “Who has been sitting in my little chair?” The second said, “Who has been eating from my little plate?” The third said, “Who has been taking my little loaf?” The fourth said, “Who has been tasting my porridge?” The fifth said, “Who has been using my little fork?” The sixth said, “Who has been cutting with my little knife?” The seventh said, “Who has been drinking from my little cup?”
+
+![Seven bearded woodland dwarf miners in colorful pointed wool caps and belted tunics walking single-file along a mossy forest path at twilight with glowing brass lanterns and pickaxes toward their warm thatched cottage.](scene-06a.jpg)
+
+When it is quite dark, the seven dwarfs come home from the mountains with their seven glowing lanterns.
 
 Then the first one, looking round, saw a hollow in his bed, and cried, “Who has been lying on my bed?” And the others came running, and cried, “Some one has been on our beds too!” But when the seventh looked at his bed, he saw little Snow White lying there asleep. Then he told the others, who came running up, crying out in their astonishment, and holding up their seven little candles to throw a light upon Snow White. “O goodness! O gracious!” cried they, “what beautiful child is this?” and were so full of joy to see her that they did not wake her, but let her sleep on. And the seventh dwarf slept with his comrades, an hour at a time with each, until the night had passed.
 
@@ -73,6 +101,10 @@ Seven little candles throw their light upon the seventh bed.
 
 When it was morning, and Snow White awoke and saw the seven dwarfs, she was very frightened; but they seemed quite friendly, and asked her what her name was, and she told them; and then they asked how she came to be in their house. And she related to them how her step-mother had wished her to be put to death, and how the huntsman had spared her life, and how she had run the whole day long, until at last she had found their little house.
 
+![The seven friendly bearded dwarfs in colorful pointed wool caps and belted tunics holding glowing brass lanterns and small pickaxes at the entrance to their mountain mine.](scene-07a.jpg)
+
+The seven friendly dwarfs who dig for gold among the mountains welcome Snow White to their home.
+
 Then the dwarfs said, “If you will keep our house for us, and cook, and wash, and make the beds, and sew and knit, and keep everything tidy and clean, you may stay with us, and you shall lack nothing.” — “With all my heart,” said Snow White; and so she stayed, and kept the house in good order. In the morning the dwarfs went to the mountain to dig for gold; in the evening they came home, and their supper had to be ready for them. All the day long the maiden was left alone, and the good little dwarfs warned her, saying, “Beware of your step-mother, she will soon know you are here. Let no one into the house.”
 
 ![Snow White in an ochre apron watering a cottage garden, with seven tiny boots lined up by the cottage door and songbirds on the fence.](scene-07.jpg)
@@ -84,7 +116,15 @@ Snow White keeps the house in good order while the dwarfs dig for gold in the mo
 
 Now the queen, having eaten Snow White's heart, as she supposed, felt quite sure that now she was the first and fairest, and so she came to her mirror, and said, “Looking-glass upon the wall, who is fairest of us all?” And the glass answered, “Queen, thou art of beauty rare, but Snow White living in the glen with the seven little men is a thousand times more fair.” Then she was very angry, for the glass always spoke the truth, and she knew that the huntsman must have deceived her, and that Snow White must still be living.
 
+![The furious queen in her high-collared obsidian velvet and crimson gown and spired gold crown standing beside her magic looking-glass in the stone turret chamber.](scene-08a.jpg)
+
+“Snow White living in the glen with the seven little men is a thousand times more fair” — the queen learns she has been deceived.
+
 At last she thought of a plan; she painted her face and dressed herself like an old pedlar woman, so that no one would have known her. In this disguise she went across the seven mountains, until she came to the house of the seven little dwarfs, and she knocked at the door and cried, “Fine wares to sell! fine wares to sell!” Snow White peeped out of the window and cried, “Good-day, good woman, what have you to sell?” — “Good wares, fine wares,” answered she, “laces of all colours;” and she held up a piece that was woven of variegated silk.
+
+![An elderly pedlar woman in a brown hooded cloak and shawl standing on the garden path outside the flower-framed thatched cottage, holding open a wicker basket filled with variegated silk ribbons in crimson, gold, emerald, and blue.](scene-08b.jpg)
+
+“Good wares, fine wares — laces of all colours!” The disguised queen holds up a piece woven of variegated silk.
 
 “I need not be afraid of letting in this good woman,” thought Snow White, and she unbarred the door and bought the pretty lace. “What a figure you are, child!” said the old woman, “come and let me lace you properly for once.” Snow White, suspecting nothing, stood up before her, and let her lace her with the new lace; but the old woman laced so quick and tight that it took Snow White's breath away, and she fell down as dead. “Now you have done with being the fairest,” said the old woman as she hastened away.
 
@@ -99,6 +139,10 @@ The pedlar woman's pretty lace, woven of variegated silk — the first temptatio
 
 And when the wicked woman got home she went to her glass and said, “Looking-glass against the wall, who is fairest of us all?” And it answered as before, “Queen, thou art of beauty rare, but Snow White living in the glen with the seven little men is a thousand times more fair.” When she heard that she was so struck with surprise that all the blood left her heart, for she knew that Snow White must still be living. “But now,” said she, “I will think of something that will be her ruin.” And by witchcraft she made a poisoned comb. Then she dressed herself up to look like another different sort of old woman.
 
+![An ornate carved tortoiseshell and gold hair comb gleaming on a crimson velvet cushion beside a glowing green potion phial, dried herbs, and an open grimoire in a candlelit stone turret chamber overlooking seven misty mountain peaks.](scene-09a.jpg)
+
+“I will think of something that will be her ruin” — by witchcraft the queen makes a poisoned comb.
+
 So she went across the seven mountains and came to the house of the seven dwarfs, and knocked at the door and cried, “Good wares to sell! good wares to sell!” Snow White looked out and said, “Go away, I must not let anybody in.” — “But you are not forbidden to look,” said the old woman, taking out the poisoned comb and holding it up. It pleased the poor child so much that she was tempted to open the door; and when the bargain was made the old woman said, “Now, for once your hair shall be properly combed.” Poor Snow White, thinking no harm, let the old woman do as she would, but no sooner was the comb put in her hair than the poison began to work, and the poor girl fell down senseless. “Now, you paragon of beauty,” said the wicked woman, “this is the end of you,” and went off.
 
 By good luck it was now near evening, and the seven little dwarfs came home. When they saw Snow White lying on the ground as dead, they thought directly that it was the step-mother's doing, and looked about, found the poisoned comb, and no sooner had they drawn it out of her hair than Snow White came to herself, and related all that had passed. Then they warned her once more to be on her guard, and never again to let any one in at the door.
@@ -112,16 +156,24 @@ By good luck it was now near evening, and the seven little dwarfs came home. Whe
 
 And the queen went home and stood before the looking-glass and said, “Looking-glass against the wall, who is fairest of us all?” And the looking-glass answered as before, “Queen, thou art of beauty rare, but Snow White living in the glen with the seven little men is a thousand times more fair.” When she heard the looking-glass speak thus she trembled and shook with anger. “Snow White shall die,” cried she, “though it should cost me my own life!”
 
-And then she went to a secret lonely chamber, where no one was likely to come, and there she made a poisonous apple. It was beautiful to look upon, being white with red cheeks, so that any one who should see it must long for it, but whoever ate even a little bit of it must die. When the apple was ready she painted her face and clothed herself like a peasant woman, and went across the seven mountains to where the seven dwarfs lived.
-
 ![The queen in obsidian velvet holding a two-toned apple, half chalk-white and half lacquer-red, above a bubbling copper cauldron in a candlelit alchemy chamber.](scene-10.jpg)
 
 In a secret lonely chamber, the queen brews the apple — white with red cheeks, and deadly to whoever eats even a little.
+
+And then she went to a secret lonely chamber, where no one was likely to come, and there she made a poisonous apple. It was beautiful to look upon, being white with red cheeks, so that any one who should see it must long for it, but whoever ate even a little bit of it must die. When the apple was ready she painted her face and clothed herself like a peasant woman, and went across the seven mountains to where the seven dwarfs lived.
+
+![The queen disguised as a peasant woman in a dark hooded cloak and headscarf walking along a rocky mountain trail across seven jagged peaks, carrying a wicker basket with the half-white, half-red poisoned apple.](scene-10b.jpg)
+
+Clothed like a peasant woman, she crosses the seven mountains carrying the poisoned two-toned apple.
 
 
 ## 11. The Third Temptation: The Halved Apple
 
 And when she knocked at the door Snow White put her head out of the window and said, “I dare not let anybody in; the seven dwarfs told me not.” — “All right,” answered the woman; “I can easily get rid of my apples elsewhere. There, I will give you one.” — “No,” answered Snow White, “I dare not take anything.” — “Are you afraid of poison?” said the woman, “look here, I will cut the apple in two pieces; you shall have the red side, I will have the white one.” For the apple was so cunningly made, that all the poison was in the rosy half of it.
+
+![On the wooden windowsill of the thatched cottage framed by blue and purple morning glories, a freshly halved apple rests on a white linen cloth beside a small orchard knife—one half pure chalk-white, the other half glossy red—with a wicker basket of apples outside.](scene-11a.jpg)
+
+“Look here, I will cut the apple in two pieces; you shall have the red side, I will have the white one.”
 
 Snow White longed for the beautiful apple, and as she saw the peasant woman eating a piece of it she could no longer refrain, but stretched out her hand and took the poisoned half. But no sooner had she taken a morsel of it into her mouth than she fell to the earth as dead. And the queen, casting on her a terrible glance, laughed aloud and cried, “As white as snow, as red as blood, as black as ebony! this time the dwarfs will not be able to bring you to life again.”
 
@@ -138,6 +190,10 @@ The dwarfs, when they came home in the evening, found Snow White lying on the gr
 
 And then they would have buried her, but that she looked still as if she were living, with her beautiful blooming cheeks. So they said, “We cannot hide her away in the black ground.” And they had made a coffin of clear glass, so as to be looked into from all sides, and they laid her in it, and wrote in golden letters upon it her name, and that she was a king's daughter. Then they set the coffin out upon the mountain, and one of them always remained by it to watch. And the birds came too, and mourned for Snow White, first an owl, then a raven, and lastly, a dove.
 
+![An ornate crystal-clear glass casket framed in wrought-gold filigree resting on a mossy stone plinth high on a mountain peak at dawn, surrounded by white wildflowers and glowing brass miner's lanterns above misty valleys.](scene-12a.jpg)
+
+They set the coffin of clear glass out upon the mountain, with glowing lanterns to keep watch.
+
 Now, for a long while Snow White lay in the coffin and never changed, but looked as if she were asleep, for she was still as white as snow, as red as blood, and her hair was as black as ebony.
 
 ![An owl, a raven, and a white dove perched together on a pine branch above misty mountain peaks at dawn.](scene-12.jpg)
@@ -149,11 +205,15 @@ The birds came too, and mourned for Snow White — first an owl, then a raven, a
 
 It happened, however, that one day a king's son rode through the wood and up to the dwarfs' house, which was near it. He saw on the mountain the coffin, and beautiful Snow White within it, and he read what was written in golden letters upon it. Then he said to the dwarfs, “Let me have the coffin, and I will give you whatever you like to ask for it.” But the dwarfs told him that they could not part with it for all the gold in the world.
 
-But he said, “I beseech you to give it me, for I cannot live without looking upon Snow White; if you consent I will bring you to great honour, and care for you as if you were my brethren.” When he so spoke the good little dwarfs had pity upon him and gave him the coffin, and the king's son called his servants and bid them carry it away on their shoulders.
-
 ![A prince in a sapphire blue and gold riding tunic with a white cloak, riding a dapple-grey horse up a mountain path above a valley cottage.](scene-13.jpg)
 
 A king's son rides through the wood — and sees the glass coffin on the mountain.
+
+But he said, “I beseech you to give it me, for I cannot live without looking upon Snow White; if you consent I will bring you to great honour, and care for you as if you were my brethren.” When he so spoke the good little dwarfs had pity upon him and gave him the coffin, and the king's son called his servants and bid them carry it away on their shoulders.
+
+![The young king's son in a sapphire-blue and gold embroidered tunic and white cloak standing beside his dapple-grey horse among mountain pines, looking ahead with earnest devotion.](scene-13b.jpg)
+
+“I beseech you to give it me, for I cannot live without looking upon Snow White.”
 
 
 ## 14. The Stumble on the Mountain Path
@@ -164,13 +224,21 @@ Now it happened that as they were going along they stumbled over a bush, and wit
 
 With one shake, the bit of poisoned apple flies out of her throat — and Snow White opens her eyes.
 
+![The young Prince in his sapphire-blue and gold tunic leading his dapple-grey horse along a sunlit mountain trail beside joyful Snow White in her ivory wool dress and crimson cloak, looking toward a sunlit castle in the valley.](scene-14b.jpg)
+
+“Come with me to my father's castle and you shall be my bride.” And Snow White was kind, and went with him.
+
 
 ## 15. The Royal Wedding & the Final Reckoning
 
 And their wedding was held with pomp and great splendour. But Snow White's wicked step-mother was also bidden to the feast, and when she had dressed herself in beautiful clothes she went to her looking-glass and said, “Looking-glass upon the wall, who is fairest of us all?” The looking-glass answered, “O Queen, although you are of beauty rare, the young bride is a thousand times more fair.”
 
-Then she railed and cursed, and was beside herself with disappointment and anger. First she thought she would not go to the wedding; but then she felt she should have no peace until she went and saw the bride. And when she saw her she knew her for Snow White, and could not stir from the place for anger and terror. For they had ready red-hot iron shoes, in which she had to dance until she fell down dead.
-
 ![A bright castle banquet hall set for a wedding feast, with a high table laden with golden goblets and flower garlands beneath fluttering banners.](scene-15.jpg)
 
 The wedding is held with pomp and great splendour — and the stepmother is bidden to the feast.
+
+Then she railed and cursed, and was beside herself with disappointment and anger. First she thought she would not go to the wedding; but then she felt she should have no peace until she went and saw the bride. And when she saw her she knew her for Snow White, and could not stir from the place for anger and terror. For they had ready red-hot iron shoes, in which she had to dance until she fell down dead.
+
+![In the stone turret chamber, the magic looking-glass shimmers with golden light reflecting a bridal wreath of white roses and wedding bells, while the queen's spired gold crown, crimson gloves, and an overturned goblet lie on the table before it.](scene-15a.jpg)
+
+“O Queen, although you are of beauty rare, the young bride is a thousand times more fair.”

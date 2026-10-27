@@ -9,9 +9,19 @@
   "artwork_crop": null,
   "scenes": [
     {
-      "image": "scene-01.jpg",
+      "image": "scene-01a.jpg",
       "start": 0.0,
       "cue": "The Wish at the Ebony Window"
+    },
+    {
+      "image": "scene-01b.jpg",
+      "start": 20.063,
+      "cue": "Newborn Snow White by the Ebony Window"
+    },
+    {
+      "image": "scene-01.jpg",
+      "start": 41.097,
+      "cue": "The Quiet Ebony Window Seat"
     },
     {
       "image": "scene-02.jpg",
@@ -19,9 +29,19 @@
       "cue": "The Queen and the Magic Looking-Glass"
     },
     {
-      "image": "scene-03.jpg",
+      "image": "scene-02b.jpg",
+      "start": 70.837,
+      "cue": "Snow White Growing Fairer Than the Queen"
+    },
+    {
+      "image": "scene-03a.jpg",
       "start": 100.774,
       "cue": "Mercy in the Deep Woods"
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 142.744,
+      "cue": "Into the Wild Wood"
     },
     {
       "image": "scene-04.jpg",
@@ -34,23 +54,58 @@
       "cue": "The Little Cottage Beyond the Hills"
     },
     {
-      "image": "scene-06.jpg",
+      "image": "scene-05a.jpg",
+      "start": 191.003,
+      "cue": "Seven Little Plates and Seven Little Beds"
+    },
+    {
+      "image": "scene-05b.jpg",
+      "start": 205.437,
+      "cue": "Snow White Tasting Porridge at the Table"
+    },
+    {
+      "image": "scene-06a.jpg",
       "start": 233.817,
+      "cue": "The Seven Dwarfs Return by Lantern Light"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 288.37,
       "cue": "Seven Lanterns Round the Seventh Bed"
     },
     {
-      "image": "scene-07.jpg",
+      "image": "scene-07a.jpg",
       "start": 315.844,
       "cue": "Morning Covenant at the Cottage Door"
     },
     {
-      "image": "scene-08.jpg",
+      "image": "scene-07.jpg",
+      "start": 341.746,
+      "cue": "Keeping the Cottage in Good Order"
+    },
+    {
+      "image": "scene-08a.jpg",
       "start": 378.641,
-      "cue": "The First Temptation: The Silk Stay-Laces"
+      "cue": "The Queen Learns Snow White Lives in the Glen"
+    },
+    {
+      "image": "scene-08b.jpg",
+      "start": 410.76,
+      "cue": "The Pedlar Woman and Her Basket of Silk Laces"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 444.18,
+      "cue": "The First Temptation: The Variegated Silk Lace"
+    },
+    {
+      "image": "scene-09a.jpg",
+      "start": 504.383,
+      "cue": "Crafting the Poisoned Comb by Witchcraft"
     },
     {
       "image": "scene-09.jpg",
-      "start": 504.383,
+      "start": 539.664,
       "cue": "The Second Temptation: The Poisoned Comb"
     },
     {
@@ -59,14 +114,29 @@
       "cue": "Brewing the Two-Toned Apple"
     },
     {
-      "image": "scene-11.jpg",
+      "image": "scene-10b.jpg",
+      "start": 658.818,
+      "cue": "Crossing the Seven Mountains with the Poisoned Apple"
+    },
+    {
+      "image": "scene-11a.jpg",
       "start": 668.692,
-      "cue": "The Third Temptation: The Halved Apple"
+      "cue": "The Halved Apple on the Cottage Windowsill"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 701.886,
+      "cue": "The Peasant Woman Leaves the Cottage"
+    },
+    {
+      "image": "scene-12a.jpg",
+      "start": 746.834,
+      "cue": "Vigil by the Glass Coffin on the Mountain"
     },
     {
       "image": "scene-12.jpg",
-      "start": 746.834,
-      "cue": "Vigil by the Glass Coffin"
+      "start": 801.967,
+      "cue": "The Owl, the Raven, and the White Dove"
     },
     {
       "image": "scene-13.jpg",
@@ -74,14 +144,29 @@
       "cue": "The Prince's Plea on the Mountain"
     },
     {
+      "image": "scene-13b.jpg",
+      "start": 847.268,
+      "cue": "The King’s Son Beseeching the Seven Dwarfs"
+    },
+    {
       "image": "scene-14.jpg",
       "start": 868.996,
       "cue": "The Stumble on the Mountain Path"
     },
     {
+      "image": "scene-14b.jpg",
+      "start": 887.625,
+      "cue": "Journey Together Toward the Royal Castle"
+    },
+    {
       "image": "scene-15.jpg",
       "start": 904.014,
-      "cue": "The Royal Wedding & the Final Reckoning"
+      "cue": "The Royal Wedding Banquet Hall"
+    },
+    {
+      "image": "scene-15a.jpg",
+      "start": 931.674,
+      "cue": "The Looking-Glass Reveals the Young Bride"
     }
   ]
 }
