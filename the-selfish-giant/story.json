@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "id": "the-selfish-giant",
+  "title": "The Selfish Giant",
+  "collection": "short-stories",
+  "order": 999,
+  "description": "A selfish Giant walls off his garden — and winter moves in for good. Only when his heart melts do the blossoms return, in Oscar Wilde's beloved tale of selfishness, kindness, and a garden shared.",
+  "subtitle": "An Oscar Wilde tale • A walled garden, a winter that will not end, and the little boy who brings back the spring.",
+  "readingLevel": "Read together",
+  "edition": "Famous short story",
+  "sourceUrl": "https://www.gutenberg.org/cache/epub/30120/pg30120-images.html",
+  "addedAt": "2026-10-28T00:00:00+00:00",
+  "cover": {
+    "src": "the-selfish-giant/cover.jpg",
+    "alt": "The Giant holding the little boy's hand in the sunny blossom garden, smiling children around them, the castle behind."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Children's Garden",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Every afternoon, as they were coming from school, the children used to go and play in the Giant&#x27;s garden."
+        },
+        {
+          "type": "paragraph",
+          "html": "It was a large lovely garden, with soft green grass. Here and there over the grass stood beautiful flowers like stars, and there were twelve peach-trees that in the spring-time broke out into delicate blossoms of pink and pearl, and in the autumn bore rich fruit. The birds sat on the trees and sang so sweetly that the children used to stop their games in order to listen to them. &quot;How happy we are here!&quot; they cried to each other."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-01.jpg",
+          "alt": "Children playing on soft green grass among star-like flowers under peach-trees in pink-and-pearl blossom, birds singing in the branches, a stone castle behind.",
+          "caption": "Every afternoon the children played in the Giant's garden.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: children playing, peach blossom, birds, castle."
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "The Giant Returns",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One day the Giant came back. He had been to visit his friend the Cornish ogre, and had stayed with him for seven years. After the seven years were over he had said all that he had to say, for his conversation was limited, and he determined to return to his own castle. When he arrived he saw the children playing in the garden."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;What are you doing here?&quot; he cried in a very gruff voice, and the children ran away."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-02.jpg",
+          "alt": "A tall broad-shouldered giant arriving home to his castle garden, surprised to find children playing there, the children scattering gently across the grass.",
+          "caption": "One day the Giant came back.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant arriving home, children scattering gently."
+        }
+      ],
+      "start": 35.841
+    },
+    {
+      "id": "scene-3",
+      "title": "The High Wall",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "&quot;My own garden is my own garden,&quot; said the Giant; &quot;any one can understand that, and I will allow nobody to play in it but myself.&quot; So he built a high wall all round it, and put up a notice-board."
+        },
+        {
+          "type": "paragraph",
+          "html": "TRESPASSERS<br>WILL BE<br>PROSECUTED"
+        },
+        {
+          "type": "paragraph",
+          "html": "He was a very selfish Giant."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-03.jpg",
+          "alt": "The Giant standing beside a newly built high wall around his garden, a wooden notice-board seen from behind with no lettering, the garden beyond.",
+          "caption": "He built a high wall all round it.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: high wall, notice-board from behind, no lettering."
+        }
+      ],
+      "start": 61.482
+    },
+    {
+      "id": "scene-4",
+      "title": "Nowhere to Play",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The poor children had now nowhere to play. They tried to play on the road, but the road was very dusty and full of hard stones, and they did not like it. They used to wander round the high wall when their lessons were over, and talk about the beautiful garden inside. &quot;How happy we were there!&quot; they said to each other."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-04.jpg",
+          "alt": "Children standing wistfully outside the high garden wall on a dusty road, looking toward the beautiful garden inside.",
+          "caption": "The poor children had now nowhere to play.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: children outside wall on dusty road, wistful."
+        }
+      ],
+      "start": 78.989
+    },
+    {
+      "id": "scene-5",
+      "title": "Winter Takes the Garden",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then the Spring came, and all over the country there were little blossoms and little birds. Only in the garden of the Selfish Giant it was still winter. The birds did not care to sing in it as there were no children, and the trees forgot to blossom. Once a beautiful flower put its head out from the grass, but when it saw the notice-board it was so sorry for the children that it slipped back into the ground again, and went off to sleep. The only people who were pleased were the Snow and the Frost. &quot;Spring has forgotten this garden,&quot; they cried, &quot;so we will live here all the year round.&quot; The Snow covered up the grass with her great white cloak, and the Frost painted all the trees silver. Then they invited the North Wind to stay with them, and he came. He was wrapped in furs, and he roared all day about the garden, and blew the chimney-pots down. &quot;This is a delightful spot,&quot; he said, &quot;we must ask the Hail on a visit.&quot; So the Hail came. Every day for three hours he rattled on the roof of the castle till he broke most of the slates, and then he ran round and round the garden as fast as he could go. He was dressed in grey, and his breath was like ice."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-05.jpg",
+          "alt": "The walled garden deep in snow, frost-silvered bare trees, snowflakes swirling in cold blue-white light, the castle behind.",
+          "caption": "Only in the Giant's garden it was still winter.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: snow garden, frost-silvered trees, swirling snow, no menacing figures."
+        }
+      ],
+      "start": 99.088
+    },
+    {
+      "id": "scene-6",
+      "title": "The Giant at the Window",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "&quot;I cannot understand why the Spring is so late in coming,&quot; said the Selfish Giant, as he sat at the window and looked out at his cold white garden; &quot;I hope there will be a change in the weather.&quot;"
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-06.jpg",
+          "alt": "The Giant sitting at a castle window looking out at his cold white garden, puzzled and thoughtful.",
+          "caption": "Why is the Spring so late in coming?",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant at castle window, cold white garden."
+        }
+      ],
+      "start": 171.122
+    },
+    {
+      "id": "scene-7",
+      "title": "Always Winter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "But the Spring never came, nor the Summer. The Autumn gave golden fruit to every garden, but to the Giant&#x27;s garden she gave none. &quot;He is too selfish,&quot; she said. So it was always Winter there, and the North Wind and the Hail, and the Frost, and the Snow danced about through the trees."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-07.jpg",
+          "alt": "The garden locked in winter: bare frosted trees, drifting snow, grey sky, empty of children.",
+          "caption": "So it was always Winter there.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: winter garden, bare frosted trees, empty."
+        }
+      ],
+      "start": 183.808
+    },
+    {
+      "id": "scene-8",
+      "title": "The Linnet's Song",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One morning the Giant was lying awake in bed when he heard some lovely music. It sounded so sweet to his ears that he thought it must be the King&#x27;s musicians passing by. It was really only a little linnet singing outside his window, but it was so long since he had heard a bird sing in his garden that it seemed to him to be the most beautiful music in the world. Then the Hail stopped dancing over his head, and the North Wind ceased roaring, and a delicious perfume came to him through the open casement."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-08.jpg",
+          "alt": "Morning light; a small linnet singing on a branch outside the Giant's open casement window.",
+          "caption": "A little linnet singing outside his window.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: linnet singing outside open casement window, morning light."
+        }
+      ],
+      "start": 202.3
+    },
+    {
+      "id": "scene-9",
+      "title": "Spring Has Come",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "&quot;I believe the Spring has come at last,&quot; said the Giant; and he jumped out of bed and looked out."
+        },
+        {
+          "type": "paragraph",
+          "html": "What did he see?"
+        },
+        {
+          "type": "paragraph",
+          "html": "He saw a most wonderful sight. Through a little hole in the wall the children had crept in, and they were sitting in the branches of the trees. In every tree that he could see there was a little child. And the trees were so glad to have the children back again that they had covered themselves with blossoms, and were waving their arms gently above the children&#x27;s heads. The birds were flying about and twittering with delight, and the flowers were looking up through the green grass and laughing. It was a lovely scene, only in one corner it was still winter."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-09.jpg",
+          "alt": "The Giant at his window in wonder; below, children sitting in blossoming trees, birds flying, flowers laughing in the green grass.",
+          "caption": "In every tree there was a little child.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant at window in wonder, children in blossoming trees."
+        }
+      ],
+      "start": 234.16
+    },
+    {
+      "id": "scene-10",
+      "title": "The Little Boy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It was the farthest corner of the garden, and in it was standing a little boy."
+        },
+        {
+          "type": "paragraph",
+          "html": "He was so small that he could not reach up to the branches of the tree, and he was wandering all round it, crying bitterly. The poor tree was still quite covered with frost and snow, and the North Wind was blowing and roaring above it. &quot;Climb up! little boy,&quot; said the Tree, and it bent its branches down as low as it could; but the boy was too tiny."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-10.jpg",
+          "alt": "A single tree in the farthest corner of the garden, still quite covered with frost and snow, its branches bent low toward the snowy ground.",
+          "caption": "The poor tree was still quite covered with frost and snow.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, muted cold colors, landscape composition near 16:9, no text, no logos, no watermarks. A single peach-tree in the farthest corner of a walled garden, still quite covered with frost and snow, its bare branches bent low toward the snowy ground. No people in this picture, only the tree."
+        }
+      ],
+      "start": 275.062
+    },
+    {
+      "id": "scene-11",
+      "title": "A Heart Melts",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And the Giant&#x27;s heart melted as he looked out. &quot;How selfish I have been!&quot; he said; &quot;now I know why the Spring would not come here. I will put that poor little boy on the top of the tree, and then I will knock down the wall, and my garden shall be the children&#x27;s playground for ever and ever.&quot; He was really very sorry for what he had done."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-11.jpg",
+          "alt": "The Giant looking out with a softened, remorseful expression, hand to his heart, warm light breaking into the room.",
+          "caption": "How selfish I have been!",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant remorseful, hand to heart, warm light."
+        }
+      ],
+      "start": 302.422
+    },
+    {
+      "id": "scene-12",
+      "title": "The Gentle Lift",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "So he crept downstairs and opened the front door quite softly, and went out into the garden. But when the children saw him they were so frightened that they all ran away, and the garden became winter again."
+        },
+        {
+          "type": "paragraph",
+          "html": "Only the little boy did not run, for his eyes were so full of tears that he did not see the Giant coming. And the Giant stole up behind him and took him gently in his hand, and put him up into the tree. And the tree broke at once into blossom, and the birds came and sang on it, and the little boy stretched out his two arms and flung them round the Giant&#x27;s neck, and kissed him."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-12.jpg",
+          "alt": "The Giant gently lifting the little boy up into a blossoming tree; the boy's arms around the Giant's neck, both smiling.",
+          "caption": "The tree broke at once into blossom.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant gently lifting boy into blossoming tree, boy hugging his neck."
+        }
+      ],
+      "start": 323.253
+    },
+    {
+      "id": "scene-13",
+      "title": "The Wall Comes Down",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And the other children, when they saw that the Giant was not wicked any longer, came running back, and with them came the Spring. &quot;It is your garden now, little children,&quot; said the Giant, and he took a great axe and knocked down the wall. And when the people were going to market at twelve o&#x27;clock they found the Giant playing with the children in the most beautiful garden they had ever seen."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-13.jpg",
+          "alt": "The Giant playing with children in the beautiful garden; a broken-open section of wall behind them, flowers everywhere.",
+          "caption": "It is your garden now, little children.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant playing with children, broken-open wall behind, NO axe."
+        }
+      ],
+      "start": 358.979
+    },
+    {
+      "id": "scene-14",
+      "title": "Where Is the Little Boy?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "All day long they played, and in the evening they came to the Giant to bid him good-bye."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;But where is your little companion?&quot; he said: &quot;the boy I put into the tree.&quot; The Giant loved him the best because he had kissed him."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;We don&#x27;t know,&quot; answered the children; &quot;he has gone away.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;You must tell him to be sure and come here to-morrow,&quot; said the Giant. But the children said that they did not know where he lived, and had never seen him before; and the Giant felt very sad."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-14.jpg",
+          "alt": "Evening farewell; the Giant bending down asking the children, who shake their heads, a gentle wistful mood.",
+          "caption": "But where is your little companion?",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: evening farewell, giant asking children, wistful."
+        }
+      ],
+      "start": 382.538
+    },
+    {
+      "id": "scene-15",
+      "title": "Years Go By",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Every afternoon, when school was over, the children came and played with the Giant. But the little boy whom the Giant loved was never seen again. The Giant was very kind to all the children, yet he longed for his first little friend, and often spoke of him. &quot;How I would like to see him!&quot; he used to say."
+        },
+        {
+          "type": "paragraph",
+          "html": "Years went over, and the Giant grew very old and feeble. He could not play about any more, so he sat in a huge armchair, and watched the children at their games, and admired his garden. &quot;I have many beautiful flowers,&quot; he said; &quot;but the children are the most beautiful flowers of all.&quot;"
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-15.jpg",
+          "alt": "The old Giant with a long grey beard sitting in a huge armchair in the garden, smiling as he watches children play among flowers.",
+          "caption": "The children are the most beautiful flowers of all.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: old giant with long grey beard in huge armchair watching children play."
+        }
+      ],
+      "start": 412.002
+    },
+    {
+      "id": "scene-16",
+      "title": "A Winter Morning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One winter morning he looked out of his window as he was dressing. He did not hate the winter now, for he knew that it was merely the Spring asleep, and that the flowers were resting."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-16.jpg",
+          "alt": "The old Giant at his window on a calm winter morning, a peaceful snow garden outside.",
+          "caption": "Winter was merely the Spring asleep.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: old giant at window, calm winter morning."
+        }
+      ],
+      "start": 449.933
+    },
+    {
+      "id": "scene-17",
+      "title": "The Blossom Tree",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Suddenly he rubbed his eyes in wonder and looked and looked. It certainly was a marvellous sight. In the farthest corner of the garden was a tree quite covered with lovely white blossoms. Its branches were all golden, and silver fruit hung down from them, and underneath it stood the little boy he had loved."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-17.jpg",
+          "alt": "A tree covered in lovely white blossoms with golden branches and silver fruit; a beautiful child in white standing beneath it, hands gentle and unmarked.",
+          "caption": "A tree quite covered with lovely white blossoms.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: golden tree, white blossoms, silver fruit, child in white, hands gentle and unmarked."
+        }
+      ],
+      "start": 461.189
+    },
+    {
+      "id": "scene-18",
+      "title": "The Child in White",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Downstairs ran the Giant in great joy, and out into the garden. He hastened across the grass, and came near to the child. And when he came quite close his face grew red with anger, and he said, &quot;Who hath dared to wound thee?&quot; For on the palms of the child&#x27;s hands were the prints of two nails, and the prints of two nails were on the little feet."
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Who hath dared to wound thee?&quot; cried the Giant; &quot;tell me, that I might take my big sword and slay him.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Nay!&quot; answered the child; &quot;but these are the wounds of Love.&quot;"
+        },
+        {
+          "type": "paragraph",
+          "html": "&quot;Who art thou?&quot; said the Giant, and a strange awe fell on him, and he knelt before the little child."
+        },
+        {
+          "type": "paragraph",
+          "html": "And the child smiled on the Giant, and said to him, &quot;You let me play once in your garden, to-day you shall come with me to my garden, which is Paradise.&quot;"
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-18.jpg",
+          "alt": "The Giant kneeling in awe before the smiling child in white beneath the blossom tree.",
+          "caption": "You let me play once in your garden.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: giant kneeling in awe before smiling child in white, NO wounds, NO sword."
+        }
+      ],
+      "start": 481.046
+    },
+    {
+      "id": "scene-19",
+      "title": "The Garden in Bloom",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "And when the children ran in that afternoon, they found the Giant lying dead under the tree, all covered with white blossoms."
+        },
+        {
+          "type": "image",
+          "src": "the-selfish-giant/scene-19.jpg",
+          "alt": "Children running into a sunlit garden toward a tree covered in white blossoms.",
+          "caption": "The garden, in bloom at last.",
+          "prompt": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks. A tall, broad-shouldered, gentle-faced giant of a man with a kind round face, short grey-brown beard, warm brown tunic, dark green cloak, and sturdy leather boots. A very small child with soft golden curls, a gentle smile, and a simple white tunic with soft sandals. A large lovely walled garden with soft green grass, flowers like stars, twelve peach-trees in delicate pink-and-pearl blossom, and a stone castle behind. Scene: children running into sunlit garden toward blossom-covered tree, NEVER a body."
+        }
+      ],
+      "start": 528.694
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">The Giant kept his garden all to himself — and lost the spring. What is something better when it is shared?</h2>\n      <p class=\"conclusion-note\">About this text: unabridged from Project Gutenberg’s The Happy Prince and Other Tales (1888), original ending kept, no words changed.</p>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "the-selfish-giant/narration.mp3",
+    "video": {
+      "src": "the-selfish-giant/story-video.mp4",
+      "poster": "the-selfish-giant/story-video-poster.jpg"
+    },
+    "captions": "the-selfish-giant/narration.vtt",
+    "duration": 537.525,
+    "narrationInputHash": "822d15054ec23593b47d5f4821fd41a93ff635ff367632d334bcb123520d6b82",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration",
+    "videoNarrationHash": "822d15054ec23593b47d5f4821fd41a93ff635ff367632d334bcb123520d6b82",
+    "videoVisualHash": "6f03aa92673b2bda3af1d5186a78b9a22ae5c840aeae3e879f7a67293cbabb1f"
+  },
+  "artDirection": {
+    "style": "Traditional watercolor storybook illustration on lightly textured cream paper with fine pencil and ink contours, warm muted colors, expressive child-friendly faces, a Victorian fairy-tale garden, landscape composition near 16:9, no text, no logos, no watermarks.",
+    "referenceImages": [
+      "the-selfish-giant/references/giant_ref.jpg",
+      "the-selfish-giant/references/boy_ref.jpg",
+      "the-selfish-giant/references/garden_spring_ref.jpg",
+      "the-selfish-giant/references/garden_winter_ref.jpg"
+    ]
+  }
+}

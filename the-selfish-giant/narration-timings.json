@@ -1,0 +1,107 @@
+{
+  "audio": "narration.mp3",
+  "duration": 537.525,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "scene-01.jpg",
+      "start": 0.0,
+      "cue": "The Children's Garden"
+    },
+    {
+      "image": "scene-02.jpg",
+      "start": 35.841,
+      "cue": "The Giant Returns"
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 61.482,
+      "cue": "The High Wall"
+    },
+    {
+      "image": "scene-04.jpg",
+      "start": 78.989,
+      "cue": "Nowhere to Play"
+    },
+    {
+      "image": "scene-05.jpg",
+      "start": 99.088,
+      "cue": "Winter Takes the Garden"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 171.122,
+      "cue": "The Giant at the Window"
+    },
+    {
+      "image": "scene-07.jpg",
+      "start": 183.808,
+      "cue": "Always Winter"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 202.3,
+      "cue": "The Linnet's Song"
+    },
+    {
+      "image": "scene-09.jpg",
+      "start": 234.16,
+      "cue": "Spring Has Come"
+    },
+    {
+      "image": "scene-10.jpg",
+      "start": 275.062,
+      "cue": "The Little Boy"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 302.422,
+      "cue": "A Heart Melts"
+    },
+    {
+      "image": "scene-12.jpg",
+      "start": 323.253,
+      "cue": "The Gentle Lift"
+    },
+    {
+      "image": "scene-13.jpg",
+      "start": 358.979,
+      "cue": "The Wall Comes Down"
+    },
+    {
+      "image": "scene-14.jpg",
+      "start": 382.538,
+      "cue": "Where Is the Little Boy?"
+    },
+    {
+      "image": "scene-15.jpg",
+      "start": 412.002,
+      "cue": "Years Go By"
+    },
+    {
+      "image": "scene-16.jpg",
+      "start": 449.933,
+      "cue": "A Winter Morning"
+    },
+    {
+      "image": "scene-17.jpg",
+      "start": 461.189,
+      "cue": "The Blossom Tree"
+    },
+    {
+      "image": "scene-18.jpg",
+      "start": 481.046,
+      "cue": "The Child in White"
+    },
+    {
+      "image": "scene-19.jpg",
+      "start": 528.694,
+      "cue": "The Garden in Bloom"
+    }
+  ]
+}
