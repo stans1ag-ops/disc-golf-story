@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "id": "the-gift-of-the-magi",
+  "title": "The Gift of the Magi",
+  "collection": "classics",
+  "order": 999,
+  "description": "On Christmas Eve with only one dollar and eighty-seven cents in hand, Della and Jim each part with their dearest treasure to buy a gift for the other — discovering the true wisdom of the Magi.",
+  "subtitle": "Adapted from O. Henry’s 1905 Christmas tale • A gentle family bedtime story about one dollar and eighty-seven cents, two treasured possessions, and the wisest gifts ever given.",
+  "readingLevel": "Read together",
+  "edition": "Bedtime adaptation",
+  "sourceUrl": "https://americanliterature.com/author/o-henry/short-story/the-gift-of-the-magi",
+  "addedAt": "2026-10-27T22:42:29.150550+00:00",
+  "cover": {
+    "src": "the-gift-of-the-magi/cover.jpg",
+    "alt": "Della with her short chestnut curls holds out the platinum watch chain while Jim holds out the jewel-rimmed tortoiseshell combs in their lamp-lit parlor on Christmas Eve."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "One Dollar and Eighty-Seven Cents",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "One dollar and eighty-seven cents. That was all. And sixty cents of it was in copper pennies, saved one and two at a time whenever Della went to the grocer and the market. Three times Della counted the little stack of coins on the parlor table, and it was still one dollar and eighty-seven cents."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-01.jpg",
+          "alt": "Della sits at her wooden parlor table counting a small stack of copper pennies and silver coins beside her leather coin purse.",
+          "caption": "One dollar and eighty-seven cents — and sixty cents of it was in pennies, saved one and two at a time.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A young adult woman in her mid-twenties with long chestnut-brown hair pinned up, wearing a modest high-collared ivory cotton blouse and ankle-length brown wool skirt, sitting upright at a round wooden parlor table in a cozy 1905 Edwardian sitting room, counting a small neat stack of copper pennies and silver coins beside a worn leather coin purse in soft afternoon window light. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 0.0
+    },
+    {
+      "id": "scene-2",
+      "title": "A Wistful Christmas Eve",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The very next day would be Christmas. Della sat quietly on the little floral settee in their upstairs parlor and sighed a soft, wistful sigh. She loved her husband Jim with all her heart, and she wanted so much to buy him a wonderful Christmas present."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-02.jpg",
+          "alt": "Della sits thoughtfully on the floral parlor settee in her modest Edwardian sitting room, looking toward a sprig of Christmas holly.",
+          "caption": "Tomorrow would be Christmas Day, and she had only one dollar and eighty-seven cents to buy Jim a present.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A young adult woman in her mid-twenties with long chestnut-brown hair, wearing a high-collared ivory blouse and brown wool skirt, sitting upright on a floral-patterned parlor settee in a modest 1905 Edwardian sitting room with her hands folded in her lap and a gentle, wistful, thoughtful expression, looking toward a small sprig of Christmas holly on the table. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 21.578
+    },
+    {
+      "id": "scene-3",
+      "title": "Home in the Little Flat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Della and Jim lived in a cozy, humble flat high up in an old brick house. Downstairs by the front door stood a tiny brass letter-box and a polished nameplate for James Dillingham Young. They did not have much money anymore, for Jim’s wages had grown smaller that winter. Yet every evening when Jim came up the stairs, Della met him at the door with the biggest, warmest hug in the world."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-03.jpg",
+          "alt": "The entrance hall of the 1905 brownstone with a brass letter-box by the door and Della welcoming Jim at the foot of the stairs.",
+          "caption": "Whenever Jim came home and reached the stairs, he was called “Jim” and warmly hugged by Della.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. The cozy downstairs entrance hall of a 1905 New York brick brownstone on a snowy afternoon: a polished oak front door with frosted glass panels, a small vintage brass mailbox slot and brass nameplate on the wainscoting, a potted fern on a tiled floor, and warm golden light spilling down the wooden staircase where the young adult woman welcomes her husband home in his brown overcoat. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 37.925
+    },
+    {
+      "id": "scene-4",
+      "title": "By the Frosty Window",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Della stood by the frosty parlor window and watched a fluffy grey cat walk along a snowy wooden fence in the yard below. For weeks she had dreamed of finding a gift for Jim that was fine, rare, and sterling — something truly worthy of her kind and hardworking husband. How could she ever find it for only one dollar and eighty-seven cents?"
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-04.jpg",
+          "alt": "Della stands at the frost-rimmed parlor window watching a grey cat walk along a snowy wooden fence outside.",
+          "caption": "She stood by the window watching a grey cat on a snowy fence — dreaming of something fine and sterling for Jim.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A young adult woman in her mid-twenties in a high-collared ivory blouse and brown wool skirt standing beside a frost-rimmed parlor window, looking thoughtfully outside at a snowy 1905 city courtyard where a fluffy grey cat walks gracefully along the top of a wooden fence beneath soft grey winter skies. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 62.608
+    },
+    {
+      "id": "scene-5",
+      "title": "The Two Great Treasures",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now, in Della and Jim’s house there were two treasures in which they both took a mighty pride. One was Jim’s shining gold pocket watch, which had belonged to his father and to his grandfather before him. The other was Della’s own glorious chestnut hair, which rippled and shone like a cascade of brown waters all the way past her waist."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-05.jpg",
+          "alt": "Jim's heirloom gold pocket watch gleams on the table in the foreground while Della brushes her long, shimmering chestnut hair before the pier-glass mirror.",
+          "caption": "There were two treasures in which they both took a mighty pride: Jim’s gold pocket watch, and Della’s glorious brown hair.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A warm storybook composition in a cozy 1905 parlor: in the foreground on a velvet cloth rests an ornate heirloom gold pocket watch gleaming in lamplight, while beside the tall narrow pier-glass mirror between two windows stands the young adult woman in her high-collared ivory blouse and brown wool skirt, brushing her shimmering waist-length cascade of chestnut-brown hair. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 84.737
+    },
+    {
+      "id": "scene-6",
+      "title": "A Sudden Bright Idea",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "All at once Della turned from the window and stood before the tall, narrow looking-glass between the windows. Her eyes shone with a sudden, bright idea! For one quiet moment she looked at her long, shimmering hair, and then she coiled it neatly back up. She buttoned on her warm old brown winter coat, tied on her little brown hat, and hurried down the stairs into the snowy street."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-06.jpg",
+          "alt": "With a bright, determined look in her eyes, Della buttons her brown wool winter coat and puts on her brown felt hat before the mirror.",
+          "caption": "On went her old brown coat; on went her old brown hat. With a bright sparkle in her eyes, she hurried out the door.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A young adult woman in her mid-twenties with a bright, determined, hopeful sparkle in her hazel eyes, standing in her 1905 parlor tying the ribbon of her old brown felt hat and buttoning her warm brown wool winter coat over her long chestnut hair before the tall narrow mirror, ready to step out on Christmas Eve. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 106.289
+    },
+    {
+      "id": "scene-7",
+      "title": "Madame Sofronie’s Shop",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Down the street Della hurried until she reached the neat shop of Madame Sofronie, who bought and sold fine hair goods of all kinds. Della stepped up to the wooden counter, took off her hat, and asked if Madame Sofronie would buy her long brown hair."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🛍️ Madame Sofronie</div>\n        <div class=\"chant-text\">“Twenty dollars,” said Madame Sofronie kindly, admiring the rich brown tresses. — “Give it to me quick!” said Della with a brave smile.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-07.jpg",
+          "alt": "Inside a tidy Edwardian shop, Madame Sofronie stands behind a wooden counter and hands twenty dollars in banknotes to Della.",
+          "caption": "“Twenty dollars,” said Madame Sofronie kindly. “Give it to me quick!” said Della.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. Inside a bright, tidy 1905 Edwardian millinery and hair-goods shop decorated with evergreen garlands, a kindly older shopkeeper woman in a neat dark blue dress stands behind a polished wooden counter and places crisp green paper banknotes into the hands of the young adult woman in her brown winter coat, with display stands of braided wigs on the shelves behind them. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 129.841
+    },
+    {
+      "id": "scene-8",
+      "title": "Searching the Christmas Shops",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now Della had twenty-one dollars and eighty-seven cents in her purse, and her hair was cropped short in soft little curls beneath her hat. The next two hours flew by as if on rosy wings! She went from shop to shop along the snowy avenues, peering into glowing Christmas windows to find the very best gift in the city for Jim."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-08.jpg",
+          "alt": "Della in her brown coat and hat peers eagerly into a glowing, wreath-decked jeweler's shop window along a snowy 1905 street at twilight.",
+          "caption": "The next two hours flew by on rosy wings as Della searched the Christmas shops for Jim’s present.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A bustling, cheerful 1905 New York street at twilight on Christmas Eve under falling snow: warm golden light glows from festive shop windows decorated with pine wreaths and ribbons as the young adult woman in her brown wool winter coat and brown felt hat peers eagerly into a jeweler's display window while horse-drawn carriages pass in the snowy street. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 154.417
+    },
+    {
+      "id": "scene-9",
+      "title": "The Platinum Watch Chain",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At last she found it in a quiet jeweler’s shop. It was a braided platinum fob chain for a pocket watch — simple, strong, and shining, with no gaudy ornaments at all. It was quiet and genuine, just like Jim. As soon as Della saw it, she knew it belonged on Jim’s grand gold watch. She paid twenty-one dollars for the chain and hurried home with eighty-seven cents left in her pocket."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-09.jpg",
+          "alt": "Inside a warm jewelry shop, an elderly jeweler holds open a velvet box showing a braided platinum watch fob chain as Della smiles with delight.",
+          "caption": "It was a braided platinum watch chain, simple and shining — as soon as she saw it, she knew it must be Jim’s.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. Inside a warm, wood-paneled 1905 watchmaker and jewelry shop lit by brass lamps, a friendly elderly jeweler with spectacles holds open a small velvet box on the glass counter, revealing a finely braided silver-toned platinum watch fob chain, while the young adult woman in her brown winter coat and hat smiles with delight. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 175.607
+    },
+    {
+      "id": "scene-10",
+      "title": "Soft Little Curls in the Mirror",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "When Della reached home, she brushed and arranged her short hair before the looking-glass until her whole head was covered with tiny, soft ringlet curls. She looked into the mirror and smiled shyly. With her short curls, she looked almost like a cheerful little schoolboy! She wondered what Jim would say when he saw her."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-10.jpg",
+          "alt": "Della stands before the tall pier-glass mirror in the warm parlor, touching her short, soft chestnut ringlet curls.",
+          "caption": "Soon her head was covered with soft, close-lying curls that made her smile shyly into the looking-glass.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. In the warm lamp-lit 1905 parlor, the young adult woman in her high-collared ivory blouse and brown wool skirt stands before the tall narrow pier-glass mirror, gently touching her new short, soft chestnut ringlet curls with her fingertips and smiling shyly at her reflection, with a wooden hairbrush resting on the table beside the brass lamp. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 200.476
+    },
+    {
+      "id": "scene-11",
+      "title": "Waiting for Jim’s Step",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At seven o’clock the coffee was steaming on the stove, and supper was ready to cook. Jim was never late. Della folded the shining platinum watch chain in her hand and sat near the parlor door, listening to the sound of his boots coming up the stairs."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🕯️ Della</div>\n        <div class=\"chant-text\">“Please, dear Lord,” she whispered softly, “make him think I am still pretty.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-11.jpg",
+          "alt": "With a coffee pot steaming in the background, Della with her short chestnut curls sits by the parlor table clasping the watch chain and looking toward the door.",
+          "caption": "At seven o’clock the coffee was made, and Della sat near the door with the watch chain folded in her hand.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. In the cozy, warm 1905 Edwardian parlor and kitchen nook at seven o'clock in the evening, a copper coffee pot steams gently on a vintage cast-iron stove in the background while the young adult woman with short chestnut curls sits poised near the parlor table, clasping the platinum watch chain in her folded hands and looking toward the door with tender anticipation. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 219.996
+    },
+    {
+      "id": "scene-12",
+      "title": "Jim Steps Inside",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The door opened, and Jim stepped in out of the cold. He looked thin and tired in his worn brown overcoat, holding his hat in his ungloved hands and carrying a small paper-wrapped package under his arm. Then Jim stopped still by the door, his eyes wide with quiet wonder as he looked at Della’s short curls."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🎩 Jim</div>\n        <div class=\"chant-text\">“You have cut off your hair?” asked Jim softly, as if he could hardly believe his eyes.</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-12.jpg",
+          "alt": "Jim stands just inside the parlor doorway in his worn overcoat with a small parcel under his arm, gazing in quiet astonishment at Della's short curls.",
+          "caption": "The door opened and Jim stepped in — stopping still as his eyes fixed in quiet wonder upon Della’s short curls.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. The parlor door opens and the young adult man in his mid-twenties in a worn charcoal-brown overcoat, holding his fedora hat in his ungloved hands and carrying a small paper-wrapped parcel under his arm, pauses just inside the doorway, gazing in quiet, wide-eyed astonishment at his wife with her short chestnut ringlet curls. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 240.561
+    },
+    {
+      "id": "scene-13",
+      "title": "“My Hair Is Sold and Gone”",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Della ran across the room and took Jim’s hands."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">💝 Della</div>\n        <div class=\"chant-text\">“Jim, darling, don’t look at me that way! I had my hair cut off and sold it because I couldn’t have lived through Christmas without giving you a present. It’ll grow out again — and oh, Jim, wait till you see what I got for you!”</div>"
+        },
+        {
+          "type": "paragraph",
+          "html": "At that, a warm, gentle smile spread across Jim’s face. He wrapped his arms around his Della and hugged her close, telling her that no haircut in the world could ever make him love his girl any less. Then he took the little paper-wrapped package from his coat and laid it on the table."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-13.jpg",
+          "alt": "Jim warmly embraces Della by the shoulders with a tender smile as a small paper-wrapped Christmas parcel rests on the table beside them.",
+          "caption": "Jim woke from his surprise, wrapped his Della in a warm embrace, and laid a small package upon the table.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. In the warm lamp-lit 1905 parlor, the young adult man in his brown overcoat gently embraces his short-haired wife by the shoulders with a loving, tender smile, while placing a small white paper-wrapped Christmas parcel tied with twine onto the wooden parlor table beside them. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 265.735
+    },
+    {
+      "id": "scene-14",
+      "title": "The Tortoiseshell Combs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Della untied the string and unfolded the white paper — and then she gave a little gasp of pure joy! Resting inside were The Combs: the set of three tortoise-shell hair combs with sparkling jeweled rims that she had admired for months in a shop window on Broadway. They were the exact warm shade to wear in her vanished chestnut hair. Della hugged them to her heart and looked up at Jim with shining eyes."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">✨ Della</div>\n        <div class=\"chant-text\">“Oh, they are so beautiful! And my hair grows awfully fast, Jim!”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-14.jpg",
+          "alt": "Della holds up a set of three jewel-rimmed tortoiseshell hair combs above unwrapped tissue paper on the parlor table, smiling with joyful wonder at Jim.",
+          "caption": "There lay The Combs — pure tortoiseshell with jeweled rims! “My hair grows awfully fast, Jim!”",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. At the lamp-lit wooden parlor table, the young adult woman with short chestnut curls holds up a set of three exquisite tortoiseshell hair combs rimmed with sparkling jewels above unwrapped white tissue paper and twine, her face glowing with a mixture of joyful wonder and tender affection as her husband watches fondly beside her. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 300.091
+    },
+    {
+      "id": "scene-15",
+      "title": "Jim’s Secret Surprise",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Then Della jumped up and held out her own gift in her open palm, where the braided platinum chain flashed like pale silver in the lamplight. She asked Jim for his gold watch so they could see how handsome it looked together. Instead of reaching into his pocket, Jim sat down on the floral settee, leaned back, and smiled the warmest smile of all."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">⌚ Jim</div>\n        <div class=\"chant-text\">“Dell, let’s put our Christmas presents away and keep them awhile. They’re too nice to use just at present. I sold the gold watch to get the money to buy your combs.”</div>"
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-15.jpg",
+          "alt": "Jim sits smiling warmly on the parlor settee while Della holds out the platinum watch chain in her open palm beside the tortoiseshell combs on the table.",
+          "caption": "“Dell, let’s put our Christmas presents away and keep them awhile. I sold the watch to get the money to buy your combs.”",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. In the warm, golden lamp-lit 1905 parlor, the young adult man in his tweed waistcoat sits relaxed on the floral parlor settee with a warm, affectionate, gentle smile, while his short-haired wife stands beside him holding out the gleaming platinum watch chain in her open palm, the jewel-rimmed tortoiseshell combs resting on the table between them. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 330.5
+    },
+    {
+      "id": "scene-16",
+      "title": "The Wisest Gift-Givers of All",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Long ago, the Magi — the three wonderfully wise men — traveled beneath a bright star to bring the very first Christmas gifts. Some might say that Della and Jim were foolish to trade away the two greatest treasures of their house. Yet as they sat hand in hand in their warm little parlor while the snow fell outside, they had given each other something far greater than gold or jewels: their whole hearts. And of all who give and receive gifts anywhere in the world, such as they are the wisest. Everywhere they are the wisest. They are the Magi."
+        },
+        {
+          "type": "image",
+          "src": "the-gift-of-the-magi/scene-16.jpg",
+          "alt": "Della and Jim sit hand in hand in their warm parlor as a radiant golden Christmas star and a storybook vignette of the Three Wise Men shine in the snowy sky outside the window.",
+          "caption": "Of all who give and receive gifts, such as they are the wisest. Everywhere they are the wisest. They are the Magi.",
+          "prompt": "Warm watercolor storybook art on cream paper with fine pencil details. A warm, luminous storybook finale illustration: in the cozy 1905 parlor, the young adult husband and his short-haired wife sit side by side on the settee holding hands in the golden glow of the oil lamp while supper steams on the table; through the frost-rimmed window behind them, a radiant golden Christmas star shines over the snowy rooftops, with a delicate storybook vignette in the starry sky showing three crowned Wise Men bearing gift caskets across snow-dusted hills. Landscape storybook illustration; no text in the image."
+        }
+      ],
+      "start": 362.573
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">💭 Bedtime Chat</span>\n      <h2 class=\"conclusion-question\">Della couldn’t wear her new combs yet, and Jim couldn’t use his new watch chain — why did the storyteller call them the wisest gift-givers of all?</h2>\n      \n      <div class=\"choice-grid\">\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">💝</span>\n          <strong class=\"choice-card-title\">Love Is Bigger Than Things</strong>\n          <span class=\"choice-card-desc\">Della and Jim each gave up their favorite treasure just to make the other person smile on Christmas morning.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">⏳</span>\n          <strong class=\"choice-card-title\">Hair Grows &amp; Love Lasts</strong>\n          <span class=\"choice-card-desc\">Della’s hair would grow back in time, and the love behind their two presents was something they could keep forever.</span>\n        </div>\n        <div class=\"choice-card\">\n          <span class=\"choice-card-icon\">🌟</span>\n          <strong class=\"choice-card-title\">The Spirit of the Magi</strong>\n          <span class=\"choice-card-desc\">Like the Wise Men who brought the first Christmas gifts, the wisest presents are measured by how much heart we put into giving them.</span>\n        </div>\n      </div>\n      <p class=\"adaptation-note\">A note on this telling: this gentle bedtime adaptation retells O. Henry’s 1905 Christmas classic, <em>The Gift of the Magi</em>, in warm, read-together language for young listeners while preserving every beat of Della and Jim’s Christmas Eve surprise. A few pictures show neighbouring moments of the story (counting the coins on the parlor table, Madame Sofronie’s counter, and the finished curls in the looking-glass) in keeping with a cozy family picture-book edition.</p>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "the-gift-of-the-magi/narration.mp3",
+    "video": {
+      "src": "the-gift-of-the-magi/story-video.mp4",
+      "poster": "the-gift-of-the-magi/story-video-poster.jpg"
+    },
+    "captions": "the-gift-of-the-magi/narration.vtt",
+    "duration": 396.761333,
+    "narrationInputHash": "f6ba262b26d0a33dcd1fcdf005aaaefc000eaf7e8954f60a1539e101a388916a",
+    "provenance": "Generated from canonical scene text using free local Kokoro narration",
+    "videoNarrationHash": "f6ba262b26d0a33dcd1fcdf005aaaefc000eaf7e8954f60a1539e101a388916a",
+    "videoVisualHash": "d389e3f07dc6ac1542d45d4a53b76c83b09a7c59764fa202a7bdc6ebcc43e54e"
+  },
+  "artDirection": {
+    "style": "Warm watercolor storybook art on cream paper with fine pencil details",
+    "referenceImages": [
+      "the-gift-of-the-magi/references/della_ref.jpg",
+      "the-gift-of-the-magi/references/jim_ref.jpg",
+      "the-gift-of-the-magi/references/flat_parlor_ref.jpg",
+      "the-gift-of-the-magi/references/treasures_ref.jpg"
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "audio": "narration.mp3",
+  "duration": 396.761333,
+  "timing_method": "Measured PCM sample positions",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "scene-01.jpg",
+      "start": 0.0,
+      "cue": "One Dollar and Eighty-Seven Cents"
+    },
+    {
+      "image": "scene-02.jpg",
+      "start": 21.578,
+      "cue": "A Wistful Christmas Eve"
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 37.925,
+      "cue": "Home in the Little Flat"
+    },
+    {
+      "image": "scene-04.jpg",
+      "start": 62.608,
+      "cue": "By the Frosty Window"
+    },
+    {
+      "image": "scene-05.jpg",
+      "start": 84.737,
+      "cue": "The Two Great Treasures"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 106.289,
+      "cue": "A Sudden Bright Idea"
+    },
+    {
+      "image": "scene-07.jpg",
+      "start": 129.841,
+      "cue": "Madame Sofronie’s Shop"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 154.417,
+      "cue": "Searching the Christmas Shops"
+    },
+    {
+      "image": "scene-09.jpg",
+      "start": 175.607,
+      "cue": "The Platinum Watch Chain"
+    },
+    {
+      "image": "scene-10.jpg",
+      "start": 200.476,
+      "cue": "Soft Little Curls in the Mirror"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 219.996,
+      "cue": "Waiting for Jim’s Step"
+    },
+    {
+      "image": "scene-12.jpg",
+      "start": 240.561,
+      "cue": "Jim Steps Inside"
+    },
+    {
+      "image": "scene-13.jpg",
+      "start": 265.735,
+      "cue": "“My Hair Is Sold and Gone”"
+    },
+    {
+      "image": "scene-14.jpg",
+      "start": 300.091,
+      "cue": "The Tortoiseshell Combs"
+    },
+    {
+      "image": "scene-15.jpg",
+      "start": 330.5,
+      "cue": "Jim’s Secret Surprise"
+    },
+    {
+      "image": "scene-16.jpg",
+      "start": 362.573,
+      "cue": "The Wisest Gift-Givers of All"
+    }
+  ]
+}
