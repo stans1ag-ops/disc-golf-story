@@ -483,6 +483,126 @@
     "sha": "d18371dc2f3e7f8cc1bfa22d9a7aaf9e06c9472c",
     "size": 866341
   },
+  "pippin-and-the-golden-acorns/acorn_01.jpg": {
+    "sha": "cbd4328e4f4c5f6b23cd787be65c8812aa903fc5",
+    "size": 971324
+  },
+  "pippin-and-the-golden-acorns/acorn_02.jpg": {
+    "sha": "0470a4350e1bc3cd1d289124161131c4dde6be48",
+    "size": 993397
+  },
+  "pippin-and-the-golden-acorns/acorn_03.jpg": {
+    "sha": "231136b6c1a754c5164e37e2bc55f3c6fad0d3fa",
+    "size": 1009741
+  },
+  "pippin-and-the-golden-acorns/acorn_04.jpg": {
+    "sha": "f98dfe916a7c94aada6b3f8bb00413acb2b30a61",
+    "size": 465348
+  },
+  "pippin-and-the-golden-acorns/acorn_05.jpg": {
+    "sha": "e420c8c619f709ac44a6bfa805d6fc0815d96aad",
+    "size": 1042124
+  },
+  "pippin-and-the-golden-acorns/acorn_06.jpg": {
+    "sha": "1393d8b61bbe7bbc0d5813ea3dc8aac401a5811a",
+    "size": 996654
+  },
+  "pippin-and-the-golden-acorns/acorn_07.jpg": {
+    "sha": "eee50704fbca7d56f4ad8e611687c69c529f9060",
+    "size": 483720
+  },
+  "pippin-and-the-golden-acorns/acorn_08.jpg": {
+    "sha": "cfc5a300f657e8e09ee6775f7be22ed4acb556a3",
+    "size": 491626
+  },
+  "pippin-and-the-golden-acorns/acorn_09.jpg": {
+    "sha": "3674f218a57d458fa90f4f36744ca33800c264b7",
+    "size": 1054197
+  },
+  "pippin-and-the-golden-acorns/acorn_10.jpg": {
+    "sha": "9952303fe205d82f597ed8b854a715e2cb35e558",
+    "size": 1057744
+  },
+  "pippin-and-the-golden-acorns/acorn_11.jpg": {
+    "sha": "eed51e7bb2ac17fe5b9a576241f6657bf7432005",
+    "size": 508544
+  },
+  "pippin-and-the-golden-acorns/acorn_12.jpg": {
+    "sha": "1b2cc8713b4a81a6b5810f5a78d32aafc8c10d81",
+    "size": 501131
+  },
+  "pippin-and-the-golden-acorns/acorn_13.jpg": {
+    "sha": "1bf52718eb78d9f70eaac6a7624bddda0275eab2",
+    "size": 996752
+  },
+  "pippin-and-the-golden-acorns/acorn_14.jpg": {
+    "sha": "d6f742dc281c7f64272409a55c54db55f5aee8b5",
+    "size": 989128
+  },
+  "pippin-and-the-golden-acorns/acorn_15.jpg": {
+    "sha": "0548a14e1508c516f9c7e148251e751269f79d04",
+    "size": 416367
+  },
+  "pippin-and-the-golden-acorns/acorn_16.jpg": {
+    "sha": "9800b3fb2349e98300fbe57ac9fb7734fa3e54f2",
+    "size": 431125
+  },
+  "pippin-and-the-golden-acorns/acorn_17.jpg": {
+    "sha": "e32a39c402d4a5aa8c7307f729f62ba0da1b975c",
+    "size": 1041133
+  },
+  "pippin-and-the-golden-acorns/acorn_18.jpg": {
+    "sha": "8f040f52427c27b82de68d7ebd97e23500864b16",
+    "size": 469475
+  },
+  "pippin-and-the-golden-acorns/acorn_19.jpg": {
+    "sha": "0a2238ead0dd67270332f7a7e2d83365fca270af",
+    "size": 434365
+  },
+  "pippin-and-the-golden-acorns/acorn_20.jpg": {
+    "sha": "fcb0b2339edde28713f453bde14327091cf16fa0",
+    "size": 388703
+  },
+  "pippin-and-the-golden-acorns/acorn_21.jpg": {
+    "sha": "a8431f5b052fceb96e6ee04652b6ce720bd78a59",
+    "size": 976864
+  },
+  "pippin-and-the-golden-acorns/acorn_22.jpg": {
+    "sha": "fd737f70a026cf144b5269f64febe3c17e2e28bc",
+    "size": 992400
+  },
+  "pippin-and-the-golden-acorns/acorn_23.jpg": {
+    "sha": "fad14f224807ff0daacba2aa767d7093a6ca5bd5",
+    "size": 428895
+  },
+  "pippin-and-the-golden-acorns/acorn_24.jpg": {
+    "sha": "4b24ab7043343728162381f2321d70c88d4edbdb",
+    "size": 420810
+  },
+  "pippin-and-the-golden-acorns/narration.mp3": {
+    "sha": "7e762267139bb6cfb33afbceb420e149a1a02dc9",
+    "size": 35140077
+  },
+  "pippin-and-the-golden-acorns/narration.vtt": {
+    "sha": "e4ae67612aa836b4a91964b64c2e1b14725d8008",
+    "size": 27193
+  },
+  "pippin-and-the-golden-acorns/pippin_golden_acorns_story_video.mp4": {
+    "sha": "7e4d5bfbb8e77c3b3b13aa74bcabaec5a42d5e09",
+    "size": 50309094
+  },
+  "pippin-and-the-golden-acorns/pippin_golden_acorns_story_video_poster.jpg": {
+    "sha": "3da0aa196c083db9a38eab99045337bbc3151675",
+    "size": 372585
+  },
+  "pippin-and-the-golden-acorns/ref_characters.jpg": {
+    "sha": "4540523aac64fd2e8c4702823f2d7bd96328dad2",
+    "size": 314016
+  },
+  "pippin-and-the-golden-acorns/ref_key_setting.jpg": {
+    "sha": "c0d822c0178db3a91a24bb9e6781a44edcf52d8d",
+    "size": 1075892
+  },
   "rumpelstiltskin/narration.mp3": {
     "sha": "85ce5c99c6030bd1ce7b8d686c1db23e734f64e9",
     "size": 8125677

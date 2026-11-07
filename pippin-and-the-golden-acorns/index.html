@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Read Pippin Paddlepaw and the Seven Golden Acorns with 24 watercolor illustrations, full multi-voice narration, and a synchronized narrated story video.">
+  <title>Pippin Paddlepaw and the Seven Golden Acorns — Shane’s Bedtime Stories</title>
+
+  <!-- Google Fonts with full system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      touch-action: manipulation;
+    }
+
+    /* Themes */
+    :root {
+      --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      --bg-page: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F3ECE1;
+      --bg-toolbar: rgba(250, 247, 242, 0.95);
+      --text-main: #272624;
+      --text-muted: #666159;
+      --text-accent: #C85A17;
+      --accent-brick: #B83B26;
+      --accent-straw: #D4A373;
+      --accent-stick: #8C6239;
+      --accent-green: #2D6A4F;
+      --accent-gold: #E09F3E;
+      --border-color: #E6DCCE;
+      --shadow-sm: 0 2px 8px rgba(40, 30, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(40, 30, 20, 0.08);
+      --shadow-lg: 0 16px 36px rgba(40, 30, 20, 0.12);
+      
+      --base-font-size: 19px;
+      --line-height: 1.8;
+      --border-radius-img: 18px;
+    }
+
+    [data-theme="sepia"] {
+      --bg-page: #F4EEDF;
+      --bg-card: #EDE4D0;
+      --bg-card-subtle: #E3D7BF;
+      --bg-toolbar: rgba(244, 238, 223, 0.96);
+      --text-main: #332B21;
+      --text-muted: #6B5F4E;
+      --text-accent: #A8420B;
+      --accent-brick: #9C2E1B;
+      --accent-straw: #B88554;
+      --accent-stick: #704B28;
+      --accent-green: #265942;
+      --accent-gold: #C0852A;
+      --border-color: #DBD0BC;
+      --shadow-sm: 0 2px 8px rgba(50, 35, 15, 0.06);
+      --shadow-md: 0 8px 24px rgba(50, 35, 15, 0.1);
+    }
+
+    [data-theme="night"] {
+      --bg-page: #121815;
+      --bg-card: #1A221E;
+      --bg-card-subtle: #232E29;
+      --bg-toolbar: rgba(18, 24, 21, 0.96);
+      --text-main: #EDE7DC;
+      --text-muted: #A3B1A8;
+      --text-accent: #F48C42;
+      --accent-brick: #E26D5C;
+      --accent-straw: #E9C46A;
+      --accent-stick: #C49A6C;
+      --accent-green: #74C69D;
+      --accent-gold: #F4A261;
+      --border-color: #2F3E37;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+      padding-bottom: 60px;
+    }
+
+    /* Reading Progress Bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-brick), var(--text-accent), var(--accent-gold));
+      z-index: 1000;
+      transition: width 0.1s linear;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-toolbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: var(--bg-toolbar);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+    }
+
+    .toolbar-inner {
+      width: 100%;
+      max-width: 860px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    /* Story Switcher Dropdown */
+    .story-nav-container {
+      position: relative;
+    }
+
+    .btn-story-selector {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .btn-story-selector:hover {
+      background: var(--bg-card-subtle);
+      border-color: var(--text-accent);
+    }
+
+    .story-chevron {
+      font-size: 0.75rem;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-story-selector.open .story-chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      width: 310px;
+      max-height: 440px;
+      overflow-y: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 1000;
+    }
+
+    .story-dropdown-menu.open {
+      display: flex !important;
+    }
+
+    .story-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .story-menu-link:hover {
+      background-color: var(--bg-card-subtle);
+      transform: translateX(3px);
+    }
+
+    .story-menu-link.active {
+      background-color: rgba(200, 90, 23, 0.12);
+      border: 1px solid var(--text-accent);
+    }
+
+    .menu-link-icon { font-size: 1.35rem; flex-shrink: 0; }
+    .menu-link-text { display: flex; flex-direction: column; text-align: left; }
+    .menu-link-title { font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--text-main); }
+    .menu-link-desc { font-family: var(--font-sans); font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+    .toolbar-actions { display: flex; align-items: center; gap: 6px; }
+    .btn-tool {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      transition: all 0.2s ease;
+    }
+    .btn-tool:hover {
+      background: var(--bg-card-subtle);
+      border-color: var(--text-accent);
+    }
+
+    .theme-selector {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .theme-btn {
+      padding: 4px 8px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      transition: background-color 0.2s ease;
+    }
+    .theme-btn.active {
+      background: var(--bg-card-subtle);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Main Container */
+    .story-container {
+      width: 100%;
+      max-width: 820px;
+      padding: 24px 20px 60px;
+      margin: 0 auto;
+    }
+
+    /* Story Header */
+    .story-header {
+      text-align: center;
+      padding: 36px 20px 28px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border: 2px solid var(--border-color);
+      border-radius: 28px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 36px;
+    }
+
+    .badge-adventure {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-brick);
+      background: rgba(184, 59, 38, 0.12);
+      border: 1px solid rgba(184, 59, 38, 0.28);
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .story-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 5.2vw, 3.1rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .story-title .highlight-word {
+      color: var(--accent-brick);
+      background: linear-gradient(120deg, rgba(184, 59, 38, 0.15) 0%, rgba(224, 159, 62, 0.25) 100%);
+      padding: 0 8px;
+      border-radius: 8px;
+    }
+
+    .story-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.08rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 20px;
+      line-height: 1.55;
+    }
+
+    .story-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 16px;
+    }
+
+    /* Audio Player Card */
+    .audio-player-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 20px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .audio-player-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .audio-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .audio-play-icon-box {
+      font-size: 1.4rem;
+      background: rgba(200, 90, 23, 0.12);
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .audio-info-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .audio-info-sub {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .btn-speed {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 12px;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .btn-speed:hover {
+      background: var(--bg-card-subtle);
+      color: var(--text-main);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-audio-main {
+      background: linear-gradient(135deg, var(--accent-brick), var(--text-accent));
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(184, 59, 38, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .btn-audio-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(184, 59, 38, 0.4);
+    }
+
+    .audio-progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .audio-scrubber {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-card-subtle);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .audio-scrubber-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-brick), var(--text-accent));
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Scene Sections */
+    .scene-section {
+      margin-bottom: 48px;
+      padding-top: 12px;
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .scene-pill {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 4px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    [data-theme="night"] .scene-pill {
+      color: var(--accent-gold);
+    }
+
+    p.story-text {
+      margin-bottom: 1.35em;
+      color: var(--text-main);
+      text-wrap: pretty;
+      transition: background-color 0.3s ease;
+      font-size: 1.05rem;
+    }
+
+    .lead-paragraph::first-letter {
+      font-family: var(--font-display);
+      font-size: 3.4em;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.18em;
+      margin-top: 0.08em;
+      color: var(--accent-brick);
+      font-weight: 700;
+    }
+
+    /* Rhyming Chant Boxes */
+    .chant-box {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin: 22px 0 24px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .chant-box.wolf {
+      border-left: 6px solid #4A5568;
+      background: linear-gradient(135deg, rgba(74, 85, 104, 0.06), var(--bg-card));
+    }
+
+    .chant-box.pig {
+      border-left: 6px solid #E06714;
+      background: linear-gradient(135deg, rgba(224, 103, 20, 0.08), var(--bg-card));
+    }
+
+    .chant-box.huff-puff {
+      border-left: 6px solid var(--accent-brick);
+      background: linear-gradient(135deg, rgba(184, 59, 38, 0.1), var(--bg-card));
+    }
+
+    .chant-speaker {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .chant-box.wolf .chant-speaker { color: #4A5568; }
+    .chant-box.pig .chant-speaker { color: #E06714; }
+    .chant-box.huff-puff .chant-speaker { color: var(--accent-brick); }
+
+    [data-theme="night"] .chant-box.wolf .chant-speaker { color: #A0AEC0; }
+    [data-theme="night"] .chant-box.pig .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.huff-puff .chant-speaker { color: #E26D5C; }
+
+    .chant-box.bear-great {
+      border-left: 6px solid #7A5C3E;
+      background: linear-gradient(135deg, rgba(122, 92, 62, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-middle {
+      border-left: 6px solid #B07A3F;
+      background: linear-gradient(135deg, rgba(176, 122, 63, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-wee {
+      border-left: 6px solid var(--accent-gold);
+      background: linear-gradient(135deg, rgba(224, 159, 62, 0.12), var(--bg-card));
+    }
+
+    .chant-box.goldilocks {
+      border-left: 6px solid #D4762E;
+      background: linear-gradient(135deg, rgba(212, 118, 46, 0.1), var(--bg-card));
+    }
+
+    .chant-box.bear-great .chant-speaker { color: #7A5C3E; }
+    .chant-box.bear-middle .chant-speaker { color: #B07A3F; }
+    .chant-box.bear-wee .chant-speaker { color: var(--accent-gold); }
+    .chant-box.goldilocks .chant-speaker { color: #D4762E; }
+
+    [data-theme="night"] .chant-box.bear-great .chant-speaker { color: #C49A6C; }
+    [data-theme="night"] .chant-box.bear-middle .chant-speaker { color: #E0A866; }
+    [data-theme="night"] .chant-box.bear-wee .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.goldilocks .chant-speaker { color: #F4A261; }
+
+    .chant-text {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+
+    /* Illustrations */
+    .story-figure {
+      margin: 28px auto 32px;
+      max-width: 520px;
+      position: relative;
+      border-radius: var(--border-radius-img);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .story-figure:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .figure-img-wrapper {
+      position: relative;
+      width: 100%;
+      background: var(--bg-card-subtle);
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .figure-img-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .figure-img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .figure-overlay-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 14px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      pointer-events: none;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 18px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.5;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-card);
+    }
+
+    .story-figure figcaption::before {
+      content: "✦ ";
+      color: var(--accent-brick);
+      font-style: normal;
+      font-size: 0.8rem;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      touch-action: manipulation;
+    }
+
+    .lightbox-modal.active {
+      display: flex !important;
+    }
+
+    .lightbox-img-container {
+      max-width: 900px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .lightbox-modal img {
+      max-width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-caption {
+      color: #E2E8F0;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      margin-top: 14px;
+      text-align: center;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #FFFFFF;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Floating Scroll To Top Button */
+    .btn-floating-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      z-index: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-floating-top.visible {
+      display: flex !important;
+    }
+
+    .btn-floating-top:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Interactive Conclusion */
+    .interactive-conclusion {
+      margin-top: 48px;
+      padding: 32px 24px;
+      background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      border-radius: 24px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-brick);
+      margin-bottom: 12px;
+    }
+
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3.5vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .choice-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .choice-card {
+      background: var(--bg-page);
+      border: 2px solid var(--border-color);
+      border-radius: 18px;
+      padding: 20px 18px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 140px;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .choice-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-brick);
+      box-shadow: var(--shadow-md);
+    }
+
+    .choice-card-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .choice-card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .choice-card-desc {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: block;
+    }
+
+    .choice-action-btn {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+    }
+
+    /* Narrated Story Video */
+    .story-video-card {
+      margin-top: 48px;
+      padding: clamp(18px, 4vw, 32px);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .story-video-title {
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      line-height: 1.3;
+    }
+
+    .story-video-description {
+      margin: 12px 0 20px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .story-video-card video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #181c18;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+    }
+
+    .story-video-download {
+      display: inline-block;
+      margin-top: 14px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-accent);
+      text-underline-offset: 3px;
+    }
+
+    /* Footer */
+    .story-footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .audio-controls-row { flex-wrap: wrap; }
+      .btn-audio-main { width: 100%; justify-content: center; }
+      .story-figure { max-width: 100%; }
+    }
+  
+    .chant-box.pippin {
+      border-left: 6px solid #D4762E;
+      background: linear-gradient(135deg, rgba(212, 118, 46, 0.12), var(--bg-card));
+    }
+    .chant-box.rosie {
+      border-left: 6px solid #B83B26;
+      background: linear-gradient(135deg, rgba(184, 59, 38, 0.10), var(--bg-card));
+    }
+    .chant-box.clara {
+      border-left: 6px solid #3B5998;
+      background: linear-gradient(135deg, rgba(59, 89, 152, 0.10), var(--bg-card));
+    }
+    .chant-box.barnaby {
+      border-left: 6px solid #2D6A4F;
+      background: linear-gradient(135deg, rgba(45, 106, 79, 0.10), var(--bg-card));
+    }
+    .chant-box.bramble {
+      border-left: 6px solid #C85A17;
+      background: linear-gradient(135deg, rgba(200, 90, 23, 0.12), var(--bg-card));
+    }
+    .chant-box.tilly {
+      border-left: 6px solid #52796F;
+      background: linear-gradient(135deg, rgba(82, 121, 111, 0.12), var(--bg-card));
+    }
+    .chant-box.pippin .chant-speaker { color: #D4762E; }
+    .chant-box.rosie .chant-speaker { color: #B83B26; }
+    .chant-box.clara .chant-speaker { color: #3B5998; }
+    .chant-box.barnaby .chant-speaker { color: #2D6A4F; }
+    .chant-box.bramble .chant-speaker { color: #C85A17; }
+    .chant-box.tilly .chant-speaker { color: #52796F; }
+    [data-theme="night"] .chant-box.pippin .chant-speaker { color: #F4A261; }
+    [data-theme="night"] .chant-box.rosie .chant-speaker { color: #E26D5C; }
+    [data-theme="night"] .chant-box.clara .chant-speaker { color: #8AB4F8; }
+    [data-theme="night"] .chant-box.barnaby .chant-speaker { color: #74C69D; }
+    [data-theme="night"] .chant-box.bramble .chant-speaker { color: #F48C42; }
+    [data-theme="night"] .chant-box.tilly .chant-speaker { color: #84A98C; }
+
+    /* Interactive Conclusion */
+    .interactive-conclusion {
+      margin-top: 48px;
+      padding: clamp(22px, 4vw, 36px);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+    .conclusion-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 4px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .conclusion-question {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3vw, 1.55rem);
+      color: var(--text-main);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .reflection-list {
+      text-align: left;
+      max-width: 680px;
+      margin: 20px auto 28px;
+      padding-left: 22px;
+      color: var(--text-main);
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      line-height: 1.65;
+    }
+    .reflection-list li {
+      margin-bottom: 10px;
+    }
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 28px 0 20px;
+      text-align: left;
+    }
+    .choice-card {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .choice-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    .choice-card-icon { font-size: 1.6rem; margin-bottom: 6px; }
+    .choice-card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .choice-card-desc {
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      flex-grow: 1;
+      margin-bottom: 12px;
+    }
+    .choice-action-btn {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-brick);
+    }
+
+  </style>
+</head>
+<body id="top">
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-toolbar">
+    <div class="toolbar-inner">
+      <div class="story-nav-container">
+        <button id="btn-story-menu" class="btn-story-selector" aria-expanded="false" aria-haspopup="true" aria-label="Switch bedtime story">
+          <span>📚 Stories</span>
+          <span class="story-chevron">▾</span>
+        </button>
+        <div id="story-menu-dropdown" class="story-dropdown-menu" role="menu" aria-label="Bedtime stories list">
+          <a href="../" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🏠</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Story Library Hub</strong>
+              <span class="menu-link-desc">All Bedtime Adventures &amp; Bookshelf</span>
+            </div>
+          </a>
+          <a href="index.html" class="story-menu-link active" role="menuitem">
+            <span class="menu-link-icon">🦦</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Pippin Paddlepaw and the Seven Golden Acorns</strong>
+              <span class="menu-link-desc">20-Min Woodland Treasury • 24 Illustrations</span>
+            </div>
+          </a>
+          <a href="../the-gingerbread-man/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🍪</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Gingerbread Man</strong>
+              <span class="menu-link-desc">Classic Children's Tale • "Run, Run, Fast as You Can!"</span>
+            </div>
+          </a>
+          <a href="../steadfast-tin-soldier/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🪖</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Steadfast Tin Soldier</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Paper Boat &amp; Brave Heart</span>
+            </div>
+          </a>
+          <a href="../boy-who-cried-wolf/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐺</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Boy Who Cried Wolf</strong>
+              <span class="menu-link-desc">Classic Fable • Truth &amp; Trust</span>
+            </div>
+          </a>
+          <a href="../hansel-and-gretel/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🍬</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Hansel and Gretel</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Gingerbread House</span>
+            </div>
+          </a>
+          <a href="../rumpelstiltskin/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎡</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Rumpelstiltskin</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Straw into Gold</span>
+            </div>
+          </a>
+          <a href="../the-princess-and-the-pea/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">👑</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Princess and the Pea</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Twenty Mattresses &amp; a Pea</span>
+            </div>
+          </a>
+          <a href="../goldilocks-and-the-three-bears/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🥣</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Goldilocks and the Three Bears</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Too Hot, Too Cold, Just Right</span>
+            </div>
+          </a>
+          <a href="../little-red-riding-hood/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🧺</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Little Red Riding Hood</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • The Wolf in Grandma&apos;s Bed</span>
+            </div>
+          </a>
+          <a href="../the-three-little-pigs/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐷</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Three Little Pigs</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Straw, Sticks &amp; Bricks</span>
+            </div>
+          </a>
+          <a href="../jack-and-the-beanstalk/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🌱</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Jack and the Beanstalk</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Magic Beans &amp; Giant</span>
+            </div>
+          </a>
+          <a href="../the-three-billy-goats-gruff/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐐</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Three Billy-Goats Gruff</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Trip-Trap Over the Bridge</span>
+            </div>
+          </a>
+          <a href="../the-little-red-hen/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐔</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Little Red Hen</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Hard Work &amp; Golden Bread</span>
+            </div>
+          </a>
+          <a href="../the-emperors-new-clothes/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">👑</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Emperor's New Clothes</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Honesty &amp; Truth</span>
+            </div>
+          </a>
+          <a href="../the-tortoise-and-the-hare/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐢</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Tortoise and the Hare</strong>
+              <span class="menu-link-desc">Classic Fable • Slow &amp; Steady</span>
+            </div>
+          </a>
+          <a href="../the-elves-and-the-shoemaker/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🧝</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Elves and the Shoemaker</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Kindness &amp; Gratitude</span>
+            </div>
+          </a>
+          <a href="../chicken-little/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🐔</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">Chicken Little</strong>
+              <span class="menu-link-desc">Classic Fairy Tale • Panic &amp; Acorns</span>
+            </div>
+          </a>
+          <a href="../the-gift-of-the-magi/" class="story-menu-link" role="menuitem">
+            <span class="menu-link-icon">🎁</span>
+            <div class="menu-link-text">
+              <strong class="menu-link-title">The Gift of the Magi</strong>
+              <span class="menu-link-desc">Classic Holiday Story • Love &amp; Generosity</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button id="btn-font-decrease" class="btn-tool" title="Decrease text size" aria-label="Decrease text size">A−</button>
+        <button id="btn-font-increase" class="btn-tool" title="Increase text size" aria-label="Increase text size">A+</button>
+
+        <div class="theme-selector" role="radiogroup" aria-label="Color theme">
+          <button class="theme-btn active" data-theme-val="light" title="Day theme" aria-label="Day theme">☀️</button>
+          <button class="theme-btn" data-theme-val="sepia" title="Sunset Sepia theme" aria-label="Sepia theme">🌅</button>
+          <button class="theme-btn" data-theme-val="night" title="Bedtime Dark theme" aria-label="Dark bedtime theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Story Content Container -->
+  <main class="story-container">
+
+    <!-- Story Header -->
+    <section class="story-header">
+      <span class="badge-adventure">🦦 Woodland Fable Treasury</span>
+      <h1 class="story-title"><span class="highlight-word">Pippin Paddlepaw</span> and the Seven Golden Acorns</h1>
+      <p class="story-subtitle">"Step by step and paw by paw, the kindest things you ever saw!"</p>
+
+      <div class="story-meta">
+        <span class="meta-item">⏱️ <strong>20 min read • 24 illustrations</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎨 <strong>24 Watercolor Scenes</strong></span>
+        <span>•</span>
+        <span class="meta-item">🎙️ <strong>Multi-Voice Narration</strong></span>
+        <span>•</span>
+        <span class="meta-item">🗣️ <strong>Say-Along Refrains</strong></span>
+      </div>
+
+      <!-- Audio Narration Player -->
+      <div class="audio-player-card">
+        <div class="audio-player-header">
+          <div class="audio-title-group">
+            <div class="audio-play-icon-box">🎙️</div>
+            <div>
+              <div class="audio-info-title">Listen to Full Story Narration</div>
+              <div class="audio-info-sub">Expressive multi-voice woodland read-aloud with synchronized captions</div>
+            </div>
+          </div>
+          <button id="btn-audio-speed" class="btn-speed" title="Change playback speed">Speed: 1.0×</button>
+        </div>
+
+        <div class="audio-controls-row">
+          <button id="btn-audio-toggle" class="btn-audio-main" aria-label="Play or pause voice narration">
+            <span id="audio-play-icon">▶</span>
+            <span id="audio-play-label">Play Voice Narration</span>
+          </button>
+
+          <div class="audio-progress-container">
+            <div id="audio-scrubber" class="audio-scrubber" title="Click to seek">
+              <div id="audio-scrubber-fill" class="audio-scrubber-fill"></div>
+            </div>
+            <div class="audio-time-row">
+              <span id="audio-time-current">0:00</span>
+              <span id="audio-time-total">24:24</span>
+            </div>
+          </div>
+        </div>
+
+        <audio id="story-audio-element" preload="metadata">
+          <source src="narration.mp3" type="audio/mpeg">
+          <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </section>
+
+    <!-- SCENE 1 -->
+
+    <article class="scene-section" id="scene-1">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 1 • The Morning of the Seven Golden Acorns</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Once upon a cozy autumn morning, deep in Whispering Willows Valley, the leaves were turning the color of golden honey, warm cinnamon, and toasted marshmallows.</p>
+
+      <p class="story-text">Right in the middle of the green meadow stood the Grand Willow Tree. Its long, feathery branches dipped down like gentle green curtains, and carved into its mossy roots was a round oak door with a shiny brass knocker. Every year on the evening of the Harvest Moon, all the woodland neighbors gathered beneath the Grand Willow Tree for the Great Lantern Festival.</p>
+
+      <!-- Illustration 1 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_01.jpg"
+            alt="Pippin Paddlepaw stands on the pine footbridge before the Grand Willow Tree where seven golden acorn lanterns hang."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Pippin Paddlepaw stood on the pine footbridge before the Grand Willow Tree, ready to gather the Seven Golden Acorns.</figcaption>
+      </figure>
+
+      <p class="story-text">High among the willow boughs hung seven glass lantern globes shaped like acorns. To make the seven lanterns shine on Festival Night, a helper had to gather the Seven Golden Acorns of Kindness before sunset. Each Golden Acorn was kept by a different neighbor, and each one only began to glow when a young friend practiced a true lesson of kindness, patience, and honesty.</p>
+
+      <p class="story-text">Out onto the arched pine footbridge stepped Pippin Paddlepaw. Pippin was a five-year-old river-otter cub with soft cinnamon-brown fur, creamy-white cheeks, and a sky-blue knitted waistcoat with two brass buttons. Slung across his shoulder was his woven willow satchel, ready to carry the seven treasures safely up the hill.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Good morning, sparkling brook! Good morning, Grand Willow Tree! Today my paws are washed and ready, my ears are open for listening, and my satchel has room for all seven Golden Acorns!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Pippin patted his satchel and sang his helper song. Can you tap your knees gently and say it with him?</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest things you ever saw! Little hands and gentle heart, that is how good helpers start!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 2 -->
+
+    <article class="scene-section" id="scene-2">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 2 • Rosie Red-Hen&#x27;s Flour Mill</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Pippin followed the cobblestone lane until his pink nose gave a happy twitch—sniff, sniff! Something smelled like toasted oats, clover honey, and wild blueberries.</p>
+
+      <p class="story-text">Outside a thatched cottage with yellow shutters stood Rosie Red-Hen in a crisp white baker&#x27;s apron and a braided straw sun-bonnet. On her table sat a heavy sack of golden oat flour, a pitcher of meadow milk, a jar of honey, and a basket of blue huckleberries.</p>
+
+      <!-- Illustration 2 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_02.jpg"
+            alt="Pippin visits Rosie Red-Hen at her sunlit thatched stone cottage beside the wooden flour mill."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>At the thatched stone cottage, Rosie Red-Hen welcomed Pippin beside her warm wooden flour mill.</figcaption>
+      </figure>
+
+      <div class="chant-box rosie">
+        <div class="chant-speaker">🐔 Rosie Red-Hen</div>
+        <p class="chant-text">&ldquo;Cluck, cluck, oh dear me! The Lantern Festival begins at twilight, and I have twenty-four honey-oat berry muffins to bake for our neighbors! Plus, I need to stack three neat bundles of dry birchwood beside the brick oven so the fire stays steady! Who will help me stack the wood and sift this oat flour?&rdquo;</p>
+      </div>
+
+      <p class="story-text">Up in an old apple tree, a sleepy dormouse yawned and pulled his leaf-cap over his whiskers. Not I, mumbled the dormouse, my moss pillow is much too cozy!</p>
+
+      <p class="story-text">By the garden fence, a green bullfrog was practicing puddle-hops over a watering can. Not I, ribbited the bullfrog, hopping is much more fun than sifting oats!</p>
+
+      <p class="story-text">But Pippin didn&#x27;t wait to be asked twice. Remembering how the wisest builder in the tale of the Three Little Pigs always built things sturdy and right, Pippin trotted up to Rosie&#x27;s table and rolled up his sky-blue waistcoat sleeves.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;I will help you, Miss Rosie! First I can stack the dry birchwood neatly beside your brick oven, and then my paws can sift every scoop of oat flour!&rdquo;</p>
+      </div>
+
+      <div class="chant-box rosie">
+        <div class="chant-speaker">🐔 Rosie Red-Hen</div>
+        <p class="chant-text">&ldquo;Bless your cheerful whiskers, Pippin! Two pairs of willing paws make every big job twice as merry!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 3 -->
+
+    <article class="scene-section" id="scene-3">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 3 • Stirring the Sweet Berry Batter</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Inside Rosie Red-Hen&#x27;s sunlit kitchen, the brick oven glowed like a cozy orange campfire after Pippin stacked the birchwood neatly in its box.</p>
+
+      <p class="story-text">First, Rosie showed Pippin how to shake the round wire sifter. Shika-shika-shake! Down drifted the fine oat flour like soft snow into the big blue ceramic bowl. Next, Rosie poured in the sweet milk and a ribbon of golden honey.</p>
+
+      <!-- Illustration 3 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_03.jpg"
+            alt="Inside the sunlit bakery kitchen, Pippin helps Rosie Red-Hen stir the sweet blueberry muffin batter."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Pippin tied on a linen apron and helped Rosie Red-Hen stir the blueberry muffin batter until it was smooth.</figcaption>
+      </figure>
+
+      <div class="chant-box rosie">
+        <div class="chant-speaker">🐔 Rosie Red-Hen</div>
+        <p class="chant-text">&ldquo;Now comes the best part! Who will help me rinse the wild blueberries and fold them gently into the batter so they do not burst?&rdquo;</p>
+      </div>
+
+      <p class="story-text">Bramble Red-Squirrel popped his copper head through the open Dutch window, twitching his fluffy plume tail.</p>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Oh, Miss Rosie, I am the champion of eating warm muffins once they come out of the oven, but stirring batter makes my elbows tired! Save a big muffin for me, and I will be back when the timer rings!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Pippin chuckled and picked up the carved wooden mixing spoon with both paws.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;I will stay right here until the last muffin is baked, Miss Rosie! Watch how gently I can fold the blueberries in!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Together, Pippin and Rosie counted five slow circles with the wooden spoon: One, two, three, four, five! Swirl, fold, and scoop! They spooned the batter into twenty-four muffin cups and slid the pans into the warm oven.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest things you ever saw! Pitching in makes work so sweet, soon we all will share a treat!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 4 -->
+
+    <article class="scene-section" id="scene-4">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 4 • The First Golden Acorn Shines</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Soon a delicious cloud of warm cinnamon and baked blueberries floated out the kitchen window. Ding-ling-ling went the brass oven timer!</p>
+
+      <p class="story-text">Rosie lifted out twenty-four golden honey-oat muffins. Right away, the dormouse, the bullfrog, and Bramble Squirrel tiptoed back to the gate, looking down at their toes because they hadn&#x27;t helped with a single scoop of flour.</p>
+
+      <!-- Illustration 4 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_04.jpg"
+            alt="Rosie Red-Hen presents Pippin with a tray of golden blueberry muffins and the glowing First Golden Acorn."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Because Pippin shared the work from start to finish, the First Golden Acorn began to shine like warm honey.</figcaption>
+      </figure>
+
+      <div class="chant-box rosie">
+        <div class="chant-speaker">🐔 Rosie Red-Hen</div>
+        <p class="chant-text">&ldquo;Pippin, because you stacked the wood, sifted the flour, and stirred the batter from start to finish, these muffins are yours to share however you think is best!&rdquo;</p>
+      </div>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;In the old storybooks, the Little Red Hen ate the bread by herself because nobody helped. But tonight is the Lantern Festival! Let&#x27;s invite our friends to wash the mixing bowls, sweep the floor, and carry the baskets right now—and then everyone can earn a warm muffin together!&rdquo;</p>
+      </div>
+
+      <p class="story-text">How quickly the dormouse, the bullfrog, and Bramble cheered! They hurried inside to wash the bowl, dry the spoons, and sweep the floor clean before sharing a warm muffin.</p>
+
+      <p class="story-text">As Pippin wiped the table, Rosie reached into her apron pocket and placed a polished brass acorn into Pippin&#x27;s paw. Instantly, it lit up with a warm golden-amber glow!</p>
+
+      <div class="chant-box rosie">
+        <div class="chant-speaker">🐔 Rosie Red-Hen</div>
+        <p class="chant-text">&ldquo;Here is the First Golden Acorn, dear Pippin. Pitching in with willing hands turns everyday work into friendship.&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 5 -->
+
+    <article class="scene-section" id="scene-5">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 5 • Clara Rook and the Tall Stone Pitcher</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Tucking the first glowing acorn into his satchel, Pippin skipped down the flagstone path to the Whispering Stone Courtyard.</p>
+
+      <p class="story-text">In the center of the courtyard grew a pot of golden star-lilies for the festival. Beside them stood Clara Rook, a sleek indigo bird wearing tiny half-moon brass spectacles and a yellow silk scarf.</p>
+
+      <!-- Illustration 5 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_05.jpg"
+            alt="In the mossy stone courtyard, Clara Rook peers into a tall narrow clay pitcher beside a basket of river pebbles."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Wise Clara Rook showed Pippin the tall clay pitcher where the cool spring water sat far near the bottom.</figcaption>
+      </figure>
+
+      <p class="story-text">Next to Clara stood a tall, narrow-necked terracotta pitcher. Clara was stretching her neck—tip-toe, stretch, peek!—trying to dip her watering cup inside, but her beak kept bumping the narrow clay rim.</p>
+
+      <div class="chant-box clara">
+        <div class="chant-speaker">🐦‍⬛ Clara Rook</div>
+        <p class="chant-text">&ldquo;Caw, caw, oh fiddlesticks! Look at our golden star-lilies, Pippin—the sun has made their leaves droop, and they need a drink of spring water! There is cool water at the bottom of this tall pitcher, but the neck is too narrow for my wings, and my beak is three inches too short!&rdquo;</p>
+      </div>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Let me try reaching in with my otter paw, Miss Clara!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Pippin stood on tiptoe and reached his brown arm down into the pitcher. Wiggle, stretch, reach! His fingertips brushed the clay wall just above the water, still two inches short.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Oh whiskers! My arm isn&#x27;t long enough either! And if we tip this heavy clay pitcher over, it will crack on the flagstones and spill every drop! What can we do?&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 6 -->
+
+    <article class="scene-section" id="scene-6">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 6 • Pebble by Pebble, Up Comes the Water</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Clara Rook adjusted her brass spectacles and tapped her wing thoughtfully.</p>
+
+      <div class="chant-box clara">
+        <div class="chant-speaker">🐦‍⬛ Clara Rook</div>
+        <p class="chant-text">&ldquo;Wait a moment, Pippin! My grandmother told me the ancient fable of a clever crow who faced this exact puzzle! When a problem cannot be solved by pushing hard, we solve it with patience and our thinking caps! Look down beside the garden path. What do you see?&rdquo;</p>
+      </div>
+
+      <!-- Illustration 6 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_06.jpg"
+            alt="Clara Rook and Pippin drop smooth river pebbles one by one into the tall clay pitcher as the water rises to the brim."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Pebble by pebble, Pippin and Clara watched the cool clear water rise all the way to the rim of the pitcher.</figcaption>
+      </figure>
+
+      <p class="story-text">All along the flowerbed lay dozens of smooth, clean grey and white river pebbles washed bright by the brook.</p>
+
+      <div class="chant-box clara">
+        <div class="chant-speaker">🐦‍⬛ Clara Rook</div>
+        <p class="chant-text">&ldquo;Tell me, Pippin, when you step into your wooden bathtub at home, what happens to the water level?&rdquo;</p>
+      </div>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;It rises higher because I take up space at the bottom! Oh, Miss Clara, how clever! If we drop these smooth river pebbles gently into the pitcher one by one, they will sink to the bottom and push the cool water right up to the top!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Let&#x27;s count with Pippin and Clara as they drop the pebbles in!</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Plink! Plonk! Pebble number one, pebble number two! Up, up, up comes the water for me and you!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Plink! went a white pebble from Clara&#x27;s beak. Plonk! went a grey pebble from Pippin&#x27;s paw. After six pebbles, Pippin peeked inside. The water had barely risen the width of a clover leaf.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Miss Clara, we dropped six pebbles in, and the water is still way down low!&rdquo;</p>
+      </div>
+
+      <div class="chant-box clara">
+        <div class="chant-speaker">🐦‍⬛ Clara Rook</div>
+        <p class="chant-text">&ldquo;Never lose heart when a good plan starts slowly, Pippin! Great things happen by adding one small effort to another without giving up!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 7 -->
+
+    <article class="scene-section" id="scene-7">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 7 • The Star-Lilies Bloom Again</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Encouraged by Clara&#x27;s words, Pippin filled his basket with smooth pebbles. Plink, plonk, ker-plink, ker-plonk! Six pebbles became fifteen. Fifteen became thirty!</p>
+
+      <p class="story-text">With every smooth stone that settled at the bottom, the sparkling spring water climbed higher up the terracotta neck—halfway up, three-quarters up, until with the thirtieth smooth pebble—glug, shimmer, sparkle!—the cool water rose right to the very top rim!</p>
+
+      <!-- Illustration 7 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_07.jpg"
+            alt="Golden star-lilies bloom in the stone courtyard as Clara Rook and Pippin water the garden together."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>When they poured the rising water over the garden bed, the golden star-lilies opened their petals in the sunshine.</figcaption>
+      </figure>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Hooray! Look, Miss Clara! The water climbed all the way to the top without spilling a drop!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Clara dipped her brass watering cup and Pippin scooped with a gourd ladle, pouring the cool water around the roots of the golden star-lilies. Right away, the stems stood tall and opened their velvety yellow petals, filling the courtyard with a sweet lemon-blossom scent.</p>
+
+    </article>
+
+    <!-- SCENE 8 -->
+
+    <article class="scene-section" id="scene-8">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 8 • The Second Golden Acorn</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Clara Rook perched on the flower pot, her eyes twinkling behind her spectacles.</p>
+
+      <div class="chant-box clara">
+        <div class="chant-speaker">🐦‍⬛ Clara Rook</div>
+        <p class="chant-text">&ldquo;You learned a wonderful secret today, Pippin. When a task looks too deep at first, patience and clever thinking lift you to the top, one small pebble at a time.&rdquo;</p>
+      </div>
+
+      <!-- Illustration 8 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_08.jpg"
+            alt="Clara Rook places the glowing Second Golden Acorn into Pippin&#x27;s woven willow satchel."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Clara Rook placed the Second Golden Acorn into Pippin&#x27;s satchel: the Acorn of Patience and Clever Thinking.</figcaption>
+      </figure>
+
+      <p class="story-text">From beneath her yellow scarf, Clara untied a second brass acorn and placed it into Pippin&#x27;s paw, where it glowed with soft honey light!</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest things you ever saw! Pebble by pebble, slow and smart, patience fills a peaceful heart!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 9 -->
+
+    <article class="scene-section" id="scene-9">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 9 • Barnaby Badger and the Tangled Wheelbarrow</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Around the bend of the fern lane, Pippin heard a deep sigh: Hoooo-humph, oh dear!</p>
+
+      <p class="story-text">Standing beside a wooden wheelbarrow loaded with orange pumpkins and blackberry jam was Barnaby Badger in his green corduroy overalls and felt gardener&#x27;s hat.</p>
+
+      <!-- Illustration 9 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_09.jpg"
+            alt="On a mossy woodland lane, Barnaby Badger stands beside his wooden wheelbarrow tangled in morning-glory vines."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Kind Barnaby Badger&#x27;s wheelbarrow was tangled fast in tough green morning-glory vines along the fern lane.</figcaption>
+      </figure>
+
+      <p class="story-text">An hour earlier, while Barnaby was resting under a walnut tree, tiny Penny Harvest-Mouse had accidentally scurried across his boot. Like the generous lion in the fable of the Lion and the Mouse, kind Barnaby had tipped his hat and let little Penny pass safely by.</p>
+
+      <p class="story-text">Now strong Barnaby was stuck! His wheelbarrow wheel had rolled into a tangle of tough green morning-glory ribbons that wrapped tightly around the narrow center axle between the wooden spokes!</p>
+
+      <div class="chant-box barnaby">
+        <div class="chant-speaker">🦡 Barnaby Badger</div>
+        <p class="chant-text">&ldquo;Oh, my stars, Pippin! My arms are strong enough to lift giant pumpkins and oak logs, but my big badger paws are much too wide to squeeze between these narrow wooden spokes! If I pull by brute strength, I will snap the spokes and spill all the festival jam!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 10 -->
+
+    <article class="scene-section" id="scene-10">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 10 • Little Paws Do What Big Paws Cannot</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Just then—rustle, squeak! Out from beneath a fern frond hopped tiny Penny Harvest-Mouse in her patchwork gingham pinafore!</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Look, Mr. Barnaby! Little Penny is here! Her tiny mouse fingers and my slender otter paws can slip right between the narrow wheel spokes where your big paws cannot fit!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 10 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_10.jpg"
+            alt="Pippin Paddlepaw and tiny Penny Harvest-Mouse kneel beside the wheelbarrow wheel to untie the tangled vine knots."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>With nimble little paws, Penny Harvest-Mouse and Pippin untied the hidden vine knots beneath the wooden hub.</figcaption>
+      </figure>
+
+      <div class="chant-box barnaby">
+        <div class="chant-speaker">🦡 Barnaby Badger</div>
+        <p class="chant-text">&ldquo;Bless my brass buckles, little Penny! Can such tiny paws truly free a heavy wheelbarrow like mine?&rdquo;</p>
+      </div>
+
+      <p class="story-text">Penny nodded happily and hopped right through the spokes onto the center hub! Like a tiny sailor untying silk ribbons, Penny loosened the tightest inner honeysuckle loops—slip, unloop, untuck!—while Pippin unwound the outer tendrils and draped them back onto the garden trellis. In two minutes, the wheel spun free!</p>
+
+    </article>
+
+    <!-- SCENE 11 -->
+
+    <article class="scene-section" id="scene-11">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 11 • Big Paws Return the Favor at the Brook</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Barnaby Badger clapped his striped paws with a joyful boom!</p>
+
+      <div class="chant-box barnaby">
+        <div class="chant-speaker">🦡 Barnaby Badger</div>
+        <p class="chant-text">&ldquo;Well, I never! The smallest mouse in the valley just rescued the strongest badger! Hop onto my wheelbarrow, Penny, and walk beside me, Pippin!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 11 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_11.jpg"
+            alt="Barnaby Badger and Pippin pause beside the mossy woodland brook in the warm autumn sunlight."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Strong Barnaby Badger thanked his small friends and helped carry them safely across the mossy brook.</figcaption>
+      </figure>
+
+      <p class="story-text">When they reached the pebble brook crossing, a heavy mossy birch branch had tumbled across the narrow footpath. Little Penny and five-year-old Pippin pushed with all their might, but the heavy branch wouldn&#x27;t budge!</p>
+
+      <div class="chant-box barnaby">
+        <div class="chant-speaker">🦡 Barnaby Badger</div>
+        <p class="chant-text">&ldquo;Aha! smiled Barnaby, rolling up his corduroy sleeves. Little paws did what big paws could not—now it is big paws&#x27; turn to help little paws!&rdquo;</p>
+      </div>
+
+      <p class="story-text">With one calm lift—heave-ho!—strong Barnaby lifted the heavy birch branch clean off the path and set it beside the bank as a mossy bench for the frogs!</p>
+
+    </article>
+
+    <!-- SCENE 12 -->
+
+    <article class="scene-section" id="scene-12">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 12 • The Third Golden Acorn</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Across the bridge, Barnaby gave Penny a honey-clover tea cake and placed the Third Golden Acorn into Pippin&#x27;s paws!</p>
+
+      <div class="chant-box barnaby">
+        <div class="chant-speaker">🦡 Barnaby Badger</div>
+        <p class="chant-text">&ldquo;Guard this third acorn well, Pippin. Today you and Penny proved that no friend is ever too small to offer a giant help, and no friend is ever too big to need a gentle hand.&rdquo;</p>
+      </div>
+
+      <!-- Illustration 12 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_12.jpg"
+            alt="Barnaby Badger presents Pippin with the glowing Third Golden Acorn of Mutual Kindness."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Barnaby Badger placed the Third Golden Acorn into Pippin&#x27;s satchel, reminding him that every helper matters.</figcaption>
+      </figure>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest things you ever saw! Big or tiny, tall or small, kindness has a job for all!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 13 -->
+
+    <article class="scene-section" id="scene-13">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 13 • Bramble Squirrel&#x27;s Silly Acorn Alarm</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">With three Golden Acorns glowing in his satchel, Pippin climbed up to the Sunny Oak Grove. High on an oak limb sat Bramble Red-Squirrel beside a huge wicker basket of shiny brown roasting-acorns.</p>
+
+      <p class="story-text">The elders had given Bramble a shiny brass helper bell to ring ONLY if his heavy basket started to slip. But sitting in the quiet tree, Bramble felt fidgety and thought of a silly trick—just like the shepherd boy in the old fable.</p>
+
+      <!-- Illustration 13 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_13.jpg"
+            alt="Under a giant red oak tree, Bramble Red-Squirrel waves dramatically beside a pile of brown acorns as Pippin runs up the path."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Up in the Sunny Oak Grove, Bramble Red-Squirrel giggled after playing his pretend runaway-acorn game.</figcaption>
+      </figure>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Ding-a-ling-a-ling! Help, everybody! My giant acorn basket is slipping off the branch! Hurry, hurry!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Pippin, Barnaby Badger, and Rosie Red-Hen dropped their work and ran puffing up the steep hill!</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Hold on, Bramble! Our arms are ready to catch the basket! Where is it slipping?&rdquo;</p>
+      </div>
+
+      <p class="story-text">Up on the limb, the basket sat completely still, and Bramble giggled until his ears wobbled!</p>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Tee-hee-hee! Fooled you! My basket wasn&#x27;t slipping at all! I just wanted to see how fast you could run!&rdquo;</p>
+      </div>
+
+      <div class="chant-box rosie">
+        <div class="chant-speaker">🐔 Rosie Red-Hen</div>
+        <p class="chant-text">&ldquo;Oh, Bramble, said Rosie gently. We ran up the hill because we trusted your bell. Never use a helper bell for a trick.&rdquo;</p>
+      </div>
+
+      <p class="story-text">Fifteen minutes later, Bramble got bored again and rang his bell a second time: Ding-a-ling! A whirlwind is tipping my basket! Kind Pippin and Barnaby ran back up—only to find Bramble giggling behind his tail again!</p>
+
+      <div class="chant-box barnaby">
+        <div class="chant-speaker">🦡 Barnaby Badger</div>
+        <p class="chant-text">&ldquo;Bramble, when you call false alarms twice in a row, your friends cannot tell when your words are real anymore.&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 14 -->
+
+    <article class="scene-section" id="scene-14">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 14 • When the Basket Really Tips Over</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Twenty minutes later, Bramble stretched up on tiptoe to pluck one high acorn—and his heel accidentally bumped the heavy wicker basket!</p>
+
+      <p class="story-text">Wobble, tilt, ker-plop! Down tumbled the basket onto the mossy bank below! Its lid popped open, and out poured two hundred brown acorns—roly-poly-zip!—hiding deep in the green clover and under the fern leaves!</p>
+
+      <!-- Illustration 14 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_14.jpg"
+            alt="Bramble Red-Squirrel watches in dismay as his wicker basket tips over and real acorns roll toward the hollow oak log."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>When Bramble&#x27;s wicker basket really tipped over, three dozen acorns tumbled toward the mossy hollow log.</figcaption>
+      </figure>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Ding-a-ling-a-ling! Please help me! This time it is not a joke! The basket really tipped over, and all two hundred festival acorns are lost in the deep clover!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Down in the valley, the neighbors heard the bell a third time. That is just Bramble playing his trick again, sighed the bullfrog, and nobody came up the hill. Poor Bramble sat beside his empty basket with his tail drooping and two warm teardrops on his whiskers.</p>
+
+    </article>
+
+    <!-- SCENE 15 -->
+
+    <article class="scene-section" id="scene-15">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 15 • Pippin Checks and Bramble Promises</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Halfway down the trail, Pippin paused and listened carefully.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Wait a second. The first two times Bramble called, I heard giggles in his voice. This time he sounds truly sorry. A good helper checks to make sure a friend is okay!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 15 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_15.jpg"
+            alt="Pippin and Bramble Red-Squirrel gather the scattered acorns together in the sunlit oak grove."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Pippin came back to check on his friend, and together they gathered every last acorn back into the basket.</figcaption>
+      </figure>
+
+      <p class="story-text">Pippin trotted back up to the oak tree and saw the spilled acorns hiding in the clover.</p>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Oh, Pippin, you came! My basket really tipped over, and nobody believed my bell because I told two silly fibs! I broke my friends&#x27; trust! I put my paw right over my heart: from this day on, my word and my bell will always tell the one-hundred-percent truth!&rdquo;</p>
+      </div>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Trust is like a warm lantern glass, Bramble—we keep it bright by always speaking the truth! Come on, let&#x27;s find every acorn together!&rdquo;</p>
+      </div>
+
+      <p class="story-text">On their knees in the clover, Pippin and Bramble searched under every buttercup and fern, counting all two hundred shiny brown acorns back into the basket!</p>
+
+    </article>
+
+    <!-- SCENE 16 -->
+
+    <article class="scene-section" id="scene-16">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 16 • The Fourth Golden Acorn</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">As Bramble fastened the basket latch, a fourth brass acorn resting at the center of the basket lit up with a clear, steady golden glow!</p>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Look, Pippin! The Fourth Golden Acorn woke up for your satchel! And I will carry this heavy basket down the hill myself to apologize to Miss Rosie and Mr. Barnaby!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 16 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_16.jpg"
+            alt="Bramble Red-Squirrel hands Pippin the glowing Fourth Golden Acorn of Truth and Trust."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Bramble promised to always tell the truth and handed Pippin the glowing Fourth Golden Acorn.</figcaption>
+      </figure>
+
+      <p class="story-text">When Bramble apologized honestly down in the meadow, Rosie and Barnaby welcomed him right back with warm smiles!</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest things you ever saw! Honest words that ring so true make our friendships good as new!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 17 -->
+
+    <article class="scene-section" id="scene-17">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 17 • Hopper Cricket&#x27;s Merry Autumn Tune</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Now the afternoon sun was dipping toward the western hills. Down in Maple Meadow, little Penny Harvest-Mouse was stacking dry pine-cones beside her hearth and filling jugs with warm spiced cider.</p>
+
+      <p class="story-text">Perched on a polka-dotted toadstool nearby was Hopper Cricket in his emerald-green tailcoat, playing a merry jig on his tiny wooden fiddle: Zippity-zing, fiddle-dee-dee!</p>
+
+      <!-- Illustration 17 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_17.jpg"
+            alt="In the golden autumn meadow, Hopper Cricket plays his miniature wooden fiddle while Penny Harvest-Mouse stacks firewood."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>While Penny Harvest-Mouse stacked dry birch twigs for evening, Hopper Cricket danced and played his merry fiddle.</figcaption>
+      </figure>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;What a lively tune, Hopper! The sun is sinking and the evening breeze will be chilly soon. Will you help Penny and me stack just one basket of dry pine-cones before the dew falls?&rdquo;</p>
+      </div>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Oh, pshaw, Pippin! laughed Hopper Cricket. The sun is still warm on my wings! Stacking pine-cones is for later—right now my fiddle wants to dance!&rdquo;</p>
+      </div>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;In the fable of the Ants and the Grasshopper, the grasshopper forgot to prepare while the sun was shining! Ten minutes of helping now will keep us warm tonight!&rdquo;</p>
+      </div>
+
+      <p class="story-text">But Hopper kept leaping from toadstool to daisy while Pippin and Penny gathered two extra baskets of dry pine-cones and sweet chestnuts.</p>
+
+    </article>
+
+    <!-- SCENE 18 -->
+
+    <article class="scene-section" id="scene-18">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 18 • The Cool Evening Breeze Arrives</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Soon the sun slipped behind Clover Ridge. Whooooosh-shiver! A crisp twilight breeze swept across Maple Meadow, and silver dew dampened all the remaining pine-cones in the field.</p>
+
+      <p class="story-text">Hopper Cricket stopped playing. His wings shivered—brrrr!—and his tummy rumbled. Every pine-cone left outside was wet with dew, and he hadn&#x27;t packed a sweater or supper! Across the lane, warm amber light glowed from Penny&#x27;s hollow-log cottage. Tucking his fiddle under his arm, Hopper gave a polite tap-tap-tap on the oak door.</p>
+
+      <!-- Illustration 18 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_18.jpg"
+            alt="Crisp blue twilight settles over the autumn meadow as warm golden light glows inside Penny&#x27;s hollow-log cottage."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>When the crisp evening breeze swept across the meadow, Penny&#x27;s cottage glowed like a cozy golden lantern.</figcaption>
+      </figure>
+
+    </article>
+
+    <!-- SCENE 19 -->
+
+    <article class="scene-section" id="scene-19">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 19 • Warm Cider, Preparation, and Sharing</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Penny and Pippin opened the door wide.</p>
+
+      <p class="story-text">Oh, Penny and Pippin, whispered Hopper softly. You prepared while the sun shone, and I only danced. Now the chill is here and my basket is empty.</p>
+
+      <!-- Illustration 19 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_19.jpg"
+            alt="Inside the warm cottage kitchen, Pippin helps share mugs of spiced apple cider and a warm blanket."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>Inside by the crackling hearth, Penny and Pippin shared warm spiced cider and a wool blanket with Hopper Cricket.</figcaption>
+      </figure>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Come right inside by the hearth, Hopper! Because Penny and I gathered extra pine-cones and brewed extra spiced cider while the sun was shining, we have plenty to share with a friend who has learned his lesson!&rdquo;</p>
+      </div>
+
+      <p class="story-text">Wrapped in a warm wool shawl with a mug of cinnamon cider, Hopper beamed with gratitude.</p>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Thank you both! Tomorrow morning, before I play a single note, I will gather three full baskets of dry kindling! And right now, let me help load the cider jugs onto the festival cart and play a cheerful marching song as we pull it up the hill!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 20 -->
+
+    <article class="scene-section" id="scene-20">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 20 • The Fifth Golden Acorn</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">As Hopper helped load the cart, the fifth brass acorn on Penny&#x27;s mantelpiece blossomed with rich golden radiance! Penny and Hopper placed it into Pippin&#x27;s satchel.</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest things you ever saw! First prepare and do your part, then share with a joyful heart!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 20 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_20.jpg"
+            alt="Penny Harvest-Mouse and Hopper Cricket present Pippin with the glowing Fifth Golden Acorn."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>As Hopper promised to help prepare before playing next time, the Fifth Golden Acorn glowed with warm light.</figcaption>
+      </figure>
+
+    </article>
+
+    <!-- SCENE 21 -->
+
+    <article class="scene-section" id="scene-21">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 21 • Tilly Terrapin, Dash Jackrabbit, and the Hilltop Trail</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">At the bottom of Willow Hill stood Dash Jackrabbit in his striped runner&#x27;s sash and wise Tilly Terrapin in her lavender shawl, holding the final two unlit brass acorns inside glass lanterns.</p>
+
+      <div class="chant-box bramble">
+        <div class="chant-speaker">🐿️ Bramble Red-Squirrel</div>
+        <p class="chant-text">&ldquo;Look how tiny your steps are, Miss Tilly! laughed Dash Jackrabbit, bouncing like a rubber ball. With my speedy jackrabbit bounds, I will reach the Grand Willow Tree in two shakes of a cottontail! Watch me zoom—one, two, three, go!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 21 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_21.jpg"
+            alt="At the foot of Willow Hill, Tilly Terrapin and Dash Jackrabbit stand at the starting line with Pippin."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>At the bottom of Willow Hill, Tilly Terrapin and Dash Jackrabbit prepared to carry the lantern oil up the trail.</figcaption>
+      </figure>
+
+      <p class="story-text">Boing-whoosh! Off bounded Dash up the hill!</p>
+
+      <div class="chant-box tilly">
+        <div class="chant-speaker">🐢 Tilly Terrapin</div>
+        <p class="chant-text">&ldquo;Let him bounce, dear Pippin, smiled Tilly calmly. When carrying a precious lantern, rushing makes us stumble, but calm, steady steps always reach the top safely. Will you walk steadily beside me?&rdquo;</p>
+      </div>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Yes please, Miss Tilly! Left paw, right paw, breathing slow and deep!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 22 -->
+
+    <article class="scene-section" id="scene-22">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 22 • Slow and Steady Passes the Snoozing Hare</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Halfway up the trail, Dash Jackrabbit looked back and yawned. I am so far ahead of slow little Tilly that I can take a cozy nap in this warm clover patch and still win! Within seconds, Dash was fast asleep—zzzzzz-whiffle-zzzzzz!</p>
+
+      <p class="story-text">Up the winding trail came Tilly and Pippin: Step, breathe, smile! When they reached the sleeping jackrabbit, kind Pippin spread a warm maple-leaf quilt over Dash&#x27;s shoulders so he wouldn&#x27;t get chilled, and whispered:</p>
+
+      <!-- Illustration 22 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_22.jpg"
+            alt="Tilly Terrapin and Pippin walk steadily past Dash Jackrabbit snoozing under an apple tree."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>While Dash Jackrabbit napped beneath the shady apple tree, Tilly and Pippin walked steadily up the hill.</figcaption>
+      </figure>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;When we reach the top, we will ring the welcome chime so Dash wakes up in time to celebrate with us!&rdquo;</p>
+      </div>
+
+      <div class="chant-box tilly">
+        <div class="chant-speaker">🐢 Tilly Terrapin</div>
+        <p class="chant-text">&ldquo;That is a true winner&#x27;s heart, Pippin. Slow and steady reaches the goal, and kindness brings every friend along!&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 23 -->
+
+    <article class="scene-section" id="scene-23">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 23 • The Breeze and the Golden Sunbeam</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Step by steady step, Tilly and Pippin reached the summit beneath the Grand Willow Tree, and the sixth brass acorn lit up with a serene golden glow! Dash Jackrabbit woke up at the chime and bounded up the last steps, blushing and thanking them for the leaf blanket.</p>
+
+      <p class="story-text">Above the tree, Little North Breeze—a puffy silver cloud—wanted to open the wooden lantern shutters by force, just like in the fable of the North Wind and the Sun! He blew a noisy gust—whooooosh!—but the willow shutters only latched tighter against the cold wind!</p>
+
+      <!-- Illustration 23 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_23.jpg"
+            alt="A golden sunbeam shines through the Grand Willow Tree boughs as Tilly and Pippin hang the Sixth and Seventh Golden Acorns."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>A warm golden sunbeam shone upon the hilltop as Tilly and Pippin hung the Sixth and Seventh Golden Acorns.</figcaption>
+      </figure>
+
+      <p class="story-text">Then the Golden Setting Sun smiled from the horizon and poured a soft, loving golden sunbeam over the hilltop. Feeling that gentle warmth, Little North Breeze relaxed, the wooden lantern shutters opened like blooming flowers, and the seventh brass acorn burst into radiant starlight!</p>
+
+      <div class="chant-box tilly">
+        <div class="chant-speaker">🐢 Tilly Terrapin</div>
+        <p class="chant-text">&ldquo;Look at that wonder, Pippin. Loud bluster makes the world close up tight, but gentle warmth and kindness open every heart.&rdquo;</p>
+      </div>
+
+    </article>
+
+    <!-- SCENE 24 -->
+
+    <article class="scene-section" id="scene-24">
+
+      <div class="scene-header">
+
+        <span class="scene-pill">Scene 24 • The Grand Willow Lantern Festival Under the Stars</span>
+
+      </div>
+
+      <p class="lead-paragraph story-text">Up the hillside arrived Rosie Red-Hen, Clara Rook, Barnaby Badger, Bramble Squirrel, Penny Harvest-Mouse, and Hopper Cricket! Together with Pippin, they hung all Seven Golden Acorns inside the glass lanterns on the Grand Willow Tree. Let&#x27;s count them from one to seven!</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Lantern One for pitching in with Rosie Red-Hen! Lantern Two for patient pebble-thinking with Clara Rook! Lantern Three because no friend is too small to help with Barnaby and Penny! Lantern Four for speaking the honest truth with Bramble! Lantern Five for preparing ahead and sharing with Hopper! Lantern Six for walking slow and steady with Tilly! And Lantern Seven for choosing gentle warmth like the Golden Sun!&rdquo;</p>
+      </div>
+
+      <!-- Illustration 24 -->
+      <figure class="story-figure">
+        <div class="figure-img-wrapper" onclick="openLightbox(this)">
+          <img
+            src="acorn_24.jpg"
+            alt="Under the twinkling twilight sky, all seven Golden Acorn lanterns glow warmly in the branches of the Grand Willow Tree."
+            loading="lazy"
+            width="1376"
+            height="768"
+          >
+          <span class="figure-overlay-hint">🔍 Zoom</span>
+        </div>
+        <figcaption>All seven Golden Acorn lanterns blazed with honey-colored light beneath the twinkling autumn stars.</figcaption>
+      </figure>
+
+      <p class="story-text">Shimmer... glow... twinkle! All seven lanterns lit the twilight sky! Beneath the glowing willow boughs, the friends sat on soft patchwork quilts, sharing warm blueberry muffins and spiced cider while Hopper played a dreamy lullaby on his fiddle.</p>
+
+      <p class="story-text">Five-year-old Pippin Paddlepaw curled up between Barnaby Badger and Tilly Terrapin. He took a slow, cozy breath, let his eyelids grow heavy, and whispered his bedtime rhyme:</p>
+
+      <div class="chant-box pippin">
+        <div class="chant-speaker">🦦 Pippin Paddlepaw</div>
+        <p class="chant-text">&ldquo;Step by step and paw by paw, the kindest day you ever saw. Seven lanterns, warm and bright, whisper to the woods... goodnight.&rdquo;</p>
+      </div>
+
+      <p class="story-text">And as the golden lanterns swayed in the starry night, all of Whispering Willows Valley smiled, closed their eyes, and drifted off into the sweetest sleep. Goodnight, little helper. The End.</p>
+
+    </article>
+
+    <!-- Interactive Conclusion & Reflection Card -->
+    <section class="interactive-conclusion" id="story-conclusion">
+      <span class="conclusion-badge">🌟 Story Complete • Bedtime Reflection</span>
+      <h2 class="conclusion-question">Can You Remember Pippin&rsquo;s Seven Golden Acorns?</h2>
+      <p class="story-text" style="text-align: center; max-width: 640px; margin: 0 auto 12px;">Talk together about the woodland neighbors Pippin helped on his way to the Grand Willow Tree:</p>
+      <ol class="reflection-list">
+        <li><strong>Rosie Red-Hen&rsquo;s Bakery:</strong> Why did the blueberry muffins taste extra sweet when Pippin helped sift the flour and stir the batter first?</li>
+        <li><strong>Clara Rook&rsquo;s Pitcher:</strong> When Pippin&rsquo;s paws could not reach the water at the bottom of the tall pitcher, how did dropping smooth pebbles one by one solve the puzzle?</li>
+        <li><strong>Barnaby Badger &amp; Penny Harvest-Mouse:</strong> How did tiny Penny help giant Barnaby when his wheelbarrow tangled in vines, and how did Barnaby return the favor at the brook?</li>
+        <li><strong>Bramble Red-Squirrel&rsquo;s Basket:</strong> Why was it hard for the neighbors to know when Bramble really needed help, and what promise did Bramble make?</li>
+        <li><strong>Tilly Terrapin &amp; the Sunbeam:</strong> How did slow-and-steady Tilly reach the top of Willow Hill first, and why did the warm sunbeam succeed where the gusty wind could not?</li>
+      </ol>
+
+      <div class="choice-grid">
+        <a href="../the-little-red-hen/" class="choice-card">
+          <span class="choice-card-icon">🐔</span>
+          <strong class="choice-card-title">The Little Red Hen</strong>
+          <span class="choice-card-desc">Read the classic tale that inspired Rosie Red-Hen&rsquo;s warm bakery lesson.</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+        <a href="../the-tortoise-and-the-hare/" class="choice-card">
+          <span class="choice-card-icon">🐢</span>
+          <strong class="choice-card-title">The Tortoise and the Hare</strong>
+          <span class="choice-card-desc">See how slow and steady wins the race in Aesop&rsquo;s timeless woodland fable.</span>
+          <span class="choice-action-btn">Read Next Fairy Tale ➔</span>
+        </a>
+      </div>
+
+      <a href="../#classics-stories" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--accent-brick); text-decoration: none; margin-top: 10px;">
+        <span>🏰 Back to Classic Fairy Tales</span>
+        <span>➔</span>
+      </a>
+    </section>
+
+    <!-- Full Narration with Synchronized Story Illustrations -->
+    <section class="story-video-card" id="story-video-section" aria-labelledby="story-video-title">
+      <span class="scene-pill">🎬 Narrated Storybook</span>
+      <h2 class="story-video-title" id="story-video-title">Watch Pippin Paddlepaw and the Seven Golden Acorns</h2>
+      <p class="story-video-description" id="story-video-description">Follow the full 24-minute multi-voice narration with all 24 watercolor story illustrations. Play, pause, or jump to your favorite chapter, and turn on English captions with the video controls.</p>
+      <video
+        id="story-video"
+        controls
+        playsinline
+        preload="metadata"
+        width="1280"
+        height="720"
+        poster="pippin_golden_acorns_story_video_poster.jpg"
+        aria-label="Pippin Paddlepaw and the Seven Golden Acorns narrated story video"
+        aria-describedby="story-video-description"
+      >
+        <source src="pippin_golden_acorns_story_video.mp4" type="video/mp4">
+        <track kind="captions" src="narration.vtt" srclang="en" label="English" default>
+        Your browser does not support video playback. <a href="pippin_golden_acorns_story_video.mp4">Download the narrated story video.</a>
+      </video>
+      <a class="story-video-download" href="pippin_golden_acorns_story_video.mp4" download>Download the story video</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>⭐ <strong>Shane &amp; Alex's Bedtime Stories Collection</strong></p>
+      <p style="margin-top: 6px;">Woodland Fable Treasury • 24 watercolor storybook illustrations</p>
+      <div class="footer-links">
+        <a href="../" style="color: var(--text-accent); text-decoration: none;">Library Home</a>
+        <span>•</span>
+        <a href="#top" style="color: var(--text-accent); text-decoration: none;" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Top of Page</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox-modal" class="lightbox-modal" style="display: none;" onclick="closeLightbox(event)">
+    <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close image">✕</button>
+    <div class="lightbox-img-container">
+      <img id="lightbox-img" style="display: none;" alt="Enlarged story illustration">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" id="btn-to-top" class="btn-floating-top" style="display: none;" title="Scroll to top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // 1. Reading Progress & Floating Back To Top
+    const progressBar = document.getElementById('progress-bar');
+    const topBtn = document.getElementById('btn-to-top');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (winScroll > 300) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    });
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 2. Story Switcher Dropdown Toggle
+    const btnStoryMenu = document.getElementById('btn-story-menu');
+    const storyDropdown = document.getElementById('story-menu-dropdown');
+
+    if (btnStoryMenu && storyDropdown) {
+      btnStoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = storyDropdown.classList.contains('open');
+        if (isOpen) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        } else {
+          storyDropdown.classList.add('open');
+          btnStoryMenu.classList.add('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!storyDropdown.contains(e.target) && !btnStoryMenu.contains(e.target)) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+          btnStoryMenu.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Theme Switcher (Day, Sepia, Bedtime Night)
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('shane-stories-theme', theme); } catch (e) {}
+
+      themeButtons.forEach(b => {
+        if (b.dataset.themeVal === theme) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => setTheme(btn.dataset.themeVal));
+    });
+
+    try {
+      const savedTheme = localStorage.getItem('shane-stories-theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('night');
+      }
+    } catch (e) {}
+
+    // 4. Font Sizing Controls
+    let currentFontSize = 19;
+    try {
+      currentFontSize = parseInt(localStorage.getItem('shane-stories-fontsize') || 19, 10);
+    } catch (e) {}
+
+    function updateFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(16, currentFontSize + delta));
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+      try { localStorage.setItem('shane-stories-fontsize', currentFontSize); } catch (e) {}
+    }
+
+    document.getElementById('btn-font-decrease').addEventListener('click', () => updateFontSize(-1));
+    document.getElementById('btn-font-increase').addEventListener('click', () => updateFontSize(1));
+    if (currentFontSize !== 19) {
+      document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+    }
+
+    // 5. Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(wrapper) {
+      const img = wrapper.querySelector('img');
+      const figure = wrapper.closest('figure');
+      const figcaption = figure ? figure.querySelector('figcaption') : null;
+
+      lightboxImg.src = img.src;
+      lightboxImg.style.display = 'block';
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = figcaption ? figcaption.textContent.replace('✦ ', '') : img.alt;
+      lightboxModal.classList.add('active');
+      lightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-close-btn')) {
+        lightboxModal.classList.remove('active');
+        lightboxModal.style.display = 'none';
+        lightboxImg.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (lightboxModal.classList.contains('active')) {
+          lightboxModal.classList.remove('active');
+          lightboxModal.style.display = 'none';
+          lightboxImg.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+        if (storyDropdown) {
+          storyDropdown.classList.remove('open');
+          btnStoryMenu.classList.remove('open');
+        }
+      }
+    });
+
+    // 6. Voice Narration Audio Player & Mutual Pause
+    const storyAudio = document.getElementById('story-audio-element');
+    const storyVideo = document.getElementById('story-video');
+    const btnAudioToggle = document.getElementById('btn-audio-toggle');
+    const audioPlayIcon = document.getElementById('audio-play-icon');
+    const audioPlayLabel = document.getElementById('audio-play-label');
+    const audioScrubber = document.getElementById('audio-scrubber');
+    const audioScrubberFill = document.getElementById('audio-scrubber-fill');
+    const audioTimeCurrent = document.getElementById('audio-time-current');
+    const audioTimeTotal = document.getElementById('audio-time-total');
+    const btnAudioSpeed = document.getElementById('btn-audio-speed');
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    if (storyAudio && btnAudioToggle) {
+      storyAudio.addEventListener('play', () => {
+        storyVideo?.pause();
+        audioPlayIcon.textContent = '⏸';
+        audioPlayLabel.textContent = 'Pause Narration';
+      });
+
+      storyAudio.addEventListener('pause', () => {
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = storyAudio.ended ? 'Play Voice Narration' : 'Resume Narration';
+      });
+
+      storyAudio.addEventListener('loadedmetadata', () => {
+        if (!isNaN(storyAudio.duration) && isFinite(storyAudio.duration)) {
+          audioTimeTotal.textContent = formatTime(storyAudio.duration);
+        }
+      });
+
+      storyAudio.addEventListener('timeupdate', () => {
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 1464.104;
+        const pct = (storyAudio.currentTime / dur) * 100;
+        audioScrubberFill.style.width = pct + '%';
+        audioTimeCurrent.textContent = formatTime(storyAudio.currentTime);
+        audioTimeTotal.textContent = formatTime(dur);
+      });
+
+      storyAudio.addEventListener('ended', () => {
+        audioPlayIcon.textContent = '▶';
+        audioPlayLabel.textContent = 'Play Voice Narration';
+        audioScrubberFill.style.width = '0%';
+      });
+
+      btnAudioToggle.addEventListener('click', () => {
+        if (storyAudio.paused) {
+          storyAudio.play();
+        } else {
+          storyAudio.pause();
+        }
+      });
+
+      audioScrubber.addEventListener('click', (e) => {
+        const rect = audioScrubber.getBoundingClientRect();
+        const clickPos = (e.clientX - rect.left) / rect.width;
+        const dur = (storyAudio.duration && isFinite(storyAudio.duration) && storyAudio.duration > 0) ? storyAudio.duration : 1464.104;
+        storyAudio.currentTime = clickPos * dur;
+      });
+
+      const speeds = [1.0, 1.15, 1.25, 0.9];
+      let speedIdx = 0;
+      btnAudioSpeed.addEventListener('click', () => {
+        speedIdx = (speedIdx + 1) % speeds.length;
+        const s = speeds[speedIdx];
+        storyAudio.playbackRate = s;
+        btnAudioSpeed.textContent = `Speed: ${s}×`;
+      });
+    }
+
+    storyVideo?.addEventListener('play', () => {
+      storyAudio?.pause();
+    });
+  </script>
+</body>
+</html>

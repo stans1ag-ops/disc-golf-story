@@ -1,0 +1,132 @@
+{
+  "audio": "narration.mp3",
+  "duration": 1464.104,
+  "timing_method": "Measured PCM sample positions from final multi-voice narration recording",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "acorn_01.jpg",
+      "start": 0.0,
+      "cue": "Once upon a cozy autumn morning, deep in Whispering Willows Valley, the leaves were turnin"
+    },
+    {
+      "image": "acorn_02.jpg",
+      "start": 106.943,
+      "cue": "Pippin followed the cobblestone lane until his pink nose gave a happy twitch—sniff, sniff!"
+    },
+    {
+      "image": "acorn_03.jpg",
+      "start": 206.302,
+      "cue": "Inside Rosie Red-Hen's sunlit kitchen, the brick oven glowed like a cozy orange campfire a"
+    },
+    {
+      "image": "acorn_04.jpg",
+      "start": 294.281,
+      "cue": "Soon a delicious cloud of warm cinnamon and baked blueberries floated out the kitchen wind"
+    },
+    {
+      "image": "acorn_05.jpg",
+      "start": 374.563,
+      "cue": "Tucking the first glowing acorn into his satchel, Pippin skipped down the flagstone path t"
+    },
+    {
+      "image": "acorn_06.jpg",
+      "start": 452.105,
+      "cue": "Clara Rook adjusted her brass spectacles and tapped her wing thoughtfully."
+    },
+    {
+      "image": "acorn_07.jpg",
+      "start": 536.547,
+      "cue": "Encouraged by Clara's words, Pippin filled his basket with smooth pebbles. Plink, plonk, k"
+    },
+    {
+      "image": "acorn_08.jpg",
+      "start": 588.114,
+      "cue": "Clara Rook perched on the flower pot, her eyes twinkling behind her spectacles."
+    },
+    {
+      "image": "acorn_09.jpg",
+      "start": 622.029,
+      "cue": "Around the bend of the fern lane, Pippin heard a deep sigh: Hoooo-humph, oh dear!"
+    },
+    {
+      "image": "acorn_10.jpg",
+      "start": 688.231,
+      "cue": "Just then—rustle, squeak! Out from beneath a fern frond hopped tiny Penny Harvest-Mouse in"
+    },
+    {
+      "image": "acorn_11.jpg",
+      "start": 736.079,
+      "cue": "Barnaby Badger clapped his striped paws with a joyful boom!"
+    },
+    {
+      "image": "acorn_12.jpg",
+      "start": 784.233,
+      "cue": "Across the bridge, Barnaby gave Penny a honey-clover tea cake and placed the Third Golden "
+    },
+    {
+      "image": "acorn_13.jpg",
+      "start": 814.825,
+      "cue": "With three Golden Acorns glowing in his satchel, Pippin climbed up to the Sunny Oak Grove."
+    },
+    {
+      "image": "acorn_14.jpg",
+      "start": 904.148,
+      "cue": "Twenty minutes later, Bramble stretched up on tiptoe to pluck one high acorn—and his heel "
+    },
+    {
+      "image": "acorn_15.jpg",
+      "start": 954.478,
+      "cue": "Halfway down the trail, Pippin paused and listened carefully."
+    },
+    {
+      "image": "acorn_16.jpg",
+      "start": 1011.123,
+      "cue": "As Bramble fastened the basket latch, a fourth brass acorn resting at the center of the ba"
+    },
+    {
+      "image": "acorn_17.jpg",
+      "start": 1048.494,
+      "cue": "Now the afternoon sun was dipping toward the western hills. Down in Maple Meadow, little P"
+    },
+    {
+      "image": "acorn_18.jpg",
+      "start": 1113.087,
+      "cue": "Soon the sun slipped behind Clover Ridge. Whooooosh-shiver! A crisp twilight breeze swept "
+    },
+    {
+      "image": "acorn_19.jpg",
+      "start": 1147.997,
+      "cue": "Penny and Pippin opened the door wide."
+    },
+    {
+      "image": "acorn_20.jpg",
+      "start": 1194.376,
+      "cue": "As Hopper helped load the cart, the fifth brass acorn on Penny's mantelpiece blossomed wit"
+    },
+    {
+      "image": "acorn_21.jpg",
+      "start": 1214.131,
+      "cue": "At the bottom of Willow Hill stood Dash Jackrabbit in his striped runner's sash and wise T"
+    },
+    {
+      "image": "acorn_22.jpg",
+      "start": 1263.607,
+      "cue": "Halfway up the trail, Dash Jackrabbit looked back and yawned. I am so far ahead of slow li"
+    },
+    {
+      "image": "acorn_23.jpg",
+      "start": 1308.229,
+      "cue": "Step by steady step, Tilly and Pippin reached the summit beneath the Grand Willow Tree, an"
+    },
+    {
+      "image": "acorn_24.jpg",
+      "start": 1370.136,
+      "cue": "Up the hillside arrived Rosie Red-Hen, Clara Rook, Barnaby Badger, Bramble Squirrel, Penny"
+    }
+  ]
+}

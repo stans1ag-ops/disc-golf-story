@@ -11,7 +11,7 @@ import argparse, hashlib, json, os, re, shutil, subprocess, sys, tempfile, wave
 from urllib.request import urlopen
 
 ROOT=Path(__file__).resolve().parents[1]
-CACHE=ROOT/'.cache'/'storybook'
+CACHE=ROOT/'.cache'/'storybook';sys.stdout.reconfigure(encoding='utf-8',errors='replace') if hasattr(sys.stdout,'reconfigure') else None
 
 def digest(value):
     return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
@@ -19,11 +19,11 @@ def digest(value):
 def load(slug):
     if not re.fullmatch(r'[a-z0-9-]+(?:/[a-z0-9-]+)?',slug):raise ValueError('Use a story slug such as the-princess-and-the-pea.')
     p=ROOT/slug/'story.json'
-    return json.loads(p.read_text()),p
+    return json.loads(p.read_text(encoding='utf-8')),p
 
 def save_json(p,data):
     p.parent.mkdir(parents=True,exist_ok=True)
-    tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(p)
+    tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(p)
 
 class SpokenHTML(HTMLParser):
     def __init__(self):super().__init__();self.parts=[];self.stack=[]
@@ -61,18 +61,18 @@ def visual_hash(s):
 
 def state_path(s):return CACHE/'media'/s['id']/'state.json'
 def checkpoint(s):
-    p=state_path(s);return json.loads(p.read_text()) if p.exists() else {}
+    p=state_path(s);return json.loads(p.read_text(encoding='utf-8')) if p.exists() else {}
 
 def export(s):
     directory=ROOT/s['id'];script=[s['title']+'.']+[scene_text(sc) for sc in s['scenes']]
-    (directory/'story.txt').write_text('\n\n'.join(script)+'\n')
+    (directory/'story.txt').write_text('\n\n'.join(script)+'\n',encoding='utf-8')
     md=['# '+s['title'],s.get('subtitle','')]
     if s.get('sourceUrl'):md+=['Source: '+s['sourceUrl']]
     for i,sc in enumerate(s['scenes'],1):
         md+=['\n## '+str(i)+'. '+sc['title']]
         for b in sc['blocks']:
             md.append(f"![{b['alt']}]({Path(b['src']).name})\n\n{b.get('caption','')}" if b['type']=='image' else spoken(b['html']))
-    (directory/'story.md').write_text('\n\n'.join(md)+'\n')
+    (directory/'story.md').write_text('\n\n'.join(md)+'\n',encoding='utf-8')
     print('Exported story.md and exact narration input story.txt.')
 
 def plan(s):
@@ -153,7 +153,7 @@ def narrate(s,p,force=False):
     temporary.replace(target)
     duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',str(target)],text=True))
     vtt='WEBVTT\n\n'+'\n\n'.join(f'{stamp(a)} --> {stamp(b)}\n{t}' for a,b,t in captions)+'\n'
-    (target.parent/'narration.vtt').write_text(vtt)
+    (target.parent/'narration.vtt').write_text(vtt,encoding='utf-8')
     save_json(target.parent/'narration-timings.json',{'audio':'narration.mp3','duration':duration,'timing_method':'Measured PCM sample positions','frame_size':[1280,720],'artwork_crop':None,'scenes':timed})
     s['media'].update(audio=s['id']+'/narration.mp3',captions=s['id']+'/narration.vtt',duration=duration,narrationInputHash=input_hash(s),provenance='Generated from canonical scene text using free local Kokoro narration')
     state['narration']=fingerprint;state['narrationOutput']=digest(target.read_bytes().hex());save_json(state_path(s),state);save_json(p,s);export(s)
@@ -163,7 +163,7 @@ def video(s,p,force=False):
     if s['media'].get('narrationInputHash')!=input_hash(s):raise ValueError('Narration is stale. Regenerate it before rendering the video.')
     timing=ROOT/s['id']/'narration-timings.json'
     if not timing.exists():raise ValueError('Generate narration and measured cues before rendering a new video.')
-    timeline=json.loads(timing.read_text());audio=ROOT/s['media']['audio']
+    timeline=json.loads(timing.read_text(encoding='utf-8'));audio=ROOT/s['media']['audio']
     duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',str(audio)],text=True))
     if abs(duration-timeline['duration'])>.1:raise ValueError('Narration changed. Regenerate timings before rendering.')
     cues=timeline['scenes'];starts=[c['start'] for c in cues]
@@ -179,7 +179,7 @@ def video(s,p,force=False):
     if not force and state.get('video')==fingerprint and output.exists():print('Video is current; reused the existing render.');return
     concat=work/'frames.txt';lines=[]
     for frame,length in frames:lines += ["file '"+frame.as_posix()+"'",'option framerate 24',f'duration {length:.6f}']
-    lines += ["file '"+frames[-1][0].as_posix()+"'",'option framerate 24'];concat.write_text('\n'.join(lines)+'\n')
+    lines += ["file '"+frames[-1][0].as_posix()+"'",'option framerate 24'];concat.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     pending=output.with_name('story-video.pending.mp4')
     subprocess.run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',str(concat),'-i',str(audio),'-t',str(duration),'-c:v','libx264','-preset','fast','-tune','stillimage','-crf','21','-pix_fmt','yuv420p','-vf','fps=24:round=near','-c:a','aac','-b:a','192k','-movflags','+faststart',str(pending)],check=True)
     pending.replace(output);poster=ROOT/s['id']/'story-video-poster.jpg';shutil.copyfile(frames[0][0],poster)
@@ -202,7 +202,7 @@ def publish(s,check_only=False):
         if not s['media'].get(field) or not (ROOT/s['media'][field]).exists():raise ValueError('Generate '+field+' first.')
     if s['collection']=='classics' and not s['media'].get('video'):raise ValueError('Render the classic story video first.')
     if checkpoint(s).get('narration')!=narration_fingerprint(s):raise ValueError('Narration is stale. Regenerate it from the final story text before publishing.')
-    catalog=json.loads((ROOT/'stories.json').read_text())
+    catalog=json.loads((ROOT/'stories.json').read_text(encoding='utf-8'))
     if check_only:print('Ready to publish. Catalog unchanged.');return
     if s['id'] not in catalog['stories']:catalog['stories'].append(s['id']);save_json(ROOT/'stories.json',catalog)
     print('Added to the catalog. Run build and checks to prepare the website preview.')

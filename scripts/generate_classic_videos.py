@@ -188,6 +188,15 @@ STORIES = [
         "poster_source": "tin_soldier_17.jpg",
         "timeline": "steadfast-tin-soldier/narration-timings.json",
     },
+    {
+        "id": "pippin-and-the-golden-acorns",
+        "dir": "pippin-and-the-golden-acorns",
+        "audio": "pippin-and-the-golden-acorns/narration.mp3",
+        "video_output": "pippin-and-the-golden-acorns/pippin_golden_acorns_story_video.mp4",
+        "poster_output": "pippin-and-the-golden-acorns/pippin_golden_acorns_story_video_poster.jpg",
+        "poster_source": "acorn_01.jpg",
+        "timeline": "pippin-and-the-golden-acorns/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):
@@ -284,11 +293,12 @@ def build_story_video(story):
             "-c:v", "libx264",
             "-preset", "fast",
             "-tune", "stillimage",
-            "-crf", "21",
+            "-crf", "25" if audio_dur > 900 else "21",
+            "-g", "480",
             "-pix_fmt", "yuv420p",
             "-vf", "fps=24:round=near",
             "-c:a", "aac",
-            "-b:a", "192k",
+            "-b:a", "128k" if audio_dur > 900 else "192k",
             "-movflags", "+faststart",
             str(ROOT / story['video_output'])
         ]

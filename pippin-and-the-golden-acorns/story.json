@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "id": "pippin-and-the-golden-acorns",
+  "title": "Pippin Paddlepaw and the Seven Golden Acorns",
+  "collection": "classics",
+  "order": 17,
+  "description": "Join five-year-old river-otter cub Pippin Paddlepaw through Whispering Willows Valley as he helps Rosie Red-Hen, Clara Rook, Barnaby Badger, Bramble Red-Squirrel, Penny Harvest-Mouse, and Tilly Terrapin gather the Seven Golden Acorns of Kindness before the Harvest Moon Lantern Festival.",
+  "subtitle": "\"Step by step and paw by paw, the kindest things you ever saw!\"",
+  "readingLevel": "Read together",
+  "edition": "Woodland Fable Treasury",
+  "sourceUrl": "",
+  "addedAt": "2026-11-07T00:00:00Z",
+  "cover": {
+    "src": "pippin-and-the-golden-acorns/acorn_01.jpg",
+    "alt": "Pippin Paddlepaw stands on the pine footbridge before the Grand Willow Tree where seven golden acorn lanterns hang."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "The Morning of the Seven Golden Acorns",
+      "start": 0.0,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Once upon a cozy autumn morning, deep in Whispering Willows Valley, the leaves were turning the color of golden honey, warm cinnamon, and toasted marshmallows."
+        },
+        {
+          "type": "paragraph",
+          "html": "Right in the middle of the green meadow stood the Grand Willow Tree. Its long, feathery branches dipped down like gentle green curtains, and carved into its mossy roots was a round oak door with a shiny brass knocker. Every year on the evening of the Harvest Moon, all the woodland neighbors gathered beneath the Grand Willow Tree for the Great Lantern Festival."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_01.jpg",
+          "alt": "Pippin Paddlepaw stands on the pine footbridge before the Grand Willow Tree where seven golden acorn lanterns hang.",
+          "caption": "Pippin Paddlepaw stood on the pine footbridge before the Grand Willow Tree, ready to gather the Seven Golden Acorns."
+        },
+        {
+          "type": "paragraph",
+          "html": "High among the willow boughs hung seven glass lantern globes shaped like acorns. To make the seven lanterns shine on Festival Night, a helper had to gather the Seven Golden Acorns of Kindness before sunset. Each Golden Acorn was kept by a different neighbor, and each one only began to glow when a young friend practiced a true lesson of kindness, patience, and honesty."
+        },
+        {
+          "type": "paragraph",
+          "html": "Out onto the arched pine footbridge stepped Pippin Paddlepaw. Pippin was a five-year-old river-otter cub with soft cinnamon-brown fur, creamy-white cheeks, and a sky-blue knitted waistcoat with two brass buttons. Slung across his shoulder was his woven willow satchel, ready to carry the seven treasures safely up the hill."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Good morning, sparkling brook! Good morning, Grand Willow Tree! Today my paws are washed and ready, my ears are open for listening, and my satchel has room for all seven Golden Acorns!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Pippin patted his satchel and sang his helper song. Can you tap your knees gently and say it with him?"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest things you ever saw! Little hands and gentle heart, that is how good helpers start!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Rosie Red-Hen's Flour Mill",
+      "start": 106.943,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Pippin followed the cobblestone lane until his pink nose gave a happy twitch—sniff, sniff! Something smelled like toasted oats, clover honey, and wild blueberries."
+        },
+        {
+          "type": "paragraph",
+          "html": "Outside a thatched cottage with yellow shutters stood Rosie Red-Hen in a crisp white baker&#x27;s apron and a braided straw sun-bonnet. On her table sat a heavy sack of golden oat flour, a pitcher of meadow milk, a jar of honey, and a basket of blue huckleberries."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_02.jpg",
+          "alt": "Pippin visits Rosie Red-Hen at her sunlit thatched stone cottage beside the wooden flour mill.",
+          "caption": "At the thatched stone cottage, Rosie Red-Hen welcomed Pippin beside her warm wooden flour mill."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Rosie Red-Hen</div><p>&ldquo;Cluck, cluck, oh dear me! The Lantern Festival begins at twilight, and I have twenty-four honey-oat berry muffins to bake for our neighbors! Plus, I need to stack three neat bundles of dry birchwood beside the brick oven so the fire stays steady! Who will help me stack the wood and sift this oat flour?&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Up in an old apple tree, a sleepy dormouse yawned and pulled his leaf-cap over his whiskers. Not I, mumbled the dormouse, my moss pillow is much too cozy!"
+        },
+        {
+          "type": "paragraph",
+          "html": "By the garden fence, a green bullfrog was practicing puddle-hops over a watering can. Not I, ribbited the bullfrog, hopping is much more fun than sifting oats!"
+        },
+        {
+          "type": "paragraph",
+          "html": "But Pippin didn&#x27;t wait to be asked twice. Remembering how the wisest builder in the tale of the Three Little Pigs always built things sturdy and right, Pippin trotted up to Rosie&#x27;s table and rolled up his sky-blue waistcoat sleeves."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;I will help you, Miss Rosie! First I can stack the dry birchwood neatly beside your brick oven, and then my paws can sift every scoop of oat flour!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Rosie Red-Hen</div><p>&ldquo;Bless your cheerful whiskers, Pippin! Two pairs of willing paws make every big job twice as merry!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Stirring the Sweet Berry Batter",
+      "start": 206.302,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Inside Rosie Red-Hen&#x27;s sunlit kitchen, the brick oven glowed like a cozy orange campfire after Pippin stacked the birchwood neatly in its box."
+        },
+        {
+          "type": "paragraph",
+          "html": "First, Rosie showed Pippin how to shake the round wire sifter. Shika-shika-shake! Down drifted the fine oat flour like soft snow into the big blue ceramic bowl. Next, Rosie poured in the sweet milk and a ribbon of golden honey."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_03.jpg",
+          "alt": "Inside the sunlit bakery kitchen, Pippin helps Rosie Red-Hen stir the sweet blueberry muffin batter.",
+          "caption": "Pippin tied on a linen apron and helped Rosie Red-Hen stir the blueberry muffin batter until it was smooth."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Rosie Red-Hen</div><p>&ldquo;Now comes the best part! Who will help me rinse the wild blueberries and fold them gently into the batter so they do not burst?&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Bramble Red-Squirrel popped his copper head through the open Dutch window, twitching his fluffy plume tail."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Oh, Miss Rosie, I am the champion of eating warm muffins once they come out of the oven, but stirring batter makes my elbows tired! Save a big muffin for me, and I will be back when the timer rings!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Pippin chuckled and picked up the carved wooden mixing spoon with both paws."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;I will stay right here until the last muffin is baked, Miss Rosie! Watch how gently I can fold the blueberries in!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Together, Pippin and Rosie counted five slow circles with the wooden spoon: One, two, three, four, five! Swirl, fold, and scoop! They spooned the batter into twenty-four muffin cups and slid the pans into the warm oven."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest things you ever saw! Pitching in makes work so sweet, soon we all will share a treat!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "The First Golden Acorn Shines",
+      "start": 294.281,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Soon a delicious cloud of warm cinnamon and baked blueberries floated out the kitchen window. Ding-ling-ling went the brass oven timer!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Rosie lifted out twenty-four golden honey-oat muffins. Right away, the dormouse, the bullfrog, and Bramble Squirrel tiptoed back to the gate, looking down at their toes because they hadn&#x27;t helped with a single scoop of flour."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_04.jpg",
+          "alt": "Rosie Red-Hen presents Pippin with a tray of golden blueberry muffins and the glowing First Golden Acorn.",
+          "caption": "Because Pippin shared the work from start to finish, the First Golden Acorn began to shine like warm honey."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Rosie Red-Hen</div><p>&ldquo;Pippin, because you stacked the wood, sifted the flour, and stirred the batter from start to finish, these muffins are yours to share however you think is best!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;In the old storybooks, the Little Red Hen ate the bread by herself because nobody helped. But tonight is the Lantern Festival! Let&#x27;s invite our friends to wash the mixing bowls, sweep the floor, and carry the baskets right now—and then everyone can earn a warm muffin together!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "How quickly the dormouse, the bullfrog, and Bramble cheered! They hurried inside to wash the bowl, dry the spoons, and sweep the floor clean before sharing a warm muffin."
+        },
+        {
+          "type": "paragraph",
+          "html": "As Pippin wiped the table, Rosie reached into her apron pocket and placed a polished brass acorn into Pippin&#x27;s paw. Instantly, it lit up with a warm golden-amber glow!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Rosie Red-Hen</div><p>&ldquo;Here is the First Golden Acorn, dear Pippin. Pitching in with willing hands turns everyday work into friendship.&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Clara Rook and the Tall Stone Pitcher",
+      "start": 374.563,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Tucking the first glowing acorn into his satchel, Pippin skipped down the flagstone path to the Whispering Stone Courtyard."
+        },
+        {
+          "type": "paragraph",
+          "html": "In the center of the courtyard grew a pot of golden star-lilies for the festival. Beside them stood Clara Rook, a sleek indigo bird wearing tiny half-moon brass spectacles and a yellow silk scarf."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_05.jpg",
+          "alt": "In the mossy stone courtyard, Clara Rook peers into a tall narrow clay pitcher beside a basket of river pebbles.",
+          "caption": "Wise Clara Rook showed Pippin the tall clay pitcher where the cool spring water sat far near the bottom."
+        },
+        {
+          "type": "paragraph",
+          "html": "Next to Clara stood a tall, narrow-necked terracotta pitcher. Clara was stretching her neck—tip-toe, stretch, peek!—trying to dip her watering cup inside, but her beak kept bumping the narrow clay rim."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐦‍⬛ Clara Rook</div><p>&ldquo;Caw, caw, oh fiddlesticks! Look at our golden star-lilies, Pippin—the sun has made their leaves droop, and they need a drink of spring water! There is cool water at the bottom of this tall pitcher, but the neck is too narrow for my wings, and my beak is three inches too short!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Let me try reaching in with my otter paw, Miss Clara!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Pippin stood on tiptoe and reached his brown arm down into the pitcher. Wiggle, stretch, reach! His fingertips brushed the clay wall just above the water, still two inches short."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Oh whiskers! My arm isn&#x27;t long enough either! And if we tip this heavy clay pitcher over, it will crack on the flagstones and spill every drop! What can we do?&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-6",
+      "title": "Pebble by Pebble, Up Comes the Water",
+      "start": 452.105,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Clara Rook adjusted her brass spectacles and tapped her wing thoughtfully."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐦‍⬛ Clara Rook</div><p>&ldquo;Wait a moment, Pippin! My grandmother told me the ancient fable of a clever crow who faced this exact puzzle! When a problem cannot be solved by pushing hard, we solve it with patience and our thinking caps! Look down beside the garden path. What do you see?&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_06.jpg",
+          "alt": "Clara Rook and Pippin drop smooth river pebbles one by one into the tall clay pitcher as the water rises to the brim.",
+          "caption": "Pebble by pebble, Pippin and Clara watched the cool clear water rise all the way to the rim of the pitcher."
+        },
+        {
+          "type": "paragraph",
+          "html": "All along the flowerbed lay dozens of smooth, clean grey and white river pebbles washed bright by the brook."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐦‍⬛ Clara Rook</div><p>&ldquo;Tell me, Pippin, when you step into your wooden bathtub at home, what happens to the water level?&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;It rises higher because I take up space at the bottom! Oh, Miss Clara, how clever! If we drop these smooth river pebbles gently into the pitcher one by one, they will sink to the bottom and push the cool water right up to the top!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Let&#x27;s count with Pippin and Clara as they drop the pebbles in!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Plink! Plonk! Pebble number one, pebble number two! Up, up, up comes the water for me and you!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Plink! went a white pebble from Clara&#x27;s beak. Plonk! went a grey pebble from Pippin&#x27;s paw. After six pebbles, Pippin peeked inside. The water had barely risen the width of a clover leaf."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Miss Clara, we dropped six pebbles in, and the water is still way down low!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐦‍⬛ Clara Rook</div><p>&ldquo;Never lose heart when a good plan starts slowly, Pippin! Great things happen by adding one small effort to another without giving up!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-7",
+      "title": "The Star-Lilies Bloom Again",
+      "start": 536.547,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Encouraged by Clara&#x27;s words, Pippin filled his basket with smooth pebbles. Plink, plonk, ker-plink, ker-plonk! Six pebbles became fifteen. Fifteen became thirty!"
+        },
+        {
+          "type": "paragraph",
+          "html": "With every smooth stone that settled at the bottom, the sparkling spring water climbed higher up the terracotta neck—halfway up, three-quarters up, until with the thirtieth smooth pebble—glug, shimmer, sparkle!—the cool water rose right to the very top rim!"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_07.jpg",
+          "alt": "Golden star-lilies bloom in the stone courtyard as Clara Rook and Pippin water the garden together.",
+          "caption": "When they poured the rising water over the garden bed, the golden star-lilies opened their petals in the sunshine."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Hooray! Look, Miss Clara! The water climbed all the way to the top without spilling a drop!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Clara dipped her brass watering cup and Pippin scooped with a gourd ladle, pouring the cool water around the roots of the golden star-lilies. Right away, the stems stood tall and opened their velvety yellow petals, filling the courtyard with a sweet lemon-blossom scent."
+        }
+      ]
+    },
+    {
+      "id": "scene-8",
+      "title": "The Second Golden Acorn",
+      "start": 588.114,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Clara Rook perched on the flower pot, her eyes twinkling behind her spectacles."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐦‍⬛ Clara Rook</div><p>&ldquo;You learned a wonderful secret today, Pippin. When a task looks too deep at first, patience and clever thinking lift you to the top, one small pebble at a time.&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_08.jpg",
+          "alt": "Clara Rook places the glowing Second Golden Acorn into Pippin's woven willow satchel.",
+          "caption": "Clara Rook placed the Second Golden Acorn into Pippin's satchel: the Acorn of Patience and Clever Thinking."
+        },
+        {
+          "type": "paragraph",
+          "html": "From beneath her yellow scarf, Clara untied a second brass acorn and placed it into Pippin&#x27;s paw, where it glowed with soft honey light!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest things you ever saw! Pebble by pebble, slow and smart, patience fills a peaceful heart!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-9",
+      "title": "Barnaby Badger and the Tangled Wheelbarrow",
+      "start": 622.029,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Around the bend of the fern lane, Pippin heard a deep sigh: Hoooo-humph, oh dear!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Standing beside a wooden wheelbarrow loaded with orange pumpkins and blackberry jam was Barnaby Badger in his green corduroy overalls and felt gardener&#x27;s hat."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_09.jpg",
+          "alt": "On a mossy woodland lane, Barnaby Badger stands beside his wooden wheelbarrow tangled in morning-glory vines.",
+          "caption": "Kind Barnaby Badger's wheelbarrow was tangled fast in tough green morning-glory vines along the fern lane."
+        },
+        {
+          "type": "paragraph",
+          "html": "An hour earlier, while Barnaby was resting under a walnut tree, tiny Penny Harvest-Mouse had accidentally scurried across his boot. Like the generous lion in the fable of the Lion and the Mouse, kind Barnaby had tipped his hat and let little Penny pass safely by."
+        },
+        {
+          "type": "paragraph",
+          "html": "Now strong Barnaby was stuck! His wheelbarrow wheel had rolled into a tangle of tough green morning-glory ribbons that wrapped tightly around the narrow center axle between the wooden spokes!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦡 Barnaby Badger</div><p>&ldquo;Oh, my stars, Pippin! My arms are strong enough to lift giant pumpkins and oak logs, but my big badger paws are much too wide to squeeze between these narrow wooden spokes! If I pull by brute strength, I will snap the spokes and spill all the festival jam!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-10",
+      "title": "Little Paws Do What Big Paws Cannot",
+      "start": 688.231,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Just then—rustle, squeak! Out from beneath a fern frond hopped tiny Penny Harvest-Mouse in her patchwork gingham pinafore!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Look, Mr. Barnaby! Little Penny is here! Her tiny mouse fingers and my slender otter paws can slip right between the narrow wheel spokes where your big paws cannot fit!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_10.jpg",
+          "alt": "Pippin Paddlepaw and tiny Penny Harvest-Mouse kneel beside the wheelbarrow wheel to untie the tangled vine knots.",
+          "caption": "With nimble little paws, Penny Harvest-Mouse and Pippin untied the hidden vine knots beneath the wooden hub."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦡 Barnaby Badger</div><p>&ldquo;Bless my brass buckles, little Penny! Can such tiny paws truly free a heavy wheelbarrow like mine?&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Penny nodded happily and hopped right through the spokes onto the center hub! Like a tiny sailor untying silk ribbons, Penny loosened the tightest inner honeysuckle loops—slip, unloop, untuck!—while Pippin unwound the outer tendrils and draped them back onto the garden trellis. In two minutes, the wheel spun free!"
+        }
+      ]
+    },
+    {
+      "id": "scene-11",
+      "title": "Big Paws Return the Favor at the Brook",
+      "start": 736.079,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Barnaby Badger clapped his striped paws with a joyful boom!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦡 Barnaby Badger</div><p>&ldquo;Well, I never! The smallest mouse in the valley just rescued the strongest badger! Hop onto my wheelbarrow, Penny, and walk beside me, Pippin!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_11.jpg",
+          "alt": "Barnaby Badger and Pippin pause beside the mossy woodland brook in the warm autumn sunlight.",
+          "caption": "Strong Barnaby Badger thanked his small friends and helped carry them safely across the mossy brook."
+        },
+        {
+          "type": "paragraph",
+          "html": "When they reached the pebble brook crossing, a heavy mossy birch branch had tumbled across the narrow footpath. Little Penny and five-year-old Pippin pushed with all their might, but the heavy branch wouldn&#x27;t budge!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦡 Barnaby Badger</div><p>&ldquo;Aha! smiled Barnaby, rolling up his corduroy sleeves. Little paws did what big paws could not—now it is big paws&#x27; turn to help little paws!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "With one calm lift—heave-ho!—strong Barnaby lifted the heavy birch branch clean off the path and set it beside the bank as a mossy bench for the frogs!"
+        }
+      ]
+    },
+    {
+      "id": "scene-12",
+      "title": "The Third Golden Acorn",
+      "start": 784.233,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Across the bridge, Barnaby gave Penny a honey-clover tea cake and placed the Third Golden Acorn into Pippin&#x27;s paws!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦡 Barnaby Badger</div><p>&ldquo;Guard this third acorn well, Pippin. Today you and Penny proved that no friend is ever too small to offer a giant help, and no friend is ever too big to need a gentle hand.&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_12.jpg",
+          "alt": "Barnaby Badger presents Pippin with the glowing Third Golden Acorn of Mutual Kindness.",
+          "caption": "Barnaby Badger placed the Third Golden Acorn into Pippin's satchel, reminding him that every helper matters."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest things you ever saw! Big or tiny, tall or small, kindness has a job for all!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-13",
+      "title": "Bramble Squirrel's Silly Acorn Alarm",
+      "start": 814.825,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "With three Golden Acorns glowing in his satchel, Pippin climbed up to the Sunny Oak Grove. High on an oak limb sat Bramble Red-Squirrel beside a huge wicker basket of shiny brown roasting-acorns."
+        },
+        {
+          "type": "paragraph",
+          "html": "The elders had given Bramble a shiny brass helper bell to ring ONLY if his heavy basket started to slip. But sitting in the quiet tree, Bramble felt fidgety and thought of a silly trick—just like the shepherd boy in the old fable."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_13.jpg",
+          "alt": "Under a giant red oak tree, Bramble Red-Squirrel waves dramatically beside a pile of brown acorns as Pippin runs up the path.",
+          "caption": "Up in the Sunny Oak Grove, Bramble Red-Squirrel giggled after playing his pretend runaway-acorn game."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Ding-a-ling-a-ling! Help, everybody! My giant acorn basket is slipping off the branch! Hurry, hurry!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Pippin, Barnaby Badger, and Rosie Red-Hen dropped their work and ran puffing up the steep hill!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Hold on, Bramble! Our arms are ready to catch the basket! Where is it slipping?&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Up on the limb, the basket sat completely still, and Bramble giggled until his ears wobbled!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Tee-hee-hee! Fooled you! My basket wasn&#x27;t slipping at all! I just wanted to see how fast you could run!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐔 Rosie Red-Hen</div><p>&ldquo;Oh, Bramble, said Rosie gently. We ran up the hill because we trusted your bell. Never use a helper bell for a trick.&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Fifteen minutes later, Bramble got bored again and rang his bell a second time: Ding-a-ling! A whirlwind is tipping my basket! Kind Pippin and Barnaby ran back up—only to find Bramble giggling behind his tail again!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦡 Barnaby Badger</div><p>&ldquo;Bramble, when you call false alarms twice in a row, your friends cannot tell when your words are real anymore.&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-14",
+      "title": "When the Basket Really Tips Over",
+      "start": 904.148,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Twenty minutes later, Bramble stretched up on tiptoe to pluck one high acorn—and his heel accidentally bumped the heavy wicker basket!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Wobble, tilt, ker-plop! Down tumbled the basket onto the mossy bank below! Its lid popped open, and out poured two hundred brown acorns—roly-poly-zip!—hiding deep in the green clover and under the fern leaves!"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_14.jpg",
+          "alt": "Bramble Red-Squirrel watches in dismay as his wicker basket tips over and real acorns roll toward the hollow oak log.",
+          "caption": "When Bramble's wicker basket really tipped over, three dozen acorns tumbled toward the mossy hollow log."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Ding-a-ling-a-ling! Please help me! This time it is not a joke! The basket really tipped over, and all two hundred festival acorns are lost in the deep clover!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Down in the valley, the neighbors heard the bell a third time. That is just Bramble playing his trick again, sighed the bullfrog, and nobody came up the hill. Poor Bramble sat beside his empty basket with his tail drooping and two warm teardrops on his whiskers."
+        }
+      ]
+    },
+    {
+      "id": "scene-15",
+      "title": "Pippin Checks and Bramble Promises",
+      "start": 954.478,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Halfway down the trail, Pippin paused and listened carefully."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Wait a second. The first two times Bramble called, I heard giggles in his voice. This time he sounds truly sorry. A good helper checks to make sure a friend is okay!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_15.jpg",
+          "alt": "Pippin and Bramble Red-Squirrel gather the scattered acorns together in the sunlit oak grove.",
+          "caption": "Pippin came back to check on his friend, and together they gathered every last acorn back into the basket."
+        },
+        {
+          "type": "paragraph",
+          "html": "Pippin trotted back up to the oak tree and saw the spilled acorns hiding in the clover."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Oh, Pippin, you came! My basket really tipped over, and nobody believed my bell because I told two silly fibs! I broke my friends&#x27; trust! I put my paw right over my heart: from this day on, my word and my bell will always tell the one-hundred-percent truth!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Trust is like a warm lantern glass, Bramble—we keep it bright by always speaking the truth! Come on, let&#x27;s find every acorn together!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "On their knees in the clover, Pippin and Bramble searched under every buttercup and fern, counting all two hundred shiny brown acorns back into the basket!"
+        }
+      ]
+    },
+    {
+      "id": "scene-16",
+      "title": "The Fourth Golden Acorn",
+      "start": 1011.123,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As Bramble fastened the basket latch, a fourth brass acorn resting at the center of the basket lit up with a clear, steady golden glow!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Look, Pippin! The Fourth Golden Acorn woke up for your satchel! And I will carry this heavy basket down the hill myself to apologize to Miss Rosie and Mr. Barnaby!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_16.jpg",
+          "alt": "Bramble Red-Squirrel hands Pippin the glowing Fourth Golden Acorn of Truth and Trust.",
+          "caption": "Bramble promised to always tell the truth and handed Pippin the glowing Fourth Golden Acorn."
+        },
+        {
+          "type": "paragraph",
+          "html": "When Bramble apologized honestly down in the meadow, Rosie and Barnaby welcomed him right back with warm smiles!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest things you ever saw! Honest words that ring so true make our friendships good as new!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-17",
+      "title": "Hopper Cricket's Merry Autumn Tune",
+      "start": 1048.494,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Now the afternoon sun was dipping toward the western hills. Down in Maple Meadow, little Penny Harvest-Mouse was stacking dry pine-cones beside her hearth and filling jugs with warm spiced cider."
+        },
+        {
+          "type": "paragraph",
+          "html": "Perched on a polka-dotted toadstool nearby was Hopper Cricket in his emerald-green tailcoat, playing a merry jig on his tiny wooden fiddle: Zippity-zing, fiddle-dee-dee!"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_17.jpg",
+          "alt": "In the golden autumn meadow, Hopper Cricket plays his miniature wooden fiddle while Penny Harvest-Mouse stacks firewood.",
+          "caption": "While Penny Harvest-Mouse stacked dry birch twigs for evening, Hopper Cricket danced and played his merry fiddle."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;What a lively tune, Hopper! The sun is sinking and the evening breeze will be chilly soon. Will you help Penny and me stack just one basket of dry pine-cones before the dew falls?&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Oh, pshaw, Pippin! laughed Hopper Cricket. The sun is still warm on my wings! Stacking pine-cones is for later—right now my fiddle wants to dance!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;In the fable of the Ants and the Grasshopper, the grasshopper forgot to prepare while the sun was shining! Ten minutes of helping now will keep us warm tonight!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "But Hopper kept leaping from toadstool to daisy while Pippin and Penny gathered two extra baskets of dry pine-cones and sweet chestnuts."
+        }
+      ]
+    },
+    {
+      "id": "scene-18",
+      "title": "The Cool Evening Breeze Arrives",
+      "start": 1113.087,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Soon the sun slipped behind Clover Ridge. Whooooosh-shiver! A crisp twilight breeze swept across Maple Meadow, and silver dew dampened all the remaining pine-cones in the field."
+        },
+        {
+          "type": "paragraph",
+          "html": "Hopper Cricket stopped playing. His wings shivered—brrrr!—and his tummy rumbled. Every pine-cone left outside was wet with dew, and he hadn&#x27;t packed a sweater or supper! Across the lane, warm amber light glowed from Penny&#x27;s hollow-log cottage. Tucking his fiddle under his arm, Hopper gave a polite tap-tap-tap on the oak door."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_18.jpg",
+          "alt": "Crisp blue twilight settles over the autumn meadow as warm golden light glows inside Penny's hollow-log cottage.",
+          "caption": "When the crisp evening breeze swept across the meadow, Penny's cottage glowed like a cozy golden lantern."
+        }
+      ]
+    },
+    {
+      "id": "scene-19",
+      "title": "Warm Cider, Preparation, and Sharing",
+      "start": 1147.997,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Penny and Pippin opened the door wide."
+        },
+        {
+          "type": "paragraph",
+          "html": "Oh, Penny and Pippin, whispered Hopper softly. You prepared while the sun shone, and I only danced. Now the chill is here and my basket is empty."
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_19.jpg",
+          "alt": "Inside the warm cottage kitchen, Pippin helps share mugs of spiced apple cider and a warm blanket.",
+          "caption": "Inside by the crackling hearth, Penny and Pippin shared warm spiced cider and a wool blanket with Hopper Cricket."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Come right inside by the hearth, Hopper! Because Penny and I gathered extra pine-cones and brewed extra spiced cider while the sun was shining, we have plenty to share with a friend who has learned his lesson!&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Wrapped in a warm wool shawl with a mug of cinnamon cider, Hopper beamed with gratitude."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Thank you both! Tomorrow morning, before I play a single note, I will gather three full baskets of dry kindling! And right now, let me help load the cider jugs onto the festival cart and play a cheerful marching song as we pull it up the hill!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-20",
+      "title": "The Fifth Golden Acorn",
+      "start": 1194.376,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As Hopper helped load the cart, the fifth brass acorn on Penny&#x27;s mantelpiece blossomed with rich golden radiance! Penny and Hopper placed it into Pippin&#x27;s satchel."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest things you ever saw! First prepare and do your part, then share with a joyful heart!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_20.jpg",
+          "alt": "Penny Harvest-Mouse and Hopper Cricket present Pippin with the glowing Fifth Golden Acorn.",
+          "caption": "As Hopper promised to help prepare before playing next time, the Fifth Golden Acorn glowed with warm light."
+        }
+      ]
+    },
+    {
+      "id": "scene-21",
+      "title": "Tilly Terrapin, Dash Jackrabbit, and the Hilltop Trail",
+      "start": 1214.131,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "At the bottom of Willow Hill stood Dash Jackrabbit in his striped runner&#x27;s sash and wise Tilly Terrapin in her lavender shawl, holding the final two unlit brass acorns inside glass lanterns."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐿️ Bramble Red-Squirrel</div><p>&ldquo;Look how tiny your steps are, Miss Tilly! laughed Dash Jackrabbit, bouncing like a rubber ball. With my speedy jackrabbit bounds, I will reach the Grand Willow Tree in two shakes of a cottontail! Watch me zoom—one, two, three, go!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_21.jpg",
+          "alt": "At the foot of Willow Hill, Tilly Terrapin and Dash Jackrabbit stand at the starting line with Pippin.",
+          "caption": "At the bottom of Willow Hill, Tilly Terrapin and Dash Jackrabbit prepared to carry the lantern oil up the trail."
+        },
+        {
+          "type": "paragraph",
+          "html": "Boing-whoosh! Off bounded Dash up the hill!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐢 Tilly Terrapin</div><p>&ldquo;Let him bounce, dear Pippin, smiled Tilly calmly. When carrying a precious lantern, rushing makes us stumble, but calm, steady steps always reach the top safely. Will you walk steadily beside me?&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Yes please, Miss Tilly! Left paw, right paw, breathing slow and deep!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-22",
+      "title": "Slow and Steady Passes the Snoozing Hare",
+      "start": 1263.607,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Halfway up the trail, Dash Jackrabbit looked back and yawned. I am so far ahead of slow little Tilly that I can take a cozy nap in this warm clover patch and still win! Within seconds, Dash was fast asleep—zzzzzz-whiffle-zzzzzz!"
+        },
+        {
+          "type": "paragraph",
+          "html": "Up the winding trail came Tilly and Pippin: Step, breathe, smile! When they reached the sleeping jackrabbit, kind Pippin spread a warm maple-leaf quilt over Dash&#x27;s shoulders so he wouldn&#x27;t get chilled, and whispered:"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_22.jpg",
+          "alt": "Tilly Terrapin and Pippin walk steadily past Dash Jackrabbit snoozing under an apple tree.",
+          "caption": "While Dash Jackrabbit napped beneath the shady apple tree, Tilly and Pippin walked steadily up the hill."
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;When we reach the top, we will ring the welcome chime so Dash wakes up in time to celebrate with us!&rdquo;</p>"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐢 Tilly Terrapin</div><p>&ldquo;That is a true winner&#x27;s heart, Pippin. Slow and steady reaches the goal, and kindness brings every friend along!&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-23",
+      "title": "The Breeze and the Golden Sunbeam",
+      "start": 1308.229,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Step by steady step, Tilly and Pippin reached the summit beneath the Grand Willow Tree, and the sixth brass acorn lit up with a serene golden glow! Dash Jackrabbit woke up at the chime and bounded up the last steps, blushing and thanking them for the leaf blanket."
+        },
+        {
+          "type": "paragraph",
+          "html": "Above the tree, Little North Breeze—a puffy silver cloud—wanted to open the wooden lantern shutters by force, just like in the fable of the North Wind and the Sun! He blew a noisy gust—whooooosh!—but the willow shutters only latched tighter against the cold wind!"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_23.jpg",
+          "alt": "A golden sunbeam shines through the Grand Willow Tree boughs as Tilly and Pippin hang the Sixth and Seventh Golden Acorns.",
+          "caption": "A warm golden sunbeam shone upon the hilltop as Tilly and Pippin hung the Sixth and Seventh Golden Acorns."
+        },
+        {
+          "type": "paragraph",
+          "html": "Then the Golden Setting Sun smiled from the horizon and poured a soft, loving golden sunbeam over the hilltop. Feeling that gentle warmth, Little North Breeze relaxed, the wooden lantern shutters opened like blooming flowers, and the seventh brass acorn burst into radiant starlight!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🐢 Tilly Terrapin</div><p>&ldquo;Look at that wonder, Pippin. Loud bluster makes the world close up tight, but gentle warmth and kindness open every heart.&rdquo;</p>"
+        }
+      ]
+    },
+    {
+      "id": "scene-24",
+      "title": "The Grand Willow Lantern Festival Under the Stars",
+      "start": 1370.136,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Up the hillside arrived Rosie Red-Hen, Clara Rook, Barnaby Badger, Bramble Squirrel, Penny Harvest-Mouse, and Hopper Cricket! Together with Pippin, they hung all Seven Golden Acorns inside the glass lanterns on the Grand Willow Tree. Let&#x27;s count them from one to seven!"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Lantern One for pitching in with Rosie Red-Hen! Lantern Two for patient pebble-thinking with Clara Rook! Lantern Three because no friend is too small to help with Barnaby and Penny! Lantern Four for speaking the honest truth with Bramble! Lantern Five for preparing ahead and sharing with Hopper! Lantern Six for walking slow and steady with Tilly! And Lantern Seven for choosing gentle warmth like the Golden Sun!&rdquo;</p>"
+        },
+        {
+          "type": "image",
+          "src": "pippin-and-the-golden-acorns/acorn_24.jpg",
+          "alt": "Under the twinkling twilight sky, all seven Golden Acorn lanterns glow warmly in the branches of the Grand Willow Tree.",
+          "caption": "All seven Golden Acorn lanterns blazed with honey-colored light beneath the twinkling autumn stars."
+        },
+        {
+          "type": "paragraph",
+          "html": "Shimmer... glow... twinkle! All seven lanterns lit the twilight sky! Beneath the glowing willow boughs, the friends sat on soft patchwork quilts, sharing warm blueberry muffins and spiced cider while Hopper played a dreamy lullaby on his fiddle."
+        },
+        {
+          "type": "paragraph",
+          "html": "Five-year-old Pippin Paddlepaw curled up between Barnaby Badger and Tilly Terrapin. He took a slow, cozy breath, let his eyelids grow heavy, and whispered his bedtime rhyme:"
+        },
+        {
+          "type": "callout",
+          "html": "<div class=\"chant-speaker\">🦦 Pippin Paddlepaw</div><p>&ldquo;Step by step and paw by paw, the kindest day you ever saw. Seven lanterns, warm and bright, whisper to the woods... goodnight.&rdquo;</p>"
+        },
+        {
+          "type": "paragraph",
+          "html": "And as the golden lanterns swayed in the starry night, all of Whispering Willows Valley smiled, closed their eyes, and drifted off into the sweetest sleep. Goodnight, little helper. The End."
+        }
+      ]
+    }
+  ],
+  "discussionHtml": "<span class=\"conclusion-badge\">🌟 Story Complete • Bedtime Reflection</span>\n      <h2 class=\"conclusion-question\">Can You Remember Pippin&rsquo;s Seven Golden Acorns?</h2>\n      <p class=\"story-text\" style=\"text-align: center; max-width: 640px; margin: 0 auto 12px;\">Talk together about the woodland neighbors Pippin helped on his way to the Grand Willow Tree:</p>\n      <ol class=\"reflection-list\">\n        <li><strong>Rosie Red-Hen&rsquo;s Bakery:</strong> Why did the blueberry muffins taste extra sweet when Pippin helped sift the flour and stir the batter first?</li>\n        <li><strong>Clara Rook&rsquo;s Pitcher:</strong> When Pippin&rsquo;s paws could not reach the water at the bottom of the tall pitcher, how did dropping smooth pebbles one by one solve the puzzle?</li>\n        <li><strong>Barnaby Badger &amp; Penny Harvest-Mouse:</strong> How did tiny Penny help giant Barnaby when his wheelbarrow tangled in vines, and how did Barnaby return the favor at the brook?</li>\n        <li><strong>Bramble Red-Squirrel&rsquo;s Basket:</strong> Why was it hard for the neighbors to know when Bramble really needed help, and what promise did Bramble make?</li>\n        <li><strong>Tilly Terrapin &amp; the Sunbeam:</strong> How did slow-and-steady Tilly reach the top of Willow Hill first, and why did the warm sunbeam succeed where the gusty wind could not?</li>\n      </ol>",
+  "narration": {
+    "voice": "af_heart",
+    "speed": 0.92
+  },
+  "media": {
+    "audio": "pippin-and-the-golden-acorns/narration.mp3",
+    "captions": "pippin-and-the-golden-acorns/narration.vtt",
+    "duration": 1464.104,
+    "video": {
+      "src": "pippin-and-the-golden-acorns/pippin_golden_acorns_story_video.mp4",
+      "poster": "pippin-and-the-golden-acorns/pippin_golden_acorns_story_video_poster.jpg"
+    },
+    "narrationInputHash": "bfa6c9894acc9ffaed4c5b2f4bdcf61b627b617a8f44fdcb309a02441cd9a838",
+    "videoNarrationHash": "bfa6c9894acc9ffaed4c5b2f4bdcf61b627b617a8f44fdcb309a02441cd9a838",
+    "videoVisualHash": "ac9ee0f304ca1955b0b1f41ef9e285f64610c29aacc1a51e6c228354fb04df2b",
+    "provenance": "Generated from canonical scene text using free local Kokoro multi-voice narration"
+  },
+  "artDirection": {
+    "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+    "referenceImages": [
+      "pippin-and-the-golden-acorns/ref_characters.jpg",
+      "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+    ]
+  }
+}

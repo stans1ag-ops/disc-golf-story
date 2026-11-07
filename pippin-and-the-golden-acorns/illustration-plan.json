@@ -1,0 +1,389 @@
+{
+  "story": "Pippin Paddlepaw and the Seven Golden Acorns",
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "The Morning of the Seven Golden Acorns",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_01.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Pippin Paddlepaw (cinnamon-brown otter cub in sky-blue waistcoat and willow satchel from ref_characters.jpg) stands on the arched pine-timber footbridge from ref_key_setting.jpg, looking up happily at the Grand Willow Tree in warm autumn morning light."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 2,
+      "title": "Rosie Red-Hen's Flour Mill",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_02.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Outside a cozy thatched cottage mill with flower boxes, Rosie Red-Hen (russet speckled hen in white linen apron from ref_characters.jpg) sifts golden oat flour into a ceramic bowl while Pippin Paddlepaw rolls up his sky-blue waistcoat sleeves to help."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 3,
+      "title": "Stirring the Sweet Berry Batter",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_03.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Inside Rosie Red-Hen's warm sunlit cottage kitchen, Pippin Paddlepaw and Rosie Red-Hen stir sweet wild-blueberries and golden honey into muffin batter using a carved wooden spoon, while Bramble Red-Squirrel peers cheerfully through the open Dutch window."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 4,
+      "title": "The First Golden Acorn Shines",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_04.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Rosie Red-Hen presents a tray of steaming golden honey-oat muffins on a checkered garden table and hands Pippin Paddlepaw the first glowing Golden Acorn token, which shines with warm amber light."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 5,
+      "title": "Clara Rook and the Tall Stone Pitcher",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_05.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. By a mossy stone garden courtyard, Clara Rook (glossy indigo bird in brass spectacles and yellow scarf from ref_characters.jpg) peers into a tall narrow terracotta garden pitcher where fresh spring water sparkles near the bottom, while Pippin Paddlepaw kneels beside her."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 6,
+      "title": "Pebble by Pebble, Up Comes the Water",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_06.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Close-up storybook scene: Pippin Paddlepaw holds two smooth round river pebbles in his paws while Clara Rook drops a smooth grey pebble from her beak into the mouth of the tall terracotta pitcher, tiny water ripples rising inside."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 7,
+      "title": "The Star-Lilies Bloom Again",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_07.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Sparkling clear water brims at the very top rim of the terracotta pitcher, watering a pot of golden star-lilies beside it. Clara Rook and Pippin Paddlepaw clap their wings and paws in celebration."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 8,
+      "title": "The Second Golden Acorn",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_08.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Clara Rook perches on the rim of the watered star-lily pot and places the second glowing Golden Acorn into Pippin Paddlepaw's woven willow satchel."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 9,
+      "title": "Barnaby Badger and the Tangled Wheelbarrow",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_09.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. On a mossy woodland lane, Barnaby Badger (friendly striped badger in green corduroy overalls from ref_characters.jpg) stands beside his wooden wheelbarrow loaded with pumpkins, its wheel gently tangled in curly green morning-glory vines."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 10,
+      "title": "Little Paws Do What Big Paws Cannot",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_10.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Tiny Penny Harvest-Mouse (in gingham pinafore) and Pippin Paddlepaw carefully untie the soft green morning-glory vine knots from the spokes of Barnaby Badger's wooden wheelbarrow wheel while Barnaby smiles gratefully."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 11,
+      "title": "Big Paws Return the Favor at the Brook",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_11.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. At the pebble brook crossing from ref_key_setting.jpg, a fallen mossy birch branch rests across the footpath. Strong Barnaby Badger effortlessly lifts the mossy branch aside with both paws so Pippin Paddlepaw and Penny Harvest-Mouse can walk across."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 12,
+      "title": "The Third Golden Acorn",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_12.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Barnaby Badger tips his felt gardener's hat and hands Pippin Paddlepaw the third glowing Golden Acorn beside the clear pebble brook."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 13,
+      "title": "Bramble Squirrel's Silly Acorn Alarm",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_13.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. High on a sunny oak branch above the meadow, Bramble Red-Squirrel (in berry-red vest from ref_characters.jpg) rings his tiny brass bell and giggles playfully while Pippin Paddlepaw and Barnaby Badger run up carrying an empty acorn basket."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 14,
+      "title": "When the Basket Really Tips Over",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_14.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Beneath the oak tree, Bramble Red-Squirrel's wicker basket tips over on a mossy root, spilling dozens of shiny brown acorns rolling down into the tall clover while Bramble rings his bell with an apologetic, hopeful expression."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 15,
+      "title": "Pippin Checks and Bramble Promises",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_15.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Pippin Paddlepaw kneels in the green clover beside Bramble Red-Squirrel, helping him gather the scattered acorns back into the wicker basket while Bramble holds his paw over his heart in an honest promise."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 16,
+      "title": "The Fourth Golden Acorn",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_16.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Bramble Red-Squirrel beams proudly and presents Pippin Paddlepaw with the fourth glowing Golden Acorn from the very center of the neatly refilled wicker basket."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 17,
+      "title": "Hopper Cricket's Merry Autumn Tune",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_17.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. In a golden autumn meadow with swirling orange maple leaves, Hopper Cricket (in leaf-green tailcoat playing a tiny wooden fiddle) dances on a mushroom cap while Penny Harvest-Mouse and Pippin Paddlepaw stack dry pine-cones and sweet chestnuts into a cozy hollow-log pantry."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 18,
+      "title": "The Cool Evening Breeze Arrives",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_18.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Crisp twilight blue settles over the meadow as a gentle autumn breeze flutters the leaves. Hopper Cricket wraps his arms around his shoulders feeling chilly, while warm golden lantern light glows from the door of Penny Harvest-Mouse's hollow-log cottage."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 19,
+      "title": "Warm Cider, Preparation, and Sharing",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_19.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Inside the cozy hollow-log cottage, Pippin Paddlepaw wraps a soft wool blanket around Hopper Cricket's shoulders and hands him a mug of warm spiced apple cider, while Hopper Cricket tunes his fiddle to play for his friends."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 20,
+      "title": "The Fifth Golden Acorn",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_20.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Penny Harvest-Mouse and Hopper Cricket together place the fifth glowing Golden Acorn into Pippin Paddlepaw's paws beside the warm cottage hearth."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 21,
+      "title": "Tilly Terrapin, Dash Jackrabbit, and the Hilltop Trail",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_21.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. At the base of the winding lantern trail leading up to the Grand Willow Tree from ref_key_setting.jpg, Dash Jackrabbit (in striped athletic sash) bounds ahead up the hill while Tilly Terrapin (in lavender shawl) and Pippin Paddlepaw walk steadily step by step carrying a brass lantern."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 22,
+      "title": "Slow and Steady Passes the Snoozing Hare",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_22.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Halfway up the mossy hillside path, Dash Jackrabbit snoozes peacefully curled up on a soft patch of sunlit clover, while Tilly Terrapin and Pippin Paddlepaw walk calmly past him with steady smiles."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 23,
+      "title": "The Breeze and the Golden Sunbeam",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_23.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. In the sky above the Grand Willow Tree, a playful puff of silver breeze blows gently, and then a warm golden sunbeam shines down through the willow boughs, illuminating Tilly Terrapin and Pippin Paddlepaw as they place the sixth and seventh Golden Acorns into the tree's lantern hooks."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    },
+    {
+      "scene": 24,
+      "title": "The Grand Willow Lantern Festival Under the Stars",
+      "illustrations": [
+        {
+          "file": "pippin-and-the-golden-acorns/acorn_24.jpg",
+          "prompt": "Maintain strict visual continuity with ImagePaths. Grand finale wide 16:9 storybook spread: All seven Golden Acorn lanterns glow with warm starlight in the boughs of the Grand Willow Tree from ref_key_setting.jpg. Pippin Paddlepaw, Rosie Red-Hen, Clara Rook, Barnaby Badger, Bramble Red-Squirrel, Hopper Cricket, Penny Harvest-Mouse, Tilly Terrapin, and Dash Jackrabbit sit in a circle on quilt blankets sipping warm cider under a twinkling twilight sky."
+        }
+      ],
+      "style": "Beatrix Potter and Brambly Hedge inspired hand-painted watercolor and fine sepia pen-and-ink children's picture-book illustration",
+      "references": [
+        "pippin-and-the-golden-acorns/ref_characters.jpg",
+        "pippin-and-the-golden-acorns/ref_key_setting.jpg"
+      ],
+      "continuity": "Preserve character faces, clothing, proportions, props, and setting landmarks across all images. Landscape storybook illustration; no text in the image."
+    }
+  ]
+}
