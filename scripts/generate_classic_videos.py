@@ -197,6 +197,15 @@ STORIES = [
         "poster_source": "acorn_01.jpg",
         "timeline": "pippin-and-the-golden-acorns/narration-timings.json",
     },
+    {
+        "id": "the-odyssey",
+        "dir": "the-odyssey",
+        "audio": "the-odyssey/narration.mp3",
+        "video_output": "the-odyssey/the_odyssey_story_video.mp4",
+        "poster_output": "the-odyssey/the_odyssey_story_video_poster.jpg",
+        "poster_source": "scene-03.jpg",
+        "timeline": "the-odyssey/narration-timings.json",
+    },
 ]
 
 def create_storybook_frame(img_path, width=1280, height=720, crop=None):

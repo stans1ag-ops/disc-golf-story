@@ -1822,5 +1822,93 @@
   "tyson/the-tooth-that-took-a-bounce/wiggle-wobble.webp": {
     "sha": "28bd72fa445b9ed999c0e0c583d6af83ccf81909",
     "size": 772398
+  },
+  "the-odyssey/scene-01.jpg": {
+    "sha": "68d8f72a74683d9edbcfaf19b8f43754ec6640aa",
+    "size": 318230
+  },
+  "the-odyssey/scene-02.jpg": {
+    "sha": "a172c8b6622343371fe823717b5324a7a38a0d9d",
+    "size": 364296
+  },
+  "the-odyssey/scene-03.jpg": {
+    "sha": "54f09bc532c162a34ca0b3c4af0fec7fcdcffbc1",
+    "size": 362072
+  },
+  "the-odyssey/scene-04.jpg": {
+    "sha": "181e03a8ada2d887b9b0f56222b0f28ee1db8fcd",
+    "size": 299676
+  },
+  "the-odyssey/scene-05.jpg": {
+    "sha": "139a1175555b8bcfc1a36e363eadcc1b1f2c98ac",
+    "size": 338366
+  },
+  "the-odyssey/scene-06.jpg": {
+    "sha": "ffc272b86b279444977bcdf1d60c5a7b34fb02af",
+    "size": 306319
+  },
+  "the-odyssey/scene-07.jpg": {
+    "sha": "be85120d480706a19928a284893b386987a41b18",
+    "size": 309771
+  },
+  "the-odyssey/scene-08.jpg": {
+    "sha": "242e3c2d55c21c0600e501070243e69295f79d95",
+    "size": 299376
+  },
+  "the-odyssey/scene-09.jpg": {
+    "sha": "c4c9a5d57cc582322c615b7cecf9e71cbd1efbc0",
+    "size": 342673
+  },
+  "the-odyssey/scene-10.jpg": {
+    "sha": "7f08fee2e5a1568907aff1b59fc86cd188191158",
+    "size": 275240
+  },
+  "the-odyssey/scene-11.jpg": {
+    "sha": "89ef298dc99de3d0ccf0a6c962e938e059ddda98",
+    "size": 765335
+  },
+  "the-odyssey/scene-12.jpg": {
+    "sha": "b02d389c7d33eece448031f96b606b8063f69696",
+    "size": 976068
+  },
+  "the-odyssey/scene-13.jpg": {
+    "sha": "6e1e5a1e80814f087a3eccc3e709aa77223f88c1",
+    "size": 1043696
+  },
+  "the-odyssey/scene-14.jpg": {
+    "sha": "8d384f836baf5bb3ba48dec1450db82a40f3b9be",
+    "size": 857119
+  },
+  "the-odyssey/scene-15.jpg": {
+    "sha": "6e5e8193c494940141f4993deca115d0c2f51562",
+    "size": 860493
+  },
+  "the-odyssey/scene-16.jpg": {
+    "sha": "b92969a3bdf6c14ce025ee0b8f4dfcaec08738fe",
+    "size": 979364
+  },
+  "the-odyssey/narration.mp3": {
+    "sha": "a2cff2d9e97f1ca914f2f14d6fa1e8318aa239b5",
+    "size": 27010605
+  },
+  "the-odyssey/narration.vtt": {
+    "sha": "b9fbea058d8426b0ecb793dd389f9422751f2d9f",
+    "size": 31667
+  },
+  "the-odyssey/the_odyssey_story_video.mp4": {
+    "sha": "8c0a71c920988a42b73e7c3eade7df2f1ac8e4af",
+    "size": 28671871
+  },
+  "the-odyssey/the_odyssey_story_video_poster.jpg": {
+    "sha": "5f2ee29d7cf0c6860f116a559f2c25e3a2876470",
+    "size": 428157
+  },
+  "the-odyssey/references/characters_ref.jpg": {
+    "sha": "d2f47f0260b79fd0eb544f87523842105863dec7",
+    "size": 849488
+  },
+  "the-odyssey/references/ship_and_islands_ref.jpg": {
+    "sha": "1ef9aaefdf91ce0b1ead335ce6a6c31e1c5aedcf",
+    "size": 1182978
   }
 }

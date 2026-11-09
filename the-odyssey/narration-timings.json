@@ -1,0 +1,92 @@
+{
+  "audio": "narration.mp3",
+  "duration": 1688.111,
+  "timing_method": "Measured PCM sample positions from final multi-voice narration recording",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "artwork_crop": null,
+  "scenes": [
+    {
+      "image": "scene-01.jpg",
+      "start": 0.0,
+      "cue": "The Great Island Road Trip: The Odyssey. Chapter One: The Giant Wooden Horse and the Forgo"
+    },
+    {
+      "image": "scene-02.jpg",
+      "start": 68.28,
+      "cue": "Finally, on a Tuesday afternoon, Odysseus tapped his chin."
+    },
+    {
+      "image": "scene-03.jpg",
+      "start": 126.901,
+      "cue": "At midnight, when the Trojans were all worn out from dancing and fast asleep on the cobble"
+    },
+    {
+      "image": "scene-04.jpg",
+      "start": 183.202,
+      "cue": "Chapter Two: The Island of the Super-Sleepy Berry Eaters."
+    },
+    {
+      "image": "scene-05.jpg",
+      "start": 261.213,
+      "cue": "Odysseus strapped a coil of rope to his belt and rowed ashore himself. When he pushed asid"
+    },
+    {
+      "image": "scene-06.jpg",
+      "start": 388.315,
+      "cue": "Chapter Three: The Grumpy One-Eyed Chef of Monster Island."
+    },
+    {
+      "image": "scene-07.jpg",
+      "start": 511.628,
+      "cue": "Then, Polyphemus sniffed the air. He looked down through his thick, single-lens reading gl"
+    },
+    {
+      "image": "scene-08.jpg",
+      "start": 663.73,
+      "cue": "A cloud of super-fine black pepper and soapy bubbles rained right onto the Cyclops's face "
+    },
+    {
+      "image": "scene-09.jpg",
+      "start": 819.674,
+      "cue": "Chapter Four: The Bag of Hurricane Winds and the Witch's Petting Zoo."
+    },
+    {
+      "image": "scene-10.jpg",
+      "start": 961.73,
+      "cue": "When the winds finally died down, they washed ashore on the enchanted island of Aeaea, hom"
+    },
+    {
+      "image": "scene-11.jpg",
+      "start": 1057.147,
+      "cue": "Odysseus grabbed his walking stick and marched up the hill to rescue his crew. Halfway thr"
+    },
+    {
+      "image": "scene-12.jpg",
+      "start": 1159.145,
+      "cue": "Chapter Five: The Earplug Concert and the Giant Drainpipe."
+    },
+    {
+      "image": "scene-13.jpg",
+      "start": 1286.612,
+      "cue": "Suddenly, the water ahead began to rumble. They had reached the Narrows, guarded on the le"
+    },
+    {
+      "image": "scene-14.jpg",
+      "start": 1383.387,
+      "cue": "Chapter Six: The Ultimate Trick Shot and the Pancake Reunion."
+    },
+    {
+      "image": "scene-15.jpg",
+      "start": 1494.746,
+      "cue": "Inside the hall, Odysseus's son Telemachus—now a tall, brave young man—was trying to get t"
+    },
+    {
+      "image": "scene-16.jpg",
+      "start": 1613.091,
+      "cue": "SHIMMER! Athena waved her hand from the rafters, and the grandpa bathrobe vanished. Standi"
+    }
+  ]
+}

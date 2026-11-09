@@ -1,0 +1,128 @@
+{
+  "story": "The Great Island Road Trip: The Odyssey",
+  "slug": "the-odyssey",
+  "master_references": [
+    {
+      "filename": "references/characters_ref.jpg",
+      "prompt": "Character turnaround ensemble reference sheet on plain cream watercolor paper with fine sepia pen-and-ink linework, landscape 16:9 composition, strictly no text, no labels, no words, no watermarks. Side-by-side full-body views of five friendly storybook characters: (1) Captain Odysseus, a cheerful Greek island captain with warm olive skin, a neat curly chestnut-brown beard, twinkling eyes, a cream Greek tunic with gold trim, a royal-blue wool shoulder cape with a round gold clasp, and brown leather boots; (2) First Mate Eurylochus, a big round-bellied lovable sailor with a bushy russet-brown beard, rosy cheeks, a blue-and-white striped sailor tunic, and a yellow kerchief; (3) Queen Penelope, a warm smiling queen with braided chestnut hair in a sky-blue and gold Greek gown holding a plate of golden pancakes; (4) Young Prince Telemachus, a tall friendly young man with curly chestnut hair in a cream-and-blue tunic; (5) Argos, a happy floppy-eared brown hound dog with soft white fur around his muzzle."
+    },
+    {
+      "filename": "references/ship_and_islands_ref.jpg",
+      "prompt": "Environment and ship reference plate on lightly textured cream watercolor paper with fine sepia pen-and-ink linework, landscape 16:9 composition, no text, no words, no watermarks. A sleek, cheerful ancient Greek wooden galley ship painted bright cherry-red with a curved wooden prow, a row of wooden oars, and a big billowing white square sail, floating on sparkling turquoise Mediterranean waves beside the sunny rocky harbor of Ithaca with whitewashed stone cottages and olive trees on the hillside."
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Chapter 1: The Great Siege of Troy",
+      "filename": "scene-01.jpg",
+      "image_paths": ["references/characters_ref.jpg", "references/ship_and_islands_ref.jpg"],
+      "prompt": "On a sunny Mediterranean sandy beach in front of fifty-foot-tall grey granite castle walls, cheerful Captain Odysseus taps his chin and squints one eye with a clever grin, while his goofy adult sailors in blue-and-white tunics test a giant wooden carnival springboard and load colorful round water balloons into a wooden spoon-launcher near their bright cherry-red wooden sailing ship in the bay."
+    },
+    {
+      "scene_number": 2,
+      "title": "The Giant Smiling Wooden Horse",
+      "filename": "scene-02.jpg",
+      "image_paths": ["references/characters_ref.jpg"],
+      "prompt": "A massive three-story-tall smiling wooden horse built from warm brown ship planks standing on four oversized wooden wheels with a giant red gift ribbon bow tied around its neck, rolled inside a sunny ancient cobblestone courtyard with tall stone gates and colorful fabric party banners as cheerful townsfolk in colorful tunics dance and celebrate around it."
+    },
+    {
+      "scene_number": 3,
+      "title": "The Golden Trophy and Setting Sail",
+      "filename": "scene-03.jpg",
+      "image_paths": ["references/characters_ref.jpg", "references/ship_and_islands_ref.jpg"],
+      "prompt": "Cheerful Captain Odysseus stands heroically on the curved bow of his sleek bright-red wooden sailing ship with billowing white sails in a sparkling blue harbor, holding up a gleaming two-handled golden trophy cup, while plump bearded first mate Eurylochus in his striped blue-and-white tunic happily holds up a big round wheel of golden cheddar cheese surrounded by cheering sailors."
+    },
+    {
+      "scene_number": 4,
+      "title": "Chapter 2: The Island of Pink Palm Trees",
+      "filename": "scene-04.jpg",
+      "image_paths": ["references/characters_ref.jpg", "references/ship_and_islands_ref.jpg"],
+      "prompt": "The sleek bright-red wooden Greek sailing ship with white sails floats on calm turquoise water beside a whimsical tropical island covered in pastel pink palm trees and sugary white sand. On the ship deck, Captain Odysseus in his blue cape looks through a brass spyglass beside plump bearded Eurylochus, while three sailors in a small wooden rowboat paddle toward the pink palm jungle shore."
+    },
+    {
+      "scene_number": 5,
+      "title": "The Super-Sleepy Berry Eaters",
+      "filename": "scene-05.jpg",
+      "image_paths": ["references/characters_ref.jpg", "scene-04.jpg"],
+      "prompt": "A bright, funny tropical lagoon framed by pastel pink palm trees and giant green ferns where three goofy adult sailors in blue-and-white tunics, colorful flower crowns, and round coconut-shell sunglasses float lazily on ring-shaped inner tubes woven from green palm leaves, holding glowing sky-blue plum-sized berries and smiling up at a fluffy sheep-shaped cloud, while determined Captain Odysseus in his blue cape stands on the sandy beach pulling all three inner tubes toward a wooden rowboat with a long nautical rope."
+    },
+    {
+      "scene_number": 6,
+      "title": "Chapter 3: The Grumpy One-Eyed Chef",
+      "filename": "scene-06.jpg",
+      "image_paths": ["references/characters_ref.jpg"],
+      "prompt": "Inside a cozy, colossal stone kitchen cave warmed by hearth firelight, shelves hold tractor-tire-sized yellow cheese wheels and canoe-sized wooden soup spoons. A thirty-foot-tall, round-bellied storybook Cyclops chef with one big grumpy eye in the center of his forehead wearing single-lens brass reading glasses and a white chef's apron walks in followed by giant, ultra-fluffy round white cotton-ball sheep, while tiny Captain Odysseus in his blue cape and his sailors peek out curiously from behind an oversized kitchen salt shaker on the counter."
+    },
+    {
+      "scene_number": 7,
+      "title": "A Food Critic Named Nobody and the Giant Pepper Mill",
+      "filename": "scene-07.jpg",
+      "image_paths": ["references/characters_ref.jpg", "scene-06.jpg"],
+      "prompt": "Inside the giant stone kitchen cave, the thirty-foot-tall Cyclops chef in his white apron and single-lens glasses sleeps peacefully on a soft pile of fluffy sheepskin rugs beside an empty wooden mixing bowl, while tiny Captain Odysseus in his blue cape directs his cheerful sailors as they crank a tree-trunk-sized carved wooden pepper mill and hold a large yellow kitchen sponge bubbling with cheerful pink soap suds above the sleeping chef's nose."
+    },
+    {
+      "scene_number": 8,
+      "title": "Sneaking Out Under the Fluffy Sheep",
+      "filename": "scene-08.jpg",
+      "image_paths": ["references/characters_ref.jpg", "scene-06.jpg"],
+      "prompt": "At the sunny open entrance of a giant stone kitchen cave with a round boulder rolled aside, tiny clever Captain Odysseus in his blue cape and his sailors hang cheerfully like hammocks underneath the thick curly white wool of giant, ultra-fluffy cotton-ball sheep trotting out into a green meadow, while the thirty-foot-tall grumpy Cyclops in his white chef's apron kneels beside the doorway with big harmless pink soap bubbles covering his single-lens reading glasses, patting the top of a sheep's back."
+    },
+    {
+      "scene_number": 9,
+      "title": "Chapter 4: The Bag of Hurricane Winds",
+      "filename": "scene-09.jpg",
+      "image_paths": ["references/characters_ref.jpg", "references/ship_and_islands_ref.jpg"],
+      "prompt": "On the wooden deck of the bright red sailing ship with a sunny rocky island visible on the horizon, plump bearded Eurylochus in his striped sailor tunic looks sheepish holding an open brown leather bowling bag with a silver cord, as a big whimsical swirling spiral of silvery-blue wind gusts upward into the sky, blowing Captain Odysseus's curly brown beard and blue cape straight up over his head while the white sails billow."
+    },
+    {
+      "scene_number": 10,
+      "title": "Circe’s Banquet and the Manners-Magic",
+      "filename": "scene-10.jpg",
+      "image_paths": ["references/characters_ref.jpg"],
+      "prompt": "Inside a sunny white marble palace dining hall with a friendly golden lion rolling over on the floor for a belly rub, glamorous sorceress Circe in a flowing royal-purple gown with a tall beehive hairdo waves a sparkling crystal wand beside a long banquet table stacked with lasagna, chocolate brownies, and frothy root beer floats, where cute plump pink piglets wearing tiny white sailor caps sit among oversized leather boots while bearded Eurylochus peeks out from behind a red velvet curtain."
+    },
+    {
+      "scene_number": 11,
+      "title": "Hermes’s Mint Gum and the Bluebird Mirror",
+      "filename": "scene-11.jpg",
+      "image_paths": ["references/characters_ref.jpg", "scene-10.jpg"],
+      "prompt": "A whimsical, magical dining hall in a white marble palace where ten cute pink piglets wearing tiny white sailor hats sit around a giant banquet table stacked with brownies and root beer floats, while surprised sorceress Circe in a purple gown touches a cozy nest of cheerful chirping bluebirds perched atop her tall beehive hairdo as smiling Captain Odysseus in his blue cape holds up a shiny oval silver mirror."
+    },
+    {
+      "scene_number": 12,
+      "title": "Chapter 5: The Earplug Concert",
+      "filename": "scene-12.jpg",
+      "image_paths": ["references/characters_ref.jpg", "references/ship_and_islands_ref.jpg"],
+      "prompt": "The bright red wooden Greek sailing ship glides past sunny flower-covered island rocks where three cheerful winged Siren pop singers in sparkly robes sing into golden seashell microphones with colorful musical notes floating in the air. On the ship deck, Captain Odysseus in his blue cape stands beside the wooden mainmast wrapped in coils of nautical rope, grinning and tapping his boots to the rhythm, while plump bearded Eurylochus and the sailors wear big round yellow beeswax earplugs and give Odysseus a cheerful thumbs-up as they row."
+    },
+    {
+      "scene_number": 13,
+      "title": "The Giant Drainpipe and the Peanut-Butter Catapult",
+      "filename": "scene-13.jpg",
+      "image_paths": ["references/characters_ref.jpg", "references/ship_and_islands_ref.jpg"],
+      "prompt": "An exciting, colorful storybook scene of the bright red wooden Greek sailing ship rowing swiftly through a narrow sea channel between a giant swirling turquoise-blue whirlpool on the left and a tall sunny rocky cliff on the right where a goofy, friendly six-headed green sea dragon sits looking cross-eyed and confused with big crusty loaves of peanut-butter bread stuck in all six of its mouths, while Captain Odysseus cheers from the deck."
+    },
+    {
+      "scene_number": 14,
+      "title": "Chapter 6: The Grandpa Disguise and Faithful Argos",
+      "filename": "scene-14.jpg",
+      "image_paths": ["references/characters_ref.jpg"],
+      "prompt": "At the sunny stone courtyard entrance of the Greek palace of Ithaca, wise goddess Athena in a flowing cream-and-gold robe holds a shimmering green olive branch beside Odysseus disguised as a kindly wrinkled old grandpa wearing a patched brown tweed bathrobe and cozy fuzzy slippers, while his faithful twenty-year-old floppy-eared brown hound dog Argos with soft white fur around his muzzle happily wags his tail and rests his chin on Odysseus's fuzzy slipper."
+    },
+    {
+      "scene_number": 15,
+      "title": "The Ultimate Twelve-Ring Trick Shot",
+      "filename": "scene-15.jpg",
+      "image_paths": ["references/characters_ref.jpg", "scene-14.jpg"],
+      "prompt": "Inside a sunlit Greek palace hall, Odysseus disguised in his patched brown tweed bathrobe and fuzzy slippers stands proudly beside tall young prince Telemachus in a cream-and-blue tunic, effortlessly holding a curved wooden target bow as a playful whistling suction-cup dart zooms in a golden streak straight through the circular rings of twelve upright brass ring-stands lined up in a row, while in the background a pompous man wearing three gold necklaces sits comically in a big bowl of mashed potatoes."
+    },
+    {
+      "scene_number": 16,
+      "title": "The Honey-Nut Pancake Reunion",
+      "filename": "scene-16.jpg",
+      "image_paths": ["references/characters_ref.jpg"],
+      "prompt": "A joyful, vibrant storybook finale inside a sunny Greek palace hall where heroic Captain Odysseus with his curly brown beard, royal cream-and-gold tunic, and blue cape hugs his smiling wife Queen Penelope in a sky-blue gown and their tall son Telemachus beside a happy old white-muzzled brown hound dog and a platter stacked ten inches high with golden honey-nut pancakes, while in the background silly flour-dusted men draped in a red velvet curtain hold wooden mops and buckets of soapy water."
+    }
+  ]
+}
